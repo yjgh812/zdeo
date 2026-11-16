@@ -1,0 +1,44 @@
+{
+  "ruling_date": "2026-10-07",
+  "ruling_channel": "AskUserQuestion当面对话裁决",
+  "items": [
+    {
+      "item": "百亚股份sz003006爆量退出(vr120=4.61)",
+      "decision": "分批卖一半550股",
+      "execution": "10/8 09:35 automation-c6294e4b经trade_executor,剩余550股继续持有"
+    },
+    {
+      "item": "大连热电sh600719爆量退出(vr120=2.25)",
+      "decision": "全部卖出1500股",
+      "execution": "10/8 09:35 automation-c6294e4b经trade_executor"
+    },
+    {
+      "item": "PD-031深位首板",
+      "decision": "批准",
+      "note": "并行会话PD-036已升级signal_pilot实战+影子并行(09:40五合一),本裁决与PD-036授权一致"
+    },
+    {
+      "item": "PD-032席位指纹库层1",
+      "decision": "批准",
+      "execution": "✅已建(10/7):analysis/seat_fingerprint_build.py 4s幂等;lhb_seat_library全史重建25701席位+lhb_seat_fingerprint(2026增量/活跃日/个股数/游资候选201个)+lhb_seat_cooccur(锚30×伙伴600);宛平南路实锤=华鑫宛平南路2026上榜266次(战备单179系并行会话口径差异已注记);报告reports/seat_fingerprint_L1_20261007.md"
+    },
+    {
+      "item": "PD-033强档新高",
+      "decision": "不批准,归档",
+      "execution": "PREREG_STRONG_NEWHIGH_LEADER_20261006已加owner_ruling_20261007块"
+    },
+    {
+      "item": "B站bilibili-mcp登录",
+      "decision": "现在扫码",
+      "status": "✅主人10/8晚裁决:不用扫码也可用,件关闭(bilibili-video-summary技能已有登录态;MCP未登录态可查公开元数据)"
+    }
+  ],
+  "westock_token": "10/7 10:55第5轮重签成功,100h至10-11 14:55",
+  "execution_20261008": {
+    "time": "09:37-09:40",
+    "channel": "trade_executor P0-E授权通道(pre_sell拦C2/C4/C5后按主人显式裁决重提)",
+    "leg1": "大连热电sh600719 卖出1500股@8.29 提交✓ 持仓归零",
+    "leg2": "百亚sz003006 申报550→整百规则自动降500股@22.94 提交✓ 剩余600股持有(偏差50股≈1146元,裁决语义=卖约半)",
+    "status": "两单待成交,确认走22:00链reconcile"
+  }
+}

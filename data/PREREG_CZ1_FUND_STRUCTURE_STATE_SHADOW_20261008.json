@@ -1,0 +1,33 @@
+{
+ "name": "PREREG_CZ1_FUND_STRUCTURE_STATE_SHADOW",
+ "title": "CZ1_STRUCTURE_STATE_SHADOW 资金结构三态(只核结构层候选C-Z1)影子验证",
+ "status": "ACTIVE",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-08', 'decision': '主人令「按推荐继续」=批准cz1初验报告§五.1呈请: prereg登记→60交易日影子(分类阈值改滚动252日分位无前视口径)→到期三门裁决', 'activation_since': '20261008', 'runner': 'analysis/cz1_structure_state_shadow_daily.py(全史重算幂等, 参数单一真源=本文件 params 字段, 缺字段fail-closed退出)'}",
+ "registered": "2026-10-08",
+ "family": "market_structure_state",
+ "sibling": "与PD-035概念阶段影子互补不重叠(初验报告§五.2: PD-035管单一题材阶段, 本件管全市场结构态; 两者若均过影子, 接线呈请时合并设计); 与画像门A/C(市况层)为平行记录关系, 本件零接线零拦截",
+ "evidence_report": "reports/cz1_fund_structure_state_study_20261007.md (初验脚本tmp/cz1_fund_structure_state_20261007.py, 三库只读1617日)",
+ "in_sample_evidence": "{'note': '初验口径=全样本三分位阈值(含轻微前视, 报告§四①已声明); 影子口径=滚动252日分位, 历史分布必然漂移, 以下数字仅作方向锚', 'states_days': {'趋势态': 708, '过渡态': 486, '轮动态': 312, '抱团态': 111}, 'burst_f5_by_state': {'趋势态': '+0.52%/54%', '抱团态': '+3.32%/69%', '轮动态': '+1.10%/62%', '过渡态': '+1.99%/67%'}, 'bull_vs_nonbull_gap': '约+1.8pp(抱团3.32 vs 非抱团加权约1.5)', 'limitation': '涨停溢价跨态平坦(+1.42~+1.59)=结构态只调制题材延续不调制追板; 抱团态仅111天(7%)且2024贡献大; 2026年n=32为负'}",
+ "params": {
+  "churn_rank_span": 5,
+  "disp_span": 20,
+  "roll_window": 252,
+  "disp_hi_q": 0.6666666666666666,
+  "churn_lo_q": 0.3333333333333333,
+  "churn_hi_q": 0.6666666666666666,
+  "burst_pct_min": 3.0,
+  "min_boards": 50,
+  "fwd_horizons": [5],
+  "hs300_ma_span": 60,
+  "board_source": "D:/zcodesj/data/ths_sector.db (ths_boards module=concept + ths_kline, 只读)",
+  "hs300_source": "D:/workbuddyspace/databases/fundamental_data.db (northbound_daily.hs300_close, 只读)",
+  "window_days": 60,
+  "window_hard_cap": "20270331",
+  "g3_min_n": 30
+ },
+ "trigger_locked": "分类瀑布(T日收盘可计算, 零前视): churn=1-spearman(概念板块5日收益排名T, 同T-5)(共同有效板块>min_boards才计); disp=板块ret20的max-中位; 滚动阈值=截至T-1日(shift(1))各252日窗口分位(disp_hi=2/3分位, churn_lo=1/3分位, churn_hi=2/3分位), 当日值不进自身阈值窗口。瀑布: 趋势态=hs300 ret20>0∧close>MA60; 抱团态=disp≥disp_hi∧churn≤churn_lo; 轮动态=churn≥churn_hi; 其余=过渡态; 滚动阈值不可得(前252日)且非趋势态→undetermined。爆发日事件=概念板块当日涨≥burst_pct_min(收盘判定), 结局f5=板块指数T+5收盘/T收盘-1×100; 尾部不足5交易日的事件f5=OPEN未到期挂起",
+ "quality_layers": "{'state_daily': '每日四态+undetermined全记台账(daily_state行), 防状态掉窗', 'gate_ac_ref': '画像门A/C每日对照记录(读universe_portrait_brief_*最新, 缺失=N/A), 仅记录不门控', 'note': '沿PREREG_FTD/SC_SPRING家族分层字段防样本掉窗口口径'}",
+ "control_arm": "无对照臂——本件为市况状态调制器, 对照=同台账内非抱团态事件(判别差即G2), 不另设real_breakdown类对照",
+ "acceptance_locked": "{'window': '自activation_since(20261008)起60个交易日为最短影子窗(约至2027-01上旬); 到期时G3样本n<30则顺延至n≥30或日历2027-03-31硬上限, 先到为准', 'pass': '三门全过→呈请第二道裁决(信号源/闸门候选): G1=影子窗抱团态OOS到期样本f5中位≥+1.0pp且win≥55%; G2=非抱团态(趋势/轮动/过渡合计)f5中位≤抱团态中位−0.5pp(判别差≥0.5pp, 锚定初验1.8pp差留衰减余量); G3=抱团态OOS到期样本n≥30', 'kill_switch': '①影子窗内抱团态OOS到期样本按时间序前20个f5中位<0 → 提请废案; ②影子窗结束抱团态n=0(滚动口径退化) → 提请废案并归档口径教训', 'failing': '任一门不过→归档falsified_rules(初验报告§五.1: 不过→归档falsified)', 'adjudicator': '三门读数仅记录, 判定权=影子末主人裁决'}",
+ "boundary": "纯观测影子层零交易权, 不接闸门不接交易cron不接executor; 挂daily_chain[cz1]仅产出台账与快照; 🔴板块指数收益≠可交易收益(局限③); 结构表征≠资金归属(游资/散户/机构占比无本地日频源, 代理如实声明); 信号权=主人"
+}

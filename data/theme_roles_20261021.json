@@ -1,0 +1,463 @@
+{
+ "date": "20261021",
+ "total_limitup": 50,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603278",
+    "name": "大业股份",
+    "boards": 4,
+    "seal_money": 400539411.0,
+    "mv_wan": 450780.6486
+   },
+   "members": [
+    {
+     "code": "002347",
+     "name": "泰尔股份",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 366918.5721,
+     "role": "助攻"
+    },
+    {
+     "code": "603278",
+     "name": "大业股份",
+     "boards": 4,
+     "reason": "通用设备",
+     "mv_wan": 450780.6486,
+     "role": "龙头"
+    },
+    {
+     "code": "002639",
+     "name": "雪人集团",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 1183167.7997,
+     "role": "中军"
+    },
+    {
+     "code": "600202",
+     "name": "哈空调",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 213520.7699,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "照明设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002724",
+    "name": "海洋王",
+    "boards": 4,
+    "seal_money": 200085643.0,
+    "mv_wan": 786156.462
+   },
+   "members": [
+    {
+     "code": "002724",
+     "name": "海洋王",
+     "boards": 4,
+     "reason": "照明设备",
+     "mv_wan": 786156.462,
+     "role": "龙头"
+    },
+    {
+     "code": "002076",
+     "name": "星光股份",
+     "boards": 2,
+     "reason": "照明设备",
+     "mv_wan": 271735.5025,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "汽车零部"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600178",
+    "name": "东安动力",
+    "boards": 4,
+    "seal_money": 159713176.0,
+    "mv_wan": 636740.013
+   },
+   "members": [
+    {
+     "code": "600178",
+     "name": "东安动力",
+     "boards": 4,
+     "reason": "汽车零部",
+     "mv_wan": 636740.013,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "通信服务"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002929",
+    "name": "润建股份",
+    "boards": 3,
+    "seal_money": 145914765.0,
+    "mv_wan": 1607592.4788
+   },
+   "members": [
+    {
+     "code": "002929",
+     "name": "润建股份",
+     "boards": 3,
+     "reason": "通信服务",
+     "mv_wan": 1607592.4788,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "玻璃玻纤"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600293",
+    "name": "三峡新材",
+    "boards": 2,
+    "seal_money": 498892139.0,
+    "mv_wan": 551068.875
+   },
+   "members": [
+    {
+     "code": "600293",
+     "name": "三峡新材",
+     "boards": 2,
+     "reason": "玻璃玻纤",
+     "mv_wan": 551068.875,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "出版"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002181",
+    "name": "粤 传 媒",
+    "boards": 2,
+    "seal_money": 189355581.0,
+    "mv_wan": 1293418.8348
+   },
+   "members": [
+    {
+     "code": "601999",
+     "name": "出版传媒",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 429713.466,
+     "role": "助攻"
+    },
+    {
+     "code": "002181",
+     "name": "粤 传 媒",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 1293418.8348,
+     "role": "龙头"
+    },
+    {
+     "code": "603999",
+     "name": "读者传媒",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 430272.0,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "IT服务Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603636",
+    "name": "南威软件",
+    "boards": 2,
+    "seal_money": 71068267.0,
+    "mv_wan": 567592.569
+   },
+   "members": [
+    {
+     "code": "603138",
+     "name": "海量数据",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 451573.4104,
+     "role": "助攻"
+    },
+    {
+     "code": "603636",
+     "name": "南威软件",
+     "boards": 2,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 567592.569,
+     "role": "龙头"
+    },
+    {
+     "code": "600271",
+     "name": "航天信息",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 1371134.604,
+     "role": "中军"
+    },
+    {
+     "code": "002368",
+     "name": "太极股份",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 914280.1704,
+     "role": "助攻"
+    },
+    {
+     "code": "688500",
+     "name": "慧辰股份",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": null,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "通信设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002313",
+    "name": "日海智能",
+    "boards": 2,
+    "seal_money": 95359616.0,
+    "mv_wan": 362419.2
+   },
+   "members": [
+    {
+     "code": "002313",
+     "name": "日海智能",
+     "boards": 2,
+     "reason": "通信设备",
+     "mv_wan": 362419.2,
+     "role": "龙头"
+    },
+    {
+     "code": "603236",
+     "name": "移远通信",
+     "boards": 2,
+     "reason": "通信设备",
+     "mv_wan": 3402059.3152,
+     "role": "中军"
+    },
+    {
+     "code": "002792",
+     "name": "通宇通讯",
+     "boards": 1,
+     "reason": "通信设备",
+     "mv_wan": 1680989.724,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "饲料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002696",
+    "name": "百洋股份",
+    "boards": 2,
+    "seal_money": 86975152.0,
+    "mv_wan": 363733.4184
+   },
+   "members": [
+    {
+     "code": "002696",
+     "name": "百洋股份",
+     "boards": 2,
+     "reason": "饲料",
+     "mv_wan": 363733.4184,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "计算机设"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002835",
+    "name": "同为股份",
+    "boards": 2,
+    "seal_money": 80623384.0,
+    "mv_wan": 341971.652
+   },
+   "members": [
+    {
+     "code": "002835",
+     "name": "同为股份",
+     "boards": 2,
+     "reason": "计算机设",
+     "mv_wan": 341971.652,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链11",
+   "shared_words": [
+    "调味发酵"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603696",
+    "name": "安记食品",
+    "boards": 2,
+    "seal_money": 47951916.0,
+    "mv_wan": 351859.2
+   },
+   "members": [
+    {
+     "code": "603696",
+     "name": "安记食品",
+     "boards": 2,
+     "reason": "调味发酵",
+     "mv_wan": 351859.2,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "小家电"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002242",
+    "name": "九阳股份",
+    "boards": 2,
+    "seal_money": 39528201.0,
+    "mv_wan": 1725944.454
+   },
+   "members": [
+    {
+     "code": "002242",
+     "name": "九阳股份",
+     "boards": 2,
+     "reason": "小家电",
+     "mv_wan": 1725944.454,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 13,
+   "chain_name": "自动链13",
+   "shared_words": [
+    "工程机械"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001239",
+    "name": "永达股份",
+    "boards": 2,
+    "seal_money": 27538697.0,
+    "mv_wan": 353760.0
+   },
+   "members": [
+    {
+     "code": "001239",
+     "name": "永达股份",
+     "boards": 2,
+     "reason": "工程机械",
+     "mv_wan": 353760.0,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 15,
+   "chain_name": "自动链15",
+   "shared_words": [
+    "化学制药"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "300006",
+    "name": "莱美药业",
+    "boards": 1,
+    "seal_money": 104270614.0,
+    "mv_wan": 981997.416
+   },
+   "members": [
+    {
+     "code": "300006",
+     "name": "莱美药业",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 981997.416,
+     "role": "龙头"
+    },
+    {
+     "code": "000788",
+     "name": "北大医药",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 349248.6164,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

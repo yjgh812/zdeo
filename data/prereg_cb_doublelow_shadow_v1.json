@@ -1,0 +1,15 @@
+{
+ "arm": "CB-DOUBLELOW-SHADOW-V1",
+ "universe": "xiaoshi可转债每日快照全量(2026-08-06起积累,约315只), 调仓日过滤: 转股期未开始(conversion_start_date>信号日)剔除/正股ST剔除/剩余期限<1年剔除/转股价值>=130强赎带剔除/规模<2亿剔除/评级缺失或<AA-剔除",
+ "signal": "双低=转债价格+转股溢价率*100, 升序Top10等权, 月末最后交易日收盘后出信号",
+ "entry": "次月首个交易日开盘价(ftshare转债日K, next-bar口径与股票腿一致)",
+ "exit": "下一调仓日收盘价; 持有期内强赎/退市/停牌->最后交易日收盘退出记账",
+ "cost": "双边万1(转债免印花税)",
+ "gate_12m": "影子期满12个月: 年化>股票腿同期(系统50/50组合月度收益序列) 且 年化>8% 且 12月中>=7月为正 且 MDD<=20% 且 月度NW-t>=2",
+ "gate_revision_note": "相对9/24方案书判据修订: 年化门槛10%->8% + MDD 15%->20%, 依据=外部知识调研(reports/cb_doublelow_research_20260925.md): 原帖30%年化系2018-2021特殊窗口+组合级-21.9%暴跌实证+搜特蓝盾鸿达证伪下有保底; 信用过滤升级=评级AA-下限+强赎带+剩余期限+规模下限(原方案仅ST不够,蓝盾财务退市非ST)",
+ "data_layers": "信号层=xiaoshi convertible_bonds快照(agent月频MCP分页拉存data/cb_snapshot/YYYYMMDD.jsonl, 文件名即PIT日期); 交叉验证=westock data_bond doubleLow字段(信号日Top10抽查一致性); 评级/规模/剩余期限复核=westock data_bond(Top30候选批量查,issueCompanyRating/size/dueDate); 结算价=ftshare转债日K",
+ "shadow_start": "20260928",
+ "first_signal_note": "20260925为中秋休市日, 当日dry-run用20260918快照验证管线(标注侦察级非正式信号), 正式首信号=20260928收盘后",
+ "risks": "①拥挤效应(2021实证策略变反向指标) ②信用尾部(评级过滤不充分,蓝盾案时为AA+) ③xiaoshi快照源站偶发失败stale(9/18快照即stale沿用) ④月频样本12个月统计功效有限 ⑤转股价下修期间溢价率失真(快照为实时口径)",
+ "fingerprint": "26792bae163b3e44"
+}

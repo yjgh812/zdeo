@@ -1,0 +1,66 @@
+{
+ "generated": "2026-10-25",
+ "exploratory": true,
+ "n_events": 517444,
+ "n_batches": 81,
+ "claim1_stop_variants": {
+  "s8": {
+   "label": "固定8%(生产)",
+   "mean": 0.00881,
+   "median": -0.01172,
+   "win": 0.4537,
+   "p5": -0.1133,
+   "stop_hit_rate": 0.3286
+  },
+  "a15": {
+   "label": "1.5xATR14",
+   "mean": 0.00833,
+   "median": -0.03108,
+   "win": 0.4031,
+   "p5": -0.1099,
+   "stop_hit_rate": 0.4876
+  },
+  "a20": {
+   "label": "2.0xATR14",
+   "mean": 0.00864,
+   "median": -0.01775,
+   "win": 0.4407,
+   "p5": -0.1279,
+   "stop_hit_rate": 0.381
+  },
+  "a25": {
+   "label": "2.5xATR14",
+   "mean": 0.00874,
+   "median": -0.00952,
+   "win": 0.4621,
+   "p5": -0.1421,
+   "stop_hit_rate": 0.2916
+  }
+ },
+ "atr_pct_dist": {
+  "p25": 0.0259,
+  "p50": 0.0345,
+  "p75": 0.0464
+ },
+ "claim2_3": {
+  "base_all": {
+   "final_eq": 2.3485,
+   "mdd": 0.1784,
+   "n_batches_used": 81
+  },
+  "breaker_3loss_skip": {
+   "final_eq": 1.7768,
+   "mdd": 0.2582,
+   "n_batches_used": 72
+  },
+  "insurance_dd15_20": {
+   "final_eq": 1.8979,
+   "mdd": 0.1892,
+   "n_batches_used": 81
+  }
+ },
+ "batch_stats": {
+  "mean": 0.0122,
+  "neg_rate": 0.4444
+ }
+}

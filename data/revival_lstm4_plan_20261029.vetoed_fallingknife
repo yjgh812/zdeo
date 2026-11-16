@@ -1,0 +1,28 @@
+[
+ {
+  "code": "301283",
+  "name": "聚胶股份",
+  "source": "revival_lstm",
+  "price": 21.9,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 23.13,
+  "note": "主人令稳定性≥80%共识准入 Borda100种子 均值百分位=0.999 进前4共识=82%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "002521",
+  "name": "齐峰新材",
+  "source": "revival_lstm",
+  "price": 5.34,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 5.38,
+  "note": "主人令稳定性≥80%共识准入 Borda100种子 均值百分位=0.999 进前4共识=83%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

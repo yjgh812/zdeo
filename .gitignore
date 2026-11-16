@@ -1,0 +1,186 @@
+# 屠龙系统 .gitignore v1（2026-08-27 最小化首版, 提案A）
+# 第一期只收: 根目录代码(.py) + 宪法/SOP/边界文档 + 生产配置; 一切生成物/数据/报告不入库。
+
+# ---- 嵌套仓库(子仓另行管理) ----
+/Chinese-Stock-Anomalies/
+/Kronos/
+/qlib/
+/stock_myhhub/
+/strategy_libs/
+
+# ---- 数据库与备份(12GB+级, 永不入库) ----
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+backups/
+*.bak
+
+# ---- 大产物目录 ----
+# 20261110: reports/ 改为 reports/*(逐条目忽略) — 治理产物白名单见文件末尾(主人批准)
+reports/*
+multifactor/
+kb/
+vector*/
+_cache/
+logs/
+a-share-reviews/
+attribution_library/
+backup_eastmoney_path_20260821/
+# tickflow-stock-panel 整体为外部独立项目(自带README/AGENTS/Dockerfile, 独立开发节奏),
+# 2026-09-08 按梳理收口裁决不入库: 仅经 tulong_tickflow_panel_guard.ps1(schtasks) + health_check TickFlow 行接线, 主人可推翻改收编
+tickflow-stock-panel/
+
+# ---- 运行面/会话态 ----
+.zcode/
+.agent-teams/
+.executor_logs/
+.gate_logs/
+.pytest_cache/
+.serena/
+__pycache__/
+*.pyc
+fills_*.json
+cron_*backup*.json
+
+# ---- 密钥类(即便根目录出现也不收) ----
+*token*
+.env*
+
+# ---- 根目录运行噪声(2026-08-31 补: 会话日志/截图/临时文件, 均为一次性证据或可再生物) ----
+/_*.log
+/_*.png
+/_*.txt
+/_*.csv
+/_health_*.json
+/_tmp*
+/_dl_*
+/30元拒绝
+
+# ---- 二期(2026-09-03 批次D2): 回测日志/训练缓存/运行态/带后缀bak 显式排除 ----
+# *.bak 不匹配带日期/用途后缀的变体(.bak_deploy/.bak_20260818), 此规则补漏
+*.bak_*
+/logs_*.txt
+/tsp_*.log
+/torch_cu_install.log
+/kronos_sweep_*.log
+/kronos_sweep_*.err
+/w[0-9]*_results/
+/_smc_sweep_out/
+/catboost_info/
+/mlruns/
+/hf_cache/
+/node-red-data/
+/models/
+/gray_*_track/
+/attribution.db.legacy*
+/ths_*.png
+/tdx_*.png
+/screen_check.png
+/verify_*.csv
+/gate_*.json
+/mainline_input*.json
+/tomorrow_sell_plan_*.json
+/experiment_log.json
+/temp_*.txt
+/tmp/
+/cron_*backup*.txt
+/data/*.log
+# 运行态/计划文档目录(一期哲学: 产物不入库)
+/daily_actions/
+/trade_plans/
+/trade_state/
+# 运行时通知配置(现值为空, 未来会填token/webhook, 防密钥误提交)
+/notify_config.json
+
+# ---- 二期补(2026-09-03 D3): data下高频日更采集缓存与锁文件 ----
+/data/em_results_*.json
+/data/em_todo_*.json
+/data/*.lock
+# winner-profile 20260905: 可再生大产物不入库(脚本15秒重生成)
+attribution/winner_profile_out/panel.pkl
+reports/winner_profile_daily/*.csv
+# portrait-shadow 20260905: 每日再生产物不入库(json含generated_at时间戳,重跑即变;契约由tests/test_portrait_shadow.py固化)
+/data/portrait_shadow_*.json
+/data/portrait_shadow_pool_*.csv
+# portrait_agent 可再生缓存不入库
+portrait_agent/cache/
+
+# timeseries-full-test 20260905: 可再生缓存与运行日志不入库(脚本+results JSON已入库)
+_ts_test_20260905/cache/
+_ts_test_20260905/*.log
+
+# ---- 批次D(20260905全量梳理): untracked全量实测13392文件/1.94GB, 以下为不入库部分(实测构成见SOP 9/5深夜条目) ----
+# archive/workspace_scratch_20260905 = 12212文件/1.3GB(tdx_csv 10350个TDX日线导出CSV+.mimosa钩子事件流水1484个json) = 纯废弃数据缓存与工具流水
+archive/workspace_scratch_20260905/
+# MLflow实验跟踪产物(qlib_exp 630+qlib_learning 122个meta/params/metrics) = 重跑可再生
+**/mlruns/
+# 二进制模型/序列化缓存(qlib_exp pkl 53个等)
+*.pkl
+*.tfevents*
+# 第三方安装包(fincept/FinceptTerminal-4.4.0-setup.exe = 164.6MB)
+*.exe
+# 数据供应商本地发布快照(可重新拉取)
+xiaoshi/store/
+# pyecharts一次性生成物(6件全部2026-08-13同时段生成)
+charts/
+# 数据库/大表/备份json本体(数据库备份走db_backup三层机制,不入git)
+data/*.db
+*.parquet
+data/*_backup_*.json
+# 运行日志一律不入库(已tracked的历史log不受影响)
+*.log
+# qlib_exp: 仅保留顶层workflow yaml配置,其余实验跟踪缓存不入库
+
+# ---- 2026-09-24 二轮垃圾审计: 归档区大体积/二进制副本不入库(导览=archive/ARCHIVE_GUIDE_20260923_ROUND2.md; scripts_orphan_2026Q3与各README/导览/schtasks XML入库留痕) ----
+archive/kronos_finetune_csv_20260923/
+archive/portrait_cache_20260923/
+archive/alphalens_ag_20260923/
+archive/stale_zcode_registry_20260923/
+archive/qlib_frozen_20260923/
+archive/skills_zcode_side_20260923/
+archive/root_loose_20260923/
+archive/root_dirs_20260923/
+qlib_exp/*
+!qlib_exp/*.yaml
+# data再生物(20260905甄别): 快照/采集缓存/守护状态可由脚本重建,不入库
+data/portrait_feed.json
+data/positions_latest.json
+data/prereg_watch_*.json
+data/ths_individual_flow_*.csv
+data/em_codes_*.txt
+data/em_raw_*.txt
+data/chanlun_*.csv
+data/*_state.json
+data/reentry_plan_*.json
+
+# garch-shadow 20260906: 每日再生产物不入库(csv累积判定资产入库,run快照/收益缓存/日志可再生)
+data/garch_shadow_run_*.json
+data/garch_shadow_returns.json
+data/garch_shadow_schtask.log
+data/prereg_watch_*.json
+data/prereg_watch_schtask.log
+
+# rdagent 复现工作区(B7): venv/数据副本/日志不入 git, 可复算脚本已拷贝至 data/_rdagent_*.py
+.rdagent_ws/
+
+# C盘重装备份目录(20260922 知微补:防git status淹没)
+c_backup_20260921/
+
+# ---- 20261024 非本仓域处置(主人「按推荐继续」令, 33件归属清单收口) ----
+# config/ = 凭据目录(baostock/compshare api_key, dzh token, workbuddy jwt)——保护性ignore防误提交, 永不入库
+/config/
+# comfyui_tools/ = AI图像/漫画生产工具(非股票域); drama_archive/ = 视频素材资产(大二进制); patches/ = 一次性补丁件
+/comfyui_tools/
+/drama_archive/
+/patches/
+
+# ---- 20261110 选股归因研究程序+双预注册: 治理产物白名单(主人批准; 其余reports产物维持忽略) ----
+# 放行: 两份PREREG治理文档 + 冻结读出脚本正本(reports/prereg_scripts/) + 研究证据归档(底表CSV/成交快照/终版报告)
+# 注: fills_*.json 在上方有全局忽略, 故 fills 快照需显式负规则且置于其后(last-match-wins)
+!reports/prereg_scripts/
+!reports/research_archive_20261110/
+!reports/research_archive_20261110/fills_202607_202611.json
+!reports/BUYPOINT_FILTER_PREREG_PROPOSAL_20261109.md
+!reports/BUYGENE_RULE_PREREG_20261110.md
+!reports/RESEARCH_PROGRAM_20261110.md

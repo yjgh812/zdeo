@@ -1,0 +1,314 @@
+{
+ "date": "20261015",
+ "total_limitup": 36,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "影视院线"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002343",
+    "name": "慈文传媒",
+    "boards": 5,
+    "seal_money": 140313165.0,
+    "mv_wan": 422049.1473
+   },
+   "members": [
+    {
+     "code": "002343",
+     "name": "慈文传媒",
+     "boards": 5,
+     "reason": "影视院线",
+     "mv_wan": 422049.1473,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "饲料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002696",
+    "name": "百洋股份",
+    "boards": 5,
+    "seal_money": 64312830.0,
+    "mv_wan": 370994.2566
+   },
+   "members": [
+    {
+     "code": "002696",
+     "name": "百洋股份",
+     "boards": 5,
+     "reason": "饲料",
+     "mv_wan": 370994.2566,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "饮料乳品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001318",
+    "name": "阳光乳业",
+    "boards": 3,
+    "seal_money": 108231266.0,
+    "mv_wan": 479674.02
+   },
+   "members": [
+    {
+     "code": "001318",
+     "name": "阳光乳业",
+     "boards": 3,
+     "reason": "饮料乳品",
+     "mv_wan": 479674.02,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000530",
+    "name": "冰山冷热",
+    "boards": 3,
+    "seal_money": 16140656.0,
+    "mv_wan": 584346.2625
+   },
+   "members": [
+    {
+     "code": "000530",
+     "name": "冰山冷热",
+     "boards": 3,
+     "reason": "通用设备",
+     "mv_wan": 584346.2625,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "出版"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "601811",
+    "name": "新华文轩",
+    "boards": 2,
+    "seal_money": 17059302.0,
+    "mv_wan": 3156165.278
+   },
+   "members": [
+    {
+     "code": "603999",
+     "name": "读者传媒",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 438912.0,
+     "role": "助攻"
+    },
+    {
+     "code": "603230",
+     "name": "内蒙新华",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 513315.396,
+     "role": "中军"
+    },
+    {
+     "code": "601811",
+     "name": "新华文轩",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 3156165.278,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "纺织制造"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605189",
+    "name": "富春染织",
+    "boards": 2,
+    "seal_money": 64537174.0,
+    "mv_wan": 425249.2965
+   },
+   "members": [
+    {
+     "code": "605189",
+     "name": "富春染织",
+     "boards": 2,
+     "reason": "纺织制造",
+     "mv_wan": 425249.2965,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "元件"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002815",
+    "name": "崇达技术",
+    "boards": 1,
+    "seal_money": 327134475.0,
+    "mv_wan": 2869401.7725
+   },
+   "members": [
+    {
+     "code": "002815",
+     "name": "崇达技术",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 2869401.7725,
+     "role": "龙头"
+    },
+    {
+     "code": "301282",
+     "name": "金禄电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1052982.0288,
+     "role": "中军"
+    },
+    {
+     "code": "002134",
+     "name": "天津普林",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 604335.1826,
+     "role": "助攻"
+    },
+    {
+     "code": "603386",
+     "name": "骏亚科技",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 660803.265,
+     "role": "助攻"
+    },
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1007506.521,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "物流"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000626",
+    "name": "远大控股",
+    "boards": 1,
+    "seal_money": 74921352.0,
+    "mv_wan": 463563.6135
+   },
+   "members": [
+    {
+     "code": "000626",
+     "name": "远大控股",
+     "boards": 1,
+     "reason": "物流",
+     "mv_wan": 463563.6135,
+     "role": "龙头"
+    },
+    {
+     "code": "002889",
+     "name": "东方嘉盛",
+     "boards": 1,
+     "reason": "物流",
+     "mv_wan": 491345.4175,
+     "role": "中军"
+    },
+    {
+     "code": "603535",
+     "name": "嘉诚国际",
+     "boards": 1,
+     "reason": "物流",
+     "mv_wan": 343848.0159,
+     "role": "助攻"
+    },
+    {
+     "code": "603329",
+     "name": "上海雅仕",
+     "boards": 1,
+     "reason": "物流",
+     "mv_wan": 283308.0096,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 18,
+   "chain_name": "自动链18",
+   "shared_words": [
+    "化学制药"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "300111",
+    "name": "向日葵",
+    "boards": 1,
+    "seal_money": 23410842.0,
+    "mv_wan": 477555.1697
+   },
+   "members": [
+    {
+     "code": "300111",
+     "name": "向日葵",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 477555.1697,
+     "role": "龙头"
+    },
+    {
+     "code": "600812",
+     "name": "华北制药",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 1127234.8728,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

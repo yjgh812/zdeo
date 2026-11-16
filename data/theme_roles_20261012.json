@@ -1,0 +1,511 @@
+{
+ "date": "20261012",
+ "total_limitup": 46,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "出版"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600825",
+    "name": "新华传媒",
+    "boards": 10,
+    "seal_money": 1016510886.0,
+    "mv_wan": 1439855.4573
+   },
+   "members": [
+    {
+     "code": "603096",
+     "name": "新经典",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 293971.19334399997,
+     "role": "助攻"
+    },
+    {
+     "code": "600825",
+     "name": "新华传媒",
+     "boards": 10,
+     "reason": "出版",
+     "mv_wan": 1439855.4573,
+     "role": "龙头"
+    },
+    {
+     "code": "605577",
+     "name": "龙版传媒",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 792000.00099,
+     "role": "助攻"
+    },
+    {
+     "code": "601811",
+     "name": "新华文轩",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 2837834.3000000003,
+     "role": "中军"
+    },
+    {
+     "code": "301052",
+     "name": "果麦文化",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 301529.105933,
+     "role": "补涨"
+    },
+    {
+     "code": "603230",
+     "name": "内蒙新华",
+     "boards": 1,
+     "reason": "出版",
+     "mv_wan": 517204.1490000001,
+     "role": "补涨"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "小家电"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002242",
+    "name": "九阳股份",
+    "boards": 6,
+    "seal_money": 59186816.0,
+    "mv_wan": 1269660.288
+   },
+   "members": [
+    {
+     "code": "002242",
+     "name": "九阳股份",
+     "boards": 6,
+     "reason": "小家电",
+     "mv_wan": 1269660.288,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "电池"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600241",
+    "name": "时代万恒",
+    "boards": 6,
+    "seal_money": 31216947.0,
+    "mv_wan": 380826.93681
+   },
+   "members": [
+    {
+     "code": "600241",
+     "name": "时代万恒",
+     "boards": 6,
+     "reason": "电池",
+     "mv_wan": 380826.93681,
+     "role": "龙头"
+    },
+    {
+     "code": "603032",
+     "name": "德新科技",
+     "boards": 1,
+     "reason": "电池",
+     "mv_wan": 476250.3508000001,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "化学制药"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600812",
+    "name": "华北制药",
+    "boards": 3,
+    "seal_money": 143673870.0,
+    "mv_wan": 1137529.2353100001
+   },
+   "members": [
+    {
+     "code": "600812",
+     "name": "华北制药",
+     "boards": 3,
+     "reason": "化学制药",
+     "mv_wan": 1137529.2353100001,
+     "role": "龙头"
+    },
+    {
+     "code": "300006",
+     "name": "莱美药业",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 692677.75048,
+     "role": "助攻"
+    },
+    {
+     "code": "600851",
+     "name": "海欣股份",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 1038068.75512,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "影视院线"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002343",
+    "name": "慈文传媒",
+    "boards": 2,
+    "seal_money": 141656200.0,
+    "mv_wan": 316892.111334
+   },
+   "members": [
+    {
+     "code": "002343",
+     "name": "慈文传媒",
+     "boards": 2,
+     "reason": "影视院线",
+     "mv_wan": 316892.111334,
+     "role": "龙头"
+    },
+    {
+     "code": "001330",
+     "name": "博纳影业",
+     "boards": 2,
+     "reason": "影视院线",
+     "mv_wan": 1054256.060728,
+     "role": "助攻"
+    },
+    {
+     "code": "000892",
+     "name": "欢瑞世纪",
+     "boards": 2,
+     "reason": "影视院线",
+     "mv_wan": 523843.572582,
+     "role": "助攻"
+    },
+    {
+     "code": "601595",
+     "name": "上海电影",
+     "boards": 2,
+     "reason": "影视院线",
+     "mv_wan": 1219552.2,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "装修装饰"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605287",
+    "name": "德才股份",
+    "boards": 2,
+    "seal_money": 239409300.0,
+    "mv_wan": 618800.0
+   },
+   "members": [
+    {
+     "code": "605287",
+     "name": "德才股份",
+     "boards": 2,
+     "reason": "装修装饰",
+     "mv_wan": 618800.0,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "电网设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002692",
+    "name": "远程股份",
+    "boards": 2,
+    "seal_money": 76709408.0,
+    "mv_wan": 376308.5040000001
+   },
+   "members": [
+    {
+     "code": "688517",
+     "name": "金冠电气",
+     "boards": 1,
+     "reason": "电网设备",
+     "mv_wan": null,
+     "role": "助攻"
+    },
+    {
+     "code": "600192",
+     "name": "长城电工",
+     "boards": 1,
+     "reason": "电网设备",
+     "mv_wan": 350306.164,
+     "role": "助攻"
+    },
+    {
+     "code": "002441",
+     "name": "众业达",
+     "boards": 1,
+     "reason": "电网设备",
+     "mv_wan": 501524.663889,
+     "role": "中军"
+    },
+    {
+     "code": "002692",
+     "name": "远程股份",
+     "boards": 2,
+     "reason": "电网设备",
+     "mv_wan": 376308.5040000001,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "互联网电"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605136",
+    "name": "丽人丽妆",
+    "boards": 2,
+    "seal_money": 183524835.0,
+    "mv_wan": 415675.923
+   },
+   "members": [
+    {
+     "code": "605136",
+     "name": "丽人丽妆",
+     "boards": 2,
+     "reason": "互联网电",
+     "mv_wan": 415675.923,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "电视广播"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "601929",
+    "name": "吉视传媒",
+    "boards": 2,
+    "seal_money": 98932350.0,
+    "mv_wan": 959691.7461999999
+   },
+   "members": [
+    {
+     "code": "600831",
+     "name": "广电网络",
+     "boards": 1,
+     "reason": "电视广播",
+     "mv_wan": 277980.27387200005,
+     "role": "中军"
+    },
+    {
+     "code": "601929",
+     "name": "吉视传媒",
+     "boards": 2,
+     "reason": "电视广播",
+     "mv_wan": 959691.7461999999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "软件开发"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603232",
+    "name": "格尔软件",
+    "boards": 2,
+    "seal_money": 57931163.0,
+    "mv_wan": 434395.17146
+   },
+   "members": [
+    {
+     "code": "603528",
+     "name": "多伦科技",
+     "boards": 1,
+     "reason": "软件开发",
+     "mv_wan": 497680.74235499994,
+     "role": "中军"
+    },
+    {
+     "code": "603232",
+     "name": "格尔软件",
+     "boards": 2,
+     "reason": "软件开发",
+     "mv_wan": 434395.17146,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链11",
+   "shared_words": [
+    "数字媒体"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603533",
+    "name": "掌阅科技",
+    "boards": 2,
+    "seal_money": 88316072.0,
+    "mv_wan": 1228033.34433
+   },
+   "members": [
+    {
+     "code": "603533",
+     "name": "掌阅科技",
+     "boards": 2,
+     "reason": "数字媒体",
+     "mv_wan": 1228033.34433,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "饲料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002696",
+    "name": "百洋股份",
+    "boards": 2,
+    "seal_money": 42501874.0,
+    "mv_wan": 278332.15676
+   },
+   "members": [
+    {
+     "code": "002696",
+     "name": "百洋股份",
+     "boards": 2,
+     "reason": "饲料",
+     "mv_wan": 278332.15676,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 17,
+   "chain_name": "自动链17",
+   "shared_words": [
+    "化学制品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "300829",
+    "name": "金丹科技",
+    "boards": 1,
+    "seal_money": 130509594.0,
+    "mv_wan": 636824.849814
+   },
+   "members": [
+    {
+     "code": "300829",
+     "name": "金丹科技",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 636824.849814,
+     "role": "龙头"
+    },
+    {
+     "code": "603968",
+     "name": "醋化股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 266846.4,
+     "role": "中军"
+    },
+    {
+     "code": "002591",
+     "name": "恒大高新",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 214942.83054400003,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 19,
+   "chain_name": "自动链19",
+   "shared_words": [
+    "IT服务Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "688004",
+    "name": "博汇科技",
+    "boards": 1,
+    "seal_money": 27648812.0,
+    "mv_wan": null
+   },
+   "members": [
+    {
+     "code": "688004",
+     "name": "博汇科技",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": null,
+     "role": "龙头"
+    },
+    {
+     "code": "002908",
+     "name": "德生科技",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 346008.534576,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

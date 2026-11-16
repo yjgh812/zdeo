@@ -1,0 +1,66 @@
+[
+ {
+  "code": "601009",
+  "name": "南京银行",
+  "source": "master_hist",
+  "sector": "",
+  "price": 11.66,
+  "volume": 1000
+ },
+ {
+  "code": "601328",
+  "name": "交通银行",
+  "source": "master_hist",
+  "sector": "银行",
+  "price": 7.13,
+  "volume": 1600
+ },
+ {
+  "code": "002379",
+  "name": "宏桥控股",
+  "source": "bp_ep",
+  "sector": "铝",
+  "price": 18.32,
+  "volume": 500
+ },
+ {
+  "code": "300443",
+  "name": "金雷股份",
+  "source": "smc_s2_roe",
+  "sector": "",
+  "price": 18.73,
+  "volume": 600
+ },
+ {
+  "code": "000001",
+  "name": "平安银行",
+  "source": "full_market",
+  "sector": "银行",
+  "price": 11.67,
+  "volume": 500
+ },
+ {
+  "code": "601800",
+  "name": "中国交建",
+  "source": "full_market",
+  "sector": "建筑工程",
+  "price": 5.99,
+  "volume": 1000
+ },
+ {
+  "code": "000617",
+  "name": "中油资本",
+  "source": "mass_scan",
+  "sector": "",
+  "price": 7.31,
+  "volume": 2000
+ },
+ {
+  "code": "002999",
+  "name": "天禾股份",
+  "source": "hotspot_breakout",
+  "sector": "基础化工",
+  "price": 6.26,
+  "volume": 1900
+ }
+]

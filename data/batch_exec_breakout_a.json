@@ -1,0 +1,72 @@
+[
+ {
+  "code": "603278",
+  "name": "大业股份",
+  "volume": 100,
+  "price": 17.42,
+  "source": "breakout_ab_A",
+  "sector": "机械设备",
+  "prev_close": 17.25,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "300307",
+  "name": "慈星股份",
+  "volume": 100,
+  "price": 9.46,
+  "source": "breakout_ab_A",
+  "sector": "机械设备",
+  "prev_close": 9.37,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "000700",
+  "name": "模塑科技",
+  "volume": 100,
+  "price": 13.2,
+  "source": "breakout_ab_A",
+  "sector": "汽车",
+  "prev_close": 13.07,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "资金推动",
+  "owner_override_session": true
+ },
+ {
+  "code": "002439",
+  "name": "启明星辰",
+  "volume": 100,
+  "price": 15.25,
+  "source": "breakout_ab_A",
+  "sector": "计算机",
+  "prev_close": 15.1,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "300015",
+  "name": "爱尔眼科",
+  "volume": 100,
+  "price": 8.5,
+  "source": "breakout_ab_A",
+  "sector": "医药生物",
+  "prev_close": 8.42,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ }
+]

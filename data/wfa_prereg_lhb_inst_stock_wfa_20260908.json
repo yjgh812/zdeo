@@ -1,0 +1,20 @@
+{
+  "prereg_id": "lhb_inst_stock_wfa_20260908",
+  "created": "2026-09-08",
+  "owner_directive": "主人'继续'=执行 #2b 登记观察的转生产流程第一步: wfa_gate 立项判定(9/2 圆弧底同流程)",
+  "candidate": "上榜股内机构净买强度五分位 Q5(机构净买/accum_amount 最高分位), 信号=股票-日, cooldown 10 bar",
+  "data_and_ruler": "复用 classical_pattern_prescreen 的 load_universe/load_wide/ruler(cooldown)——费后尺子: 次日开盘买入(停牌/开盘涨停=信号作废), 持有 N10 尽快卖(跌停拦卖次bar重试≤10), 佣金 max(万2.5,5元)+印花税 0.05%; 口径警示: 上轮 +3.44% 为无费收盘收益, 本轮费后+开盘口径预计显著缩水(上榜股次日高开), C1 未必过——此即闸门意义",
+  "oos_lock": "一切统计 end=20251231(真窗 20260826 后零触碰)",
+  "criteria": {
+    "C1": "验证段(2016-2025) Q5 费后 N10 均值>0 且 t>=3",
+    "C2": "正值年 >= 6/10",
+    "C3": "滚动前向(expanding 年末→下一年 Q5 组均值符号)命中 >= 6/9",
+    "C4": "最差年费后均值 > -5%",
+    "C5_median_check": "主人点名防右尾幻觉: Q5 组**月度收益中位数>0** 的月占比 >= 55%"
+  },
+  "verdicts": {
+    "all_pass": "PASS_candidate_wfa(非生产放行): 真窗 OOS(20260826 后)积累≥60交易日复核为正方可提请生产, 为负即归档禁复活; 验证点登记 SELF_REVIEW_ACTIONS",
+    "any_fail": "FAIL 归档(候选终结, wfa_trials 登记)"
+  },
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/WFA_LHB_INST_STOCK_20260908.{json,md} + wfa_trials.jsonl"
+}

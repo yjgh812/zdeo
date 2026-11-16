@@ -1,0 +1,224 @@
+{
+ "by_tier": {
+  "20-40": {
+   "n": 19671,
+   "nxt_med": 0.76,
+   "nxt_mean": 1.43,
+   "nxt_win": 54.3,
+   "fwd5_med": -1.95,
+   "fwd5_mean": 1.08,
+   "fwd5_win": 41.8,
+   "sealed_pct": 11.2
+  },
+  "40-60": {
+   "n": 36072,
+   "nxt_med": 0.88,
+   "nxt_mean": 2.01,
+   "nxt_win": 54.7,
+   "fwd5_med": -1.84,
+   "fwd5_mean": 0.69,
+   "fwd5_win": 42.6,
+   "sealed_pct": 9.4
+  },
+  "60-100": {
+   "n": 55356,
+   "nxt_med": 0.74,
+   "nxt_mean": 0.35,
+   "nxt_win": 54.4,
+   "fwd5_med": -1.35,
+   "fwd5_mean": 0.12,
+   "fwd5_win": 44.5,
+   "sealed_pct": 7.8
+  },
+  "<20": {
+   "n": 2563,
+   "nxt_med": 1.4,
+   "nxt_mean": 4.28,
+   "nxt_win": 57.8,
+   "fwd5_med": -0.84,
+   "fwd5_mean": 4.47,
+   "fwd5_win": 46.1,
+   "sealed_pct": 16.4
+  },
+  ">=100": {
+   "n": 42487,
+   "nxt_med": 1.73,
+   "nxt_mean": 1.31,
+   "nxt_win": 59.8,
+   "fwd5_med": -0.98,
+   "fwd5_mean": 0.56,
+   "fwd5_win": 46.2,
+   "sealed_pct": 7.8
+  }
+ },
+ "ice_seal": {
+  "封死": {
+   "n": 420,
+   "nxt_med": 4.21,
+   "nxt_mean": 4.58,
+   "nxt_win": 62.6,
+   "fwd5_med": 4.31,
+   "fwd5_mean": 11.65,
+   "fwd5_win": 59.0,
+   "sealed_pct": 100.0
+  },
+  "炸板": {
+   "n": 2143,
+   "nxt_med": 1.11,
+   "nxt_mean": 4.22,
+   "nxt_win": 56.8,
+   "fwd5_med": -1.24,
+   "fwd5_mean": 3.07,
+   "fwd5_win": 43.5,
+   "sealed_pct": 0.0
+  }
+ },
+ "ice_streak": {
+  "1": {
+   "n": 1860,
+   "nxt_med": 1.24,
+   "nxt_mean": 2.97,
+   "nxt_win": 56.4,
+   "fwd5_med": -1.12,
+   "fwd5_mean": 1.95,
+   "fwd5_win": 44.5,
+   "sealed_pct": 14.9
+  },
+  "2-3": {
+   "n": 671,
+   "nxt_med": 1.78,
+   "nxt_mean": 7.59,
+   "nxt_win": 61.1,
+   "fwd5_med": 0.22,
+   "fwd5_mean": 11.9,
+   "fwd5_win": 50.7,
+   "sealed_pct": 20.6
+  },
+  ">=4": {
+   "n": 32,
+   "nxt_med": 2.92,
+   "nxt_mean": 10.71,
+   "nxt_win": 68.8,
+   "fwd5_med": -0.64,
+   "fwd5_mean": -4.44,
+   "fwd5_win": 43.8,
+   "sealed_pct": 15.6
+  }
+ },
+ "ice_mom": {
+  "-10~0": {
+   "n": 245,
+   "nxt_med": 2.02,
+   "nxt_mean": 2.83,
+   "nxt_win": 61.2,
+   "fwd5_med": 0.42,
+   "fwd5_mean": 4.33,
+   "fwd5_win": 53.1,
+   "sealed_pct": 17.1
+  },
+  "0~10%": {
+   "n": 482,
+   "nxt_med": 1.22,
+   "nxt_mean": 2.09,
+   "nxt_win": 58.7,
+   "fwd5_med": -0.48,
+   "fwd5_mean": 1.45,
+   "fwd5_win": 46.7,
+   "sealed_pct": 12.0
+  },
+  "<-10%": {
+   "n": 369,
+   "nxt_med": 3.1,
+   "nxt_mean": 18.39,
+   "nxt_win": 61.5,
+   "fwd5_med": 1.73,
+   "fwd5_mean": 23.46,
+   "fwd5_win": 53.7,
+   "sealed_pct": 23.3
+  },
+  ">10%": {
+   "n": 1467,
+   "nxt_med": 1.16,
+   "nxt_mean": 1.68,
+   "nxt_win": 56.0,
+   "fwd5_med": -1.99,
+   "fwd5_mean": 0.71,
+   "fwd5_win": 42.8,
+   "sealed_pct": 16.0
+  }
+ },
+ "ice_vr": {
+  "1-1.5x": {
+   "n": 422,
+   "nxt_med": 1.26,
+   "nxt_mean": 8.14,
+   "nxt_win": 55.2,
+   "fwd5_med": 0.32,
+   "fwd5_mean": 11.53,
+   "fwd5_win": 50.5,
+   "sealed_pct": 18.5
+  },
+  "1.5-2.5x": {
+   "n": 557,
+   "nxt_med": 1.24,
+   "nxt_mean": 2.8,
+   "nxt_win": 60.0,
+   "fwd5_med": -1.61,
+   "fwd5_mean": 1.17,
+   "fwd5_win": 43.4,
+   "sealed_pct": 8.1
+  },
+  "<1x": {
+   "n": 534,
+   "nxt_med": 3.85,
+   "nxt_mean": 9.25,
+   "nxt_win": 61.0,
+   "fwd5_med": 0.83,
+   "fwd5_mean": 11.92,
+   "fwd5_win": 52.1,
+   "sealed_pct": 44.2
+  },
+  ">2.5x": {
+   "n": 1050,
+   "nxt_med": 1.03,
+   "nxt_mean": 0.97,
+   "nxt_win": 56.0,
+   "fwd5_med": -1.15,
+   "fwd5_mean": -0.4,
+   "fwd5_win": 42.7,
+   "sealed_pct": 5.8
+  }
+ },
+ "verdicts": [
+  {
+   "温度档": {
+    "range_pp": 0.99,
+    "verdict": "不能用"
+   }
+  },
+  {
+   "封死vs炸板": {
+    "range_pp": 3.1,
+    "verdict": "能用"
+   }
+  },
+  {
+   "连续冰日天数": {
+    "range_pp": 1.68,
+    "verdict": "边缘"
+   }
+  },
+  {
+   "前20日动量": {
+    "range_pp": 1.94,
+    "verdict": "边缘"
+   }
+  },
+  {
+   "量比": {
+    "range_pp": 2.82,
+    "verdict": "边缘"
+   }
+  }
+ ]
+}

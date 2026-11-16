@@ -1,0 +1,35 @@
+{
+  "n_hit": 49871,
+  "n_miss": 40589,
+  "miss_avg_ret_pct": -3.616,
+  "miss_median_ret_pct": -3.123,
+  "miss_p5_pct": -10.42,
+  "miss_p25_pct": -5.61,
+  "miss_p75_pct": -0.49,
+  "miss_p95_pct": 1.07,
+  "hit_avg_ret_pct": 2.7,
+  "hit_median_ret_pct": 2.7,
+  "n_blackswan_gt5pct": 12238,
+  "blackswan_ratio_pct": 13.53,
+  "blackswan_avg_ret_pct": -7.98,
+  "stop_-0.03": {
+    "avg_ret_pct": 0.631,
+    "win_pct": 60.0,
+    "delta_avg": 0.766
+  },
+  "stop_-0.05": {
+    "avg_ret_pct": 0.269,
+    "win_pct": 60.0,
+    "delta_avg": 0.403
+  },
+  "stop_-0.07": {
+    "avg_ret_pct": 0.068,
+    "win_pct": 60.0,
+    "delta_avg": 0.203
+  },
+  "stop_-0.1": {
+    "avg_ret_pct": -0.069,
+    "win_pct": 60.0,
+    "delta_avg": 0.065
+  }
+}

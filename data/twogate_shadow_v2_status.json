@@ -1,0 +1,26 @@
+{
+ "asof": 20261027,
+ "total_rows": 1484,
+ "settled": 872,
+ "pending": 612,
+ "signal_days": 4,
+ "v2过门": {
+  "n": 872,
+  "net_mean": -0.06108,
+  "win": 0.1468
+ },
+ "v2冰点排除": {
+  "n": 0
+ },
+ "v1同窗过门": {
+  "n": 0
+ },
+ "差值pp": null,
+ "judge": {
+  "J1_不劣于V1(容差-0.3pp)": false,
+  "J2_冰点排除显著负": false
+ },
+ "window": "≥30交易日对照后呈主人终裁切主; FAIL→V2废弃归档",
+ "fingerprint": "e33828faa7f4e306",
+ "engine": "v2"
+}

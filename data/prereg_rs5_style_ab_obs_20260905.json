@@ -1,0 +1,13 @@
+{
+ "id": "20260905-rs5-style-ab-obs-v1",
+ "ts": "2026-09-05T23:30:00",
+ "object": "R-S5 不追高风格闸 A/B 纸面对照首验登记 —— R-S5 9/5 上线（会话源 REJECT/生产源 WARN 双轨），9/30 首验裁决是否升级",
+ "decision_rule_LOCKED": "首验日 2026-09-30（及以后）跑 python style_ab_track.py eval（fwd5/fwd10 双口径，次开等权，无费用观察口径；A=过滤后名单 vs B=原始名单纸面）；产出对照证据交主人裁决是否将生产名单源 R-S5 从 WARN 升级 REJECT——本登记无预设通过阈值（对照证据收集型），升级与否 owner=主人",
+ "boundary_LOCKED": "R-S5 现行语义不动：会话选股源 manual_confirmed/mass_scan/full_market mom20>+2% REJECT（裁决A硬约束）+生产名单源 WARN + --owner-approve-rs5 特批降级；本登记仅保障 9/30 首验触发，不改任何闸门行为；风格闸新规上线必同步审 l0 冒烟预期（--owner-approve-rs5 锚定）",
+ "observation_LOCKED": {
+  "数据积累": "9/5 起每交易日 daily_trade_plan append_style_checkup 自动登记 data/style_ab_track.jsonl（原始/过滤后双名单）",
+  "已知口径": "eval 对未实现 fwd 窗口结构化 skipped_days/null 不伪造（9/5 预演实测 status=ok n_days=1 skipped=1）；CLI --force 同日替换对齐合同",
+  "首验前置": "9/23 前登记行的 fwd5 已实现方有对照意义；不足则如实不足延后，禁伪造"
+ },
+ "review_checkpoint": "2026-09-30 R-S5 A/B 首验（style_ab_track eval；SOP 9/5 R-S5 条目+台账§八）"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "PREREG_TREND_SYSTEM_V1",
+  "date": "20261114",
+  "trigger": "主人11-14批准趋势体系全历史实测（打板重启同款协议）",
+  "why_testable": "旧证伪均为单条信号口径；本材料=多级系统组合，组合本身未测过=条件差异可立项。先验如实声明为负。",
+  "universe": {
+    "data": "dragon_quant_qfq.db stock_daily_meta_qfq（回测唯一价格源）",
+    "计算窗": "20140101起预热，信号窗20160101-20261113",
+    "exclude": "4/8/9/68开头（北交所/科创）；次新=有效历史<60bar不触发；ST按st_history.db按(code,date)判定，缺记录carry-forward最后已知态（st_daily MAX=20261023后为近似）；申万L1映射=stock_sector_sw1当前快照向前应用（近似）",
+    "price_band": "信号日收盘∈[2,30]元，qfq口径（承打板先例）",
+    "entry_limit_skip": "入场日开盘涨幅≥9.8%（创业板19.8%）=开盘涨停跳过"
+  },
+  "sector_definition": {
+    "taxonomy": "板块=申万一级31板块（与R30b同口径）",
+    "synthetic_index": "成员等权日收益累乘（无PIT申万指数日线，已声明近似）",
+    "sector_trend": "合成指数>MA20且MA20上行",
+    "sector_volume": "成员等权平均量比≥1.0（量比=vol[t]/mean(vol[t-4..t])）",
+    "sector_effect": "板块内趋势股（close>MA20且MA20上行）占比>20%且≥3只"
+  },
+  "four_gates": {
+    "趋势关": "close>MA20，MA5>MA10>MA20，三线各自上行",
+    "量能关": "近5bar上涨日均量≥下跌日均量（全涨=过；全跌=不过）",
+    "回调关": "min(low[t-9..t])>MA20[t]（'幅度小'无量化边界未纳入，如实声明）",
+    "结构关": "近60bar存在k∈[t-59..t-1]使close[k]>max(close[k-20..k-1])"
+  },
+  "resonance_entry": "①MA5>MA10>MA20三线上行；②MACD DIF>DEA且DIF>0（EMA12/26/9）；③vol>1.3×前5bar均量（不含当日）；④close创20日新高且收阳；⑤板块三条件当日成立",
+  "arms": {
+    "A_主判据": "板块+四关+共振，D后第1..3个有行情bar的close≥P且max≥1.03P→第4个有行情bar开盘买",
+    "B_管线无确认": "板块+四关+共振→D后第1个有行情bar开盘买",
+    "C_纯共振": "仅共振①-④（无板块无四关）→D+1开盘买。归因：C→B=层级增量，B→A=确认增量，嵌套子集，禁事后增臂"
+  },
+  "exit_rules": "close≤入场×0.92→t+1开盘卖；close<前20bar低点min→t+20日低点移动止盈→t+1开盘卖；60bar上限→次日开盘强平；全next-bar。ATR与3-5%固定止损不纳入（ATR替换-8%已被S-4证伪；取材料另一主张=20日低点移动止盈）",
+  "costs": "双边合计0.3%基准+0.5%敏感档",
+  "benchmark": "全池（剔4/8/9/68+当日ST）等权日收益累乘；超额=净收益−基准(entry_date→exit_date)",
+  "judgment": {
+    "primary": "ARM-A",
+    "criteria": "P1超额均值>0；P2入场日聚簇NW(5) t≥2且簇数≥30；P3分年正超额年份占比≥50%（仅计n≥30年份，无年份n≥30则P3=False）。PASS=三条全过=可提请立项评估（不自动接线）；任一不过=FAIL归档禁复活"
+  },
+  "discipline": "零交易权；一词一定义禁事后调参；三臂一次声明；双跑diff一致（除时间戳）；报告含指纹校验",
+  "fingerprint": "b5fe90358042ca73"
+}

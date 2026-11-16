@@ -1,0 +1,28 @@
+{
+  "pd_id": "PD-035",
+  "name": "CONCEPT_STAGE_SHADOW",
+  "created": "2026-10-07",
+  "owner_input": "主人趋势低吸框架(主线为王/阶段判定)+「继续」批准机械化落地(按PD-024①/PD-034先例)",
+  "evidence": "reports/trend_framework_crosscheck_20261007.md 附录二: 概念级三轮验证(行业级21年+概念级9主线)",
+  "universe": "9活跃主线概念(eastmoney成分映射现势,日更): 人形机器人/算力概念/CPO概念/固态电池/创新药/军工/低空经济/商业航天/黄金概念; 成分漂移局限=现势成分回溯已声明",
+  "stage_rule": "四阶段量价规则(LOCKED): 主升=板块rank20前20%∧aboveMA20∧ret5>=0; 鱼尾=rank20前20%∧aboveMA20∧ret5<0; 酝酿启动=aboveMA60∧rank20 40-80%; 退潮=belowMA20; 板块指数=成分等权收益累计(qfq自算)",
+  "dip_signal": "分歧日=板块单日ew_ret<=-2.5%∧aboveMA60; 核心股=当日抗跌(个股涨跌幅-板块涨跌幅>0)∧板块内成交额前50%; 买入口径=T+1起收盘持有(与验证同口径)",
+  "shadow_window": "20261008起60个交易日(≈20261230)",
+  "gates": "G1=主升阶段板块信号fwd20中位>=+1.0pp; G2=主升分歧日核心股fwd20中位>=+1.0pp且胜率>=52%; G3=分歧日核心股样本n>=10; 三门全过->呈请第二道裁决(admitted信号源/闸门候选); 任一门不过->归档falsified",
+  "gate_basis": "预钉阈值锚定概念级实测(主升+1.40%/win57.6%;主升分歧核心股+1.71%/win54.8%)留衰减余量",
+  "layers": {
+    "layer1_daily": "concept_stage_daily.py 每日阶段判定+分歧日检测(观测层零交易权, 07:45六合一第7步)",
+    "layer2_brief": "晨报呈现(09:15第9步): 各概念当前阶段+分歧日核心股清单",
+    "layer3_gate": "admitted信号源/闸门候选——未满窗且未获主人第二道裁决前禁止接线"
+  },
+  "boundary": "观测层与影子层零交易权; 简报呈现为研判参考非自动拦截; 成分漂移=现势成分回溯(每日重算, 实时成分即当日口径, 无历史成分库); 等权指数与验证同口径",
+  "fingerprint": "9981cc8e618d4800",
+  "amendments": [
+    {
+      "date": "2026-10-07",
+      "type": "owner_authorization",
+      "title": "2026-10-07主人批准分歧日核心股pilo",
+      "note": "2026-10-07主人批准分歧日核心股pilot化(signal_pilot.py dipcore源),layer3信号源化提前激活;四阶段规则与判据不变"
+    }
+  ]
+}

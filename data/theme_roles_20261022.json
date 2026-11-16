@@ -1,0 +1,412 @@
+{
+ "date": "20261022",
+ "total_limitup": 33,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603278",
+    "name": "大业股份",
+    "boards": 5,
+    "seal_money": 257839798.0,
+    "mv_wan": 495892.8894
+   },
+   "members": [
+    {
+     "code": "603278",
+     "name": "大业股份",
+     "boards": 5,
+     "reason": "通用设备",
+     "mv_wan": 495892.8894,
+     "role": "龙头"
+    },
+    {
+     "code": "000530",
+     "name": "冰山冷热",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 800208.6625,
+     "role": "中军"
+    },
+    {
+     "code": "600202",
+     "name": "哈空调",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 234987.8491,
+     "role": "助攻"
+    },
+    {
+     "code": "603028",
+     "name": "赛福天",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 221272.6752,
+     "role": "补涨"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "照明设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002724",
+    "name": "海洋王",
+    "boards": 5,
+    "seal_money": 67839332.0,
+    "mv_wan": 864849.258
+   },
+   "members": [
+    {
+     "code": "002076",
+     "name": "星光股份",
+     "boards": 3,
+     "reason": "照明设备",
+     "mv_wan": 299463.615,
+     "role": "助攻"
+    },
+    {
+     "code": "002724",
+     "name": "海洋王",
+     "boards": 5,
+     "reason": "照明设备",
+     "mv_wan": 864849.258,
+     "role": "龙头"
+    },
+    {
+     "code": "600261",
+     "name": "阳光照明",
+     "boards": 1,
+     "reason": "照明设备",
+     "mv_wan": 480619.08,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "玻璃玻纤"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600293",
+    "name": "三峡新材",
+    "boards": 3,
+    "seal_money": 443254288.0,
+    "mv_wan": 606755.835
+   },
+   "members": [
+    {
+     "code": "600293",
+     "name": "三峡新材",
+     "boards": 3,
+     "reason": "玻璃玻纤",
+     "mv_wan": 606755.835,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "塑料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603330",
+    "name": "天洋新材",
+    "boards": 2,
+    "seal_money": 46032277.0,
+    "mv_wan": 480267.696
+   },
+   "members": [
+    {
+     "code": "603330",
+     "name": "天洋新材",
+     "boards": 2,
+     "reason": "塑料",
+     "mv_wan": 480267.696,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "一般零售"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600838",
+    "name": "上海九百",
+    "boards": 2,
+    "seal_money": 45120000.0,
+    "mv_wan": 400882.0
+   },
+   "members": [
+    {
+     "code": "600838",
+     "name": "上海九百",
+     "boards": 2,
+     "reason": "一般零售",
+     "mv_wan": 400882.0,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "IT服务Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603138",
+    "name": "海量数据",
+    "boards": 2,
+    "seal_money": 18288861.0,
+    "mv_wan": 496789.4736
+   },
+   "members": [
+    {
+     "code": "603138",
+     "name": "海量数据",
+     "boards": 2,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 496789.4736,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "出版"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "601999",
+    "name": "出版传媒",
+    "boards": 2,
+    "seal_money": 4023162.0,
+    "mv_wan": 472684.8126
+   },
+   "members": [
+    {
+     "code": "601999",
+     "name": "出版传媒",
+     "boards": 2,
+     "reason": "出版",
+     "mv_wan": 472684.8126,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "电机Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002249",
+    "name": "大洋电机",
+    "boards": 1,
+    "seal_money": 207334189.0,
+    "mv_wan": 1747208.5324
+   },
+   "members": [
+    {
+     "code": "003021",
+     "name": "兆威机电",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 2234374.1753,
+     "role": "助攻"
+    },
+    {
+     "code": "603350",
+     "name": "安乃达",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 343383.04,
+     "role": "助攻"
+    },
+    {
+     "code": "002249",
+     "name": "大洋电机",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 1747208.5324,
+     "role": "龙头"
+    },
+    {
+     "code": "301502",
+     "name": "华阳智能",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 308250.9,
+     "role": "助攻"
+    },
+    {
+     "code": "603728",
+     "name": "鸣志电器",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 2281652.9775,
+     "role": "中军"
+    },
+    {
+     "code": "301023",
+     "name": "奕帆传动",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 303040.024,
+     "role": "助攻"
+    },
+    {
+     "code": "603370",
+     "name": "华新精科",
+     "boards": 1,
+     "reason": "电机Ⅱ",
+     "mv_wan": 502281.45,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "专用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001360",
+    "name": "南矿集团",
+    "boards": 1,
+    "seal_money": 326898805.0,
+    "mv_wan": 379032.0
+   },
+   "members": [
+    {
+     "code": "001360",
+     "name": "南矿集团",
+     "boards": 1,
+     "reason": "专用设备",
+     "mv_wan": 379032.0,
+     "role": "龙头"
+    },
+    {
+     "code": "002535",
+     "name": "林州重机",
+     "boards": 1,
+     "reason": "专用设备",
+     "mv_wan": 220462.825,
+     "role": "助攻"
+    },
+    {
+     "code": "601091",
+     "name": "沈鼓集团",
+     "boards": 1,
+     "reason": "专用设备",
+     "mv_wan": 6711385.6108,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "汽车零部"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000678",
+    "name": "襄阳轴承",
+    "boards": 1,
+    "seal_money": 74326139.0,
+    "mv_wan": 552912.9954
+   },
+   "members": [
+    {
+     "code": "603089",
+     "name": "正裕工业",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 298052.4552,
+     "role": "助攻"
+    },
+    {
+     "code": "000678",
+     "name": "襄阳轴承",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 552912.9954,
+     "role": "龙头"
+    },
+    {
+     "code": "600698",
+     "name": "湖南天雁",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 811096.0143,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链11",
+   "shared_words": [
+    "工程机械"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603280",
+    "name": "南方路机",
+    "boards": 1,
+    "seal_money": 46063006.0,
+    "mv_wan": 315029.8702
+   },
+   "members": [
+    {
+     "code": "603280",
+     "name": "南方路机",
+     "boards": 1,
+     "reason": "工程机械",
+     "mv_wan": 315029.8702,
+     "role": "龙头"
+    },
+    {
+     "code": "002097",
+     "name": "山河智能",
+     "boards": 1,
+     "reason": "工程机械",
+     "mv_wan": 780172.0872,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

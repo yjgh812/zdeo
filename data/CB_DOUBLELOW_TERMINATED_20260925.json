@@ -1,0 +1,16 @@
+{
+  "status": "TERMINATED_BY_OWNER",
+  "terminated_at": "2026-09-25",
+  "ruling": "主人令「我们不做可转债」——可转债双低轮动线（L3首站）整体终止，含前向影子模式全部计划",
+  "actions_taken": [
+    "已撤9/28 19:30首信号cron(automation-9c8b3b6f)",
+    "cb_shadow_track.py / fetch_cb_snapshot.py / fetch_cb_fallback.py 保留于git历史但不挂任何调度, 影子全程零交易权零开账(正式台账0期, 2期dry-run仅为9/25演练证据)",
+    "prereg_cb_doublelow_shadow_v1.json(指纹26792bae163b3e44)自本标注起无效力, 终止系主人裁决非gate判据FAIL",
+    "外部知识调研/数据通道侦察/GitHub参数侦察成果保留于reports/ 作为知识资产(若主人将来重提, 证据链完整可复用)"
+  ],
+  "ref": [
+    "reports/cb_doublelow_research_20260925.md",
+    "reports/cb_github_recon_20260925.md",
+    "reports/cb_runbook_20260928.md (已作废)"
+  ]
+}

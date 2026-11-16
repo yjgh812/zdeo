@@ -1,0 +1,23 @@
+{
+  "code": "002582",
+  "name": "test",
+  "board": "深市主板",
+  "source": "manual_confirmed",
+  "tag": "normal",
+  "verdict": "REJECT",
+  "rejects": [
+    "DD_GATE回撤门控: 当前gate=防御档(指数跌破MA20回撤保护期) → 新买入拒绝; 主人特批可用 --owner-approve-ddgate; 止损/卖出退出不受本闸影响"
+  ],
+  "warnings": [
+    "R27名单价偏离: 执行价10.0 vs 名单价9.55 偏离+4.7% > 3%（manual_confirmed 主人特批 → 仅提示）",
+    "R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-16~2026-10-06） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）",
+    "R22双口径闸[fail-open显式标注]: 002582 无双口径快照数据(需先跑22:35采集) → fail-open",
+    "R24板块高潮禁追[no_sector]: 未提供 --sector(申万L1行业名), 无法执行R24板块高潮判定 → fail-open标注"
+  ],
+  "objections": [
+    "当前仅0条反对理由，需人工补充"
+  ],
+  "r7_price_gain": null,
+  "sizing": {},
+  "price_limit": {}
+}

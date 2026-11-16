@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T22:16:31.504494",
+    "cost_per_round_pct": 0.8,
+    "valid_days": 1564
+  },
+  "h1_multiday_alpha": {
+    "1": {
+      "factor": {
+        "n": 266038,
+        "avg_ret": -0.432,
+        "annual": -66.4,
+        "dsr": 0.0
+      },
+      "baseline": {
+        "n": 5543356,
+        "avg_ret": -0.693,
+        "annual": -82.7,
+        "dsr": 0.0
+      },
+      "alpha_per_period_pct": 0.262
+    },
+    "2": {
+      "factor": {
+        "n": 265848,
+        "avg_ret": -0.513,
+        "annual": -47.7,
+        "dsr": 0.0
+      },
+      "baseline": {
+        "n": 5540603,
+        "avg_ret": -0.649,
+        "annual": -56.0,
+        "dsr": 0.0
+      },
+      "alpha_per_period_pct": 0.135
+    },
+    "3": {
+      "factor": {
+        "n": 265564,
+        "avg_ret": -0.624,
+        "annual": -40.9,
+        "dsr": 0.0
+      },
+      "baseline": {
+        "n": 5538836,
+        "avg_ret": -0.607,
+        "annual": -40.0,
+        "dsr": 0.0
+      },
+      "alpha_per_period_pct": -0.017
+    },
+    "5": {
+      "factor": {
+        "n": 264680,
+        "avg_ret": -0.92,
+        "annual": -37.2,
+        "dsr": 0.0
+      },
+      "baseline": {
+        "n": 5533573,
+        "avg_ret": -0.546,
+        "annual": -24.1,
+        "dsr": 0.0
+      },
+      "alpha_per_period_pct": -0.374
+    }
+  },
+  "h2_top10_risk_metrics": {
+    "nav_final": 0.09,
+    "annual_return_pct": -31.6,
+    "sharpe": -0.84,
+    "max_drawdown_pct": 90.8,
+    "calmar": -0.35,
+    "win_rate_daily_pct": 47.4,
+    "positive_months": 31,
+    "total_months": 78,
+    "best_month_pct": 40.2,
+    "worst_month_pct": -25.0,
+    "yearly_returns_pct": {
+      "2020": -30.8,
+      "2021": -74.7,
+      "2022": -22.5,
+      "2023": -3.5,
+      "2024": 60.2,
+      "2025": -63.1,
+      "2026": -58.6
+    }
+  }
+}

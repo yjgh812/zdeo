@@ -1,0 +1,19 @@
+{
+  "prereg_id": "lhb_inst_stocklevel_20260908",
+  "created": "2026-09-08",
+  "owner_directive": "主人'继续'=执行上轮登记线索: 席位明细238万行做个股级机构净买研究(与已归档的指数择时#2不同命题)",
+  "external_source": "华创/通用个股级机构净买因子方法: 机构席位净买额/当日成交额=机构态度强度",
+  "negative_prior_disclosure": "9/6 画像实证: 龙虎榜净买上榜=最强暴跌前兆(下跌lift 6.22/上涨lift 1.65 双重确认=陷阱特征)。方向不预设: 机构净买强可为聪明钱(涨)可为出货陷阱(跌), 如实记录",
+  "design": "条件排序消除选择偏差: 仅在'机构净买上榜的股票-日'内部, 按 inst_net/accum_amount(机构净买强度) 五分位 → 次10日收盘收益(next-bar, qfq)。上榜即异动的共同偏差被条件化消除",
+  "criteria": {
+    "H1": "|Welch_t(Q5,Q1)| >= 2 且 方向一致年 >= 6/10 (方向如实记录)",
+    "sensitivity": "净买为正(机构净买入)样本内 Q5-Q1 作补充"
+  },
+  "verdicts": {
+    "H1_pass_negative": "机构净买强→后续差 = 出货陷阱语义, 与9/6画像互证 → 登记排雷信号(观察族)",
+    "H1_pass_positive": "机构净买强→后续好 = 聪明钱语义 → 登记观察(名单制通道候选, 禁直接生产)",
+    "fail": "无区分度 → 归档"
+  },
+  "oos_lock": "统计 year<=2025",
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/LHB_INST_STOCK_20260908.{json,md} + wfa_trials.jsonl"
+}

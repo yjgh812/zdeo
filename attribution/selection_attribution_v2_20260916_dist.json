@@ -1,0 +1,20 @@
+{
+ "losers_dist": {
+  "n": 133,
+  "alpha_neg": 67,
+  "beta_neg": 80,
+  "both_neg": 35,
+  "pos_ge60": 26,
+  "pos_lt20": 26,
+  "turn_ge80": 62
+ },
+ "winners_dist": {
+  "n": 37,
+  "alpha_neg": 14,
+  "beta_neg": 17,
+  "both_neg": 5,
+  "pos_ge60": 5,
+  "pos_lt20": 13,
+  "turn_ge80": 14
+ }
+}

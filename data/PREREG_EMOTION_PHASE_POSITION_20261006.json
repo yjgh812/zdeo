@@ -1,0 +1,44 @@
+{
+ "name": "PREREG_EMOTION_PHASE_POSITION",
+ "date": "20261006",
+ "version": "v1",
+ "status": "ACTIVE_RETEST_APPROVED_20261006",
+ "background": "基于两项已验证统计：①euphoric/ebbing后市场fwd20 +2.74%/76%与+2.76%/74%（情绪极端后不做空）②healing×rising短线偏强（fwd1 +0.30%/65%）；及第九轮警告（euphoric×rising双高尾段、healing×flat无信息）。G3回测确认单票事件（空间板跌停）不构成市场信号，regime/仓位用广度相位。",
+ "shadow_design": {
+  "window": "激活日起60个交易日",
+  "A_arm": "相位权重曲线（每日按 emotion_phase_v2 台账相位+height_state 定权重，乘当日全市场等权收益）",
+  "B_arm": "基准=恒定满仓等权",
+  "base_weights": {
+   "euphoric": 1.0,
+   "healing": 0.8,
+   "ebbing": 0.6,
+   "diverging": 0.5,
+   "bottom": 0.5
+  },
+  "height_adjust": {
+   "rising": "+0.2(上限1.0)",
+   "flat": "0",
+   "collapse": "-0.2(下限0.3)"
+  },
+  "lock": "基础权重与修正在激活时锁定，影子期内禁止调整"
+ },
+ "three_gates": {
+  "G1": "A臂年化波动较B臂降幅≥10%",
+  "G2": "A臂最大回撤较B臂收窄≥15%",
+  "G3": "A臂CAGR损失≤2pp"
+ },
+ "conclusion_rule": "三门全过→呈主人裁「相位权重曲线接仓位参考」；任一不过→归档不再提",
+ "boundary": "影子纯模拟（等权市场代理非实盘组合）；相位描述轴边界原样有效；零交易权；激活/终止均须主人指令",
+ "data_sources": [
+  "data/emotion_phase_v2_ledger.jsonl(LOCKED只读)",
+  "qfq全市场等权收益(代理)"
+ ],
+ "notes": "权重先验来自fwd统计方向性（非最优化拟合）；本prereg不改动emotion_phase_v2.py本体",
+ "fingerprint": "0fb887e3b115fda4",
+ "suspension_reason": "与已证伪 SENTIMENT-CYCLE-DAILY-ALPHA 同族(情绪状态→日频仓位择时,9/9两轮prereg FAIL+样本外污染);差异点仅height_state修正,属同族新变体,按宪法须引用证伪档案+主人批准方可重测;影子激活回滚,台账未落任何正式行(10/8前0行)",
+ "retest_approval": {
+  "approved_by": "主人 2026-10-06 裁决清单①「相位影子重测批准(低频状态档vs日频切换的差异论证已备)」",
+  "falsified_family_ref": "SENTIMENT-CYCLE-DAILY-ALPHA (9/9两轮prereg FAIL+样本外污染在案)",
+  "difference_argument": "本重测为低频状态档位(相位×高度→权重曲线, 非日频切换频繁调仓); 唯一新变体点=height_state修正(第九轮交叉研究: healing×rising fwd1+0.30%/65% vs healing×flat -0.09%); 三门判据未变"
+ }
+}

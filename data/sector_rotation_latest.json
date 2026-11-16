@@ -1,0 +1,264 @@
+{
+ "asof": 20261029,
+ "generated": "2026-10-30 09:43",
+ "market_today": -0.0215,
+ "market_mom20": -0.1212,
+ "whitelist": [
+  "银行",
+  "煤炭",
+  "食品饮料",
+  "交通运输",
+  "农林牧渔",
+  "国防军工",
+  "社会服务",
+  "公用事业",
+  "非银金融",
+  "石油石化",
+  "商贸零售",
+  "医药生物",
+  "传媒",
+  "钢铁",
+  "家用电器",
+  "纺织服饰"
+ ],
+ "blacklist": [
+  "建筑装饰",
+  "电力设备",
+  "基础化工",
+  "有色金属",
+  "机械设备",
+  "电子",
+  "通信"
+ ],
+ "neutral": [
+  "轻工制造",
+  "综合",
+  "环保",
+  "房地产",
+  "建筑材料",
+  "汽车",
+  "美容护理",
+  "计算机"
+ ],
+ "crowded_warning": [],
+ "filter_verdict": "PAUSE(市场当日下跌,不建议买入)",
+ "sectors": [
+  {
+   "l1": "银行",
+   "today_ret": 0.0227,
+   "mom20": 0.0492,
+   "crowding": 0.79,
+   "vs_mkt_today": 0.0442
+  },
+  {
+   "l1": "煤炭",
+   "today_ret": 0.016,
+   "mom20": -0.0365,
+   "crowding": 0.6,
+   "vs_mkt_today": 0.0375
+  },
+  {
+   "l1": "食品饮料",
+   "today_ret": 0.0068,
+   "mom20": -0.0041,
+   "crowding": 0.71,
+   "vs_mkt_today": 0.0283
+  },
+  {
+   "l1": "交通运输",
+   "today_ret": -0.0029,
+   "mom20": -0.0372,
+   "crowding": 0.65,
+   "vs_mkt_today": 0.0186
+  },
+  {
+   "l1": "农林牧渔",
+   "today_ret": -0.0071,
+   "mom20": -0.1151,
+   "crowding": 0.47,
+   "vs_mkt_today": 0.0144
+  },
+  {
+   "l1": "国防军工",
+   "today_ret": -0.0084,
+   "mom20": -0.124,
+   "crowding": 0.84,
+   "vs_mkt_today": 0.0131
+  },
+  {
+   "l1": "社会服务",
+   "today_ret": -0.0108,
+   "mom20": -0.1385,
+   "crowding": 0.57,
+   "vs_mkt_today": 0.0107
+  },
+  {
+   "l1": "公用事业",
+   "today_ret": -0.0111,
+   "mom20": -0.0938,
+   "crowding": 0.6,
+   "vs_mkt_today": 0.0104
+  },
+  {
+   "l1": "非银金融",
+   "today_ret": -0.0131,
+   "mom20": -0.0931,
+   "crowding": 0.78,
+   "vs_mkt_today": 0.0084
+  },
+  {
+   "l1": "石油石化",
+   "today_ret": -0.0151,
+   "mom20": -0.0662,
+   "crowding": 0.73,
+   "vs_mkt_today": 0.0064
+  },
+  {
+   "l1": "商贸零售",
+   "today_ret": -0.016,
+   "mom20": -0.0932,
+   "crowding": 0.75,
+   "vs_mkt_today": 0.0055
+  },
+  {
+   "l1": "医药生物",
+   "today_ret": -0.0163,
+   "mom20": -0.1029,
+   "crowding": 0.55,
+   "vs_mkt_today": 0.0052
+  },
+  {
+   "l1": "传媒",
+   "today_ret": -0.017,
+   "mom20": -0.0063,
+   "crowding": 0.64,
+   "vs_mkt_today": 0.0045
+  },
+  {
+   "l1": "钢铁",
+   "today_ret": -0.0182,
+   "mom20": -0.1279,
+   "crowding": 0.51,
+   "vs_mkt_today": 0.0033
+  },
+  {
+   "l1": "家用电器",
+   "today_ret": -0.0184,
+   "mom20": -0.119,
+   "crowding": 0.75,
+   "vs_mkt_today": 0.0031
+  },
+  {
+   "l1": "纺织服饰",
+   "today_ret": -0.0211,
+   "mom20": -0.1034,
+   "crowding": 0.6,
+   "vs_mkt_today": 0.0004
+  },
+  {
+   "l1": "轻工制造",
+   "today_ret": -0.0215,
+   "mom20": -0.1426,
+   "crowding": 0.57,
+   "vs_mkt_today": -0.0
+  },
+  {
+   "l1": "综合",
+   "today_ret": -0.0225,
+   "mom20": -0.1173,
+   "crowding": 0.53,
+   "vs_mkt_today": -0.001
+  },
+  {
+   "l1": "建筑装饰",
+   "today_ret": -0.023,
+   "mom20": -0.1717,
+   "crowding": 0.59,
+   "vs_mkt_today": -0.0015
+  },
+  {
+   "l1": "环保",
+   "today_ret": -0.0246,
+   "mom20": -0.1388,
+   "crowding": 0.57,
+   "vs_mkt_today": -0.0031
+  },
+  {
+   "l1": "电力设备",
+   "today_ret": -0.0265,
+   "mom20": -0.1753,
+   "crowding": 0.56,
+   "vs_mkt_today": -0.005
+  },
+  {
+   "l1": "房地产",
+   "today_ret": -0.0297,
+   "mom20": -0.1294,
+   "crowding": 0.39,
+   "vs_mkt_today": -0.0082
+  },
+  {
+   "l1": "建筑材料",
+   "today_ret": -0.0323,
+   "mom20": -0.1606,
+   "crowding": 0.55,
+   "vs_mkt_today": -0.0108
+  },
+  {
+   "l1": "基础化工",
+   "today_ret": -0.0327,
+   "mom20": -0.1922,
+   "crowding": 0.57,
+   "vs_mkt_today": -0.0112
+  },
+  {
+   "l1": "汽车",
+   "today_ret": -0.0329,
+   "mom20": -0.0983,
+   "crowding": 0.82,
+   "vs_mkt_today": -0.0114
+  },
+  {
+   "l1": "美容护理",
+   "today_ret": -0.0342,
+   "mom20": -0.0824,
+   "crowding": 0.61,
+   "vs_mkt_today": -0.0127
+  },
+  {
+   "l1": "有色金属",
+   "today_ret": -0.0344,
+   "mom20": -0.2214,
+   "crowding": 0.54,
+   "vs_mkt_today": -0.0129
+  },
+  {
+   "l1": "计算机",
+   "today_ret": -0.0392,
+   "mom20": -0.1353,
+   "crowding": 0.69,
+   "vs_mkt_today": -0.0177
+  },
+  {
+   "l1": "机械设备",
+   "today_ret": -0.0395,
+   "mom20": -0.1888,
+   "crowding": 0.8,
+   "vs_mkt_today": -0.018
+  },
+  {
+   "l1": "电子",
+   "today_ret": -0.0589,
+   "mom20": -0.2742,
+   "crowding": 0.63,
+   "vs_mkt_today": -0.0374
+  },
+  {
+   "l1": "通信",
+   "today_ret": -0.0848,
+   "mom20": -0.3165,
+   "crowding": 0.67,
+   "vs_mkt_today": -0.0633
+  }
+ ]
+}

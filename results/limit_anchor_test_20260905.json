@@ -1,0 +1,125 @@
+{
+  "n_buys": 45,
+  "rules": {
+    "B1_前收x1.005": {
+      "n_fill": 42,
+      "n_miss": 3,
+      "fill_rate_pct": 93.3,
+      "save_mean_pp": -0.446,
+      "miss_f5_mean_pct": -3.27,
+      "expect_pp": -0.199,
+      "miss_examples": [
+        {
+          "code": "300082",
+          "name": "奥克股份",
+          "fwd5": -3.27
+        },
+        {
+          "code": "300588",
+          "name": "熙菱信息",
+          "fwd5": null
+        },
+        {
+          "code": "300588",
+          "name": "熙菱信息",
+          "fwd5": null
+        }
+      ]
+    },
+    "B2_开盘内锚": {
+      "n_fill": 21,
+      "n_miss": 24,
+      "fill_rate_pct": 46.7,
+      "save_mean_pp": -0.143,
+      "miss_f5_mean_pct": -0.18,
+      "expect_pp": 0.027,
+      "miss_examples": [
+        {
+          "code": "600470",
+          "name": "六国化工",
+          "fwd5": 1.49
+        },
+        {
+          "code": "601229",
+          "name": "上海银行",
+          "fwd5": -0.93
+        },
+        {
+          "code": "601009",
+          "name": "南京银行",
+          "fwd5": 1.28
+        },
+        {
+          "code": "601328",
+          "name": "交通银行",
+          "fwd5": 3.63
+        },
+        {
+          "code": "002379",
+          "name": "宏桥控股",
+          "fwd5": -0.71
+        }
+      ]
+    },
+    "C_回落0.5%": {
+      "n_fill": 21,
+      "n_miss": 24,
+      "fill_rate_pct": 46.7,
+      "save_mean_pp": -1.063,
+      "miss_f5_mean_pct": -0.18,
+      "expect_pp": -0.402,
+      "miss_examples": [
+        {
+          "code": "600470",
+          "name": "六国化工",
+          "fwd5": 1.49
+        },
+        {
+          "code": "601229",
+          "name": "上海银行",
+          "fwd5": -0.93
+        },
+        {
+          "code": "601009",
+          "name": "南京银行",
+          "fwd5": 1.28
+        },
+        {
+          "code": "601328",
+          "name": "交通银行",
+          "fwd5": 3.63
+        },
+        {
+          "code": "002379",
+          "name": "宏桥控股",
+          "fwd5": -0.71
+        }
+      ]
+    },
+    "VWAP参考(乐观)": {
+      "n_fill": 42,
+      "n_miss": 3,
+      "fill_rate_pct": 93.3,
+      "save_mean_pp": -0.446,
+      "miss_f5_mean_pct": -3.27,
+      "expect_pp": -0.199,
+      "miss_examples": [
+        {
+          "code": "300082",
+          "name": "奥克股份",
+          "fwd5": -3.27
+        },
+        {
+          "code": "300588",
+          "name": "熙菱信息",
+          "fwd5": null
+        },
+        {
+          "code": "300588",
+          "name": "熙菱信息",
+          "fwd5": null
+        }
+      ]
+    }
+  }
+}

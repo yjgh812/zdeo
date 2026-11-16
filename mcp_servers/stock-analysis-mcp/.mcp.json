@@ -1,0 +1,25 @@
+{
+  "name": "stock-analysis-mcp",
+  "description": "Local-first A-share stock analysis MCP with Agent Skills, market evidence, screening, chart structure, reports, and reproducible backtests",
+  "category": "Finance",
+  "tags": ["stock", "stock-analysis", "a-share", "china", "mcp", "agent-skills", "finance", "screening"],
+  "repository": "https://github.com/lalal-zzz/stock-analysis-mcp",
+  "entry": {
+    "command": "npx",
+    "args": ["stock-analysis-mcp"]
+  },
+  "runtime": "node",
+  "requires": ["python>=3.10"],
+  "tools": [
+    {"name": "init_full_data", "description": "First-time full data download to local SQLite"},
+    {"name": "update_daily_data", "description": "Daily incremental data refresh"},
+    {"name": "get_data_status", "description": "Database integrity check"},
+    {"name": "screen_stocks", "description": "Universal multi-condition screening (price/PE/PB/cap/sector/name)"},
+    {"name": "get_kline_local_or_net", "description": "Stock K-line with auto-cached indicators"},
+    {"name": "get_stock_kline_period", "description": "Multi-period K-line: 1/5/15/30/60-min, daily/weekly/monthly (network real-time)"},
+    {"name": "get_rank_trend_data", "description": "Historical popularity ranking trend"},
+    {"name": "get_sector_list", "description": "Concept/industry sector browser"},
+    {"name": "get_stock_belong_sectors", "description": "Reverse: stock to its sectors"},
+    {"name": "generate_stock_report", "description": "Full analysis (trend/support/resistance/risk/position)"}
+  ]
+}

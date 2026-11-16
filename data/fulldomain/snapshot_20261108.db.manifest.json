@@ -1,0 +1,14 @@
+{
+ "built_at": "2026-11-08T11:01:07",
+ "sha256": "487a91570697ef4a05ad6264e70ccac98dabfab55151aedcfff972b93c3de595",
+ "size_bytes": 1949712384,
+ "counts": {
+  "stock_info": 11652,
+  "exp_codes": 84,
+  "index_daily": 2633,
+  "stock_daily_raw": 17334978,
+  "stock_daily_meta_qfq": 11484567,
+  "stock_factors_fundamental": 495145
+ },
+ "patched_at": "2026-11-08T11:02:06"
+}

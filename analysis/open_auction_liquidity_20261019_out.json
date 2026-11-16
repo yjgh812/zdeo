@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "events_total": 869,
+    "events_with_minute": 421,
+    "skip": {
+      "no_minute": 448
+    },
+    "minute_source": "stock_minute_5 (raw; 2024/25 ml臂大面积缺失, 2026双臂100%)",
+    "position_size_ref": 20000.0,
+    "data_quality_finding": "qfq库open列疑似前收占位(adj=raw/qfqopen中位2024=1.168/2025=1.092/2026=1.049,非分红可解释),gap段作废登记呈请,本件v2全raw自洽"
+  },
+  "liquidity_by_year": {
+    "2024": {
+      "n": 124,
+      "amt30_lt20k_pct": 0.0,
+      "amt30_lt50k_pct": 0.0,
+      "amt30_median_wan": 7891.51,
+      "participation_median_pct": 0.025,
+      "tradable_ge20k": {
+        "n": 124,
+        "win_pct": 74.19,
+        "med_pct": 8.438,
+        "mean_pct": 10.128
+      },
+      "thin_lt20k": null
+    },
+    "2025": {
+      "n": 102,
+      "amt30_lt20k_pct": 0.0,
+      "amt30_lt50k_pct": 0.0,
+      "amt30_median_wan": 10384.26,
+      "participation_median_pct": 0.019,
+      "tradable_ge20k": {
+        "n": 102,
+        "win_pct": 47.06,
+        "med_pct": -0.276,
+        "mean_pct": 1.309
+      },
+      "thin_lt20k": null
+    },
+    "2026": {
+      "n": 195,
+      "amt30_lt20k_pct": 0.0,
+      "amt30_lt50k_pct": 0.0,
+      "amt30_median_wan": 6491.32,
+      "participation_median_pct": 0.031,
+      "tradable_ge20k": {
+        "n": 195,
+        "win_pct": 46.15,
+        "med_pct": -0.658,
+        "mean_pct": -0.361
+      },
+      "thin_lt20k": null
+    },
+    "ALL": {
+      "n": 421,
+      "amt30_lt20k_pct": 0.0,
+      "amt30_lt50k_pct": 0.0,
+      "amt30_median_wan": 7891.51,
+      "participation_median_pct": 0.025,
+      "tradable_ge20k": {
+        "n": 421,
+        "win_pct": 54.63,
+        "med_pct": 1.022,
+        "mean_pct": 3.133
+      },
+      "thin_lt20k": null
+    }
+  },
+  "entry_vs_vwap30": {
+    "bp_ep": {
+      "2024": {
+        "n": 113,
+        "median_prem_pct": -0.108,
+        "mean_prem_pct": -0.035,
+        "gt1pct_n": 2
+      },
+      "2025": {
+        "n": 93,
+        "median_prem_pct": 0.122,
+        "mean_prem_pct": 0.047,
+        "gt1pct_n": 4
+      },
+      "2026": {
+        "n": 104,
+        "median_prem_pct": -0.045,
+        "mean_prem_pct": -0.012,
+        "gt1pct_n": 0
+      },
+      "ALL": {
+        "n": 310,
+        "median_prem_pct": -0.036,
+        "mean_prem_pct": -0.003,
+        "gt1pct_n": 6
+      }
+    },
+    "ml": {
+      "2024": {
+        "n": 11,
+        "median_prem_pct": 0.246,
+        "mean_prem_pct": 0.056,
+        "gt1pct_n": 2
+      },
+      "2025": {
+        "n": 9,
+        "median_prem_pct": -0.722,
+        "mean_prem_pct": -0.68,
+        "gt1pct_n": 0
+      },
+      "2026": {
+        "n": 91,
+        "median_prem_pct": 0.027,
+        "mean_prem_pct": 0.382,
+        "gt1pct_n": 24
+      },
+      "ALL": {
+        "n": 111,
+        "median_prem_pct": -0.016,
+        "mean_prem_pct": 0.264,
+        "gt1pct_n": 26
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+ "id": "PREREG-DDPROTECT-V4",
+ "title": "组合C本体载体回撤保护覆盖层（复用canonical冻结名单，零配方漂移）",
+ "owner": "D:\\zcodesj 择时研究线",
+ "created_at": "2026-09-14",
+ "new_premise": "V3(9c6198e4)实测权衡曲线后主人第三/四轮「继续」兑现路径①: 把覆盖层验证推进到组合C本体载体; V3教训(拖累上界2pp是束缚)下, 0.5/0.7两档全进网格, 最终档位在组合C自身曲线上选, 不预设立场",
+ "carrier_frozen": "canonical冻结名单 portrait_agent/reports/combo_c_2016_trades_20260906.csv (3822笔/126窗, 2016-02-01~2026-07-20, 即成本后年化17.87%那轮的入选清单): 每窗(窗口日t)入选等权, 持有20交易日, 仓位日收益=个股change_pct/100, 活跃期t+1..t+20, 窗外=0(现金); 载体绝对收益为重建口径(组合C自身千三成本两臂相同不入差值, 如实披露)",
+ "hypothesis_frozen": "保护覆盖层在组合C本体载体上同样提供MDD/尾部保护, 且 primary 达到「MDD改善≥5pp 且 年化拖累≤2pp」; 若组合C载体MDD本就较浅, 5pp绝对口径天然更难, 权衡曲线照实报告(绝对口径沿用v3保证可比)",
+ "mechanism_frozen": {
+  "overlay": "组合价格指数=cumprod(1+carrier日收益); 指数>MA_N满仓否则w_floor; t收盘观测t+1生效; 成本=|Δw|×0.15%单边; 每日调仓",
+  "grid_4变体": "MA_N{20,60} × floor{0.5,0.7}; primary=MA20/0.5",
+  "CVaR5": "最差5%交易日收益均值; MDD=cumprod最大回撤; 拖累=持有年化-覆盖年化"
+ },
+ "gates_frozen": [
+  "P0功效: 评估期≥800交易日",
+  "P1保护效率(primary): MDD改善≥5pp 且 年化拖累≤2pp 且 CVaR5不更深",
+  "P2稳健: 4变体中≥2个过P1 且 primary前后半窗MDD改善均>0 且 分年拖累≤2pp年份占比≥60%"
+ ],
+ "sensitivity_descriptive_not_gates": [
+  "未投部分现金1.8%年化",
+  "4变体全表",
+  "carrier自身指标"
+ ],
+ "verdict_rule": "P0∧P1∧P2=组合C载体上保护效率获验证支持, 提请主人裁决接线设计(档位按组合C自身权衡曲线定, 接线另行prereg零自动); 任一不过=『组合C载体本轮参数下未达冻结双阈』登记TIMING-DDPROTECT-STAGE2(验证性结论, 权衡曲线照实入档供主人效用决策)",
+ "anti_peek": "本文件先落盘指纹(除fingerprint外全文sha256前16位); 名单/网格/判据冻结; 禁跑后增删变体改阈值; 符号约定: MDD为负值, 「改善」=覆盖MDD−持有MDD>0(深度变浅), 沿用v3修正后语义",
+ "expected_runtime_artifacts": [
+  "portrait_agent/ddprotect_v4_20260914.py",
+  "data/ddprotect_v4_results_20260914.json"
+ ],
+ "fingerprint": "89688de9dfc92763"
+}

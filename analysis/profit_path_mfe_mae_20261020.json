@@ -1,0 +1,39 @@
+{
+ "engines": {
+  "bp_ep": {
+   "n": 1778,
+   "mfe_med": 0.0102,
+   "mfe_p25": 0.0045,
+   "mfe_p75": 0.0197,
+   "mae_med": -0.0091,
+   "mae_p25": -0.018,
+   "mae_p75": -0.004,
+   "mfe_ge_5pct_share": 0.0585,
+   "mfe_ge_8pct_share": 0.0208,
+   "best_add_point_med": 0.0,
+   "best_add_point_p25": 0.0,
+   "best_add_point_p75": 1.0,
+   "perfect_ub_med": -0.0025,
+   "touch5_share": 0.0332,
+   "touch5_pos_med": 0.4444
+  },
+  "ml": {
+   "n": 1339,
+   "mfe_med": 0.0514,
+   "mfe_p25": 0.0202,
+   "mfe_p75": 0.1105,
+   "mae_med": -0.031,
+   "mae_p25": -0.065,
+   "mae_p75": -0.0124,
+   "mfe_ge_5pct_share": 0.5063,
+   "mfe_ge_8pct_share": 0.363,
+   "best_add_point_med": 0.5714,
+   "best_add_point_p25": 0.0,
+   "best_add_point_p75": 0.9286,
+   "perfect_ub_med": -0.0241,
+   "touch5_share": 0.4167,
+   "touch5_pos_med": 0.3571
+  }
+ },
+ "note": "perfect_ub=事后最优加仓点上界(不可实现); 可行触发对照=R1p X5 配对增量(bp_ep -0.31%/ml -0.16%, 见#109/#110)。差距=时机价值的真实量级。"
+}

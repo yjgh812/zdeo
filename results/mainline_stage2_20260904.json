@@ -1,0 +1,77 @@
+{
+  "fingerprint": "bd66553bf899ca07",
+  "config": {
+    "start": "20210104",
+    "end": "20260827",
+    "weekday": 2,
+    "main_k_main": 5,
+    "main_k_alt_lo": 3,
+    "main_k_alt_2d": 6,
+    "pool_bp_q": 0.5,
+    "pool_max_price": 30.0,
+    "pool_min_avg_amt": 30000000.0,
+    "pool_min_list_days": 60,
+    "mom_win": 20,
+    "fwd": 5,
+    "fwd_alt": 10,
+    "gates": {
+      "G_S2a_t": 2.0,
+      "G_S2a_years_min": 4,
+      "G_S2b_t": 2.0
+    }
+  },
+  "verdicts": {
+    "G_S2a_t": false,
+    "G_S2a_years": false,
+    "G_S2a_L1dir": false,
+    "G_S2b": true
+  },
+  "final": "FAIL",
+  "results": {
+    "L2_G_S2a": {
+      "n_sections": 213,
+      "ts_t": -1.7539021272185196,
+      "mean_in": 0.5175257035197964,
+      "mean_out": 0.3703983791398323,
+      "yearly_delta": {
+        "2021": -0.20437565079917958,
+        "2022": 0.43227072793971394,
+        "2023": 0.10261877094468227,
+        "2024": -0.6405747181605024,
+        "2025": -0.39895869279669643,
+        "2026": -1.3573206344292505
+      },
+      "years_positive": 2,
+      "years_total": 6,
+      "L1_ts_t_same_dir": -1.2293095772647042
+    },
+    "L2_G_S2b": {
+      "n_sections": 213,
+      "ts_t": 4.415847526988894,
+      "mean_delta_lo_minus_hi": 0.8785573304520181
+    },
+    "robust_k3_ts_t": -0.7216783276570493,
+    "robust_2dk6_ts_t": -1.24911360837989,
+    "robust_fwd10_ts_t": -3.572584270977717
+  },
+  "n_l1": 1234646,
+  "n_l2": 520460,
+  "n_sections": 293,
+  "diag_sample": [
+    {
+      "T": "20260812",
+      "n_main_ind": 2,
+      "pool_n": 1670
+    },
+    {
+      "T": "20260819",
+      "n_main_ind": 3,
+      "pool_n": 1654
+    },
+    {
+      "T": "20260826",
+      "n_main_ind": 1,
+      "pool_n": 1775
+    }
+  ]
+}

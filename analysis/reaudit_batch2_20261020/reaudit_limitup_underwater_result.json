@@ -1,0 +1,40 @@
+{
+ "id": "LIMITUP-UNDERWATER-OPEN-SELL-NO-EDGE",
+ "mode": "independent_reimpl",
+ "n_events": 30691,
+ "overall": {
+  "median_pct": -0.213,
+  "mean_pct": 0.512
+ },
+ "gap_buckets": {
+  "lt-6": {
+   "n": 2250,
+   "mean_pct": 2.083,
+   "median_pct": 0.0
+  },
+  "-6to-2": {
+   "n": 11560,
+   "mean_pct": 0.876,
+   "median_pct": 0.0
+  },
+  "-2to0": {
+   "n": 16881,
+   "mean_pct": 0.054,
+   "median_pct": -0.579
+  }
+ },
+ "yearly_median_pct": {
+  "2018": 0.167,
+  "2019": -0.201,
+  "2020": 0.187,
+  "2021": -0.056,
+  "2022": 0.0,
+  "2023": -0.317,
+  "2024": -0.794,
+  "2025": -0.628,
+  "2026": -0.335
+ },
+ "caveats": [
+  "事件=涨停日收盘涨停代理+次日开盘<昨收; 原档n=30,815(2018-2026)"
+ ]
+}

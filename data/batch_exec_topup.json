@@ -1,0 +1,35 @@
+[
+ {
+  "code": "000530",
+  "name": "冰山冷热",
+  "volume": 200,
+  "price": 9.82,
+  "source": "type_sample_F_driver",
+  "sector": "机械设备",
+  "prev_close": 9.53,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000011",
+  "name": "深物业A",
+  "volume": 200,
+  "price": 10.56,
+  "source": "type_sample_F_driver",
+  "sector": "房地产",
+  "prev_close": 10.25,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000002",
+  "name": "万科Ａ",
+  "volume": 700,
+  "price": 3.47,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 3.37,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

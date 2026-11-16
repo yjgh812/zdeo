@@ -1,0 +1,9 @@
+{
+ "qual": "资格赛一_信号复现",
+ "asof": 20261026,
+ "days": 60,
+ "verdict": "PASS",
+ "worst_jaccard_pct": 96.8,
+ "bad_days": [],
+ "checked_at": "2026-10-27 13:24:09"
+}

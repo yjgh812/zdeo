@@ -1,0 +1,93 @@
+{
+  "VP1-LOWPOS-BURST-VOLUME-ACCUM": {
+    "status": "falsified(低位单日爆量吸筹假设方向相反且极显著: 爆量组比缩量组10/20日差0.37/0.54pp t-4.9/-5.2, 6/7年负, 低估值池内与剔除动量正交后仍负, 680万行2020-2026)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_cross_section_fm",
+    "hypothesis_h0": "低位(pos最低五分位)单日爆量(vr最高五分位)买入后10/20日收益优于低位缩量(吸筹假设)",
+    "evidence": "reports/VOLPOS_STAGE1_20261109/ + data/PREREG_VOLPOS_STAGE1_20261109.json (trial_budget=1已耗)"
+  },
+  "VP2-LOWPOS-CLUSTER-VOLUME": {
+    "status": "falsified(低位5日簇状堆量vs缩量-0.46pp t-4.9; 三组排序缩量+0.24%>脉冲+0.04%>堆量-0.26%)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_event_groups",
+    "hypothesis_h0": "低位堆量(近5日hot天数>=3)优于单日脉冲与无量(主人量价框架)",
+    "evidence": "reports/VOLPRICE_STAGE2_20261109/ + data/PREREG_VOLPRICE_STAGE2_20261109.json"
+  },
+  "VP2-RED-FAT-GREEN-THIN": {
+    "status": "falsified(低位红肥绿瘦反向: 阳量占比顶档比底档差0.21pp t-4.0; 低位阴量大=出清组反而好, 与矩阵'低位量增价跌=出清'半吻合)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_quintile_fm",
+    "hypothesis_h0": "低位近10日阳线量/阴线量比高(红肥绿瘦=主力吸筹)组后续更优",
+    "evidence": "reports/VOLPRICE_STAGE2_20261109/"
+  },
+  "VP2-TOP-VOL-STALL-EXIT": {
+    "status": "falsified(高位放量滞涨作为卖出端强制触发增量: 滞涨子型-0.19%不显著且反优于拉升子型(+0.41pp t4.8)=方向翻转; 高位爆量整体负仍成立但毒点在'还在拉升'子型, 与当日强次日兑现系统级结论同向)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_subgroup_split",
+    "hypothesis_h0": "高位(posQ4)爆量(vrQ4)中滞涨子组(ret5<=0)显著差于拉升子组, 支持放量滞涨强制退出",
+    "evidence": "reports/VOLPRICE_STAGE2_20261109/"
+  },
+  "VP3-ZHEN-DUILIANG-2WEEK": {
+    "status": "falsified(低位2周真堆量vs短簇-0.39pp t-4.0/vs缩量-0.53pp t-6.3; 吸筹族三连证伪完成: 爆量/簇状/堆量全灭, 低位唯一稳定正组=缩量无量+0.33%)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_event_groups",
+    "hypothesis_h0": "低位真堆量(近20日>=8天tr>1.5x tr60)优于短簇与无量(主人精确定义轮)",
+    "evidence": "reports/VOLPRICE_STAGE3_20261109/ + data/PREREG_VOLPRICE_STAGE3_20261109.json"
+  },
+  "VP3-EFFECTIVE-TURNOVER-BAND": {
+    "status": "falsified(市值分层'有效换手区间'叙事: 三档市值换手五分位全单调负向, 小盘Q5-Q1 -1.82pp t-14.4/中盘-1.47/大盘-0.63; 不存在任何市值档高换手甜区)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_tier_quintile",
+    "hypothesis_h0": "小/中/大盘各存在有效换手率区间(小盘6-11%等公开叙事)",
+    "evidence": "reports/VOLPRICE_STAGE3_20261109/"
+  },
+  "VP4-LOWPOS-3-7-ACCUM-BAND": {
+    "status": "falsified(低位换手3-7%吸筹带vs死水区-0.12pp t-1.43不显著且方向负; 低位唯一好档=1-3%安静档)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_band_grid",
+    "hypothesis_h0": "低位温和吸筹带(换手3-7%)优于死水区(<1%)",
+    "evidence": "reports/VOLPRICE_STAGE4_20261109/ + data/PREREG_VOLPRICE_STAGE4_20261109.json"
+  },
+  "VP2-CTC-RANKING": {
+    "status": "confirmed_observation(CTC价量同向性排序t6.22: 低CTC组20日+0.469pp, 5/7年正, 2026衰减年+1.55pp; stage-8 OOS校准ECE0.031; 调节端排序用途, 禁独立触发)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_quintile_fm",
+    "hypothesis_h0": "过去20日close与turnover相关性(CTC)低者后续收益更优(主人引用实证)",
+    "evidence": "reports/VOLPRICE_STAGE2_20261109/ + reports/CALIB_STAGE8_20261109/"
+  },
+  "VP5-ZT-TURNOVER-LAYER": {
+    "status": "confirmed_observation(涨停日换手分层收益口径四判据全过: <3%组次日+2.65%t38.2/胜率61.9%/跌停率3.4% vs >50%组-2.13%t-5.4/跌停率31.5%; 四档单调; 禁用作打板次日买(黑名单邻接), 限持仓监测+候选否决)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_event_stratification",
+    "hypothesis_h0": "涨停日换手率与次日收益单调负相关(低换手涨停次日更强)",
+    "evidence": "reports/ZT_TURNOVER_STAGE5_20261109/ + data/PREREG_ZT_TURNOVER_STAGE5_20261109.json"
+  },
+  "VP6-ZT-USHAPE-REBOARD": {
+    "status": "confirmed_observation(U型再板率口径双臂过: <3%组26.1%最高/3-15%组12.4%最低/>25%组14.5%高于中间t5.04; 双口径裁决=巨量涨停高方差(再板+2.1pp但跌停率+28pp), 收益口径单调结论不变)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_event_stratification",
+    "hypothesis_h0": "涨停换手率与次日再板率呈U型(中间组最差, 两端更高)",
+    "evidence": "reports/ZT_USHAPE_STAGE6_20261109/"
+  },
+  "VP7-FLOAT-PROFIT-REVERSE": {
+    "status": "confirmed_observation(浮盈反向VWAP代理: 高浮盈组20日差-1.10pp t7.8, 五档仅最高档为负-0.18%; 排序端: 同条件低浮盈优先)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_quintile_fm",
+    "hypothesis_h0": "筹码高盈利状态(换手加权60日成本浮盈)与后续收益负相关",
+    "evidence": "reports/MICRO_STAGE7_20261109/ + data/PREREG_MICRO_STAGE7_20261109.json"
+  },
+  "VP7-VOLUP-FREQ-REVERSE": {
+    "status": "confirmed_observation(频繁放量上涨反向: 频繁组20日差-0.90pp t6.4; 与CTC同族互证; 排序端第二负向维度)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_quintile_fm",
+    "hypothesis_h0": "近20日放量上涨天数与后续收益负相关",
+    "evidence": "reports/MICRO_STAGE7_20261109/"
+  },
+  "VP8-CALIB-GRID-OOS": {
+    "status": "confirmed_observation(18格校准表OOS四判据全过: ECE0.031/方向一致94.4%/毒格H_t1530 OOS t-5.47存活/最优格H_t01 OOS+0.51% t1.96边缘; 正式CI表: 否决端8格CI全负t-2.4~-7.6=T1级铁律, 低位×换手1-3%唯一CI全正格t3.0, H_t01等8格OOS跨零轴降级; Brier0.249=均值校准可信/单票胜率预测不可用)",
+    "registered_at": "2026-11-09",
+    "kind": "prereg_train_test_calibration",
+    "hypothesis_h0": "18格(位置x换手)条件频率表训练窗估计在测试窗(2025-2026)仍校准",
+    "evidence": "reports/CALIB_STAGE8_20261109/ (含reliability_oos_ci.json) + data/PREREG_CALIB_STAGE8_20261109.json"
+  }
+}

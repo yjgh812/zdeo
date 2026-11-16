@@ -1,0 +1,17 @@
+{
+ "ckpt": "D:\\zcodesj\\strategy_libs\\aurumq-rl\\ckpt\\a2c_train2023_500k_20261109.zip",
+ "train": "2020-02~2023-12 x500k",
+ "test": "2024-01-02~2026-11-06",
+ "net_cum": 0.9747,
+ "gross_cum": 0.9827,
+ "bench_equal_weight": -0.3912,
+ "excess": 1.3739,
+ "pos_step_rate": 0.5206,
+ "n_stocks": 3562,
+ "obs_dim": 71240,
+ "verdict": "PASS",
+ "trained_at": "2026-11-09T02:52:21.216627",
+ "verdict_override": "INVALID_CONSTANT_POLICY",
+ "override_evidence": "2026-11-09饱和度探针: 动作向量在训练期5时点+测试期6时点逐字相同(饱和1.0=1433/饱和0.0=1773/中间=356 全时点不变)=策略观测无关坍缩; test +97.5%系常数top20固定清单运气非可复现alpha; 推理产物rl_a2c_scores_20261106.json已删除不出票",
+ "overridden_at": "2026-11-09T03:02:50.581336"
+}

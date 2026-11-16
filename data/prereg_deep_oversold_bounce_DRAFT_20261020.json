@@ -1,0 +1,40 @@
+{
+ "status": "ACTIVE(证伪复核批,主人「继续」授权; 零交易权研究层)",
+ "note": "DRAFT不激活不建runner; 激活时对最终body(除fingerprint外)计算sha256:16钉死指纹, 跑前写入本件",
+ "prereg_id": "PREREG-DEEP-OVERSOLD-BOUNCE-V1-DRAFT",
+ "created": "2026-10-20",
+ "origin": "证伪复核F7修正重测发现: reports/sweet_spot_test_20261003.md 深超卖档med被单位错位污染桶稀释(+0.36% -> 修正+1.87%, win 56.1%, n=707,516, 2022-04~2026-09)",
+ "hypothesis": "深度超卖(ret20<=-10%)股票存在20日反弹正期望, 扣费后仍为正且跨年稳健(超卖反弹异象的A股横截面口径)",
+ "universe": "qfq单一真源, 沪深主板+创业板前缀(剔688/689/北交), 剔ST, 剔次新(60bar), 剔c>30元(与家族口径一致)",
+ "event": "ret20=close/close.shift(20)-1 <= -0.10, 收盘判定, 冷却5日逐票去重",
+ "entry_exit": "entry=次开(o[t+1]>0), fwd20=c[t+20]/o[t+1]-1, 双边费0.3%敏感性臂必报",
+ "main_gate_PASS_all": {
+  "G1_level": "med>=+0.8% 且 win>=52%",
+  "G2_excess": "同窗市场等权超额 med>0",
+  "G3_yearly": "分年(2016-2026)正med年占比>=7/10",
+  "G4_cost": "扣双边0.3%后 med>0"
+ },
+ "left_tail_control_arm": "剔除信号日收盘跌停与距52周高回撤>60%两类的子样本, 单独报G1-G4(不并入主判)",
+ "kill": "主判G1-G4任一不达 -> DRAFT终结登记不复活(引用本prereg_id)",
+ "risks_noted": [
+  "样本期2024-2026牛市权重高, G3分年为强制判据防regime灌水",
+  "超卖反弹为已知异象, 边际可能被成本与可交易性(跌停无法卖/流动性)侵蚀",
+  "深超卖票左尾集中, 本prereg仅测横截面期望, 组合层风险不在范围",
+  "与LOW_REPAIR_FAMILY(低位修复族, ACTIVE)语义相邻: 本件若激活须先做重叠率分析, 重叠>30%则并入该族观察臂不独立立项"
+ ],
+ "evidence_pre": [
+  "analysis/reaudit_batch2_20261020/reaudit_sweetspot_result.json (修正桶边全表)",
+  "reports/reaudit_round2_20261020.md (F7勘误)",
+  "data/falsified_rules.json MANTOU-MILDE-MOMENTUM-STANDALONE.amendments"
+ ],
+ "fingerprint": "1eb0ef4468e4bfa9",
+ "activation_since": "20261020",
+ "fingerprint_scope": "sha256[:16] of semantic contract keys: hypothesis,universe,event,entry_exit,main_gate_PASS_all,left_tail_control_arm,kill (生命周期字段不入哈希)",
+ "run_result": {
+  "path": "analysis/reaudit_batch9_20261020/prereg_deepoversold_result.json",
+  "verdict": "FAIL_KILL",
+  "date": "20261020",
+  "n": 401917
+ },
+ "disposition": "按冻结kill条款终结: 登记falsified_rules.DEEP-OVERSOLD-BOUNCE, 不复活(复活须新指纹+新前提)"
+}

@@ -1,0 +1,37 @@
+--- archive/tdx_finance_full_parser.py.bak_20260815_preS11PIT	2026-08-15 21:06:10.898347200 +0800
++++ /d/workbuddyspace/tdx_finance_full_parser.py	2026-08-15 21:07:13.666313100 +0800
+@@ -47,6 +47,24 @@
+ GPBJ_RECORD_SIZE = 52
+ GPBJ_DATE_OFFSET = 40
+ 
++
++def pit_avail_date_of(rd):
++    """PIT修复(20260815): 报告期→法定披露截止日, 口径与 tulong_daily_update.py
++    Phase4/Phase3 一致(Q1→0430 | 中报→0831 | Q3→1031 | 年报→次年0430)。"""
++    if rd is None:
++        return None
++    rd = int(rd)
++    y, md = rd // 10000, rd % 10000
++    if md == 331:
++        return y * 10000 + 430
++    if md == 630:
++        return y * 10000 + 831
++    if md == 930:
++        return y * 10000 + 1031
++    if md == 1231:
++        return (y + 1) * 10000 + 430
++    return None   # 非标准报告期: 留空, 由消费方兜底
++
+ # =============================================
+ # gpcw 全量财务数据解析
+ # =============================================
+@@ -344,6 +362,9 @@
+ 
+         # 构建插入数据（只包含数据库中存在的字段）
+         data = {'code': code, 'report_date': r['report_date']}
++        # PIT(20260815): 新行同步写法定披露截止列(列不存在则跳过, 与旧库兼容)
++        if 'pit_avail_date' in cols:
++            data['pit_avail_date'] = pit_avail_date_of(r['report_date'])
+         for gpcw_col, db_col in FIELD_NAME_MAP.items():
+             val = r.get(gpcw_col)
+             if val is not None and db_col in cols:

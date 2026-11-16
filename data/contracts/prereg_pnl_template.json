@@ -1,0 +1,59 @@
+{
+  "prereg_id": "TBD",
+  "version": 1,
+  "status": "DRAFT",
+  "title": "TBD",
+  "fingerprint_algorithm": "sha256(canonical_json_minus_fingerprint)截16位（系统惯例）",
+  "fingerprint": "TBD",
+
+  "hypothesis": "TBD（一句话可证伪假设）",
+  "tested_conditions": {
+    "sample_start": "TBD",
+    "sample_end": "TBD",
+    "universe": "全A剔688/689/920（或按件声明）",
+    "exclusions": ["T+1一字板", "停牌", "ST", "上市未满60日", "成交额<5000万"],
+    "cost_model": "TBD（回测须含双边费税与滑点假设，并注明口径）"
+  },
+
+  "params": {
+    "note": "参数单一真源=本字段；缺字段fail-closed；激活后禁改",
+    "TBD": "TBD"
+  },
+
+  "metrics": {
+    "primary": ["TBD"],
+    "secondary": ["TBD"]
+  },
+
+  "decision_rules": {
+    "G1": "TBD",
+    "G2": "TBD",
+    "G3": "TBD",
+    "kill_switch": "TBD（触发须逐字呈报）"
+  },
+
+  "validity": {
+    "valid_days_definition": "交易日且数据完整",
+    "skip_rules": ["非交易日", "fail-closed日"],
+    "overlap_policy": "日度重叠窗口用块bootstrap(block=5)",
+    "multiple_testing": "family内Bonferroni或FDR"
+  },
+
+  "ledger": {
+    "path": "TBD",
+    "cannot_mix_with": ["其他prereg台账（ledger隔离铁律）"]
+  },
+
+  "boundaries": {
+    "constitution_clash_checked": "TBD（宪法§10.2 S-5/§17 等逐条核对留痕）",
+    "falsified_archives_cited": ["TBD（falsified_rules.json 条目 id 列表，§10-8 铁律）"],
+    "second_decision_required": true
+  },
+
+  "approval": {
+    "registered_by": "TBD",
+    "approved_by": "TBD（主人）",
+    "activation_since": "TBD",
+    "decision_trail": ["TBD"]
+  }
+}

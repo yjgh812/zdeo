@@ -1,0 +1,26 @@
+{
+ "id": "MANTOU-SHRINK-BREAKOUT-FOLK",
+ "mode": "independent_reimpl",
+ "n_events": 293274,
+ "kinds": {
+  "flat": {
+   "n": 111529,
+   "f20_med_pct": -0.87,
+   "f20_win": 0.4623
+  },
+  "heavy": {
+   "n": 61949,
+   "f20_med_pct": -0.512,
+   "f20_win": 0.4777
+  },
+  "shrink": {
+   "n": 119796,
+   "f20_med_pct": -1.274,
+   "f20_win": 0.446
+  }
+ },
+ "caveats": [
+  "volr20=vol/前20日均量(shift1); 原档 volr20 定义来自 zone engine build_features, 微差可能",
+  "首次收破=今收<MA20且昨收>=昨MA20; 2021-10起窗口"
+ ]
+}

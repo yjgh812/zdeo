@@ -1,0 +1,23 @@
+{
+  "id": "PREREG_M2_UNLOCK_FULLMKT_20260909",
+  "created": "2026-09-09",
+  "hypothesis": "全市场事件宇宙（主人裁决：选股按全市场走）：解禁临近（事件前10个交易日买入、持有10个交易日跨越解禁日）的高比例解禁（占解禁前流通市值比例高）股票，前瞻收益显著劣于同日全市场基准，且随比例呈剂量-反应——支撑『解禁临近排雷』在选股扫描层成立的可行性（M-2 翻案路径①，脱离 bp_ep 池的低重叠功效瓶颈）。",
+  "data": {
+    "events": "event_calendar.db restricted_release_hist_em（EM dxf 按年 22,519 行 2016-01~2026-09-08；ratio 字段=占解禁前流通市值比例，小数单位）",
+    "prices": "workbuddyspace dragon_quant_qfq.db（唯一价格源，next-bar 兼容 close→close）",
+    "completeness": "EM 源完整性未独立对账（漏报=保守偏差）；无公告日，采用『解禁日程提前公告』的日程已知语义（M-2 prereg 同款声明）"
+  },
+  "event_protocol_frozen": "每事件一条观测：d'=首个交易日≥float_date；t0=d'在交易日序列中的位置−10（即提前10个交易日）；结果=fwd10=close(t0+10)/close(t0)−1；基准=同 t0 日全市场（qfq 当日有行情的全体标的）等权均值 fwd10；超额=事件 fwd10−基准。fwd 缺失（期末/停牌）事件剔除并计数。",
+  "gates_frozen": {
+    "G1_primary": "按事件 ratio 全样本五分位分组，Q5(高比例)−Q1(低比例) 的**日度聚类 t**（按 t0 日期聚合日均值后再算 t，控制同日事件横截面相关）≤ −2.0；辅报逐事件 Spearman（注明同日聚类通胀风险）",
+    "G2_dose_response": "五分位超额均值单调递减（自高向低非增计数 ≥4/5）",
+    "G3_system_universe": "系统可交易宇宙子集（代码前缀 60/00/30 且 t0 日收盘 ≤30 元）复测 G1 主判据，方向一致且 t ≤ −1.5 视为对系统适用（此为适用性门非显著性门，如实标注）"
+  },
+  "threshold_reading": "另报比例分桶 {<1%,1-3%,3-5%,5-10%,≥10%} 的超额均值与日度聚类 t，供若 PASS 后选阈值；阈值选择本身不构成本轮判定。",
+  "confounds_disclosed": "①市值中性化未做（daily_basic 2016-2019 稀疏，高比例解禁或偏小盘；留 stage-2，照 B4 先例声明偏离）；②幸存者偏差：基准与事件同用 qfq 在档标的，退市处理随库；③解禁与减持意愿/牛熊状态相关，超额口径只控市场共同成分。",
+  "verdict_semantics": "G1+G2 双 PASS → 『解禁临近排雷』全市场层成立=观察项升级为选股扫描层候选（接线仍须主人裁决+prereg 选股层测试）；任一 FAIL → M2-UNLOCK 全市场口径一并关闭（trial_budget 语义：与池内口径各 1 次）。",
+  "execution": {
+    "script": "D:\\zcodesj\\m2_unlock_fullmkt_stage1.py",
+    "output_dir": "D:\\zcodesj\\reports\\M2_UNLOCK_FULLMKT_20260909\\"
+  }
+}

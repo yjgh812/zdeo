@@ -1,0 +1,56 @@
+{
+  "bp_ep": {
+    "2016-01熔断": {
+      "开闸(生产口径)": {
+        "ret_pct": -7.23,
+        "mdd_in_win_pct": 10.94,
+        "days": 20
+      },
+      "关闸(L0b:无止损无熔断+20根帽)": {
+        "ret_pct": -6.34,
+        "mdd_in_win_pct": 10.21,
+        "days": 20
+      },
+      "diff_open_minus_off_pp": -0.89
+    },
+    "2018熊市全年": {
+      "开闸(生产口径)": {
+        "ret_pct": -12.81,
+        "mdd_in_win_pct": 21.48,
+        "days": 243
+      },
+      "关闸(L0b:无止损无熔断+20根帽)": {
+        "ret_pct": -14.32,
+        "mdd_in_win_pct": 14.34,
+        "days": 243
+      },
+      "diff_open_minus_off_pp": 1.51
+    },
+    "2020-02疫情": {
+      "开闸(生产口径)": {
+        "ret_pct": -19.98,
+        "mdd_in_win_pct": 22.1,
+        "days": 58
+      },
+      "关闸(L0b:无止损无熔断+20根帽)": {
+        "ret_pct": 3.99,
+        "mdd_in_win_pct": 0.85,
+        "days": 58
+      },
+      "diff_open_minus_off_pp": -23.97
+    },
+    "2024-01小盘危机": {
+      "开闸(生产口径)": {
+        "ret_pct": 8.62,
+        "mdd_in_win_pct": 3.77,
+        "days": 37
+      },
+      "关闸(L0b:无止损无熔断+20根帽)": {
+        "ret_pct": -0.78,
+        "mdd_in_win_pct": 1.68,
+        "days": 37
+      },
+      "diff_open_minus_off_pp": 9.4
+    }
+  }
+}

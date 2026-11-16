@@ -1,0 +1,62 @@
+[
+ {
+  "code": "600320",
+  "name": "振华重工",
+  "source": "xushi_manxian",
+  "price": 4.18,
+  "volume": 100,
+  "sector": "",
+  "note": "满弦蓄势TOP5(质量分74.4): 11维满共振+压缩9.5%窄幅3.5%粘合0.88%pos18%收口0.22",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "603697",
+  "name": "有友食品",
+  "source": "xushi_manxian",
+  "price": 9.4,
+  "volume": 100,
+  "sector": "",
+  "note": "满弦蓄势TOP5(质量分74.4): 11维满共振+粘合最紧0.70%量枯竭最深0.56pos14.6%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600098",
+  "name": "广州发展",
+  "source": "xushi_manxian",
+  "price": 6.44,
+  "volume": 100,
+  "sector": "",
+  "note": "满弦蓄势TOP5(质量分72.8): 11维满共振+收口比全场最优0.19压缩10.3%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600688",
+  "name": "上海石化",
+  "source": "xushi_manxian",
+  "price": 2.8,
+  "volume": 100,
+  "sector": "",
+  "note": "满弦蓄势TOP5(质量分69.4): 11维满共振+位置最低pos14%压缩8.8%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600787",
+  "name": "中储股份",
+  "source": "xushi_manxian",
+  "price": 4.63,
+  "volume": 100,
+  "sector": "",
+  "note": "满弦蓄势TOP5(质量分68.9): 11维满共振+压缩6.4%窄幅2.9%粘合0.54%三项极致",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

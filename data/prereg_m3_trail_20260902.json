@@ -1,0 +1,51 @@
+{
+  "id": "20260902-m3-trail-ml-v1",
+  "ts": "2026-09-02T22:25:00",
+  "object": "M-3 trailing 移动止盈（ml 腿侧）技术网格门禁正式验证 —— 预注册声明（8/28 WINRATE_IMPROVEMENT_PLAN 唯一存活优化项的采纳前置=wfa_gate 新指纹；主人 2026-09-02『按推荐继续』授权执行）",
+  "origin": "reports/WINRATE_IMPROVEMENT_PLAN_20260828.md M-3：ml +250.8%→+258.9%（+8.2pp）/胜率 55.7→56.2%/Sharpe 0.87→0.90/回撤持平（全期单点 A/B）；bp_ep 侧严禁（-1.6%，1841 次止盈截断长线复利）。本轮=把单点证据升级为平台期门禁证据",
+  "engine": "tulong_wfa_gate.techgrid.v1",
+  "strategy": "m3_trail_ml",
+  "grid": {
+    "x": [
+      8,
+      10,
+      12,
+      15
+    ],
+    "y": [
+      15,
+      20,
+      25
+    ],
+    "fixed": {
+      "leg": "ml_signal",
+      "rebalance": "monthly",
+      "stop_loss_pct": 0.08,
+      "trail_activation_pct": 10
+    }
+  },
+  "definitions_LOCKED": {
+    "x": "trailing_stop_pct（%），引擎语义=浮盈曾达 10%（激活阈内置锁死）后自峰值回撤达 x% 触发止盈",
+    "y": "max_holding_days（日历日），ml 生产口径=20（8/28 runner 锚），15/25 为邻域",
+    "cell_metric": "ret=该格全部平仓交易（含 end_of_sample）pnl_pct 均值(%)；win=胜率(%)；n=平仓笔数；ml 信号覆盖自 2020-01-02（2016-2019 无交易属预期）",
+    "engine_note": "SingleStrategyBacktest(qfq+next_bar+PIT)，月频调仓，成本与 9/1 引擎跑一致，区间 20160104~20260901"
+  },
+  "criterion": {
+    "gate": "tulong_wfa_gate 平台期裁决：全正 2×2 平台且 total_n>=100 且 avg_win>=52%",
+    "adopt": "PASS 且生产口径格 (trail=10, hold=20) 落于某稳健平台内 → M-3 登记为『ml 复活时默认启用 trailing 10%』（生产配置 v1.4 今日不动，ml 权重=0）",
+    "falsified": "gate FAIL，或 PASS 但 (10,20) 不在任何稳健平台内 → M-3 归档证伪，从存活优化清单移除",
+    "spike_guard": "(10,20) 若为全局最优且邻域显著更低 → 引用 S-3 孤峰先例从重考量，倾向 falsified"
+  },
+  "commitment": "只跑一次扫描（12 格），不调参数重试（网格/口径/判据全部事前锁死）；FAIL 即归档证伪并关闭 M-3 方向；PASS 也仅=『ml 复活条款默认参数就绪』，不构成任何当日生产行动",
+  "trial_budget": 1,
+  "status": "completed",
+  "result": {
+    "verdict": "PASS",
+    "oos": {
+      "n": 15664
+    },
+    "pbo": null,
+    "cpcv": null,
+    "ts": "2026-09-02T22:28:54"
+  }
+}

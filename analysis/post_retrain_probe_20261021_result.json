@@ -1,0 +1,34 @@
+{
+ "probe": "post_retrain",
+ "date": "2026-10-21",
+ "n_seeds": 1,
+ "n_eval_samples": 46331,
+ "horizon_ic": {
+  "f1": {
+   "mean": 0.0375,
+   "std": 0.1723,
+   "pos_days": "58%"
+  },
+  "f5": {
+   "mean": 0.0892,
+   "std": 0.1625,
+   "pos_days": "74%"
+  },
+  "f10": {
+   "mean": 0.1137,
+   "std": 0.1463,
+   "pos_days": "83%"
+  },
+  "f20": {
+   "mean": 0.1415,
+   "std": 0.1562,
+   "pos_days": "82%"
+  }
+ },
+ "calibration": {
+  "brier_model": 0.25067,
+  "brier_base": 0.2497,
+  "ece": 0.035,
+  "verdict": "不优于基准"
+ }
+}

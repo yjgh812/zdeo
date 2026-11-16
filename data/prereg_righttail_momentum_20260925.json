@@ -1,0 +1,27 @@
+{
+ "arm": "RIGHT-TAIL-MOM-W-V1",
+ "universe": "与 RIGHT-TAIL-WEIGHT-V1 完全同源(同一 Top20 信号截面, 引擎 bp_ep 管线逐位复刻), 仅权重层不同",
+ "weight_shadow": "Top20 内按信号日 ret20(20交易日动量=close_t/close_{t-20}-1, qfq) 降序排名线性加权 w∝rank, clip单票<=2x等权, 归一化; alpha=1 冻结禁扫参; ret20缺失(上市<20日)排最末",
+ "weight_baseline": "Top20 等权(引擎现行为)",
+ "basis": "赢家画像(9/25): 9月TOP50事前ret20+18.6%vs我们+5.4%=动能是唯一强事前信号; 文献先验=价值池内动量增强(value+momentum); 与rank臂的区别=用价格动量而非价值分位做池内排序",
+ "period": "影子12个执行周期(与 RIGHT-TAIL-WEIGHT-V2 同期, 约2026-10~2027-09)",
+ "hold": "T+1开盘价成交(引擎语义), 持有至下个执行日开盘; 差值法免成本建模",
+ "stop": "无(影子不涉真实交易)",
+ "gate": "影子期满: settled n>=12 且 mean(周期差vs等权)>0 且 NW(滞后3) t>=2 且 年化>等权 且 MDD<=等权; 任一不满足=FAIL; 提产另走wfa_gate",
+ "regression_anchor": "同 RIGHT-TAIL-WEIGHT-V2 锚(共享同一信号截面与同剔月清单), 不重复单独设锚",
+ "backfill": "2016-2026全历史样本内sanity(有前视, 非证据)",
+ "shadow_start": "202610",
+ "trial_registry": "右尾集中加权方案试验计数=2/2(rank臂为1/2); 本prereg为最后一个预设加权变体, 后续新变体须主人批准且计数入册, 防多重检验洗牌(u系列教训)",
+ "note": "反向风险=动量在Top20价值池内部的横截面区分度未经验证(画像证据是全市场TOP50 vs 我们持仓, 非池内排序); 池内ret20可能与传统动量(横截面全市场)语义不同; 追加速档证伪(#Q10累计-66%)提示高动量端有踩雷风险, clip 2x为兜底; 与rank臂独立gate互不污染",
+ "version": "V1",
+ "superseded": "",
+ "fingerprint": "79ff47b5e86804be",
+ "frozen_at": "2026-09-25",
+ "anchor": {
+  "rank_arm_backfill_spread_pp": -0.02,
+  "rank_arm_backfill_t": -0.25,
+  "equal_backfill_ann_pct": 13.46,
+  "equal_backfill_mdd_pct": -19.02
+ },
+ "evidence_files": "D:/zcodesj/reports/drift_check_20260924a_0924end/righttail_shadow/SHADOW_REPORT.md"
+}

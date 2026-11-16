@@ -1,0 +1,102 @@
+[
+ {
+  "code": "002676",
+  "name": "顺威股份",
+  "source": "xushi_manxian",
+  "price": 5.32,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描manxian路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "600008",
+  "name": "首创环保",
+  "source": "xushi_manxian",
+  "price": 2.8,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描manxian路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "601200",
+  "name": "上海环境",
+  "source": "xushi_manxian",
+  "price": 6.89,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描manxian路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "001286",
+  "name": "陕西能源",
+  "source": "xushi_manxian",
+  "price": 9.92,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描manxian路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "600859",
+  "name": "王府井",
+  "source": "xushi_manxian",
+  "price": 9.91,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描manxian路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "603215",
+  "name": "比依股份",
+  "source": "xushi_shuangyou",
+  "price": 15.3,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描shuangyou路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "002001",
+  "name": "新和成",
+  "source": "xushi_shuangyou",
+  "price": 26.85,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描shuangyou路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "000598",
+  "name": "兴蓉环境",
+  "source": "xushi_shuangyou",
+  "price": 7.29,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描shuangyou路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "000581",
+  "name": "威孚高科",
+  "source": "xushi_shuangyou",
+  "price": 17.6,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描shuangyou路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ },
+ {
+  "code": "300079",
+  "name": "数码视讯",
+  "source": "xushi_shuangyou",
+  "price": 4.88,
+  "volume": 100,
+  "sector": "",
+  "note": "蓄势每日扫描shuangyou路线 信号日20261105 (暂行方法准入七组之一)",
+  "execute": true
+ }
+]

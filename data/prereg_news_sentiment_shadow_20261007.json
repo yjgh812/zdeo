@@ -1,0 +1,62 @@
+{
+ "prereg_id": "PREREG_NEWS_SENTIMENT_SHADOW_20261007",
+ "status": "ACTIVE_APPROVED_20261007",
+ "created": "2026-10-07",
+ "title": "候选癸免费影子版：个股级新闻情绪事件×位置 前向影子积累（零交易权零闸门）",
+ "fingerprint_algo": "sha256 of canonical fields below (to be computed at activation)",
+ "lineage": {
+  "origin": "R44 B站学习候选癸(§三.1)+侦察闭环(§十)+免费通道矩阵(§十一)",
+  "falsified_family_check": "SENTIMENT-CYCLE-DAILY-ALPHA(2026-09-09) boundary白名单②『事件×位置条件矩阵选股层路线(未检验)』明文涵盖本研究;被判死的是市场级情绪状态→次日等权择时,本研究为个股级事件→个股超额(选股层),层级不同",
+  "prereg_preflight": "CONFLICT已论证(2026-10-07, reports/bili_r44_quant_scanner_data_study_20261007.md §十)"
+ },
+ "hypothesis": "个股级重要新闻情绪事件后, 该个股 fwd1/5/20 相对市场等权存在方向性超额(正面事件正超额/负面事件负超额); 且事件效果受个股位置(低位/高位)调制(事件×位置条件矩阵, boundary白名单②原命题)",
+ "data_channels_free": [
+  "cls_telegraph(cls-news MCP, 前向实时流主力, 🟠重点标记机械可提取)",
+  "westock data_news_search(个股事件检索, 近7天, 标题+正文+关联股票)",
+  "hithink get_a_share_special_data_anomaly_analysis_stock(异动归因事件源, 10/8复验)",
+  "屠龙自有LLM网关(打分层, A/B级约30-50条/日, token成本可忽略)"
+ ],
+ "event_definition_LOCKED": {
+  "universe": "A股全市场剔ST/科创688/北交所(屠龙标准宇宙)",
+  "source": "cls_telegraph全量 + 观察池/持仓个股data_news_search逐只检索",
+  "mapping": "电报/新闻简称→6位码(stock_name_lookup唯一接口), 映射失败即弃不猜",
+  "filters": "LLM情绪分!=0(-2..+2整数) 且 重要度>=2(1-3); 重复事件(同股同日同方向)合并记首条",
+  "timing_no_lookahead": "事件日T=发布日; 若发布时刻>15:00则事件日记T+1交易日(盘后新闻次日起算), 防同日使用",
+  "expost_rule": "LOCKED(2026-10-07 dry-run发现): 区分事前事件(公告/中标/业绩预告/政策/订单/监管=因果在前,入账) vs 事后行情报道(涨幅播报/月度复盘/异动解析/资金流播报=因果在后,不入事件账,标expost=true存raw); LLM prompt含expost判别输出; dry-run证据=百亚股份9/30月涨幅冠军报道(涨完65.99%才报道,若入账=用已实现涨幅预测已实现涨幅)"
+ },
+ "ledger_fields_LOCKED": "date/event_time/code/name/sentiment(-2..+2)/importance(1..3)/headline/source_cls_or_westock/is_key_orange(重点标记)/pos_bucket(low<40|mid40-60|high>60, 按事件日收盘qfq 250日分位)/fwd1/fwd5/fwd20/excess1/excess5/excess20(vs全市场等权同窗)/judged(60日窗后回填)",
+ "readout_LOCKED": {
+  "window": "自激活起60交易日(约2027-01下旬), 事件驱动信号不设日历门, 窗满即判",
+  "arms": "正面组(sentiment>=+1) vs 负面组(sentiment<=-1) vs 中性对照组(sentiment=0不计入)",
+  "gates": {
+   "G1": "正面组 fwd5 超额中位 >= +0.5% (覆盖成本量级)",
+   "G2": "负面组 fwd5 超额中位 <= -0.5% (双向有效, 单向只算弱通过需主人裁决)",
+   "G3": "有效事件 n >= 100 (正+负合计)"
+  },
+  "sub_analysis_descriptive": "位置分层(low/mid/high)×情绪方向 交叉表仅描述性呈报, 不作门槛(样本不足以分细胞判读)",
+  "kill_switch": "前20交易日正面组 fwd5 超额中位为负 → 提请废案(不等60日窗)",
+  "post_window": "三门全过→呈请主人裁决是否升级prereg严格版(全过滤组合+成本口径); 任一不过→归档, 登记负结果防复活"
+ },
+ "implementation_spec": {
+  "owner": "D:/zcodesj 根目录 news_sentiment_shadow.py (观测层, 零交易权零闸门接入)",
+  "scheduler": "批准后挂 daily_chain 22:00 环节(与FTD/PD-034影子同窗口), 超时不阻断",
+  "llm_scoring": "屠龙自有LLM网关; prompt冻结: 输出{code_list, sentiment:-2..2, importance:1..3, expost:bool}; 仅对含A股个股且expost=false的条目入事件账",
+  "idempotency": "按(date,code,headline哈希)UPSERT, 复跑不重复记账",
+  "fail_closed": "LLM网关不可用→当日条目存raw不打分不记账, 结构化报错; 数据源全挂→当日跳过并在台账记source_unavailable"
+ },
+ "boundary": "纯观测影子, 零交易权零闸门接入零仓位影响; 不含历史回测(免费矩阵无历史新闻通道, 纯样本外积累正是目的); 若影子期有苗头, 付费通道(小石CLI/ftshare key)仅作历史补验选项",
+ "cost_estimate": "LLM打分20-40条/日×60日, 网关额度内; 无新增MCP配置, 无付费key",
+ "approval_required": "主人明示批准后: ①status→ACTIVE ②建news_sentiment_shadow.py ③挂daily_chain ④--since=激活日起算",
+ "fingerprint": "b4a9775064a6f6e4",
+ "dry_run_20261007": {
+  "channels_verified": "data_news_search个股检索OK且relate_stock字段免简称映射(westock直接返回关联代码,映射层降级为备用)/hithink异动仅查当日(无历史参数,10/8交易日复验)",
+  "scoring_demo": "百亚股份9/30报道→sentiment+1/importance2/expost=true(不入账)——暴露事后报道污染缺陷并即时修复",
+  "conclusion": "批准即无意外: 全环节预演通过,唯一缺陷已修复入LOCKED"
+ },
+ "approval_record": {
+  "date": "2026-10-07",
+  "source": "主人于§十三呈报(唯一待裁决=启动与否)后明示「继续」令, 解读为启动批准; 批准范围=四步落地(激活/建件/挂automation/起算)",
+  "rollback": "CronDelete automation + prereg改SUSPENDED + 台账jsonl保留不删; 随时可否决"
+ },
+ "activation": "2026-10-07(首交易日采集自20261008起, 假期日不采集)"
+}

@@ -1,0 +1,44 @@
+{
+ "id": "PREREG_DUALGATE_BOTTOMVOL_DRAFT_20261003",
+ "status": "DRAFT",
+ "locked": false,
+ "created": "2026-10-03",
+ "owner_gate": "待主人立项裁决(建议挂PD-030批准后一并裁)",
+ "title": "双票×底区爆量合取·前向影子prereg草案(侦察PASS: med+3.07%/win58.9% vs 区间外med-0.71%)",
+ "background": {
+  "evidence_chain": [
+    "市场层: ERP×低区双票(PD-030呈请中, f60+9.08%/win70.1%, 区间级7/7大底, 敏感性平台)",
+    "个股层: 底区爆量PIT侦察唯一正层(reports/pit_audit_and_monthly_pos_recon_20261003.md, mean+2.44%/med0/win50%尾部驱动standalone不可交易)",
+    "合取侦察(reports/dualgate_bottomvol_20261003.md): 亮日n=11,781 med+3.07%/win58.9% vs 区间外med-0.71%/win47.2%, 中位差+3.78pp; 全体口径与PIT基线逐位吻合"
+  ],
+  "honest_caveats": [
+    "2024集中度: 一半事件与大部分收益来自2024大底年(n=5,932/+10.35%), 区间级有效样本≈7底部簇, 2018/2020两簇内为负",
+    "-8%止损口径: med+3.07%→+1.19%/win52.6%/止损率34%=慢漂移×紧止损结构性冲突(PEAD同课), 两口径并行呈报",
+    "接线前提=PD-030先获批; 本形态是门内个股层候选源, 不替代门"
+  ]
+ },
+ "hypothesis": "市场双票亮日(erp_pct_5y≥80∧全A剔ST pos250<40占比≥60)的个股底区爆量事件(月位PIT≤30∧量≥2×VMA20∧涨≥3%∧去重5日), 次开入场持有20日具有正中位期望",
+ "scope": {
+  "universe": "qfq全A剔688/689/北交所/ST(引擎v2口径)",
+  "gate": "erp_history.db erp_pct_5y(int日期str规范化) + erp_low_gate_daily同款低区占比",
+  "event": "月位PIT(35已完成月末+运行月,当日收盘锚)≤30 ∧ volume≥2.0×VMA20 ∧ chg≥0.03 ∧ 5日去重",
+  "entry": "T+1开盘",
+  "exit": "主口径=T+20收盘(无止损); 并行呈报-8%收盘止损口径",
+  "cost": "呈报毛口径(与侦察一致), 影子台账双边0.3%备查"
+ },
+ "primary_endpoint": {
+  "metric": "fwd20 med / win",
+  "sample_target": "前向≥30事件或12个月(双票亮日本身稀疏, 不足则顺延)",
+  "success_criteria_PROPOSED_before_lock": [
+    "无止损口径 med≥+2% 且 win≥55% 维持",
+    "止损口径并行呈报不判FAILURE(结构性冲突已知)",
+    "分年如实(任何单簇转负须披露)"
+  ],
+  "fail_action": "登记证伪档案禁复活; 双票门本身不受牵连"
+ },
+ "anti_hallucination": [
+  "影子期零交易权, 产出仅供主人裁决",
+  "每例幂等登记(date,code), 结算原子回填",
+  "区间级小样本如实标注, 禁用11,781当独立样本宣传"
+ ]
+}

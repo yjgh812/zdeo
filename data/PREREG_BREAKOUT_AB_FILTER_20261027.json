@@ -1,0 +1,38 @@
+{
+  "id": "PREREG_BREAKOUT_AB_FILTER_20261027",
+  "title": "行业共振过滤器增量·双臂真实订单A/B对照 (主人「继续」令采纳双臂真实订单案)",
+  "declared": "2026-10-27",
+  "origin": "主人模拟盘裁判框架: 行业轮动过滤器必须作为独立模块单独验证增量信息, 不能与个股信号混在一起统计",
+  "arms": {
+    "B_arm": "PREREG_BREAKOUT_MAINLINE_20261026 原样(突破三条件+主线共振过滤+同行业cap, source=breakout_mainline), 批次=data/batch_exec_breakout.json",
+    "A_arm": "同突破三条件全市场触发, 无主线共振无行业cap, 按成交额降序取5, 跳已持仓, 剔B当日票(executor当日幂等拦截所限, 造成的A样本选择偏差如实标注), source=breakout_ab_A, 批次=data/batch_exec_breakout_a.json"
+  },
+  "frozen_common": {
+    "universe": "主板+创业板, 剔ST/688/北交, ≤30元, 上市>60日",
+    "entry": "次日开盘买入(挂单价=前收+1%缓冲)",
+    "exit": "t20e(-8%止损/T+20收盘)先到为准",
+    "sizing": "close<15→200股 / ≥15→100股",
+    "gates_flags": "owner_approve_ddgate/p2/r31 全true(与B臂同); R30b/R13等组合级闸不豁免, 双臂对称接受attrition",
+    "regime": "每批meta记regime标签(60MA+ADX14), 判决分层禁混层"
+  },
+  "acceptance_gates_LOCKED": {
+    "G1_arms_n": "双臂各前瞻事件数≥100(20日窗起, 按功效延伸至所需笔数或120交易日cap)",
+    "G2_filter_increment": "B-A胜率差≥10pp 且 双比例检验p<0.05 → 过滤器有增量价值, 保留",
+    "G3_no_increment": "B-A胜率差统计不显著 → 过滤器无可验证增量, 简化或放弃",
+    "G4_tradeoff": "B胜率高但成本后收益低于A → 降风险/降收益交换, 提请主人按风险偏好裁决",
+    "power_note": "+10pp检出需每组391笔(功效表B); +19pp需每组106; 120日cap下每组上限约600(5只/日), 10pp级可判定, 5pp级不足→INDETERMINATE定性收口",
+    "verdict_three_state": "同功效框架: 边界按n锁定, INDETERMINATE=定性观察不得用作统计判决"
+  },
+  "honesty": [
+    "行业动量族P2-B证伪档案在案(2026-08-29: 近4年无增量、2026反劣), 本A/B属宪法§10-7允许的条件不同重测合规路径(模拟盘前瞻+双臂对照为新条件)",
+    "603278勘误: 并行会话原批次名『尤安设计』为错配, 唯一名称接口(stock_name_lookup)判定603278=大业股份(钢帘线), 快照L1机械设备判定不受名字影响仍成立; 大业股份(共振FAIL被B臂剔除)恰为A臂头号选样=A/B语义的活例证",
+    "双臂同窗口同延伸协议; 席位折损(R31/R13/R30b实拒)对称接受, 由窗口协议吸收"
+  ],
+  "wiring": {
+    "builder": "breakout_batch_pipeline.py --build 双臂同出(batch_exec_breakout_a.json+meta_a)",
+    "guard": "--execute-guard --arm a|b",
+    "oneshot_1028": "A臂一次性任务BatchExec_A_1028 09:42(与B臂09:41错峰, 票集不相交无幂等冲突)",
+    "recurring": "BreakoutExec_A_Daily_0942 自2026-10-29 周一~五(与B臂09:41并行)",
+    "tracking": "executor台账source字段区分双臂; 判定时join breakout_mainline_ledger"
+  }
+}

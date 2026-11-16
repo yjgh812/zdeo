@@ -1,0 +1,36 @@
+{
+ "id": "PREREG_EVENT_PIPELINE_LOCAL_20261025",
+ "title": "统一事件研究流水线·第一批全本地事件 (主人「继续」令第一梯队第三项)",
+ "declared": "2026-10-25",
+ "origin": "统一事件流水线设计(第9/17轮, 事件族10+型族级多重比较控制); 本批=数据全本地的3事件先行, MCP-only事件(增持/回购/定增两节点/大宗折价/PEAD长窗/调研/控制权变更/连续并购)因数据通道阻塞缓测(本地tushare token无事件API权限, MCP批量拉结果落会话上下文不可行; akshare已探明stock_yjyg_em按报告期可全史拉=解锁路径已确认)",
+ "events_frozen": {
+  "E1_st_uncap_buy": {
+   "source": "st_history.db st_daily",
+   "rule": "ST->非ST转换日D(该股首个非ST交易日)为事件日; 同股多轮戴帽摘帽各自计事件, 20交易日冷却; 入场=D次一收盘",
+   "direction": "买侧候选(屠龙唯一可交易段=摘帽后, 第8轮金科案例)",
+   "gates_descriptive": "n>=100; t20e胜率超额>=+2.0pp",
+   "gates_escalated_Bonferroni": "n>=150; t20e胜率超额>=+2.5pp; 含费均值超额>=+1.0pp; 分年>=6/11正(仅此门可产生PASS_CANDIDATE提请)"
+  },
+  "E2_goodwill_impairment": {
+   "source": "event_calendar.db goodwill_stock_hist (PIT: notice_date/pit_avail_date)",
+   "rule": "商誉减值突变=goodwill_previous>0 且 goodwill_scale<goodwill_previous*0.7(账面商誉一年降30%+); 事件D=notice_date( PIT安全取max(notice_date,pit_avail_date) ); 同股同报告期去重",
+   "direction": "排雷验证(预期负超额, 验证避雷价值非买侧)",
+   "gates_descriptive": "t20e胜率超额<=-1.0pp",
+   "gates_escalated": "t20e胜率超额<=-1.5pp 且 分年多数(>=6/11)为负 -> 排雷知识确认(不构成买入)"
+  },
+  "E3_goodwill_high": {
+   "source": "同E2",
+   "rule": "商誉高位=gw_to_net_assets>=0.50(商誉占净资产>=50%); 事件D=年报/半年报notice_date; 去重同上",
+   "direction": "排雷验证(同E2)",
+   "gates": "同E2"
+  }
+ },
+ "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日(事件日), 入场日close<=30, volume>0",
+ "entry_exit": "事件日D次一交易日收盘入场(c1); t20e(-8%止损/T+20); 基准=同日全宇宙同口径t20e均值(匹配日期)",
+ "window": "20160101-20261023",
+ "multiple_testing_note": "3事件独立判定; 买侧PASS须过Bonferroni加严门; 排雷确认门独立; MCP-only事件本批不参与判定",
+ "failure_clause": "E1未过加严门=摘帽买侧不接线; E2/E3未过排雷门=商誉避雷价值不确认(如实登记中性结果)",
+ "fingerprint": "ce9575c9c80992ec",
+ "status": "executed_20261025_E1FAIL_E3CONFIRM_E2NEUTRAL",
+ "result_ref": "reports/EVENT_PIPELINE_LOCAL_RESULT_20261025.md"
+}

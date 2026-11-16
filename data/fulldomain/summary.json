@@ -1,0 +1,42 @@
+{
+ "M1_box_breakout": {
+  "n_trades": 1498,
+  "win_rate": 31.842456608811748,
+  "final_nav": 979.3024849303588,
+  "total_ret": -99.02069751506964,
+  "mdd": -99.0250295114133,
+  "events": 154277,
+  "left_pos": 0,
+  "secs": 8.4
+ },
+ "M2_trend_pullback": {
+  "n_trades": 3588,
+  "win_rate": 37.0958751393534,
+  "final_nav": 834.4300587011368,
+  "total_ret": -99.16556994129886,
+  "mdd": -99.28272817817721,
+  "events": 315864,
+  "left_pos": 0,
+  "secs": 12.6
+ },
+ "M3_value_monthly": {
+  "n_trades": 447,
+  "win_rate": 44.742729306487696,
+  "final_nav": 139226.7932607309,
+  "total_ret": 39.22679326073089,
+  "mdd": -33.76853238296042,
+  "events": 1631,
+  "left_pos": 6,
+  "secs": 0.9
+ },
+ "M4_momentum_weekly": {
+  "n_trades": 1234,
+  "win_rate": 36.14262560777958,
+  "final_nav": 2034.1872832805218,
+  "total_ret": -97.96581271671948,
+  "mdd": -98.16210831405769,
+  "events": 29935,
+  "left_pos": 0,
+  "secs": 4.2
+ }
+}

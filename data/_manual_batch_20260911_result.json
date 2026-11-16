@@ -1,0 +1,111 @@
+{
+  "run_at": "2026-09-10 09:49:05",
+  "execute": true,
+  "amount_each": 25000,
+  "excluded_by_gate": {
+    "600256": "广汇能源 R22双口径闸REJECT(EM/THS 5日资金流方向相反), 待主人裁决"
+  },
+  "results": [
+    {
+      "code": "002320",
+      "name": "海峡股份",
+      "sector": "交通运输",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @7.51), 拒绝重复下单",
+      "rejects": "",
+      "detail": "ings\": [\n    \"R-S5不追高[warn]: mom20=+11.9% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸[fail-open显式标注]: 002320 无双口径快照数据(需先跑22:35采集) → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188751.16,\n    \"shares\": 25100,\n    \"actual_amount\": 188501.0,\n    \"stop_loss_price\": 6.91,\n    \"max_loss\": 15080.08,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 7.51,\n    \"vol\": 3300\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @7.51), 拒绝重复下单\"\n}\n"
+    },
+    {
+      "code": "000983",
+      "name": "山西焦煤",
+      "sector": "煤炭",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @7.0), 拒绝重复下单",
+      "rejects": "",
+      "detail": "nings\": [\n    \"R-S5不追高[warn]: mom20=+4.7% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸: 双口径数据落后6个交易日>2 → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188732.36,\n    \"shares\": 26900,\n    \"actual_amount\": 188300.0,\n    \"stop_loss_price\": 6.44,\n    \"max_loss\": 15064.0,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"halved_by_attribution\": true,\n  \"vol_locked_by_amount\": {\n    \"amount\": 12500.0,\n    \"price\": 7,\n    \"vol\": 1700\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @7.0), 拒绝重复下单\"\n}\n"
+    },
+    {
+      "code": "601919",
+      "name": "中远海控",
+      "sector": "交通运输",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "闸门拒绝，终止下单",
+      "rejects": "\n    R23持仓加仓: 601919 当前在持仓中, 加仓须显式 --allow-add-position 确认（8/20 TCL科技案: 加仓未过闸门当日浮亏-1.78%）→ 拒绝\n  ",
+      "detail": ": null,\n  \"gate_verdict\": \"REJECT\",\n  \"gate_rejects\": [\n    \"R23持仓加仓: 601919 当前在持仓中, 加仓须显式 --allow-add-position 确认（8/20 TCL科技案: 加仓未过闸门当日浮亏-1.78%）→ 拒绝\"\n  ],\n  \"gate_warnings\": [\n    \"R-S5不追高[warn]: mom20=+7.3% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸: 双口径数据落后9个交易日>2 → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188871.36,\n    \"shares\": 11400,\n    \"actual_amount\": 187758.0,\n    \"stop_loss_price\": 15.15,\n    \"max_loss\": 15020.64,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"executed\": false,\n  \"reason\": \"闸门拒绝，终止下单\"\n}\n"
+    },
+    {
+      "code": "603209",
+      "name": "兴通股份",
+      "sector": "交通运输",
+      "ok": true,
+      "verdict": "PASS_WITH_WARN",
+      "executed": true,
+      "reason": "",
+      "rejects": "",
+      "detail": "res\": 12600,\n    \"actual_amount\": 188748.0,\n    \"stop_loss_price\": 13.78,\n    \"max_loss\": 15099.84,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 14.98,\n    \"vol\": 1600\n  },\n  \"order_resp\": {\n    \"ok\": true,\n    \"data\": {\n      \"orderId\": \"100015682609100948064218848719\",\n      \"code\": \"sh603209\",\n      \"name\": \"兴通股份\",\n      \"direction\": \"buy\",\n      \"quantity\": \"1600\",\n      \"price\": \"14.98\",\n      \"amount\": \"23974.23\",\n      \"status\": \"待成交\",\n      \"filledAt\": \"1970-01-01 08:00:00\"\n    }\n  },\n  \"executed\": true,\n  \"filled_qty\": 1600,\n  \"qty_after\": 1600,\n  \"recorded\": \"trade_state + trade_records + buy_tracker + verification_trades\"\n}\n"
+    },
+    {
+      "code": "601022",
+      "name": "宁波远洋",
+      "sector": "交通运输",
+      "ok": true,
+      "verdict": "PASS_WITH_WARN",
+      "executed": true,
+      "reason": "",
+      "rejects": "",
+      "detail": "  \"shares\": 21700,\n    \"actual_amount\": 188790.0,\n    \"stop_loss_price\": 8.0,\n    \"max_loss\": 15103.2,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 8.7,\n    \"vol\": 2800\n  },\n  \"order_resp\": {\n    \"ok\": true,\n    \"data\": {\n      \"orderId\": \"100015682609100948164220146717\",\n      \"code\": \"sh601022\",\n      \"name\": \"宁波远洋\",\n      \"direction\": \"buy\",\n      \"quantity\": \"2800\",\n      \"price\": \"8.70\",\n      \"amount\": \"24366.33\",\n      \"status\": \"待成交\",\n      \"filledAt\": \"1970-01-01 08:00:00\"\n    }\n  },\n  \"executed\": true,\n  \"filled_qty\": 2800,\n  \"qty_after\": 2800,\n  \"recorded\": \"trade_state + trade_records + buy_tracker + verification_trades\"\n}\n"
+    },
+    {
+      "code": "000937",
+      "name": "冀中能源",
+      "sector": "煤炭",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @4.7), 拒绝重复下单",
+      "rejects": "",
+      "detail": "warnings\": [\n    \"R-S5不追高[warn]: mom20=+2.3% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸[fail-open显式标注]: 000937 无双口径快照数据(需先跑22:35采集) → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188855.17,\n    \"shares\": 40100,\n    \"actual_amount\": 188470.0,\n    \"stop_loss_price\": 4.32,\n    \"max_loss\": 15077.6,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 4.7,\n    \"vol\": 5300\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @4.7), 拒绝重复下单\"\n}\n"
+    },
+    {
+      "code": "601866",
+      "name": "中远海发",
+      "sector": "交通运输",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @2.51), 拒绝重复下单",
+      "rejects": "",
+      "detail": "nings\": [\n    \"R-S5不追高[warn]: mom20=+5.4% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸[fail-open显式标注]: 601866 无双口径快照数据(需先跑22:35采集) → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188860.72,\n    \"shares\": 75200,\n    \"actual_amount\": 188752.0,\n    \"stop_loss_price\": 2.31,\n    \"max_loss\": 15100.16,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 2.51,\n    \"vol\": 9900\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @2.51), 拒绝重复下单\"\n}\n"
+    },
+    {
+      "code": "600348",
+      "name": "华阳股份",
+      "sector": "煤炭",
+      "ok": true,
+      "verdict": "PASS_WITH_WARN",
+      "executed": true,
+      "reason": "",
+      "rejects": "",
+      "detail": "shares\": 19900,\n    \"actual_amount\": 188652.0,\n    \"stop_loss_price\": 8.72,\n    \"max_loss\": 15092.16,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 9.48,\n    \"vol\": 2600\n  },\n  \"order_resp\": {\n    \"ok\": true,\n    \"data\": {\n      \"orderId\": \"100015682609100948503717794864\",\n      \"code\": \"sh600348\",\n      \"name\": \"华阳股份\",\n      \"direction\": \"buy\",\n      \"quantity\": \"2600\",\n      \"price\": \"9.48\",\n      \"amount\": \"24654.40\",\n      \"status\": \"待成交\",\n      \"filledAt\": \"1970-01-01 08:00:00\"\n    }\n  },\n  \"executed\": true,\n  \"filled_qty\": 2600,\n  \"qty_after\": 2600,\n  \"recorded\": \"trade_state + trade_records + buy_tracker + verification_trades\"\n}\n"
+    },
+    {
+      "code": "601975",
+      "name": "招商南油",
+      "sector": "交通运输",
+      "ok": false,
+      "verdict": "REJECT",
+      "executed": false,
+      "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @4.79), 拒绝重复下单",
+      "rejects": "",
+      "detail": "0日前=3.61) → 高位动量WARN留痕(9/8裁决撤销禁买)\",\n    \"R-S5不追高[warn]: mom20=+33.2% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-10~2026-09-30） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸: 双口径数据落后11个交易日>2 → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 188844.05,\n    \"shares\": 39400,\n    \"actual_amount\": 188726.0,\n    \"stop_loss_price\": 4.41,\n    \"max_loss\": 15098.08,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 4.79,\n    \"vol\": 5200\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @4.79), 拒绝重复下单\"\n}\n"
+    }
+  ],
+  "n_ok": 3,
+  "n_fail": 6
+}

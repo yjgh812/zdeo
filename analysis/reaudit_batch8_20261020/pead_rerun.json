@@ -1,0 +1,46 @@
+{
+ "prereg_sha256": "ae27116dea406205fe713701b7c59be83b3fb36ffe1c262e3bb96055eb349467",
+ "cost": 0.002,
+ "stop": 0.92,
+ "hold": 20,
+ "topn_ind": 3,
+ "valid": {
+  "n": 5397,
+  "mean_pp": 0.208,
+  "median_pp": -4.493,
+  "win%": 39.4,
+  "t_week": 0.21,
+  "stop_rate%": 51.2
+ },
+ "confirm": {
+  "n": 2016,
+  "mean_pp": 1.413,
+  "median_pp": -2.677,
+  "win%": 43.6,
+  "t_week": 1.75,
+  "stop_rate%": 45.0
+ },
+ "placebo": {
+  "n": 7083,
+  "mean_pp": -0.46,
+  "median_pp": -4.292,
+  "win%": 40.0,
+  "t_week": -0.6,
+  "stop_rate%": 49.5
+ },
+ "confirm_2024": {
+  "n": 888,
+  "mean_pp": -2.639,
+  "median_pp": -7.169,
+  "win%": 24.8,
+  "t_week": -0.05,
+  "stop_rate%": 69.1
+ },
+ "gates": {
+  "G1_expect>0&t>=2": false,
+  "G2_win>50&mono": false,
+  "G3_confirm>0": true,
+  "placebo_neg_ok": true,
+  "verdict": "FAIL"
+ }
+}

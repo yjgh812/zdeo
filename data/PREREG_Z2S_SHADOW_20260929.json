@@ -1,0 +1,48 @@
+{
+  "id": "PREREG_Z2S_SHADOW_20260929",
+  "status": "locked",
+  "locked": true,
+  "locked_at": "2026-09-29",
+  "approved_by": "主人令「按推荐继续」（PD-023裁决，2026-09-29）：①调度=扩展现有观测层automation-a95889ec为六步链（不删任务不增条目）②pre_trade_check不接（保持闸封闭）③本prereg LOCKED启动前向影子",
+  "fingerprint": "3c0cb581f6d78235",
+  "created": "2026-09-29",
+  "owner_gate": "PD-023",
+  "title": "Z2s缩量回踩企稳带·前向影子台账prereg（LOCKED，判据先于前向样本无后验挑选）",
+  "background": {
+    "evidence_chain": [
+      "9/19迭代报告：段起+5~10%确认窗fwd20+1.54%",
+      "证伪档案桶C BREAKOUT-PULLBACK-ENTRY：相对维度回踩>>追入+2.656pp t48.87（11/11年全正）",
+      "bs_zone_event_study v1.0-1.3（2026-09-29，qfq库，25,216买入事件）：Z2回踩MA10企稳带t20e+3.75%/胜率51.8%为四带最优；Z2s缩量回踩子桶t20e+4.10%/胜率53.3%/中位+1.00（n=7,047）为全场最优；BULL段胜率55-57%/中位+1.4~+2.0",
+      "v1.3严格口径验证：泛强池∧扫描器细筛（前60日跌≥25%∧启动前缩量≤0.95）上Z2s t20e+7.07%/胜率58.8%/中位+3.44（n=1,226）——扫描器细筛为质变关键，本prereg前向验证的即此严格口径合取",
+      "v1.3分年如实（头条钉死）：strict-Z2s分年=2023 -2.40%/27.5%（n=171）、2024 +11.87%/72.1%（n=732）、2025 +4.02%/64.4%（n=59）、2026 +0.57%/40.9%/中位-1.53%（n=264）——正期望集中于2024/2025强市段，2023负、2026中性偏弱；三重合取非全天候，市况闸（BULL段）为必要条件；历史分年中位≥0仅2/4年度=前向判据的边界情形，须如实告知",
+      "反向对照：追高带fwd5跨市况负（-3.4~-4.4%）；BEAR段中位负=右偏彩票化"
+    ],
+    "why_shadow_not_live": "侦察级零交易权宪法§10；前向影子积累样本，判据达标后另行提请接线（影子永不自动接生产）"
+  },
+  "hypothesis": "选股宇宙（universe_startup_scan命中股）中『回踩MA10且缩量企稳（Z2s）』的入场时点，在-8%止损框架下20日持有具有正期望且BULL段胜率≥50%",
+  "scope": {
+    "universe": "universe_startup_scan每日命中（非名单，扫描器口径含全部排雷）",
+    "event": "收盘判定：low<=MA10<=close ∧ MA20上行（5日前比） ∧ 当日量<5日均量（缩量） ∧ 当日涨幅<3%（禁追检查）",
+    "entry": "T+1开盘（前视杜绝）",
+    "exit": "收盘较入场-8%止损即当日收盘退出；否则T+20收盘",
+    "cost": "双边0.3%（与sold_rebuy_deep8同口径）"
+  },
+  "primary_endpoint": {
+    "metric": "t20e净均值/净中位/胜率",
+    "sample_target": "前向积累≥80例或60个交易日（先到为准）",
+    "success_criteria_LOCKED_before_run": [
+      "n≥80",
+      "净中位>0 且 净均值>0",
+      "BULL段（上证收盘>MA20）子集胜率≥50%",
+      "分年（按结算年）至少2个年度中位≥0"
+    ],
+    "fail_action": "全项登记证伪档案（falsified_rules.json追加Z2S-SHADOW-FAIL），影子台账关闭，不提请接线"
+  },
+  "anti_hallucination": [
+    "影子期零交易权，产出仅供PD-023裁决",
+    "每例幂等登记（date,code），结算原子回填",
+    "报告须含原始数据→规则核对→正向→反向→结论→置信度",
+    "回踩带在BEAR段中位为负的事实已在本prereg背景披露，不得选择性引用BULL段"
+  ],
+  "implementation": "z2s_shadow_track.py（backfill热身1226笔已结算不入判据；scan/settle/eval三模式已接入automation-a95889ec每日0745观测链第4-6步）；台账=data/z2s_shadow_ledger.jsonl幂等键(date,code,src)"
+}

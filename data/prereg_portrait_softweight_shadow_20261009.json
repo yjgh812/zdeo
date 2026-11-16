@@ -1,0 +1,73 @@
+{
+ "prereg_id": "PREREG_PORTRAIT_SOFTWEIGHT_SHADOW_20261009",
+ "status": "ACTIVE",
+ "created": "2026-10-09",
+ "fingerprint": "1a73eda6389ad45d",
+ "fingerprint_algo": "sha256( json.dumps({params,readout}, ensure_ascii=False, sort_keys=True) )[:16]; 影子脚本加载时复算, 不一致即fail-closed exit2",
+ "title": "画像short分位软权重影子实验: 主线低位启动候选集内双臂排序前瞻对比(零拦截零排序权)",
+ "lineage": {
+  "origin": "主人2026-10-09令『让屠龙系统选股时用到画像系统』批准A+B组合: A=呈现级补全(当日已接线mainline_startup_scan+breakout_scout, 走portrait_feed唯一对接); B=本prereg影子",
+  "falsified_family_check": "与两份在档负结果划界: (1)POS域闸门A/B(2026-10-09归档FAIL)=posband剔高区对bp+ep无正增量(V1-1.1pp/V2-24.5pp)+G1方向反转(被剔集反好2.06pp,禁反向提案)——彼为过滤闸门族(改集合), 本研究为排序权重族(不改集合只改序), 层级不同; (2)preflight画像分A/B首验=fwd5+2.36pp正/fwd10-3.42pp反号——本研究主评窗fwd5(短窗正效应域), fwd20仅作反转哨不设通过门, 与已知反号证据显式对齐"
+ },
+ "hypothesis": "主线低位启动候选集内(同一幸存者集合), 按画像short分位降序TopK的前瞻收益优于按扫描自身排序键(段起距5-10%优先→量价配合降→接近7.5)TopK——画像分对候选集内排序有真增量",
+ "params": {
+  "universe": "mainline_startup_scan.scan_candidates() 六层过滤全幸存者(非Top12); 扫描语义单一owner=import复用禁复制",
+  "activation_date": "20261009",
+  "forward_only": "候选集每日实跑落账, 禁回溯重建历史日候选(防C1行业集/数据版本前视); 仅fwd随qfq成熟回填",
+  "fair_compare": "双臂同域=仅取有画像分交集; base臂交集中按BASE_SORT_KEY排序, 禁全集vs子集混淆",
+  "top_k": [
+   5,
+   10
+  ],
+  "fwd_windows": [
+   5,
+   20
+  ],
+  "min_cands_pt": 3,
+  "feed_lag_max_natural_days": 5,
+  "valid_day_def": "交集n>=min_cands_pt 且画像feed可用(unavailable为null且快照相对数据日lag<=5自然日)",
+  "tie_break": "画像分相同按code升序(确定性)"
+ },
+ "readout": {
+  "window": "自激活起60个有效交易日(有落账日), 窗满即判",
+  "metric": "两级中位: 日内各臂TopK fwd中位→臂差→日间取中位; med5差=画像臂-基础臂(fwd5), med20差同构(fwd20)",
+  "gates": {
+   "G1": "med5差(Top10) >= +1.0pp",
+   "G2": "med20差(Top10) >= 0 (反转哨; 单独不构成通过)",
+   "G3": "有效日 n >= 40"
+  },
+  "kill_switch": "前20个有效日 med5差(Top10)中位 < -1.0pp → 提请废案(不等60日窗)",
+  "post_window": "三门全过→呈请主人裁决升级(晨报排序软权/preflight标注加权); 任一不过→归档登记负结果防复活; 影子期间晨报排序恒为BASE_SORT_KEY不动"
+ },
+ "ledger": {
+  "path": "data/portrait_softweight_shadow_ledger.jsonl",
+  "row_fields": "date/collected_at/n_total/n_pt/pt_date/c1/ms_state/base_top5/base_top10/pt_top5/pt_top10/fwd(回填per-code fwd5/fwd20)/judged",
+  "idempotent": "同date行重跑覆盖(候选集重建); 历史行仅fwd回填只增, 候选集永不重建"
+ },
+ "implementation": {
+  "script": "analysis/portrait_softweight_shadow_daily.py",
+  "hook": "daily_chain_update.py [ptwt] 槽位(22:00链qfq更新后); feed未就绪/非交易日→SKIP exit0留痕不报错",
+  "readout_cmd": "python analysis/portrait_softweight_shadow_daily.py --status"
+ },
+ "readout_protocol": {
+  "note": "2026-10-11 外部审计(PORTRAIT_AUDIT_20261011 P0-5)判读协议补全; 本节为判读方法论注记, 不改 params/readout, v1指纹(仅哈希{params,readout})不受影响",
+  "valid_day_counting": "非交易日/C1空或交集<min_cands_pt/fail-closed日均不计有效日(与params.valid_day_def一致); SKIP日留痕不计; 无有效日缺口不回补不顺延(窗=自激活起第60个有效日封盘)",
+  "overlap_policy": "judged两级中位的日间取中位不处理重叠; 窗满判读时附按信号日聚类的块bootstrap(block=5有效日, 1000次重抽)中位CI作稳健性参考, 不改变G1-G3判定口径",
+  "multiple_testing": "本研究与preflight画像分A/B(lineage.falsified_family_check(2))视为同族fwd5检验, 判读呈报时标注family=2, 参考Bonferroni阈值G1需≥+1.3pp(0.05/2)但通过门仍按预注册+1.0pp执行, 校正仅作呈报注记不作门槛变更",
+  "stall_review": "2026-10-11主人令处置C1产量三选项=维持①自然积累(C1常态产量1只/日, 交集>=3结构性饥饿属形态稀缺性设计非bug); 停摆复核触发器=2027-01-01前有效日仍为0则本影子提请重设计(选项②多主线并集宇宙另立prereg/③形态层放宽触证伪域须新指纹), 不自动改参"
+ },
+ "amendment_log": [
+  {
+   "date": "2026-10-09",
+   "change": "min_cands_pt 5→3",
+   "reason": "tmp沙箱演习(9/30真实C1历史注入)实证: 六层漏斗对单主线C1常态产量=3只, min=5会使大量合法日SKIP致60有效日窗结构性饥饿; 9/19历史(C1单主线仅1只)同证",
+   "pre_data": "台账0行零观察, 无数据偷看; 修订方向=放宽采集(更保守), 零交易影响"
+  },
+  {
+   "date": "2026-10-11",
+   "change": "新增顶层 readout_protocol 判读协议注记(valid_day计数/块bootstrap/多重比较), params与readout零改动",
+   "reason": "外部审计P0-5要求补判读协议; 经核实v1改参本就合规(0行零观察+amendment留痕+参数即指纹), 无需v2换版, 采轻量注记路径",
+   "pre_data": "台账0行零观察; 指纹复算验证=脚本加载通过(--status rc0), 零交易影响"
+  }
+ ]
+}

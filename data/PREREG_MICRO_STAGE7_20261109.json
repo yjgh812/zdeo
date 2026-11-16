@@ -1,0 +1,13 @@
+{
+  "id": "PREREG_MICRO_STAGE7_20261109",
+  "status": "frozen",
+  "frozen_at": "2026-11-09 (跑前冻结, 每检验trial_budget=1)",
+  "tests_frozen": {
+    "T16a_profit_proxy_reverse": "浮盈代理=close/换手加权60日均价-1 (滚动Σ(tr×close)/Σ(tr)); 每日截面五分位→fwd20; 主判据: Q5(高浮盈)-Q1 差<0 且 t>=2 (主人主张: 筹码高盈利=反向, 越盈利越差); 附单调性",
+    "T16b_volup_voldn_freq": "近20日 '放量上涨'天数(dr>0且tr>1.5x tr60)与'放量下跌'天数(dr<0且tr>1.5x tr60)分别五分位→fwd20; 主判据: 放量上涨频率Q5-Q1差<0且t>=2 (反向); 放量下跌频率Q5-Q1差>0且t>=2 (正向, 与短期反转同族); 两尾",
+    "T17_amihud_impact_gate": "高量组(vr>=1.5)内按当日amihud(|dr|/amount)与其60日90分位(滞后一日)分组: 高冲击组vs低冲击组; 主判据: 高冲击-低冲击 fwd10差<0 且 t>=2 (主人主张: 放量+高冲击=深度塌陷/恐慌, 低冲击=健康换手)"
+  },
+  "shared": "同前管线(qfq含amount + daily_basic + ST点时), next-bar持10/20日, 费0.3%, FM日度聚类t, 最小日数300, 不足记insufficient_power; 全市场截面(不限位置)",
+  "excluded": "耐心执行大单/盘口结构(无逐笔L2数据, 挂起); 筹码集中度(无筹码分布库, 挂起); T16a的VWAP代理为获利比例近似, 与中信建投分钟级筹码因子口径不同=新指纹新前提",
+  "filing": "结果落 reports/MICRO_STAGE7_20261109/, 观察级"
+}

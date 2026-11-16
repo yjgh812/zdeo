@@ -1,0 +1,16 @@
+{
+ "id": "R19_INTERCEPT_DRAFT",
+ "status": "draft_frozen_20260920",
+ "owner_decision": "主人 2026-09-20 裁决(AskUserQuestion 按推荐): 跑满3日周三(9/23)带首验数据终裁; 现冻结阈值草案作影子期判读标准",
+ "thresholds_draft": {
+  "single_weight_escalate_pct": 20.0,
+  "rc03_observe_pct": 40.0,
+  "rc_basis": "RC@rho0.3 等相关近似, owner=tulong_math_toolkit.equicor_risk_shares",
+  "cluster_warn_pct": 15.0,
+  "band_crowd_min_n": 3
+ },
+ "intercept_semantics_pending": "买入增量闸(REJECT/WARN)语义周三终裁时定; 存量减仓不走本闸=主人三元裁决",
+ "evidence": "data/pd013_evidence_20260920.json(敏感表+历史回放41日maxRC=38% vs 当前50.9%超全史); reports/pd013_threshold_evidence_20260920.md",
+ "activation": "2026-09-23(周三) 影子满3日首验后主人终裁激活或修订",
+ "frozen_at": "2026-09-21 02:36"
+}

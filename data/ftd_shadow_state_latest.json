@@ -1,0 +1,31 @@
+{
+  "state": {
+    "last_i": 8749,
+    "last_date": "20261027",
+    "dd_last": -8.57,
+    "in_drawdown": true,
+    "day1_set": false,
+    "day1_offset": null,
+    "cool_left": 0
+  },
+  "eval": {
+    "oos_n": 0,
+    "oos_done": 0,
+    "oos_med": null,
+    "oos_win": null,
+    "kill_tail_neg": 0,
+    "in_sample_n": 29,
+    "in_sample_med": 3.28,
+    "in_sample_win": 65.5
+  },
+  "cfg": {
+    "dd": 8.0,
+    "gain": 2.0,
+    "w_lo": 4,
+    "w_hi": 10,
+    "cooldown": 20,
+    "since": 20261008
+  },
+  "ledger_rows": 29,
+  "kill_switch": false
+}

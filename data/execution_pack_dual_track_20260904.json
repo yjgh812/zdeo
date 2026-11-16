@@ -1,0 +1,39 @@
+{
+ "pack_id": "EXEC_PACK_DUAL_TRACK_20260904",
+ "authorized_by": "主人2026-09-04指令链:「在全市场里选5只」+诊断落差后「继续」=PREREG_DUAL_TRACK_20260904双轨授权;名单外票manual_confirmed逐笔特批授权依据=上一轮明示「按双轨包执行即视为逐笔特批」后主人回复继续",
+ "prereg": "PREREG_DUAL_TRACK_20260904 (data/prereg_dual_track_20260904.json)",
+ "gate_replay_log": "7/7 dry-run PASS_WITH_WARN 20260904 09:27(唯一warn=R19解禁fail-open,百联/中原高速已双源核过无解禁);轨道B 5只另有market_scan_selector 20260904重放MATCH+pre_trade_check独立PASS背书",
+ "execution_window": "20260904 09:55-10:10(错峰09:30验证批/09:40调仓包,等4卖资金到账)",
+ "cash_plan": "预计可用21019(=5758现余+调仓卖51569-调仓买36308);本包合计17008≤21019留缓冲4011;若前序批次未按计划成交致现金不足→fail-closed跳过剩余并汇报,不追补",
+ "orders": [
+  {
+   "cmd": "python trade_executor.py buy --code sh600827 --name 百联股份 --source manual_confirmed --price 7.81 --volume 200 --budget 2000 --intent \"轨道A框架复刻:bp_ep名单r42_一般零售5d+14.7亿_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sh600020 --name 中原高速 --source manual_confirmed --price 3.91 --volume 500 --budget 2000 --intent \"轨道A框架复刻:bp_ep名单r50_铁路公路5d+4.7亿_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sz002158 --name 汉钟精机 --source manual_confirmed --price 29.09 --volume 100 --budget 3000 --intent \"轨道B全市场动量:通用设备5d+10.2亿_主力+1.35亿连5日_PE27.7_破30弃_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sz002174 --name 游族网络 --source manual_confirmed --price 12.18 --volume 100 --budget 1300 --intent \"轨道B全市场动量:游戏5d+8.9亿_PE23.6_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sh600650 --name 锦江在线 --source manual_confirmed --price 11.33 --volume 300 --budget 3500 --intent \"轨道B全市场动量:铁路公路5d+4.7亿_60日新高_主力+7000万_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sh601999 --name 出版传媒 --source manual_confirmed --price 6.73 --volume 500 --budget 3500 --intent \"轨道B全市场动量:出版5d+7.9亿_vr5.3_贴60日高_PREREG_DUAL_TRACK_20260904\" --execute"
+  },
+  {
+   "cmd": "python trade_executor.py buy --code sh601083 --name 锦江航运 --source manual_confirmed --price 13.00 --volume 200 --budget 2700 --intent \"轨道B全市场动量:航运PE11.2旺季_拐点观察票_PREREG_DUAL_TRACK_20260904\" --execute"
+  }
+ ],
+ "total_budget": 17008,
+ "forbidden": [
+  "银行5只/9/3题材5只(主人亲自买入)/华融化学/金河生物禁操作",
+  "汉钟精机限价≤29.09,当日价破30即放弃该笔",
+  "限价不追(R6):高开过限价即排队等回踩",
+  "westock断供fail-closed停止并告警",
+  "执行后更新data/dual_track_ledger.json状态并T+0汇报"
+ ]
+}

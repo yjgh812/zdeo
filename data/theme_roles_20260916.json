@@ -1,0 +1,748 @@
+{
+ "date": "20260916",
+ "total_limitup": 89,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "光通信",
+    "福建国资",
+    "海上风电",
+    "光纤光缆",
+    "中报增长",
+    "清洁能源"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000993",
+    "name": "闽东电力",
+    "boards": 6,
+    "seal_money": 43368956,
+    "mv_wan": 846294.28884
+   },
+   "members": [
+    {
+     "code": "000993",
+     "name": "闽东电力",
+     "boards": 6,
+     "reason": "海上风电+清洁能源+福建国资",
+     "mv_wan": 846294.28884,
+     "role": "龙头"
+    },
+    {
+     "code": "002491",
+     "name": "通鼎互联",
+     "boards": 2,
+     "reason": "光纤光缆+网络安全+中报增长",
+     "mv_wan": 3007336.5524999998,
+     "role": "助攻"
+    },
+    {
+     "code": "000753",
+     "name": "漳州发展",
+     "boards": 1,
+     "reason": "光伏+绿色电力+福建国资",
+     "mv_wan": 545314.58905,
+     "role": "补涨"
+    },
+    {
+     "code": "002161",
+     "name": "远望谷",
+     "boards": 1,
+     "reason": "拟收购光泰通信+光通信+AI赋能+RFID物联网",
+     "mv_wan": 530406.0558000001,
+     "role": "补涨"
+    },
+    {
+     "code": "002300",
+     "name": "太阳电缆",
+     "boards": 1,
+     "reason": "海上风电+海底电缆+电线电缆",
+     "mv_wan": 605315.6406,
+     "role": "补涨"
+    },
+    {
+     "code": "002396",
+     "name": "星网锐捷",
+     "boards": 1,
+     "reason": "数据中心交换机+光通信+福建国资",
+     "mv_wan": 2953232.626476,
+     "role": "补涨"
+    },
+    {
+     "code": "002956",
+     "name": "西麦食品",
+     "boards": 1,
+     "reason": "燕麦食品+食养粉+中报增长",
+     "mv_wan": 523201.39968599996,
+     "role": "补涨"
+    },
+    {
+     "code": "301486",
+     "name": "致尚科技",
+     "boards": 1,
+     "reason": "光通信+MPC+MPO满产",
+     "mv_wan": 2759482.691896,
+     "role": "补涨"
+    },
+    {
+     "code": "600105",
+     "name": "永鼎股份",
+     "boards": 1,
+     "reason": "光通信+光芯片订单+业绩增长",
+     "mv_wan": 6611140.494643999,
+     "role": "中军"
+    },
+    {
+     "code": "603042",
+     "name": "华脉科技",
+     "boards": 1,
+     "reason": "光纤光缆+光通信+6G布局",
+     "mv_wan": 358243.81507199997,
+     "role": "补涨"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "印制电路板",
+    "高密度互连板",
+    "服务器电源"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605058",
+    "name": "澳弘电子",
+    "boards": 4,
+    "seal_money": 68033251,
+    "mv_wan": 633587.05696
+   },
+   "members": [
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 4,
+     "reason": "印制电路板+高密度互连板+服务器电源",
+     "mv_wan": 633587.05696,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "协议转让",
+    "AI内容安全",
+    "视听大数据"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "688004",
+    "name": "博汇科技",
+    "boards": 3,
+    "seal_money": 10324842,
+    "mv_wan": null
+   },
+   "members": [
+    {
+     "code": "688004",
+     "name": "博汇科技",
+     "boards": 3,
+     "reason": "协议转让+AI内容安全+视听大数据",
+     "mv_wan": null,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "半导体设备",
+    "光模块",
+    "石墨烯",
+    "大家居",
+    "金属包装",
+    "数控磨床"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002631",
+    "name": "德尔未来",
+    "boards": 2,
+    "seal_money": 60831338,
+    "mv_wan": 895348.6753630001
+   },
+   "members": [
+    {
+     "code": "002631",
+     "name": "德尔未来",
+     "boards": 2,
+     "reason": "半导体设备+石墨烯+大家居",
+     "mv_wan": 895348.6753630001,
+     "role": "龙头"
+    },
+    {
+     "code": "002787",
+     "name": "华源控股",
+     "boards": 1,
+     "reason": "半导体设备+光模块+金属包装+股份回购",
+     "mv_wan": 844292.75642,
+     "role": "助攻"
+    },
+    {
+     "code": "002903",
+     "name": "宇环数控",
+     "boards": 1,
+     "reason": "半导体设备+数控磨床+消费电子",
+     "mv_wan": 450640.0425,
+     "role": "助攻"
+    },
+    {
+     "code": "002957",
+     "name": "科瑞技术",
+     "boards": 1,
+     "reason": "光模块设备+半导体设备+人形机器人",
+     "mv_wan": 1791225.21749,
+     "role": "中军"
+    },
+    {
+     "code": "600103",
+     "name": "青山纸业",
+     "boards": 1,
+     "reason": "光模块+竹浆纸+电子通讯",
+     "mv_wan": 826865.069643,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "光刻胶配套试剂",
+    "PCB用化学试剂",
+    "氢氟酸"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002584",
+    "name": "西陇科学",
+    "boards": 2,
+    "seal_money": 148050790,
+    "mv_wan": 558881.68301
+   },
+   "members": [
+    {
+     "code": "002584",
+     "name": "西陇科学",
+     "boards": 2,
+     "reason": "光刻胶配套试剂+PCB用化学试剂+氢氟酸",
+     "mv_wan": 558881.68301,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "氧化锆粉体",
+    "MLCC验证",
+    "越南基地"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001216",
+    "name": "华瓷股份",
+    "boards": 2,
+    "seal_money": 133558677,
+    "mv_wan": 527568.716766
+   },
+   "members": [
+    {
+     "code": "001216",
+     "name": "华瓷股份",
+     "boards": 2,
+     "reason": "氧化锆粉体+MLCC验证+越南基地",
+     "mv_wan": 527568.716766,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "半导体硅片",
+    "订单充足",
+    "股权激励"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "003026",
+    "name": "中晶科技",
+    "boards": 2,
+    "seal_money": 106535357,
+    "mv_wan": 631650.0382000001
+   },
+   "members": [
+    {
+     "code": "003026",
+     "name": "中晶科技",
+     "boards": 2,
+     "reason": "半导体硅片+订单充足+股权激励",
+     "mv_wan": 631650.0382000001,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "风电齿轮箱",
+    "大兆瓦装备",
+    "高端部件"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603248",
+    "name": "锡华科技",
+    "boards": 2,
+    "seal_money": 67743396,
+    "mv_wan": 934259.9999999999
+   },
+   "members": [
+    {
+     "code": "603248",
+     "name": "锡华科技",
+     "boards": 2,
+     "reason": "风电齿轮箱+大兆瓦装备+高端部件",
+     "mv_wan": 934259.9999999999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "高端黄酒",
+    "兰亭",
+    "全国化扩张"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "601579",
+    "name": "会稽山",
+    "boards": 2,
+    "seal_money": 67599205,
+    "mv_wan": 1358319.837697
+   },
+   "members": [
+    {
+     "code": "601579",
+     "name": "会稽山",
+     "boards": 2,
+     "reason": "高端黄酒+兰亭+全国化扩张",
+     "mv_wan": 1358319.837697,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "玻纤",
+    "具身智能",
+    "智能物流",
+    "资产收购"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603082",
+    "name": "北自科技",
+    "boards": 2,
+    "seal_money": 57991749,
+    "mv_wan": 882504.331482
+   },
+   "members": [
+    {
+     "code": "603082",
+     "name": "北自科技",
+     "boards": 2,
+     "reason": "玻纤+具身智能+智能物流+资产收购",
+     "mv_wan": 882504.331482,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链11",
+   "shared_words": [
+    "固态电池",
+    "复合集流体",
+    "易开盖"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002846",
+    "name": "英联股份",
+    "boards": 2,
+    "seal_money": 41162381,
+    "mv_wan": 535491.8859
+   },
+   "members": [
+    {
+     "code": "002846",
+     "name": "英联股份",
+     "boards": 2,
+     "reason": "固态电池+复合集流体+易开盖",
+     "mv_wan": 535491.8859,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "存储芯片",
+    "电子元器件分销",
+    "资产重组",
+    "半导体靶材",
+    "产能扩建"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600206",
+    "name": "有研新材",
+    "boards": 1,
+    "seal_money": 386042670,
+    "mv_wan": 4370754.853116
+   },
+   "members": [
+    {
+     "code": "000670",
+     "name": "盈方微",
+     "boards": 1,
+     "reason": "存储芯片+电子元器件分销+资产重组",
+     "mv_wan": 673371.803692,
+     "role": "中军"
+    },
+    {
+     "code": "600206",
+     "name": "有研新材",
+     "boards": 1,
+     "reason": "存储芯片+半导体靶材+产能扩建",
+     "mv_wan": 4370754.853116,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 13,
+   "chain_name": "自动链13",
+   "shared_words": [
+    "AI算力",
+    "高端PCB",
+    "电声元器件",
+    "苹果概念",
+    "汽车电子",
+    "AI服务器"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605358",
+    "name": "立昂微",
+    "boards": 1,
+    "seal_money": 132873531,
+    "mv_wan": 3464858.586651
+   },
+   "members": [
+    {
+     "code": "002655",
+     "name": "共达电声",
+     "boards": 1,
+     "reason": "AI算力+电声元器件+苹果概念+汽车电子",
+     "mv_wan": 1351203.894,
+     "role": "助攻"
+    },
+    {
+     "code": "002913",
+     "name": "奥士康",
+     "boards": 1,
+     "reason": "高端PCB+AI服务器+全球制造",
+     "mv_wan": 2637583.148744,
+     "role": "中军"
+    },
+    {
+     "code": "603328",
+     "name": "依顿电子",
+     "boards": 1,
+     "reason": "高端PCB+AI算力+绵阳国资",
+     "mv_wan": 1428771.3763410002,
+     "role": "助攻"
+    },
+    {
+     "code": "605358",
+     "name": "立昂微",
+     "boards": 1,
+     "reason": "半导体硅片涨价+VCSEL芯片+AI算力+中报扭亏",
+     "mv_wan": 3464858.586651,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 14,
+   "chain_name": "自动链14",
+   "shared_words": [
+    "高速光模块",
+    "NPO",
+    "H股发行",
+    "硅光芯片",
+    "功能性器件"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002281",
+    "name": "光迅科技",
+    "boards": 1,
+    "seal_money": 339861090,
+    "mv_wan": 15332588.328598
+   },
+   "members": [
+    {
+     "code": "002281",
+     "name": "光迅科技",
+     "boards": 1,
+     "reason": "高速光模块+NPO+H股发行",
+     "mv_wan": 15332588.328598,
+     "role": "龙头"
+    },
+    {
+     "code": "603052",
+     "name": "可川科技",
+     "boards": 1,
+     "reason": "硅光芯片+高速光模块+功能性器件",
+     "mv_wan": 1131893.226768,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 15,
+   "chain_name": "自动链15",
+   "shared_words": [
+    "海峡两岸",
+    "林业",
+    "林板一体化",
+    "林业主业",
+    "国有控股",
+    "AI医疗"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000592",
+    "name": "平潭发展",
+    "boards": 1,
+    "seal_money": 188862870,
+    "mv_wan": 1682581.156932
+   },
+   "members": [
+    {
+     "code": "000592",
+     "name": "平潭发展",
+     "boards": 1,
+     "reason": "林业+林板一体化+海峡两岸",
+     "mv_wan": 1682581.156932,
+     "role": "龙头"
+    },
+    {
+     "code": "002679",
+     "name": "福建金森",
+     "boards": 1,
+     "reason": "林业主业+海峡两岸+国有控股",
+     "mv_wan": 265932.768,
+     "role": "助攻"
+    },
+    {
+     "code": "603122",
+     "name": "合富中国",
+     "boards": 1,
+     "reason": "AI医疗+医疗数智化+体外诊断+海峡两岸",
+     "mv_wan": 517866.47553299996,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 22,
+   "chain_name": "自动链22",
+   "shared_words": [
+    "AI应用",
+    "大宗电商",
+    "业绩扭亏",
+    "PCB钻针",
+    "智慧水务"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002095",
+    "name": "生意宝",
+    "boards": 1,
+    "seal_money": 65407161,
+    "mv_wan": 413197.2
+   },
+   "members": [
+    {
+     "code": "002095",
+     "name": "生意宝",
+     "boards": 1,
+     "reason": "大宗电商+AI应用+业绩扭亏",
+     "mv_wan": 413197.2,
+     "role": "龙头"
+    },
+    {
+     "code": "603956",
+     "name": "威派格",
+     "boards": 1,
+     "reason": "PCB钻针+智慧水务+AI应用",
+     "mv_wan": 398364.493914,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 35,
+   "chain_name": "自动链35",
+   "shared_words": [
+    "黄酒主业",
+    "高端化",
+    "渠道拓展",
+    "半年报减亏"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600059",
+    "name": "古越龙山",
+    "boards": 1,
+    "seal_money": 45938667,
+    "mv_wan": 890576.9375009999
+   },
+   "members": [
+    {
+     "code": "600059",
+     "name": "古越龙山",
+     "boards": 1,
+     "reason": "黄酒主业+高端化+全国化",
+     "mv_wan": 890576.9375009999,
+     "role": "龙头"
+    },
+    {
+     "code": "600616",
+     "name": "金枫酒业",
+     "boards": 1,
+     "reason": "黄酒主业+渠道拓展+半年报减亏",
+     "mv_wan": 326474.41559999995,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 43,
+   "chain_name": "自动链43",
+   "shared_words": [
+    "半年报增长",
+    "家居服",
+    "跨境电商",
+    "POE新材料",
+    "催化剂助剂",
+    "锂电电解液"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001209",
+    "name": "洪兴股份",
+    "boards": 1,
+    "seal_money": 24291336,
+    "mv_wan": 252918.19056000002
+   },
+   "members": [
+    {
+     "code": "001209",
+     "name": "洪兴股份",
+     "boards": 1,
+     "reason": "家居服+跨境电商+半年报增长",
+     "mv_wan": 252918.19056000002,
+     "role": "龙头"
+    },
+    {
+     "code": "603255",
+     "name": "鼎际得",
+     "boards": 1,
+     "reason": "POE新材料+催化剂助剂+半年报增长",
+     "mv_wan": 430693.3344,
+     "role": "中军"
+    },
+    {
+     "code": "603276",
+     "name": "恒兴新材",
+     "boards": 1,
+     "reason": "锂电电解液+精细化工+半年报增长",
+     "mv_wan": 370862.001642,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 45,
+   "chain_name": "自动链45",
+   "shared_words": [
+    "TAC膜",
+    "锂电隔膜",
+    "膜材料",
+    "实控人航天科技",
+    "醋酸纤维素",
+    "竹浆造纸"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600135",
+    "name": "乐凯胶片",
+    "boards": 1,
+    "seal_money": 32609981,
+    "mv_wan": 447625.443091
+   },
+   "members": [
+    {
+     "code": "600135",
+     "name": "乐凯胶片",
+     "boards": 1,
+     "reason": "TAC膜+锂电隔膜+膜材料+实控人航天科技",
+     "mv_wan": 447625.443091,
+     "role": "龙头"
+    },
+    {
+     "code": "600793",
+     "name": "宜宾纸业",
+     "boards": 1,
+     "reason": "醋酸纤维素+TAC膜+竹浆造纸+宜宾国资",
+     "mv_wan": 289414.947272,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

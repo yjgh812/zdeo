@@ -1,0 +1,28 @@
+{
+ "id": "20260902-rbot-pattern-v1",
+ "ts": "2026-09-02T02:40:00",
+ "object": "圆弧底（rbot）事件式信号 wfa_gate 立项判定（主人'按你推荐继续'授权）",
+ "engine": "event_sequential_wfa.v1（自研 classical_pattern_roundbottom_wfa.py，复用 classical_pattern_prescreen 检测/尺子，零复制）",
+ "combo": [
+  "rbot_pattern"
+ ],
+ "params": {
+  "hold_n": 10,
+  "cooldown_bar": 10,
+  "cost_model": "佣金max(万2.5,5元)+印花税0.05%+次日开盘买入+跌停拦卖次bar重试（与预筛器同尺）",
+  "verify_start": "20160101",
+  "verify_end": "20251231",
+  "oos_lock_end": "20260825"
+ },
+ "known_data_disclosure": "分年结果已在复验可见（reports/OPS_ITERATION_20260902.md §4：7/11 正年、2018=-3.61%、2026YTD=-0.50%）。本 prereg 属已知数据下的判据钉死与 quasi-OOS 前向检验，非盲预注册；真盲 OOS=20260826 后数据（oos_lock 保留段）。",
+ "criterion": {
+  "C1_full_positive": "验证段(2016-2025)费后 N10 均值 > 0 且 t >= 3",
+  "C2_year_consistency": "正值年 >= 6/10",
+  "C3_expanding_forecast": "滚动前向（每年末用累计均值符号预测下一年均值符号）命中 >= 6/9（预测年 2017-2025）",
+  "C4_worst_year_floor": "最差年费后均值 > -5%"
+ },
+ "trial_budget": 1,
+ "commitment": "四判据全过=PASS_candidate（仍需 20260826 后真窗 OOS 积累 ≥60 交易日复核方可进生产候选）；任一不过=FAIL 归档禁复活；跑后禁改判据禁重跑。",
+ "status": "completed",
+ "result": "PASS_candidate(ts=2026-09-02T05:43:05 首跑; 05:47 会话并发重复跑一次, 除ts外逐字段幂等一致, 已去重留痕)"
+}

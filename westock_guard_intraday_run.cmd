@@ -1,0 +1,4 @@
+@echo off
+rem 2026-09-10: hardcoded Store-versioned python path -> runtime resolve via py_run.cmd
+cd /d D:\zcodesj
+call D:\zcodesj\py_run.cmd westock_outage_guard.py --intraday >> reports\westock_guard_intraday.log 2>&1

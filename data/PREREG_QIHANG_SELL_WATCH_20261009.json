@@ -1,0 +1,28 @@
+{
+ "name": "PREREG_QIHANG_SELL_WATCH",
+ "title": "起航事件研究卖侧二信号·持仓哨提示层扩展（断板即卖+反抽逃生门, 提请制零交易权）",
+ "status": "ACTIVE",
+ "registered": "2026-10-09",
+ "family": "sell_side_watch_petition",
+ "runner": "strong_sell_watch.py（唯一runner, 与wyckoff三信号同件提请制；挂07:45十合一第10步, 调度零改动）",
+ "evidence_report": "reports/douyin_qihang_youzi_verify_20261003.md §11/§12 + reports/case_timing_playbook_20261007.md 卖出2/3",
+ "signal_locked": {
+  "fantan_escape": "近5个交易日内存在连板断板日 且 今日为反抽日(qfq涨幅≥8.0%, 创业板20200824后≥18.0%, 与研究同口径); 仅反抽日当日触发(卖在反抽位)",
+  "note": "口径与reports/douyin_qihang_youzi_verify_20261003.md §11/§12事件研究逐字一致; 全部判定只用≤T数据零前视; ST涨停5%漏计=少计不误计(与研究同边界); 🔴duanban已删(与exit_gate_watch S1同语义,断板预警唯一owner=exit_gate), 本prereg仅余fantan_escape"
+ },
+ "evidence": "S1断板: 全市场事件研究n=109,799, 连板高度单调恶化, 4板+断T+20中位-15.28%/胜率23.3%, 2021-2026段更毒(-17.17%), 爆量断板T+1中位-3.01%vs普通-1.61%; S2反抽: 断板后5日内反抽日池n=6,202, 反抽后R+10中位-5.14%(st2-3)/-7.52%(st4+)/胜率≈35%=反抽位是卖不是买",
+ "honesty_layers": "证据=全市场事件池(连板接力族), 本系统持仓为波段结构非连板接力, 持仓域无独立验证——提示仅为警示呈报非卖出依据; fantan_escape与exit_gate_watch S2(20日回撤≥15%宽口径深回撤反弹)互补不重复: S2不需连板断板池, fantan=事件研究精确口径(连板断板后5日内反抽), 同一票极端情形可双弹(语义同向,主人裁决时合并看待); 是否减仓全由主人裁决",
+ "shadow_rule": "命中写入strong_sell_watch_ledger.jsonl(tag=duanban/fantan_escape, 键=signal_date+code+tag幂等); 影子窗=20261009起60个交易日, 记录命中与后续T+20/R+10走向",
+ "gates": "窗满评估: duanban命中后T+20中位<0且n≥3=维持; fantan_escape命中后R+10中位<0且n≥3=维持; n<3=统计力不足仅持续记录不做裁决; 若命中后中位转正连续出现=登记falsified QIHANG-SELL-HOLDING-DOMAIN-REVERSED并撤哨(持仓域反号家族先例=hi_stall)",
+ "boundary": "纯提示层零交易权: 禁止自动卖出禁触trade_executor禁撤单改单; 提请制=toast弹清单待主人裁决; 不改买入闸门不改卖出执行链; 生产链改动=strong_sell_watch.py单文件扩展+本prereg+SOP回写",
+ "fingerprint": "999942ccb7deae47",
+ "amendments": [
+  {
+   "date": "2026-10-09",
+   "type": "owner_duplication_removal",
+   "title": "duanban删除(全量测试发现owner重复)",
+   "finding": "duanban(连板≥2断板预警)与exit_gate_watch.py S1(PD-036④主人2026-10-07批准,已挂0745十合一第8步)完全同语义同证据(4板+断T+20中位-15.28%,n=109,799)——登记时推理闸漏查同族哨既有owner, 同日0745链会双toast同一事件",
+   "action": "strong_sell_watch.py删除duanban分支与HONESTY条目; 断板预警唯一owner=exit_gate_watch S1; fantan_escape保留(S2宽口径/本件窄口径互补); 指纹 2b00085c275c0bb8 → 999942ccb7deae47; 台账历史行(0条duanban实弹)保留不回滚"
+  }
+ ]
+}

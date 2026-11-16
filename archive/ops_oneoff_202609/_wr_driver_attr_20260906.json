@@ -1,0 +1,60 @@
+{
+ "001390": {
+  "chan": [
+   "buy1"
+  ],
+  "island": false
+ },
+ "002152": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "002478": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "002481": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "002777": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "300296": {
+  "chan": [
+   "buy1"
+  ],
+  "island": false
+ },
+ "300773": {
+  "chan": [],
+  "island": true
+ },
+ "301370": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "600626": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ },
+ "600987": {
+  "chan": [
+   "buy2"
+  ],
+  "island": false
+ }
+}

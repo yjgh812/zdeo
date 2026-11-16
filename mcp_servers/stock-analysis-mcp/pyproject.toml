@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stock-analysis-mcp"
+version = "0.3.0"
+description = "股票分析 MCP + Skills - 本地优先行情、选股、K线结构、研报、多周期分析与策略回测"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "lalal-zzz", email = "lalal-zzz@users.noreply.github.com" }
+]
+keywords = ["stock", "stock-analysis", "mcp", "agent-skills", "ai", "china-stock"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "akshare>=1.14.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "curl_cffi>=0.6.0",
+    "urllib3>=2.0.0",
+    "pycryptodome>=3.19.0",  # guba 年文件 AES-CBC 解密 (data/sources.py)
+    "tqdm>=4.60.0",
+]
+
+[project.optional-dependencies]
+chart = [
+    "matplotlib>=3.7.0",  # K线图渲染 (charting.py, chart-trend skill)
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+browser = [
+    "playwright>=1.40.0",
+]
+
+[project.scripts]
+stock-analysis-mcp = "stock_analysis_mcp.server:main"
+stock-analysis-cli = "stock_analysis_mcp.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stock_analysis_mcp"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src/stock_analysis_mcp",
+    "/README.md",
+    "/LICENSE",
+    "/pyproject.toml",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+markers = [
+    "integration: 真实网络+写库的集成测试, 需显式 pytest -m integration 运行",
+]
+addopts = "-m 'not integration'"

@@ -1,0 +1,557 @@
+{
+ "signal_date": 20261029,
+ "generated": "2026-10-30T10:09:09.056747",
+ "prereg": "D:\\zcodesj\\analysis\\revival_paper_test_PREREG_20261027.md",
+ "order": "W2九项+W3八项; 方法间去重起点=持仓∪Wave1名单49只",
+ "methods": {
+  "revival_amp_a": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "ideal_factor_suite.py/bp_ep_amp_monthly_v2.py 原口径; 方向IC+0.060(ideal_factor_suite_report.json)",
+   "picks": [
+    {
+     "code": "001318",
+     "name": "阳光乳业",
+     "price": 13.59,
+     "volume": 100,
+     "source": "revival_amp_a",
+     "rule": "振幅A=0.0211",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 1359.0,
+   "cand_total": 3550,
+   "short": true,
+   "p60_reject": 14,
+   "meta": {}
+  },
+  "revival_ampA_3f": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "bp+ep+振幅A三因子组合=bp_ep_amp_monthly_v2.py 策略B(黑名单原版-1.3%口径)",
+   "picks": [
+    {
+     "code": "600741",
+     "name": "华域汽车",
+     "price": 16.29,
+     "volume": 100,
+     "source": "revival_ampA_3f",
+     "rule": "三因子combo3=0.931",
+     "60min": "金叉"
+    },
+    {
+     "code": "600033",
+     "name": "福建高速",
+     "price": 3.65,
+     "volume": 100,
+     "source": "revival_ampA_3f",
+     "rule": "三因子combo3=0.919",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 1994.0,
+   "cand_total": 100,
+   "short": true,
+   "p60_reject": 13,
+   "meta": {}
+  },
+  "revival_amp_b": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "理想振幅B rel_amount切割振幅, 方向IC-0.069低值优",
+   "picks": [
+    {
+     "code": "001367",
+     "name": "海森药业",
+     "price": 19.11,
+     "volume": 100,
+     "source": "revival_amp_b",
+     "rule": "振幅B=-0.0059(低值优)",
+     "60min": "金叉"
+    },
+    {
+     "code": "605369",
+     "name": "拱东医疗",
+     "price": 17.54,
+     "volume": 100,
+     "source": "revival_amp_b",
+     "rule": "振幅B=-0.0039(低值优)",
+     "60min": "金叉"
+    },
+    {
+     "code": "603307",
+     "name": "扬州金泉",
+     "price": 23.57,
+     "volume": 100,
+     "source": "revival_amp_b",
+     "rule": "振幅B=-0.0034(低值优)",
+     "60min": "金叉"
+    },
+    {
+     "code": "600802",
+     "name": "福建水泥",
+     "price": 7.26,
+     "volume": 100,
+     "source": "revival_amp_b",
+     "rule": "振幅B=-0.0029(低值优)",
+     "60min": "金叉"
+    },
+    {
+     "code": "600908",
+     "name": "无锡银行",
+     "price": 5.98,
+     "volume": 100,
+     "source": "revival_amp_b",
+     "rule": "振幅B=-0.0016(低值优)",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 7346.0,
+   "cand_total": 3550,
+   "short": false,
+   "p60_reject": 3,
+   "meta": {}
+  },
+  "revival_icir_sue": {
+   "wave": "W2",
+   "def_restore": "reconstructed",
+   "definition_src": "还原口径: PIT可用列ep/bp/roe+eps同比SUE, 24月ICIR非负加权(METHODOLOGY_ABSORPTION E2 maxicir工具族); sp/ato/pm/lev列近14月停更99.7%空(如实差异), 原定义细节档案未存",
+   "picks": [
+    {
+     "code": "000415",
+     "name": "渤海租赁",
+     "price": 4.31,
+     "volume": 100,
+     "source": "revival_icir_sue",
+     "rule": "ICIR合成=0.379[sue:0.31 bp:0.07]",
+     "60min": "金叉"
+    },
+    {
+     "code": "002582",
+     "name": "好想你",
+     "price": 9.03,
+     "volume": 100,
+     "source": "revival_icir_sue",
+     "rule": "ICIR合成=0.374[sue:0.31 bp:0.07]",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 1334.0,
+   "cand_total": 2638,
+   "short": true,
+   "p60_reject": 13,
+   "meta": {}
+  },
+  "revival_anom118": {
+   "wave": "W2",
+   "def_restore": "reconstructed",
+   "definition_src": "还原口径v2: 本地全覆盖七因子(id_vol/Amihud/反转/ep/bp/roe/20日均振幅低波)等权; 原始7因子清单档案未存(文献=Hsu 2018 118异象), PIT sp/ato/pm/lev停更为替代动因(如实差异)",
+   "picks": [
+    {
+     "code": "603689",
+     "name": "皖天然气",
+     "price": 7.47,
+     "volume": 100,
+     "source": "revival_anom118",
+     "rule": "七因子等权=0.767(n=7/7)",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 747.0,
+   "cand_total": 2638,
+   "short": true,
+   "p60_reject": 14,
+   "meta": {}
+  },
+  "revival_chan": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "chanlun_signals_nolookahead 确认日无前视表(T=当日二买)",
+   "picks": [],
+   "cost": 0.0,
+   "cand_total": 0,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {}
+  },
+  "revival_bpep_weekly": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "P2-C 周滚动重评(PREREG_P2C_WEEKLY_REBALANCE_20260829): bp_ep复合分Top15(行业≤4)",
+   "picks": [
+    {
+     "code": "601860",
+     "name": "紫金银行",
+     "price": 2.55,
+     "volume": 100,
+     "source": "revival_bpep_weekly",
+     "rule": "P2C周滚动bp_ep=0.995[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "000001",
+     "name": "平安银行",
+     "price": 11.54,
+     "volume": 100,
+     "source": "revival_bpep_weekly",
+     "rule": "P2C周滚动bp_ep=0.994[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "600694",
+     "name": "大商股份",
+     "price": 15.27,
+     "volume": 100,
+     "source": "revival_bpep_weekly",
+     "rule": "P2C周滚动bp_ep=0.976[商贸零售]",
+     "60min": "金叉"
+    },
+    {
+     "code": "000726",
+     "name": "鲁泰Ａ",
+     "price": 5.87,
+     "volume": 100,
+     "source": "revival_bpep_weekly",
+     "rule": "P2C周滚动bp_ep=0.967[纺织服饰]",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 3523.0,
+   "cand_total": 15,
+   "short": true,
+   "p60_reject": 11,
+   "meta": {}
+  },
+  "revival_v52_weekly": {
+   "wave": "W2",
+   "def_restore": "archived_restored",
+   "definition_src": "v52六层深跌启动周批(top5_v52_final_20260920 头注标准: 深跌25%+段起-3%~10%+多头+pos250<50%+3年分位<55%+量价1.1+≤20元)",
+   "picks": [
+    {
+     "code": "002531",
+     "name": "天顺风能",
+     "price": 7.06,
+     "volume": 100,
+     "source": "revival_v52_weekly",
+     "rule": "深跌启动段起距=2.2%量价=1.13pos250<50%",
+     "60min": "金叉"
+    },
+    {
+     "code": "001330",
+     "name": "博纳影业",
+     "price": 5.48,
+     "volume": 100,
+     "source": "revival_v52_weekly",
+     "rule": "深跌启动段起距=-2.3%量价=1.12pos250<50%",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 1254.0,
+   "cand_total": 2,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {
+    "funnel": "≤20元:3012→多头:746→pos250<50%:611→3年分位<55%:448→段起:12→距段起-3~10%:2→量价≥1.1:2"
+   }
+  },
+  "revival_hy_tail": {
+   "wave": "W2",
+   "def_restore": "archived_exact",
+   "definition_src": "P2-B 行业动量尾部过滤(PREREG_P2B_SECTOR_MOMENTUM_20260829 §二原规则: RS降序rank>=25剔除+顺延)",
+   "picks": [
+    {
+     "code": "600928",
+     "name": "西安银行",
+     "price": 3.59,
+     "volume": 100,
+     "source": "revival_hy_tail",
+     "rule": "P2B bp_ep=0.991[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "601528",
+     "name": "瑞丰银行",
+     "price": 5.41,
+     "volume": 100,
+     "source": "revival_hy_tail",
+     "rule": "P2B bp_ep=0.989[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "002839",
+     "name": "张家港行",
+     "price": 4.42,
+     "volume": 100,
+     "source": "revival_hy_tail",
+     "rule": "P2B bp_ep=0.989[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "601077",
+     "name": "渝农商行",
+     "price": 7.27,
+     "volume": 100,
+     "source": "revival_hy_tail",
+     "rule": "P2B bp_ep=0.987[银行]",
+     "60min": "金叉"
+    },
+    {
+     "code": "001227",
+     "name": "兰州银行",
+     "price": 2.13,
+     "volume": 100,
+     "source": "revival_hy_tail",
+     "rule": "P2B bp_ep=0.983[银行]",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 2282.0,
+   "cand_total": 15,
+   "short": false,
+   "p60_reject": 5,
+   "meta": {}
+  },
+  "revival_dbd_gru": {
+   "wave": "W3",
+   "def_restore": "model_inference",
+   "definition_src": "DBD-GRU分钟双支路模型T日截面推理(dbd_gru_minute_v1.pth在档, 8特征48根5分钟K)",
+   "picks": [
+    {
+     "code": "601956",
+     "name": "东贝集团",
+     "price": 6.7,
+     "volume": 100,
+     "source": "revival_dbd_gru",
+     "rule": "DBD-GRU次日预测=0.50604",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 670.0,
+   "cand_total": 3539,
+   "short": true,
+   "p60_reject": 14,
+   "meta": {
+    "n_scored": 3539
+   }
+  },
+  "revival_lstm": {
+   "wave": "W3",
+   "def_restore": "retrained_recipe",
+   "definition_src": "自研LSTM重训(deep_sequence_retest_20260816配方: 5特征60窗/Top800/fwd20rank标签/近年截面)",
+   "picks": [
+    {
+     "code": "300006",
+     "name": "莱美药业",
+     "price": 10.48,
+     "volume": 100,
+     "source": "revival_lstm",
+     "rule": "LSTM重训fwd20rank=0.4821",
+     "60min": "金叉"
+    },
+    {
+     "code": "603626",
+     "name": "科森科技",
+     "price": 27.37,
+     "volume": 100,
+     "source": "revival_lstm",
+     "rule": "LSTM重训fwd20rank=0.4790",
+     "60min": "金叉"
+    },
+    {
+     "code": "603533",
+     "name": "掌阅科技",
+     "price": 26.99,
+     "volume": 100,
+     "source": "revival_lstm",
+     "rule": "LSTM重训fwd20rank=0.4714",
+     "60min": "金叉"
+    },
+    {
+     "code": "300300",
+     "name": "海峡创新",
+     "price": 9.7,
+     "volume": 100,
+     "source": "revival_lstm",
+     "rule": "LSTM重训fwd20rank=0.4714",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 7454.0,
+   "cand_total": 792,
+   "short": true,
+   "p60_reject": 2,
+   "meta": {
+    "n_train": 18163,
+    "n_stock": 800,
+    "epochs": 3
+   }
+  },
+  "revival_kronos_ft": {
+   "wave": "W3",
+   "def_restore": "blocked",
+   "definition_src": "Kronos微调缺件(见note)",
+   "picks": [],
+   "cost": 0.0,
+   "cand_total": 0,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {
+    "blocked": "Kronos微调缺件: 仅hf_cache基座权重在档(零样本已三FAIL); 官方微调管线已知泄漏bug(LITERATURE_MATRIX_20260818 §1); 本轮无GPU长训预算; 已批准复活通道=实时前walk预注册(PREREG_KRONOS_FWALK, 起始20260930在役)未触发"
+   }
+  },
+  "revival_rl": {
+   "wave": "W3",
+   "def_restore": "blocked",
+   "definition_src": "RL缺件: ckpt在档但观测面板停更(见note)",
+   "picks": [],
+   "cost": 0.0,
+   "cand_total": 0,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {
+    "blocked": "RL缺件: A2C ckpt在档, 但观测面板 fml_v2_panels 停更20260731(缺近3月), 重建面板为独立工程不在本轮; 未重训不产出确定性名单"
+   }
+  },
+  "revival_v8_3dir": {
+   "wave": "W3",
+   "def_restore": "definition_unrecoverable",
+   "definition_src": "V8增强三方向定义不可还原(见note, 需主人指认)",
+   "picks": [],
+   "cost": 0.0,
+   "cand_total": 0,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {
+    "blocked": "V8增强三方向定义不可还原: 档案仅存结论「对现役组合无增量」(PROJECT_BOUNDARY §6), 无三方向算法定义文件; 候选指认=9/4 stage1三臂(RANKLOSS/REGIME-ADAPT/MAINLINE-CONSTRAINT)无定谳文件; 需主人指认三方向清单后方可建名单(反臆想: 无定义不出确定性名单)"
+   }
+  },
+  "revival_v51_fusion": {
+   "wave": "W3",
+   "def_restore": "model_inference",
+   "definition_src": "V5.1 full_fusion管线实弹(select_stocks_daily.py --config full_fusion_v51)",
+   "picks": [],
+   "cost": 0.0,
+   "cand_total": 0,
+   "short": true,
+   "p60_reject": 0,
+   "meta": {
+    "raw_n": 5,
+    "rc": 0,
+    "raw_codes": [
+     "688783",
+     "688759",
+     "688106",
+     "688584",
+     "688371"
+    ]
+   }
+  },
+  "revival_p2": {
+   "wave": "W3",
+   "def_restore": "model_output_archived",
+   "definition_src": "P2信号独立下单(stock_signals_p2在档推理, 信号日20260921如实标注滞后)",
+   "picks": [
+    {
+     "code": "600869",
+     "name": "远东股份",
+     "price": 22.94,
+     "volume": 100,
+     "source": "revival_p2",
+     "rule": "p2_prob=0.4686@20260921(滞后108日)",
+     "60min": "金叉"
+    },
+    {
+     "code": "000901",
+     "name": "航天科技",
+     "price": 14.48,
+     "volume": 100,
+     "source": "revival_p2",
+     "rule": "p2_prob=0.4658@20260921(滞后108日)",
+     "60min": "金叉"
+    },
+    {
+     "code": "600714",
+     "name": "金瑞矿业",
+     "price": 19.22,
+     "volume": 100,
+     "source": "revival_p2",
+     "rule": "p2_prob=0.4656@20260921(滞后108日)",
+     "60min": "金叉"
+    },
+    {
+     "code": "002643",
+     "name": "万润股份",
+     "price": 13.45,
+     "volume": 100,
+     "source": "revival_p2",
+     "rule": "p2_prob=0.4650@20260921(滞后108日)",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 7009.42,
+   "cand_total": 15,
+   "short": true,
+   "p60_reject": 9,
+   "meta": {
+    "signal_date": 20260921
+   }
+  },
+  "revival_composite": {
+   "wave": "W3",
+   "def_restore": "model_output_archived",
+   "definition_src": "综合信号composite_score独立下单(stock_signals在产表@T)",
+   "picks": [
+    {
+     "code": "603726",
+     "name": "朗迪集团",
+     "price": 21.74,
+     "volume": 100,
+     "source": "revival_composite",
+     "rule": "composite_score=0.376@T",
+     "60min": "金叉"
+    },
+    {
+     "code": "300622",
+     "name": "博士眼镜",
+     "price": 14.61,
+     "volume": 100,
+     "source": "revival_composite",
+     "rule": "composite_score=0.344@T",
+     "60min": "金叉"
+    },
+    {
+     "code": "603225",
+     "name": "新凤鸣",
+     "price": 16.55,
+     "volume": 100,
+     "source": "revival_composite",
+     "rule": "composite_score=0.334@T",
+     "60min": "金叉"
+    },
+    {
+     "code": "002202",
+     "name": "金风科技",
+     "price": 14.9,
+     "volume": 100,
+     "source": "revival_composite",
+     "rule": "composite_score=0.332@T",
+     "60min": "金叉"
+    },
+    {
+     "code": "300197",
+     "name": "节能铁汉",
+     "price": 1.93,
+     "volume": 100,
+     "source": "revival_composite",
+     "rule": "composite_score=0.320@T",
+     "60min": "金叉"
+    }
+   ],
+   "cost": 6973.0,
+   "cand_total": 15,
+   "short": false,
+   "p60_reject": 0,
+   "meta": {}
+  }
+ }
+}

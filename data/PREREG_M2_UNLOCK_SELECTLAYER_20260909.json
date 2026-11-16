@@ -1,0 +1,15 @@
+{
+  "id": "PREREG_M2_UNLOCK_SELECTLAYER_20260909",
+  "created": "2026-09-09",
+  "hypothesis": "选股层嵌入解禁过滤（bp_ep 月度选股剔除『选股日后 30 自然日内解禁比例≥θ』候选）后，bp_ep 组合大亏减少且收益损失可接受。前置已满足：全市场翻案 PASS_CANDIDATE（t=-8.46）+ 小盘混杂排除 PASS（同市值桶 t=-5.81，主人裁决『不排除小盘混杂』已处理）。",
+  "implementation": "引擎 additive 开关 UNLOCK_FILTER_RATIO（照 atr_stop_mult 先例，默认 0=关代码路径不可达，py_compile+AST 已验）；fail-closed 数据源 event_calendar.db restricted_release_hist_em；过滤作用于 bp_ep_signal 候选池（Top20 选取前），reason 带 M2 解禁过滤标签；ml 臂不涉及（组合 50/50 仅作参考）。",
+  "thresholds": {"primary": "θ=3%", "secondary": "θ=5%"},
+  "baseline": "drift_check_20260909e_0908end（同引擎同数据当日基线；可比性依据=additive 块默认关不可达+变体跑 reason 标签可核）",
+  "acceptance_frozen": "对每 θ 独立判定（bp_ep_core 口径）：①大亏笔数(≤-5%)降幅 ≥10% ②总收益差 ≥ -3pp（十年口径）③MDD 恶化 ≤1pp → 全满足=该 θ PASS_CANDIDATE；任一不满足=该 θ FAIL；两 θ 全 FAIL=选股层关闭并登记档案。另如实记录：月均剔除只数、候选<20 触发月次数（剔后不足 20 只当月空仓=如实计）。",
+  "verdict_semantics": "PASS_CANDIDATE 指提请生产接线（pre_trade_check R 闸门候选+月度选股集成），须主人逐项裁决；FAIL 则选股层口径登记 falsified（trial_budget=1，翻案须新 prereg）。",
+  "runtime": "每跑约 20 分钟，顺序两跑；输出目录无 roundN 前缀（命名守卫合规：研究变体非数据延伸非 wfa 轮次）。",
+  "execution": {
+    "outputs": ["reports/m2_unlock_selectlayer_20260909_t3", "reports/m2_unlock_selectlayer_20260909_t5"],
+    "compare_script": "对账脚本于两跑完成后生成对比报告 reports/m2_unlock_selectlayer_20260909/SELECTLAYER_REPORT.md"
+  }
+}

@@ -1,0 +1,39 @@
+{"request_date": "20260924", "code": "603585", "name": "苏利股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260924", "code": "600704", "name": "物产中大", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260924", "code": "002481", "name": "双塔食品", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260924", "code": "600719", "name": "大连热电", "action": "watch_request", "reason": "🟡 均线全破(vs_ma=0首日·dd60-12.2%·浮盈+6.9%未失守)·列入9/25三看确认", "source": "daily_review_20260924"}
+{"request_date": "20260928", "code": "603585", "name": "苏利股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260928", "code": "600035", "name": "楚天高速", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260928", "code": "600704", "name": "物产中大", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260928", "code": "002481", "name": "双塔食品", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260928", "code": "600348", "name": "华阳股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260929", "code": "600035", "name": "楚天高速", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260929", "code": "600018", "name": "上港集团", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260929", "code": "600704", "name": "物产中大", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260930", "code": "601866", "name": "中远海发", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20260930", "code": "603637", "name": "镇海股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20261008", "code": "603637", "name": "镇海股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20261009", "code": "603098", "name": "森特股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）"}
+{"request_date": "20261013", "code": "300573", "name": "兴齐眼药", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -4.8, "v2_ma20_slope5": -0.602}
+{"request_date": "20261013", "code": "600966", "name": "博汇纸业", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.08, "v2_ma20_slope5": -0.002}
+{"request_date": "20261013", "code": "002056", "name": "横店东磁", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -6.68, "v2_ma20_slope5": -0.327}
+{"request_date": "20261014", "code": "600966", "name": "博汇纸业", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.95, "v2_ma20_slope5": -0.006}
+{"request_date": "20261014", "code": "603098", "name": "森特股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -1.65, "v2_ma20_slope5": -0.051}
+{"request_date": "20261014", "code": "002056", "name": "横店东磁", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -7.76, "v2_ma20_slope5": -0.372}
+{"request_date": "20261020", "code": "002688", "name": "金河生物", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -4.11, "v2_ma20_slope5": -0.092}
+{"request_date": "20261020", "code": "002174", "name": "游族网络", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -9.36, "v2_ma20_slope5": -0.124}
+{"request_date": "20261020", "code": "601022", "name": "宁波远洋", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.52, "v2_ma20_slope5": -0.093}
+{"request_date": "20261020", "code": "601866", "name": "中远海发", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "B_EDGE", "v2_action": "hold_reclaim_check", "v2_gap_pct": -1.8, "v2_ma20_slope5": -0.02}
+{"request_date": "20261020", "code": "601226", "name": "华电科工", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.71, "v2_ma20_slope5": -0.088}
+{"request_date": "20261020", "code": "600966", "name": "博汇纸业", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -4.33, "v2_ma20_slope5": -0.082}
+{"request_date": "20261020", "code": "603098", "name": "森特股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -2.74, "v2_ma20_slope5": -0.227}
+{"request_date": "20261020", "code": "002053", "name": "云南能投", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.0, "v2_ma20_slope5": -0.151}
+{"request_date": "20261020", "code": "300978", "name": "东箭科技", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -1.87, "v2_ma20_slope5": -0.057}
+{"request_date": "20261020", "code": "300402", "name": "宝色股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -2.13, "v2_ma20_slope5": -0.179}
+{"request_date": "20261020", "code": "000410", "name": "沈阳机床", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -4.9, "v2_ma20_slope5": -0.072}
+{"request_date": "20261020", "code": "000670", "name": "盈方微", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -16.31, "v2_ma20_slope5": -0.258}
+{"request_date": "20261020", "code": "001287", "name": "中电港", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -16.14, "v2_ma20_slope5": -0.819}
+{"request_date": "20261020", "code": "300263", "name": "隆华科技", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -15.19, "v2_ma20_slope5": -0.342}
+{"request_date": "20261020", "code": "301500", "name": "飞南资源", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -15.13, "v2_ma20_slope5": -0.709}
+{"request_date": "20261020", "code": "603803", "name": "瑞斯康达", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -15.1, "v2_ma20_slope5": -0.379}
+{"request_date": "20261021", "code": "600626", "name": "申达股份", "action": "sell_request", "reason": "🔴 空头排列（趋势走坏成立·连续2日+破位≥1%）", "v2_confirm": "A_CONFIRMED", "v2_action": "sell_t1_open", "v2_gap_pct": -3.81, "v2_ma20_slope5": -0.02}

@@ -1,0 +1,122 @@
+{
+ "generated": "2026-10-26",
+ "exploratory": true,
+ "overall": {
+  "n": 212871,
+  "win_hold": 0.5145,
+  "mean_hold": 0.0165,
+  "win_stop": 0.4788,
+  "mean_stop": 0.0127
+ },
+ "top_combos_by_winrate": [
+  {
+   "cond": "p10-20/v高/c涨/0/mkt空",
+   "n": 3379,
+   "win_hold": 0.6458,
+   "mean_hold": 0.0517,
+   "median_hold": 0.0388,
+   "win_stop": 0.6094,
+   "mean_stop": 0.0486
+  },
+  {
+   "cond": "p10-20/v高/c平/0/mkt空",
+   "n": 3101,
+   "win_hold": 0.5966,
+   "mean_hold": 0.0442,
+   "median_hold": 0.0261,
+   "win_stop": 0.5514,
+   "mean_stop": 0.04
+  },
+  {
+   "cond": "p20-30/v高/c涨/0/mkt空",
+   "n": 3203,
+   "win_hold": 0.5988,
+   "mean_hold": 0.0393,
+   "median_hold": 0.0303,
+   "win_stop": 0.5492,
+   "mean_stop": 0.0337
+  },
+  {
+   "cond": "p10-20/v低/c涨/1/mkt多",
+   "n": 4566,
+   "win_hold": 0.5594,
+   "mean_hold": 0.0192,
+   "median_hold": 0.0108,
+   "win_stop": 0.5451,
+   "mean_stop": 0.0167
+  },
+  {
+   "cond": "p20-30/v低/c涨/1/mkt多",
+   "n": 4835,
+   "win_hold": 0.5423,
+   "mean_hold": 0.0171,
+   "median_hold": 0.0079,
+   "win_stop": 0.5305,
+   "mean_stop": 0.0141
+  },
+  {
+   "cond": "p0-10/v低/c平/1/mkt多",
+   "n": 4878,
+   "win_hold": 0.5451,
+   "mean_hold": 0.0152,
+   "median_hold": 0.0083,
+   "win_stop": 0.5299,
+   "mean_stop": 0.0129
+  },
+  {
+   "cond": "p0-10/v高/c跌/0/mkt空",
+   "n": 3270,
+   "win_hold": 0.5908,
+   "mean_hold": 0.042,
+   "median_hold": 0.0295,
+   "win_stop": 0.5269,
+   "mean_stop": 0.0348
+  },
+  {
+   "cond": "p10-20/v高/c跌/0/mkt空",
+   "n": 3358,
+   "win_hold": 0.5613,
+   "mean_hold": 0.0386,
+   "median_hold": 0.0188,
+   "win_stop": 0.5092,
+   "mean_stop": 0.0325
+  },
+  {
+   "cond": "p20-30/v高/c平/0/mkt空",
+   "n": 3705,
+   "win_hold": 0.5606,
+   "mean_hold": 0.0295,
+   "median_hold": 0.0167,
+   "win_stop": 0.5088,
+   "mean_stop": 0.0247
+  },
+  {
+   "cond": "p0-10/v低/c跌/1/mkt多",
+   "n": 5381,
+   "win_hold": 0.5241,
+   "mean_hold": 0.0092,
+   "median_hold": 0.0052,
+   "win_stop": 0.5085,
+   "mean_stop": 0.0081
+  },
+  {
+   "cond": "p10-20/v低/c平/1/mkt多",
+   "n": 5479,
+   "win_hold": 0.5149,
+   "mean_hold": 0.014,
+   "median_hold": 0.0041,
+   "win_stop": 0.5021,
+   "mean_stop": 0.0111
+  },
+  {
+   "cond": "p20-30/v低/c平/1/mkt多",
+   "n": 5984,
+   "win_hold": 0.5139,
+   "mean_hold": 0.0133,
+   "median_hold": 0.0031,
+   "win_stop": 0.502,
+   "mean_stop": 0.01
+  }
+ ],
+ "n_combos_found": 40
+}

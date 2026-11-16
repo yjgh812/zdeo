@@ -1,0 +1,95 @@
+{
+ "segment": "2016-2025阈值段(2026未触碰,热身24期后起判)",
+ "common_months": 66,
+ "dual_fail_events": [
+  {
+   "ym": "2022-08",
+   "Qbp": -0.48,
+   "Qml": 0.44,
+   "pct_bp": 28.0,
+   "pct_ml": 12.0,
+   "dual_fail": true
+  },
+  {
+   "ym": "2024-07",
+   "Qbp": -1.17,
+   "Qml": -3.99,
+   "pct_bp": 9.3,
+   "pct_ml": 9.3,
+   "dual_fail": true
+  },
+  {
+   "ym": "2026-05",
+   "Qbp": -3.66,
+   "Qml": -6.15,
+   "pct_bp": 8.2,
+   "pct_ml": 4.9,
+   "dual_fail": true
+  },
+  {
+   "ym": "2026-06",
+   "Qbp": -3.33,
+   "Qml": -3.09,
+   "pct_bp": 9.7,
+   "pct_ml": 11.3,
+   "dual_fail": true
+  }
+ ],
+ "state_transitions": [
+  "2026-06",
+  "2026-09*复位"
+ ],
+ "reduced_months_total": 4,
+ "equity": {
+  "normal": 347.84,
+  "reduced": 342.69
+ },
+ "mdd": {
+  "normal": 16.34,
+  "reduced": 15.68
+ },
+ "by_year": {
+  "2020": {
+   "normal": 46.93,
+   "reduced": 46.93,
+   "n_months": 10,
+   "reduced_months": 0
+  },
+  "2021": {
+   "normal": 30.98,
+   "reduced": 30.98,
+   "n_months": 10,
+   "reduced_months": 0
+  },
+  "2022": {
+   "normal": 19.12,
+   "reduced": 19.12,
+   "n_months": 10,
+   "reduced_months": 0
+  },
+  "2023": {
+   "normal": 23.36,
+   "reduced": 23.36,
+   "n_months": 9,
+   "reduced_months": 0
+  },
+  "2024": {
+   "normal": 35.14,
+   "reduced": 35.14,
+   "n_months": 10,
+   "reduced_months": 0
+  },
+  "2025": {
+   "normal": 31.16,
+   "reduced": 31.16,
+   "n_months": 10,
+   "reduced_months": 0
+  },
+  "2026": {
+   "normal": -10.65,
+   "reduced": -11.68,
+   "n_months": 7,
+   "reduced_months": 4
+  }
+ }
+}

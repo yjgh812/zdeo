@@ -1,0 +1,15 @@
+{
+ "asof": "20261029",
+ "micro_pct": 1.19,
+ "zz500_pct": 2.32,
+ "micro_pctl": 19.3,
+ "zz500_pctl": 21.4,
+ "flags": [],
+ "days_since_activation_data": 0,
+ "nan_ratio": 0.0121,
+ "warn_lines": {
+  "zz500_extreme": "pctl>=90.0(本方分布描述线, 非民间阈值)",
+  "micro_crowded": "pctl>=80.0"
+ },
+ "acceptance": "60交易日; kill=数据断供>5交易日或NaN>10%提请停影; warn只记不发"
+}

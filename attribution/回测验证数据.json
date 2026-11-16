@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T19:55:32.524273",
+    "data_range": "2024-08-01 ~ 2026-08-10",
+    "db_path": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_meta.db",
+    "total_stocks": 7696,
+    "total_bars": 2286298
+  },
+  "r6_ab_gap": {
+    "ab_4_7": {
+      "label": "AB竞价确认(4-7%)",
+      "n": 4019,
+      "win_rate": 46.62851455585967,
+      "avg_return_pct": -0.928522562227144,
+      "avg_win_pct": 4.232554243965172,
+      "avg_loss_pct": -5.437547240457634,
+      "profit_factor": 0.6800514636482062,
+      "zt_rate": 34.13784523513312,
+      "median_return_pct": -0.8319467554076532
+    },
+    "wide_0_10": {
+      "label": "宽口径高开(0-10%)",
+      "n": 20936,
+      "win_rate": 42.983377913641576,
+      "avg_return_pct": -0.5667341811257439,
+      "avg_win_pct": 4.1428713251920195,
+      "avg_loss_pct": -4.11718571428764,
+      "profit_factor": 0.7585776542591758,
+      "zt_rate": 25.324799388612917,
+      "median_return_pct": -0.14104372355430161
+    },
+    "low_2_4": {
+      "label": "低开承接(2-4%)",
+      "n": 4514,
+      "win_rate": 46.85423128046079,
+      "avg_return_pct": -0.04901391920994735,
+      "avg_win_pct": 4.6001723269546755,
+      "avg_loss_pct": -4.1478171333150655,
+      "profit_factor": 0.9777653070639437,
+      "zt_rate": 20.491803278688526,
+      "median_return_pct": -0.551977920883151
+    },
+    "high_7_10": {
+      "label": "高开过高(7-10%)",
+      "n": 3733,
+      "win_rate": 24.403964639699975,
+      "avg_return_pct": -2.3702598306680036,
+      "avg_win_pct": 2.0187163473393546,
+      "avg_loss_pct": -3.7871121687844824,
+      "profit_factor": 0.17207924779854522,
+      "zt_rate": 56.630056255022765,
+      "median_return_pct": 0.0
+    }
+  },
+  "r1_stoploss": {
+    "with_stop": {
+      "n": 4017,
+      "win_rate": 39.03410505352253,
+      "avg_return_pct": -0.27180147401647986,
+      "avg_win_pct": 8.78018034330825,
+      "avg_loss_pct": -6.067435401972861,
+      "profit_factor": 0.9265215996472982,
+      "max_loss_pct": -8.0,
+      "median_return_pct": -3.0000000000000027,
+      "stop_trigger_rate": 33.9058999253174
+    },
+    "without_stop": {
+      "n": 4017,
+      "win_rate": 41.02564102564102,
+      "avg_return_pct": -0.5907664574120688,
+      "avg_win_pct": 8.517644754721115,
+      "avg_loss_pct": -6.927052518026458,
+      "profit_factor": 0.8553880708744677,
+      "max_loss_pct": -35.8074222668004,
+      "median_return_pct": -2.010050251256279
+    }
+  },
+  "r8_sector_filter": {
+    "r8_top5": {
+      "n": 807,
+      "win_rate": 60.966542750929364,
+      "avg_return_pct": 0.908392964776741,
+      "avg_win_pct": 4.480409861558121,
+      "avg_loss_pct": -4.670757235910367,
+      "profit_factor": 1.4982524555654249,
+      "median_return_pct": 3.025866276232314
+    },
+    "baseline_all": {
+      "n": 3906,
+      "win_rate": 46.236559139784944,
+      "avg_return_pct": -0.950042847095727,
+      "avg_win_pct": 4.224808164445509,
+      "avg_loss_pct": -5.4004147170211905,
+      "profit_factor": 0.6727881490233487,
+      "median_return_pct": -0.8765243902438935
+    }
+  }
+}

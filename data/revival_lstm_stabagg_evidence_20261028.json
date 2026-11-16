@@ -1,0 +1,19 @@
+{
+ "n_models": 100,
+ "universe": 3555,
+ "stability_top50_pairs_mean": null,
+ "selected": [
+  {
+   "code": "301283",
+   "name": "聚胶股份",
+   "mean_pct": 0.999,
+   "agree4": 0.82
+  },
+  {
+   "code": "002521",
+   "name": "齐峰新材",
+   "mean_pct": 0.9987,
+   "agree4": 0.83
+  }
+ ]
+}

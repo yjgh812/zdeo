@@ -1,0 +1,49 @@
+{
+ "review_date": 20261030,
+ "phase": "防御(涨/跌=0.03)",
+ "mainline": [
+  "医药生物",
+  "煤炭",
+  "银行",
+  "食品饮料"
+ ],
+ "aligned": 3,
+ "total": 5,
+ "rows": [
+  {
+   "code": "601598",
+   "name": "中国外运",
+   "source": "quant_rank_original",
+   "industry": "交通运输",
+   "in_mainline": false
+  },
+  {
+   "code": "600377",
+   "name": "宁沪高速",
+   "source": "quant_rank_original",
+   "industry": "交通运输",
+   "in_mainline": false
+  },
+  {
+   "code": "601528",
+   "name": "瑞丰银行",
+   "source": "quant_rank_original",
+   "industry": "银行",
+   "in_mainline": true
+  },
+  {
+   "code": "002332",
+   "name": "仙琚制药",
+   "source": "quant_rank_original",
+   "industry": "医药生物",
+   "in_mainline": true
+  },
+  {
+   "code": "600998",
+   "name": "九州通",
+   "source": "quant_rank_original",
+   "industry": "医药生物",
+   "in_mainline": true
+  }
+ ]
+}

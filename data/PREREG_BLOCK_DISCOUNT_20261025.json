@@ -1,0 +1,28 @@
+{
+ "id": "PREREG_BLOCK_DISCOUNT_20261025",
+ "title": "大宗交易折溢率五分组单调性检验 (事件流水线E5, 主人「继续」令)",
+ "declared": "2026-10-25",
+ "origin": "主人第15轮反直觉宣称: 折价>10%未来30天+4.7%(58%胜率) vs 溢价>5%为-3.2%(41%); 数据=data/block_trade_stage_2016_2026.csv(akshare stock_dzjy_mrtj, 103,672笔2016-2026)",
+ "rule_frozen": {
+  "data": "akshare stock_dzjy_mrtj全史直连, 折溢率=(成交价-收盘价)/收盘价",
+  "grouping": "五分组: <=-10%(深折), -10~-5%, -5~0%, 0~+5%(溢价), >+5%(高溢价)",
+  "event": "大宗交易日D(同股同日多笔取成交总额最大笔的折溢率), 入场=D次一bar收盘(c1)",
+  "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日, 入场日close<=30, volume>0",
+  "exit": "t20e(-8%止损/T+20)",
+  "baseline": "同日全宇宙同口径t20e均值",
+  "dedup": "同股90日历日冷却(每冷却期取最大折溢率笔)",
+  "window": "20160101-20261023"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_monotonicity": "五组t20e胜率超额从深折到高溢价呈单调递减(Spearman rank corr of bucket_order vs excess <= -0.8, 即至少方向一致)",
+  "G2_deep_discount": "深折组(<=-10%)胜率超额>=+2.0pp",
+  "G3_high_premium_negative": "高溢价组(>+5%)胜率超额<=-1.0pp(负向确认)",
+  "G4_deep_net": "深折组含费(0.3%)均值超额>=+1.0pp",
+  "verdict_rule": "四门全过=PASS_CANDIDATE; G1未过=单调性不存在=FAIL(核心假设证伪); G1过但其余任一未过=部分确认观察登记"
+ },
+ "multiple_testing_note": "五组独立分组但联合检验单调性(G1)为主假设, 各组超额为描述统计",
+ "failure_clause": "FAIL时大宗折价口径不接线; 席位性质分层(机构/游资/产业)为二期须数据",
+ "fingerprint": "48f53a76fc26cb08",
+ "status": "executed_FAIL_direction_reversed_20261025",
+ "result_ref": "reports/BLOCK_DISCOUNT_PREREG_RESULT_20261025.md"
+}

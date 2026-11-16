@@ -1,0 +1,24 @@
+[
+ {
+  "code": "000002",
+  "name": "万科Ａ",
+  "volume": 700,
+  "price": 3.47,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 3.37,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "601857",
+  "name": "中国石油",
+  "volume": 200,
+  "price": 13.11,
+  "source": "type_sample_F_driver",
+  "sector": "石油石化",
+  "prev_close": 12.75,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

@@ -1,0 +1,28 @@
+{
+  "id": "PREREG_HMM_ROLLING_SHADOW",
+  "version": "draft-20260920",
+  "status": "DRAFT（激活条件=10/1 regime 双 prereg 一期裁决落地后，主人确认激活；排期条款=两轴不同时上生产防归因互污）",
+  "origin": "reports/swing_p_recon_20260919/C2_hmm_eval_20260920.md（值得立项判定）+ P-pool 原三条 + C2 新增四要点",
+  "hypothesis_LOCKED": "HMM 3 态滚动重拟合（无前视）后，市场情绪态轴与 env_pos250 位置轴正交互补的结构复现：MID 阴跌态毒格在 env≥70（全样本 -0.52%）、UP 态毒格在 env40-69（-0.30%）方向不变；DOWN 暴跌态=仓位/风控轴非选股轴（目标对齐条款）",
+  "protocol_LOCKED": {
+    "重拟合": "扩张窗全历史（2015 起）+ 每月末重拟合一次（数据截至 T-1，MarkovRegression 3 态，5 种子取最优 llf）——全样本版含前视仅作结构参照，生产判定一律用滚动版",
+    "态判定": "日频 argmax 概率 ≥0.6 才切态，<0.6 维持前态（防抖条款）；三态命名 UP/MID/DOWN 与 C2 口径一致",
+    "影子登记": "每日登记 {date, hmm_state, prob_max, env_pos250_bucket, 联合格} 至 data/hmm_rolling_shadow_ledger.jsonl（幂等 UPSERT）",
+    "判定样本": "影子期 ≥120 交易日或 6 个月（先到为准）"
+  },
+  "decision_rule_LOCKED": {
+    "G1_滚动可行性": "滚动版与全样本版态一致率 ≥70%（逐日对照，影子期累计）",
+    "G2_结构复现": "滚动版联合表（2×3 六格）中：MID×env≥70 格与 UP×env40-69 格方向为负且至少一格 |NW t|≥1.5（影子期短样本门槛低于全样本，如实标注观察级）",
+    "G3_延迟成本": "换态日次日的执行延迟成本（fwd5 差）中位绝对值 ≤0.5%（防抖条款有效性验证）",
+    "通过动作": "呈报主人裁决：a) 接 MARKETSTATE 作为 regime 第二轴 b) 作 regime 预算闸门二期增强（联合毒药格矩阵）——两选项均 owner 裁决",
+    "失败动作": "登记 falsified（HMM-ROLLING-SHADOW，anchor=ic_vs_pnl 或 other），轴关闭；翻案须新指纹新 prereg"
+  },
+  "boundary_LOCKED": "零生产接线：不进 preflight/不进闸门/不拦交易/不动名单；DOWN 态禁作选股窗口（目标对齐：反弹轴=仓位/风控语义）；影子期禁改判据与重拟合协议；与 REGIME_BUDGET_GATE/UP_BUCKET_ENV_GATE 关系=正交互补非替代（两 prereg 已冻结，本轴二期）",
+  "data_source": "等权市场日收益（r2_market_daily.csv 同源口径重建）+ 上证 env_pos250（MARKETSTATE 同源）",
+  "owner": "主人（激活/升级/关闭裁决权）；研究执行=知微 AUTO 域",
+  "superseded_note": {
+    "status_change": "本草案经主人 2026-09-21 晨裁决归并：单引擎归并至 data/prereg_hmm_regime_20260920_DRAFT.json（主引擎）",
+    "preserved_as": "本草案 env 联合格降级为主草案 Stage C 可选扩展；本文件档案保留不删",
+    "frozen": false
+  }
+}

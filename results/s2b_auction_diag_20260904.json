@@ -1,0 +1,14 @@
+{
+  "n_filled": 1020,
+  "mean_filled": 0.6805201147308853,
+  "n_skipped": 9,
+  "skip_openret_dist": {
+    "9.8-9.96(高开未封死,竞价可买)": 1,
+    ">=9.96主板/19.96创业(开在涨停价,竞价也难买)": 8
+  },
+  "mean_skipped_all": 3.075458187997843,
+  "mean_skipped_buyable": -12.890625,
+  "n_skipped_buyable": 1,
+  "mean_skipped_sealed": 5.071218586497573,
+  "mean_auction_portfolio_allpicks": 0.6672281018858991
+}

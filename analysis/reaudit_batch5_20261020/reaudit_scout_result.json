@@ -1,0 +1,25 @@
+{
+ "id": "BREAKOUT-SCOUT-TRADEABLE",
+ "mode": "independent_reimpl",
+ "n_signals": 6106,
+ "sig_mean_pct": -3.33,
+ "sig_win": 0.3253,
+ "base_mean_pct": 0.573,
+ "excess_pp": -3.903,
+ "day_cluster_t": -11.42,
+ "n_months": 1778,
+ "yearly_mean_pct": {
+  "2018": -8.218,
+  "2019": -2.091,
+  "2020": -3.531,
+  "2021": -1.206,
+  "2022": -4.019,
+  "2023": -5.323,
+  "2024": -1.565,
+  "2025": -2.468,
+  "2026": -4.484
+ },
+ "caveats": [
+  "同宇宙基线=elig(c<=30&指标齐)每5日抽样次收入场同费率; ST未剔(原档用cache)"
+ ]
+}

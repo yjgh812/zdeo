@@ -1,0 +1,10 @@
+{
+ "date": 20261026,
+ "close": 3697.52,
+ "ma60": 3869.62,
+ "ma60_slope_up": false,
+ "close_above_ma60": false,
+ "adx14": 45.7,
+ "regime": "下跌市down",
+ "generated_at": "2026-10-27 13:31:22"
+}

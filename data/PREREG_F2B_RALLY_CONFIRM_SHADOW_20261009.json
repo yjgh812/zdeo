@@ -1,0 +1,32 @@
+{
+  "name": "PREREG_F2B_RALLY_CONFIRM_SHADOW",
+  "title": "F2B_RALLY_CONFIRM 主升3日新高确认窗(等权指数层)影子验证",
+  "status": "ACTIVE",
+  "approval": "owner(主人) 2026-10-09 令「升级」=批准R46报告§十二呈请: F2b观察留档升级为在轨影子",
+  "registered": "2026-10-09",
+  "family": "market_phase_state",
+  "sibling": "与PD-035情绪相位/C-Z1资金结构三态平行互补(本件=等权指数层趋势确认态, 三者为市场状态三视角); 零接线零拦截",
+  "evidence_report": "reports/bili_r46_mcp_fullsweep_study_20261009.md §十二(F2b行)+§一.3(来源视频BV1Rv8z62EVp巨拳情绪周期图解, 组E消化); 验证脚本analysis/r46_f2_g2_phase_calendar_study_20261009.py",
+  "in_sample_evidence": {
+    "event_hit": "74.8% (n=226, 2016-2026, 收盘口径)",
+    "yearly": "10/11年hit>=0.50 (区间0.50-0.82)",
+    "definition": "等权指数(60/00/30开头, 剔科创北交B股)创60日收盘新高且距前60日低点反弹>=10%的事件, 后3个交易日内收盘再创新高=确认"
+  },
+  "params": {
+    "W": 60,
+    "rebound_th": 0.10,
+    "confirm_win": 3,
+    "fwd": 20,
+    "universe": "60/00/30开头, 剔688/8/4/9开头",
+    "price": "等权AVG(close), 收盘口径, T日盘后可得无前视",
+    "activation_since": "20261009",
+    "db": "D:/zcodesj/data/dragon_quant_qfq.db stock_daily_meta_qfq"
+  },
+  "acceptance_locked": {
+    "horizon": "自activation_since起60交易日 或 OOS事件n>=20, 先到为准",
+    "pass": "OOS确认态事件fwd20中位>0 且 OOS hit率>=55%",
+    "kill_switch": "OOS前10个确认态事件fwd20中位<0 提请废案",
+    "note": "OOS hit率若显著低于in_sample 74.8%(<55%)亦提请复核"
+  },
+  "boundary": "纯指数层状态描述影子, 零交易权, 禁止接闸门/仓位/扳机(PD-034铁律: 状态轴非扳机); runner=analysis/r46_f2b_rally_shadow_daily.py 全史重算幂等, 参数单一真源=本文件params字段缺即fail-closed退出"
+}

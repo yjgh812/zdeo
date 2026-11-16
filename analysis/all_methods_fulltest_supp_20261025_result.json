@@ -1,0 +1,95 @@
+{
+ "meta": {
+  "generated_at": "2026-10-25",
+  "order": "继续(全量测试补遗)",
+  "zero_trade_authority": true,
+  "erratum": "主报告'v4断供5个月'系误报: stock_signals_v4为已登记死表(check_db_freshness.py:53, 2026-09-10移出巡检); 生产=v4管线CSV+v43表"
+ },
+ "v4csv_leg": {
+  "note": "生产v4管线CSV(master/hist日选股) 20260817-20261022, 次日收盘入场; t20窗仅早期信号日完整, 小样本低置信",
+  "t20e_stop92": {
+   "n": 351,
+   "win": 0.6125,
+   "ret_mean": 0.0087,
+   "base_win": 0.364,
+   "base_ret": -0.0127,
+   "excess_win_pp": 24.85,
+   "excess_ret_pp": 2.15
+  },
+  "t10e_stop92": {
+   "n": 476,
+   "win": 0.5588,
+   "ret_mean": -0.0001,
+   "base_win": 0.4287,
+   "base_ret": -0.0028,
+   "excess_win_pp": 13.01,
+   "excess_ret_pp": 0.27
+  },
+  "t20_nostop": {
+   "n": 351,
+   "win": 0.6296,
+   "ret_mean": 0.0091,
+   "base_win": 0.364,
+   "base_ret": -0.0127,
+   "excess_win_pp": 26.56,
+   "excess_ret_pp": 2.18
+  },
+  "dates_t20e": [
+   20260817,
+   20260818,
+   20260820,
+   20260821,
+   20260824,
+   20260825,
+   20260826,
+   20260827,
+   20260828,
+   20260901,
+   20260902,
+   20260904,
+   20260907,
+   20260909,
+   20260910,
+   20260911,
+   20260914,
+   20260915
+  ]
+ },
+ "baya_rule_check": {
+  "baya_json_hits_total": 18,
+  "scan_hits_ex688": 18,
+  "my_hits_same_day": 17,
+  "scan_ex688_not_in_mine": [
+   "001391"
+  ],
+  "mine_extra_count": 0
+ },
+ "baya_sensitivity": {
+  "t20e_stop92": {
+   "n": 1469,
+   "win": 0.241,
+   "ret_mean": -0.0469
+  },
+  "t20e_stop90": {
+   "n": 1469,
+   "win": 0.2471,
+   "ret_mean": -0.0521
+  },
+  "t20e_stop95": {
+   "n": 1469,
+   "win": 0.2069,
+   "ret_mean": -0.0365
+  },
+  "t20_nostop": {
+   "n": 1469,
+   "win": 0.2634,
+   "ret_mean": -0.0617
+  },
+  "t60_nostop": {
+   "n": 1469,
+   "win": 0.0694,
+   "ret_mean": -0.1547
+  },
+  "baseline_t20_nostop_win_matched": 0.4682
+ }
+}

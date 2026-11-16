@@ -1,0 +1,42 @@
+{
+ "run": "low_repair_family_shadow",
+ "prereg": "PREREG_LOW_DRYUP_REPAIR_FAMILY_20261017.json",
+ "judge_arms": [
+  "T1"
+ ],
+ "observe_arms": [
+  "T2",
+  "T3"
+ ],
+ "activation_since": 20261020,
+ "total_rows": 9908,
+ "arms": {
+  "T1": {
+   "in_sample_n": 7158,
+   "in_sample_med20": 6.25,
+   "in_sample_win20": 68.6,
+   "oos_n_matured": 0,
+   "oos_med20": null,
+   "oos_win20": null,
+   "oos_open_n": 41
+  },
+  "T2": {
+   "in_sample_n": 1555,
+   "in_sample_med20": 3.32,
+   "in_sample_win20": 57.9,
+   "oos_n_matured": 0,
+   "oos_med20": null,
+   "oos_win20": null,
+   "oos_open_n": 10
+  },
+  "T3": {
+   "in_sample_n": 984,
+   "in_sample_med20": 3.89,
+   "in_sample_win20": 60.5,
+   "oos_n_matured": 0,
+   "oos_med20": null,
+   "oos_win20": null,
+   "oos_open_n": 6
+  }
+ }
+}

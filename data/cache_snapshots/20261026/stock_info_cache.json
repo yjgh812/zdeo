@@ -1,0 +1,309 @@
+{
+  "stocks": {
+    "sh600601": {
+      "name": "方正科技",
+      "pe": 90.35,
+      "pb": 11.58,
+      "is_st": false,
+      "is_loss": false,
+      "price": 13.22
+    },
+    "sh600206": {
+      "name": "有研新材",
+      "pe": 138.51,
+      "pb": 10.1,
+      "is_st": false,
+      "is_loss": false,
+      "price": 52.03
+    },
+    "sz002552": {
+      "name": "宝鼎科技",
+      "pe": 117.89,
+      "pb": 12.97,
+      "is_st": false,
+      "is_loss": false,
+      "price": 52.36
+    },
+    "sz000603": {
+      "name": "盛达资源",
+      "pe": 30.05,
+      "pb": 6.82,
+      "is_st": false,
+      "is_loss": false,
+      "price": 37.12
+    },
+    "sh603011": {
+      "name": "合锻智能",
+      "pe": -41.59,
+      "pb": 6.35,
+      "is_st": false,
+      "is_loss": true,
+      "price": 23.95
+    },
+    "sh601208": {
+      "name": "东材科技",
+      "pe": 120.51,
+      "pb": 7.59,
+      "is_st": false,
+      "is_loss": false,
+      "price": 45.38
+    },
+    "sh600183": {
+      "name": "生益科技",
+      "pe": 85.68,
+      "pb": 21.06,
+      "is_st": false,
+      "is_loss": false,
+      "price": 138.57
+    },
+    "sz002080": {
+      "name": "中材科技",
+      "pe": 48.59,
+      "pb": 4.84,
+      "is_st": false,
+      "is_loss": false,
+      "price": 56.84
+    },
+    "sh603936": {
+      "name": "博敏电子",
+      "pe": -313.99,
+      "pb": 2.26,
+      "is_st": false,
+      "is_loss": true,
+      "price": 15.36
+    },
+    "sh600110": {
+      "name": "诺德股份",
+      "pe": -146.66,
+      "pb": 3.01,
+      "is_st": false,
+      "is_loss": true,
+      "price": 10.41
+    },
+    "sz002194": {
+      "name": "武汉凡谷",
+      "pe": -328.82,
+      "pb": 2.76,
+      "is_st": false,
+      "is_loss": true,
+      "price": 10.0
+    },
+    "sz002741": {
+      "name": "光华科技",
+      "pe": 83.07,
+      "pb": 5.82,
+      "is_st": false,
+      "is_loss": false,
+      "price": 25.16
+    },
+    "sh600664": {
+      "name": "哈药股份",
+      "pe": 61.13,
+      "pb": 3.23,
+      "is_st": false,
+      "is_loss": false,
+      "price": 7.52
+    },
+    "sz300489": {
+      "name": "光智科技",
+      "pe": -1204.43,
+      "pb": 43.29,
+      "is_st": false,
+      "is_loss": true,
+      "price": 237.0
+    },
+    "sz300223": {
+      "name": "北京君正",
+      "pe": 107.8,
+      "pb": 5.28,
+      "is_st": false,
+      "is_loss": false,
+      "price": 138.48
+    },
+    "sz000533": {
+      "name": "顺钠股份",
+      "pe": 87.95,
+      "pb": 8.86,
+      "is_st": false,
+      "is_loss": false,
+      "price": 12.65
+    },
+    "sh600667": {
+      "name": "太极实业",
+      "pe": 87.75,
+      "pb": 4.68,
+      "is_st": false,
+      "is_loss": false,
+      "price": 19.27
+    },
+    "sz300255": {
+      "name": "常山药业",
+      "pe": -71.34,
+      "pb": 20.98,
+      "is_st": false,
+      "is_loss": true,
+      "price": 27.62
+    },
+    "sz300137": {
+      "name": "先河环保",
+      "pe": 2408.87,
+      "pb": 4.1,
+      "is_st": false,
+      "is_loss": false,
+      "price": 12.41
+    },
+    "sz300260": {
+      "name": "新莱应材",
+      "pe": 137.4,
+      "pb": 11.42,
+      "is_st": false,
+      "is_loss": false,
+      "price": 59.61
+    },
+    "sz300475": {
+      "name": "香农芯创",
+      "pe": 39.64,
+      "pb": 15.02,
+      "is_st": false,
+      "is_loss": false,
+      "price": 156.64
+    },
+    "sz300476": {
+      "name": "胜宏科技",
+      "pe": 60.06,
+      "pb": 17.94,
+      "is_st": false,
+      "is_loss": false,
+      "price": 286.0
+    },
+    "sz300400": {
+      "name": "劲拓股份",
+      "pe": 88.64,
+      "pb": 10.56,
+      "is_st": false,
+      "is_loss": false,
+      "price": 30.9
+    },
+    "sh600397": {
+      "name": "江钨装备",
+      "pe": -102.69,
+      "pb": 91.74,
+      "is_st": false,
+      "is_loss": true,
+      "price": 17.89
+    },
+    "sz300420": {
+      "name": "五洋自控",
+      "pe": 207.19,
+      "pb": 3.84,
+      "is_st": false,
+      "is_loss": false,
+      "price": 8.15
+    },
+    "sz000593": {
+      "name": "德龙汇能",
+      "pe": 280.43,
+      "pb": 10.04,
+      "is_st": false,
+      "is_loss": false,
+      "price": 24.75
+    },
+    "sz002579": {
+      "name": "中京电子",
+      "pe": 346.15,
+      "pb": 3.78,
+      "is_st": false,
+      "is_loss": false,
+      "price": 14.82
+    },
+    "sz300083": {
+      "name": "创世纪",
+      "pe": 207.07,
+      "pb": 4.57,
+      "is_st": false,
+      "is_loss": false,
+      "price": 14.57
+    },
+    "sh600773": {
+      "name": "西藏城投",
+      "pe": -18.95,
+      "pb": 2.55,
+      "is_st": false,
+      "is_loss": true,
+      "price": 11.38
+    },
+    "sz002560": {
+      "name": "通达股份",
+      "pe": 27.58,
+      "pb": 1.78,
+      "is_st": false,
+      "is_loss": false,
+      "price": 6.54
+    },
+    "sh603778": {
+      "name": "国晟科技",
+      "pe": -12.73,
+      "pb": 25.53,
+      "is_st": false,
+      "is_loss": true,
+      "price": 10.92
+    },
+    "sz002342": {
+      "name": "巨力索具",
+      "pe": 532.49,
+      "pb": 3.31,
+      "is_st": false,
+      "is_loss": false,
+      "price": 8.41
+    },
+    "sz000890": {
+      "name": "法尔胜",
+      "pe": -41.78,
+      "pb": 162.67,
+      "is_st": false,
+      "is_loss": true,
+      "price": 7.58
+    },
+    "sz002454": {
+      "name": "松芝股份",
+      "pe": 19.8,
+      "pb": 1.13,
+      "is_st": false,
+      "is_loss": false,
+      "price": 5.08
+    },
+    "sz002487": {
+      "name": "大金重工",
+      "pe": 23.84,
+      "pb": 3.6,
+      "is_st": false,
+      "is_loss": false,
+      "price": 42.1
+    },
+    "sz000990": {
+      "name": "诚志股份",
+      "pe": 166.42,
+      "pb": 0.66,
+      "is_st": false,
+      "is_loss": false,
+      "price": 6.92
+    },
+    "sz002335": {
+      "name": "科华数据",
+      "pe": 55.26,
+      "pb": 3.7,
+      "is_st": false,
+      "is_loss": false,
+      "price": 31.28
+    },
+    "sz300051": {
+      "name": "琏升科技",
+      "pe": -23.99,
+      "pb": 32.32,
+      "is_st": false,
+      "is_loss": true,
+      "price": 8.3
+    }
+  },
+  "updated": "2026-08-11 00:21"
+}

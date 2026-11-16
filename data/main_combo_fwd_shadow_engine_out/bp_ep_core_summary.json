@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "strategy": "bp+ep_core",
+    "symbol": null,
+    "market": "china",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-29",
+    "initial_capital": 100000.0,
+    "n_trades": 0,
+    "n_trading_days": 16,
+    "n_days_zero_position": 1,
+    "exposure_mean": 0.9375,
+    "export_version": "4.3.0",
+    "generated_at": "2026-10-29T23:45:16"
+  },
+  "summary": {
+    "total_return_pct": 0.06,
+    "annualized_return_pct": 1.01,
+    "total_trading_days": 15,
+    "trading_years": 0.06,
+    "volatility_annualized_pct": 13.75,
+    "sharpe_ratio": -0.0812,
+    "sortino_ratio": -0.0118,
+    "calmar_ratio": 0.3413,
+    "max_drawdown_pct": 2.95,
+    "max_drawdown_start": "2026-10-12",
+    "max_drawdown_end": "2026-10-23",
+    "win_rate_pct": 46.67,
+    "trade_win_rate_pct": 0.0,
+    "profit_loss_ratio": 1.1661,
+    "max_consecutive_losses": 4,
+    "info_ratio": null,
+    "alpha_annualized_pct": null,
+    "beta_to_benchmark": null,
+    "tracking_error_pct": null,
+    "var_95_daily_pct": -1.0509,
+    "cvar_95_daily_pct": -1.0753,
+    "total_trades": 0,
+    "buy_trades": 15,
+    "sell_trades": 0,
+    "total_turnover_yuan": 93873.7,
+    "total_fees_yuan": 103.15,
+    "fee_to_initial_capital_pct": 0.1032,
+    "final_equity": 100062.15,
+    "final_cash": 6023.15,
+    "final_position_value": 94039.0,
+    "final_positions_count": 15,
+    "three_perspective": {
+      "capital": 100000.0,
+      "account": {
+        "start": "2026-10-08",
+        "end": "2026-10-29",
+        "years": 0.06,
+        "bars": 16,
+        "total_return": 0.0006215000000000526,
+        "cagr": 0.010864901984890318,
+        "ann_vol": 0.1374642322872293,
+        "sharpe": -0.08121365343130751,
+        "sortino": -0.1830140961132736,
+        "max_drawdown": -0.0295141637515948,
+        "calmar": 0.3681250153768369,
+        "max_dd_duration_days": 13,
+        "final_equity": 100062.15,
+        "var_95_daily": -0.010508954090826876,
+        "cvar_95_daily": -0.010753383674277152,
+        "skew": 0.11789433886763276,
+        "kurtosis": -1.429163852859193
+      },
+      "exposure": {
+        "exposure_mean": 0.8805816235227097,
+        "exposure_median": 0.9393506463624204,
+        "exposure_p90": 0.9398256381091963,
+        "exposure_max": 0.9400634418092012,
+        "pct_days_zero_position": 0.0625,
+        "avg_n_positions": null,
+        "avg_n_positions_when_active": null,
+        "source": "daily_position_value"
+      },
+      "yearly": [
+        {
+          "year": 2026,
+          "bars": 16,
+          "return": 0.0006215000000000526,
+          "max_drawdown": -0.0295141637515948
+        }
+      ],
+      "trades": {
+        "n_trades": 0
+      },
+      "invested": {
+        "note": "只对实际占用资金计息，衡量策略本身效率（不含闲置现金稀释）",
+        "avg_exposure": 0.8805816235227097,
+        "roic_per_trade": null,
+        "cagr_on_invested": 0.012338324687524119
+      },
+      "full_pos": {
+        "note": "按平均仓位 88.1% 线性外推至满仓的等效风险（粗略上界估计）",
+        "scale": 1.1356130690072372,
+        "mdd_equivalent": -0.033516670077130724,
+        "ann_vol_equivalent": 0.1561061787064242,
+        "sharpe_unchanged": -0.08121365343130751
+      },
+      "warnings": []
+    }
+  }
+}

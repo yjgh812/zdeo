@@ -1,0 +1,66 @@
+{
+ "prereg_id": "PREREG-VOLTARGET-V1",
+ "fingerprint": "688a0017c003c5cf",
+ "window": [
+  "2021-02-22",
+  "2026-10-19"
+ ],
+ "eval_days": 1371,
+ "target_arm": {
+  "ann_ret": 4.73,
+  "ann_vol": 18.61,
+  "sharpe": 0.254,
+  "mdd": -34.89,
+  "n": 1371
+ },
+ "buyhold_arm": {
+  "ann_ret": 12.46,
+  "ann_vol": 23.65,
+  "sharpe": 0.527,
+  "mdd": -32.35,
+  "n": 1371
+ },
+ "gates": {
+  "P0_power": {
+   "eval_days": 1371,
+   "pass": true
+  },
+  "P1": {
+   "sharpe_diff": -0.273,
+   "mdd_target": -34.89,
+   "mdd_bh": -32.35,
+   "pass": false
+  },
+  "P2": {
+   "halves": {
+    "前半": {
+     "sharpe_target": 0.423,
+     "sharpe_bh": 0.551,
+     "diff": -0.128,
+     "n": 686
+    },
+    "后半": {
+     "sharpe_target": 0.129,
+     "sharpe_bh": 0.528,
+     "diff": -0.399,
+     "n": 685
+    }
+   },
+   "pass": false
+  }
+ },
+ "verdict": "FAIL",
+ "sensitivity_weekly": {
+  "ann_ret": 6.46,
+  "ann_vol": 19.19,
+  "sharpe": 0.336,
+  "mdd": -31.17,
+  "n": 1370,
+  "sharpe_diff_vs_bh": -0.191
+ },
+ "sensitivity_vol_tercile_cond_sharpe_bh": {
+  "低波": 0.206,
+  "中波": -0.621,
+  "高波": 1.509
+ }
+}

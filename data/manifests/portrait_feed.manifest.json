@@ -1,0 +1,8 @@
+{
+ "manifest_version": "portrait.manifest.v1",
+ "generator": "portrait_feed",
+ "built_at": "2026-10-29T22:55:56",
+ "files": {
+  "data/portrait_feed.json": "sha256:d883f9572f188a13e49a8a540eacbc19e3c25a6061b4d8133bf742005e39d486"
+ }
+}

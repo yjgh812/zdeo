@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "strategy": "ml_signal",
+    "symbol": null,
+    "market": "china",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-29",
+    "initial_capital": 100000.0,
+    "n_trades": 12,
+    "n_trading_days": 16,
+    "n_days_zero_position": 2,
+    "exposure_mean": 0.875,
+    "export_version": "4.3.0",
+    "generated_at": "2026-10-29T23:45:23"
+  },
+  "summary": {
+    "total_return_pct": -4.64,
+    "annualized_return_pct": -53.53,
+    "total_trading_days": 15,
+    "trading_years": 0.06,
+    "volatility_annualized_pct": 9.44,
+    "sharpe_ratio": -8.3796,
+    "sortino_ratio": -0.719,
+    "calmar_ratio": -11.4008,
+    "max_drawdown_pct": 4.7,
+    "max_drawdown_start": "2026-10-09",
+    "max_drawdown_end": "2026-10-29",
+    "win_rate_pct": 40.0,
+    "trade_win_rate_pct": 8.33,
+    "profit_loss_ratio": 0.3742,
+    "max_consecutive_losses": 3,
+    "info_ratio": null,
+    "alpha_annualized_pct": null,
+    "beta_to_benchmark": null,
+    "tracking_error_pct": null,
+    "var_95_daily_pct": -1.161,
+    "cvar_95_daily_pct": -1.59,
+    "total_trades": 12,
+    "buy_trades": 12,
+    "sell_trades": 12,
+    "total_turnover_yuan": 90810.5,
+    "total_fees_yuan": 168.84,
+    "fee_to_initial_capital_pct": 0.1688,
+    "final_equity": 95361.26,
+    "final_cash": 95361.26,
+    "final_position_value": 0.0,
+    "final_positions_count": 0,
+    "three_perspective": {
+      "capital": 100000.0,
+      "account": {
+        "start": "2026-10-08",
+        "end": "2026-10-29",
+        "years": 0.06,
+        "bars": 16,
+        "total_return": -0.04638740000000008,
+        "cagr": -0.5622563975283363,
+        "ann_vol": 0.09438492724283763,
+        "sharpe": -8.37959710996911,
+        "sortino": -11.18533918398059,
+        "max_drawdown": -0.046950080672371025,
+        "calmar": -11.975621542631565,
+        "max_dd_duration_days": 14,
+        "final_equity": 95361.26,
+        "var_95_daily": -0.011610457877235969,
+        "cvar_95_daily": -0.015899655148822703,
+        "skew": -0.4383769850287075,
+        "kurtosis": -0.6624843878704088
+      },
+      "exposure": {
+        "exposure_mean": 0.27097346778713893,
+        "exposure_median": 0.25640722366592245,
+        "exposure_p90": 0.46041150399340347,
+        "exposure_max": 0.47745321162385734,
+        "pct_days_zero_position": 0.125,
+        "avg_n_positions": 7.5,
+        "avg_n_positions_when_active": 8.0,
+        "source": "daily_position_value"
+      },
+      "yearly": [
+        {
+          "year": 2026,
+          "bars": 16,
+          "return": -0.04638740000000008,
+          "max_drawdown": -0.046950080672371025
+        }
+      ],
+      "trades": {
+        "n_trades": 12,
+        "win_rate": 0.08333333333333333,
+        "avg_win": 62.5399999999994,
+        "avg_loss": -427.3890909090908,
+        "pl_ratio": 0.14633036109314773,
+        "profit_factor": 0.013302760099377068,
+        "expectancy_abs": -386.56166666666667,
+        "expectancy_pct": -0.09925959828109232,
+        "median_ret_pct": -0.1022240306531601,
+        "total_pnl": -4638.74,
+        "max_consec_losses": 11,
+        "hold_days_mean": 13.0,
+        "hold_days_median": 13.0,
+        "hold_days_max": 20.0,
+        "exit_reasons": {
+          "stop_loss": 8,
+          "max_holding": 4
+        },
+        "notional_mean": 3970.016666666667,
+        "notional_max": 4967.3,
+        "notional_pct_of_init_capital_mean": 0.03970016666666667
+      },
+      "invested": {
+        "note": "只对实际占用资金计息，衡量策略本身效率（不含闲置现金稀释）",
+        "avg_exposure": 0.27097346778713893,
+        "roic_per_trade": -0.09925959828109232,
+        "cagr_on_invested": -2.074950002005408
+      },
+      "full_pos": {
+        "note": "按平均仓位 27.1% 线性外推至满仓的等效风险（粗略上界估计）",
+        "scale": 3.6903982082317452,
+        "mdd_equivalent": -0.1732644935896539,
+        "ann_vol_equivalent": 0.3483179663810516,
+        "sharpe_unchanged": -8.37959710996911
+      },
+      "warnings": [
+        "平均仓位仅 27.1% —— MDD/Sharpe 被闲置现金稀释，不可直接横向比较"
+      ]
+    }
+  }
+}

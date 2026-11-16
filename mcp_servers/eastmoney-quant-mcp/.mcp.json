@@ -1,0 +1,24 @@
+{
+  "name": "eastmoney-quant-mcp",
+  "description": "A-share quantitative analysis MCP server — local SQLite storage, multi-condition stock screening, sector analysis, technical reports",
+  "category": "Finance",
+  "tags": ["stock", "a-share", "china", "quant", "eastmoney", "finance", "screening"],
+  "repository": "https://github.com/lalal-zzz/eastmoney-quant-mcp",
+  "entry": {
+    "command": "npx",
+    "args": ["eastmoney-quant-mcp"]
+  },
+  "runtime": "node",
+  "requires": ["python>=3.10"],
+  "tools": [
+    {"name": "init_full_data", "description": "First-time full data download to local SQLite"},
+    {"name": "update_daily_data", "description": "Daily incremental data refresh"},
+    {"name": "get_data_status", "description": "Database integrity check"},
+    {"name": "screen_stocks", "description": "Universal multi-condition screening (price/PE/PB/cap/sector/name)"},
+    {"name": "get_kline_local_or_net", "description": "Stock K-line with auto-cached indicators"},
+    {"name": "get_rank_trend_data", "description": "Historical popularity ranking trend"},
+    {"name": "get_sector_list", "description": "Concept/industry sector browser"},
+    {"name": "get_stock_belong_sectors", "description": "Reverse: stock to its sectors"},
+    {"name": "generate_stock_report", "description": "Full analysis (trend/support/resistance/risk/position)"}
+  ]
+}

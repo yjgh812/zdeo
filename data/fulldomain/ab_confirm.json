@@ -1,0 +1,21 @@
+{
+ "results": {
+  "前半2016-2020": {
+   "base_n": 185,
+   "base_tot": 29.4,
+   "ab_n": 231,
+   "ab_tot": 33.7
+  },
+  "后半2021-2026": {
+   "base_n": 230,
+   "base_tot": 1.9,
+   "ab_n": 280,
+   "ab_tot": 6.8
+  },
+  "full_ab_total": 47.9,
+  "full_ab_n": 515
+ },
+ "repro": true,
+ "both_halves": true,
+ "verdict": "双过→确认采纳候选"
+}

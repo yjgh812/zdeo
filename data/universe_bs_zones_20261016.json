@@ -1,0 +1,882 @@
+{
+ "version": "universe_bs_zone_locator_v1",
+ "recon_only": true,
+ "scan_file": "D:/zcodesj/reports\\universe_startup_scan_20261016.json",
+ "scan_date": "261016.j",
+ "asof_today": "20261016",
+ "qfq_state": "NORMAL",
+ "portrait_snapshot": "20261015",
+ "study_summary": {
+  "Z1_confirm_window": {
+   "t20e": {
+    "n": 2202,
+    "mean": 1.423,
+    "med": -1.221,
+    "win": 43.1
+   },
+   "fwd5": {
+    "n": 2309,
+    "mean": 0.492,
+    "med": -0.313,
+    "win": 44.3
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 1206,
+      "mean": 0.087,
+      "med": -0.35,
+      "win": 42.6
+     },
+     "fwd20": {
+      "n": 1149,
+      "mean": -0.916,
+      "med": -1.878,
+      "win": 36.8
+     },
+     "t20e": {
+      "n": 1149,
+      "mean": -0.922,
+      "med": -2.069,
+      "win": 36.5
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 1103,
+      "mean": 0.936,
+      "med": -0.253,
+      "win": 46.2
+     },
+     "fwd20": {
+      "n": 1053,
+      "mean": 3.901,
+      "med": 0.161,
+      "win": 50.2
+     },
+     "t20e": {
+      "n": 1053,
+      "mean": 3.983,
+      "med": 0.108,
+      "win": 50.2
+     }
+    }
+   }
+  },
+  "Z2_pullback_ma10": {
+   "t20e": {
+    "n": 10524,
+    "mean": 3.754,
+    "med": 0.592,
+    "win": 51.8
+   },
+   "fwd5": {
+    "n": 11485,
+    "mean": 1.008,
+    "med": 0.0,
+    "win": 49.9
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 7095,
+      "mean": 1.433,
+      "med": 0.363,
+      "win": 53.3
+     },
+     "fwd20": {
+      "n": 6572,
+      "mean": 3.724,
+      "med": 1.598,
+      "win": 56.3
+     },
+     "t20e": {
+      "n": 6572,
+      "mean": 3.689,
+      "med": 1.408,
+      "win": 55.1
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 4390,
+      "mean": 0.321,
+      "med": -0.598,
+      "win": 44.5
+     },
+     "fwd20": {
+      "n": 3952,
+      "mean": 4.39,
+      "med": 0.264,
+      "win": 50.9
+     },
+     "t20e": {
+      "n": 3952,
+      "mean": 3.863,
+      "med": -0.931,
+      "win": 46.4
+     }
+    }
+   }
+  },
+  "Z3_pullback_ma20": {
+   "t20e": {
+    "n": 8875,
+    "mean": 2.187,
+    "med": -0.969,
+    "win": 46.0
+   },
+   "fwd5": {
+    "n": 9750,
+    "mean": 0.7,
+    "med": -0.072,
+    "win": 48.4
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 4912,
+      "mean": 1.1,
+      "med": 0.139,
+      "win": 50.6
+     },
+     "fwd20": {
+      "n": 4528,
+      "mean": 1.372,
+      "med": -0.429,
+      "win": 48.0
+     },
+     "t20e": {
+      "n": 4528,
+      "mean": 1.369,
+      "med": -0.882,
+      "win": 46.3
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 4838,
+      "mean": 0.293,
+      "med": -0.375,
+      "win": 46.2
+     },
+     "fwd20": {
+      "n": 4347,
+      "mean": 3.483,
+      "med": 0.0,
+      "win": 49.7
+     },
+     "t20e": {
+      "n": 4347,
+      "mean": 3.039,
+      "med": -1.146,
+      "win": 45.8
+     }
+    }
+   }
+  },
+  "Z4_chase_negative": {
+   "t20e": {
+    "n": 703,
+    "mean": 1.178,
+    "med": -8.186,
+    "win": 39.4
+   },
+   "fwd5": {
+    "n": 746,
+    "mean": -3.427,
+    "med": -4.206,
+    "win": 27.6
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 560,
+      "mean": -4.444,
+      "med": -5.14,
+      "win": 24.3
+     },
+     "fwd20": {
+      "n": 530,
+      "mean": 3.568,
+      "med": 0.278,
+      "win": 50.4
+     },
+     "t20e": {
+      "n": 530,
+      "mean": -0.266,
+      "med": -8.361,
+      "win": 38.5
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 186,
+      "mean": -0.365,
+      "med": -1.945,
+      "win": 37.6
+     },
+     "fwd20": {
+      "n": 173,
+      "mean": 8.169,
+      "med": 2.162,
+      "win": 55.5
+     },
+     "t20e": {
+      "n": 173,
+      "mean": 5.599,
+      "med": -8.035,
+      "win": 42.2
+     }
+    }
+   }
+  },
+  "Z2_shrink_vol": {
+   "t20e": {
+    "n": 6334,
+    "mean": 4.099,
+    "med": 1.002,
+    "win": 53.3
+   },
+   "fwd5": {
+    "n": 6923,
+    "mean": 0.79,
+    "med": 0.0,
+    "win": 49.1
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 4355,
+      "mean": 0.888,
+      "med": 0.221,
+      "win": 51.8
+     },
+     "fwd20": {
+      "n": 4043,
+      "mean": 4.28,
+      "med": 2.171,
+      "win": 57.9
+     },
+     "t20e": {
+      "n": 4043,
+      "mean": 4.208,
+      "med": 1.961,
+      "win": 56.8
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 2568,
+      "mean": 0.622,
+      "med": -0.56,
+      "win": 44.4
+     },
+     "fwd20": {
+      "n": 2291,
+      "mean": 4.678,
+      "med": 0.55,
+      "win": 52.2
+     },
+     "t20e": {
+      "n": 2291,
+      "mean": 3.906,
+      "med": -0.711,
+      "win": 47.1
+     }
+    }
+   }
+  },
+  "Z2_norm_vol": {
+   "t20e": {
+    "n": 4895,
+    "mean": 3.213,
+    "med": 0.421,
+    "win": 51.1
+   },
+   "fwd5": {
+    "n": 5315,
+    "mean": 1.364,
+    "med": 0.246,
+    "win": 51.9
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 3310,
+      "mean": 1.89,
+      "med": 0.454,
+      "win": 54.1
+     },
+     "fwd20": {
+      "n": 3060,
+      "mean": 2.963,
+      "med": 0.923,
+      "win": 53.7
+     },
+     "t20e": {
+      "n": 3060,
+      "mean": 2.918,
+      "med": 0.732,
+      "win": 52.6
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 2005,
+      "mean": 0.497,
+      "med": -0.156,
+      "win": 48.3
+     },
+     "fwd20": {
+      "n": 1835,
+      "mean": 4.175,
+      "med": 0.535,
+      "win": 52.4
+     },
+     "t20e": {
+      "n": 1835,
+      "mean": 3.706,
+      "med": -0.363,
+      "win": 48.6
+     }
+    }
+   }
+  },
+  "Z2_heavy_vol": {
+   "t20e": {
+    "n": 2093,
+    "mean": 2.746,
+    "med": -1.182,
+    "win": 45.2
+   },
+   "fwd5": {
+    "n": 2349,
+    "mean": 0.962,
+    "med": -0.244,
+    "win": 47.5
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 1275,
+      "mean": 1.892,
+      "med": 0.198,
+      "win": 51.3
+     },
+     "fwd20": {
+      "n": 1139,
+      "mean": 1.763,
+      "med": -0.115,
+      "win": 49.5
+     },
+     "t20e": {
+      "n": 1139,
+      "mean": 1.888,
+      "med": -0.564,
+      "win": 47.1
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 1074,
+      "mean": -0.141,
+      "med": -1.045,
+      "win": 43.0
+     },
+     "fwd20": {
+      "n": 954,
+      "mean": 4.454,
+      "med": -0.612,
+      "win": 47.8
+     },
+     "t20e": {
+      "n": 954,
+      "mean": 3.769,
+      "med": -2.215,
+      "win": 43.0
+     }
+    }
+   }
+  }
+ },
+ "current_regime": "BEAR(上证收于MA20下方)@20261015",
+ "sell_zones": {
+  "S1_fail_retest": {
+   "fwd5": {
+    "n": 87649,
+    "mean": 0.279,
+    "med": -0.437,
+    "win": 45.7
+   },
+   "fwd10": {
+    "n": 87415,
+    "mean": 0.374,
+    "med": -0.676,
+    "win": 45.5
+   },
+   "fwd20": {
+    "n": 85876,
+    "mean": 0.549,
+    "med": -1.058,
+    "win": 45.4
+   },
+   "t20e": {
+    "n": 85876,
+    "mean": 0.544,
+    "med": -2.517,
+    "win": 41.2
+   }
+  },
+  "S2_breakout_vol": {
+   "fwd5": {
+    "n": 54762,
+    "mean": -0.745,
+    "med": -1.517,
+    "win": 39.3
+   },
+   "fwd10": {
+    "n": 54653,
+    "mean": -0.648,
+    "med": -1.893,
+    "win": 40.1
+   },
+   "fwd20": {
+    "n": 54017,
+    "mean": -0.436,
+    "med": -2.529,
+    "win": 40.5
+   },
+   "t20e": {
+    "n": 54017,
+    "mean": -0.487,
+    "med": -6.362,
+    "win": 34.5
+   }
+  },
+  "S3_stall_near_high": {
+   "fwd5": {
+    "n": 53339,
+    "mean": 0.298,
+    "med": -0.257,
+    "win": 46.4
+   },
+   "fwd10": {
+    "n": 53194,
+    "mean": 0.501,
+    "med": -0.266,
+    "win": 47.4
+   },
+   "fwd20": {
+    "n": 52292,
+    "mean": 0.784,
+    "med": -0.442,
+    "win": 47.5
+   },
+   "t20e": {
+    "n": 52292,
+    "mean": 0.731,
+    "med": -1.039,
+    "win": 45.0
+   }
+  }
+ },
+ "n_hits": 9,
+ "n_located": 9,
+ "n_skipped": 0,
+ "rows": [
+  {
+   "code": "605228",
+   "name": "神通科技",
+   "ind": "汽车配件",
+   "px_qfq": 11.12,
+   "qfq_date": "20261015",
+   "px_raw": 11.12,
+   "raw_date": 20261015,
+   "raw_chg_pct": -0.8,
+   "caliber_warn": false,
+   "portrait_pct": 38.0,
+   "portrait_prob": 0.219,
+   "pos250": 13,
+   "off_start": -1.6,
+   "days": 12,
+   "chg5_pct": -1.16,
+   "ret20_pct": 5.84,
+   "vr120": 0.74,
+   "buy_zone_z1": [
+    10.44,
+    10.93
+   ],
+   "buy_zone_ma": [
+    10.94,
+    11.24
+   ],
+   "in_z1": false,
+   "in_ma_zone": true,
+   "state": "回踩带内(缩量)✓Z2s",
+   "stop_ref": 10.23,
+   "res60": 13.26,
+   "res_dist_pct": 19.2,
+   "bad_line": 10.83,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 10.9,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "000565",
+   "name": "渝三峡Ａ",
+   "ind": "染料涂料",
+   "px_qfq": 6.15,
+   "qfq_date": "20261015",
+   "px_raw": 6.15,
+   "raw_date": 20261015,
+   "raw_chg_pct": -0.97,
+   "caliber_warn": false,
+   "portrait_pct": 67.1,
+   "portrait_prob": 0.2665,
+   "pos250": 24,
+   "off_start": -1.0,
+   "days": 35,
+   "chg5_pct": -4.06,
+   "ret20_pct": -14.46,
+   "vr120": 0.71,
+   "buy_zone_z1": [
+    5.51,
+    5.78
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 5.66,
+   "res60": 7.91,
+   "res_dist_pct": 28.6,
+   "bad_line": 6.54,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "涨停基因(lift1.94)",
+   "limit_ref": 6.03,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "001366",
+   "name": "播恩集团",
+   "ind": "饲料",
+   "px_qfq": 12.5,
+   "qfq_date": "20261015",
+   "px_raw": 12.5,
+   "raw_date": 20261015,
+   "raw_chg_pct": -2.8,
+   "caliber_warn": false,
+   "portrait_pct": 58.8,
+   "portrait_prob": 0.2528,
+   "pos250": 28,
+   "off_start": 1.6,
+   "days": 33,
+   "chg5_pct": -3.99,
+   "ret20_pct": -15.2,
+   "vr120": 0.61,
+   "buy_zone_z1": [
+    10.58,
+    11.09
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 11.5,
+   "res60": 16.38,
+   "res_dist_pct": 31.0,
+   "bad_line": 12.94,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 12.25,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "000856",
+   "name": "冀东装备",
+   "ind": "专用机械",
+   "px_qfq": 8.75,
+   "qfq_date": "20261015",
+   "px_raw": 8.75,
+   "raw_date": 20261015,
+   "raw_chg_pct": -1.57,
+   "caliber_warn": false,
+   "portrait_pct": 56.6,
+   "portrait_prob": 0.2487,
+   "pos250": 36,
+   "off_start": 2.6,
+   "days": 33,
+   "chg5_pct": -3.1,
+   "ret20_pct": -3.85,
+   "vr120": 1.13,
+   "buy_zone_z1": [
+    7.1,
+    7.44
+   ],
+   "buy_zone_ma": [
+    8.84,
+    8.92
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 8.05,
+   "res60": 9.24,
+   "res_dist_pct": 5.6,
+   "bad_line": 8.75,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 8.57,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "603098",
+   "name": "森特股份",
+   "ind": "装修装饰",
+   "px_qfq": 10.29,
+   "qfq_date": "20261015",
+   "px_raw": 10.29,
+   "raw_date": 20261015,
+   "raw_chg_pct": -3.47,
+   "caliber_warn": false,
+   "portrait_pct": 32.6,
+   "portrait_prob": 0.209,
+   "pos250": 11,
+   "off_start": -1.0,
+   "days": 37,
+   "chg5_pct": -2.92,
+   "ret20_pct": -11.37,
+   "vr120": 0.61,
+   "buy_zone_z1": [
+    9.71,
+    10.18
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.47,
+   "res60": 11.64,
+   "res_dist_pct": 13.1,
+   "bad_line": 10.6,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 10.08,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "002608",
+   "name": "江苏国信",
+   "ind": "火力发电",
+   "px_qfq": 7.38,
+   "qfq_date": "20261015",
+   "px_raw": 7.38,
+   "raw_date": 20261015,
+   "raw_chg_pct": -2.89,
+   "caliber_warn": false,
+   "portrait_pct": 15.2,
+   "portrait_prob": 0.1743,
+   "pos250": 21,
+   "off_start": -2.8,
+   "days": 21,
+   "chg5_pct": -2.12,
+   "ret20_pct": -3.02,
+   "vr120": 0.55,
+   "buy_zone_z1": [
+    6.92,
+    7.25
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.79,
+   "res60": 7.65,
+   "res_dist_pct": 3.7,
+   "bad_line": 7.34,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 7.23,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "300917",
+   "name": "特发服务",
+   "ind": "房产服务",
+   "px_qfq": 29.49,
+   "qfq_date": "20261015",
+   "px_raw": 29.49,
+   "raw_date": 20261015,
+   "raw_chg_pct": -2.9,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 31,
+   "off_start": 4.5,
+   "days": 40,
+   "chg5_pct": -12.6,
+   "ret20_pct": 3.18,
+   "vr120": 1.41,
+   "buy_zone_z1": [
+    23.59,
+    24.72
+   ],
+   "buy_zone_ma": [
+    30.62,
+    32.49
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 27.13,
+   "res60": 36.18,
+   "res_dist_pct": 22.7,
+   "bad_line": 30.31,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 28.9,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "301386",
+   "name": "未来电器",
+   "ind": "电气设备",
+   "px_qfq": 20.35,
+   "qfq_date": "20261015",
+   "px_raw": 20.35,
+   "raw_date": 20261015,
+   "raw_chg_pct": -0.88,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 22,
+   "off_start": -2.7,
+   "days": 37,
+   "chg5_pct": 0.44,
+   "ret20_pct": 1.24,
+   "vr120": 1.06,
+   "buy_zone_z1": [
+    18.99,
+    19.9
+   ],
+   "buy_zone_ma": [
+    20.36,
+    20.7
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 18.72,
+   "res60": 21.81,
+   "res_dist_pct": 7.2,
+   "bad_line": 20.15,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 19.94,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  },
+  {
+   "code": "301212",
+   "name": "联盛化学",
+   "ind": "化工原料",
+   "px_qfq": 25.23,
+   "qfq_date": "20261015",
+   "px_raw": 25.23,
+   "raw_date": 20261015,
+   "raw_chg_pct": -3.81,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 39,
+   "off_start": 5.0,
+   "days": 34,
+   "chg5_pct": -9.89,
+   "ret20_pct": -2.59,
+   "vr120": 1.35,
+   "buy_zone_z1": [
+    20.02,
+    20.98
+   ],
+   "buy_zone_ma": [
+    26.03,
+    26.57
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 23.21,
+   "res60": 28.0,
+   "res_dist_pct": 11.0,
+   "bad_line": 25.77,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 24.73,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 0,
+    "note": ""
+   }
+  }
+ ]
+}

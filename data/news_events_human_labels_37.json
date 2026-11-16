@@ -1,0 +1,25 @@
+{
+  "id": "NEWS_EVENTS_HUMAN_LABELS_37",
+  "created_at": "2026-09-09 20:4x",
+  "method": "37条分层人工判读(bearish13全查/mixed6/bullish8/neutral10, random.seed=7可重现抽样), 判据=sentiment为该新闻对相关A股个股/板块的实质影响方向(非字面)",
+  "sampled_from": "data/news_events_classified.jsonl(rule_v1时点快照187条)",
+  "labels": {
+    "2468442": "neutral", "2468457": "neutral", "2468458": "bearish", "2468501": "neutral",
+    "2468894": "neutral", "2471155": "neutral", "2473519": "bearish", "2474721": "bearish",
+    "2474975": "neutral", "2474976": "neutral", "2475219": "neutral", "2476267": "neutral",
+    "2476301": "bearish", "2468459": "mixed", "2468892": "neutral", "2473570": "mixed",
+    "2474676": "neutral", "2474706": "bearish", "2476274": "bearish", "2471173": "neutral",
+    "2468889": "bullish", "2473549": "bullish", "2477420": "bullish", "2468469": "neutral",
+    "2468474": "bullish", "2475235": "neutral", "2468799": "bullish", "2471162": "bearish",
+    "2474703": "neutral", "2468454": "neutral", "2477447": "neutral", "2473553": "neutral",
+    "2470017": "bullish", "2468447": "neutral", "2468465": "neutral", "2473518": "neutral",
+    "2471181": "bearish"
+  },
+  "hard_cases": {
+    "2476267": "东兴证券终止上市=中金吸收合并正常流程, 『终止』字面≠利空",
+    "2474706": "*ST岭南立案调查=纯利空, v1『签订』背景词稀释为mixed",
+    "2468469": "晶澳『大幅增长大概率不会出现』负面表述含『增长』",
+    "2471173": "福寿园要约折让96.21%低价要约≠利好"
+  },
+  "distribution": {"neutral": 21, "bearish": 8, "bullish": 6, "mixed": 2}
+}

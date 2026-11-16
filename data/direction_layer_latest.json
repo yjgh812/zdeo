@@ -1,0 +1,659 @@
+{
+  "generated_at": "2026-10-23 08:05:03",
+  "target_date": "20261022",
+  "review_date": "20261022",
+  "source1_mainline": {
+    "c1_volume": [],
+    "volr_top3": [
+      [
+        "计算机",
+        1.154
+      ],
+      [
+        "传媒",
+        1.138
+      ],
+      [
+        "家用电器",
+        1.115
+      ]
+    ],
+    "sentiment_leaders": [
+      "电机Ⅱ(+3.69%)",
+      "白色家电(+1.26%)",
+      "国有大型银行Ⅱ(+0.86%)",
+      "昨日打二板以上表现(+3.35%)",
+      "机器人执行器(+0.76%)"
+    ]
+  },
+  "source2_review": {
+    "market_env": "指数：上证指数-1.48%；深证成指-2.96%；创业板指-4.37%；科创50-2.78%；沪深300-1.84%。涨跌家数（qfq 口径 20261022）：涨 534 / 跌 4999。封板：真封 0 / 伪封 0 / 炸板 0。涨停归因库口径（剔ST）：涨停 33 / 最高板 5 / 尾盘板 5。（东财板块口径",
+    "risk_warnings": [
+      "申万领跌：影视院线(-5.76%)",
+      "申万领跌：元件(-6.14%)",
+      "申万领跌：通信设备(-6.95%)",
+      "行业流出：通信设备(-85.96亿)",
+      "行业流出：元件(-64.14亿)"
+    ]
+  },
+  "source3_news": {
+    "src": "premarket_intel",
+    "file": "D:\\zcodesj\\reports\\premarket_intel_20261023.md(D0)",
+    "direction_rows": [],
+    "note": "三级兜底: 当日morning_brief(定稿/draft)→premarket_intel→N/A(执行前以preflight查二/查三为准)"
+  },
+  "sector_six_dims": {
+    "src": "sector_six_dims",
+    "status": "available",
+    "generated_at": "2026-10-23 08:05:03",
+    "data_day": 20261022,
+    "window": {
+      "crowd_pctile_days": 250,
+      "dispersion_win": "近60自然日ret20横截面"
+    },
+    "boundary": "呈现级零交易权; usage合同不变(收敛视野+排除逆风非过滤器); trend/拥挤度为呈现参考非信号; valuation数据源待建; 行业映射非PIT; PD-035阶段为概念域(非申万L1域)独立呈现于pd035_concept_stage, 禁强行映射",
+    "n_industries": 31,
+    "industries": [
+      {
+        "industry": "交通运输",
+        "strength": {
+          "volr20": 0.8125,
+          "hot5": 2,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0304,
+          "pctile_250d": 57.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 6.05,
+          "pctile": 29.0
+        }
+      },
+      {
+        "industry": "传媒",
+        "strength": {
+          "volr20": 1.1377,
+          "hot5": 5,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0509,
+          "pctile_250d": 93.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 12.7,
+          "pctile": 100.0
+        }
+      },
+      {
+        "industry": "公用事业",
+        "strength": {
+          "volr20": 0.7905,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0454,
+          "pctile_250d": 41.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 5.49,
+          "pctile": 22.6
+        }
+      },
+      {
+        "industry": "农林牧渔",
+        "strength": {
+          "volr20": 0.8999,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "震荡",
+        "crowding": {
+          "share20": 0.0313,
+          "pctile_250d": 89.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 9.06,
+          "pctile": 83.9
+        }
+      },
+      {
+        "industry": "医药生物",
+        "strength": {
+          "volr20": 0.8875,
+          "hot5": 2,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0719,
+          "pctile_250d": 93.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.36,
+          "pctile": 71.0
+        }
+      },
+      {
+        "industry": "商贸零售",
+        "strength": {
+          "volr20": 0.7978,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0223,
+          "pctile_250d": 65.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 6.23,
+          "pctile": 35.5
+        }
+      },
+      {
+        "industry": "国防军工",
+        "strength": {
+          "volr20": 0.9847,
+          "hot5": 3,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0189,
+          "pctile_250d": 35.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.69,
+          "pctile": 80.6
+        }
+      },
+      {
+        "industry": "基础化工",
+        "strength": {
+          "volr20": 0.7623,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0586,
+          "pctile_250d": 35.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 7.01,
+          "pctile": 45.2
+        }
+      },
+      {
+        "industry": "家用电器",
+        "strength": {
+          "volr20": 1.1152,
+          "hot5": 4,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0118,
+          "pctile_250d": 57.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 9.54,
+          "pctile": 90.3
+        }
+      },
+      {
+        "industry": "建筑材料",
+        "strength": {
+          "volr20": 0.7443,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0151,
+          "pctile_250d": 74.8
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.17,
+          "pctile": 61.3
+        }
+      },
+      {
+        "industry": "建筑装饰",
+        "strength": {
+          "volr20": 0.8306,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0279,
+          "pctile_250d": 5.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.44,
+          "pctile": 74.2
+        }
+      },
+      {
+        "industry": "房地产",
+        "strength": {
+          "volr20": 0.5134,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "震荡",
+        "crowding": {
+          "share20": 0.0513,
+          "pctile_250d": 100.0
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 5.17,
+          "pctile": 16.1
+        }
+      },
+      {
+        "industry": "有色金属",
+        "strength": {
+          "volr20": 0.7865,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0345,
+          "pctile_250d": 0.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 6.71,
+          "pctile": 41.9
+        }
+      },
+      {
+        "industry": "机械设备",
+        "strength": {
+          "volr20": 0.9548,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0582,
+          "pctile_250d": 11.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 9.36,
+          "pctile": 87.1
+        }
+      },
+      {
+        "industry": "汽车",
+        "strength": {
+          "volr20": 0.8244,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0425,
+          "pctile_250d": 75.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 7.58,
+          "pctile": 58.1
+        }
+      },
+      {
+        "industry": "煤炭",
+        "strength": {
+          "volr20": 0.7351,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "震荡",
+        "crowding": {
+          "share20": 0.0134,
+          "pctile_250d": 22.8
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 7.05,
+          "pctile": 48.4
+        }
+      },
+      {
+        "industry": "环保",
+        "strength": {
+          "volr20": 0.7641,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0128,
+          "pctile_250d": 0.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 5.7,
+          "pctile": 25.8
+        }
+      },
+      {
+        "industry": "电力设备",
+        "strength": {
+          "volr20": 0.8555,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0646,
+          "pctile_250d": 12.8
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.52,
+          "pctile": 77.4
+        }
+      },
+      {
+        "industry": "电子",
+        "strength": {
+          "volr20": 0.8007,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.1072,
+          "pctile_250d": 68.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 9.62,
+          "pctile": 93.5
+        }
+      },
+      {
+        "industry": "石油石化",
+        "strength": {
+          "volr20": 0.7496,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "震荡",
+        "crowding": {
+          "share20": 0.0157,
+          "pctile_250d": 35.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 10.52,
+          "pctile": 96.8
+        }
+      },
+      {
+        "industry": "社会服务",
+        "strength": {
+          "volr20": 0.7678,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0114,
+          "pctile_250d": 65.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 6.2,
+          "pctile": 32.3
+        }
+      },
+      {
+        "industry": "纺织服饰",
+        "strength": {
+          "volr20": 0.7537,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0132,
+          "pctile_250d": 71.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 5.49,
+          "pctile": 19.4
+        }
+      },
+      {
+        "industry": "综合",
+        "strength": {
+          "volr20": 0.67,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0057,
+          "pctile_250d": 92.0
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 3.96,
+          "pctile": 6.5
+        }
+      },
+      {
+        "industry": "美容护理",
+        "strength": {
+          "volr20": 0.8126,
+          "hot5": 1,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0022,
+          "pctile_250d": 99.6
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 7.27,
+          "pctile": 54.8
+        }
+      },
+      {
+        "industry": "计算机",
+        "strength": {
+          "volr20": 1.1542,
+          "hot5": 2,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.048,
+          "pctile_250d": 28.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.31,
+          "pctile": 64.5
+        }
+      },
+      {
+        "industry": "轻工制造",
+        "strength": {
+          "volr20": 0.7717,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0182,
+          "pctile_250d": 58.8
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 6.34,
+          "pctile": 38.7
+        }
+      },
+      {
+        "industry": "通信",
+        "strength": {
+          "volr20": 0.8716,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0265,
+          "pctile_250d": 14.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 8.33,
+          "pctile": 67.7
+        }
+      },
+      {
+        "industry": "钢铁",
+        "strength": {
+          "volr20": 0.6629,
+          "hot5": 0,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0145,
+          "pctile_250d": 0.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 4.57,
+          "pctile": 9.7
+        }
+      },
+      {
+        "industry": "银行",
+        "strength": {
+          "volr20": 0.9099,
+          "hot5": 4,
+          "c1": false
+        },
+        "trend": "多头",
+        "crowding": {
+          "share20": 0.0362,
+          "pctile_250d": 93.2
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 3.57,
+          "pctile": 3.2
+        }
+      },
+      {
+        "industry": "非银金融",
+        "strength": {
+          "volr20": 0.923,
+          "hot5": 2,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0252,
+          "pctile_250d": 8.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 4.85,
+          "pctile": 12.9
+        }
+      },
+      {
+        "industry": "食品饮料",
+        "strength": {
+          "volr20": 0.9877,
+          "hot5": 2,
+          "c1": false
+        },
+        "trend": "空头",
+        "crowding": {
+          "share20": 0.0145,
+          "pctile_250d": 82.4
+        },
+        "flow_hint": "N/A",
+        "valuation": "N/A(行业PE/PB数据源待建)",
+        "dispersion": {
+          "ret20_std": 7.14,
+          "pctile": 51.6
+        }
+      }
+    ],
+    "pd035_concept_stage": {
+      "创新药": "退潮",
+      "人形机器人": "退潮",
+      "低空经济": "退潮",
+      "军工": "退潮",
+      "军工电子Ⅱ": "退潮",
+      "固态电池": "退潮",
+      "黄金概念": "退潮",
+      "CPO概念": "退潮"
+    }
+  },
+  "usage": "方向层=收敛视野+排除逆风,非追热点非过滤器;三源冲突并列呈报;sector_six_dims=六维呈现附加层零交易权(呈请B 2026-10-18),R41等既有消费字段不受影响"
+}

@@ -1,0 +1,387 @@
+{"code": "000004", "breaks": [{"date": "20260623", "m": 0.10131, "raw_chg": 0.1087, "qfq_chg": -0.8877}], "rows_updated": 2303, "repair": "20261021"}
+{"code": "000007", "breaks": [{"date": "20170717", "m": 0.6041, "raw_chg": -0.0072, "qfq_chg": -0.4003}], "rows_updated": 124, "repair": "20261021"}
+{"code": "000009", "breaks": [{"date": "20160721", "m": 1.20569, "raw_chg": -0.0137, "qfq_chg": 0.1892}], "rows_updated": 135, "repair": "20261021"}
+{"code": "000038", "breaks": [{"date": "20171113", "m": 0.72509, "raw_chg": -0.0545, "qfq_chg": -0.3144}, {"date": "20230619", "m": 0.19118, "raw_chg": -0.0545, "qfq_chg": -0.8192}], "rows_updated": 1420, "repair": "20261021"}
+{"code": "000056", "breaks": [{"date": "20160708", "m": 1.22241, "raw_chg": -0.0287, "qfq_chg": 0.1873}], "rows_updated": 126, "repair": "20261021"}
+{"code": "000155", "breaks": [{"date": "20171218", "m": 0.70727, "raw_chg": 0.005, "qfq_chg": -0.2892}], "rows_updated": 72, "repair": "20261021"}
+{"code": "000408", "breaks": [{"date": "20171114", "m": 1.84585, "raw_chg": -0.008, "qfq_chg": 0.8311}], "rows_updated": 448, "repair": "20261021"}
+{"code": "000426", "breaks": [{"date": "20170810", "m": 1.92262, "raw_chg": 0.0144, "qfq_chg": 0.9503}], "rows_updated": 337, "repair": "20261021"}
+{"code": "000502", "breaks": [{"date": "20220606", "m": 0.1438, "raw_chg": -0.0484, "qfq_chg": -0.8632}], "rows_updated": 6720, "repair": "20261021"}
+{"code": "000513", "breaks": [{"date": "20160615", "m": 1.34468, "raw_chg": -0.0103, "qfq_chg": 0.3308}], "rows_updated": 109, "repair": "20261021"}
+{"code": "000519", "breaks": [{"date": "20190620", "m": 1.46057, "raw_chg": -0.0211, "qfq_chg": 0.4298}], "rows_updated": 836, "repair": "20261021"}
+{"code": "000539", "breaks": [{"date": "20160628", "m": 1.18576, "raw_chg": 0.0241, "qfq_chg": 0.2143}], "rows_updated": 118, "repair": "20261021"}
+{"code": "000540", "breaks": [{"date": "20150401", "m": 0.41465, "raw_chg": -0.0476, "qfq_chg": -0.6051}, {"date": "20160104", "m": 0.58388, "raw_chg": -0.0476, "qfq_chg": -0.4439}, {"date": "20190102", "m": 0.6257, "raw_chg": -0.0476, "qfq_chg": -0.4041}, {"date": "20190712", "m": 1.59003, "raw_chg": -0.0476, "qfq_chg": 0.5143}], "rows_updated": 5622, "repair": "20261021"}
+{"code": "000545", "breaks": [{"date": "20160531", "m": 2.10921, "raw_chg": -0.0097, "qfq_chg": 1.0887}], "rows_updated": 100, "repair": "20261021"}
+{"code": "000564", "breaks": [{"date": "20211231", "m": 1.28261, "raw_chg": 0.0, "qfq_chg": 0.2826}], "rows_updated": 1294, "repair": "20261021"}
+{"code": "000585", "breaks": [{"date": "20220428", "m": 0.32653, "raw_chg": 0.0, "qfq_chg": -0.6735}], "rows_updated": 5963, "repair": "20261021"}
+{"code": "000587", "breaks": [{"date": "20160104", "m": 0.47049, "raw_chg": -0.0526, "qfq_chg": -0.5543}], "rows_updated": 4180, "repair": "20261021"}
+{"code": "000606", "breaks": [{"date": "20230613", "m": 0.20187, "raw_chg": 0.0769, "qfq_chg": -0.7826}], "rows_updated": 6114, "repair": "20261021"}
+{"code": "000611", "breaks": [{"date": "20220607", "m": 0.33275, "raw_chg": -0.0733, "qfq_chg": -0.6916}], "rows_updated": 5681, "repair": "20261021"}
+{"code": "000613", "breaks": [{"date": "20220608", "m": 0.23878, "raw_chg": -0.0169, "qfq_chg": -0.7653}], "rows_updated": 5476, "repair": "20261021"}
+{"code": "000629", "breaks": [{"date": "20180824", "m": 1.26014, "raw_chg": -0.0074, "qfq_chg": 0.2508}], "rows_updated": 237, "repair": "20261021"}
+{"code": "000630", "breaks": [{"date": "20180615", "m": 4.97966, "raw_chg": 0.0019, "qfq_chg": 3.9891}], "rows_updated": 598, "repair": "20261021"}
+{"code": "000662", "breaks": [{"date": "20160104", "m": 0.6305, "raw_chg": 0.087, "qfq_chg": -0.3146}], "rows_updated": 4292, "repair": "20261021"}
+{"code": "000669", "breaks": [{"date": "20180806", "m": 0.63983, "raw_chg": 0.0055, "qfq_chg": -0.3567}], "rows_updated": 519, "repair": "20261021"}
+{"code": "000670", "breaks": [{"date": "20220822", "m": 5.7064, "raw_chg": 0.0312, "qfq_chg": 4.8844}], "rows_updated": 941, "repair": "20261021"}
+{"code": "000671", "breaks": [{"date": "20150921", "m": 0.44338, "raw_chg": -0.0513, "qfq_chg": -0.5794}, {"date": "20160104", "m": 0.82493, "raw_chg": -0.0513, "qfq_chg": -0.2174}], "rows_updated": 4330, "repair": "20261021"}
+{"code": "000673", "breaks": [{"date": "20160104", "m": 0.41398, "raw_chg": 0.087, "qfq_chg": -0.55}, {"date": "20220613", "m": 0.16129, "raw_chg": 0.087, "qfq_chg": -0.8247}], "rows_updated": 5633, "repair": "20261021"}
+{"code": "000687", "breaks": [{"date": "20220526", "m": 0.4697, "raw_chg": 0.0, "qfq_chg": -0.5303}], "rows_updated": 1521, "repair": "20261021"}
+{"code": "000711", "breaks": [{"date": "20170418", "m": 0.48493, "raw_chg": -0.013, "qfq_chg": -0.5214}, {"date": "20181022", "m": 0.7603, "raw_chg": -0.013, "qfq_chg": -0.2496}], "rows_updated": 394, "repair": "20261021"}
+{"code": "000732", "breaks": [{"date": "20160104", "m": 0.45654, "raw_chg": -0.0444, "qfq_chg": -0.5637}], "rows_updated": 3566, "repair": "20261021"}
+{"code": "000748", "breaks": [{"date": "20150515", "m": 0.48206, "raw_chg": 0.0069, "qfq_chg": -0.5146}], "rows_updated": 4239, "repair": "20261021"}
+{"code": "000760", "breaks": [{"date": "20150618", "m": 0.68742, "raw_chg": -0.037, "qfq_chg": -0.338}], "rows_updated": 4033, "repair": "20261021"}
+{"code": "000780", "breaks": [{"date": "20160104", "m": 0.81913, "raw_chg": -0.0108, "qfq_chg": -0.1897}], "rows_updated": 4362, "repair": "20261021"}
+{"code": "000786", "breaks": [{"date": "20160513", "m": 2.01726, "raw_chg": -0.0103, "qfq_chg": 0.9965}], "rows_updated": 88, "repair": "20261021"}
+{"code": "000792", "breaks": [{"date": "20210810", "m": 4.17121, "raw_chg": -0.0264, "qfq_chg": 3.0611}], "rows_updated": 1046, "repair": "20261021"}
+{"code": "000806", "breaks": [{"date": "20230613", "m": 0.54, "raw_chg": 0.0, "qfq_chg": -0.46}], "rows_updated": 1511, "repair": "20261021"}
+{"code": "000812", "breaks": [{"date": "20180605", "m": 0.60205, "raw_chg": -0.0085, "qfq_chg": -0.4031}, {"date": "20200717", "m": 1.5355, "raw_chg": -0.0085, "qfq_chg": 0.5224}], "rows_updated": 903, "repair": "20261021"}
+{"code": "000818", "breaks": [{"date": "20170628", "m": 1.32496, "raw_chg": 0.0153, "qfq_chg": 0.3452}], "rows_updated": 219, "repair": "20261021"}
+{"code": "000835", "breaks": [{"date": "20220427", "m": 0.32039, "raw_chg": 0.0606, "qfq_chg": -0.6602}], "rows_updated": 5135, "repair": "20261021"}
+{"code": "000836", "breaks": [{"date": "20160620", "m": 0.10476, "raw_chg": -0.0513, "qfq_chg": -0.9006}, {"date": "20180604", "m": 3.15523, "raw_chg": -0.0513, "qfq_chg": 1.9934}], "rows_updated": 4639, "repair": "20261021"}
+{"code": "000861", "breaks": [{"date": "20150828", "m": 0.62222, "raw_chg": -0.1014, "qfq_chg": -0.4409}], "rows_updated": 3823, "repair": "20261021"}
+{"code": "000893", "breaks": [{"date": "20260603", "m": 1.51993, "raw_chg": -0.0269, "qfq_chg": 0.479}], "rows_updated": 2392, "repair": "20261021"}
+{"code": "000979", "breaks": [{"date": "20160711", "m": 1.52904, "raw_chg": 0.0476, "qfq_chg": 0.6018}], "rows_updated": 127, "repair": "20261021"}
+{"code": "000981", "breaks": [{"date": "20180619", "m": 2.7445, "raw_chg": -0.0082, "qfq_chg": 1.722}], "rows_updated": 453, "repair": "20261021"}
+{"code": "000995", "breaks": [{"date": "20201216", "m": 4.15908, "raw_chg": -0.0022, "qfq_chg": 3.1499}], "rows_updated": 643, "repair": "20261021"}
+{"code": "000996", "breaks": [{"date": "20240606", "m": 0.24832, "raw_chg": 0.0, "qfq_chg": -0.7517}], "rows_updated": 1998, "repair": "20261021"}
+{"code": "001285", "breaks": [{"date": "20261016", "m": 0.72462, "raw_chg": -0.0187, "qfq_chg": -0.2889}], "rows_updated": 239, "repair": "20261021"}
+{"code": "001309", "breaks": [{"date": "20261012", "m": 0.63689, "raw_chg": 0.065, "qfq_chg": -0.3217}], "rows_updated": 1036, "repair": "20261021"}
+{"code": "001331", "breaks": [{"date": "20230607", "m": 0.69255, "raw_chg": -0.0144, "qfq_chg": -0.3174}, {"date": "20240717", "m": 0.79669, "raw_chg": -0.0144, "qfq_chg": -0.2148}, {"date": "20250605", "m": 0.72325, "raw_chg": -0.0144, "qfq_chg": -0.2872}, {"date": "20260629", "m": 0.74518, "raw_chg": -0.0144, "qfq_chg": -0.2655}], "rows_updated": 889, "repair": "20261021"}
+{"code": "002002", "breaks": [{"date": "20160104", "m": 0.35051, "raw_chg": -0.0492, "qfq_chg": -0.6667}], "rows_updated": 2349, "repair": "20261021"}
+{"code": "002013", "breaks": [{"date": "20150616", "m": 0.70578, "raw_chg": 0.0009, "qfq_chg": -0.2936}, {"date": "20160104", "m": 0.27048, "raw_chg": 0.0009, "qfq_chg": -0.7293}, {"date": "20170802", "m": 0.69931, "raw_chg": 0.0009, "qfq_chg": -0.3001}, {"date": "20180426", "m": 1.50018, "raw_chg": 0.0009, "qfq_chg": 0.5015}], "rows_updated": 3164, "repair": "20261021"}
+{"code": "002018", "breaks": [{"date": "20160415", "m": 0.22918, "raw_chg": 0.0833, "qfq_chg": -0.7517}, {"date": "20170609", "m": 1.73359, "raw_chg": 0.0833, "qfq_chg": 0.878}], "rows_updated": 2790, "repair": "20261021"}
+{"code": "002053", "breaks": [{"date": "20161104", "m": 0.52111, "raw_chg": 0.0033, "qfq_chg": -0.4772}, {"date": "20170526", "m": 1.94866, "raw_chg": 0.0033, "qfq_chg": 0.9551}], "rows_updated": 221, "repair": "20261021"}
+{"code": "002075", "breaks": [{"date": "20190425", "m": 1.36187, "raw_chg": 0.0, "qfq_chg": 0.3619}], "rows_updated": 268, "repair": "20261021"}
+{"code": "002076", "breaks": [{"date": "20171012", "m": 0.49972, "raw_chg": 0.0987, "qfq_chg": -0.451}, {"date": "20221221", "m": 1.91418, "raw_chg": 0.0987, "qfq_chg": 1.1031}], "rows_updated": 1505, "repair": "20261021"}
+{"code": "002084", "breaks": [{"date": "20160115", "m": 0.6495, "raw_chg": 0.0, "qfq_chg": -0.3505}], "rows_updated": 2152, "repair": "20261021"}
+{"code": "002087", "breaks": [{"date": "20160104", "m": 0.6604, "raw_chg": 0.0, "qfq_chg": -0.3396}, {"date": "20240606", "m": 0.3913, "raw_chg": 0.0, "qfq_chg": -0.6087}], "rows_updated": 4201, "repair": "20261021"}
+{"code": "002089", "breaks": [{"date": "20160104", "m": 0.44714, "raw_chg": 0.0, "qfq_chg": -0.5529}, {"date": "20240326", "m": 0.30769, "raw_chg": 0.0, "qfq_chg": -0.6923}], "rows_updated": 3885, "repair": "20261021"}
+{"code": "002097", "breaks": [{"date": "20170703", "m": 1.54408, "raw_chg": -0.0149, "qfq_chg": 0.5211}], "rows_updated": 364, "repair": "20261021"}
+{"code": "002102", "breaks": [{"date": "20161012", "m": 0.3251, "raw_chg": 0.0123, "qfq_chg": -0.6709}], "rows_updated": 147, "repair": "20261021"}
+{"code": "002113", "breaks": [{"date": "20160901", "m": 0.24165, "raw_chg": -0.0465, "qfq_chg": -0.7696}, {"date": "20180907", "m": 0.55479, "raw_chg": -0.0465, "qfq_chg": -0.471}], "rows_updated": 2283, "repair": "20261021"}
+{"code": "002116", "breaks": [{"date": "20160729", "m": 1.2874, "raw_chg": -0.0057, "qfq_chg": 0.2801}], "rows_updated": 141, "repair": "20261021"}
+{"code": "002118", "breaks": [{"date": "20160104", "m": 0.47436, "raw_chg": -0.0513, "qfq_chg": -0.55}], "rows_updated": 2079, "repair": "20261021"}
+{"code": "002127", "breaks": [{"date": "20160907", "m": 0.55574, "raw_chg": -0.0101, "qfq_chg": -0.4499}, {"date": "20180525", "m": 1.99621, "raw_chg": -0.0101, "qfq_chg": 0.976}], "rows_updated": 498, "repair": "20261021"}
+{"code": "002143", "breaks": [{"date": "20171027", "m": 0.63792, "raw_chg": -0.1071, "qfq_chg": -0.4304}], "rows_updated": 2192, "repair": "20261021"}
+{"code": "002147", "breaks": [{"date": "20160112", "m": 0.65422, "raw_chg": 0.0278, "qfq_chg": -0.3276}, {"date": "20220601", "m": 0.12084, "raw_chg": 0.0278, "qfq_chg": -0.8758}], "rows_updated": 3224, "repair": "20261021"}
+{"code": "002155", "breaks": [{"date": "20160104", "m": 0.66785, "raw_chg": 0.006, "qfq_chg": -0.3281}], "rows_updated": 1961, "repair": "20261021"}
+{"code": "002166", "breaks": [{"date": "20160426", "m": 3.03739, "raw_chg": -0.003, "qfq_chg": 2.0283}], "rows_updated": 76, "repair": "20261021"}
+{"code": "002175", "breaks": [{"date": "20161121", "m": 0.41665, "raw_chg": -0.0085, "qfq_chg": -0.5869}], "rows_updated": 84, "repair": "20261021"}
+{"code": "002176", "breaks": [{"date": "20170627", "m": 2.19331, "raw_chg": -0.0039, "qfq_chg": 1.1848}], "rows_updated": 353, "repair": "20261021"}
+{"code": "002203", "breaks": [{"date": "20160708", "m": 1.98129, "raw_chg": -0.0061, "qfq_chg": 0.9692}], "rows_updated": 121, "repair": "20261021"}
+{"code": "002219", "breaks": [{"date": "20220623", "m": 2.63391, "raw_chg": -0.0051, "qfq_chg": 1.6205}], "rows_updated": 1268, "repair": "20261021"}
+{"code": "002220", "breaks": [{"date": "20160104", "m": 0.64197, "raw_chg": 0.04, "qfq_chg": -0.3323}], "rows_updated": 1870, "repair": "20261021"}
+{"code": "002230", "breaks": [{"date": "20170421", "m": 1.48733, "raw_chg": 0.0016, "qfq_chg": 0.4897}], "rows_updated": 268, "repair": "20261021"}
+{"code": "002254", "breaks": [{"date": "20170713", "m": 1.22546, "raw_chg": -0.0038, "qfq_chg": 0.2208}], "rows_updated": 367, "repair": "20261021"}
+{"code": "002256", "breaks": [{"date": "20160927", "m": 0.23783, "raw_chg": -0.0103, "qfq_chg": -0.7646}], "rows_updated": 181, "repair": "20261021"}
+{"code": "002260", "breaks": [{"date": "20150326", "m": 0.64679, "raw_chg": 0.0, "qfq_chg": -0.3532}], "rows_updated": 1581, "repair": "20261021"}
+{"code": "002270", "breaks": [{"date": "20180703", "m": 0.60083, "raw_chg": -0.0142, "qfq_chg": -0.4077}, {"date": "20190710", "m": 1.5268, "raw_chg": -0.0142, "qfq_chg": 0.5051}], "rows_updated": 794, "repair": "20261021"}
+{"code": "002274", "breaks": [{"date": "20160104", "m": 0.46751, "raw_chg": -0.0072, "qfq_chg": -0.5359}], "rows_updated": 1738, "repair": "20261021"}
+{"code": "002280", "breaks": [{"date": "20150408", "m": 0.46315, "raw_chg": -0.0513, "qfq_chg": -0.5606}, {"date": "20160104", "m": 0.14609, "raw_chg": -0.0513, "qfq_chg": -0.8614}, {"date": "20160328", "m": 2.78391, "raw_chg": -0.0513, "qfq_chg": 1.6411}], "rows_updated": 1515, "repair": "20261021"}
+{"code": "002283", "breaks": [{"date": "20161012", "m": 0.53429, "raw_chg": -0.0167, "qfq_chg": -0.4746}, {"date": "20170623", "m": 2.02953, "raw_chg": -0.0167, "qfq_chg": 0.9956}], "rows_updated": 224, "repair": "20261021"}
+{"code": "002288", "breaks": [{"date": "20150601", "m": 0.57301, "raw_chg": -0.0513, "qfq_chg": -0.4564}], "rows_updated": 1365, "repair": "20261021"}
+{"code": "002292", "breaks": [{"date": "20160616", "m": 1.96325, "raw_chg": 0.0043, "qfq_chg": 0.9717}], "rows_updated": 110, "repair": "20261021"}
+{"code": "002296", "breaks": [{"date": "20160511", "m": 1.69851, "raw_chg": -0.0124, "qfq_chg": 0.6775}], "rows_updated": 86, "repair": "20261021"}
+{"code": "002301", "breaks": [{"date": "20180709", "m": 0.58062, "raw_chg": 0.0301, "qfq_chg": -0.4019}, {"date": "20190509", "m": 1.45332, "raw_chg": 0.0301, "qfq_chg": 0.4971}], "rows_updated": 680, "repair": "20261021"}
+{"code": "002303", "breaks": [{"date": "20160713", "m": 1.99192, "raw_chg": 0.0036, "qfq_chg": 0.9991}], "rows_updated": 129, "repair": "20261021"}
+{"code": "002310", "breaks": [{"date": "20160721", "m": 0.43176, "raw_chg": -0.0047, "qfq_chg": -0.5703}, {"date": "20170718", "m": 2.57242, "raw_chg": -0.0047, "qfq_chg": 1.5603}], "rows_updated": 368, "repair": "20261021"}
+{"code": "002325", "breaks": [{"date": "20150914", "m": 0.75661, "raw_chg": -0.05, "qfq_chg": -0.2812}, {"date": "20160104", "m": 0.61714, "raw_chg": -0.05, "qfq_chg": -0.4137}, {"date": "20160601", "m": 1.30571, "raw_chg": -0.05, "qfq_chg": 0.2404}], "rows_updated": 1438, "repair": "20261021"}
+{"code": "002331", "breaks": [{"date": "20160711", "m": 0.75125, "raw_chg": -0.004, "qfq_chg": -0.2518}, {"date": "20170414", "m": 1.18298, "raw_chg": -0.004, "qfq_chg": 0.1783}], "rows_updated": 254, "repair": "20261021"}
+{"code": "002336", "breaks": [{"date": "20160104", "m": 0.81812, "raw_chg": 0.0, "qfq_chg": -0.1819}, {"date": "20250613", "m": 0.14905, "raw_chg": 0.0, "qfq_chg": -0.8509}], "rows_updated": 3640, "repair": "20261021"}
+{"code": "002341", "breaks": [{"date": "20160104", "m": 0.4702, "raw_chg": -0.0469, "qfq_chg": -0.5519}], "rows_updated": 1304, "repair": "20261021"}
+{"code": "002346", "breaks": [{"date": "20160628", "m": 1.99909, "raw_chg": 0.0056, "qfq_chg": 1.0103}], "rows_updated": 96, "repair": "20261021"}
+{"code": "002349", "breaks": [{"date": "20170314", "m": 1.50031, "raw_chg": 0.0, "qfq_chg": 0.5003}], "rows_updated": 159, "repair": "20261021"}
+{"code": "002352", "breaks": [{"date": "20160531", "m": 0.5588, "raw_chg": -0.0206, "qfq_chg": -0.4527}, {"date": "20170417", "m": 1.98443, "raw_chg": -0.0206, "qfq_chg": 0.9436}], "rows_updated": 267, "repair": "20261021"}
+{"code": "002359", "breaks": [{"date": "20160104", "m": 0.56828, "raw_chg": -0.0541, "qfq_chg": -0.4625}], "rows_updated": 1239, "repair": "20261021"}
+{"code": "002368", "breaks": [{"date": "20160608", "m": 1.35274, "raw_chg": 0.0997, "qfq_chg": 0.4876}], "rows_updated": 106, "repair": "20261021"}
+{"code": "002408", "breaks": [{"date": "20160607", "m": 1.18078, "raw_chg": -0.0041, "qfq_chg": 0.1759}], "rows_updated": 105, "repair": "20261021"}
+{"code": "002411", "breaks": [{"date": "20230619", "m": 0.23428, "raw_chg": -0.1014, "qfq_chg": -0.7895}], "rows_updated": 2795, "repair": "20261021"}
+{"code": "002417", "breaks": [{"date": "20230615", "m": 0.2785, "raw_chg": 0.0714, "qfq_chg": -0.7016}], "rows_updated": 2902, "repair": "20261021"}
+{"code": "002433", "breaks": [{"date": "20240614", "m": 0.45752, "raw_chg": -0.1, "qfq_chg": -0.5882}], "rows_updated": 3296, "repair": "20261021"}
+{"code": "002434", "breaks": [{"date": "20170512", "m": 2.01887, "raw_chg": -0.0133, "qfq_chg": 0.992}], "rows_updated": 242, "repair": "20261021"}
+{"code": "002435", "breaks": [{"date": "20160127", "m": 0.42575, "raw_chg": -0.0513, "qfq_chg": -0.5961}], "rows_updated": 1210, "repair": "20261021"}
+{"code": "002441", "breaks": [{"date": "20160630", "m": 2.02728, "raw_chg": -0.0097, "qfq_chg": 1.0076}], "rows_updated": 120, "repair": "20261021"}
+{"code": "002445", "breaks": [{"date": "20151022", "m": 0.44045, "raw_chg": 0.0213, "qfq_chg": -0.5502}, {"date": "20180913", "m": 0.51625, "raw_chg": 0.0213, "qfq_chg": -0.4727}], "rows_updated": 1664, "repair": "20261021"}
+{"code": "002447", "breaks": [{"date": "20150514", "m": 0.52461, "raw_chg": -0.05, "qfq_chg": -0.5016}, {"date": "20170921", "m": 0.70526, "raw_chg": -0.05, "qfq_chg": -0.33}, {"date": "20220606", "m": 0.20096, "raw_chg": -0.05, "qfq_chg": -0.8091}], "rows_updated": 2554, "repair": "20261021"}
+{"code": "002450", "breaks": [{"date": "20150526", "m": 0.70009, "raw_chg": -0.0476, "qfq_chg": -0.3332}, {"date": "20160104", "m": 0.47254, "raw_chg": -0.0476, "qfq_chg": -0.55}], "rows_updated": 1278, "repair": "20261021"}
+{"code": "002464", "breaks": [{"date": "20160104", "m": 0.2318, "raw_chg": 0.0833, "qfq_chg": -0.7489}, {"date": "20170726", "m": 0.51935, "raw_chg": 0.0833, "qfq_chg": -0.4374}, {"date": "20180731", "m": 0.59331, "raw_chg": 0.0833, "qfq_chg": -0.3573}, {"date": "20190613", "m": 2.12605, "raw_chg": 0.0833, "qfq_chg": 1.3032}, {"date": "20220607", "m": 0.15017, "raw_chg": 0.0833, "qfq_chg": -0.8373}], "rows_updated": 2251, "repair": "20261021"}
+{"code": "002470", "breaks": [{"date": "20160512", "m": 0.4854, "raw_chg": 0.0055, "qfq_chg": -0.5119}], "rows_updated": 79, "repair": "20261021"}
+{"code": "002473", "breaks": [{"date": "20220531", "m": 0.22863, "raw_chg": -0.0814, "qfq_chg": -0.79}], "rows_updated": 2373, "repair": "20261021"}
+{"code": "002477", "breaks": [{"date": "20160104", "m": 0.2919, "raw_chg": 0.0, "qfq_chg": -0.7081}], "rows_updated": 1180, "repair": "20261021"}
+{"code": "002481", "breaks": [{"date": "20160812", "m": 2.51642, "raw_chg": 0.0023, "qfq_chg": 1.5222}], "rows_updated": 151, "repair": "20261021"}
+{"code": "002485", "breaks": [{"date": "20181113", "m": 0.53054, "raw_chg": -0.0018, "qfq_chg": -0.4704}, {"date": "20190625", "m": 1.6701, "raw_chg": -0.0018, "qfq_chg": 0.6671}], "rows_updated": 643, "repair": "20261021"}
+{"code": "002499", "breaks": [{"date": "20150521", "m": 0.65882, "raw_chg": 0.1026, "qfq_chg": -0.2736}, {"date": "20230327", "m": 0.43188, "raw_chg": 0.1026, "qfq_chg": -0.5238}], "rows_updated": 2811, "repair": "20261021"}
+{"code": "002502", "breaks": [{"date": "20160913", "m": 0.54024, "raw_chg": -0.0448, "qfq_chg": -0.484}], "rows_updated": 1204, "repair": "20261021"}
+{"code": "002503", "breaks": [{"date": "20150515", "m": 0.5083, "raw_chg": -0.0455, "qfq_chg": -0.5148}, {"date": "20160104", "m": 0.34485, "raw_chg": -0.0455, "qfq_chg": -0.6708}], "rows_updated": 1207, "repair": "20261021"}
+{"code": "002504", "breaks": [{"date": "20160104", "m": 0.37723, "raw_chg": -0.05, "qfq_chg": -0.6416}], "rows_updated": 1069, "repair": "20261021"}
+{"code": "002505", "breaks": [{"date": "20160613", "m": 0.64345, "raw_chg": -0.1, "qfq_chg": -0.4209}], "rows_updated": 1231, "repair": "20261021"}
+{"code": "002507", "breaks": [{"date": "20160615", "m": 0.63342, "raw_chg": -0.0159, "qfq_chg": -0.3767}, {"date": "20170526", "m": 1.6548, "raw_chg": -0.0159, "qfq_chg": 0.6285}], "rows_updated": 288, "repair": "20261021"}
+{"code": "002509", "breaks": [{"date": "20160104", "m": 0.27036, "raw_chg": -0.0625, "qfq_chg": -0.7465}], "rows_updated": 1061, "repair": "20261021"}
+{"code": "002511", "breaks": [{"date": "20160607", "m": 1.22523, "raw_chg": -0.0146, "qfq_chg": 0.2073}], "rows_updated": 105, "repair": "20261021"}
+{"code": "002515", "breaks": [{"date": "20160727", "m": 0.64942, "raw_chg": -0.0064, "qfq_chg": -0.3547}, {"date": "20170522", "m": 1.68317, "raw_chg": -0.0064, "qfq_chg": 0.6724}], "rows_updated": 215, "repair": "20261021"}
+{"code": "002519", "breaks": [{"date": "20160524", "m": 1.96133, "raw_chg": -0.0018, "qfq_chg": 0.9578}], "rows_updated": 95, "repair": "20261021"}
+{"code": "002542", "breaks": [{"date": "20170714", "m": 1.44673, "raw_chg": 0.0207, "qfq_chg": 0.4767}], "rows_updated": 271, "repair": "20261021"}
+{"code": "002545", "breaks": [{"date": "20160608", "m": 3.26301, "raw_chg": -0.0115, "qfq_chg": 2.2255}], "rows_updated": 101, "repair": "20261021"}
+{"code": "002549", "breaks": [{"date": "20170707", "m": 1.35579, "raw_chg": 0.0411, "qfq_chg": 0.4115}], "rows_updated": 368, "repair": "20261021"}
+{"code": "002555", "breaks": [{"date": "20160816", "m": 0.55654, "raw_chg": -0.0142, "qfq_chg": -0.4514}, {"date": "20170524", "m": 2.09779, "raw_chg": -0.0142, "qfq_chg": 1.068}], "rows_updated": 215, "repair": "20261021"}
+{"code": "002558", "breaks": [{"date": "20161101", "m": 0.3764, "raw_chg": -0.0259, "qfq_chg": -0.6333}, {"date": "20170622", "m": 3.0416, "raw_chg": -0.0259, "qfq_chg": 1.9628}], "rows_updated": 280, "repair": "20261021"}
+{"code": "002567", "breaks": [{"date": "20170814", "m": 0.63191, "raw_chg": 0.0227, "qfq_chg": -0.3537}, {"date": "20180614", "m": 1.45431, "raw_chg": 0.0227, "qfq_chg": 0.4873}], "rows_updated": 446, "repair": "20261021"}
+{"code": "002581", "breaks": [{"date": "20160621", "m": 1.83029, "raw_chg": 0.0968, "qfq_chg": 1.0075}], "rows_updated": 113, "repair": "20261021"}
+{"code": "002586", "breaks": [{"date": "20160608", "m": 2.0638, "raw_chg": -0.0329, "qfq_chg": 0.9959}], "rows_updated": 106, "repair": "20261021"}
+{"code": "002587", "breaks": [{"date": "20170606", "m": 1.62968, "raw_chg": 0.0551, "qfq_chg": 0.7195}], "rows_updated": 272, "repair": "20261021"}
+{"code": "002589", "breaks": [{"date": "20160519", "m": 1.97705, "raw_chg": 0.0068, "qfq_chg": 0.9905}], "rows_updated": 92, "repair": "20261021"}
+{"code": "002600", "breaks": [{"date": "20170809", "m": 0.56045, "raw_chg": -0.0269, "qfq_chg": -0.4546}, {"date": "20200924", "m": 2.01267, "raw_chg": -0.0269, "qfq_chg": 0.9585}], "rows_updated": 1031, "repair": "20261021"}
+{"code": "002602", "breaks": [{"date": "20171206", "m": 2.15264, "raw_chg": -0.0624, "qfq_chg": 1.0183}, {"date": "20181107", "m": 0.61532, "raw_chg": -0.0624, "qfq_chg": -0.4231}, {"date": "20190606", "m": 1.71782, "raw_chg": -0.0624, "qfq_chg": 0.6106}], "rows_updated": 694, "repair": "20261021"}
+{"code": "002604", "breaks": [{"date": "20150605", "m": 0.65912, "raw_chg": -0.0741, "qfq_chg": -0.3897}], "rows_updated": 930, "repair": "20261021"}
+{"code": "002606", "breaks": [{"date": "20171206", "m": 0.44966, "raw_chg": -0.0018, "qfq_chg": -0.5511}, {"date": "20180619", "m": 1.81012, "raw_chg": -0.0018, "qfq_chg": 0.8069}], "rows_updated": 385, "repair": "20261021"}
+{"code": "002607", "breaks": [{"date": "20170609", "m": 1.28901, "raw_chg": -0.0165, "qfq_chg": 0.2677}], "rows_updated": 348, "repair": "20261021"}
+{"code": "002610", "breaks": [{"date": "20150529", "m": 0.48909, "raw_chg": -0.0513, "qfq_chg": -0.536}, {"date": "20160104", "m": 0.23593, "raw_chg": -0.0513, "qfq_chg": -0.7762}], "rows_updated": 1001, "repair": "20261021"}
+{"code": "002611", "breaks": [{"date": "20180703", "m": 0.56478, "raw_chg": -0.0084, "qfq_chg": -0.44}, {"date": "20250605", "m": 1.62748, "raw_chg": -0.0084, "qfq_chg": 0.6138}], "rows_updated": 2173, "repair": "20261021"}
+{"code": "002612", "breaks": [{"date": "20170525", "m": 2.08498, "raw_chg": -0.008, "qfq_chg": 1.0683}], "rows_updated": 228, "repair": "20261021"}
+{"code": "002617", "breaks": [{"date": "20160923", "m": 0.63466, "raw_chg": 0.018, "qfq_chg": -0.3539}, {"date": "20181030", "m": 0.58859, "raw_chg": 0.018, "qfq_chg": -0.4008}], "rows_updated": 456, "repair": "20261021"}
+{"code": "002618", "breaks": [{"date": "20160104", "m": 0.27556, "raw_chg": 0.0862, "qfq_chg": -0.7007}], "rows_updated": 1031, "repair": "20261021"}
+{"code": "002619", "breaks": [{"date": "20160419", "m": 0.25694, "raw_chg": -0.0508, "qfq_chg": -0.7561}, {"date": "20171117", "m": 0.64387, "raw_chg": -0.0508, "qfq_chg": -0.3888}, {"date": "20180725", "m": 1.89184, "raw_chg": -0.0508, "qfq_chg": 0.7957}], "rows_updated": 1240, "repair": "20261021"}
+{"code": "002621", "breaks": [{"date": "20160104", "m": 0.26511, "raw_chg": -0.0513, "qfq_chg": -0.7485}, {"date": "20171101", "m": 0.7732, "raw_chg": -0.0513, "qfq_chg": -0.2665}, {"date": "20190614", "m": 1.53099, "raw_chg": -0.0513, "qfq_chg": 0.4525}], "rows_updated": 1638, "repair": "20261021"}
+{"code": "002626", "breaks": [{"date": "20160613", "m": 1.90651, "raw_chg": 0.006, "qfq_chg": 0.9179}], "rows_updated": 107, "repair": "20261021"}
+{"code": "002639", "breaks": [{"date": "20160526", "m": 2.71169, "raw_chg": 0.1, "qfq_chg": 1.9829}], "rows_updated": 91, "repair": "20261021"}
+{"code": "002647", "breaks": [{"date": "20170613", "m": 1.35723, "raw_chg": 0.0131, "qfq_chg": 0.375}, {"date": "20180615", "m": 0.68648, "raw_chg": 0.0131, "qfq_chg": -0.3045}, {"date": "20190710", "m": 1.50983, "raw_chg": 0.0131, "qfq_chg": 0.5296}], "rows_updated": 603, "repair": "20261021"}
+{"code": "002657", "breaks": [{"date": "20160627", "m": 2.05273, "raw_chg": 0.0162, "qfq_chg": 1.086}], "rows_updated": 117, "repair": "20261021"}
+{"code": "002665", "breaks": [{"date": "20150504", "m": 0.44166, "raw_chg": -0.0513, "qfq_chg": -0.581}, {"date": "20160104", "m": 0.14092, "raw_chg": -0.0513, "qfq_chg": -0.8663}, {"date": "20160505", "m": 2.66816, "raw_chg": -0.0513, "qfq_chg": 1.5313}], "rows_updated": 836, "repair": "20261021"}
+{"code": "002666", "breaks": [{"date": "20160715", "m": 2.02751, "raw_chg": -0.005, "qfq_chg": 1.0174}], "rows_updated": 131, "repair": "20261021"}
+{"code": "002667", "breaks": [{"date": "20160427", "m": 2.11843, "raw_chg": -0.0687, "qfq_chg": 0.9729}], "rows_updated": 77, "repair": "20261021"}
+{"code": "002668", "breaks": [{"date": "20181030", "m": 0.549, "raw_chg": -0.0385, "qfq_chg": -0.4721}, {"date": "20260522", "m": 1.77425, "raw_chg": -0.0385, "qfq_chg": 0.7059}], "rows_updated": 2376, "repair": "20261021"}
+{"code": "002680", "breaks": [{"date": "20150714", "m": 0.59561, "raw_chg": 0.0845, "qfq_chg": -0.3541}, {"date": "20160104", "m": 0.23337, "raw_chg": 0.0845, "qfq_chg": -0.7469}, {"date": "20160722", "m": 1.47021, "raw_chg": 0.0845, "qfq_chg": 0.5944}], "rows_updated": 924, "repair": "20261021"}
+{"code": "002683", "breaks": [{"date": "20160517", "m": 2.55948, "raw_chg": -0.0123, "qfq_chg": 1.528}], "rows_updated": 85, "repair": "20261021"}
+{"code": "002684", "breaks": [{"date": "20150309", "m": 0.45654, "raw_chg": 0.0952, "qfq_chg": -0.5}, {"date": "20171103", "m": 0.6301, "raw_chg": 0.0952, "qfq_chg": -0.3099}, {"date": "20220606", "m": 0.24645, "raw_chg": 0.0952, "qfq_chg": -0.7301}], "rows_updated": 2064, "repair": "20261021"}
+{"code": "002699", "breaks": [{"date": "20150317", "m": 0.54322, "raw_chg": -0.0465, "qfq_chg": -0.482}, {"date": "20160104", "m": 0.51935, "raw_chg": -0.0465, "qfq_chg": -0.5048}], "rows_updated": 678, "repair": "20261021"}
+{"code": "002711", "breaks": [{"date": "20150706", "m": 0.38218, "raw_chg": 0.0667, "qfq_chg": -0.5923}, {"date": "20160630", "m": 0.45903, "raw_chg": 0.0667, "qfq_chg": -0.5104}, {"date": "20170717", "m": 0.60619, "raw_chg": 0.0667, "qfq_chg": -0.3534}], "rows_updated": 778, "repair": "20261021"}
+{"code": "002712", "breaks": [{"date": "20160817", "m": 0.3634, "raw_chg": 0.0077, "qfq_chg": -0.6338}, {"date": "20170718", "m": 2.91455, "raw_chg": 0.0077, "qfq_chg": 1.937}], "rows_updated": 275, "repair": "20261021"}
+{"code": "002716", "breaks": [{"date": "20180831", "m": 0.5241, "raw_chg": 0.005, "qfq_chg": -0.4733}], "rows_updated": 562, "repair": "20261021"}
+{"code": "002717", "breaks": [{"date": "20160513", "m": 2.14785, "raw_chg": -0.1, "qfq_chg": 0.9331}], "rows_updated": 42, "repair": "20261021"}
+{"code": "002718", "breaks": [{"date": "20160506", "m": 1.54248, "raw_chg": -0.0287, "qfq_chg": 0.4982}], "rows_updated": 83, "repair": "20261021"}
+{"code": "002719", "breaks": [{"date": "20181203", "m": 0.5566, "raw_chg": 0.0086, "qfq_chg": -0.4386}, {"date": "20210603", "m": 1.66921, "raw_chg": 0.0086, "qfq_chg": 0.6836}], "rows_updated": 1198, "repair": "20261021"}
+{"code": "002721", "breaks": [{"date": "20160624", "m": 3.15927, "raw_chg": 0.0041, "qfq_chg": 2.1722}], "rows_updated": 100, "repair": "20261021"}
+{"code": "002739", "breaks": [{"date": "20181105", "m": 0.5969, "raw_chg": 0.0012, "qfq_chg": -0.4024}], "rows_updated": 294, "repair": "20261021"}
+{"code": "002740", "breaks": [{"date": "20160104", "m": 0.31252, "raw_chg": -0.05, "qfq_chg": -0.7031}], "rows_updated": 197, "repair": "20261021"}
+{"code": "002750", "breaks": [{"date": "20150915", "m": 0.30018, "raw_chg": 0.0351, "qfq_chg": -0.6893}, {"date": "20160104", "m": 0.42712, "raw_chg": 0.0351, "qfq_chg": -0.5579}, {"date": "20250606", "m": 0.61556, "raw_chg": 0.0351, "qfq_chg": -0.3628}], "rows_updated": 2450, "repair": "20261021"}
+{"code": "002751", "breaks": [{"date": "20150917", "m": 0.51853, "raw_chg": -0.0652, "qfq_chg": -0.5153}, {"date": "20230620", "m": 0.22521, "raw_chg": -0.0652, "qfq_chg": -0.7895}], "rows_updated": 1909, "repair": "20261021"}
+{"code": "002759", "breaks": [{"date": "20160630", "m": 0.44896, "raw_chg": -0.0236, "qfq_chg": -0.5616}, {"date": "20170705", "m": 2.6786, "raw_chg": -0.0236, "qfq_chg": 1.6154}], "rows_updated": 287, "repair": "20261021"}
+{"code": "002762", "breaks": [{"date": "20160714", "m": 0.56848, "raw_chg": 0.0429, "qfq_chg": -0.4071}, {"date": "20180620", "m": 0.53685, "raw_chg": 0.0429, "qfq_chg": -0.4401}], "rows_updated": 484, "repair": "20261021"}
+{"code": "002766", "breaks": [{"date": "20170815", "m": 0.49823, "raw_chg": -0.0025, "qfq_chg": -0.503}, {"date": "20180716", "m": 1.97626, "raw_chg": -0.0025, "qfq_chg": 0.9713}], "rows_updated": 476, "repair": "20261021"}
+{"code": "002770", "breaks": [{"date": "20160104", "m": 0.22956, "raw_chg": 0.0169, "qfq_chg": -0.7666}, {"date": "20220601", "m": 0.27385, "raw_chg": 0.0169, "qfq_chg": -0.7215}], "rows_updated": 1543, "repair": "20261021"}
+{"code": "002776", "breaks": [{"date": "20160104", "m": 0.20498, "raw_chg": -0.0476, "qfq_chg": -0.8048}], "rows_updated": 129, "repair": "20261021"}
+{"code": "002781", "breaks": [{"date": "20230612", "m": 0.28571, "raw_chg": 0.0244, "qfq_chg": -0.7073}], "rows_updated": 1673, "repair": "20261021"}
+{"code": "002787", "breaks": [{"date": "20170925", "m": 0.45019, "raw_chg": -0.0134, "qfq_chg": -0.5558}, {"date": "20180606", "m": 2.05037, "raw_chg": -0.0134, "qfq_chg": 1.0229}], "rows_updated": 456, "repair": "20261021"}
+{"code": "002808", "breaks": [{"date": "20260623", "m": 0.06746, "raw_chg": 0.0476, "qfq_chg": -0.9293}], "rows_updated": 2356, "repair": "20261021"}
+{"code": "002828", "breaks": [{"date": "20180528", "m": 0.64643, "raw_chg": -0.002, "qfq_chg": -0.3549}, {"date": "20190705", "m": 1.72382, "raw_chg": -0.002, "qfq_chg": 0.7204}], "rows_updated": 625, "repair": "20261021"}
+{"code": "002856", "breaks": [{"date": "20180904", "m": 0.75447, "raw_chg": -0.0106, "qfq_chg": -0.2535}], "rows_updated": 231, "repair": "20261021"}
+{"code": "002898", "breaks": [{"date": "20260626", "m": 0.04331, "raw_chg": -0.0263, "qfq_chg": -0.9578}], "rows_updated": 2093, "repair": "20261021"}
+{"code": "300023", "breaks": [{"date": "20220608", "m": 0.45434, "raw_chg": -0.1138, "qfq_chg": -0.5974}], "rows_updated": 2927, "repair": "20261021"}
+{"code": "300026", "breaks": [{"date": "20160525", "m": 1.50471, "raw_chg": -0.0032, "qfq_chg": 0.4999}], "rows_updated": 96, "repair": "20261021"}
+{"code": "300028", "breaks": [{"date": "20160330", "m": 0.71405, "raw_chg": -0.0323, "qfq_chg": -0.309}], "rows_updated": 1239, "repair": "20261021"}
+{"code": "300029", "breaks": [{"date": "20260618", "m": 0.08424, "raw_chg": -0.1429, "qfq_chg": -0.9278}], "rows_updated": 3842, "repair": "20261021"}
+{"code": "300038", "breaks": [{"date": "20220609", "m": 0.55247, "raw_chg": -0.1176, "qfq_chg": -0.5125}], "rows_updated": 2589, "repair": "20261021"}
+{"code": "300059", "breaks": [{"date": "20160418", "m": 1.33633, "raw_chg": -0.0033, "qfq_chg": 0.3319}], "rows_updated": 70, "repair": "20261021"}
+{"code": "300063", "breaks": [{"date": "20170630", "m": 0.38543, "raw_chg": -0.0012, "qfq_chg": -0.615}], "rows_updated": 216, "repair": "20261021"}
+{"code": "300064", "breaks": [{"date": "20220606", "m": 0.4659, "raw_chg": 0.0732, "qfq_chg": -0.5}], "rows_updated": 2824, "repair": "20261021"}
+{"code": "300065", "breaks": [{"date": "20170706", "m": 0.60017, "raw_chg": -0.0021, "qfq_chg": -0.4011}, {"date": "20180608", "m": 1.50421, "raw_chg": -0.0021, "qfq_chg": 0.501}], "rows_updated": 454, "repair": "20261021"}
+{"code": "300071", "breaks": [{"date": "20160616", "m": 3.57173, "raw_chg": 0.005, "qfq_chg": 2.5896}], "rows_updated": 12, "repair": "20261021"}
+{"code": "300074", "breaks": [{"date": "20170605", "m": 1.60741, "raw_chg": 0.0, "qfq_chg": 0.6074}], "rows_updated": 344, "repair": "20261021"}
+{"code": "300082", "breaks": [{"date": "20160601", "m": 2.19009, "raw_chg": 0.0112, "qfq_chg": 1.2146}], "rows_updated": 100, "repair": "20261021"}
+{"code": "300085", "breaks": [{"date": "20160513", "m": 3.92965, "raw_chg": 0.0015, "qfq_chg": 2.9355}], "rows_updated": 84, "repair": "20261021"}
+{"code": "300087", "breaks": [{"date": "20170810", "m": 0.73058, "raw_chg": 0.0019, "qfq_chg": -0.268}, {"date": "20180705", "m": 1.31238, "raw_chg": 0.0019, "qfq_chg": 0.3149}], "rows_updated": 534, "repair": "20261021"}
+{"code": "300089", "breaks": [{"date": "20160229", "m": 0.35897, "raw_chg": 0.0, "qfq_chg": -0.641}, {"date": "20230620", "m": 0.2875, "raw_chg": 0.0, "qfq_chg": -0.7125}], "rows_updated": 2664, "repair": "20261021"}
+{"code": "300090", "breaks": [{"date": "20151105", "m": 0.4839, "raw_chg": 0.0, "qfq_chg": -0.5161}], "rows_updated": 1201, "repair": "20261021"}
+{"code": "300104", "breaks": [{"date": "20150513", "m": 0.46076, "raw_chg": 0.0, "qfq_chg": -0.5392}, {"date": "20180124", "m": 0.4498, "raw_chg": 0.0, "qfq_chg": -0.5502}], "rows_updated": 1376, "repair": "20261021"}
+{"code": "300113", "breaks": [{"date": "20160606", "m": 0.46174, "raw_chg": 0.0123, "qfq_chg": -0.5326}, {"date": "20170609", "m": 2.22909, "raw_chg": 0.0123, "qfq_chg": 1.2565}], "rows_updated": 324, "repair": "20261021"}
+{"code": "300114", "breaks": [{"date": "20150527", "m": 0.82799, "raw_chg": -0.0017, "qfq_chg": -0.1734}, {"date": "20160525", "m": 0.65913, "raw_chg": -0.0017, "qfq_chg": -0.342}, {"date": "20170526", "m": 0.66546, "raw_chg": -0.0017, "qfq_chg": -0.3357}], "rows_updated": 1558, "repair": "20261021"}
+{"code": "300131", "breaks": [{"date": "20160315", "m": 1.86852, "raw_chg": 0.0, "qfq_chg": 0.8685}], "rows_updated": 47, "repair": "20261021"}
+{"code": "300134", "breaks": [{"date": "20160506", "m": 1.63222, "raw_chg": 0.0088, "qfq_chg": 0.6466}], "rows_updated": 83, "repair": "20261021"}
+{"code": "300137", "breaks": [{"date": "20160628", "m": 1.68247, "raw_chg": -0.0344, "qfq_chg": 0.6246}], "rows_updated": 118, "repair": "20261021"}
+{"code": "300142", "breaks": [{"date": "20190723", "m": 3.01794, "raw_chg": 0.0015, "qfq_chg": 2.0225}], "rows_updated": 724, "repair": "20261021"}
+{"code": "300148", "breaks": [{"date": "20160527", "m": 1.18228, "raw_chg": 0.0137, "qfq_chg": 0.1985}, {"date": "20170801", "m": 0.68116, "raw_chg": 0.0137, "qfq_chg": -0.3095}, {"date": "20180706", "m": 1.31073, "raw_chg": 0.0137, "qfq_chg": 0.3287}], "rows_updated": 478, "repair": "20261021"}
+{"code": "300155", "breaks": [{"date": "20160526", "m": 1.50343, "raw_chg": 0.0095, "qfq_chg": 0.5177}], "rows_updated": 97, "repair": "20261021"}
+{"code": "300156", "breaks": [{"date": "20160104", "m": 0.3878, "raw_chg": -0.0769, "qfq_chg": -0.642}], "rows_updated": 1116, "repair": "20261021"}
+{"code": "300161", "breaks": [{"date": "20170711", "m": 1.4962, "raw_chg": 0.0094, "qfq_chg": 0.5103}], "rows_updated": 361, "repair": "20261021"}
+{"code": "300162", "breaks": [{"date": "20170609", "m": 2.51064, "raw_chg": -0.0044, "qfq_chg": 1.4996}], "rows_updated": 313, "repair": "20261021"}
+{"code": "300166", "breaks": [{"date": "20170613", "m": 3.73498, "raw_chg": 0.0277, "qfq_chg": 2.8384}], "rows_updated": 271, "repair": "20261021"}
+{"code": "300176", "breaks": [{"date": "20160104", "m": 0.22061, "raw_chg": -0.0072, "qfq_chg": -0.781}], "rows_updated": 1185, "repair": "20261021"}
+{"code": "300178", "breaks": [{"date": "20150424", "m": 0.51076, "raw_chg": -0.0476, "qfq_chg": -0.5136}, {"date": "20220531", "m": 0.40687, "raw_chg": -0.0476, "qfq_chg": -0.6125}], "rows_updated": 2616, "repair": "20261021"}
+{"code": "300189", "breaks": [{"date": "20160715", "m": 2.45336, "raw_chg": 0.0074, "qfq_chg": 1.4715}], "rows_updated": 78, "repair": "20261021"}
+{"code": "300197", "breaks": [{"date": "20160519", "m": 1.4769, "raw_chg": 0.0054, "qfq_chg": 0.4849}], "rows_updated": 86, "repair": "20261021"}
+{"code": "300202", "breaks": [{"date": "20220613", "m": 0.38158, "raw_chg": -0.0196, "qfq_chg": -0.6259}], "rows_updated": 2674, "repair": "20261021"}
+{"code": "300208", "breaks": [{"date": "20250630", "m": 0.34551, "raw_chg": -0.125, "qfq_chg": -0.6977}], "rows_updated": 3211, "repair": "20261021"}
+{"code": "300216", "breaks": [{"date": "20150428", "m": 0.47352, "raw_chg": 0.0, "qfq_chg": -0.5265}], "rows_updated": 844, "repair": "20261021"}
+{"code": "300222", "breaks": [{"date": "20160421", "m": 1.66925, "raw_chg": -0.0078, "qfq_chg": 0.6562}], "rows_updated": 64, "repair": "20261021"}
+{"code": "300251", "breaks": [{"date": "20160530", "m": 0.45573, "raw_chg": -0.0127, "qfq_chg": -0.5501}, {"date": "20170616", "m": 2.02413, "raw_chg": -0.0127, "qfq_chg": 0.9984}], "rows_updated": 319, "repair": "20261021"}
+{"code": "300271", "breaks": [{"date": "20160325", "m": 1.83134, "raw_chg": 0.0122, "qfq_chg": 0.8537}], "rows_updated": 55, "repair": "20261021"}
+{"code": "300273", "breaks": [{"date": "20150526", "m": 0.86933, "raw_chg": -0.0732, "qfq_chg": -0.1943}, {"date": "20230613", "m": 0.3335, "raw_chg": -0.0732, "qfq_chg": -0.6909}], "rows_updated": 2654, "repair": "20261021"}
+{"code": "300280", "breaks": [{"date": "20250915", "m": 0.26477, "raw_chg": -0.1316, "qfq_chg": -0.7701}], "rows_updated": 2854, "repair": "20261021"}
+{"code": "300282", "breaks": [{"date": "20150819", "m": 0.62325, "raw_chg": -0.0714, "qfq_chg": -0.4212}, {"date": "20160104", "m": 0.64293, "raw_chg": -0.0714, "qfq_chg": -0.403}, {"date": "20240627", "m": 0.58152, "raw_chg": -0.0714, "qfq_chg": -0.46}], "rows_updated": 2780, "repair": "20261021"}
+{"code": "300283", "breaks": [{"date": "20160427", "m": 0.73611, "raw_chg": -0.0036, "qfq_chg": -0.2665}, {"date": "20170614", "m": 1.51124, "raw_chg": -0.0036, "qfq_chg": 0.5058}], "rows_updated": 322, "repair": "20261021"}
+{"code": "300297", "breaks": [{"date": "20150720", "m": 0.39854, "raw_chg": 0.0455, "qfq_chg": -0.5833}, {"date": "20151014", "m": 0.50392, "raw_chg": 0.0455, "qfq_chg": -0.4731}, {"date": "20230710", "m": 0.47824, "raw_chg": 0.0455, "qfq_chg": -0.5}], "rows_updated": 2571, "repair": "20261021"}
+{"code": "300298", "breaks": [{"date": "20160311", "m": 1.27732, "raw_chg": -0.0018, "qfq_chg": 0.275}, {"date": "20170717", "m": 0.79519, "raw_chg": -0.0018, "qfq_chg": -0.2062}, {"date": "20180716", "m": 1.21915, "raw_chg": -0.0018, "qfq_chg": 0.217}], "rows_updated": 474, "repair": "20261021"}
+{"code": "300299", "breaks": [{"date": "20170719", "m": 1.51171, "raw_chg": -0.0167, "qfq_chg": 0.4865}], "rows_updated": 234, "repair": "20261021"}
+{"code": "300309", "breaks": [{"date": "20150619", "m": 0.46827, "raw_chg": -0.0417, "qfq_chg": -0.5513}, {"date": "20160104", "m": 0.52125, "raw_chg": -0.0417, "qfq_chg": -0.5005}, {"date": "20230509", "m": 0.37268, "raw_chg": -0.0417, "qfq_chg": -0.6429}], "rows_updated": 2488, "repair": "20261021"}
+{"code": "300312", "breaks": [{"date": "20160104", "m": 0.49396, "raw_chg": -0.0909, "qfq_chg": -0.5509}, {"date": "20220613", "m": 0.26338, "raw_chg": -0.0909, "qfq_chg": -0.7606}], "rows_updated": 2234, "repair": "20261021"}
+{"code": "300317", "breaks": [{"date": "20160525", "m": 1.60665, "raw_chg": 0.0, "qfq_chg": 0.6066}], "rows_updated": 91, "repair": "20261021"}
+{"code": "300319", "breaks": [{"date": "20160705", "m": 2.44573, "raw_chg": 0.0177, "qfq_chg": 1.489}], "rows_updated": 123, "repair": "20261021"}
+{"code": "300323", "breaks": [{"date": "20170517", "m": 2.34371, "raw_chg": 0.0155, "qfq_chg": 1.38}], "rows_updated": 148, "repair": "20261021"}
+{"code": "300325", "breaks": [{"date": "20160104", "m": 0.32878, "raw_chg": 0.087, "qfq_chg": -0.6426}, {"date": "20220607", "m": 0.37422, "raw_chg": 0.087, "qfq_chg": -0.5932}], "rows_updated": 2295, "repair": "20261021"}
+{"code": "300330", "breaks": [{"date": "20230428", "m": 0.43866, "raw_chg": -0.02, "qfq_chg": -0.5701}], "rows_updated": 2511, "repair": "20261021"}
+{"code": "300332", "breaks": [{"date": "20160729", "m": 0.51336, "raw_chg": -0.011, "qfq_chg": -0.4923}, {"date": "20170627", "m": 2.01424, "raw_chg": -0.011, "qfq_chg": 0.9921}], "rows_updated": 266, "repair": "20261021"}
+{"code": "300333", "breaks": [{"date": "20150914", "m": 0.31, "raw_chg": -0.0017, "qfq_chg": -0.6905}], "rows_updated": 782, "repair": "20261021"}
+{"code": "300336", "breaks": [{"date": "20150526", "m": 0.45107, "raw_chg": 0.0417, "qfq_chg": -0.5301}, {"date": "20160331", "m": 0.56602, "raw_chg": 0.0417, "qfq_chg": -0.4104}, {"date": "20230612", "m": 0.25599, "raw_chg": 0.0417, "qfq_chg": -0.7333}], "rows_updated": 2499, "repair": "20261021"}
+{"code": "300344", "breaks": [{"date": "20160503", "m": 0.48818, "raw_chg": 0.0, "qfq_chg": -0.5118}, {"date": "20260331", "m": 0.26738, "raw_chg": 0.0, "qfq_chg": -0.7326}], "rows_updated": 3161, "repair": "20261021"}
+{"code": "300353", "breaks": [{"date": "20160525", "m": 3.95378, "raw_chg": 0.0344, "qfq_chg": 3.0898}], "rows_updated": 91, "repair": "20261021"}
+{"code": "300356", "breaks": [{"date": "20160104", "m": 0.39563, "raw_chg": -0.0914, "qfq_chg": -0.6405}, {"date": "20230620", "m": 0.2124, "raw_chg": -0.0914, "qfq_chg": -0.807}], "rows_updated": 2326, "repair": "20261021"}
+{"code": "300362", "breaks": [{"date": "20160104", "m": 0.28703, "raw_chg": 0.0551, "qfq_chg": -0.6972}, {"date": "20160728", "m": 0.28863, "raw_chg": 0.0551, "qfq_chg": -0.6955}, {"date": "20170706", "m": 2.80283, "raw_chg": 0.0551, "qfq_chg": 1.9573}], "rows_updated": 600, "repair": "20261021"}
+{"code": "300364", "breaks": [{"date": "20170905", "m": 0.38448, "raw_chg": 0.0144, "qfq_chg": -0.61}, {"date": "20180622", "m": 2.51966, "raw_chg": 0.0144, "qfq_chg": 1.5559}], "rows_updated": 453, "repair": "20261021"}
+{"code": "300366", "breaks": [{"date": "20160525", "m": 2.08724, "raw_chg": -0.004, "qfq_chg": 1.0789}], "rows_updated": 8, "repair": "20261021"}
+{"code": "300367", "breaks": [{"date": "20150505", "m": 0.42447, "raw_chg": 0.0357, "qfq_chg": -0.5604}, {"date": "20160104", "m": 0.24552, "raw_chg": 0.0357, "qfq_chg": -0.7457}, {"date": "20220609", "m": 0.60077, "raw_chg": 0.0357, "qfq_chg": -0.3778}], "rows_updated": 1820, "repair": "20261021"}
+{"code": "300368", "breaks": [{"date": "20160519", "m": 2.1222, "raw_chg": -0.0324, "qfq_chg": 1.0534}], "rows_updated": 89, "repair": "20261021"}
+{"code": "300372", "breaks": [{"date": "20150602", "m": 0.51626, "raw_chg": -0.039, "qfq_chg": -0.5039}], "rows_updated": 232, "repair": "20261021"}
+{"code": "300379", "breaks": [{"date": "20150416", "m": 0.58752, "raw_chg": -0.0652, "qfq_chg": -0.4508}, {"date": "20160104", "m": 0.29543, "raw_chg": -0.0652, "qfq_chg": -0.7238}, {"date": "20251230", "m": 0.43569, "raw_chg": -0.0652, "qfq_chg": -0.5927}], "rows_updated": 2759, "repair": "20261021"}
+{"code": "300390", "breaks": [{"date": "20160429", "m": 1.54794, "raw_chg": -0.0458, "qfq_chg": 0.477}], "rows_updated": 79, "repair": "20261021"}
+{"code": "300391", "breaks": [{"date": "20150521", "m": 0.43915, "raw_chg": 0.0, "qfq_chg": -0.5609}, {"date": "20160104", "m": 0.59556, "raw_chg": 0.0, "qfq_chg": -0.4044}, {"date": "20260320", "m": 0.47826, "raw_chg": 0.0, "qfq_chg": -0.5217}], "rows_updated": 2689, "repair": "20261021"}
+{"code": "300392", "breaks": [{"date": "20150427", "m": 0.53245, "raw_chg": -0.0455, "qfq_chg": -0.4918}, {"date": "20150924", "m": 0.35266, "raw_chg": -0.0455, "qfq_chg": -0.6634}, {"date": "20230615", "m": 0.25398, "raw_chg": -0.0455, "qfq_chg": -0.7576}], "rows_updated": 1844, "repair": "20261021"}
+{"code": "300396", "breaks": [{"date": "20160519", "m": 2.55513, "raw_chg": 0.0014, "qfq_chg": 1.5587}], "rows_updated": 92, "repair": "20261021"}
+{"code": "300423", "breaks": [{"date": "20180604", "m": 1.17437, "raw_chg": -0.0115, "qfq_chg": 0.1609}], "rows_updated": 331, "repair": "20261021"}
+{"code": "300429", "breaks": [{"date": "20160927", "m": 0.3095, "raw_chg": -0.0064, "qfq_chg": -0.6925}, {"date": "20170605", "m": 3.18287, "raw_chg": -0.0064, "qfq_chg": 2.1625}], "rows_updated": 328, "repair": "20261021"}
+{"code": "300431", "breaks": [{"date": "20150918", "m": 0.51787, "raw_chg": -0.0345, "qfq_chg": -0.5}], "rows_updated": 103, "repair": "20261021"}
+{"code": "300434", "breaks": [{"date": "20161012", "m": 0.53304, "raw_chg": 0.0302, "qfq_chg": -0.4509}, {"date": "20170510", "m": 1.90321, "raw_chg": 0.0302, "qfq_chg": 0.9607}], "rows_updated": 205, "repair": "20261021"}
+{"code": "300437", "breaks": [{"date": "20170601", "m": 2.86388, "raw_chg": -0.0305, "qfq_chg": 1.7765}], "rows_updated": 259, "repair": "20261021"}
+{"code": "300440", "breaks": [{"date": "20170829", "m": 0.53774, "raw_chg": 0.0153, "qfq_chg": -0.454}, {"date": "20180709", "m": 2.00793, "raw_chg": 0.0153, "qfq_chg": 1.0387}], "rows_updated": 482, "repair": "20261021"}
+{"code": "300441", "breaks": [{"date": "20160812", "m": 0.54692, "raw_chg": -0.003, "qfq_chg": -0.4547}, {"date": "20170609", "m": 3.62003, "raw_chg": -0.003, "qfq_chg": 2.6092}], "rows_updated": 244, "repair": "20261021"}
+{"code": "300450", "breaks": [{"date": "20160720", "m": 0.40098, "raw_chg": -0.09, "qfq_chg": -0.6351}, {"date": "20170419", "m": 3.20345, "raw_chg": -0.09, "qfq_chg": 1.9151}], "rows_updated": 171, "repair": "20261021"}
+{"code": "300466", "breaks": [{"date": "20171101", "m": 0.56589, "raw_chg": 0.0162, "qfq_chg": -0.4249}, {"date": "20180619", "m": 1.59628, "raw_chg": 0.0162, "qfq_chg": 0.6221}], "rows_updated": 340, "repair": "20261021"}
+{"code": "300467", "breaks": [{"date": "20180529", "m": 3.8356, "raw_chg": 0.044, "qfq_chg": 3.0044}], "rows_updated": 469, "repair": "20261021"}
+{"code": "300472", "breaks": [{"date": "20160920", "m": 0.73195, "raw_chg": 0.0, "qfq_chg": -0.268}, {"date": "20180709", "m": 1.55098, "raw_chg": 0.0, "qfq_chg": 0.551}], "rows_updated": 419, "repair": "20261021"}
+{"code": "300500", "breaks": [{"date": "20170712", "m": 0.45429, "raw_chg": -0.0067, "qfq_chg": -0.5488}, {"date": "20180611", "m": 1.9733, "raw_chg": -0.0067, "qfq_chg": 0.9601}], "rows_updated": 506, "repair": "20261021"}
+{"code": "300510", "breaks": [{"date": "20161214", "m": 0.56009, "raw_chg": -0.0179, "qfq_chg": -0.4499}, {"date": "20181203", "m": 0.59896, "raw_chg": -0.0179, "qfq_chg": -0.4118}, {"date": "20190626", "m": 3.55323, "raw_chg": -0.0179, "qfq_chg": 2.4896}], "rows_updated": 495, "repair": "20261021"}
+{"code": "300526", "breaks": [{"date": "20230619", "m": 0.19908, "raw_chg": -0.125, "qfq_chg": -0.8258}], "rows_updated": 1491, "repair": "20261021"}
+{"code": "300543", "breaks": [{"date": "20170712", "m": 0.45364, "raw_chg": -0.0134, "qfq_chg": -0.5524}, {"date": "20180529", "m": 2.06691, "raw_chg": -0.0134, "qfq_chg": 1.0392}], "rows_updated": 334, "repair": "20261021"}
+{"code": "300561", "breaks": [{"date": "20180725", "m": 0.49462, "raw_chg": -0.0015, "qfq_chg": -0.5061}, {"date": "20190529", "m": 1.96385, "raw_chg": -0.0015, "qfq_chg": 0.9609}], "rows_updated": 564, "repair": "20261021"}
+{"code": "300586", "breaks": [{"date": "20180718", "m": 0.43504, "raw_chg": -0.0013, "qfq_chg": -0.5655}, {"date": "20200601", "m": 2.57483, "raw_chg": -0.0013, "qfq_chg": 1.5715}], "rows_updated": 736, "repair": "20261021"}
+{"code": "300612", "breaks": [{"date": "20171218", "m": 0.60175, "raw_chg": -0.0079, "qfq_chg": -0.403}, {"date": "20180531", "m": 1.47257, "raw_chg": -0.0079, "qfq_chg": 0.4609}], "rows_updated": 146, "repair": "20261021"}
+{"code": "300630", "breaks": [{"date": "20250428", "m": 0.2581, "raw_chg": 0.0114, "qfq_chg": -0.739}], "rows_updated": 1895, "repair": "20261021"}
+{"code": "300649", "breaks": [{"date": "20170919", "m": 0.47461, "raw_chg": 0.0226, "qfq_chg": -0.5147}, {"date": "20180628", "m": 1.92036, "raw_chg": 0.0226, "qfq_chg": 0.9638}], "rows_updated": 277, "repair": "20261021"}
+{"code": "300670", "breaks": [{"date": "20180914", "m": 0.51202, "raw_chg": -0.0287, "qfq_chg": -0.5027}, {"date": "20190628", "m": 1.83762, "raw_chg": -0.0287, "qfq_chg": 0.7849}], "rows_updated": 401, "repair": "20261021"}
+{"code": "300742", "breaks": [{"date": "20240701", "m": 0.4486, "raw_chg": -0.0526, "qfq_chg": -0.575}], "rows_updated": 1454, "repair": "20261021"}
+{"code": "300799", "breaks": [{"date": "20240708", "m": 0.38744, "raw_chg": -0.0442, "qfq_chg": -0.6297}], "rows_updated": 1087, "repair": "20261021"}
+{"code": "301139", "breaks": [{"date": "20260930", "m": 0.27492, "raw_chg": 0.0, "qfq_chg": -0.7251}], "rows_updated": 1006, "repair": "20261021"}
+{"code": "302132", "breaks": [{"date": "20230202", "m": 1.195, "raw_chg": 0.0045, "qfq_chg": 0.2004}, {"date": "20230203", "m": 1.19462, "raw_chg": 0.0045, "qfq_chg": 0.2}, {"date": "20230206", "m": 1.19475, "raw_chg": 0.0045, "qfq_chg": 0.2001}, {"date": "20230207", "m": 1.19473, "raw_chg": 0.0045, "qfq_chg": 0.2001}, {"date": "20230208", "m": 1.19462, "raw_chg": 0.0045, "qfq_chg": 0.2}, {"date": "20230209", "m": 1.1947, "raw_chg": 0.0045, "qfq_chg": 0.2001}, {"date": "20230210", "m": 1.19456, "raw_chg": 0.0045, "qfq_chg": 0.1999}, {"date": "20230213", "m": 1.19473, "raw_chg": 0.0045, "qfq_chg": 0.2001}, {"date": "20230727", "m": 1.19458, "raw_chg": 0.0045, "qfq_chg": 0.2}, {"date": "20241008", "m": 1.18662, "raw_chg": 0.0045, "qfq_chg": 0.192}, {"date": "20241010", "m": 1.14691, "raw_chg": 0.0045, "qfq_chg": 0.1521}, {"date": "20241011", "m": 0.82571, "raw_chg": 0.0045, "qfq_chg": -0.1706}, {"date": "20241014", "m": 1.19459, "raw_chg": 0.0045, "qfq_chg": 0.2}, {"date": "20250507", "m": 1.16528, "raw_chg": 0.0045, "qfq_chg": 0.1705}, {"date": "20250508", "m": 1.19468, "raw_chg": 0.0045, "qfq_chg": 0.2001}, {"date": "20250512", "m": 1.19467, "raw_chg": 0.0045, "qfq_chg": 0.2001}], "rows_updated": 2260, "repair": "20261021"}
+{"code": "600068", "breaks": [{"date": "20160104", "m": 0.75129, "raw_chg": 0.062, "qfq_chg": -0.2021}], "rows_updated": 4395, "repair": "20261021"}
+{"code": "600069", "breaks": [{"date": "20160104", "m": 0.70505, "raw_chg": 0.037, "qfq_chg": -0.2689}], "rows_updated": 4420, "repair": "20261021"}
+{"code": "600070", "breaks": [{"date": "20150619", "m": 0.72426, "raw_chg": -0.0455, "qfq_chg": -0.3087}], "rows_updated": 4305, "repair": "20261021"}
+{"code": "600086", "breaks": [{"date": "20151022", "m": 0.38956, "raw_chg": -0.0588, "qfq_chg": -0.6333}], "rows_updated": 4259, "repair": "20261021"}
+{"code": "600090", "breaks": [{"date": "20220610", "m": 0.34567, "raw_chg": -0.0357, "qfq_chg": -0.6667}], "rows_updated": 5638, "repair": "20261021"}
+{"code": "600093", "breaks": [{"date": "20160104", "m": 0.78185, "raw_chg": 0.087, "qfq_chg": -0.1501}, {"date": "20220526", "m": 0.47178, "raw_chg": 0.087, "qfq_chg": -0.4872}], "rows_updated": 5849, "repair": "20261021"}
+{"code": "600145", "breaks": [{"date": "20200630", "m": 0.36622, "raw_chg": 0.0, "qfq_chg": -0.6338}, {"date": "20220330", "m": 0.27184, "raw_chg": 0.0, "qfq_chg": -0.7282}], "rows_updated": 4033, "repair": "20261021"}
+{"code": "600146", "breaks": [{"date": "20220602", "m": 0.23721, "raw_chg": -0.0435, "qfq_chg": -0.7731}], "rows_updated": 4616, "repair": "20261021"}
+{"code": "600165", "breaks": [{"date": "20151119", "m": 0.44299, "raw_chg": -0.0066, "qfq_chg": -0.5599}, {"date": "20160104", "m": 0.25479, "raw_chg": -0.0066, "qfq_chg": -0.7469}, {"date": "20251211", "m": 2.64067, "raw_chg": -0.0066, "qfq_chg": 1.6232}], "rows_updated": 6350, "repair": "20261021"}
+{"code": "600190", "breaks": [{"date": "20250630", "m": 0.43536, "raw_chg": -0.0156, "qfq_chg": -0.5714}], "rows_updated": 6161, "repair": "20261021"}
+{"code": "600193", "breaks": [{"date": "20260608", "m": 0.08756, "raw_chg": 0.0, "qfq_chg": -0.9124}], "rows_updated": 6259, "repair": "20261021"}
+{"code": "600200", "breaks": [{"date": "20251209", "m": 0.35597, "raw_chg": -0.0938, "qfq_chg": -0.6774}], "rows_updated": 6304, "repair": "20261021"}
+{"code": "600209", "breaks": [{"date": "20220525", "m": 0.38215, "raw_chg": 0.0442, "qfq_chg": -0.601}], "rows_updated": 5107, "repair": "20261021"}
+{"code": "600225", "breaks": [{"date": "20250207", "m": 0.2336, "raw_chg": 0.0357, "qfq_chg": -0.7581}], "rows_updated": 5228, "repair": "20261021"}
+{"code": "600226", "breaks": [{"date": "20170920", "m": 2.84371, "raw_chg": 0.0, "qfq_chg": 1.8437}, {"date": "20181031", "m": 0.6914, "raw_chg": 0.0, "qfq_chg": -0.3086}, {"date": "20190711", "m": 1.27919, "raw_chg": 0.0, "qfq_chg": 0.2792}], "rows_updated": 608, "repair": "20261021"}
+{"code": "600242", "breaks": [{"date": "20230531", "m": 0.59731, "raw_chg": 0.0417, "qfq_chg": -0.3778}], "rows_updated": 4625, "repair": "20261021"}
+{"code": "600260", "breaks": [{"date": "20160104", "m": 0.65471, "raw_chg": -0.0408, "qfq_chg": -0.372}], "rows_updated": 3596, "repair": "20261021"}
+{"code": "600270", "breaks": [{"date": "20160104", "m": 0.81191, "raw_chg": 0.0199, "qfq_chg": -0.1719}], "rows_updated": 3582, "repair": "20261021"}
+{"code": "600275", "breaks": [{"date": "20220525", "m": 0.36283, "raw_chg": 0.0513, "qfq_chg": -0.6186}], "rows_updated": 4838, "repair": "20261021"}
+{"code": "600277", "breaks": [{"date": "20160104", "m": 0.66493, "raw_chg": -0.05, "qfq_chg": -0.3683}], "rows_updated": 3522, "repair": "20261021"}
+{"code": "600282", "breaks": [{"date": "20190508", "m": 0.84458, "raw_chg": -0.0086, "qfq_chg": -0.1627}], "rows_updated": 798, "repair": "20261021"}
+{"code": "600291", "breaks": [{"date": "20220517", "m": 0.42423, "raw_chg": -0.0326, "qfq_chg": -0.5896}], "rows_updated": 4984, "repair": "20261021"}
+{"code": "600293", "breaks": [{"date": "20170612", "m": 0.6047, "raw_chg": 0.0995, "qfq_chg": -0.3351}], "rows_updated": 349, "repair": "20261021"}
+{"code": "600297", "breaks": [{"date": "20151223", "m": 0.81765, "raw_chg": -0.1034, "qfq_chg": -0.2669}, {"date": "20160104", "m": 0.49165, "raw_chg": -0.1034, "qfq_chg": -0.5592}, {"date": "20170608", "m": 1.69133, "raw_chg": -0.1034, "qfq_chg": 0.5164}], "rows_updated": 3666, "repair": "20261021"}
+{"code": "600306", "breaks": [{"date": "20160104", "m": 0.65358, "raw_chg": -0.0645, "qfq_chg": -0.3886}, {"date": "20240529", "m": 0.18801, "raw_chg": -0.0645, "qfq_chg": -0.8241}], "rows_updated": 5316, "repair": "20261021"}
+{"code": "600318", "breaks": [{"date": "20170808", "m": 0.55295, "raw_chg": -0.0102, "qfq_chg": -0.4527}, {"date": "20200710", "m": 2.04421, "raw_chg": -0.0102, "qfq_chg": 1.0234}], "rows_updated": 758, "repair": "20261021"}
+{"code": "600346", "breaks": [{"date": "20170505", "m": 2.19578, "raw_chg": -0.0045, "qfq_chg": 1.1859}], "rows_updated": 231, "repair": "20261021"}
+{"code": "600355", "breaks": [{"date": "20150925", "m": 0.48011, "raw_chg": -0.0492, "qfq_chg": -0.5435}], "rows_updated": 3100, "repair": "20261021"}
+{"code": "600385", "breaks": [{"date": "20220610", "m": 0.25641, "raw_chg": 0.1009, "qfq_chg": -0.7177}], "rows_updated": 4388, "repair": "20261021"}
+{"code": "600387", "breaks": [{"date": "20250616", "m": 0.71886, "raw_chg": 0.0108, "qfq_chg": -0.2734}], "rows_updated": 4965, "repair": "20261021"}
+{"code": "600392", "breaks": [{"date": "20170719", "m": 2.66357, "raw_chg": -0.021, "qfq_chg": 1.6076}], "rows_updated": 371, "repair": "20261021"}
+{"code": "600393", "breaks": [{"date": "20160104", "m": 0.44889, "raw_chg": -0.0513, "qfq_chg": -0.5741}], "rows_updated": 3365, "repair": "20261021"}
+{"code": "600401", "breaks": [{"date": "20150528", "m": 0.37296, "raw_chg": -0.0625, "qfq_chg": -0.6503}], "rows_updated": 1930, "repair": "20261021"}
+{"code": "600446", "breaks": [{"date": "20160520", "m": 3.14418, "raw_chg": 0.0077, "qfq_chg": 2.1684}], "rows_updated": 75, "repair": "20261021"}
+{"code": "600462", "breaks": [{"date": "20250624", "m": 0.17906, "raw_chg": 0.1053, "qfq_chg": -0.8021}], "rows_updated": 4646, "repair": "20261021"}
+{"code": "600466", "breaks": [{"date": "20160104", "m": 0.59437, "raw_chg": -0.0476, "qfq_chg": -0.4339}], "rows_updated": 3241, "repair": "20261021"}
+{"code": "600468", "breaks": [{"date": "20171030", "m": 0.7324, "raw_chg": -0.0018, "qfq_chg": -0.2689}, {"date": "20180614", "m": 1.54556, "raw_chg": -0.0018, "qfq_chg": 0.5428}], "rows_updated": 414, "repair": "20261021"}
+{"code": "600490", "breaks": [{"date": "20210813", "m": 1.66754, "raw_chg": -0.0049, "qfq_chg": 0.6594}], "rows_updated": 1082, "repair": "20261021"}
+{"code": "600525", "breaks": [{"date": "20160104", "m": 0.73483, "raw_chg": -0.0023, "qfq_chg": -0.2669}], "rows_updated": 2962, "repair": "20261021"}
+{"code": "600532", "breaks": [{"date": "20230530", "m": 0.17569, "raw_chg": 0.1077, "qfq_chg": -0.8054}], "rows_updated": 4712, "repair": "20261021"}
+{"code": "600555", "breaks": [{"date": "20220616", "m": 0.30894, "raw_chg": -0.0714, "qfq_chg": -0.7131}], "rows_updated": 4906, "repair": "20261021"}
+{"code": "600565", "breaks": [{"date": "20160107", "m": 0.79093, "raw_chg": -0.0449, "qfq_chg": -0.2446}], "rows_updated": 3002, "repair": "20261021"}
+{"code": "600568", "breaks": [{"date": "20170727", "m": 0.34054, "raw_chg": 0.0192, "qfq_chg": -0.6529}, {"date": "20180807", "m": 2.83992, "raw_chg": 0.0192, "qfq_chg": 1.8944}], "rows_updated": 471, "repair": "20261021"}
+{"code": "600599", "breaks": [{"date": "20260601", "m": 0.14095, "raw_chg": 0.0238, "qfq_chg": -0.8557}], "rows_updated": 5670, "repair": "20261021"}
+{"code": "600608", "breaks": [{"date": "20260608", "m": 0.09093, "raw_chg": 0.0625, "qfq_chg": -0.9034}], "rows_updated": 8001, "repair": "20261021"}
+{"code": "600610", "breaks": [{"date": "20200817", "m": 1.4979, "raw_chg": 0.0014, "qfq_chg": 0.5}], "rows_updated": 746, "repair": "20261021"}
+{"code": "600614", "breaks": [{"date": "20150924", "m": 0.45012, "raw_chg": 0.0833, "qfq_chg": -0.5124}], "rows_updated": 5354, "repair": "20261021"}
+{"code": "600636", "breaks": [{"date": "20160104", "m": 0.89861, "raw_chg": -0.0707, "qfq_chg": -0.1649}, {"date": "20260601", "m": 0.5965, "raw_chg": -0.0707, "qfq_chg": -0.4457}], "rows_updated": 7644, "repair": "20261021"}
+{"code": "600647", "breaks": [{"date": "20240605", "m": 0.17827, "raw_chg": 0.0857, "qfq_chg": -0.8065}], "rows_updated": 7338, "repair": "20261021"}
+{"code": "600652", "breaks": [{"date": "20220525", "m": 0.71178, "raw_chg": 0.1019, "qfq_chg": -0.2157}], "rows_updated": 7306, "repair": "20261021"}
+{"code": "600666", "breaks": [{"date": "20180504", "m": 0.55169, "raw_chg": 0.0196, "qfq_chg": -0.4375}, {"date": "20230220", "m": 1.64814, "raw_chg": 0.0196, "qfq_chg": 0.6804}], "rows_updated": 1461, "repair": "20261021"}
+{"code": "600675", "breaks": [{"date": "20190621", "m": 1.23989, "raw_chg": 0.0046, "qfq_chg": 0.2456}], "rows_updated": 720, "repair": "20261021"}
+{"code": "600682", "breaks": [{"date": "20160711", "m": 1.94053, "raw_chg": 0.0037, "qfq_chg": 0.9477}], "rows_updated": 110, "repair": "20261021"}
+{"code": "600687", "breaks": [{"date": "20150925", "m": 0.49574, "raw_chg": -0.0323, "qfq_chg": -0.5203}], "rows_updated": 4784, "repair": "20261021"}
+{"code": "600695", "breaks": [{"date": "20220517", "m": 0.31187, "raw_chg": -0.0192, "qfq_chg": -0.6941}], "rows_updated": 6568, "repair": "20261021"}
+{"code": "600696", "breaks": [{"date": "20260601", "m": 0.43119, "raw_chg": -0.0263, "qfq_chg": -0.5802}], "rows_updated": 7596, "repair": "20261021"}
+{"code": "600705", "breaks": [{"date": "20160104", "m": 0.38378, "raw_chg": 0.0029, "qfq_chg": -0.6151}], "rows_updated": 3319, "repair": "20261021"}
+{"code": "600710", "breaks": [{"date": "20170731", "m": 0.81917, "raw_chg": -0.0096, "qfq_chg": -0.1887}], "rows_updated": 43, "repair": "20261021"}
+{"code": "600717", "breaks": [{"date": "20190625", "m": 0.8264, "raw_chg": -0.0023, "qfq_chg": -0.1755}, {"date": "20200619", "m": 0.82704, "raw_chg": -0.0023, "qfq_chg": -0.1749}, {"date": "20210623", "m": 0.83139, "raw_chg": -0.0023, "qfq_chg": -0.1705}], "rows_updated": 1321, "repair": "20261021"}
+{"code": "600723", "breaks": [{"date": "20160104", "m": 0.82908, "raw_chg": -0.0122, "qfq_chg": -0.181}], "rows_updated": 4614, "repair": "20261021"}
+{"code": "600725", "breaks": [{"date": "20171201", "m": 0.52794, "raw_chg": -0.0064, "qfq_chg": -0.4754}], "rows_updated": 178, "repair": "20261021"}
+{"code": "600728", "breaks": [{"date": "20160425", "m": 1.85451, "raw_chg": 0.0089, "qfq_chg": 0.871}], "rows_updated": 53, "repair": "20261021"}
+{"code": "600732", "breaks": [{"date": "20210604", "m": 1.76774, "raw_chg": 0.0146, "qfq_chg": 0.7936}], "rows_updated": 1019, "repair": "20261021"}
+{"code": "600733", "breaks": [{"date": "20180927", "m": 0.18586, "raw_chg": -0.0299, "qfq_chg": -0.8197}], "rows_updated": 174, "repair": "20261021"}
+{"code": "600750", "breaks": [{"date": "20180801", "m": 0.65418, "raw_chg": -0.0224, "qfq_chg": -0.3605}, {"date": "20190612", "m": 1.46718, "raw_chg": -0.0224, "qfq_chg": 0.4343}], "rows_updated": 772, "repair": "20261021"}
+{"code": "600751", "breaks": [{"date": "20260622", "m": 2.37664, "raw_chg": -0.0145, "qfq_chg": 1.3422}], "rows_updated": 2255, "repair": "20261021"}
+{"code": "600763", "breaks": [{"date": "20170822", "m": 1.99387, "raw_chg": 0.0009, "qfq_chg": 0.9957}], "rows_updated": 382, "repair": "20261021"}
+{"code": "600766", "breaks": [{"date": "20240605", "m": 0.03303, "raw_chg": 0.0769, "qfq_chg": -0.9644}], "rows_updated": 6292, "repair": "20261021"}
+{"code": "600767", "breaks": [{"date": "20230531", "m": 0.11075, "raw_chg": -0.0233, "qfq_chg": -0.8918}], "rows_updated": 6051, "repair": "20261021"}
+{"code": "600781", "breaks": [{"date": "20230530", "m": 0.68737, "raw_chg": -0.0128, "qfq_chg": -0.3214}], "rows_updated": 6142, "repair": "20261021"}
+{"code": "600804", "breaks": [{"date": "20250610", "m": 0.39748, "raw_chg": -0.0667, "qfq_chg": -0.629}], "rows_updated": 7461, "repair": "20261021"}
+{"code": "600811", "breaks": [{"date": "20160104", "m": 0.71602, "raw_chg": -0.027, "qfq_chg": -0.3033}], "rows_updated": 5213, "repair": "20261021"}
+{"code": "600821", "breaks": [{"date": "20231016", "m": 1.82608, "raw_chg": 0.0131, "qfq_chg": 0.85}], "rows_updated": 1820, "repair": "20261021"}
+{"code": "600823", "breaks": [{"date": "20150604", "m": 0.66554, "raw_chg": -0.0444, "qfq_chg": -0.364}, {"date": "20160104", "m": 0.39829, "raw_chg": -0.0444, "qfq_chg": -0.6194}], "rows_updated": 5216, "repair": "20261021"}
+{"code": "600836", "breaks": [{"date": "20160104", "m": 0.5033, "raw_chg": -0.0426, "qfq_chg": -0.5181}], "rows_updated": 5259, "repair": "20261021"}
+{"code": "600837", "breaks": [{"date": "20160104", "m": 0.75972, "raw_chg": -0.0161, "qfq_chg": -0.2525}], "rows_updated": 4628, "repair": "20261021"}
+{"code": "600856", "breaks": [{"date": "20160104", "m": 0.29674, "raw_chg": -0.069, "qfq_chg": -0.7237}, {"date": "20160822", "m": 1.72107, "raw_chg": -0.069, "qfq_chg": 0.6023}, {"date": "20220525", "m": 0.44, "raw_chg": -0.069, "qfq_chg": -0.5904}], "rows_updated": 6367, "repair": "20261021"}
+{"code": "600870", "breaks": [{"date": "20220602", "m": 0.10075, "raw_chg": 0.0345, "qfq_chg": -0.8958}], "rows_updated": 5727, "repair": "20261021"}
+{"code": "600890", "breaks": [{"date": "20220525", "m": 0.37551, "raw_chg": 0.0909, "qfq_chg": -0.5904}], "rows_updated": 5548, "repair": "20261021"}
+{"code": "600896", "breaks": [{"date": "20220628", "m": 0.53758, "raw_chg": 0.037, "qfq_chg": -0.4425}], "rows_updated": 6069, "repair": "20261021"}
+{"code": "600984", "breaks": [{"date": "20160104", "m": 0.55348, "raw_chg": -0.003, "qfq_chg": -0.4482}], "rows_updated": 2598, "repair": "20261021"}
+{"code": "600988", "breaks": [{"date": "20171025", "m": 2.07769, "raw_chg": -0.0176, "qfq_chg": 1.0411}], "rows_updated": 438, "repair": "20261021"}
+{"code": "601028", "breaks": [{"date": "20150506", "m": 0.49729, "raw_chg": -0.0008, "qfq_chg": -0.5031}], "rows_updated": 839, "repair": "20261021"}
+{"code": "601088", "breaks": [{"date": "20180709", "m": 1.2124, "raw_chg": -0.0396, "qfq_chg": 0.1644}], "rows_updated": 549, "repair": "20261021"}
+{"code": "601258", "breaks": [{"date": "20150618", "m": 0.52635, "raw_chg": -0.0476, "qfq_chg": -0.4987}], "rows_updated": 985, "repair": "20261021"}
+{"code": "601599", "breaks": [{"date": "20160706", "m": 0.45626, "raw_chg": -0.009, "qfq_chg": -0.5478}, {"date": "20170616", "m": 2.03619, "raw_chg": -0.009, "qfq_chg": 1.0179}], "rows_updated": 294, "repair": "20261021"}
+{"code": "601877", "breaks": [{"date": "20160524", "m": 1.35359, "raw_chg": -0.0338, "qfq_chg": 0.3078}], "rows_updated": 95, "repair": "20261021"}
+{"code": "603003", "breaks": [{"date": "20250610", "m": 0.66967, "raw_chg": -0.0317, "qfq_chg": -0.3516}], "rows_updated": 2987, "repair": "20261021"}
+{"code": "603023", "breaks": [{"date": "20160615", "m": 0.37058, "raw_chg": -0.0131, "qfq_chg": -0.6343}, {"date": "20190613", "m": 0.84313, "raw_chg": -0.0131, "qfq_chg": -0.1679}, {"date": "20200609", "m": 0.82824, "raw_chg": -0.0131, "qfq_chg": -0.1826}], "rows_updated": 1079, "repair": "20261021"}
+{"code": "603032", "breaks": [{"date": "20190712", "m": 1.17209, "raw_chg": 0.0097, "qfq_chg": 0.1835}], "rows_updated": 471, "repair": "20261021"}
+{"code": "603077", "breaks": [{"date": "20160715", "m": 2.97397, "raw_chg": 0.0047, "qfq_chg": 1.988}], "rows_updated": 131, "repair": "20261021"}
+{"code": "603108", "breaks": [{"date": "20170606", "m": 0.49145, "raw_chg": 0.0152, "qfq_chg": -0.5011}, {"date": "20190712", "m": 1.76846, "raw_chg": 0.0152, "qfq_chg": 0.7953}], "rows_updated": 735, "repair": "20261021"}
+{"code": "603133", "breaks": [{"date": "20240605", "m": 0.16667, "raw_chg": 0.0, "qfq_chg": -0.8333}], "rows_updated": 1722, "repair": "20261021"}
+{"code": "603157", "breaks": [{"date": "20220422", "m": 0.73347, "raw_chg": -0.0781, "qfq_chg": -0.3238}], "rows_updated": 1095, "repair": "20261021"}
+{"code": "603169", "breaks": [{"date": "20160621", "m": 1.57001, "raw_chg": -0.0035, "qfq_chg": 0.5645}], "rows_updated": 113, "repair": "20261021"}
+{"code": "603519", "breaks": [{"date": "20160804", "m": 0.55069, "raw_chg": -0.0123, "qfq_chg": -0.4561}, {"date": "20170525", "m": 2.04803, "raw_chg": -0.0123, "qfq_chg": 1.0228}], "rows_updated": 245, "repair": "20261021"}
+{"code": "603602", "breaks": [{"date": "20180709", "m": 0.64567, "raw_chg": -0.0072, "qfq_chg": -0.359}, {"date": "20190516", "m": 1.4273, "raw_chg": -0.0072, "qfq_chg": 0.417}], "rows_updated": 366, "repair": "20261021"}
+{"code": "603603", "breaks": [{"date": "20240327", "m": 0.44155, "raw_chg": -0.0488, "qfq_chg": -0.58}], "rows_updated": 1584, "repair": "20261021"}
+{"code": "603608", "breaks": [{"date": "20170721", "m": 0.71268, "raw_chg": -0.0025, "qfq_chg": -0.2891}, {"date": "20180604", "m": 1.37437, "raw_chg": -0.0025, "qfq_chg": 0.3709}], "rows_updated": 482, "repair": "20261021"}
+{"code": "603686", "breaks": [{"date": "20160520", "m": 1.97862, "raw_chg": 0.0016, "qfq_chg": 0.9818}], "rows_updated": 91, "repair": "20261021"}
+{"code": "603808", "breaks": [{"date": "20160720", "m": 0.67824, "raw_chg": -0.0193, "qfq_chg": -0.3348}, {"date": "20170707", "m": 1.61951, "raw_chg": -0.0193, "qfq_chg": 0.5883}], "rows_updated": 300, "repair": "20261021"}
+{"code": "603825", "breaks": [{"date": "20180817", "m": 0.6336, "raw_chg": 0.0074, "qfq_chg": -0.3617}, {"date": "20190621", "m": 1.46484, "raw_chg": 0.0074, "qfq_chg": 0.4757}], "rows_updated": 373, "repair": "20261021"}
+{"code": "603838", "breaks": [{"date": "20170215", "m": 0.51031, "raw_chg": 0.0738, "qfq_chg": -0.452}, {"date": "20170524", "m": 1.84702, "raw_chg": 0.0738, "qfq_chg": 0.9833}], "rows_updated": 120, "repair": "20261021"}
+{"code": "603880", "breaks": [{"date": "20180815", "m": 0.76419, "raw_chg": 0.0235, "qfq_chg": -0.2178}, {"date": "20190514", "m": 1.29903, "raw_chg": 0.0235, "qfq_chg": 0.3296}], "rows_updated": 340, "repair": "20261021"}
+{"code": "603889", "breaks": [{"date": "20170420", "m": 2.06465, "raw_chg": -0.0131, "qfq_chg": 1.0376}], "rows_updated": 226, "repair": "20261021"}
+{"code": "603898", "breaks": [{"date": "20160516", "m": 3.11236, "raw_chg": 0.0017, "qfq_chg": 2.1176}], "rows_updated": 74, "repair": "20261021"}
+{"code": "603918", "breaks": [{"date": "20160815", "m": 0.5022, "raw_chg": 0.0335, "qfq_chg": -0.481}, {"date": "20170704", "m": 1.93169, "raw_chg": 0.0335, "qfq_chg": 0.9964}], "rows_updated": 269, "repair": "20261021"}
+{"code": "603996", "breaks": [{"date": "20160104", "m": 0.71618, "raw_chg": 0.0, "qfq_chg": -0.2838}, {"date": "20220422", "m": 0.52083, "raw_chg": 0.0, "qfq_chg": -0.4792}], "rows_updated": 1524, "repair": "20261021"}
+{"code": "688086", "breaks": [{"date": "20230608", "m": 0.37926, "raw_chg": -0.0303, "qfq_chg": -0.6322}], "rows_updated": 767, "repair": "20261021"}
+{"code": "688110", "breaks": [{"date": "20261012", "m": 0.62311, "raw_chg": 0.0103, "qfq_chg": -0.3705}], "rows_updated": 1166, "repair": "20261021"}
+{"code": "688287", "breaks": [{"date": "20260519", "m": 0.45773, "raw_chg": 0.0571, "qfq_chg": -0.5161}], "rows_updated": 949, "repair": "20261021"}
+{"code": "688555", "breaks": [{"date": "20230608", "m": 0.39443, "raw_chg": -0.0508, "qfq_chg": -0.6256}], "rows_updated": 685, "repair": "20261021"}
+{"code": "688610", "breaks": [{"date": "20261019", "m": 0.71042, "raw_chg": -0.0133, "qfq_chg": -0.299}], "rows_updated": 786, "repair": "20261021"}
+{"code": "689009", "breaks": [{"date": "20201111", "m": 0.84691, "raw_chg": -0.0266, "qfq_chg": -0.1756}, {"date": "20201116", "m": 1.23286, "raw_chg": -0.0266, "qfq_chg": 0.2001}, {"date": "20201120", "m": 1.2085, "raw_chg": -0.0266, "qfq_chg": 0.1764}, {"date": "20210825", "m": 1.23285, "raw_chg": -0.0266, "qfq_chg": 0.2001}, {"date": "20220518", "m": 1.2035, "raw_chg": -0.0266, "qfq_chg": 0.1715}, {"date": "20221025", "m": 0.8306, "raw_chg": -0.0266, "qfq_chg": -0.1915}, {"date": "20230601", "m": 1.23292, "raw_chg": -0.0266, "qfq_chg": 0.2001}, {"date": "20241008", "m": 1.21063, "raw_chg": -0.0266, "qfq_chg": 0.1784}, {"date": "20250407", "m": 0.86899, "raw_chg": -0.0266, "qfq_chg": -0.1541}], "rows_updated": 1076, "repair": "20261021"}

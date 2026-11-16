@@ -1,0 +1,24 @@
+[
+ {
+  "code": "603626",
+  "name": "科森科技",
+  "volume": 100,
+  "price": 27.32,
+  "source": "type_sample_F_driver",
+  "sector": "电子",
+  "prev_close": 26.52,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "601899",
+  "name": "紫金矿业",
+  "volume": 100,
+  "price": 29.65,
+  "source": "method_picks",
+  "sector": "有色金属",
+  "prev_close": 28.79,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

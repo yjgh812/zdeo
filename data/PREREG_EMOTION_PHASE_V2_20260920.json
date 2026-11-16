@@ -1,0 +1,34 @@
+{
+ "id": "PREREG_EMOTION_PHASE_V2",
+ "version": "1.1-20260921",
+ "revision_log": "v1.1（影子期开始前修订重登记）：①涨停判定改精确价格法 round(pc×lim_pct,2)（v1.0 GAP=0.2pp 容差致普涨日 LU 虚高，9/16 88 家经价格法复核=真实[主板47+创业板20cm≈41]故该项非误判）；②ebbing 加 LU_pctl<60 水平约束（防高位缩量修复误判）。**预检元结论（7日复盘对照 3/7=43%<60%）**：日线四指标（LU/BR/MB 分位）可判'量能结构'相位，但结构性缺失'封板质量'维度（真封率=盘中时序信息，qfq 日线无此数据；9/16 量能 euphoric vs 复盘'真封率13%转弱'=量质分离实例，次日 healing 验证转弱）——判据信息上限如实声明，G1 以 20 交易日实测一致率为准不预支结论",
+ "aux_dimension_TODO": "辅助证据列=limit_up_patterns 库 seal_status 封板质量（现仅30天历史不足分位窗，待积累≥120日后作辅列与主判据并列呈报；观察项非判据）",
+ "status": "ACTIVE-SHADOW（自省第三期 L4 条款落地；sentiment_cycle v1 停用后的新判据路线，新指纹）",
+ "origin": "自省报告L4（情绪周期量化定型：学习方案P0产出判据规则→prereg→接MARKETSTATE链；影子期判定与事后复盘一致性≥60%方可转生产）+ falsified#63 SENTIMENT-CYCLE-V1（v1阈值判死的边界外新路线：涨停生态原始指标采集与未来新判据prereg不判死）",
+ "fingerprint_distinction": "与v1的本质差异：①分位数阈值（250日滚动校准）替代绝对阈值（v1分布病态根因：冰点16天/狂热11年2天）；②数据源单源化（qfq主库派生，杜绝v1双源炸板率0.570vs0.443漂移）；③相位=描述性叙述轴禁作信号（v1的stage被当弱转强语义用且方向反）",
+ "derivation_LOCKED": {
+  "universe": "主板+创业板（60/00/30开头），剔ST/科创/北交（与backfill 9/9校准口径一致：涨停65vs75=设计使然）",
+  "涨停": "close/prev_close-1 >= limit_pct-0.002（主板10%/创业板20%，容差0.2pp）",
+  "触板未封": "high/prev_close-1 >= limit_pct-0.002 且不满足涨停",
+  "BR炸板率": "触板未封/(涨停+触板未封)（触板上界近似，backfill校准偏差在案：47vs37）",
+  "MB最高连板": "每股连续涨停日数取全市场max（逐日全史重算，无前视：只用当日及以前）",
+  "分位窗": "250交易日滚动（不足120日标short_window）"
+ },
+ "phase_rules_LOCKED": {
+  "bottom冰底": "LU_pctl<20 且 MB<=2",
+  "euphoric亢奋": "LU_pctl>80 且 MB>=5 且 BR_pctl<40",
+  "ebbing退潮": "MB较近5日max回落>=2 且 LU_pctl较近5日max回落>=10pp（语义边界：描述性标签非预测——B1已证伪'连板降+炸板升'的fwd收益方向，本标签不作任何收益预期）",
+  "diverging分歧": "BR_pctl>80 且非ebbing",
+  "healing修复": "LU_pctl>=30 其余",
+  "unknown": "指标缺失"
+ },
+ "gates_LOCKED": {
+  "G0_分布健康（立即判）": "全史相位分布：任一相位占比>60%或主相位外合计<全史5% → 判据修订重登记（防v1病态复演）；通过才进入影子期",
+  "G1_复盘一致性（主判定）": "影子期>=20交易日，每日相位与当日复盘报告情绪结构段人工对照，一致率>=60% → 呈报主人转生产（接MARKETSTATE呈现）",
+  "G2_语义边界（永久）": "相位仅作regime叙述轴与复盘对照，禁作择时信号/禁接任何交易决策（falsified#42 SENTIMENT-CYCLE-DAILY-ALPHA+B1反向证据在案）；转生产也仅是呈现级"
+ },
+ "boundary_LOCKED": "零交易权零拦截权零信号权；台账data/emotion_phase_v2_ledger.jsonl按phase_date幂等UPSERT；影子期禁改判据/派生口径/分位窗；失败登记falsified EMOTION-PHASE-V2",
+ "schedule": "schtasks EmotionPhaseV2_2010 工作日20:10（qfq max=T-1时打T-1相位=无前视可用口径；对齐用phase_date）",
+ "data_quality_notes": "limit_up_patterns库board列聚合异常（中位0）+仅30天历史——登记backlog观察项，不影响本件（qfq派生独立）",
+ "owner": "主人（转生产/关闭裁决）；研究执行=知微AUTO域"
+}

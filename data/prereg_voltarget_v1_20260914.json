@@ -1,0 +1,34 @@
+{
+ "id": "PREREG-VOLTARGET-V1",
+ "title": "市场层波动率目标仓位机制影子测算（择时线P0'，二阶矩仓位语境首次本地检验）",
+ "owner": "D:\\zcodesj 择时研究线",
+ "created_at": "2026-09-14",
+ "boundary_basis": "时序课程档案『GARCH预测层仅风险/仓位层工具（合法位）』+ TIMING_METHODS_STUDY_20260914 §5 正交备选升级；条件矩阵FAIL登记(TIMING-CONDMATRIX-STAGE1)后择时层唯一活路",
+ "predecessor": "Moreira-Muir(2017)波动率管理组合学术证据 + 本地garch_shadow_daily影子件(2026-09-04起,仅4行历史不可回测,本轮仅登记存在); 判死边界澄清: 本prereg测的是『仓位语境』(敞口随波动倒数调节), 不是『信号过滤』(已三族判死), 不是『方向预测』",
+ "hypothesis_frozen": "按『目标波动率/实现波动率』倒数调节敞口(带[0.3,1.0],禁杠杆禁做空)的等权全池组合, 含成本Sharpe高于买入持有且MDD更低",
+ "data_frozen": "qfq全池等权日收益=AVG(change_pct)/100(百分数口径), 20200102~最新, 现测1626日/日均4760只",
+ "mechanism_frozen": {
+  "sigma": "σ_t=最近21交易日日收益std×√252(年化,与影子件vola20同族口径)",
+  "target": "σ*_t=σ_t过去252交易日中位数(自参照,无外生参数)",
+  "weight": "w_t=clip(σ*_t/σ_t, 0.3, 1.0); t日收盘观测, t+1日生效(无前视)",
+  "return": "r_p,t = w_{t-1}×r_t − |w_{t-1}−w_{t-2}|×0.0015(单边0.15%,双边合计0.3%=双边千三,与引擎A锚同族)",
+  "eval_window": "预热(21+252日)后首日 ~ 最后日"
+ },
+ "metrics_frozen": "年化收益/年化波动/Sharpe(rf=0)/MDD/换手成本拖累; 两臂(目标vs买入持有)同窗对比",
+ "gates_frozen": [
+  "P0功效: 评估期≥800交易日",
+  "P1主判据: Sharpe(目标,含成本)−Sharpe(持有) ≥ +0.10 且 MDD(目标) < MDD(持有)",
+  "P2分段: 评估期按日期中位数切半, 两半窗Sharpe增量均>0"
+ ],
+ "sensitivity_descriptive_not_gates": [
+  "周频调仓变体(每周五更新w,其余日沿用)",
+  "波动三分位条件Sharpe表(滞后σ分桶,机理前提检验:高波组条件Sharpe应低于低波组)"
+ ],
+ "verdict_rule": "P0∧P1∧P2全过=过闸候选(提请主人裁决组合C/实盘接线设计,仍零自动接线,接线须另行prereg); P1或P2不过=仓位层路线关闭登记falsified_rules(TIMING-VOLTARGET-STAGE1),择时研究线全域收口; P0不过=如实记录不判定",
+ "anti_peek": "本文件先落盘并计算指纹(除fingerprint字段外全文sha256前16位),之后才运行计算; 参数21/252/0.3/1.0/0.15%全部冻结,禁按结果调参; 代理宇宙=全池等权(小盘倾斜,非指数),组合C/实盘若过闸另行立项",
+ "expected_runtime_artifacts": [
+  "portrait_agent/voltarget_v1_20260914.py",
+  "data/voltarget_v1_results_20260914.json"
+ ],
+ "fingerprint": "688a0017c003c5cf"
+}

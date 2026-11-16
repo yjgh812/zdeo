@@ -1,0 +1,54 @@
+{
+ "date": "20260906",
+ "title": "qfq amount 消費方全链影响面清单（20260906 事故迭代收尾）",
+ "事故摘要": "amount列自建库93%+脏, 生产主库(factor_engine)与weekly备份已同法全史修复, 双库收敛验证分毫不差",
+ "真消費方总数": 32,
+ "分类": {
+  "A_现役生产(需关注)": {
+   "portrait_agent/feature_engine.py": {
+    "amount用途": "①amt5_amt20特征列(23特征之一,量比) ②amt20>=MIN_AMT20池准入过滤",
+    "影响": "特征库历史值脏+现役模型v1.1.0训练时该特征脏(1/23,其余22特征OHLC/市值/turnover/PE/PB均干净)",
+    "自愈路径": "主库已修复→9/7起build特征自动正确; 9/7 05:30 Retrain_20d自动用净数据重训(双门槛守卫在位)=自愈机制已在位, 无需人工干预",
+    "残留动作": "9/7重训后核对模型KPI(若RankIC劣化超门槛由既有守卫拦截, 不人为干预)"
+   },
+   "portrait_shadow_v1.py": {
+    "amount用途": "影子评分量能特征",
+    "影响": "影子层零拦截权, 影响低",
+    "自愈": "主库修复后自动正确"
+   },
+   "portrait_agent/stock_profile_collect.py": {
+    "amount用途": "画像采集量能族",
+    "影响": "历史采集产物低可信",
+    "自愈": "重采集即正确"
+   },
+   "update_qlib_bin_20260819.py(daily_chain环节)": {
+    "amount用途": "qlib bin含amount字段",
+    "影响": "历史bin的amount派生alpha(若有消费)待重验",
+    "自愈": "每日链22:00自动重建bin, 9/7起自动痊愈"
+   }
+  },
+  "B_回测引擎(修复后自动痊愈)": [
+   "tulong_backtest_v2/v3/v4(成交额过滤/成本模型)",
+   "tulong_backtest_full_report",
+   "vbt_ashare_adapter/vectorbt_ashare_poc(poc)"
+  ],
+  "C_已死亡研究(无持续影响)": [
+   "jjmy_template_scan_bt(模板已证伪)",
+   "turnover_ic_stage1/2_orth/tilt_stage2b(B4/B6已证伪关闭)",
+   "microstructure_factors_20260815(旧研究)",
+   "skill_rules_prescreen_20260904/reports/prescreen_20260902(一次性)",
+   "temp_b6_corr/verify_*_20260818(临时)"
+  ],
+  "D_守卫工具自身": [
+   "qfq_amount_guard.py",
+   "fix_qfq_amount_20260906.py",
+   "tests/test_portrait_shadow.py(消費方测试)"
+  ]
+ },
+ "需要重验的历史结论清单": [
+  "morph_profile 形态lift研究(池过滤含amt20, 定性=稀释非伪造, 已登记不重做)",
+  "回测结论中消费amount派生alpha者(qlib历史bin, 具体依赖度未深查, 22:00链9/7自动重建后增量痊愈)",
+  "金健报告7月前量能数字与2271b06模板量比0.109(已在画像报告中标注)"
+ ],
+ "验收状态": "生产主库已修复(1074万行)+双库收敛+守卫接入health+9/7重训自愈机制确认"
+}

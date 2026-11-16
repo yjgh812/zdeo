@@ -1,0 +1,422 @@
+{
+ "A低位横盘": {
+  "total": 612,
+  "media_n": 18,
+  "top10": [
+   {
+    "code": "600526",
+    "name": "菲达环保",
+    "industry": "环境保护",
+    "grp": "A低位横盘",
+    "ml_prob": 58.6,
+    "close": 4.59,
+    "is_media": false
+   },
+   {
+    "code": "002096",
+    "name": "易普力",
+    "industry": "化工原料",
+    "grp": "A低位横盘",
+    "ml_prob": 58.1,
+    "close": 9.04,
+    "is_media": false
+   },
+   {
+    "code": "000899",
+    "name": "赣能股份",
+    "industry": "火力发电",
+    "grp": "A低位横盘",
+    "ml_prob": 57.6,
+    "close": 8.95,
+    "is_media": false
+   },
+   {
+    "code": "603071",
+    "name": "物产环能",
+    "industry": "批发业",
+    "grp": "A低位横盘",
+    "ml_prob": 57.4,
+    "close": 12.4,
+    "is_media": false
+   },
+   {
+    "code": "603326",
+    "name": "我乐家居",
+    "industry": "家居用品",
+    "grp": "A低位横盘",
+    "ml_prob": 57.4,
+    "close": 7.4,
+    "is_media": false
+   },
+   {
+    "code": "301309",
+    "name": "万得凯",
+    "industry": "机械基件",
+    "grp": "A低位横盘",
+    "ml_prob": 57.3,
+    "close": 28.22,
+    "is_media": false
+   },
+   {
+    "code": "600469",
+    "name": "风神股份",
+    "industry": "汽车配件",
+    "grp": "A低位横盘",
+    "ml_prob": 57.2,
+    "close": 4.87,
+    "is_media": false
+   },
+   {
+    "code": "603609",
+    "name": "禾丰股份",
+    "industry": "饲料",
+    "grp": "A低位横盘",
+    "ml_prob": 57.2,
+    "close": 6.26,
+    "is_media": false
+   },
+   {
+    "code": "601798",
+    "name": "蓝科高新",
+    "industry": "化工机械",
+    "grp": "A低位横盘",
+    "ml_prob": 57.2,
+    "close": 7.44,
+    "is_media": false
+   },
+   {
+    "code": "300011",
+    "name": "鼎汉技术",
+    "industry": "运输设备",
+    "grp": "A低位横盘",
+    "ml_prob": 57.2,
+    "close": 5.72,
+    "is_media": false
+   }
+  ],
+  "media_top": [
+   {
+    "code": "300364",
+    "name": "中文在线",
+    "industry": "出版业",
+    "grp": "A低位横盘",
+    "ml_prob": 55.1,
+    "close": 24.14,
+    "is_media": true
+   },
+   {
+    "code": "002228",
+    "name": "合兴包装",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 52.8,
+    "close": 3.18,
+    "is_media": true
+   },
+   {
+    "code": "002117",
+    "name": "东港股份",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 51.6,
+    "close": 7.77,
+    "is_media": true
+   },
+   {
+    "code": "300291",
+    "name": "百纳千成",
+    "industry": "影视音像",
+    "grp": "A低位横盘",
+    "ml_prob": 51.1,
+    "close": 5.22,
+    "is_media": true
+   },
+   {
+    "code": "002599",
+    "name": "盛通股份",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 50.7,
+    "close": 5.49,
+    "is_media": true
+   },
+   {
+    "code": "301102",
+    "name": "兆讯传媒",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 47.4,
+    "close": 9.69,
+    "is_media": true
+   },
+   {
+    "code": "601019",
+    "name": "山东出版",
+    "industry": "出版业",
+    "grp": "A低位横盘",
+    "ml_prob": 46.7,
+    "close": 7.06,
+    "is_media": true
+   },
+   {
+    "code": "002291",
+    "name": "遥望科技",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 46.2,
+    "close": 5.71,
+    "is_media": true
+   },
+   {
+    "code": "300071",
+    "name": "福石控股",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 44.6,
+    "close": 4.0,
+    "is_media": true
+   },
+   {
+    "code": "300612",
+    "name": "宣亚国际",
+    "industry": "广告包装",
+    "grp": "A低位横盘",
+    "ml_prob": 44.1,
+    "close": 12.3,
+    "is_media": true
+   }
+  ]
+ },
+ "B启动确认": {
+  "total": 19,
+  "media_n": 2,
+  "top10": [
+   {
+    "code": "600548",
+    "name": "深高速",
+    "industry": "路桥",
+    "grp": "B启动确认",
+    "ml_prob": 48.7,
+    "close": 8.8,
+    "is_media": false
+   },
+   {
+    "code": "600295",
+    "name": "鄂尔多斯",
+    "industry": "特种钢",
+    "grp": "B启动确认",
+    "ml_prob": 48.5,
+    "close": 14.29,
+    "is_media": false
+   },
+   {
+    "code": "001299",
+    "name": "美能能源",
+    "industry": "供气供热",
+    "grp": "B启动确认",
+    "ml_prob": 47.6,
+    "close": 10.76,
+    "is_media": false
+   },
+   {
+    "code": "000601",
+    "name": "韶能股份",
+    "industry": "水力发电",
+    "grp": "B启动确认",
+    "ml_prob": 47.1,
+    "close": 6.53,
+    "is_media": false
+   },
+   {
+    "code": "603466",
+    "name": "风语筑",
+    "industry": "文教休闲",
+    "grp": "B启动确认",
+    "ml_prob": 46.8,
+    "close": 12.64,
+    "is_media": false
+   },
+   {
+    "code": "300839",
+    "name": "博汇股份",
+    "industry": "石油加工",
+    "grp": "B启动确认",
+    "ml_prob": 45.8,
+    "close": 13.25,
+    "is_media": false
+   },
+   {
+    "code": "002541",
+    "name": "鸿路钢构",
+    "industry": "钢加工",
+    "grp": "B启动确认",
+    "ml_prob": 45.7,
+    "close": 20.15,
+    "is_media": false
+   },
+   {
+    "code": "002748",
+    "name": "世龙实业",
+    "industry": "化工原料",
+    "grp": "B启动确认",
+    "ml_prob": 45.0,
+    "close": 12.9,
+    "is_media": false
+   },
+   {
+    "code": "300133",
+    "name": "华策影视",
+    "industry": "影视音像",
+    "grp": "B启动确认",
+    "ml_prob": 43.3,
+    "close": 9.07,
+    "is_media": true
+   },
+   {
+    "code": "300199",
+    "name": "翰宇药业",
+    "industry": "化学制药",
+    "grp": "B启动确认",
+    "ml_prob": 43.1,
+    "close": 24.93,
+    "is_media": false
+   }
+  ],
+  "media_top": [
+   {
+    "code": "300133",
+    "name": "华策影视",
+    "industry": "影视音像",
+    "grp": "B启动确认",
+    "ml_prob": 43.3,
+    "close": 9.07,
+    "is_media": true
+   },
+   {
+    "code": "301025",
+    "name": "读客文化",
+    "industry": "出版业",
+    "grp": "B启动确认",
+    "ml_prob": 41.9,
+    "close": 11.09,
+    "is_media": true
+   }
+  ]
+ },
+ "D高位滞涨": {
+  "total": 53,
+  "media_n": 2,
+  "top10": [
+   {
+    "code": "002832",
+    "name": "比音勒芬",
+    "industry": "服饰",
+    "grp": "D高位滞涨",
+    "ml_prob": 50.5,
+    "close": 26.35,
+    "is_media": false
+   },
+   {
+    "code": "600256",
+    "name": "广汇能源",
+    "industry": "石油开采",
+    "grp": "D高位滞涨",
+    "ml_prob": 49.5,
+    "close": 7.07,
+    "is_media": false
+   },
+   {
+    "code": "002818",
+    "name": "富森美",
+    "industry": "其他商业",
+    "grp": "D高位滞涨",
+    "ml_prob": 49.1,
+    "close": 12.05,
+    "is_media": false
+   },
+   {
+    "code": "300192",
+    "name": "科德教育",
+    "industry": "文教休闲",
+    "grp": "D高位滞涨",
+    "ml_prob": 48.5,
+    "close": 22.0,
+    "is_media": false
+   },
+   {
+    "code": "300829",
+    "name": "金丹科技",
+    "industry": "食品",
+    "grp": "D高位滞涨",
+    "ml_prob": 48.5,
+    "close": 24.01,
+    "is_media": false
+   },
+   {
+    "code": "601598",
+    "name": "中国外运",
+    "industry": "仓储物流",
+    "grp": "D高位滞涨",
+    "ml_prob": 48.1,
+    "close": 6.69,
+    "is_media": false
+   },
+   {
+    "code": "002293",
+    "name": "罗莱生活",
+    "industry": "纺织",
+    "grp": "D高位滞涨",
+    "ml_prob": 48.0,
+    "close": 11.69,
+    "is_media": false
+   },
+   {
+    "code": "600926",
+    "name": "杭州银行",
+    "industry": "银行",
+    "grp": "D高位滞涨",
+    "ml_prob": 47.7,
+    "close": 16.83,
+    "is_media": false
+   },
+   {
+    "code": "600007",
+    "name": "中国国贸",
+    "industry": "园区开发",
+    "grp": "D高位滞涨",
+    "ml_prob": 47.3,
+    "close": 20.86,
+    "is_media": false
+   },
+   {
+    "code": "600177",
+    "name": "雅戈尔",
+    "industry": "服饰",
+    "grp": "D高位滞涨",
+    "ml_prob": 47.1,
+    "close": 8.45,
+    "is_media": false
+   }
+  ],
+  "media_top": [
+   {
+    "code": "605577",
+    "name": "龙版传媒",
+    "industry": "出版业",
+    "grp": "D高位滞涨",
+    "ml_prob": 46.6,
+    "close": 16.51,
+    "is_media": true
+   },
+   {
+    "code": "603230",
+    "name": "内蒙新华",
+    "industry": "出版业",
+    "grp": "D高位滞涨",
+    "ml_prob": 39.6,
+    "close": 13.72,
+    "is_media": true
+   }
+  ]
+ }
+}

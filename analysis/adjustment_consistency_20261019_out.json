@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "events": 2951,
+    "paired": 2935,
+    "raw_missing": 16,
+    "raw_cols": [
+      "code",
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "vol",
+      "amt"
+    ],
+    "criterion": "胜率差>3pp → 数据风险先修"
+  },
+  "overall": {
+    "qfq": {
+      "n": 2935,
+      "win_pct": 54.34,
+      "med_pct": 0.744
+    },
+    "raw": {
+      "n": 2935,
+      "win_pct": 52.5,
+      "med_pct": 0.495
+    }
+  },
+  "by_period": {
+    "2016-2023": {
+      "qfq": {
+        "n": 2080,
+        "win_pct": 51.63,
+        "med_pct": 0.31
+      },
+      "raw": {
+        "n": 2080,
+        "win_pct": 49.66,
+        "med_pct": 0.0
+      }
+    },
+    "2024-2026": {
+      "qfq": {
+        "n": 855,
+        "win_pct": 60.94,
+        "med_pct": 1.698
+      },
+      "raw": {
+        "n": 855,
+        "win_pct": 59.42,
+        "med_pct": 1.468
+      }
+    }
+  },
+  "big_diff_events": 82,
+  "median_abs_diff_pct": 0.0,
+  "verdict": {
+    "win_gap_pp": 1.84,
+    "pass": true
+  }
+}

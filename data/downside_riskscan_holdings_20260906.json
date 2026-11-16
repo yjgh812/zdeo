@@ -1,0 +1,290 @@
+{
+ "date": "20260904",
+ "checked": 36,
+ "rows": [
+  {
+   "code": "603819",
+   "name": "神力股份",
+   "risk_score": 4.0,
+   "triggers": "new_high_3,vwap60_bias,vwap20_bias,new_high20",
+   "profitRate": NaN
+  },
+  {
+   "code": "300670",
+   "name": "大烨智能",
+   "risk_score": 3.0,
+   "triggers": "vwap60_bias,vwap20_bias,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "300077",
+   "name": "国民技术",
+   "risk_score": 3.0,
+   "triggers": "vwap60_bias,vwap20_bias,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "601999",
+   "name": "出版传媒",
+   "risk_score": 3.0,
+   "triggers": "vwap60_bias,vwap20_bias,new_high20",
+   "profitRate": NaN
+  },
+  {
+   "code": "300025",
+   "name": "华星创业",
+   "risk_score": 3.0,
+   "triggers": "vwap60_bias,vwap20_bias,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "002811",
+   "name": "郑中设计",
+   "risk_score": 3.0,
+   "triggers": "vwap60_bias,vwap20_bias,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "002379",
+   "name": "宏桥控股",
+   "risk_score": 2.0,
+   "triggers": "rounded_20,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "601083",
+   "name": "锦江航运",
+   "risk_score": 2.0,
+   "triggers": "vwap60_bias,higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "003006",
+   "name": "百亚股份",
+   "risk_score": 1.0,
+   "triggers": "vwap20_bias",
+   "profitRate": NaN
+  },
+  {
+   "code": "603993",
+   "name": "洛阳钼业",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "600928",
+   "name": "西安银行",
+   "risk_score": 1.0,
+   "triggers": "macd_golden_hi",
+   "profitRate": NaN
+  },
+  {
+   "code": "605166",
+   "name": "聚合顺",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "603585",
+   "name": "苏利股份",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "600650",
+   "name": "锦江在线",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "600018",
+   "name": "上港集团",
+   "risk_score": 1.0,
+   "triggers": "higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "301256",
+   "name": "华融化学",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "300817",
+   "name": "双飞集团",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "000001",
+   "name": "平安银行",
+   "risk_score": 1.0,
+   "triggers": "higher_low",
+   "profitRate": NaN
+  },
+  {
+   "code": "600470",
+   "name": "六国化工",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "300252",
+   "name": "金信诺",
+   "risk_score": 1.0,
+   "triggers": "rounded_20",
+   "profitRate": NaN
+  },
+  {
+   "code": "600694",
+   "name": "大商股份",
+   "risk_score": 1.0,
+   "triggers": "new_high20",
+   "profitRate": NaN
+  },
+  {
+   "code": "603230",
+   "name": "内蒙新华",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "002688",
+   "name": "金河生物",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "002936",
+   "name": "郑州银行",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "601668",
+   "name": "中国建筑",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600719",
+   "name": "大连热电",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "601229",
+   "name": "上海银行",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600020",
+   "name": "中原高速",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600035",
+   "name": "楚天高速",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600717",
+   "name": "天津港",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "002174",
+   "name": "游族网络",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "000567",
+   "name": "海德股份",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "601186",
+   "name": "中国铁建",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600704",
+   "name": "物产中大",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "600827",
+   "name": "百联股份",
+   "risk_score": 0.0,
+   "triggers": "-",
+   "profitRate": NaN
+  },
+  {
+   "code": "300588",
+   "name": "熙菱信息",
+   "risk_score": NaN,
+   "triggers": "池外(价>20元或流动性)",
+   "profitRate": ""
+  }
+ ],
+ "hi3": [
+  {
+   "code": "603819",
+   "name": "神力股份",
+   "triggers": "new_high_3,vwap60_bias,vwap20_bias,new_high20"
+  },
+  {
+   "code": "300670",
+   "name": "大烨智能",
+   "triggers": "vwap60_bias,vwap20_bias,higher_low"
+  },
+  {
+   "code": "300077",
+   "name": "国民技术",
+   "triggers": "vwap60_bias,vwap20_bias,higher_low"
+  },
+  {
+   "code": "601999",
+   "name": "出版传媒",
+   "triggers": "vwap60_bias,vwap20_bias,new_high20"
+  },
+  {
+   "code": "300025",
+   "name": "华星创业",
+   "triggers": "vwap60_bias,vwap20_bias,higher_low"
+  },
+  {
+   "code": "002811",
+   "name": "郑中设计",
+   "triggers": "vwap60_bias,vwap20_bias,higher_low"
+  }
+ ]
+}

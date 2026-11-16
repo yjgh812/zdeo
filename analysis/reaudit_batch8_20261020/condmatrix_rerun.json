@@ -1,0 +1,96 @@
+{
+ "prereg_id": "PREREG-TIMING-CONDMATRIX-V1",
+ "fingerprint": "d3a154496b6aeb8d",
+ "window": [
+  "20200102",
+  "20261019"
+ ],
+ "n_signals_raw": 38685,
+ "n_unknown_state": 0,
+ "n_mid_state": 7455,
+ "n_rows_used": 31147,
+ "dropped_fwd": 35,
+ "dropped_px": 48,
+ "P0_power": {
+  "high_days": 973,
+  "low_days": 264,
+  "high_rows": 24823,
+  "low_rows": 6324,
+  "pass": true
+ },
+ "primary": {
+  "verdict": "FAIL",
+  "P1": {
+   "high_day_mean": 0.664,
+   "low_day_mean": 0.757,
+   "diff_pp": -0.092,
+   "welch_t": -0.36,
+   "welch_df": 446.0,
+   "pass": false
+  },
+  "P2": {
+   "halves": {
+    "前半": {
+     "high_days": 511,
+     "low_days": 107,
+     "high_mean": 0.768,
+     "low_mean": 0.568
+    },
+    "后半": {
+     "high_days": 462,
+     "low_days": 157,
+     "high_mean": 0.55,
+     "low_mean": 0.885
+    }
+   },
+   "pass": false,
+   "note": "方向反转"
+  },
+  "row_level_descriptive": {
+   "high_row_mean": 1.308,
+   "low_row_mean": 1.143,
+   "mid_row_mean": NaN
+  }
+ },
+ "verdict": "FAIL",
+ "sensitivity_board_only": {
+  "note": "描述性方向观察, 非判据(prereg sensitivity_descriptive_not_gates)",
+  "high_days": 1058,
+  "low_days": 54,
+  "high_day_mean": 0.653,
+  "low_day_mean": 1.294,
+  "direction_high_gt_low": false
+ },
+ "v2_five_state_descriptive": {
+  "unknown": {
+   "rows": 642,
+   "days": 36,
+   "row_mean": -0.039
+  },
+  "修复": {
+   "rows": 11608,
+   "days": 512,
+   "row_mean": 0.987
+  },
+  "冰点": {
+   "rows": 658,
+   "days": 35,
+   "row_mean": 2.407
+  },
+  "分歧": {
+   "rows": 7913,
+   "days": 324,
+   "row_mean": 1.13
+  },
+  "狂热": {
+   "rows": 4810,
+   "days": 108,
+   "row_mean": 2.518
+  },
+  "退潮": {
+   "rows": 5516,
+   "days": 222,
+   "row_mean": 1.02
+  }
+ }
+}

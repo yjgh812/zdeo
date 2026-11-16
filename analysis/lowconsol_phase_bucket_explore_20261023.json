@@ -1,0 +1,144 @@
+{
+ "meta": {
+  "generated": "2026-10-23",
+  "universe": "6/0/3开头 上市>60日(回测口径含科创,交易口径剔除688未在本探索剔除)",
+  "signal": "gauge A格子 pos250<0.30 且 |chg5|<0.03",
+  "forward": "T+20 qfq收盘",
+  "phase_ledger_days": 435,
+  "honesty": "探索性post-hoc; 台账标签既有非本脚本调参; 多重比较风险; 禁止直接改R闸",
+  "verdict": "NOT_ROBUST — 表面ebbbing优势为单月驱动,假设不成立"
+ },
+ "overall": {
+  "label": "全样本",
+  "n": 247373,
+  "n_days": 415,
+  "win_t20": 51.39,
+  "mean_t20": 0.9,
+  "median_t20": 0.33
+ },
+ "by_phase": {
+  "bottom": {
+   "label": "bottom",
+   "n": 286,
+   "n_days": 2,
+   "win_t20": 67.48,
+   "mean_t20": 3.09,
+   "median_t20": 2.48
+  },
+  "diverging": {
+   "label": "diverging",
+   "n": 27279,
+   "n_days": 45,
+   "win_t20": 48.35,
+   "mean_t20": 0.1,
+   "median_t20": -0.28
+  },
+  "ebbing": {
+   "label": "ebbing",
+   "n": 68836,
+   "n_days": 114,
+   "win_t20": 56.68,
+   "mean_t20": 2.24,
+   "median_t20": 1.27
+  },
+  "euphoric": {
+   "label": "euphoric",
+   "n": 26886,
+   "n_days": 43,
+   "win_t20": 48.88,
+   "mean_t20": 0.28,
+   "median_t20": -0.11
+  },
+  "healing": {
+   "label": "healing",
+   "n": 124086,
+   "n_days": 211,
+   "win_t20": 49.63,
+   "mean_t20": 0.47,
+   "median_t20": 0.0
+  }
+ },
+ "by_ebbing_vs_rest": {
+  "ebbing": {
+   "label": "ebbbing",
+   "n": 68836,
+   "n_days": 114,
+   "win_t20": 56.68,
+   "mean_t20": 2.24,
+   "median_t20": 1.27
+  },
+  "rest": {
+   "label": "非ebbbing",
+   "n": 178537,
+   "n_days": 301,
+   "win_t20": 49.35,
+   "mean_t20": 0.39,
+   "median_t20": 0.0
+  },
+  "diff_pp": 7.33
+ },
+ "by_br": {
+  "br<0.30": {
+   "label": "br<0.30",
+   "n": 137154,
+   "n_days": 218,
+   "win_t20": 51.3,
+   "mean_t20": 0.9,
+   "median_t20": 0.32
+  },
+  "br 0.30~0.42": {
+   "label": "br 0.30~0.42",
+   "n": 87220,
+   "n_days": 159,
+   "win_t20": 51.03,
+   "mean_t20": 0.71,
+   "median_t20": 0.26
+  },
+  "br>=0.42(高炸板)": {
+   "label": "br>=0.42(高炸板)",
+   "n": 22999,
+   "n_days": 38,
+   "win_t20": 53.28,
+   "mean_t20": 1.67,
+   "median_t20": 0.69
+  }
+ },
+ "monthly_robustness_ebbing": {
+  "note": "ebbbing整体+7.33pp由202607单月(86.3%)驱动; 月度胜率15.3~86.3巨幅离散,中位41.8<全局49.35 → 相位标签对A格子T+20无稳健区分力",
+  "months": {
+   "202601": {
+    "n": 550,
+    "win": 32.5
+   },
+   "202602": {
+    "n": 1027,
+    "win": 40.6
+   },
+   "202603": {
+    "n": 2669,
+    "win": 44.2
+   },
+   "202604": {
+    "n": 7652,
+    "win": 43.0
+   },
+   "202605": {
+    "n": 933,
+    "win": 15.3
+   },
+   "202607": {
+    "n": 8669,
+    "win": 86.3
+   },
+   "202608": {
+    "n": 7565,
+    "win": 54.2
+   },
+   "202609": {
+    "n": 10056,
+    "win": 28.3
+   }
+  },
+  "conclusion": "「退潮期降权」假设证据不足(月度状态主导,单月15~86%); 撤回降权建议,亦禁止反向加码; 相位级开关不可靠,与amt_q活跃度连续维度(跨月稳定单调)形成对照"
+ }
+}

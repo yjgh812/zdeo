@@ -1,0 +1,88 @@
+{
+ "disclosure": "A臂分年提取(门槛1), 同prereg冻结口径, 不改变原判定(主臂FAIL/A臂观察)",
+ "armA_by_year": {
+  "2016": {
+   "n": 33,
+   "win_pct": 33.3,
+   "base_pct": 31.6,
+   "exc_pp": 1.77,
+   "mean_ret_pct": -0.23
+  },
+  "2017": {
+   "n": 20,
+   "win_pct": 45.0,
+   "base_pct": 32.5,
+   "exc_pp": 12.52,
+   "mean_ret_pct": 4.01
+  },
+  "2018": {
+   "n": 38,
+   "win_pct": 47.4,
+   "base_pct": 38.2,
+   "exc_pp": 9.12,
+   "mean_ret_pct": 0.98
+  },
+  "2019": {
+   "n": 31,
+   "win_pct": 41.9,
+   "base_pct": 29.7,
+   "exc_pp": 12.22,
+   "mean_ret_pct": -0.14
+  },
+  "2020": {
+   "n": 31,
+   "win_pct": 61.3,
+   "base_pct": 42.1,
+   "exc_pp": 19.22,
+   "mean_ret_pct": 4.92
+  },
+  "2021": {
+   "n": 45,
+   "win_pct": 48.9,
+   "base_pct": 40.5,
+   "exc_pp": 8.43,
+   "mean_ret_pct": 1.85
+  },
+  "2022": {
+   "n": 24,
+   "win_pct": 75.0,
+   "base_pct": 52.6,
+   "exc_pp": 22.44,
+   "mean_ret_pct": 8.09
+  },
+  "2023": {
+   "n": 14,
+   "win_pct": 71.4,
+   "base_pct": 59.1,
+   "exc_pp": 12.31,
+   "mean_ret_pct": 4.06
+  },
+  "2024": {
+   "n": 24,
+   "win_pct": 25.0,
+   "base_pct": 27.2,
+   "exc_pp": -2.17,
+   "mean_ret_pct": -6.85
+  },
+  "2025": {
+   "n": 18,
+   "win_pct": 61.1,
+   "base_pct": 76.1,
+   "exc_pp": -15.03,
+   "mean_ret_pct": 1.78
+  },
+  "2026": {
+   "n": 15,
+   "win_pct": 26.7,
+   "base_pct": 49.6,
+   "exc_pp": -22.98,
+   "mean_ret_pct": -0.77
+  }
+ },
+ "pooled": {
+  "n": 295,
+  "win_pct": 48.1,
+  "base_pct": 41.1,
+  "net_mean_pp": 1.2
+ }
+}

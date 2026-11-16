@@ -1,0 +1,45 @@
+{
+  "pack_id": "EXEC_PACK_REBALANCE_20260904_V2",
+  "authorized_by": "主人2026-09-03指令「对目前腾讯自选股的模拟仓持股进行全面诊断，对于上涨乏力的进行调仓换股，调仓换股要合规」+ 同晚裁决「按推荐继续」=混合弹性B案(保留铁建/上港,中石化→海德股份,云铝→熙菱信息);C7-R28要求的提前卖出显式确认=本指令",
+  "diagnosis_report": "reports/PORTFOLIO_REBALANCE_DIAG_20260903.md (§七V2修订段)",
+  "v2_amendment": "主人问「中小盘是不是比大盘涨得快」→ 实证成立(mass_scan段动量显著强于大盘票);B案=保留bp_ep rank8铁建+master_hist r90上港,中石化(6590亿动量平庸)与云铝(950亿贴30元线)两席换入海德股份(132亿中盘,PE8.3+中报+886%+r10+12.29%+量比2.25,基本面动量双强)与熙菱信息(47亿小盘,1.2x低位放量突破,r10+22.59%,亏损情绪票仓位压至300股);两票均白名单mass_scan段在列无降档",
+  "gate_replay_log": "V1 20260903晚: 8/8 dry-run PASS_WITH_WARN零reject; 卖出pre_sell跑通(金雷/盟固利horizon=short无C7直接可卖;大豪/交建C7-R28守卫7天<10天,守卫文本许可类别=月度调仓换股+主人显式确认→--owner-override-hold,P0-E语义豁免落台账,executor499行透传→pre_sell_check261行holds→overridden_holds→SELL_OK→616行豁免依据落台账,已读源码端到端验证); V2 20260903深夜: 海德/熙菱动量数字经westock K线独立第二源重算与qfq库分毫不差; 两笔新买单dry-run PASS(source=mass_scan过P0-A); 盘后时段守卫HARD_REJECT属fail-closed预期,盘内自动放行",
+  "execution_window": "20260904 09:40-09:50交易时段内(错峰于09:30-09:35既有验证批EXEC_PACK_BPEP_BATCH_20260904/automation-4284478e);顺序严格先4卖后4买,卖出资金当日可用;限价≤昨收=真低吸,高开排队等回踩不追(R6语义);执行排程待主人指定(A=清自动化任务位后登记一次性09:40/B=盘中任意会话一句话口令执行本包)",
+  "orders": [
+    {
+      "cmd": "python trade_executor.py sell --code sz300443 --name 金雷股份 --reason \"调仓换股-趋势走弱:20日-11.98%/10日-5.57%,低于MA20达-5.9%,20日主力净流出3240万(qfq+东财20260903)\" --execute --confirmed"
+    },
+    {
+      "cmd": "python trade_executor.py sell --code sz301487 --name 盟固利 --reason \"调仓换股-最弱持仓:盈亏-5.03%全仓最深,5日-4.25%,低于MA20-3.55%,距60日高点-30%\" --execute --confirmed"
+    },
+    {
+      "cmd": "python trade_executor.py sell --code sh603025 --name 大豪科技 --reason \"调仓换股-上涨乏力(主人20260903显式授权):5日-2.46%/10日-2.88%,量能萎缩0.58,10日主力净流出5898万;C7-R28许可类别=月度调仓换股\" --execute --confirmed --owner-override-hold"
+    },
+    {
+      "cmd": "python trade_executor.py sell --code sh601800 --name 中国交建 --reason \"调仓换股-横盘死钱(主人20260903显式授权):5日-0.34%/10日0.00%/20日-3.10%,20日主力净流出1.03亿;白名单长线契约卖点=调仓换股\" --execute --confirmed --owner-override-hold"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh601186 --name 中国铁建 --source bp_ep --sector 建筑工程 --price 6.03 --volume 1600 --prev-close 6.08 --budget 10000 --intent \"混合弹性B案:bp_ep月名单核心rank8_1.0x无降档_压舱仓\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh600018 --name 上港集团 --source master_hist --sector 交通运输 --price 5.50 --volume 1800 --prev-close 5.52 --budget 10000 --intent \"混合弹性B案:master_hist_r90低位放量突破1.2x档_r5+6.56%量比1.65\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sz000567 --name 海德股份 --source mass_scan --sector 非银金融 --price 6.70 --volume 1400 --prev-close 6.76 --budget 10000 --intent \"混合弹性B案:132亿中盘_PE8.3_中报+886%_r10+12.29%量比2.25_白名单mass_scan_1.0x\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sz300588 --name 熙菱信息 --source mass_scan --sector 计算机 --price 24.60 --volume 300 --prev-close 24.69 --budget 8000 --intent \"混合弹性B案:47亿小盘1.2x低位放量突破_r10+22.59%_亏损情绪票仓位减半_白名单mass_scan_1.2x\" --execute"
+    }
+  ],
+  "dry_run_status": "V2全部8笔dry-run PASS_WITH_WARN(零reject): 4卖+铁建/上港(20260903晚)+海德/熙菱(20260903深夜);预警均fail-open数据性(R19解禁表无记录/R22双口径超2天/R1缺pct-60d)",
+  "sell_est_proceeds": "约51569元@9/3收盘(金雷600×18.66+盟固利900×15.77+大豪1500×13.50+交建1000×5.93)",
+  "total_buy_budget": 36308,
+  "cash_check": "既有验证批23784元09:30执行后现金余约5758元;本包卖出所得当日可用,4买单合计36308元≤卖出所得;执行后现金缓冲约21019元;若个别卖出被pre_sell拦截则对应买单因现金不足被R10拒绝(fail-closed,不追补)",
+  "forbidden": [
+    "9/3五只题材票(大烨智能/神力股份/华星创业/金信诺/郑中设计)禁止操作——主人当日亲自买入,未触发任何卖点;集中度58.8%仅作风险提示",
+    "银行5只(郑州银行/北京银行/上海银行/平安银行/西安银行)禁止操作——主人9/3已裁决银行事项,无-8%触发",
+    "华融化学(sz301256)/金河生物(sz002688)禁止操作——EXEC_PACK_BPEP_BATCH_20260904已登记禁操作(卖量未获授权)",
+    "禁止--owner-override-session及本包未列的任何override",
+    "westock断供fail-closed停止并告警,禁止重试蛮干;禁止补录历史;不买卖包外标的"
+  ]
+}

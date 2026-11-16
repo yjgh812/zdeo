@@ -1,0 +1,38 @@
+{
+ "id": "PREREG_DIVIDEND_6F_20261025",
+ "title": "红利六因子简化版(5因子)·月度TopN检验 (第一梯队末项, 数据解锁后执行)",
+ "declared": "2026-10-25",
+ "origin": "主人第12/22轮浙商六因子spec; 外部宣称含息年化15.98%/MDD5.11%/几何超额4.47pp(2023-2026); 现金流覆盖度因子因PIT无此字段缓测(5/6因子)",
+ "rule_frozen": {
+  "data": "data/dividend_detail_stage_full.csv(akshare stock_fhps_detail_em逐股全史) + factor_pit.db v2",
+  "factors": {
+   "盈利维度_60pct": {
+    "f1_roe_stability": "近3年PIT roe均值-标准差(降序)",
+    "f2_eps_momentum": "PIT eps TTM同比二阶差分(降序=盈利动能拐点)"
+   },
+   "分配维度_40pct": {
+    "f3_div_yield_avg": "近3年滚动股息率均值(每年每股分红/年末close)(降序)",
+    "f4_forward_payout": "近3年平均每股分红×最近PIT eps>0的比率/当前close(前瞻派息回报近似)(降序)",
+    "f5_div_continuity": "近5年现金分红年数(降序)"
+   }
+  },
+  "composite": "各因子pct_rank后: 0.3*f1+0.3*f2+0.15*f3+0.15*f4+0.1*f5(权重=盈利60/分配40同族缩减)",
+  "main_arm": "月末Top20(composite降序), 入场=次一收盘(c1)",
+  "exit": "t20e(-8%止损/T+20) + 月频组合含费(0.3%)",
+  "baseline": "同日全宇宙等权 + bp_ep PIT Top20(正交参照)",
+  "universe": "6/0/3剔688/689, 上市>60, 非ST, close<=30, 要求近3年至少1次分红",
+  "window": "20160101-20261023"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_portfolio": "组合级年化超额(全宇宙等权, 含双边0.3%)>=+3.0pp",
+  "G2_by_year": "11年中年>=7年正",
+  "G3_orthogonality": "与bp_ep同月重叠<=30%或相对bp_ep超额>0(二者其一)",
+  "G4_event": "t20e胜率超额>=+1.5pp",
+  "G5_vs_quality": "分配维度单臂(0.15*f3+0.15*f4+0.1*f5)超额>盈利维度单臂(0.3*f1+0.3*f2)——检验Why=分配而非质量",
+  "verdict_rule": "五门全过=PASS_CANDIDATE; G5为核心假设检验(红利edge来自分配而非ROE)"
+ },
+ "multiple_testing_note": "主臂唯一; 分配/盈利单臂为对照不判定",
+ "failure_clause": "FAIL时红利简化口径不接线; 正交性义务与bp_ep重叠是关键检验",
+ "fingerprint": "729d404d64af844c",
+ "status": "executed_FAIL_G5分配Why确认_20261025"
+}

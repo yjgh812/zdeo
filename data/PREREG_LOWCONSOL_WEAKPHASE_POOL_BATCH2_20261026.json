@@ -1,0 +1,41 @@
+{
+  "prereg_id": "PREREG_LOWCONSOL_WEAKPHASE_POOL_BATCH2_20261026",
+  "created": "2026-10-25",
+  "master_directive": "主人20261025指令: 你来选股, 模拟盘验证(全权委托选股+模拟盘执行授权)",
+  "hypothesis": "弱势相位(等权指数MA60下方)+活跃(amt_q>=0.5)时入低位横盘主线命中池 — 相位门H-A探索性发现的前瞻样本",
+  "selection_rule_frozen": "池=20261023扫描main_hit_list(38只军工); 硬闸=全部通过; 抽样=流动性amt20降序Top2(执行质量抽样, 非alpha排序, 依据=perstock_universe_reverify_20261025个股排序零前瞻内容)",
+  "phase_state": {
+    "trend": "bear(等权指数<MA60)",
+    "amt_q": 0.803,
+    "switch": "ON"
+  },
+  "sizing": "各5%总资产(837822.46x0.05=41891); R30a同日同行业=2/3内; R30b军工敞口约10%<25%",
+  "exit_frozen": "-8%硬止损(S-5, 触发即执行); 持有20交易日队列协议到期评估; 趋势走坏(收盘<MA20x3日)次日卖",
+  "picks": [
+    {
+      "code": "000547",
+      "name": "航天发展",
+      "prev_close": 12.86,
+      "limit_price": 12.92,
+      "qty": 3200,
+      "amount": 41344.0,
+      "pct60d": 0.05,
+      "amplitude40d": 0.0421,
+      "stop_price": 11.89,
+      "amt20": 771627889.6
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "prev_close": 13.02,
+      "limit_price": 13.09,
+      "qty": 3200,
+      "amount": 41888.0,
+      "pct60d": 0.117,
+      "amplitude40d": 0.0327,
+      "stop_price": 12.04,
+      "amt20": 765236457.6
+    }
+  ],
+  "zero_pretense_note": "本批次为前瞻验证学费仓: 池效应当前相位历史均值约0~负, 弱势子集为正系样本内发现; 期望收益不确定, 仓位已按学费仓限制(2x5%)"
+}

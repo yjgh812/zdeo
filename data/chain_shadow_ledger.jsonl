@@ -1,0 +1,48 @@
+{"type": "open", "ts": "2026-10-14 19:56:13", "code": "001318", "entry_date": 20261014, "entry": 15.430000305175781, "ride_days": 1, "t": 931}
+{"type": "close", "code": "000710", "entry_date": 20261015, "exit_date": 20261015, "entry": 11.050000190734863, "total": -0.65, "ride_days": 1, "ts": "2026-10-15 22:27:05"}
+{"type": "close", "code": "000692", "entry_date": 20261015, "exit_date": 20261015, "entry": 4.699999809265137, "total": 0.44, "ride_days": 1, "ts": "2026-10-15 22:27:05"}
+{"type": "open", "ts": "2026-10-15 22:27:05", "code": "000530", "entry_date": 20261015, "entry": 6.929999828338623, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-15 22:27:05", "code": "000710", "entry_date": 20261015, "entry": 11.050000190734863, "ride_days": 1, "t": 934}
+{"type": "open", "ts": "2026-10-15 22:27:05", "code": "000995", "entry_date": 20261015, "entry": 13.180000305175781, "ride_days": 1, "t": 938}
+{"type": "open", "ts": "2026-10-15 22:27:05", "code": "000692", "entry_date": 20261015, "entry": 4.699999809265137, "ride_days": 1, "t": 943}
+{"type": "close", "code": "001318", "entry_date": 20261014, "exit_date": 20261016, "entry": 15.430000305175781, "total": -1.24, "ride_days": 3, "ts": "2026-10-17 00:26:59"}
+{"type": "close", "code": "000995", "entry_date": 20261015, "exit_date": 20261016, "entry": 13.180000305175781, "total": 8.15, "ride_days": 2, "ts": "2026-10-17 00:26:59"}
+{"type": "close", "code": "002860", "entry_date": 20261016, "exit_date": 20261016, "entry": 20.1200008392334, "total": -9.94, "ride_days": 1, "ts": "2026-10-17 00:26:59"}
+{"type": "open", "ts": "2026-10-17 00:26:59", "code": "002860", "entry_date": 20261016, "entry": 20.1200008392334, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-17 00:26:59", "code": "002889", "entry_date": 20261016, "entry": 14.3100004196167, "ride_days": 1, "t": 931}
+{"type": "close", "code": "000530", "entry_date": 20261015, "exit_date": 20261019, "entry": 6.929999828338623, "total": 12.35, "ride_days": 3, "ts": "2026-10-19 23:47:40"}
+{"type": "open", "ts": "2026-10-19 23:47:40", "code": "000576", "entry_date": 20261019, "entry": 9.649999618530273, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-19 23:47:40", "code": "002724", "entry_date": 20261019, "entry": 8.420000076293945, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-19 23:47:40", "code": "003029", "entry_date": 20261019, "entry": 24.190000534057617, "ride_days": 1, "t": 931}
+{"type": "close", "code": "002889", "entry_date": 20261016, "exit_date": 20261020, "entry": 14.3100004196167, "total": 2.46, "ride_days": 3, "ts": "2026-10-20 20:30:14"}
+{"type": "close", "code": "000576", "entry_date": 20261019, "exit_date": 20261020, "entry": 9.649999618530273, "total": -5.17, "ride_days": 2, "ts": "2026-10-20 20:30:14"}
+{"type": "open", "ts": "2026-10-20 20:30:14", "code": "001323", "entry_date": 20261020, "entry": 22.229999542236328, "ride_days": 1, "t": 931}
+{"type": "close", "code": "003029", "entry_date": 20261019, "exit_date": 20261021, "entry": 24.190000534057617, "total": 5.88, "ride_days": 3, "ts": "2026-10-21 21:29:46"}
+{"type": "close", "code": "001323", "entry_date": 20261020, "exit_date": 20261021, "entry": 22.229999542236328, "total": -6.18, "ride_days": 2, "ts": "2026-10-21 21:29:46"}
+{"type": "open", "ts": "2026-10-21 21:29:46", "code": "002181", "entry_date": 20261021, "entry": 11.140000343322754, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-21 21:29:46", "code": "002313", "entry_date": 20261021, "entry": 9.680000305175781, "ride_days": 1, "t": 931}
+{"type": "close", "code": "002181", "entry_date": 20261021, "exit_date": 20261022, "entry": 11.140000343322754, "total": -10.16, "ride_days": 2, "ts": "2026-10-22 23:59:10"}
+{"type": "close", "code": "002313", "entry_date": 20261021, "exit_date": 20261022, "entry": 9.680000305175781, "total": -5.99, "ride_days": 2, "ts": "2026-10-22 23:59:10"}
+{"type": "close", "code": "002368", "entry_date": 20261022, "exit_date": 20261022, "entry": 15.90999984741211, "total": -3.85, "ride_days": 1, "ts": "2026-10-22 23:59:10"}
+{"type": "open", "ts": "2026-10-22 23:59:10", "code": "002368", "entry_date": 20261022, "entry": 15.90999984741211, "ride_days": 1, "t": 936}
+{"type": "close", "code": "001360", "entry_date": 20261023, "exit_date": 20261023, "entry": 20.440000534057617, "total": -12.72, "ride_days": 1, "ts": "2026-10-23 21:19:55"}
+{"type": "open", "ts": "2026-10-23 21:19:55", "code": "001360", "entry_date": 20261023, "entry": 20.440000534057617, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-23 21:19:55", "code": "002535", "entry_date": 20261023, "entry": 3.0299999713897705, "ride_days": 1, "t": 931}
+{"type": "close", "code": "002724", "entry_date": 20261019, "exit_date": 20261026, "entry": 8.420000076293945, "total": 41.13, "ride_days": 6, "ts": "2026-10-26 20:04:45"}
+{"type": "close", "code": "002354", "entry_date": 20261026, "exit_date": 20261026, "entry": 8.829999923706055, "total": -7.9, "ride_days": 1, "ts": "2026-10-26 20:04:45"}
+{"type": "close", "code": "002474", "entry_date": 20261026, "exit_date": 20261026, "entry": 7.820000171661377, "total": -10.56, "ride_days": 1, "ts": "2026-10-26 20:04:45"}
+{"type": "close", "code": "002694", "entry_date": 20261026, "exit_date": 20261026, "entry": 3.0899999141693115, "total": -2.14, "ride_days": 1, "ts": "2026-10-26 20:04:45"}
+{"type": "open", "ts": "2026-10-26 20:04:45", "code": "002354", "entry_date": 20261026, "entry": 8.829999923706055, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-26 20:04:45", "code": "002474", "entry_date": 20261026, "entry": 7.820000171661377, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-26 20:04:45", "code": "002694", "entry_date": 20261026, "entry": 3.0899999141693115, "ride_days": 1, "t": 945}
+{"type": "close", "code": "002535", "entry_date": 20261023, "exit_date": 20261027, "entry": 3.0299999713897705, "total": -1.19, "ride_days": 3, "ts": "2026-10-27 19:09:44"}
+{"type": "close", "code": "002086", "entry_date": 20261027, "exit_date": 20261027, "entry": 2.490000009536743, "total": -4.22, "ride_days": 1, "ts": "2026-10-27 19:09:44"}
+{"type": "open", "ts": "2026-10-27 19:09:44", "code": "002086", "entry_date": 20261027, "entry": 2.490000009536743, "ride_days": 1, "t": 932}
+{"type": "close", "code": "002249", "entry_date": 20261028, "exit_date": 20261028, "entry": 8.350000381469727, "total": -4.15, "ride_days": 1, "ts": "2026-10-28 21:03:15"}
+{"type": "open", "ts": "2026-10-28 21:03:15", "code": "001219", "entry_date": 20261028, "entry": 16.479999542236328, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-28 21:03:15", "code": "002249", "entry_date": 20261028, "entry": 8.350000381469727, "ride_days": 1, "t": 942}
+{"type": "open", "ts": "2026-10-28 21:03:15", "code": "000559", "entry_date": 20261028, "entry": 12.930000305175781, "ride_days": 1, "t": 944}
+{"type": "close", "code": "000559", "entry_date": 20261028, "exit_date": 20261029, "entry": 12.930000305175781, "total": 0.5, "ride_days": 2, "ts": "2026-10-29 18:52:21"}
+{"type": "close", "code": "002347", "entry_date": 20261029, "exit_date": 20261029, "entry": 7.070000171661377, "total": -4.02, "ride_days": 1, "ts": "2026-10-29 18:52:21"}
+{"type": "open", "ts": "2026-10-29 18:52:21", "code": "002708", "entry_date": 20261029, "entry": 20.829999923706055, "ride_days": 1, "t": 931}
+{"type": "open", "ts": "2026-10-29 18:52:21", "code": "002347", "entry_date": 20261029, "entry": 7.070000171661377, "ride_days": 1, "t": 937}

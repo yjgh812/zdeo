@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T22:46:38.003148",
+    "cost_per_round_pct": 0.8
+  },
+  "part1_cost_amortization": {
+    "breakeven_hold_days": 4,
+    "factor_alpha_daily": 0.262
+  },
+  "part2_market_holding": {
+    "1": {
+      "n": 1133545,
+      "gross_per_round_pct": 0.117,
+      "daily_gross_pct": 0.1174,
+      "net_per_round_pct": -0.683,
+      "daily_net_pct": -0.6826,
+      "annual_net_pct": -82.2
+    },
+    "2": {
+      "n": 566088,
+      "gross_per_round_pct": 0.163,
+      "daily_gross_pct": 0.0813,
+      "net_per_round_pct": -0.637,
+      "daily_net_pct": -0.3187,
+      "annual_net_pct": -55.3
+    },
+    "3": {
+      "n": 377030,
+      "gross_per_round_pct": 0.215,
+      "daily_gross_pct": 0.0717,
+      "net_per_round_pct": -0.585,
+      "daily_net_pct": -0.195,
+      "annual_net_pct": -38.9
+    },
+    "5": {
+      "n": 225717,
+      "gross_per_round_pct": 0.28,
+      "daily_gross_pct": 0.056,
+      "net_per_round_pct": -0.52,
+      "daily_net_pct": -0.104,
+      "annual_net_pct": -22.9
+    },
+    "10": {
+      "n": 112112,
+      "gross_per_round_pct": 0.281,
+      "daily_gross_pct": 0.0281,
+      "net_per_round_pct": -0.519,
+      "daily_net_pct": -0.0519,
+      "annual_net_pct": -12.2
+    },
+    "15": {
+      "n": 74285,
+      "gross_per_round_pct": 0.336,
+      "daily_gross_pct": 0.0224,
+      "net_per_round_pct": -0.464,
+      "daily_net_pct": -0.0309,
+      "annual_net_pct": -7.2
+    },
+    "20": {
+      "n": 55534,
+      "gross_per_round_pct": 0.23,
+      "daily_gross_pct": 0.0115,
+      "net_per_round_pct": -0.57,
+      "daily_net_pct": -0.0285,
+      "annual_net_pct": -6.6
+    }
+  },
+  "part3_ab_holding": {
+    "1": {
+      "n": 15866,
+      "gross_per_round_pct": -0.342,
+      "daily_gross_pct": -0.3418,
+      "net_per_round_pct": -1.142,
+      "annual_net_pct": -94.5
+    },
+    "2": {
+      "n": 15831,
+      "gross_per_round_pct": -0.18,
+      "daily_gross_pct": -0.0901,
+      "net_per_round_pct": -0.98,
+      "annual_net_pct": -71.1
+    },
+    "3": {
+      "n": 15785,
+      "gross_per_round_pct": -0.381,
+      "daily_gross_pct": -0.1269,
+      "net_per_round_pct": -1.181,
+      "annual_net_pct": -63.1
+    },
+    "5": {
+      "n": 15686,
+      "gross_per_round_pct": -1.1,
+      "daily_gross_pct": -0.2201,
+      "net_per_round_pct": -1.9,
+      "annual_net_pct": -61.7
+    },
+    "10": {
+      "n": 15393,
+      "gross_per_round_pct": -2.704,
+      "daily_gross_pct": -0.2704,
+      "net_per_round_pct": -3.504,
+      "annual_net_pct": -59.0
+    },
+    "15": {
+      "n": 15183,
+      "gross_per_round_pct": -3.767,
+      "daily_gross_pct": -0.2511,
+      "net_per_round_pct": -4.567,
+      "annual_net_pct": -52.7
+    },
+    "20": {
+      "n": 15010,
+      "gross_per_round_pct": -4.413,
+      "daily_gross_pct": -0.2207,
+      "net_per_round_pct": -5.213,
+      "annual_net_pct": -47.4
+    }
+  },
+  "best_market_hold": 20,
+  "best_ab_hold": 20
+}

@@ -1,0 +1,15 @@
+{
+  "id": "20261107-minute-fill-engine-v2",
+  "ts": "2026-11-07T03:20:00",
+  "object": "分钟撮合执行器v2判据重冻结（v1判据②对照基准定错：它假设纸面成交≈真实成交，但本会话已钉死纸面带系统性按委托价成交偏差~0.36-0.79pp）。v2修正：按『纸面价是否落在成交bar区间』把腿分为无溢价子集/溢价子集，判据只在无溢价子集出具；溢价子集偏差=模拟盘仿真瑕疵量测，披露不判罚。",
+  "engine": "同v1（analysis/minute_fill_replay.py，加子集分类与瑕疵交叉验证）。",
+  "params": {
+    "subset_no_premium": "纸面成交价∈walker首成交bar[low,high]的腿",
+    "subset_premium": "纸面价在该bar区间之外的腿（westock按委托价成交所致）",
+    "artifact_crosscheck": "walker判『当日不可成交』的作废腿 × data/sim_fill_artifacts.jsonl 19笔 的重合率"
+  },
+  "criterion": {
+    "commitment": "②v2=无溢价子集 walker vs 纸面 偏差中位 ≤0.3pp（此时纸面价就是真实触达价，walker应精确复现）；⑤交叉验证=作废腿与19笔瑕疵清单重合率 ≥70%（两者是同一现象的两种观测，不重合=任一管线有错）；溢价子集偏差中位仅披露（=限价溢价量测，预期与摩擦校准的0.69pp同量级）。②v2达标→walker v2验收通过，接续引擎分钟时钟(v2工程)立项；不达标→ walker撮合逻辑本身有错，逐bar排查。",
+    "honesty": "判据重冻结的理由与旧判据缺陷已如实记录于本JSON与v1提交信息——冻结不是拒绝修正，是禁止无记录的偷改。"
+  }
+}

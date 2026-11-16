@@ -1,0 +1,8 @@
+{
+ "manifest_version": "portrait.manifest.v1",
+ "generator": "winner5",
+ "built_at": "2026-10-28T08:32:05",
+ "files": {
+  "data/universe_portrait_winner5_latest.json": "sha256:2fb90be75574cc28a140a4ccf1ea6ea976137cc42ce21cb8601061d942064033"
+ }
+}

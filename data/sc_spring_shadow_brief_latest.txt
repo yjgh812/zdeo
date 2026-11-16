@@ -1,0 +1,1 @@
+[sc_spring] events=6181(oos=18) oos_settled=0 oos_med20=NA oos_win20=NA gate=WAITING 178.0s

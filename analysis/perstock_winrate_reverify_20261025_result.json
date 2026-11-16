@@ -1,0 +1,734 @@
+{
+  "reproducibility": {
+    "match": 38,
+    "mismatch": 0
+  },
+  "phase_baseline": {
+    "bull": 49.6,
+    "bear": 45.2
+  },
+  "ranking": [
+    {
+      "code": "601890",
+      "name": "亚星锚链",
+      "n": 62,
+      "win": 64.5,
+      "ci95": [
+        51.6,
+        75.8
+      ],
+      "half1": 67.7,
+      "half2": 61.3,
+      "stability": "稳定",
+      "phase_bull": 68.8,
+      "n_bull": 32,
+      "phase_bear": 60.0,
+      "n_bear": 30,
+      "prev_win": 64.5,
+      "repro": true
+    },
+    {
+      "code": "002189",
+      "name": "中光学",
+      "n": 71,
+      "win": 62.0,
+      "ci95": [
+        49.3,
+        73.2
+      ],
+      "half1": 57.1,
+      "half2": 66.7,
+      "stability": "稳定",
+      "phase_bull": 63.0,
+      "n_bull": 46,
+      "phase_bear": 60.0,
+      "n_bear": 25,
+      "prev_win": 62.0,
+      "repro": true
+    },
+    {
+      "code": "600372",
+      "name": "中航机载",
+      "n": 62,
+      "win": 61.3,
+      "ci95": [
+        50.0,
+        72.6
+      ],
+      "half1": 74.2,
+      "half2": 48.4,
+      "stability": "反转",
+      "phase_bull": 76.0,
+      "n_bull": 25,
+      "phase_bear": 51.4,
+      "n_bear": 37,
+      "prev_win": 61.3,
+      "repro": true
+    },
+    {
+      "code": "603488",
+      "name": "展鹏科技",
+      "n": 49,
+      "win": 61.2,
+      "ci95": [
+        46.9,
+        73.5
+      ],
+      "half1": 58.3,
+      "half2": 64.0,
+      "stability": "稳定",
+      "phase_bull": 64.9,
+      "n_bull": 37,
+      "phase_bear": 50.0,
+      "n_bear": 12,
+      "prev_win": 61.2,
+      "repro": true
+    },
+    {
+      "code": "600990",
+      "name": "四创电子",
+      "n": 78,
+      "win": 57.7,
+      "ci95": [
+        47.4,
+        67.9
+      ],
+      "half1": 61.5,
+      "half2": 53.8,
+      "stability": "稳定",
+      "phase_bull": 66.0,
+      "n_bull": 47,
+      "phase_bear": 45.2,
+      "n_bear": 31,
+      "prev_win": 57.7,
+      "repro": true
+    },
+    {
+      "code": "002985",
+      "name": "北摩高科",
+      "n": 26,
+      "win": 57.7,
+      "ci95": [
+        38.5,
+        76.9
+      ],
+      "half1": 38.5,
+      "half2": 76.9,
+      "stability": "反转",
+      "phase_bull": null,
+      "n_bull": 0,
+      "phase_bear": 57.7,
+      "n_bear": 26,
+      "prev_win": 57.7,
+      "repro": true
+    },
+    {
+      "code": "300424",
+      "name": "航新科技",
+      "n": 54,
+      "win": 57.4,
+      "ci95": [
+        42.6,
+        70.4
+      ],
+      "half1": 59.3,
+      "half2": 55.6,
+      "stability": "稳定",
+      "phase_bull": 64.3,
+      "n_bull": 42,
+      "phase_bear": 33.3,
+      "n_bear": 12,
+      "prev_win": 57.4,
+      "repro": true
+    },
+    {
+      "code": "300252",
+      "name": "金信诺",
+      "n": 67,
+      "win": 56.7,
+      "ci95": [
+        43.3,
+        67.2
+      ],
+      "half1": 51.5,
+      "half2": 61.8,
+      "stability": "稳定",
+      "phase_bull": 60.0,
+      "n_bull": 45,
+      "phase_bear": 50.0,
+      "n_bear": 22,
+      "prev_win": 56.7,
+      "repro": true
+    },
+    {
+      "code": "600765",
+      "name": "中航重机",
+      "n": 62,
+      "win": 56.5,
+      "ci95": [
+        45.1,
+        69.4
+      ],
+      "half1": 54.8,
+      "half2": 58.1,
+      "stability": "稳定",
+      "phase_bull": 85.7,
+      "n_bull": 7,
+      "phase_bear": 52.7,
+      "n_bear": 55,
+      "prev_win": 56.5,
+      "repro": true
+    },
+    {
+      "code": "000519",
+      "name": "中兵红箭",
+      "n": 59,
+      "win": 55.9,
+      "ci95": [
+        42.4,
+        67.8
+      ],
+      "half1": 58.6,
+      "half2": 53.3,
+      "stability": "稳定",
+      "phase_bull": 58.3,
+      "n_bull": 24,
+      "phase_bear": 54.3,
+      "n_bear": 35,
+      "prev_win": 55.9,
+      "repro": true
+    },
+    {
+      "code": "600685",
+      "name": "中船防务",
+      "n": 52,
+      "win": 55.8,
+      "ci95": [
+        42.3,
+        69.2
+      ],
+      "half1": 50.0,
+      "half2": 61.5,
+      "stability": "稳定",
+      "phase_bull": 51.5,
+      "n_bull": 33,
+      "phase_bear": 63.2,
+      "n_bear": 19,
+      "prev_win": 55.8,
+      "repro": true
+    },
+    {
+      "code": "002519",
+      "name": "银河电子",
+      "n": 56,
+      "win": 55.4,
+      "ci95": [
+        42.8,
+        67.9
+      ],
+      "half1": 42.9,
+      "half2": 67.9,
+      "stability": "反转",
+      "phase_bull": 48.5,
+      "n_bull": 33,
+      "phase_bear": 65.2,
+      "n_bear": 23,
+      "prev_win": 55.4,
+      "repro": true
+    },
+    {
+      "code": "002829",
+      "name": "星网宇达",
+      "n": 45,
+      "win": 53.3,
+      "ci95": [
+        37.8,
+        66.7
+      ],
+      "half1": 72.7,
+      "half2": 34.8,
+      "stability": "反转",
+      "phase_bull": 87.5,
+      "n_bull": 16,
+      "phase_bear": 34.5,
+      "n_bear": 29,
+      "prev_win": 53.3,
+      "repro": true
+    },
+    {
+      "code": "600184",
+      "name": "光电股份",
+      "n": 57,
+      "win": 52.6,
+      "ci95": [
+        40.4,
+        66.7
+      ],
+      "half1": 60.7,
+      "half2": 44.8,
+      "stability": "反转",
+      "phase_bull": 55.3,
+      "n_bull": 38,
+      "phase_bear": 47.4,
+      "n_bear": 19,
+      "prev_win": 52.6,
+      "repro": true
+    },
+    {
+      "code": "300722",
+      "name": "新余国科",
+      "n": 48,
+      "win": 52.1,
+      "ci95": [
+        37.5,
+        66.7
+      ],
+      "half1": 41.7,
+      "half2": 62.5,
+      "stability": "反转",
+      "phase_bull": 55.9,
+      "n_bull": 34,
+      "phase_bear": 42.9,
+      "n_bear": 14,
+      "prev_win": 52.1,
+      "repro": true
+    },
+    {
+      "code": "000561",
+      "name": "烽火电子",
+      "n": 58,
+      "win": 51.7,
+      "ci95": [
+        39.7,
+        63.8
+      ],
+      "half1": 55.2,
+      "half2": 48.3,
+      "stability": "反转",
+      "phase_bull": 69.6,
+      "n_bull": 23,
+      "phase_bear": 40.0,
+      "n_bear": 35,
+      "prev_win": 51.7,
+      "repro": true
+    },
+    {
+      "code": "600764",
+      "name": "中国海防",
+      "n": 91,
+      "win": 51.6,
+      "ci95": [
+        40.7,
+        61.5
+      ],
+      "half1": 46.7,
+      "half2": 56.5,
+      "stability": "反转",
+      "phase_bull": 48.1,
+      "n_bull": 52,
+      "phase_bear": 56.4,
+      "n_bear": 39,
+      "prev_win": 51.6,
+      "repro": true
+    },
+    {
+      "code": "300775",
+      "name": "三角防务",
+      "n": 41,
+      "win": 51.2,
+      "ci95": [
+        36.6,
+        65.9
+      ],
+      "half1": 45.0,
+      "half2": 57.1,
+      "stability": "反转",
+      "phase_bull": 62.5,
+      "n_bull": 8,
+      "phase_bear": 48.5,
+      "n_bear": 33,
+      "prev_win": 51.2,
+      "repro": true
+    },
+    {
+      "code": "300629",
+      "name": "新劲刚",
+      "n": 51,
+      "win": 51.0,
+      "ci95": [
+        37.3,
+        64.7
+      ],
+      "half1": 48.0,
+      "half2": 53.8,
+      "stability": "反转",
+      "phase_bull": 50.0,
+      "n_bull": 26,
+      "phase_bear": 52.0,
+      "n_bear": 25,
+      "prev_win": 51.0,
+      "repro": true
+    },
+    {
+      "code": "000738",
+      "name": "航发控制",
+      "n": 49,
+      "win": 51.0,
+      "ci95": [
+        36.7,
+        65.3
+      ],
+      "half1": 50.0,
+      "half2": 52.0,
+      "stability": "稳定",
+      "phase_bull": 81.8,
+      "n_bull": 11,
+      "phase_bear": 42.1,
+      "n_bear": 38,
+      "prev_win": 51.0,
+      "repro": true
+    },
+    {
+      "code": "300447",
+      "name": "全信股份",
+      "n": 55,
+      "win": 50.9,
+      "ci95": [
+        38.2,
+        63.6
+      ],
+      "half1": 59.3,
+      "half2": 42.9,
+      "stability": "反转",
+      "phase_bull": 60.7,
+      "n_bull": 28,
+      "phase_bear": 40.7,
+      "n_bear": 27,
+      "prev_win": 50.9,
+      "repro": true
+    },
+    {
+      "code": "300101",
+      "name": "振芯科技",
+      "n": 64,
+      "win": 50.0,
+      "ci95": [
+        37.5,
+        61.0
+      ],
+      "half1": 53.1,
+      "half2": 46.9,
+      "stability": "反转",
+      "phase_bull": 52.2,
+      "n_bull": 23,
+      "phase_bear": 48.8,
+      "n_bear": 41,
+      "prev_win": 50.0,
+      "repro": true
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "n": 32,
+      "win": 50.0,
+      "ci95": [
+        34.4,
+        68.8
+      ],
+      "half1": 62.5,
+      "half2": 37.5,
+      "stability": "反转",
+      "phase_bull": 61.5,
+      "n_bull": 26,
+      "phase_bear": 0.0,
+      "n_bear": 6,
+      "prev_win": 50.0,
+      "repro": true
+    },
+    {
+      "code": "600862",
+      "name": "中航高科",
+      "n": 44,
+      "win": 50.0,
+      "ci95": [
+        34.1,
+        65.9
+      ],
+      "half1": 50.0,
+      "half2": 50.0,
+      "stability": "稳定",
+      "phase_bull": 45.5,
+      "n_bull": 11,
+      "phase_bear": 51.5,
+      "n_bear": 33,
+      "prev_win": 50.0,
+      "repro": true
+    },
+    {
+      "code": "300397",
+      "name": "天和防务",
+      "n": 65,
+      "win": 49.2,
+      "ci95": [
+        36.9,
+        61.5
+      ],
+      "half1": 37.5,
+      "half2": 60.6,
+      "stability": "反转",
+      "phase_bull": 41.7,
+      "n_bull": 48,
+      "phase_bear": 70.6,
+      "n_bear": 17,
+      "prev_win": 49.2,
+      "repro": true
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "n": 55,
+      "win": 49.1,
+      "ci95": [
+        36.4,
+        61.8
+      ],
+      "half1": 51.9,
+      "half2": 46.4,
+      "stability": "反转",
+      "phase_bull": 53.3,
+      "n_bull": 30,
+      "phase_bear": 44.0,
+      "n_bear": 25,
+      "prev_win": 49.1,
+      "repro": true
+    },
+    {
+      "code": "300008",
+      "name": "天海防务",
+      "n": 73,
+      "win": 47.9,
+      "ci95": [
+        35.6,
+        58.9
+      ],
+      "half1": 41.7,
+      "half2": 54.1,
+      "stability": "反转",
+      "phase_bull": 52.2,
+      "n_bull": 46,
+      "phase_bear": 40.7,
+      "n_bear": 27,
+      "prev_win": 47.9,
+      "repro": true
+    },
+    {
+      "code": "300900",
+      "name": "广联航空",
+      "n": 42,
+      "win": 47.6,
+      "ci95": [
+        33.3,
+        61.9
+      ],
+      "half1": 47.6,
+      "half2": 47.6,
+      "stability": "不稳",
+      "phase_bull": 46.7,
+      "n_bull": 15,
+      "phase_bear": 48.1,
+      "n_bear": 27,
+      "prev_win": 47.6,
+      "repro": true
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "n": 60,
+      "win": 46.7,
+      "ci95": [
+        33.3,
+        58.3
+      ],
+      "half1": 43.3,
+      "half2": 50.0,
+      "stability": "不稳",
+      "phase_bull": 45.5,
+      "n_bull": 33,
+      "phase_bear": 48.1,
+      "n_bear": 27,
+      "prev_win": 46.7,
+      "repro": true
+    },
+    {
+      "code": "300065",
+      "name": "海兰信",
+      "n": 77,
+      "win": 45.5,
+      "ci95": [
+        35.0,
+        57.1
+      ],
+      "half1": 57.9,
+      "half2": 33.3,
+      "stability": "反转",
+      "phase_bull": 59.5,
+      "n_bull": 37,
+      "phase_bear": 32.5,
+      "n_bear": 40,
+      "prev_win": 45.5,
+      "repro": true
+    },
+    {
+      "code": "600038",
+      "name": "中直股份",
+      "n": 9,
+      "win": 44.4,
+      "ci95": [
+        11.1,
+        77.8
+      ],
+      "half1": 25.0,
+      "half2": 60.0,
+      "stability": "反转",
+      "phase_bull": null,
+      "n_bull": 0,
+      "phase_bear": 44.4,
+      "n_bear": 9,
+      "prev_win": 44.4,
+      "repro": true
+    },
+    {
+      "code": "000547",
+      "name": "航天发展",
+      "n": 80,
+      "win": 43.8,
+      "ci95": [
+        32.5,
+        53.8
+      ],
+      "half1": 52.5,
+      "half2": 35.0,
+      "stability": "反转",
+      "phase_bull": 50.0,
+      "n_bull": 48,
+      "phase_bear": 34.4,
+      "n_bear": 32,
+      "prev_win": 43.8,
+      "repro": true
+    },
+    {
+      "code": "002625",
+      "name": "光启技术",
+      "n": 43,
+      "win": 41.9,
+      "ci95": [
+        27.9,
+        55.8
+      ],
+      "half1": 42.9,
+      "half2": 40.9,
+      "stability": "不稳",
+      "phase_bull": 47.8,
+      "n_bull": 23,
+      "phase_bear": 35.0,
+      "n_bear": 20,
+      "prev_win": 41.9,
+      "repro": true
+    },
+    {
+      "code": "300699",
+      "name": "光威复材",
+      "n": 34,
+      "win": 41.2,
+      "ci95": [
+        23.5,
+        58.8
+      ],
+      "half1": 41.2,
+      "half2": 41.2,
+      "stability": "不稳",
+      "phase_bull": 66.7,
+      "n_bull": 3,
+      "phase_bear": 38.7,
+      "n_bear": 31,
+      "prev_win": 41.2,
+      "repro": true
+    },
+    {
+      "code": "600855",
+      "name": "航天长峰",
+      "n": 68,
+      "win": 39.7,
+      "ci95": [
+        27.9,
+        51.5
+      ],
+      "half1": 35.3,
+      "half2": 44.1,
+      "stability": "不稳",
+      "phase_bull": 40.8,
+      "n_bull": 49,
+      "phase_bear": 36.8,
+      "n_bear": 19,
+      "prev_win": 39.7,
+      "repro": true
+    },
+    {
+      "code": "601698",
+      "name": "中国卫通",
+      "n": 57,
+      "win": 36.8,
+      "ci95": [
+        24.6,
+        49.1
+      ],
+      "half1": 35.7,
+      "half2": 37.9,
+      "stability": "不稳",
+      "phase_bull": 38.9,
+      "n_bull": 36,
+      "phase_bear": 33.3,
+      "n_bear": 21,
+      "prev_win": 36.8,
+      "repro": true
+    },
+    {
+      "code": "603712",
+      "name": "七一二",
+      "n": 55,
+      "win": 34.5,
+      "ci95": [
+        21.8,
+        47.3
+      ],
+      "half1": 33.3,
+      "half2": 35.7,
+      "stability": "不稳",
+      "phase_bull": 75.0,
+      "n_bull": 4,
+      "phase_bear": 31.4,
+      "n_bear": 51,
+      "prev_win": 34.5,
+      "repro": true
+    },
+    {
+      "code": "300034",
+      "name": "钢研高纳",
+      "n": 44,
+      "win": 29.5,
+      "ci95": [
+        15.9,
+        43.2
+      ],
+      "half1": 31.8,
+      "half2": 27.3,
+      "stability": "不稳",
+      "phase_bull": 50.0,
+      "n_bull": 2,
+      "phase_bear": 28.6,
+      "n_bear": 42,
+      "prev_win": 29.5,
+      "repro": true
+    }
+  ]
+}

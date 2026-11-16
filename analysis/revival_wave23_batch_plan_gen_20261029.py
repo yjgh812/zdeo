@@ -1,0 +1,64 @@
+# -*- coding: utf-8 -*-
+"""revival_wave23_batch_plan_gen_20261029.py — Wave23 名单(T=20261029) → buy-batch 执行计划
+
+同构 revival_wave23_batch_plan_gen.py (T=20261027 批), 新信号日新脚本(项目惯例)。
+输入: data/revival_wave23_picks_20261028.json (signal_date=20261029,
+      md5 fd3207de49188887c813a0b73b16fee2, 冻结名单, 本批=60分钟确认层接入后第一批:
+      日线信号+60min死叉否决/顺延补位, pick.60min 字段记录确认层结果)
+输出: data/revival_wave23_batch_plan_20261029.json (trade_executor buy-batch 字段)
+字段语义: sector=申万L1, prev_close=信号日前一交易日(20261028)qfq收盘,
+price=信号日(20261029)收盘价(合同委托价, 透传不改动), execute=true。
+执行: 周一(20261102)09:23 RevivalExecAll_0923 第6腿(revival_all_run.cmd v2 CALL 语义),
+一次计划 rc=0 后 ren .executed; 滞后2交易日按冻结价挂单如实标注(可能不成交=如实记录)。
+"""
+from __future__ import annotations
+import json, sys, os, sqlite3, hashlib
+
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+ROOT = r"D:\zcodesj"
+QFQ = r"D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db"
+IND_DB = os.path.join(ROOT, "data", "industry_group_map_snapshot.db")
+SRC = os.path.join(ROOT, "data", "revival_wave23_picks_20261028.json")
+OUT = os.path.join(ROOT, "data", "revival_wave23_batch_plan_20261029.json")
+
+doc = json.load(open(SRC, encoding="utf-8"))
+T = int(doc["signal_date"])
+assert T == 20261029, f"名单信号日漂移: {T}"
+
+con = sqlite3.connect(f"file:{QFQ}?mode=ro", uri=True)
+dates = [r[0] for r in con.execute(
+    "select distinct date from stock_daily_meta_qfq where date<? order by date desc limit 2", (T,))]
+prev_d = dates[0]
+ind_con = sqlite3.connect(f"file:{IND_DB}?mode=ro", uri=True)
+ind = dict(ind_con.execute("select code,l1 from l1_member"))
+ind_con.close()
+
+plan = []
+for src, m in doc["methods"].items():
+    for p in m["picks"]:
+        code6 = p["code"]
+        pc = con.execute(
+            "select close from stock_daily_meta_qfq where code=? and date=?",
+            (code6, prev_d)).fetchone()
+        plan.append({
+            "code": code6,
+            "name": p["name"],
+            "source": src,
+            "price": p["price"],
+            "volume": p["volume"],
+            "sector": ind.get(code6, "未知"),
+            "prev_close": round(float(pc[0]), 2) if pc and pc[0] else None,
+            "note": f"revival W23 {src} 60min={p.get('60min', '?')} {p['rule'][:32]}",
+            "execute": True,
+        })
+con.close()
+
+with open(OUT, "w", encoding="utf-8") as f:
+    json.dump(plan, f, ensure_ascii=False, indent=1)
+
+n = len(plan)
+cost = sum(p["price"] * p["volume"] for p in plan)
+miss_sector = sum(1 for p in plan if p["sector"] == "未知")
+miss_pc = sum(1 for p in plan if p["prev_close"] is None)
+print(f"plan={OUT}\nitems={n} budget={cost:.0f} sector缺失={miss_sector} prev_close缺失={miss_pc} prev_date={prev_d}")
+print("md5:", hashlib.md5(open(OUT, "rb").read()).hexdigest())

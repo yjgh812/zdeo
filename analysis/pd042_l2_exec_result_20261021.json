@@ -1,0 +1,96 @@
+{
+ "date": "2026-10-21",
+ "orders": 11,
+ "placed": 11,
+ "released_est": 37794.0,
+ "results": [
+  {
+   "code": "600694",
+   "name": "大商股份",
+   "qty": 300,
+   "limit": 14.47,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "600035",
+   "name": "楚天高速",
+   "qty": 1300,
+   "limit": 3.69,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "002174",
+   "name": "游族网络",
+   "qty": 100,
+   "limit": 12.23,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "600827",
+   "name": "百联股份",
+   "qty": 200,
+   "limit": 7.61,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "300612",
+   "name": "宣亚国际",
+   "qty": 400,
+   "limit": 12.64,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "002291",
+   "name": "遥望科技",
+   "qty": 500,
+   "limit": 5.92,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "000670",
+   "name": "盈方微",
+   "qty": 500,
+   "limit": 6.05,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "300071",
+   "name": "福石控股",
+   "qty": 500,
+   "limit": 3.98,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "301102",
+   "name": "兆讯传媒",
+   "qty": 500,
+   "limit": 9.49,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "601019",
+   "name": "山东出版",
+   "qty": 500,
+   "limit": 6.7,
+   "status": "PLACED",
+   "note": ""
+  },
+  {
+   "code": "603803",
+   "name": "瑞斯康达",
+   "qty": 500,
+   "limit": 9.57,
+   "status": "PLACED",
+   "note": ""
+  }
+ ]
+}

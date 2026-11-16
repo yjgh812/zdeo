@@ -1,0 +1,50 @@
+{
+ "hold5": {
+  "ungated": {
+   "n": 261616,
+   "win": 59.9,
+   "wilson": null,
+   "median": 1.27,
+   "mean": 1.65
+  },
+  "gated": {
+   "n": 122013,
+   "win": 66.0,
+   "wilson": null,
+   "median": 1.84,
+   "mean": 2.48
+  }
+ },
+ "hold10": {
+  "ungated": {
+   "n": 261616,
+   "win": 59.6,
+   "wilson": null,
+   "median": 1.68,
+   "mean": 2.51
+  },
+  "gated": {
+   "n": 122013,
+   "win": 63.6,
+   "wilson": null,
+   "median": 2.21,
+   "mean": 3.21
+  }
+ },
+ "hold20": {
+  "ungated": {
+   "n": 261616,
+   "win": 56.3,
+   "wilson": null,
+   "median": 1.6,
+   "mean": 3.24
+  },
+  "gated": {
+   "n": 122013,
+   "win": 57.2,
+   "wilson": null,
+   "median": 1.73,
+   "mean": 3.56
+  }
+ }
+}

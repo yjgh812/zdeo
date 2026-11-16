@@ -1,0 +1,26 @@
+{
+ "task": "B7-crowding-OOS",
+ "run_at": "2026-10-21T13:06:24",
+ "checks": {
+  "oos_rows": {
+   "pass": true,
+   "n": 1118
+  },
+  "duplicates": {
+   "pass": true,
+   "count": 0
+  },
+  "null_rate": {
+   "pass": true,
+   "rate": 0.0
+  },
+  "monotonic_unique": {
+   "pass": true
+  },
+  "ew_bench_coverage": {
+   "pass": true,
+   "value": 1.0
+  }
+ },
+ "overall": "PASS"
+}

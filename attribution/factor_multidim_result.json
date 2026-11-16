@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T21:21:51.111044",
+    "data_source": "qlib_bin (V1 PASS, NaN filtered)",
+    "date_range": "2020-01-02 ~ 2026-08-06",
+    "valid_days": 1529,
+    "total_observations": 5385965,
+    "baseline_zt_rate": 1.39
+  },
+  "d1_multi_window_momentum": {
+    "mom5": {
+      "n_days": 1529,
+      "ic_mean": 0.0182,
+      "icir": 0.1616,
+      "t": 6.319,
+      "p": 0.0,
+      "pos_pct": 60.7,
+      "significant": 

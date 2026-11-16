@@ -1,0 +1,31 @@
+{
+ "id": "PREREG-DDPROTECT-V5",
+ "title": "组合C载体×门控信号外生化（市场指数门控替代载体自身指数）",
+ "owner": "D:\\zcodesj 择时研究线",
+ "created_at": "2026-09-14",
+ "new_premise": "V4(89688de9)实测: 组合C载体上自身指数门控交换率恶化(1.06pp拖累/pp改善)且机理=簇性快跌+自身指数鞭挞滞后; v2混合臂已证市场指数门控在β层有真保护力(−10pp@近零代价)——故唯一有据再验证前提=门控信号外生化, 主人9/14第五轮「继续」兑现",
+ "carrier_frozen": "与V4完全一致: canonical冻结名单 combo_c_2016_trades_20260906.csv 重建日频组合(V4实测: 年化+22.34%/Sharpe0.955/MDD-28.91%)",
+ "hypothesis_frozen": "门控源换成外生市场等权池指数(池=(1+市场日收益).cumprod, 市场日收益=全池AVG(change_pct)/100)后, 同样4变体在组合C载体上的保护交换率显著优于V4自身指数门控, primary达到「MDD改善≥5pp 且 年化拖累≤2pp」",
+ "mechanism_frozen": {
+  "gate": "市场池价格指数>MA_N(市场池) 满仓, 否则w_floor; t收盘观测t+1生效; 成本=|Δw|×0.15%; 每日调仓",
+  "grid_4变体": "MA_N{20,60} × floor{0.5,0.7}; primary=MA20/0.5",
+  "对照": "V4同载体的自身指数门控结果(4.23pp@4.47pp等)为直接对照基线, 如实并报"
+ },
+ "gates_frozen": [
+  "P0功效: 评估期≥800交易日",
+  "P1保护效率(primary): MDD改善≥5pp 且 年化拖累≤2pp 且 CVaR5不更深",
+  "P2稳健: 4变体中≥2个过P1 且 primary前后半窗MDD改善均>0 且 分年拖累≤2pp年份占比≥60%"
+ ],
+ "sensitivity_descriptive_not_gates": [
+  "未投部分现金1.8%年化",
+  "4变体全表",
+  "与V4自身门控的逐变体对照表"
+ ],
+ "verdict_rule": "P0∧P1∧P2=外生门控在组合C载体获验证支持, 提请主人裁决接线设计(另行prereg零自动); 任一不过=『外生门控未改善组合C载体保护交换率』登记TIMING-DDPROTECT-STAGE3(验证性结论)——簇性快跌难防结论成立, 本线按主人指示归档或另立全新前提",
+ "anti_peek": "本文件先落盘指纹(除fingerprint外全文sha256前16位); 网格/判据/primary/符号约定(MDD负值,改善=覆盖−持有>0)全部冻结, 沿用V3/V4修正后语义; 禁跑后增删变体改阈值",
+ "expected_runtime_artifacts": [
+  "portrait_agent/ddprotect_v5_20260914.py",
+  "data/ddprotect_v5_results_20260914.json"
+ ],
+ "fingerprint": "3d7d4c6047c71252"
+}

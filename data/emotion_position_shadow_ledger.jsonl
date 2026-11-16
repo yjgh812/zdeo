@@ -1,0 +1,16 @@
+{"date": "20261008", "phase": "diverging", "height": "rising", "weight": 0.7, "mkt_ret": -0.744069472078413, "arm_a_ret": -0.005208, "arm_b_ret": -0.007441, "ts": "2026-10-08T23:51:46"}
+{"date": "20261012", "phase": "diverging", "height": "rising", "weight": 0.7, "mkt_ret": -1.52415434615808, "arm_a_ret": -0.010669, "arm_b_ret": -0.015242, "ts": "2026-10-12T22:12:44"}
+{"date": "20261014", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -1.6606661716444313, "arm_a_ret": -0.009964, "arm_b_ret": -0.016607, "ts": "2026-10-14T22:10:18"}
+{"date": "20261016", "phase": "diverging", "height": "rising", "weight": 0.7, "mkt_ret": 0.5053319269125235, "arm_a_ret": 0.003537, "arm_b_ret": 0.005053, "ts": "2026-10-19T23:43:17"}
+{"date": "20261009", "phase": "healing", "height": "rising", "weight": 1.0, "mkt_ret": 0.5948263996138362, "arm_a_ret": 0.005948, "arm_b_ret": 0.005948, "ts": "2026-10-20T00:58:29"}
+{"date": "20261013", "phase": "healing", "height": "flat", "weight": 0.8, "mkt_ret": 0.4991681757132839, "arm_a_ret": 0.003993, "arm_b_ret": 0.004992, "ts": "2026-10-20T00:58:29"}
+{"date": "20261015", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -2.858287436277718, "arm_a_ret": -0.01715, "arm_b_ret": -0.028583, "ts": "2026-10-20T00:58:29"}
+{"date": "20261019", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -0.1994123771825702, "arm_a_ret": -0.001196, "arm_b_ret": -0.001994, "ts": "2026-10-20T00:58:29"}
+{"date": "20261020", "phase": "ebbing", "height": "rising", "weight": 0.8, "mkt_ret": 0.8479034341215391, "arm_a_ret": 0.006783, "arm_b_ret": 0.008479, "ts": "2026-10-20T20:25:54"}
+{"date": "20261021", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -0.13693521757087443, "arm_a_ret": -0.000822, "arm_b_ret": -0.001369, "ts": "2026-10-21T22:07:34"}
+{"date": "20261022", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -2.717053080335112, "arm_a_ret": -0.016302, "arm_b_ret": -0.027171, "ts": "2026-10-23T00:17:25"}
+{"date": "20261023", "phase": "healing", "height": "flat", "weight": 0.8, "mkt_ret": 1.6676014155032928, "arm_a_ret": 0.013341, "arm_b_ret": 0.016676, "ts": "2026-10-23T21:59:49"}
+{"date": "20261026", "phase": "ebbing", "height": "rising", "weight": 0.8, "mkt_ret": -0.5247607049660371, "arm_a_ret": -0.004198, "arm_b_ret": -0.005248, "ts": "2026-10-26T22:19:46"}
+{"date": "20261027", "phase": "diverging", "height": "rising", "weight": 0.7, "mkt_ret": -2.5830779977736276, "arm_a_ret": -0.018082, "arm_b_ret": -0.025831, "ts": "2026-10-27T21:04:02"}
+{"date": "20261028", "phase": "diverging", "height": "rising", "weight": 0.7, "mkt_ret": 1.6481965331219262, "arm_a_ret": 0.011537, "arm_b_ret": 0.016482, "ts": "2026-10-28T22:00:19"}
+{"date": "20261029", "phase": "ebbing", "height": "flat", "weight": 0.6, "mkt_ret": -2.3972739932562073, "arm_a_ret": -0.014384, "arm_b_ret": -0.023973, "ts": "2026-10-29T19:09:08"}

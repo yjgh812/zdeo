@@ -1,0 +1,24 @@
+{
+ "id": "20261024-v25-2026reeval-v1",
+ "ts": "2026-10-24T00:00:00",
+ "object": "v25 ml_h20_wfa 重启条件③（2026真窗OOS绝对转正）判定时点预注册——封序列窥探漏洞（反复补打分至转正=可选停止；PROJECT_BOUNDARY §3 v25段重启四件套之③的判定协议化）",
+ "precondition": "重启条件②信号供给恢复须先落地：A案=round12_wf_retrain.py WF重训扩展（协议内，指纹380b95ffbb494d64零变更）或B案=冻结末窗模型新建日线打分器（协议修订，须prereg修订版+新指纹）；两案动工均须主人专门令，本prereg锁定（locked=true）后链令方可批",
+ "engine": "A案=round12 WF协议原样（早停修复版固定500轮，打分年2019-2026）；B案=届时prereg修订版为准",
+ "evaluation_points_frozen": {
+  "E1_primary": "2026-12-31：v25 2026全年累计OOS收益（口径=ml_h20_wfa trial C4同尺，绝对值非相对基线）",
+  "E2_buffer": "2027-01-15：仅当E1时点数据链缺≤10个交易日时补判，其余情形不启用",
+  "not_evaluable_trigger": "若②供给至2026-11-30仍未恢复 → G1(2026)=NOT_EVALUABLE，处置回主人（显式豁免2026窗或改裁2027窗，二者均须主人令）"
+ },
+ "criterion": {
+  "G1_pass": "E1（或E2）时点 v25 2026段累计OOS > 0（绝对转正）",
+  "G1_fail": "E1/E2 判负 → v25 PASS_CANDIDATE 终结归档，重启须全新前提+新指纹",
+  "G1_not_evaluable": "按 not_evaluable_trigger 回主人裁决"
+ },
+ "anti_peeking": "非注册时点（E1/E2）禁止以判定口径重算2026段；任何研究性呈现须显式标注「非判定口径·不构成G1证据」；每次注册判定无论正负当日写入 wfa_trials.jsonl（新指纹=20261024-v25-2026reeval，与380b95ff打分协议指纹并存不混淆）",
+ "known_data_disclosure": "冻结读数-0.02%（截至2026-10-08窗口，trial c75d4f1779fa8cf6 C4）在案为公开底数；20260903-20261023段从未打分，不存在先验信息；E1判定必然包含对主人已知的该底数",
+ "trial_budget": "每注册时点1次（E1一次；E2仅在触发条件内1次）",
+ "commitment": "G1_pass→提请主人启动重启条件④影子期（≥1季度零交易权验收）；G1_fail→归档禁复活（新前提除外）；NOT_EVALUABLE→主人裁决豁免或换窗；跑后禁改；本草案locked=false，锁定执行须主人批准（与②链恢复令可同令批准）",
+ "status": "locked_active",
+ "lock_record": "2026-10-24 主人回传令「链动工（A/B 未选）、prereg 锁定、33 件源码归属，全部在主人/属主域」=锁定授权（按会话令流惯例）；E1/E2/触发线/反窥探条款即时生效",
+ "result": null
+}

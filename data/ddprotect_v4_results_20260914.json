@@ -1,0 +1,100 @@
+{
+ "prereg_id": "PREREG-DDPROTECT-V4",
+ "fingerprint": "89688de9dfc92763",
+ "carrier": {
+  "ann_ret": 22.34,
+  "ann_vol": 23.39,
+  "sharpe": 0.955,
+  "mdd": -28.91,
+  "cvar5": -3.592,
+  "n": 2601,
+  "active_day_ratio": 0.968,
+  "skipped_trades": 0
+ },
+ "variants": [
+  {
+   "ma": 20,
+   "floor": 0.5,
+   "mdd": -24.68,
+   "mdd_impr": 4.23,
+   "drag": 4.47,
+   "cvar5": -2.782,
+   "sharpe": 0.958,
+   "pass_p1": false
+  },
+  {
+   "ma": 20,
+   "floor": 0.7,
+   "mdd": -26.3,
+   "mdd_impr": 2.61,
+   "drag": 2.67,
+   "cvar5": -3.054,
+   "sharpe": 0.969,
+   "pass_p1": false
+  },
+  {
+   "ma": 60,
+   "floor": 0.5,
+   "mdd": -25.35,
+   "mdd_impr": 3.56,
+   "drag": 8.17,
+   "cvar5": -2.924,
+   "sharpe": 0.751,
+   "pass_p1": false
+  },
+  {
+   "ma": 60,
+   "floor": 0.7,
+   "mdd": -25.87,
+   "mdd_impr": 3.04,
+   "drag": 4.9,
+   "cvar5": -3.143,
+   "sharpe": 0.854,
+   "pass_p1": false
+  }
+ ],
+ "cash_sens_descriptive": {
+  "mdd": -24.31,
+  "ann_ret": 18.24
+ },
+ "P0": {
+  "eval_days": 2601,
+  "pass": true
+ },
+ "P1": {
+  "primary": {
+   "ma": 20,
+   "floor": 0.5,
+   "mdd": -24.68,
+   "mdd_impr": 4.23,
+   "drag": 4.47,
+   "cvar5": -2.782,
+   "sharpe": 0.958,
+   "pass_p1": false
+  },
+  "pass": false
+ },
+ "P2": {
+  "n_variants_pass_p1": 0,
+  "halves_mdd_impr": [
+   4.23,
+   9.55
+  ],
+  "yearly_drag": {
+   "2016": 13.75,
+   "2017": 2.91,
+   "2018": -1.75,
+   "2019": 6.65,
+   "2020": 8.69,
+   "2021": 4.11,
+   "2022": -4.97,
+   "2023": 10.83,
+   "2024": -2.09,
+   "2025": 11.02,
+   "2026": -1.64
+  },
+  "drag_ok_year_ratio": 0.36,
+  "pass": false
+ },
+ "verdict": "FAIL"
+}

@@ -1,0 +1,61 @@
+{
+ "window": "2025-01-01+",
+ "r0_n": 123,
+ "skipped": 0,
+ "metrics": {
+  "R0": {
+   "n": 123,
+   "win_rate": 30.89,
+   "pl_ratio": 0.921,
+   "med_ret": -3.178,
+   "extra_turnover": 0.0
+  },
+  "R1": {
+   "n": 123,
+   "win_rate": 20.33,
+   "pl_ratio": 0.941,
+   "med_ret": -3.935,
+   "extra_turnover": 0.198
+  },
+  "R2": {
+   "n": 123,
+   "win_rate": 27.64,
+   "pl_ratio": 0.883,
+   "med_ret": -5.413,
+   "extra_turnover": 0.476
+  },
+  "R3": {
+   "n": 123,
+   "win_rate": 29.27,
+   "pl_ratio": 0.924,
+   "med_ret": -3.069,
+   "extra_turnover": 0.231
+  }
+ },
+ "added_count": {
+  "R1": 46,
+  "R2": 117,
+  "R3": 60
+ },
+ "verdict": {
+  "R1": {
+   "win_rate_ok": false,
+   "pl_ok": false,
+   "turnover_ok": true,
+   "pass": false
+  },
+  "R2": {
+   "win_rate_ok": false,
+   "pl_ok": false,
+   "turnover_ok": true,
+   "pass": false
+  },
+  "R3": {
+   "win_rate_ok": false,
+   "pl_ok": false,
+   "turnover_ok": true,
+   "pass": false
+  }
+ },
+ "conclusion": "TERMINATE_ALL_FAIL"
+}

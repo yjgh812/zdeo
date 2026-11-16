@@ -1,0 +1,90 @@
+[
+ {
+  "code": "300397",
+  "name": "天和防务",
+  "volume": 200,
+  "price": 10.48,
+  "source": "method_picks",
+  "sector": "国防军工",
+  "prev_close": 9.98,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "300873",
+  "name": "海晨股份",
+  "volume": 100,
+  "price": 13.17,
+  "source": "method_picks",
+  "sector": "交通运输",
+  "prev_close": 12.54,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "300017",
+  "name": "网宿科技",
+  "volume": 100,
+  "price": 15.6,
+  "source": "method_picks",
+  "sector": "计算机",
+  "prev_close": 14.86,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "600601",
+  "name": "方正科技",
+  "volume": 200,
+  "price": 10.83,
+  "source": "method_picks",
+  "sector": "电子",
+  "prev_close": 10.31,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "603636",
+  "name": "南威软件",
+  "volume": 200,
+  "price": 8.97,
+  "source": "method_picks",
+  "sector": "计算机",
+  "prev_close": 8.54,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "300411",
+  "name": "金盾股份",
+  "volume": 200,
+  "price": 8.85,
+  "source": "method_picks",
+  "sector": "机械设备",
+  "prev_close": 8.43,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000029",
+  "name": "深深房A",
+  "volume": 100,
+  "price": 21.32,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 20.3,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000031",
+  "name": "大悦城",
+  "volume": 1100,
+  "price": 2.19,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 2.09,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

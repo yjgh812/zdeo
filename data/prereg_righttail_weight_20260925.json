@@ -1,0 +1,29 @@
+{
+ "arm": "RIGHT-TAIL-WEIGHT-V1",
+ "universe": "与回测引擎 bp_ep_core 同源: factor_pit.db stock_factors_fundamental_pit_v2 (PIT merge_asof backward by code) + dragon_quant_qfq.db; 日度重算 ep/bp(=raw*ref_close/当日close, 引擎L495-531语义); 当日close<=30; tradable剔除(688/689/8/4/92/43前缀, is_st=0); Top20",
+ "signal": "score=(ep_rank+bp_rank)/2 (引擎 bp_ep_signal 同款公式); 调度=每22个交易日(引擎 strategy.py: 首个交易日即生成信号, 此后每隔22交易日; T信号日收盘生成, T+1执行)",
+ "weight_shadow": "w_i ∝ rank_i (Top20内按score降序排名1..20线性加权), clip单票<=2x等权(0.10), 归一化; alpha=1 先验冻结禁扫参",
+ "weight_baseline": "Top20 等权(引擎现行为)",
+ "period": "影子12个执行周期(自2026-10首个执行日起, 约2026-10~2027-09)",
+ "hold": "T+1开盘价成交(引擎语义): 执行日开盘买入, 持有至下个执行日开盘; 末期无下个执行日用样本末日收盘; 差值法免成本建模(两臂成本一阶对称)",
+ "stop": "无(影子不涉真实交易)",
+ "gate": "影子期满: settled n>=12 且 mean(周期差spread)>0 且 Newey-West(滞后3阶) t>=2 且 影子年化>等权年化 且 影子MDD<=等权MDD(不恶化); 任一不满足=FAIL禁止提产; 提产另走wfa_gate一票制",
+ "regression_anchor": "实现放行前置硬锚(V2): tracker信号截面Top20与bt7引擎执行日买入码 precision>=90%; 达标月占比>=95%方可出数, 未达标月从两臂同时剔除并落盘清单(两臂同剔无偏倚)。V1锚(全月必须达标否则整体拒绝)经实弹检验: 115/118月(97.5%)达标, 3个月(2022-07/2023-03/2023-06)差异根因=引擎风险清仓日放弃调仓的路径依赖(strategy.py pending_risk_liquidate 分支, 非信号层差异, tracker不复刻清仓路径), 故V2修订锚口径",
+ "backfill": "2016-2026全历史周期样本内对照=参照值sanity(有前视风险, 明确非影子结算, 不作为证据仅作实现正确性校验)",
+ "shadow_start": "202610",
+ "note": "证据链=bt7收益源分解(盈利top10%笔贡献盈利额62-69%双臂同构; 后视镜天花板S2≈+27.1%年化口径, 不可实现仅供立项排序); 与既有赢家归因(百亚/内蒙新华/盾安=右尾持有)互证; 风险=2026年bp_ep胜率28.6%银行簇逆风期加权可能放大簇内集中(MDD不恶化条款为兜底); L3失败形态降权0.25x/情绪乘数在影子两臂同用不构成差异源; 本prereg为L2阶梯首项(主人2026-09-25裁决不放弃200%方向)",
+ "version": "V2",
+ "superseded": "V1(同日修订: V1调仓日历假设=自然月首买入日+次日收盘成交, 实弹证伪=引擎实为22交易日调度+T+1开盘价成交; V1锚口径无路径依赖容差; V1未产生任何影子记录)",
+ "fingerprint": "a8bdaca64d122f9c",
+ "frozen_at": "2026-09-25",
+ "anchor": {
+  "top10_win_contribution_bp_pct": 69,
+  "top10_win_contribution_ml_pct": 62,
+  "ceiling_S2_ann_pct": 27.1,
+  "ceiling_S1_ann_pct": 21.4,
+  "baseline_combo_total_pct": 203.25,
+  "baseline_combo_mdd_pct": -16.86,
+  "anchor_pass_rate_backfill": "115/118=97.5% (V1锚实弹)"
+ },
+ "evidence_files": "D:/zcodesj/reports/drift_check_20260924a_0924end/{RETURN_SOURCE_DECOMP.md,bp_ep_core_trades_full.csv,ml_signal_trades_full.csv}"
+}

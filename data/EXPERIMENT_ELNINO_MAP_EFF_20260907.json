@@ -1,0 +1,45 @@
+{
+  "experiment": "elnino_mapping_efficiency_5stock",
+  "created": "2026-09-06",
+  "directive": "主人2026-09-06指令: 腾讯自选股模拟盘(practice_190)周一买入五只验证厄尔尼诺映射效率假说",
+  "hypothesis": "同等商品涨价下, A股标的股价响应由映射效率(业务纯度x市值弹性x盈利结构)决定, 与品种逻辑正确性无关; 实证锚=2015-16南宁糖业+137%(效率1:1) vs 中粮糖业/海南橡胶0%(横盘)",
+  "orders_plan": [
+    {"code": "000911", "name": "*ST广糖", "chain": "糖", "role": "映射效率1:1样本", "prev_close": 5.82, "volume": 1500, "limit_price": 6.11, "budget": 9000, "gate": "R-S5+R6双豁免(主人追加裁决000911周一必买; 干跑PASS_WITH_WARN); 残余风险=ST涨停封板属市场物理限制"},
+    {"code": "600737", "name": "中粮糖业", "chain": "糖", "role": "映射效率0对照", "prev_close": 15.61, "volume": 500, "limit_price": 16.39, "budget": 9000, "gate": "PASS_WITH_WARN"},
+    {"code": "601118", "name": "海南橡胶", "chain": "胶", "role": "映射效率0对照", "prev_close": 7.03, "volume": 1200, "limit_price": 7.37, "budget": 9000, "gate": "PASS_WITH_WARN"},
+    {"code": "002637", "name": "赞宇科技", "chain": "棕榈油", "role": "加工端顺价样本", "prev_close": 12.38, "volume": 700, "limit_price": 12.98, "budget": 9000, "gate": "PASS_WITH_WARN"},
+    {"code": "002011", "name": "盾安环境", "chain": "空调", "role": "高温即时兑现样本", "prev_close": 10.85, "volume": 800, "limit_price": 11.39, "budget": 9000, "gate": "PASS_WITH_WARN"}
+  ],
+  "execution": {
+    "channel": "trade_executor.py buy 逐笔(--execute), 双层防线全走, source=manual_confirmed",
+    "schedule": "schtasks TulongElninoExp_0935 @ 2026-09-07 09:35 (盘中,一次性,执行后自删除)",
+    "wrapper": "data/elnino_exp_execute_20260907.py",
+    "log": "data/elnino_exp_exec_20260907.log",
+    "audit_trail": "executor_orders.jsonl + guard_precheck_log + 闸门R-S5降WARN留痕"
+  },
+  "exemption_disclosure": {
+    "what": "五只全部触发R-S5不追高闸(mom20 +4.8%~+28.3%, 主人9/5裁决A硬约束)",
+    "how": "--owner-approve-rs5(闸门侧降WARN留痕); executor原不透传该参数, 本轮补齐接口(2处最小改动)",
+    "why": "主人指令明确(五只点名+周一+验证目的); AskUserQuestion征询未获回复, 按best judgment以模拟盘小额(合计~4.2万, 占总资产4.6%)执行",
+    "residual": "若主人不认可豁免, 周一09:35前 schtasks /f /delete /tn TulongElninoExp_0935 即可中止"
+  },
+  "incidents_fixed": [
+    "批量模式拒绝manual_confirmed(设计如此:特批须逐笔) -> 转逐笔通道",
+    "executor未透传--owner-approve-rs5(集成缺口) -> 补2处透传(带2026-09-06注释)",
+    "海南橡胶prev_close误写3.79(獐子岛价格张冠李戴) -> R7闸实时价交叉校验拦截, 修正7.03",
+    "赞宇limit_price=+5.0%触发buy_stale_ref熔断 -> 调12.98(+4.85%)"
+  ],
+  "master_confirmation": "主人2026-09-06追认「对，买入这5只股票，来验证自己」——R-S5/R6双豁免获追认, 实验定性=验证AI自己的映射效率假说而非验证厄尔尼诺, 判据跑前冻结如下",
+  "pass_criteria_frozen": {
+    "primary_T20": "T+20交易日(约2026-10-09)收盘, 三只糖胶股区间涨幅排序: 000911居首且与次名差≥3pp = 假说成立",
+    "falsified": "000911在{000911,600737,601118}中排末位 = 映射效率假说证伪, 登记violation并修正选股框架",
+    "noise_band": "三者极差<3pp = 不可判(噪声带), 观察延长至12月达峰窗口再裁",
+    "secondary": "赞宇/盾安为独立链对照不计入主判据; 任一单因限价/涨停未成交如实记缺源, 缺源≥2单则实验降级为不可判",
+    "accountability": "证伪则AI向主人提交框架修正报告; 成立亦不构成厄尔尼诺主题可重仓的证据(单样本n=1)"
+  },
+  "observation": {
+    "checkpoints": ["2026-10-09(月度)", "2026-12月(CMA达峰窗口)", "2027事件结束"],
+    "pass_criteria": "000911涨幅显著>600737且>601118 = 映射效率假说成立; 反之证伪",
+    "risk_notes": "000911为*ST(退市风险警示,日涨跌停±5%); 国储抛储为糖链头号反向; 高开超limit_price的样本将缺源(如实记录不追价)"
+  }
+}

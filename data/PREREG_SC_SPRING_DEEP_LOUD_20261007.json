@@ -1,0 +1,37 @@
+{
+ "name": "PREREG_SC_SPRING_DEEP_LOUD",
+ "title": "SC_SPRING_DEEP_LOUD 深位放量破位收回弹簧(候选甲)影子验证",
+ "status": "ACTIVE",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-07', 'decision': '主人令「按推荐继续」=批准执行报告呈请推荐路径: prereg登记→60日影子(候选辛同族管线)→到期裁决', 'activation_since': '20261008', 'runner': 'analysis/sc_spring_shadow_daily.py(全史重算幂等, 参数单一真源=本文件 params 字段, 缺字段fail-closed退出)'}",
+ "registered": "2026-10-07",
+ "family": "stock_event_spring",
+ "sibling": "sold_rebuy_deep8 pilot(c52fdf8b, 自家卖出票-8%回补, 已实战接线)为同族推广——事件源差异: 本件=全市场事件级, pilot=自家卖出票级; 不并轨不替代, 若主人日后裁决并轨须明确事件源差异",
+ "evidence_report": "reports/wyckoff_full_study_20261007.md §五/§九 (in-sample 1990-2026 qfq库, 两波24臂)",
+ "in_sample_evidence": "{'main': {'n': 6204, 'med20': 10.29, 'win20': 70.2, 'net_mean_stop8': 9.37, 'years': '2016-2026分年9正2负(2023 -3.09/2026 -0.38)'}, 'tier_limitdn': {'n': 1808, 'med20': 16.76, 'win20': 80.2, 'caveat': '2024年样本占54%(微盘股灾-924行情堆积)'}, 'caveats': ['ST未滤', 'qfq库幸存者偏差(疑仅存续股, 对破位不收回类结论偏乐观)', '2024样本堆积', '未经影子前向']}",
+ "params": {
+  "lookback_low": 20,
+  "vol_mult_break": 1.5,
+  "dep_min_confirm": 0.2,
+  "recover_days": 3,
+  "dedup_days": 5,
+  "holding_horizons": [
+   5,
+   20,
+   30
+  ],
+  "entry": "next_open",
+  "limit_open_skip": "main_0.10_gem_0.20_since_20200824",
+  "stop_sim_pct": -8.0,
+  "universe_exclude_prefix": [
+   "688",
+   "689",
+   "920"
+  ],
+  "holding_horizons_note": "5=入样锚定窗(对齐样内验证f5入样口径,零验收语义); 20=主验收窗; 30=延长观察窗"
+ },
+ "trigger_locked": "T日收盘破20日最低价(L20=截至T-1日的20日滚动最低) 且 T日成交量>=1.5×截至T-1日的20日均量 且 确认日j∈(T, T+3]收盘收回L20之上 且 确认日距20日最高点回撤>20%(确认日口径 dep=(H20[j]-close[j])/H20[j]) → 入场=j+1日开盘(涨停开盘剔除: 主板+10%/创业板+20%按2020-08-24分界); 全部条件j日收盘可计算零前视; 同票5日去重",
+ "quality_layers": "{'limitdn_break': '破位日跌幅<=-9.5%分层(样内med20+16.76/win80.2, 仅记录不门控)', 'rev_vol_ratio': '收回日量比分层(revloud>1.0样内+7.75 / revquiet<=1.0样内+2.54, 仅记录不门控)', 'note': '分层字段防样本掉窗口, 沿PREREG_FTD家族口径'}",
+ "control_arm": "real_breakdown对照(破位3日内未收回)同台账精简记录, 服务真破位判别器观察级(候选丙, 不接线不门控)",
+ "acceptance_locked": "{'window': '日历2026-12-31 或 OOS到期事件n>=20 先到为准', 'pass': 'OOS到期样本med20>=+3.0% 且 win20>=55%', 'kill_switch': 'OOS前10个到期事件med20全部<0 -> 提请废案', 'oos_anchor_note': '样内+10.29/70.2含牛熊全期与2024堆积, OOS按保守+3.0/55锚定; 2023/2026型弱熊阴跌年为已知失效环境, OOS跨牛熊段属预期'}",
+ "boundary": "纯观测影子层零交易权, 不接闸门不接交易cron不接executor; 挂daily_chain[sc_spring]仅产出台账与快照; 信号权=主人; 候选乙(强中卖机械化)与候选丙(真破位判别器)本件不接线仅登记观察"
+}

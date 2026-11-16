@@ -1,0 +1,4004 @@
+{
+  "meta": {
+    "event_date": "20260810",
+    "prev_date": "20260807",
+    "total_event_stocks": 4947,
+    "limit_up_count": 104,
+    "big_drop_count": 16,
+    "sealed_count": 101,
+    "broken_count": 3,
+    "limit_down_count": 8
+  },
+  "limit_up_attribution": [
+    {
+      "code": "600186",
+      "sector": "食品饮料",
+      "pct": 0.100101,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "食品饮料板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.23,
+        "return_5d": 21.65,
+        "return_20d": -9.43,
+        "vol_ratio": 1.24,
+        "boards": 0,
+        "gap": 3.94
+      }
+    },
+    {
+      "code": "600192",
+      "sector": "电力设备",
+      "pct": 0.100418,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+13.7%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 13.66,
+        "return_5d": 9.3,
+        "return_20d": 7.66,
+        "vol_ratio": 1.29,
+        "boards": 0,
+        "gap": -0.56
+      }
+    },
+    {
+      "code": "600227",
+      "sector": "基础化工",
+      "pct": 0.098802,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.74,
+        "return_5d": 2.14,
+        "return_20d": 30.47,
+        "vol_ratio": 1.2,
+        "boards": 0,
+        "gap": -1.5
+      }
+    },
+    {
+      "code": "600272",
+      "sector": "医药生物",
+      "pct": 0.100231,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 18,
+        "capital": 47,
+        "sector_link": 35,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+5.1%",
+        "放量3.4倍",
+        "高开10.0%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 5.14,
+        "return_5d": 23.88,
+        "return_20d": 20.2,
+        "vol_ratio": 3.43,
+        "boards": 0,
+        "gap": 10.02
+      }
+    },
+    {
+      "code": "600316",
+      "sector": "国防军工",
+      "pct": 0.099846,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0.47,
+        "return_5d": 3.31,
+        "return_20d": -9.33,
+        "vol_ratio": 0.95,
+        "boards": 0,
+        "gap": -0.58
+      }
+    },
+    {
+      "code": "600326",
+      "sector": "未知",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 25,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+8.6%",
+        "放量3.0倍",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 8.56,
+        "return_5d": 9.51,
+        "return_20d": 18.2,
+        "vol_ratio": 2.99,
+        "boards": 0,
+        "gap": -0.66
+      }
+    },
+    {
+      "code": "600327",
+      "sector": "商贸零售",
+      "pct": 0.100559,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.83,
+        "return_5d": -0.28,
+        "return_20d": 6.23,
+        "vol_ratio": 0.76,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "600337",
+      "sector": "轻工制造",
+      "pct": 0.098859,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-16%",
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -11.61,
+        "return_5d": 6.48,
+        "return_20d": -15.97,
+        "vol_ratio": 0.61,
+        "boards": 0,
+        "gap": 0.76
+      }
+    },
+    {
+      "code": "600356",
+      "sector": "轻工制造",
+      "pct": 0.099515,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+5.5%",
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 5.5,
+        "return_5d": 0.73,
+        "return_20d": 3.65,
+        "vol_ratio": 0.69,
+        "boards": 0,
+        "gap": -0.12
+      }
+    },
+    {
+      "code": "600490",
+      "sector": "有色金属",
+      "pct": 0.100279,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 15,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+8.7%",
+        "高开10.0%",
+        "有色金属板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 8.7,
+        "return_5d": 8.13,
+        "return_20d": 21.49,
+        "vol_ratio": 1.21,
+        "boards": 0,
+        "gap": 10.03
+      }
+    },
+    {
+      "code": "600641",
+      "sector": "房地产",
+      "pct": 0.100064,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "竞价抢筹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 15,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-27%",
+        "高开6.8%",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -12.25,
+        "return_5d": 20.26,
+        "return_20d": -26.74,
+        "vol_ratio": 1.04,
+        "boards": 0,
+        "gap": 6.78
+      }
+    },
+    {
+      "code": "600664",
+      "sector": "医药生物",
+      "pct": 0.099415,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+15.7%",
+        "高开9.9%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 15.73,
+        "return_5d": 16.13,
+        "return_20d": 102.97,
+        "vol_ratio": 0.57,
+        "boards": 0,
+        "gap": 9.94
+      }
+    },
+    {
+      "code": "600683",
+      "sector": "房地产",
+      "pct": 0.09966,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "竞价抢筹",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 15,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "高开9.8%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.32,
+        "return_5d": 16.95,
+        "return_20d": -14.69,
+        "vol_ratio": 0.8,
+        "boards": 0,
+        "gap": 9.85
+      }
+    },
+    {
+      "code": "600698",
+      "sector": "汽车",
+      "pct": 0.10061,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+6.0%",
+        "汽车板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 5.96,
+        "return_5d": 0.31,
+        "return_20d": 11.38,
+        "vol_ratio": 0.46,
+        "boards": 0,
+        "gap": -0.46
+      }
+    },
+    {
+      "code": "600721",
+      "sector": "医药生物",
+      "pct": 0.09962,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 20,
+        "capital": 40,
+        "sector_link": 40,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+16.9%",
+        "温和放量",
+        "高开10.0%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 16.86,
+        "return_5d": 49.93,
+        "return_20d": 55.0,
+        "vol_ratio": 1.91,
+        "boards": 0,
+        "gap": 9.96
+      }
+    },
+    {
+      "code": "600722",
+      "sector": "基础化工",
+      "pct": 0.100176,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+11.6%",
+        "温和放量",
+        "基础化工Top1(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 11.57,
+        "return_5d": 5.96,
+        "return_20d": 41.54,
+        "vol_ratio": 1.68,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "600793",
+      "sector": "轻工制造",
+      "pct": 0.099719,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+6.5%",
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 6.54,
+        "return_5d": 10.47,
+        "return_20d": -13.38,
+        "vol_ratio": 0.73,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "600815",
+      "sector": "机械设备",
+      "pct": 0.10061,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+17.5%",
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 17.47,
+        "return_5d": 12.71,
+        "return_20d": 24.71,
+        "vol_ratio": 0.88,
+        "boards": 0,
+        "gap": -0.3
+      }
+    },
+    {
+      "code": "600833",
+      "sector": "医药生物",
+      "pct": 0.0999,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "横盘箱体突破",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 31,
+        "capital": 23,
+        "sector_link": 46,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "横盘突破",
+        "温和放量",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 2.07,
+        "return_5d": 3.41,
+        "return_20d": 4.05,
+        "vol_ratio": 1.89,
+        "boards": 0,
+        "gap": 0.7
+      }
+    },
+    {
+      "code": "600936",
+      "sector": "传媒",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+14.4%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 14.39,
+        "return_5d": 5.46,
+        "return_20d": 21.74,
+        "vol_ratio": 1.43,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "600984",
+      "sector": "机械设备",
+      "pct": 0.10049,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.3%",
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.28,
+        "return_5d": 0.49,
+        "return_20d": 6.53,
+        "vol_ratio": 0.7,
+        "boards": 0,
+        "gap": 2.94
+      }
+    },
+    {
+      "code": "601020",
+      "sector": "有色金属",
+      "pct": 0.100236,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.6%",
+        "有色金属板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.62,
+        "return_5d": 8.35,
+        "return_20d": 1.68,
+        "vol_ratio": 1.22,
+        "boards": 0,
+        "gap": 1.65
+      }
+    },
+    {
+      "code": "601199",
+      "sector": "环保",
+      "pct": 0.099819,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -1.75,
+        "return_5d": -1.96,
+        "return_20d": -5.49,
+        "vol_ratio": 0.39,
+        "boards": 0,
+        "gap": 0.18
+      }
+    },
+    {
+      "code": "601606",
+      "sector": "国防军工",
+      "pct": 0.10003,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.1%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.12,
+        "return_5d": -3.09,
+        "return_20d": 17.38,
+        "vol_ratio": 0.98,
+        "boards": 0,
+        "gap": -1.19
+      }
+    },
+    {
+      "code": "601700",
+      "sector": "电力设备",
+      "pct": 0.099379,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+23.4%",
+        "温和放量",
+        "电力设备Top4(7只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 23.42,
+        "return_5d": 31.7,
+        "return_20d": 44.07,
+        "vol_ratio": 2.0,
+        "boards": 0,
+        "gap": -2.17
+      }
+    },
+    {
+      "code": "601886",
+      "sector": "建筑装饰",
+      "pct": 0.100363,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.4,
+        "return_5d": -4.28,
+        "return_20d": 5.35,
+        "vol_ratio": 1.03,
+        "boards": 0,
+        "gap": 0.48
+      }
+    },
+    {
+      "code": "603020",
+      "sector": "基础化工",
+      "pct": 0.0999,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-29%",
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -2.41,
+        "return_5d": 7.87,
+        "return_20d": -28.65,
+        "vol_ratio": 0.65,
+        "boards": 0,
+        "gap": 0.7
+      }
+    },
+    {
+      "code": "603038",
+      "sector": "未知",
+      "pct": 0.100073,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.72,
+        "return_5d": 13.52,
+        "return_20d": -7.56,
+        "vol_ratio": 0.64,
+        "boards": 0,
+        "gap": 0.15
+      }
+    },
+    {
+      "code": "603065",
+      "sector": "基础化工",
+      "pct": 0.099752,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-17%",
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -5.73,
+        "return_5d": 26.49,
+        "return_20d": -17.02,
+        "vol_ratio": 1.12,
+        "boards": 0,
+        "gap": 2.79
+      }
+    },
+    {
+      "code": "603130",
+      "sector": "纺织服饰",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.5%",
+        "纺织服饰板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.53,
+        "return_5d": 6.25,
+        "return_20d": 4.43,
+        "vol_ratio": 0.85,
+        "boards": 0,
+        "gap": 0.62
+      }
+    },
+    {
+      "code": "603151",
+      "sector": "农林牧渔",
+      "pct": 0.099688,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.74,
+        "return_5d": 6.47,
+        "return_20d": 7.9,
+        "vol_ratio": 0.62,
+        "boards": 0,
+        "gap": -0.39
+      }
+    },
+    {
+      "code": "603161",
+      "sector": "汽车",
+      "pct": 0.100142,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "汽车板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.49,
+        "return_5d": 1.22,
+        "return_20d": 10.34,
+        "vol_ratio": 0.49,
+        "boards": 0,
+        "gap": -0.14
+      }
+    },
+    {
+      "code": "603162",
+      "sector": "交通运输",
+      "pct": 0.09974,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.63,
+        "return_5d": 5.97,
+        "return_20d": 13.93,
+        "vol_ratio": 0.74,
+        "boards": 0,
+        "gap": 0.52
+      }
+    },
+    {
+      "code": "603188",
+      "sector": "基础化工",
+      "pct": 0.09901,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.33,
+        "return_5d": 3.32,
+        "return_20d": 3.86,
+        "vol_ratio": 0.69,
+        "boards": 0,
+        "gap": -0.25
+      }
+    },
+    {
+      "code": "603221",
+      "sector": "轻工制造",
+      "pct": 0.099919,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 21,
+        "capital": 36,
+        "sector_link": 43,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+51.6%",
+        "放量6.0倍",
+        "轻工制造Top5(7只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 51.56,
+        "return_5d": 46.52,
+        "return_20d": 107.01,
+        "vol_ratio": 6.04,
+        "boards": 0,
+        "gap": 4.47
+      }
+    },
+    {
+      "code": "603269",
+      "sector": "机械设备",
+      "pct": 0.099858,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-16%",
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.71,
+        "return_5d": 26.64,
+        "return_20d": -16.3,
+        "vol_ratio": 1.12,
+        "boards": 0,
+        "gap": 0.14
+      }
+    },
+    {
+      "code": "603382",
+      "sector": "基础化工",
+      "pct": 0.10011,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+6.7%",
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 6.67,
+        "return_5d": 0.39,
+        "return_20d": 8.6,
+        "vol_ratio": 0.82,
+        "boards": 0,
+        "gap": -0.06
+      }
+    },
+    {
+      "code": "603580",
+      "sector": "基础化工",
+      "pct": 0.099944,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+15.0%",
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 15.01,
+        "return_5d": 1.76,
+        "return_20d": 0,
+        "vol_ratio": 0.88,
+        "boards": 0,
+        "gap": -1.54
+      }
+    },
+    {
+      "code": "603711",
+      "sector": "食品饮料",
+      "pct": 0.100181,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "食品饮料板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.8,
+        "return_5d": -2.55,
+        "return_20d": -2.29,
+        "vol_ratio": 0.63,
+        "boards": 0,
+        "gap": -0.54
+      }
+    },
+    {
+      "code": "603725",
+      "sector": "轻工制造",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-25%",
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -12.11,
+        "return_5d": 8.97,
+        "return_20d": -25.22,
+        "vol_ratio": 0.55,
+        "boards": 0,
+        "gap": 1.08
+      }
+    },
+    {
+      "code": "603758",
+      "sector": "汽车",
+      "pct": 0.100191,
+      "sealed": true,
+      "primary_attribution": "tech_form",
+      "sub_types": [
+        "趋势加速",
+        "横盘箱体突破"
+      ],
+      "contributions": {
+        "tech_form": 47,
+        "capital": 33,
+        "sector_link": 20,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+5.1%",
+        "横盘突破",
+        "放量2.2倍",
+        "汽车板块联动"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 5.07,
+        "return_5d": 13.42,
+        "return_20d": 9.05,
+        "vol_ratio": 2.25,
+        "boards": 0,
+        "gap": 4.96
+      }
+    },
+    {
+      "code": "603797",
+      "sector": "环保",
+      "pct": 0.100719,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "横盘箱体突破",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 20,
+        "capital": 25,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "横盘突破",
+        "放量2.2倍",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.65,
+        "return_5d": 6.11,
+        "return_20d": 7.2,
+        "vol_ratio": 2.18,
+        "boards": 0,
+        "gap": 0.72
+      }
+    },
+    {
+      "code": "605033",
+      "sector": "基础化工",
+      "pct": 0.099888,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.82,
+        "return_5d": -6.51,
+        "return_20d": 2.59,
+        "vol_ratio": 1.04,
+        "boards": 0,
+        "gap": -0.22
+      }
+    },
+    {
+      "code": "605128",
+      "sector": "汽车",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+6.5%",
+        "汽车板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 6.53,
+        "return_5d": -0.87,
+        "return_20d": -1.68,
+        "vol_ratio": 1.11,
+        "boards": 0,
+        "gap": 0.88
+      }
+    },
+    {
+      "code": "605162",
+      "sector": "公用事业",
+      "pct": 0.100236,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+6.0%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 5.95,
+        "return_5d": 1.92,
+        "return_20d": 12.32,
+        "vol_ratio": 0.48,
+        "boards": 0,
+        "gap": 0.35
+      }
+    },
+    {
+      "code": "605179",
+      "sector": "食品饮料",
+      "pct": 0.099825,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "趋势加速"
+      ],
+      "contributions": {
+        "tech_form": 27,
+        "capital": 45,
+        "sector_link": 27,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 6,
+      "tags": [
+        "20日趋势+34.0%",
+        "放量2.5倍",
+        "食品饮料板块联动"
+      ],
+      "value_verdict": "有条件参考",
+      "factors_snapshot": {
+        "trend_20d": 34.01,
+        "return_5d": 17.91,
+        "return_20d": 75.02,
+        "vol_ratio": 2.45,
+        "boards": 0,
+        "gap": -0.18
+      }
+    },
+    {
+      "code": "605286",
+      "sector": "机械设备",
+      "pct": 0.100086,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.8,
+        "return_5d": 5.82,
+        "return_20d": -6.99,
+        "vol_ratio": 0.78,
+        "boards": 0,
+        "gap": 2.75
+      }
+    },
+    {
+      "code": "605336",
+      "sector": "家用电器",
+      "pct": 0.100255,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹"
+      ],
+      "contributions": {
+        "tech_form": 27,
+        "capital": 73,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 6,
+      "tags": [
+        "20日趋势+9.0%",
+        "放量2.1倍",
+        "高开10.0%"
+      ],
+      "value_verdict": "有条件参考",
+      "factors_snapshot": {
+        "trend_20d": 8.96,
+        "return_5d": 14.27,
+        "return_20d": 14.27,
+        "vol_ratio": 2.14,
+        "boards": 0,
+        "gap": 10.03
+      }
+    },
+    {
+      "code": "000026",
+      "sector": "纺织服饰",
+      "pct": 0.099769,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 15,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "温和放量",
+        "纺织服饰板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0.2,
+        "return_5d": 5.93,
+        "return_20d": -11.26,
+        "vol_ratio": 1.52,
+        "boards": 0,
+        "gap": -0.29
+      }
+    },
+    {
+      "code": "000428",
+      "sector": "社会服务",
+      "pct": 0.099237,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+14.3%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 14.35,
+        "return_5d": -6.65,
+        "return_20d": 26.37,
+        "vol_ratio": 1.29,
+        "boards": 0,
+        "gap": -1.02
+      }
+    },
+    {
+      "code": "000506",
+      "sector": "有色金属",
+      "pct": 0.099835,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+18.3%",
+        "有色金属板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 18.34,
+        "return_5d": 24.86,
+        "return_20d": 31.95,
+        "vol_ratio": 1.21,
+        "boards": 0,
+        "gap": 0.77
+      }
+    },
+    {
+      "code": "000537",
+      "sector": "公用事业",
+      "pct": 0.100529,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.72,
+        "return_5d": -2.58,
+        "return_20d": 6.03,
+        "vol_ratio": 0.55,
+        "boards": 0,
+        "gap": 1.85
+      }
+    },
+    {
+      "code": "000656",
+      "sector": "房地产",
+      "pct": 0.102564,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -1.55,
+        "return_5d": -3.31,
+        "return_20d": -10.69,
+        "vol_ratio": 1.12,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "000710",
+      "sector": "医药生物",
+      "pct": 0.10022,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+9.6%",
+        "温和放量",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 9.61,
+        "return_5d": 6.82,
+        "return_20d": 15.96,
+        "vol_ratio": 1.75,
+        "boards": 0,
+        "gap": 1.32
+      }
+    },
+    {
+      "code": "000802",
+      "sector": "传媒",
+      "pct": 0.100703,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 30,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.8%",
+        "温和放量",
+        "高开10.1%",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.79,
+        "return_5d": 10.05,
+        "return_20d": 11.78,
+        "vol_ratio": 1.61,
+        "boards": 0,
+        "gap": 10.07
+      }
+    },
+    {
+      "code": "000859",
+      "sector": "基础化工",
+      "pct": 0.100462,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.7%",
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.7,
+        "return_5d": 4.59,
+        "return_20d": 0.46,
+        "vol_ratio": 1.2,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "000973",
+      "sector": "基础化工",
+      "pct": 0.099678,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.66,
+        "return_5d": 3.07,
+        "return_20d": 2.39,
+        "vol_ratio": 0.9,
+        "boards": 0,
+        "gap": 0.4
+      }
+    },
+    {
+      "code": "001222",
+      "sector": "轻工制造",
+      "pct": 0.099929,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.2,
+        "return_5d": -1.34,
+        "return_20d": 4.16,
+        "vol_ratio": 0.73,
+        "boards": 0,
+        "gap": -0.07
+      }
+    },
+    {
+      "code": "001258",
+      "sector": "公用事业",
+      "pct": 0.100304,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+18.5%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 18.49,
+        "return_5d": 6.65,
+        "return_20d": 97.01,
+        "vol_ratio": 1.29,
+        "boards": 0,
+        "gap": 1.98
+      }
+    },
+    {
+      "code": "001300",
+      "sector": "轻工制造",
+      "pct": 0.09981,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "轻工制造Top5(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.31,
+        "return_5d": 5.73,
+        "return_20d": -11.0,
+        "vol_ratio": 0.77,
+        "boards": 0,
+        "gap": 2.28
+      }
+    },
+    {
+      "code": "001376",
+      "sector": "公用事业",
+      "pct": 0.099728,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.7%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.71,
+        "return_5d": -2.3,
+        "return_20d": 9.32,
+        "vol_ratio": 0.88,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "001388",
+      "sector": "电力设备",
+      "pct": 0.100043,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "竞价抢筹",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 15,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "高开10.0%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -8.4,
+        "return_5d": 15.82,
+        "return_20d": -14.25,
+        "vol_ratio": 0.88,
+        "boards": 0,
+        "gap": 10.0
+      }
+    },
+    {
+      "code": "002044",
+      "sector": "医药生物",
+      "pct": 0.099585,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+5.3%",
+        "医药生物Top2(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 5.29,
+        "return_5d": 0.84,
+        "return_20d": 3.88,
+        "vol_ratio": 0.86,
+        "boards": 0,
+        "gap": 0.83
+      }
+    },
+    {
+      "code": "002112",
+      "sector": "电力设备",
+      "pct": 0.100062,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+10.7%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 10.66,
+        "return_5d": -1.89,
+        "return_20d": 3.87,
+        "vol_ratio": 1.04,
+        "boards": 0,
+        "gap": 2.05
+      }
+    },
+    {
+      "code": "002141",
+      "sector": "农林牧渔",
+      "pct": 0.099836,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.41,
+        "return_5d": 9.11,
+        "return_20d": 18.64,
+        "vol_ratio": 1.44,
+        "boards": 0,
+        "gap": 0.16
+      }
+    },
+    {
+      "code": "002153",
+      "sector": "计算机",
+      "pct": 0.099757,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.3%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.3,
+        "return_5d": -3.52,
+        "return_20d": 6.2,
+        "vol_ratio": 1.32,
+        "boards": 0,
+        "gap": -0.12
+      }
+    },
+    {
+      "code": "002193",
+      "sector": "纺织服饰",
+      "pct": 0.100467,
+      "sealed": true,
+      "primary_attribution": "tech_form",
+      "sub_types": [
+        "横盘箱体突破"
+      ],
+      "contributions": {
+        "tech_form": 40,
+        "capital": 30,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "横盘突破",
+        "温和放量",
+        "纺织服饰板块联动"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 4.26,
+        "return_5d": 11.75,
+        "return_20d": 0.94,
+        "vol_ratio": 1.73,
+        "boards": 0,
+        "gap": 0.93
+      }
+    },
+    {
+      "code": "002248",
+      "sector": "机械设备",
+      "pct": 0.099562,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.2%",
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.16,
+        "return_5d": 4.46,
+        "return_20d": 3.39,
+        "vol_ratio": 1.22,
+        "boards": 0,
+        "gap": 0.22
+      }
+    },
+    {
+      "code": "002289",
+      "sector": "电子",
+      "pct": 0.100029,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-21%",
+        "电子板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -6.66,
+        "return_5d": 17.55,
+        "return_20d": -20.78,
+        "vol_ratio": 0.8,
+        "boards": 0,
+        "gap": 0.91
+      }
+    },
+    {
+      "code": "002298",
+      "sector": "计算机",
+      "pct": 0.100118,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+11.2%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 11.25,
+        "return_5d": -4.61,
+        "return_20d": 18.25,
+        "vol_ratio": 0.8,
+        "boards": 0,
+        "gap": 2.0
+      }
+    },
+    {
+      "code": "002300",
+      "sector": "电力设备",
+      "pct": 0.100279,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.6%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.55,
+        "return_5d": 3.01,
+        "return_20d": 12.54,
+        "vol_ratio": 0.56,
+        "boards": 0,
+        "gap": 0.28
+      }
+    },
+    {
+      "code": "002329",
+      "sector": "食品饮料",
+      "pct": 0.101587,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "食品饮料板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -0.62,
+        "return_5d": 4.65,
+        "return_20d": -3.08,
+        "vol_ratio": 0.86,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "002345",
+      "sector": "纺织服饰",
+      "pct": 0.100094,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "纺织服饰板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.72,
+        "return_5d": -2.75,
+        "return_20d": 5.27,
+        "vol_ratio": 0.79,
+        "boards": 0,
+        "gap": 1.98
+      }
+    },
+    {
+      "code": "002370",
+      "sector": "医药生物",
+      "pct": 0.100379,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "医药生物Top2(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 1.43,
+        "return_5d": 8.87,
+        "return_20d": -2.94,
+        "vol_ratio": 1.24,
+        "boards": 0,
+        "gap": 0.19
+      }
+    },
+    {
+      "code": "002388",
+      "sector": "电子",
+      "pct": 0.099617,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+11.0%",
+        "电子板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 10.99,
+        "return_5d": 12.26,
+        "return_20d": 16.26,
+        "vol_ratio": 0.89,
+        "boards": 0,
+        "gap": 0.77
+      }
+    },
+    {
+      "code": "002399",
+      "sector": "医药生物",
+      "pct": 0.100402,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "医药生物Top2(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0.34,
+        "return_5d": 2.79,
+        "return_20d": 4.4,
+        "vol_ratio": 1.2,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "002437",
+      "sector": "医药生物",
+      "pct": 0.099359,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "横盘箱体突破",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 22,
+        "capital": 44,
+        "sector_link": 33,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "横盘突破",
+        "放量2.5倍",
+        "高开5.5%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 0.6,
+        "return_5d": 9.47,
+        "return_20d": -0.32,
+        "vol_ratio": 2.54,
+        "boards": 0,
+        "gap": 5.45
+      }
+    },
+    {
+      "code": "002458",
+      "sector": "农林牧渔",
+      "pct": 0.10022,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 2.39,
+        "return_5d": 4.25,
+        "return_20d": 2.71,
+        "vol_ratio": 0.58,
+        "boards": 0,
+        "gap": 0.55
+      }
+    },
+    {
+      "code": "002474",
+      "sector": "计算机",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 15,
+        "sector_link": 0,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+8.2%",
+        "温和放量",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 8.21,
+        "return_5d": 3.06,
+        "return_20d": 10.54,
+        "vol_ratio": 1.63,
+        "boards": 0,
+        "gap": -0.16
+      }
+    },
+    {
+      "code": "002541",
+      "sector": "建筑装饰",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -4.13,
+        "return_5d": -8.38,
+        "return_20d": -4.88,
+        "vol_ratio": 0.7,
+        "boards": 0,
+        "gap": 0.59
+      }
+    },
+    {
+      "code": "002552",
+      "sector": "机械设备",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "超跌反弹",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日跌-21%",
+        "高开10.0%",
+        "机械设备Top3(8只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": -7.11,
+        "return_5d": 35.81,
+        "return_20d": -21.11,
+        "vol_ratio": 0.25,
+        "boards": 0,
+        "gap": 10.0
+      }
+    },
+    {
+      "code": "002580",
+      "sector": "电力设备",
+      "pct": 0.100105,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+10.9%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 10.93,
+        "return_5d": -2.0,
+        "return_20d": 3.81,
+        "vol_ratio": 0.99,
+        "boards": 0,
+        "gap": 0.58
+      }
+    },
+    {
+      "code": "002589",
+      "sector": "医药生物",
+      "pct": 0.098684,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 45,
+        "sector_link": 55,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "放量3.9倍",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 2.78,
+        "return_5d": 10.55,
+        "return_20d": 15.15,
+        "vol_ratio": 3.88,
+        "boards": 0,
+        "gap": 4.28
+      }
+    },
+    {
+      "code": "002622",
+      "sector": "医药生物",
+      "pct": 0.10084,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+7.2%",
+        "医药生物Top2(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 7.24,
+        "return_5d": 5.78,
+        "return_20d": 10.19,
+        "vol_ratio": 0.96,
+        "boards": 0,
+        "gap": -0.42
+      }
+    },
+    {
+      "code": "002626",
+      "sector": "食品饮料",
+      "pct": 0.100267,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "横盘箱体突破",
+        "竞价抢筹"
+      ],
+      "contributions": {
+        "tech_form": 27,
+        "capital": 53,
+        "sector_link": 20,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "横盘突破",
+        "放量2.1倍",
+        "高开8.1%",
+        "食品饮料板块联动"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 1.41,
+        "return_5d": 5.72,
+        "return_20d": 9.28,
+        "vol_ratio": 2.07,
+        "boards": 0,
+        "gap": 8.09
+      }
+    },
+    {
+      "code": "002647",
+      "sector": "非银金融",
+      "pct": 0.099581,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-18%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.13,
+        "return_5d": -1.75,
+        "return_20d": -18.11,
+        "vol_ratio": 0.94,
+        "boards": 0,
+        "gap": 0.1
+      }
+    },
+    {
+      "code": "002667",
+      "sector": "机械设备",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+22.7%",
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 22.7,
+        "return_5d": 29.81,
+        "return_20d": 28.89,
+        "vol_ratio": 1.24,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "002696",
+      "sector": "农林牧渔",
+      "pct": 0.100365,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+5.7%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 5.74,
+        "return_5d": 5.18,
+        "return_20d": 1.86,
+        "vol_ratio": 0.58,
+        "boards": 0,
+        "gap": 0.36
+      }
+    },
+    {
+      "code": "002739",
+      "sector": "传媒",
+      "pct": 0.099668,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "竞价抢筹",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 15,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "高开7.0%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -2.06,
+        "return_5d": 3.91,
+        "return_20d": -13.42,
+        "vol_ratio": 0.62,
+        "boards": 0,
+        "gap": 6.98
+      }
+    },
+    {
+      "code": "002748",
+      "sector": "基础化工",
+      "pct": 0.099908,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 3.3,
+        "return_5d": 5.31,
+        "return_20d": -2.76,
+        "vol_ratio": 0.63,
+        "boards": 0,
+        "gap": -0.09
+      }
+    },
+    {
+      "code": "002783",
+      "sector": "基础化工",
+      "pct": 0.100536,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "基础化工Top1(13只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.4,
+        "return_5d": 0.81,
+        "return_20d": 5.82,
+        "vol_ratio": 1.14,
+        "boards": 0,
+        "gap": 0.54
+      }
+    },
+    {
+      "code": "002827",
+      "sector": "基础化工",
+      "pct": 0.100074,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 20,
+        "capital": 40,
+        "sector_link": 40,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+48.0%",
+        "温和放量",
+        "高开7.1%",
+        "基础化工Top1(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 48.03,
+        "return_5d": 56.53,
+        "return_20d": 136.92,
+        "vol_ratio": 1.89,
+        "boards": 0,
+        "gap": 7.09
+      }
+    },
+    {
+      "code": "002828",
+      "sector": "石油石化",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -1.4,
+        "return_5d": -5.87,
+        "return_20d": 0,
+        "vol_ratio": 0.86,
+        "boards": 0,
+        "gap": -1.37
+      }
+    },
+    {
+      "code": "002842",
+      "sector": "有色金属",
+      "pct": 0.100052,
+      "sealed": true,
+      "primary_attribution": "tech_form",
+      "sub_types": [
+        "横盘箱体突破"
+      ],
+      "contributions": {
+        "tech_form": 40,
+        "capital": 30,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "横盘突破",
+        "温和放量",
+        "有色金属板块联动"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 4.75,
+        "return_5d": 29.84,
+        "return_20d": 8.57,
+        "vol_ratio": 1.83,
+        "boards": 0,
+        "gap": 1.09
+      }
+    },
+    {
+      "code": "002885",
+      "sector": "电子",
+      "pct": 0.099966,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "竞价抢筹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 30,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "温和放量",
+        "高开10.0%",
+        "电子板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -0.17,
+        "return_5d": 24.67,
+        "return_20d": -14.85,
+        "vol_ratio": 1.62,
+        "boards": 0,
+        "gap": 10.0
+      }
+    },
+    {
+      "code": "002900",
+      "sector": "医药生物",
+      "pct": 0.100148,
+      "sealed": true,
+      "primary_attribution": "sector_link",
+      "sub_types": [
+        "趋势加速",
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 25,
+        "capital": 25,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "20日趋势+7.5%",
+        "高开6.1%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 7.51,
+        "return_5d": 17.63,
+        "return_20d": 37.55,
+        "vol_ratio": 1.37,
+        "boards": 0,
+        "gap": 6.08
+      }
+    },
+    {
+      "code": "002951",
+      "sector": "电力设备",
+      "pct": 0.100284,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+8.8%",
+        "电力设备Top4(7只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 8.85,
+        "return_5d": 6.43,
+        "return_20d": -3.1,
+        "vol_ratio": 0.73,
+        "boards": 0,
+        "gap": 1.0
+      }
+    },
+    {
+      "code": "003043",
+      "sector": "电子",
+      "pct": 0.1,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-28%",
+        "电子板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": -5.25,
+        "return_5d": 16.64,
+        "return_20d": -28.23,
+        "vol_ratio": 0.85,
+        "boards": 0,
+        "gap": 0.0
+      }
+    },
+    {
+      "code": "301051",
+      "sector": "电子",
+      "pct": 0.199768,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "超跌反弹",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日跌-16%",
+        "电子板块联动",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 4.74,
+        "return_5d": 35.56,
+        "return_20d": -16.17,
+        "vol_ratio": 1.24,
+        "boards": 0,
+        "gap": 1.33
+      }
+    },
+    {
+      "code": "301080",
+      "sector": "医药生物",
+      "pct": 0.2,
+      "sealed": true,
+      "primary_attribution": "capital",
+      "sub_types": [
+        "竞价抢筹",
+        "热点板块龙头/跟风"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 50,
+        "sector_link": 50,
+        "fundamental": 0,
+        "idiosyncratic": 0
+      },
+      "predictability": 7,
+      "tags": [
+        "温和放量",
+        "高开18.7%",
+        "医药生物Top2(13只涨停)"
+      ],
+      "value_verdict": "可复用涨停范式",
+      "factors_snapshot": {
+        "trend_20d": 3.44,
+        "return_5d": 33.84,
+        "return_20d": 27.96,
+        "vol_ratio": 1.99,
+        "boards": 0,
+        "gap": 18.73
+      }
+    },
+    {
+      "code": "301357",
+      "sector": "国防军工",
+      "pct": 0.199979,
+      "sealed": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "趋势加速",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 15,
+        "capital": 0,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "20日趋势+9.7%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 9.69,
+        "return_5d": -0.78,
+        "return_20d": 18.74,
+        "vol_ratio": 0.98,
+        "boards": 0,
+        "gap": -0.23
+      }
+    },
+    {
+      "code": "920179",
+      "sector": "电子",
+      "pct": 0.10514,
+      "sealed": false,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 15,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "电子板块联动",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0,
+        "return_5d": 21.78,
+        "return_20d": 0,
+        "vol_ratio": 1,
+        "boards": 0,
+        "gap": 2.23
+      }
+    },
+    {
+      "code": "920699",
+      "sector": "家用电器",
+      "pct": 0.155842,
+      "sealed": false,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "竞价抢筹",
+        "疑似消息驱动",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 15,
+        "sector_link": 0,
+        "fundamental": 30,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "高开6.8%",
+        "无前置技术信号",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0,
+        "return_5d": 19.02,
+        "return_20d": 0,
+        "vol_ratio": 1,
+        "boards": 0,
+        "gap": 6.78
+      }
+    },
+    {
+      "code": "920870",
+      "sector": "机械设备",
+      "pct": 0.104938,
+      "sealed": false,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "热点板块龙头/跟风",
+        "特异收益"
+      ],
+      "contributions": {
+        "tech_form": 0,
+        "capital": 0,
+        "sector_link": 30,
+        "fundamental": 0,
+        "idiosyncratic": 50
+      },
+      "predictability": 2,
+      "tags": [
+        "机械设备Top3(8只涨停)",
+        "随机涨停"
+      ],
+      "value_verdict": "无参考价值(随机/消息)",
+      "factors_snapshot": {
+        "trend_20d": 0,
+        "return_5d": 2.25,
+        "return_20d": 0,
+        "vol_ratio": 1,
+        "boards": 0,
+        "gap": 0.44
+      }
+    }
+  ],
+  "big_drop_attribution": [
+    {
+      "code": "600363",
+      "sector": "电子",
+      "pct": -0.1,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "趋势破位加速"
+      ],
+      "contributions": {
+        "tech_breakdown": 50,
+        "capital_flight": 50,
+        "sentiment_retreat": 0,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日趋势-5.4%",
+        "放量下跌6.1倍"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": -5.43,
+        "return_5d": -11.35,
+        "return_20d": -33.16,
+        "vol_ratio": 6.13,
+        "boards": 0
+      }
+    },
+    {
+      "code": "600449",
+      "sector": "未知",
+      "pct": -0.1,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 40,
+        "capital_flight": 27,
+        "sentiment_retreat": 33,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨23%后回落",
+        "放量下跌3.2倍",
+        "未知板块2只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 12.79,
+        "return_5d": 18.5,
+        "return_20d": 22.53,
+        "vol_ratio": 3.17,
+        "boards": 0
+      }
+    },
+    {
+      "code": "603093",
+      "sector": "非银金融",
+      "pct": -0.307479,
+      "is_limit_down": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似突发利空",
+        "特异亏损"
+      ],
+      "contributions": {
+        "tech_breakdown": 0,
+        "capital_flight": 0,
+        "sentiment_retreat": 0,
+        "fundamental_neg": 35,
+        "idiosyncratic": 50
+      },
+      "avoidability": 2,
+      "tags": [
+        "无前置风险信号",
+        "随机大跌"
+      ],
+      "value_verdict": "不可预判风险",
+      "factors_snapshot": {
+        "trend_20d": 4.95,
+        "return_5d": 3.62,
+        "return_20d": 5.93,
+        "vol_ratio": 1.06,
+        "boards": 0
+      }
+    },
+    {
+      "code": "000429",
+      "sector": "交通运输",
+      "pct": -0.10473,
+      "is_limit_down": true,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "疑似突发利空",
+        "特异亏损"
+      ],
+      "contributions": {
+        "tech_breakdown": 0,
+        "capital_flight": 0,
+        "sentiment_retreat": 0,
+        "fundamental_neg": 35,
+        "idiosyncratic": 50
+      },
+      "avoidability": 2,
+      "tags": [
+        "无前置风险信号",
+        "随机大跌"
+      ],
+      "value_verdict": "不可预判风险",
+      "factors_snapshot": {
+        "trend_20d": 0.39,
+        "return_5d": 1.65,
+        "return_20d": 9.63,
+        "vol_ratio": 1.57,
+        "boards": 0
+      }
+    },
+    {
+      "code": "000779",
+      "sector": "建筑装饰",
+      "pct": -0.099611,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 55,
+        "capital_flight": 0,
+        "sentiment_retreat": 45,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨21%后回落",
+        "建筑装饰板块3只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 16.47,
+        "return_5d": 0.55,
+        "return_20d": 21.23,
+        "vol_ratio": 0.06,
+        "boards": 0
+      }
+    },
+    {
+      "code": "001232",
+      "sector": "未知",
+      "pct": -0.091734,
+      "is_limit_down": false,
+      "primary_attribution": "idiosyncratic",
+      "sub_types": [
+        "板块集体回调",
+        "特异亏损"
+      ],
+      "contributions": {
+        "tech_breakdown": 0,
+        "capital_flight": 0,
+        "sentiment_retreat": 25,
+        "fundamental_neg": 0,
+        "idiosyncratic": 50
+      },
+      "avoidability": 2,
+      "tags": [
+        "未知板块2只大跌",
+        "随机大跌"
+      ],
+      "value_verdict": "不可预判风险",
+      "factors_snapshot": {
+        "trend_20d": 0,
+        "return_5d": 0,
+        "return_20d": 0,
+        "vol_ratio": 1,
+        "boards": 0
+      }
+    },
+    {
+      "code": "002194",
+      "sector": "通信",
+      "pct": -0.099099,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 40,
+        "capital_flight": 27,
+        "sentiment_retreat": 33,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨24%后回落",
+        "放量下跌3.3倍",
+        "通信板块2只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 11.23,
+        "return_5d": 26.57,
+        "return_20d": 23.88,
+        "vol_ratio": 3.31,
+        "boards": 0
+      }
+    },
+    {
+      "code": "002721",
+      "sector": "纺织服饰",
+      "pct": -0.100649,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 40,
+        "capital_flight": 27,
+        "sentiment_retreat": 33,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨36%后回落",
+        "放量下跌7.6倍",
+        "纺织服饰板块2只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 13.43,
+        "return_5d": 26.75,
+        "return_20d": 35.68,
+        "vol_ratio": 7.6,
+        "boards": 0
+      }
+    },
+    {
+      "code": "002762",
+      "sector": "纺织服饰",
+      "pct": -0.099904,
+      "is_limit_down": true,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 40,
+        "capital_flight": 27,
+        "sentiment_retreat": 33,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨30%后回落",
+        "放量下跌2.9倍",
+        "纺织服饰板块2只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 16.36,
+        "return_5d": 22.61,
+        "return_20d": 29.64,
+        "vol_ratio": 2.91,
+        "boards": 0
+      }
+    },
+    {
+      "code": "002792",
+      "sector": "通信",
+      "pct": -0.083087,
+      "is_limit_down": false,
+      "primary_attribution": "sentiment_retreat",
+      "sub_types": [
+        "短期暴涨回调",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 44,
+        "capital_flight": 0,
+        "sentiment_retreat": 56,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 6,
+      "tags": [
+        "5日涨57%",
+        "通信板块2只大跌"
+      ],
+      "value_verdict": "有条件规避",
+      "factors_snapshot": {
+        "trend_20d": 15.33,
+        "return_5d": 56.52,
+        "return_20d": 8.11,
+        "vol_ratio": 0.37,
+        "boards": 0
+      }
+    },
+    {
+      "code": "300042",
+      "sector": "计算机",
+      "pct": -0.096603,
+      "is_limit_down": false,
+      "primary_attribution": "sentiment_retreat",
+      "sub_types": [
+        "短期暴涨回调",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 44,
+        "capital_flight": 0,
+        "sentiment_retreat": 56,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 6,
+      "tags": [
+        "5日涨20%",
+        "计算机板块2只大跌"
+      ],
+      "value_verdict": "有条件规避",
+      "factors_snapshot": {
+        "trend_20d": -2.36,
+        "return_5d": 19.97,
+        "return_20d": -25.59,
+        "vol_ratio": 1.34,
+        "boards": 0
+      }
+    },
+    {
+      "code": "300506",
+      "sector": "建筑装饰",
+      "pct": -0.095575,
+      "is_limit_down": false,
+      "primary_attribution": "sentiment_retreat",
+      "sub_types": [
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 0,
+        "capital_flight": 44,
+        "sentiment_retreat": 56,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 6,
+      "tags": [
+        "放量下跌4.0倍",
+        "建筑装饰板块3只大跌"
+      ],
+      "value_verdict": "有条件规避",
+      "factors_snapshot": {
+        "trend_20d": 5.02,
+        "return_5d": -1.74,
+        "return_20d": -14.0,
+        "vol_ratio": 4.02,
+        "boards": 0
+      }
+    },
+    {
+      "code": "300668",
+      "sector": "建筑装饰",
+      "pct": -0.094697,
+      "is_limit_down": false,
+      "primary_attribution": "sentiment_retreat",
+      "sub_types": [
+        "趋势破位加速",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 44,
+        "capital_flight": 0,
+        "sentiment_retreat": 56,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日趋势-4.2%",
+        "建筑装饰板块3只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": -4.19,
+        "return_5d": 4.85,
+        "return_20d": -30.27,
+        "vol_ratio": 0.85,
+        "boards": 0
+      }
+    },
+    {
+      "code": "300935",
+      "sector": "计算机",
+      "pct": -0.111309,
+      "is_limit_down": false,
+      "primary_attribution": "tech_breakdown",
+      "sub_types": [
+        "高位放量出货",
+        "板块集体回调"
+      ],
+      "contributions": {
+        "tech_breakdown": 55,
+        "capital_flight": 0,
+        "sentiment_retreat": 45,
+        "fundamental_neg": 0,
+        "idiosyncratic": 0
+      },
+      "avoidability": 7,
+      "tags": [
+        "20日涨33%后回落",
+        "计算机板块2只大跌"
+      ],
+      "value_verdict": "可规避风险点",
+      "factors_snapshot": {
+        "trend_20d": 26.73,
+        "return_5d": 33.21,
+        "return_20d": 32.64,
+        "vol_ratio": 1.13,
+        "boards": 0
+      }
+    },
+    {
+      "code": "301007",
+      "sector": "汽车",
+      "pct": -0.129851,
+      "is_limit_down": false,
+      "primary_attribution": "fundamental_neg",
+      "sub_types": [
+        "短期暴涨回调",
+        "疑似突发利空"
+      ],
+      "contributions": {
+        "tech_breakdown": 36,
+        "capital_flight": 0,
+        "sentiment_retreat": 0,
+        "fundamental_neg": 64,
+        "idiosyncratic": 0
+      },
+      "avoidability": 3,
+      "tags": [
+        "5日涨26%",
+        "无前置风险信号"
+      ],
+      "value_verdict": "不可预判风险",
+      "factors_snapshot": {
+        "trend_20d": 9.19,
+        "return_5d": 25.76,
+        "return_20d": 11.27,
+        "vol_ratio": 1.59,
+        "boards": 0
+      }
+    },
+    {
+      "code": "301188",
+      "sector": "医药生物",
+      "pct": -0.08875,
+      "is_limit_down": false,
+      "primary_attribution": "fundamental_neg",
+      "sub_types": [
+        "短期暴涨回调",
+        "疑似突发利空"
+      ],
+      "contributions": {
+        "tech_breakdown": 36,
+        "capital_flight": 0,
+        "sentiment_retreat": 0,
+        "fundamental_neg": 64,
+        "idiosyncratic": 0
+      },
+      "avoidability": 3,
+      "tags": [
+        "5日涨26%",
+        "无前置风险信号"
+      ],
+      "value_verdict": "不可预判风险",
+      "factors_snapshot": {
+        "trend_20d": -0.01,
+        "return_5d": 25.61,
+        "return_20d": -8.83,
+        "vol_ratio": 1.8,
+        "boards": 0
+      }
+    }
+  ],
+  "summary": {
+    "lu_primary_dist": {
+      "idiosyncratic": 84,
+      "sector_link": 9,
+      "capital": 8,
+      "tech_form": 3
+    },
+    "lu_predictability_dist": {
+      "不可预判(<5)": 84,
+      "可预判(>=7)": 18,
+      "中等(5-6)": 2
+    },
+    "lu_value_dist": {
+      "无参考价值(随机/消息)": 84,
+      "可复用涨停范式": 18,
+      "有条件参考": 2
+    },
+    "bd_primary_dist": {
+      "tech_breakdown": 7,
+      "sentiment_retreat": 4,
+      "idiosyncratic": 3,
+      "fundamental_neg": 2
+    },
+    "bd_avoidability_dist": {
+      "可规避(>=7)": 8,
+      "不可预判(<5)": 5,
+      "中等(5-6)": 3
+    },
+    "bd_value_dist": {
+      "可规避风险点": 8,
+      "不可预判风险": 5,
+      "有条件规避": 3
+    }
+  }
+}

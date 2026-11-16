@@ -1,0 +1,33 @@
+{
+ "id": "PREREG_FIRSTBOARD_PULLBACK_20261025",
+ "title": "首板断板回调·四阶段状态机 (主人「继续」令第一梯队第二项)",
+ "declared": "2026-10-25",
+ "origin": "主人第10-17轮spec收口(华安32615样本外部锚年化18.21%/MDD-8.99%宣称, 先验负本地裁决); 框架=第17轮策略库定稿",
+ "family_archive_citation": "BREAKOUT-SCOUT-TRADEABLE(20260909, 首板->蓄势->二板日次日入场, -3.48% 9/9年负, trial_budget已耗)——本检验条件差异=回调后反弹日/地量日入场(不追板不待二板), 状态机完整; 引用档案声明差异, 合法立项",
+ "rule_frozen": {
+  "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日, 入场日close<=30, volume>0 (与全量测试同宇宙)",
+  "stage1_firstboard": "D0=近30交易日首次涨停(主板change_pct>=9.8, 创业板300/301>=19.8, qfq百分数口径), 非一字(high!=low), 量>=2x前5日均量",
+  "stage2_pullback": "D1..D5内出现地量日=首个 vol<=vol(D0)/3 且 low>=low(D0); 若D1..地量日前出现涨停->无效(二板结构); 全程min low>=low(D0)(地板)",
+  "stage3_confirm": "确认日=地量日后[1,3]个交易日内首个 收阳(close>open) 且 vol>=1.2x前日vol; 无->结构失败",
+  "entry_main": "确认日次一交易日收盘(主臂, 唯一检验臂)",
+  "entry_control": "地量日次一交易日收盘(对照臂A); 确认日量>=vol(D0)(严格量, 对照臂B); 主板/创业板分板(对照臂C/D) — 全部描述不判定",
+  "exit": "t5e与t20e双口径: 持有5/20交易日, 先触-8%收盘止损(0.92), 到期收盘离场",
+  "cooldown": "同股事件后20交易日冷却",
+  "window": "20160101-20261023",
+  "baseline": "同信号日全宇宙(<=30/非ST/6-0-3)等权同口径t5e/t20e均值(匹配日期)",
+  "deferred_dims": "换手率/流通市值/封板质量(分时)三维因全史数据未接入缓测, 声明为已知未测维度——第14轮换手冲突(2:1偏放量)与市值带(30-150亿)留待数据接入后新prereg"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_events": "主臂事件数 n >= 500",
+  "G2_t20e_win_excess": "主臂t20e胜率-匹配基准 >= +3.0pp",
+  "G3_t5e_win_excess": "主臂t5e胜率-匹配基准 >= +2.0pp",
+  "G4_net_mean_excess": "主臂t20e含费(双边0.3%)均值超额(组合代理口径) >= +1.5pp",
+  "G5_by_year": "11个年度中>=6年t20e胜率超额>0",
+  "verdict_rule": "五门全过=PASS_CANDIDATE(提请主人裁决); 任一门未过=FAIL(登记负结果, 对照臂如实描述, 不跑后挖新变体)"
+ },
+ "multiple_testing_note": "主臂唯一=确认日入场; 对照臂A/B/C/D描述性不适用门禁",
+ "failure_clause": "FAIL时首板回调族不接线; 翻案须新指纹+新前提(尤其换手/市值维度数据接入后)",
+ "fingerprint": "7524b114316c87a3",
+ "status": "executed_FAIL_20261025",
+ "result_ref": "reports/FIRSTBOARD_PULLBACK_PREREG_RESULT_20261025.md"
+}

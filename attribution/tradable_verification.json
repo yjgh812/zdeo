@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T21:43:59.270526",
+    "data_source": "qlib_bin (V1 PASS, NaN filtered)",
+    "valid_days": 1568,
+    "timing": "strict: t-1 info → t-day trade"
+  },
+  "q1_regime_prediction": {
+    "accuracy_pct": 68.2,
+    "confusion_matrix": {
+      "热烈": {
+        "正常": 25,
+        "低迷": 5,
+        "热烈": 16
+      },
+      "正常": {
+        "热烈": 26,
+        "正常": 323,
+        "低迷": 218
+      },
+      "低迷": {
+        "正常": 221,
+        "低迷": 731,
+        "热烈": 3
+      }
+    },
+    "low_precision_pct": 76.5,
+    "non_low_recall_pct": 86.9
+  },
+  "q2_regime_factor_t1": {
+    "热烈(t-1>100)_全部": {
+      "n": 170438,
+      "win_rate": 52.9,
+      "avg_return_pct": 0.42,
+      "pf": 1.42
+    },
+    "热烈(t-1>100)_仅高波": {
+      "n": 17022,
+      "win_rate": 51.7,
+      "avg_return_pct": 0.51,
+      "pf": 1.33
+    },
+    "热烈(t-1>100)_因子筛选": {
+      "n": 9903,
+      "win_rate": 50.8,
+      "avg_return_pct": 0.4,
+      "pf": 1.23
+    },
+    "正常(t-1:50-100)_全部": {
+      "n": 2098627,
+      "win_rate": 48.6,
+      "avg_return_pct": 0.14,
+      "pf": 1.16
+    },
+    "正常(t-1:50-100)_仅高波": {
+      "n": 209548,
+      "win_rate": 49.8,
+      "avg_return_pct": 0.3,
+      "pf": 1.21
+    },
+    "正常(t-1:50-100)_因子筛选": {
+      "n": 108198,
+      "win_rate": 49.4,
+      "avg_return_pct": 0.37,
+      "pf": 1.24
+    },
+    "低迷(t-1<50)_全部": {
+      "n": 3283878,
+      "win_rate": 47.9,
+      "avg_return_pct": 0.07,
+      "pf": 1.08
+    },
+    "低迷(t-1<50)_仅高波": {
+      "n": 327871,
+      "win_rate": 50.3,
+      "avg_return_pct": 0.32,
+      "pf": 1.23
+    },
+    "低迷(t-1<50)_因子筛选": {
+      "n": 151451,
+      "win_rate": 49.5,
+      "avg_return_pct": 0.38,
+      "pf": 1.26
+    }
+  },
+  "q3_final_strategy": {
+    "trade_days": 644,
+    "no_trade_days": 924,
+    "stats": {
+      "n": 644,
+      "win_rate": 65.5,
+      "avg_return_pct": 0.36,
+      "pf": 2.08
+    },
+    "dsr": 1.0,
+    "annual_est_pct": 147.3
+  },
+  "q4_no_filter_compare": {
+    "stats": {
+      "n": 1568,
+      "win_rate": 67.3,
+      "avg_return_pct": 0.39,
+      "pf": 2.39
+    },
+    "annual_est_pct": 166.7
+  }
+}

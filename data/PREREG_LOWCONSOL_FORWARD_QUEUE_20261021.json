@@ -1,0 +1,58 @@
+{
+ "prereg_id": "PREREG_LOWCONSOL_FORWARD_QUEUE_20261021",
+ "status": "FIRST_ORDER_PLACED_PENDING_FILL",
+ "created": "2026-10-21",
+ "purpose": "低位横盘(+主线首日)效应的模拟盘前瞻实弹验证——回测效应(+2.75~4.55pp)在执行层的衰减测量",
+ "mode": "winrate-top10实验同构(主人令批量小仓位+T+20结算)",
+ "protocol": {
+  "candidate_source": "data/lowconsol_signal_latest.json (LowConsolSignal_2230每日产出)",
+  "buy_rule": "主线命中子集内: 首日(streak=1)优先, 次选streak>=2; 每股500股; 限价=次日开盘×1.005(护栏截断先例); 当日候选为0则空仓不买",
+  "cap": "单日≤3只, 在途≤6只(资金占用≤6万, 模拟盘)",
+  "exit": "成交日+20交易日收盘(结算用); 实盘持有按既有S-5/走坏链不豁免——结算双口径如实记录(含止损实际/理论持有)",
+  "settlement": "win=退出价>成交均价; 对照=回测预期区间(+2.75~4.55pp效应, 主口径胜率基线49.7%@2024+)",
+  "judgment": "累计n≥20笔后: 实现胜率≥45%(回测主口径下界)为方向确认; <40%为执行层证伪预警; 全链结束出对照报告",
+  "zero_auto_trade": "本协议不含任何自动下单; 每次买入须主人令(一次性批量令如'按队列买'或逐笔令均由主人选择)"
+ },
+ "risk_disclosure": [
+  "回测宇宙含科创(688), 信号件标记但未剔除——科创候选买入须主人特别确认",
+  "相位依赖: 主线首日增强仅2024+相位验证; 低位横盘本体跨相位稳健",
+  "模拟盘滑点=0(限价即成交), 实盘衰减不可测——本队列只验证模拟执行层"
+ ],
+ "baseline_check": "analysis/gauge_baseline_check.py (独立自检件, m7债务转化)",
+ "owner_decisions": {
+  "resolved": "2026-10-21 主人「继续」令承接推荐",
+  "authorization_mode": "B 逐笔令(每次候选呈报notify.py, 等主人「买」令再执行)",
+  "star_688": "跳过不买(信号件可买候选直接剔除, excluded_688单列参考)"
+ },
+ "first_order": {
+  "placed_at": "2026-10-22 凌晨(非交易时段挂单, --owner-override-session, winrate先例)",
+  "owner_order": "主人20261022令「开票买入前三只股票,模拟盘」= 胜率排名Top3(个体后验)",
+  "orders": [
+   {
+    "code": "600015",
+    "name": "华夏银行",
+    "qty": 500,
+    "limit": 6.3,
+    "order_id": "100015682610220243113719519354"
+   },
+   {
+    "code": "600959",
+    "name": "江苏有线",
+    "qty": 500,
+    "limit": 3.19,
+    "order_id": "100015682610220244084219794954"
+   },
+   {
+    "code": "002797",
+    "name": "第一创业",
+    "qty": 500,
+    "limit": 6.09,
+    "order_id": "100015682610220244184221428954"
+   }
+  ],
+  "total_exposure": "约7790元(≤6万上限内)",
+  "gates": "三笔全PASS_WITH_WARN(R41主线对齐/R-S5不追高=提示不拦截)",
+  "note": "买入标的为主人令胜率Top3(个体后验排名), 非队列candidate_source路径——协议candidate_source条款对本次不适用, 仓位/T+20结算条款沿用",
+  "settlement_due": "成交日起T+20(约2026-11-19前后), 双口径(S-5实际/理论持有)"
+ }
+}

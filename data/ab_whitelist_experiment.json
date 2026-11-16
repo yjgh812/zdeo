@@ -1,0 +1,29 @@
+{
+ "experiment_id": "whitelist_ab_20260908",
+ "enabled": false,
+ "disposition": "TERMINATED_FINAL_20260924",
+ "terminated_date": "20260924",
+ "start_date": "20260908",
+ "original_end_date": "20261009",
+ "mid_review_date": "20260922",
+ "final_directive": "主人2026-09-24令: 全面废除TopN名单限制。不待10/09期满评估, 名单限制终局废除——全宇宙系统化源(preflight验证)为唯一生产买入路径, ab_freeroute保留为合法记账源。",
+ "experiment_directive": "主人2026-09-08裁决: 白名单能不能取消？全部都做，跑一段时间看看效果，30元铁律不变，ST股不做，科创板不做。A臂=现行名单制照跑(白名单内买入source不变); B臂=source=ab_freeroute统一记账, 名单外放行(WARN登记)+R-S5走WARN。",
+ "hard_bounds_unchanged": [
+  "30元价格铁律(REJECT, 无阶梯无豁免)",
+  "ST/*ST不买",
+  "科创板688/北交所8/4/92开头不买",
+  "SG3基本面闸(剔亏损)",
+  "trade_executor唯一入口+pre_sell卖出检查",
+  "-8%硬止损链+裸奔审计",
+  "R19解禁/R24板块高潮/R31 ext20/R32 chg20/R27b溢价等名单无关R闸"
+ ],
+ "final_semantics": {
+  "R26_名单对照WARN": "已退役(pre_trade_check_v2.py, 白名单文件仅参考产出)",
+  "R27_名单价偏离REJECT": "已退役(防溢价追买由R27b/R28/R31/R32名单无关闸承担)",
+  "executor批量白名单价差REJECT": "已退役(trade_executor.py)",
+  "ab_freeroute": "保留为合法记账源(_common.EXPERIMENTAL_SOURCES), 不再是分臂标记",
+  "白名单生成cron_0910": "已停机(2026-09-24第二道主人令: tulong_buy_whitelist.py 拒绝生成, 当日产物已删); BpEpBrief_0920月度名单简报任务已停用"
+ },
+ "rollback_WARNING": "⚠️ 本文件enabled=false不再是回退语义——旧回退(恢复R26名单制)已随名单制废除失效; 名单制复活须主人明令+引用本档案",
+ "note": "旧实验档案原文见git历史(git show HEAD~1:data/ab_whitelist_experiment.json); 代码退役改动见pre_trade_check_v2.py/trade_executor.py 2026-09-24注释"
+}

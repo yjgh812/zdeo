@@ -1,0 +1,90 @@
+{
+  "id": "E59_QUARANTINE_20260827",
+  "created": "2026-08-27T03:50",
+  "by": "知微(自省执行轮)",
+  "status": "ARCHIVED_20260828",
+  "rule_basis": "准则36 来源不明账户事件24h升级冻结",
+  "what": "executor_orders.jsonl 中 trade_date=20260827 的10笔SELL行",
+  "why_quarantined": [
+    "ts=None/note空/schema不符合executor正常写入形态",
+    "当前A面18持仓不含其中任何一票",
+    "构成与'B面(c8f90d60)7止损+3趋势共10笔挂单待主人裁决'精确吻合"
+  ],
+  "hypothesis": "并行会话将B面待裁决挂单误日期导入台账(预判);反向风险=另有会话拟今日真实重提",
+  "rows": [
+    {
+      "code": "002589",
+      "name": "瑞康医药",
+      "price": 3.25,
+      "qty": 8000
+    },
+    {
+      "code": "301060",
+      "name": "兰卫医学",
+      "price": 11.15,
+      "qty": 3000
+    },
+    {
+      "code": "300705",
+      "name": "九典制药",
+      "price": 11.4,
+      "qty": 4000
+    },
+    {
+      "code": "601991",
+      "name": "大唐发电",
+      "price": 5.94,
+      "qty": 4500
+    },
+    {
+      "code": "600664",
+      "name": "哈药股份",
+      "price": 8.18,
+      "qty": 3300
+    },
+    {
+      "code": "300102",
+      "name": "乾照光电",
+      "price": 17.75,
+      "qty": 1500
+    },
+    {
+      "code": "300233",
+      "name": "金城医药",
+      "price": 13.39,
+      "qty": 3000
+    },
+    {
+      "code": "002923",
+      "name": "润都股份",
+      "price": 10.93,
+      "qty": 2100
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "price": 4.91,
+      "qty": 5800
+    },
+    {
+      "code": "600968",
+      "name": "海油发展",
+      "price": 3.9,
+      "qty": 10500
+    }
+  ],
+  "consumer_directive": "naked_trade_audit / discipline_daily / fill_confirm_monitor 等消费 executor_orders.jsonl 时应跳过或单列本清单命中的行; 任何会话不得基于该批行动作直至主人三选一裁决(a归档/b逐笔特批重提过pre_sell_check/c问责)",
+  "ref_report": "reports/REBUY_EXECUTION_20260827.md",
+  "ruling": "归档更正（2026-08-28 主人\"按你推荐继续\"授权）: 10笔B面误日期SELL行已移出A面台账(open_orders.jsonl FROZEN_E59→data/E59_ARCHIVE_20260828.json; executor_orders.jsonl order_id 1000149826系列 同步移出)",
+  "verification": {
+    "open_orders_after": "12行(8 FILLED+4 EXPIRED_READ)",
+    "executor_orders_20260827_after": "14行(13 BUY+1 SELL=建设机械止损)",
+    "b_side_residual": 0,
+    "archive_rows": 20,
+    "backups": [
+      "data/open_orders.jsonl.bak_e59_archive_20260828",
+      "data/executor_orders.jsonl.bak_e59_archive_20260828"
+    ]
+  },
+  "closed_by": "知微(执行轮) 2026-08-28"
+}

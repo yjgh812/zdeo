@@ -1,0 +1,54 @@
+[
+ {
+  "code": "600742",
+  "name": "富维股份",
+  "source": "revival_xushi_res9",
+  "price": 7.86,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 0,
+  "note": "涨前蓄势七维共振7/9 (量能/压缩/均线/零轴蓄力等维度互证)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "601033",
+  "name": "永兴股份",
+  "source": "revival_xushi_res9",
+  "price": 15.16,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 0,
+  "note": "涨前蓄势七维共振7/9 (量能/压缩/均线/零轴蓄力等维度互证)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "603043",
+  "name": "广州酒家",
+  "source": "revival_xushi_res9",
+  "price": 14.4,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 0,
+  "note": "涨前蓄势七维共振7/9 (量能/压缩/均线/零轴蓄力等维度互证)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600643",
+  "name": "爱建集团",
+  "source": "revival_xushi_res9",
+  "price": 4.25,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 0,
+  "note": "涨前蓄势七维共振6/9 (量能/压缩/均线/零轴蓄力等维度互证)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

@@ -1,0 +1,864 @@
+{
+ "rows": [
+  {
+   "code": "688836",
+   "name": "宇树科技",
+   "limit_count": 1,
+   "first_hhmm": "14:15",
+   "seal_money": 404000000.0,
+   "turnover": 4769540352.0,
+   "industry": "自动化设",
+   "reason": "人形机器人+物理AI+H2-X"
+  },
+  {
+   "code": "688686",
+   "name": "奥普特",
+   "limit_count": 1,
+   "first_hhmm": "14:42",
+   "seal_money": 46000000.0,
+   "turnover": 695392192.0,
+   "industry": "自动化设",
+   "reason": "具身智能+机器视觉+工业智能"
+  },
+  {
+   "code": "688787",
+   "name": "海天瑞声",
+   "limit_count": 1,
+   "first_hhmm": "13:42",
+   "seal_money": 115999999.99999999,
+   "turnover": 1295917344.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "具身智能+训练数据+数据要素"
+  },
+  {
+   "code": "688368",
+   "name": "晶丰明源",
+   "limit_count": 1,
+   "first_hhmm": "13:46",
+   "seal_money": 31000000.0,
+   "turnover": 1043694656.0,
+   "industry": "半导体",
+   "reason": "三季报增长+充电管理+算力电源"
+  },
+  {
+   "code": "003021",
+   "name": "兆威机电",
+   "limit_count": 2,
+   "first_hhmm": "09:43",
+   "seal_money": 126000000.0,
+   "turnover": 2350922656.0,
+   "industry": "电机Ⅱ",
+   "reason": "人形机器人+灵巧手+微型传动"
+  },
+  {
+   "code": "001359",
+   "name": "平安电工",
+   "limit_count": 1,
+   "first_hhmm": "14:46",
+   "seal_money": 9000000.0,
+   "turnover": 314750480.0,
+   "industry": "塑料",
+   "reason": "电子布+PCB概念+泰国建厂"
+  },
+  {
+   "code": "603713",
+   "name": "密尔克卫",
+   "limit_count": 1,
+   "first_hhmm": "13:32",
+   "seal_money": 62000000.0,
+   "turnover": 270561200.0,
+   "industry": "物流",
+   "reason": "三季报增长+半导体物流+化工供应链"
+  },
+  {
+   "code": "301502",
+   "name": "华阳智能",
+   "limit_count": 2,
+   "first_hhmm": "09:33",
+   "seal_money": 69000000.0,
+   "turnover": 246803859.0,
+   "industry": "电机Ⅱ",
+   "reason": "机器人关节模组+无框电机+微特电机"
+  },
+  {
+   "code": "301313",
+   "name": "凡拓数创",
+   "limit_count": 1,
+   "first_hhmm": "13:24",
+   "seal_money": 87000000.0,
+   "turnover": 1674732912.0,
+   "industry": "数字媒体",
+   "reason": "物理AI+数字孪生+具身智能"
+  },
+  {
+   "code": "001283",
+   "name": "豪鹏科技",
+   "limit_count": 1,
+   "first_hhmm": "14:18",
+   "seal_money": 4000000.0,
+   "turnover": 955620688.0,
+   "industry": "电池",
+   "reason": "机器人电池+智能眼镜电池+三季报增长"
+  },
+  {
+   "code": "603160",
+   "name": "汇顶科技",
+   "limit_count": 1,
+   "first_hhmm": "13:43",
+   "seal_money": 52000000.0,
+   "turnover": 737055616.0,
+   "industry": "半导体",
+   "reason": "指纹识别+超声波指纹+端侧安全+折叠屏"
+  },
+  {
+   "code": "603448",
+   "name": "天博智能",
+   "limit_count": 1,
+   "first_hhmm": "13:42",
+   "seal_money": 28000000.000000004,
+   "turnover": 317392544.0,
+   "industry": "汽车零部",
+   "reason": "机器人+六维力传感器+液冷+次新股"
+  },
+  {
+   "code": "002979",
+   "name": "雷赛智能",
+   "limit_count": 1,
+   "first_hhmm": "14:15",
+   "seal_money": 131000000.0,
+   "turnover": 994778544.0,
+   "industry": "自动化设",
+   "reason": "三季报增长+人形机器人+伺服系统"
+  },
+  {
+   "code": "603286",
+   "name": "日盈电子",
+   "limit_count": 1,
+   "first_hhmm": "14:37",
+   "seal_money": 42000000.0,
+   "turnover": 393778912.0,
+   "industry": "汽车零部",
+   "reason": "人形机器人+汽车零部件+电子皮肤"
+  },
+  {
+   "code": "603171",
+   "name": "税友股份",
+   "limit_count": 1,
+   "first_hhmm": "13:45",
+   "seal_money": 88000000.0,
+   "turnover": 755746944.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "AI智能体+财税数字化+阿里云合作"
+  },
+  {
+   "code": "688071",
+   "name": "华依科技",
+   "limit_count": 1,
+   "first_hhmm": "13:58",
+   "seal_money": 52000000.0,
+   "turnover": 703291920.0,
+   "industry": "专用设备",
+   "reason": "物理AI+人形机器人+IMU"
+  },
+  {
+   "code": "002812",
+   "name": "恩捷股份",
+   "limit_count": 1,
+   "first_hhmm": "14:41",
+   "seal_money": 73000000.0,
+   "turnover": 1658766256.0,
+   "industry": "电池",
+   "reason": "锂电池隔膜+业绩扭亏+固态电池材料"
+  },
+  {
+   "code": "001301",
+   "name": "尚太科技",
+   "limit_count": 1,
+   "first_hhmm": "13:10",
+   "seal_money": 133000000.0,
+   "turnover": 437277888.0,
+   "industry": "电池",
+   "reason": "负极材料+三季度增长+产能扩建"
+  },
+  {
+   "code": "603341",
+   "name": "龙旗科技",
+   "limit_count": 1,
+   "first_hhmm": "14:22",
+   "seal_money": 32000000.0,
+   "turnover": 1684489168.0,
+   "industry": "消费电子",
+   "reason": "AI眼镜+AI PC+机器人+智能终端"
+  },
+  {
+   "code": "603859",
+   "name": "能科科技",
+   "limit_count": 1,
+   "first_hhmm": "13:43",
+   "seal_money": 101000000.0,
+   "turnover": 938937248.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "具身智能+工业智能+工业软件"
+  },
+  {
+   "code": "603337",
+   "name": "杰克科技",
+   "limit_count": 1,
+   "first_hhmm": "13:00",
+   "seal_money": 51000000.0,
+   "turnover": 646068160.0,
+   "industry": "专用设备",
+   "reason": "人形机器人+数字成套+工业缝纫机"
+  },
+  {
+   "code": "002931",
+   "name": "锋龙股份",
+   "limit_count": 1,
+   "first_hhmm": "14:16",
+   "seal_money": 26000000.0,
+   "turnover": 345499264.0,
+   "industry": "通用设备",
+   "reason": "机器人概念+优必选入主+机电组件"
+  },
+  {
+   "code": "605488",
+   "name": "福莱新材",
+   "limit_count": 1,
+   "first_hhmm": "13:37",
+   "seal_money": 60000000.0,
+   "turnover": 1251973168.0,
+   "industry": "塑料",
+   "reason": "机器人触觉+柔性传感+广告喷墨"
+  },
+  {
+   "code": "301101",
+   "name": "明月镜片",
+   "limit_count": 1,
+   "first_hhmm": "13:53",
+   "seal_money": 53000000.0,
+   "turnover": 542692368.0,
+   "industry": "文娱用品",
+   "reason": "业绩增长+AI眼镜+镜片主业"
+  },
+  {
+   "code": "301660",
+   "name": "粤芯半导体",
+   "limit_count": 1,
+   "first_hhmm": "10:34",
+   "seal_money": 181000000.0,
+   "turnover": 3617536000.0,
+   "industry": "半导体",
+   "reason": "晶圆代工+硅光工艺+特色工艺+次新股"
+  },
+  {
+   "code": "301699",
+   "name": "洛轴股份",
+   "limit_count": 1,
+   "first_hhmm": "13:16",
+   "seal_money": 155000000.0,
+   "turnover": 767102656.0,
+   "industry": "通用设备",
+   "reason": "机器人轴承+风电轴承+次新股"
+  },
+  {
+   "code": "301428",
+   "name": "世纪恒通",
+   "limit_count": 1,
+   "first_hhmm": "14:04",
+   "seal_money": 66000000.0,
+   "turnover": 522943520.0,
+   "industry": "通信服务",
+   "reason": "数据标注+具身智能+智能驾驶"
+  },
+  {
+   "code": "001328",
+   "name": "登康口腔",
+   "limit_count": 1,
+   "first_hhmm": "09:39",
+   "seal_money": 5000000.0,
+   "turnover": 175316315.0,
+   "industry": "个护用品",
+   "reason": "三季报增长+抗敏牙膏+智能口腔"
+  },
+  {
+   "code": "300584",
+   "name": "海辰药业",
+   "limit_count": 1,
+   "first_hhmm": "09:44",
+   "seal_money": 73000000.0,
+   "turnover": 297051568.0,
+   "industry": "化学制药",
+   "reason": "锂电添加剂+三季报增长+固态电池"
+  },
+  {
+   "code": "603280",
+   "name": "南方路机",
+   "limit_count": 2,
+   "first_hhmm": "09:30",
+   "seal_money": 57999999.99999999,
+   "turnover": 117520195.0,
+   "industry": "工程机械",
+   "reason": "分拣机器人+智能体+工程搅拌"
+  },
+  {
+   "code": "002988",
+   "name": "豪美新材",
+   "limit_count": 1,
+   "first_hhmm": "14:00",
+   "seal_money": 45000000.0,
+   "turnover": 262824143.0,
+   "industry": "工业金属",
+   "reason": "机器人轻量化+汽车轻量化+铝型材"
+  },
+  {
+   "code": "002747",
+   "name": "埃斯顿",
+   "limit_count": 1,
+   "first_hhmm": "14:38",
+   "seal_money": 95000000.0,
+   "turnover": 2225198528.0,
+   "industry": "自动化设",
+   "reason": "工业机器人+具身智能+人形机器人"
+  },
+  {
+   "code": "001216",
+   "name": "华瓷股份",
+   "limit_count": 1,
+   "first_hhmm": "10:45",
+   "seal_money": 41000000.0,
+   "turnover": 1147521216.0,
+   "industry": "家居用品",
+   "reason": "MLCC粉体+氧化锆微珠+日用陶瓷"
+  },
+  {
+   "code": "002380",
+   "name": "科远智慧",
+   "limit_count": 1,
+   "first_hhmm": "14:18",
+   "seal_money": 23000000.0,
+   "turnover": 283384928.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "机器人+工业人工智能+半年报增长"
+  },
+  {
+   "code": "002241",
+   "name": "歌尔股份",
+   "limit_count": 1,
+   "first_hhmm": "14:13",
+   "seal_money": 332000000.0,
+   "turnover": 2873437360.0,
+   "industry": "消费电子",
+   "reason": "机器人+智能眼镜+精密零组件"
+  },
+  {
+   "code": "603721",
+   "name": "中广天择",
+   "limit_count": 1,
+   "first_hhmm": "09:55",
+   "seal_money": 33000000.0,
+   "turnover": 476286992.0,
+   "industry": "影视院线",
+   "reason": "AI语料+AI漫剧+传媒内容"
+  },
+  {
+   "code": "603933",
+   "name": "睿能科技",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 99000000.0,
+   "turnover": 85692532.0,
+   "industry": "其他电子",
+   "reason": "人形机器人+工业自动化+存储分销"
+  },
+  {
+   "code": "001298",
+   "name": "好上好",
+   "limit_count": 1,
+   "first_hhmm": "10:46",
+   "seal_money": 105000000.0,
+   "turnover": 366118640.0,
+   "industry": "其他电子",
+   "reason": "存储芯片+半导体分销+人形机器人"
+  },
+  {
+   "code": "002009",
+   "name": "天奇股份",
+   "limit_count": 1,
+   "first_hhmm": "09:43",
+   "seal_money": 53000000.0,
+   "turnover": 1025485328.0,
+   "industry": "专用设备",
+   "reason": "具身智能+工业机器人+产业合作+优必选"
+  },
+  {
+   "code": "002612",
+   "name": "朗姿股份",
+   "limit_count": 1,
+   "first_hhmm": "13:20",
+   "seal_money": 50000000.0,
+   "turnover": 262771620.0,
+   "industry": "医疗美容",
+   "reason": "医疗美容+时尚女装+中韩自贸区"
+  },
+  {
+   "code": "600506",
+   "name": "统一股份",
+   "limit_count": 1,
+   "first_hhmm": "09:35",
+   "seal_money": 42000000.0,
+   "turnover": 426869744.0,
+   "industry": "炼化及贸",
+   "reason": "液冷+润滑油脂+业绩增长"
+  },
+  {
+   "code": "603677",
+   "name": "奇精机械",
+   "limit_count": 1,
+   "first_hhmm": "09:44",
+   "seal_money": 11000000.0,
+   "turnover": 202849164.0,
+   "industry": "家电零部",
+   "reason": "机器人零部件+光模块+洗衣机离合器"
+  },
+  {
+   "code": "603278",
+   "name": "大业股份",
+   "limit_count": 6,
+   "first_hhmm": "13:09",
+   "seal_money": 95000000.0,
+   "turnover": 1663787296.0,
+   "industry": "通用设备",
+   "reason": "人形机器人+橡胶骨架材料+全球销售"
+  },
+  {
+   "code": "300561",
+   "name": "汇金科技",
+   "limit_count": 1,
+   "first_hhmm": "13:07",
+   "seal_money": 15000000.0,
+   "turnover": 707756800.0,
+   "industry": "软件开发",
+   "reason": "金融科技+人工智能+股权转让"
+  },
+  {
+   "code": "002945",
+   "name": "华林证券",
+   "limit_count": 1,
+   "first_hhmm": "10:23",
+   "seal_money": 92000000.0,
+   "turnover": 846986144.0,
+   "industry": "证券Ⅱ",
+   "reason": "AI金融+证券业务+西藏券商"
+  },
+  {
+   "code": "002439",
+   "name": "启明星辰",
+   "limit_count": 1,
+   "first_hhmm": "14:37",
+   "seal_money": 4000000.0,
+   "turnover": 978066736.0,
+   "industry": "软件开发",
+   "reason": "AI安全+数据安全+中移动协同"
+  },
+  {
+   "code": "603838",
+   "name": "四通股份",
+   "limit_count": 1,
+   "first_hhmm": "14:19",
+   "seal_money": 0.0,
+   "turnover": 164858637.0,
+   "industry": "家居用品",
+   "reason": "日用陶瓷+锆钛精炼+摘帽"
+  },
+  {
+   "code": "603466",
+   "name": "风语筑",
+   "limit_count": 1,
+   "first_hhmm": "13:58",
+   "seal_money": 70000000.0,
+   "turnover": 1339857424.0,
+   "industry": "数字媒体",
+   "reason": "物理AI+具身智能+数字展示"
+  },
+  {
+   "code": "002322",
+   "name": "理工能科",
+   "limit_count": 1,
+   "first_hhmm": "13:02",
+   "seal_money": 65000000.0,
+   "turnover": 346490608.0,
+   "industry": "软件开发",
+   "reason": "AI应用+电力软件+业绩预增"
+  },
+  {
+   "code": "002982",
+   "name": "湘佳股份",
+   "limit_count": 1,
+   "first_hhmm": "09:25",
+   "seal_money": 125000000.0,
+   "turnover": 45206714.0,
+   "industry": "养殖业",
+   "reason": "业绩增长+黄羽肉鸡"
+  },
+  {
+   "code": "000678",
+   "name": "襄阳轴承",
+   "limit_count": 2,
+   "first_hhmm": "10:03",
+   "seal_money": 48000000.0,
+   "turnover": 1589534544.0,
+   "industry": "汽车零部",
+   "reason": "机器人轴承+汽车轴承+湖北国资"
+  },
+  {
+   "code": "002077",
+   "name": "大港股份",
+   "limit_count": 1,
+   "first_hhmm": "09:48",
+   "seal_money": 59000000.0,
+   "turnover": 793530912.0,
+   "industry": "半导体",
+   "reason": "集成电路测试+股权转让议案+半年报增长"
+  },
+  {
+   "code": "600785",
+   "name": "新华百货",
+   "limit_count": 1,
+   "first_hhmm": "09:33",
+   "seal_money": 68000000.0,
+   "turnover": 657243888.0,
+   "industry": "一般零售",
+   "reason": "零售促销+股份回购+硬折扣"
+  },
+  {
+   "code": "002724",
+   "name": "海洋王",
+   "limit_count": 6,
+   "first_hhmm": "09:53",
+   "seal_money": 3000000.0,
+   "turnover": 1727203728.0,
+   "industry": "照明设备",
+   "reason": "专业照明+AI照明+军工+羊字辈"
+  },
+  {
+   "code": "603089",
+   "name": "正裕工业",
+   "limit_count": 2,
+   "first_hhmm": "09:32",
+   "seal_money": 50000000.0,
+   "turnover": 220449348.0,
+   "industry": "汽车零部",
+   "reason": "机器人零部件+柔性触觉+汽车减震器"
+  },
+  {
+   "code": "000700",
+   "name": "模塑科技",
+   "limit_count": 1,
+   "first_hhmm": "14:16",
+   "seal_money": 59000000.0,
+   "turnover": 892728928.0,
+   "industry": "汽车零部",
+   "reason": "人形机器人+汽车外饰件+毛利率提升"
+  },
+  {
+   "code": "300369",
+   "name": "绿盟科技",
+   "limit_count": 1,
+   "first_hhmm": "14:21",
+   "seal_money": 114999999.99999999,
+   "turnover": 1856643360.0,
+   "industry": "软件开发",
+   "reason": "AI安全+智慧安全4.0+网络安全"
+  },
+  {
+   "code": "600745",
+   "name": "*ST闻泰",
+   "limit_count": 1,
+   "first_hhmm": "14:40",
+   "seal_money": 0.0,
+   "turnover": 0.0,
+   "industry": "未分类",
+   "reason": "功率半导体+AI服务器+车规半导体"
+  },
+  {
+   "code": "000559",
+   "name": "万向钱潮",
+   "limit_count": 1,
+   "first_hhmm": "13:55",
+   "seal_money": 161000000.0,
+   "turnover": 1279870736.0,
+   "industry": "汽车零部",
+   "reason": "机器人+轮毂单元+高速轴承"
+  },
+  {
+   "code": "002026",
+   "name": "山东威达",
+   "limit_count": 1,
+   "first_hhmm": "13:24",
+   "seal_money": 60000000.0,
+   "turnover": 235665702.0,
+   "industry": "通用设备",
+   "reason": "机器人+换电站+电动工具"
+  },
+  {
+   "code": "600865",
+   "name": "百大集团",
+   "limit_count": 1,
+   "first_hhmm": "13:04",
+   "seal_money": 65000000.0,
+   "turnover": 473859936.0,
+   "industry": "一般零售",
+   "reason": "商业零售+净利润增长+信托股权交易"
+  },
+  {
+   "code": "600838",
+   "name": "上海九百",
+   "limit_count": 3,
+   "first_hhmm": "09:25",
+   "seal_money": 109000000.00000001,
+   "turnover": 234953015.0,
+   "industry": "一般零售",
+   "reason": "商贸零售+商业地产+洗染服务"
+  },
+  {
+   "code": "002343",
+   "name": "慈文传媒",
+   "limit_count": 1,
+   "first_hhmm": "09:34",
+   "seal_money": 70000000.0,
+   "turnover": 2123917600.0,
+   "industry": "影视院线",
+   "reason": "影视剧+微短剧+影视IP"
+  },
+  {
+   "code": "603081",
+   "name": "大丰实业",
+   "limit_count": 1,
+   "first_hhmm": "13:13",
+   "seal_money": 42000000.0,
+   "turnover": 169829452.0,
+   "industry": "专用设备",
+   "reason": "机器人+文体旅集成+机器人乐队"
+  },
+  {
+   "code": "000810",
+   "name": "创维数字",
+   "limit_count": 1,
+   "first_hhmm": "14:02",
+   "seal_money": 73000000.0,
+   "turnover": 470431424.0,
+   "industry": "黑色家电",
+   "reason": "智能终端+谷歌合作+AI眼镜"
+  },
+  {
+   "code": "603901",
+   "name": "永创智能",
+   "limit_count": 1,
+   "first_hhmm": "14:00",
+   "seal_money": 49000000.0,
+   "turnover": 228822372.0,
+   "industry": "专用设备",
+   "reason": "人形机器人+智能包装+半年报增长"
+  },
+  {
+   "code": "601519",
+   "name": "大智慧",
+   "limit_count": 1,
+   "first_hhmm": "13:08",
+   "seal_money": 119000000.0,
+   "turnover": 1091062384.0,
+   "industry": "软件开发",
+   "reason": "互联网金融+AI投研+并购重组"
+  },
+  {
+   "code": "300307",
+   "name": "慈星股份",
+   "limit_count": 1,
+   "first_hhmm": "14:11",
+   "seal_money": 163000000.0,
+   "turnover": 1063897968.0,
+   "industry": "专用设备",
+   "reason": "机器人+电脑横机+电子皮肤"
+  },
+  {
+   "code": "603028",
+   "name": "赛福天",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 112999999.99999999,
+   "turnover": 42525357.0,
+   "industry": "通用设备",
+   "reason": "机器人腱绳+特种钢索"
+  },
+  {
+   "code": "603528",
+   "name": "多伦科技",
+   "limit_count": 2,
+   "first_hhmm": "13:19",
+   "seal_money": 75000000.0,
+   "turnover": 666530592.0,
+   "industry": "软件开发",
+   "reason": "人形机器人+智能交通+智慧驾培"
+  },
+  {
+   "code": "002354",
+   "name": "天娱数科",
+   "limit_count": 1,
+   "first_hhmm": "09:37",
+   "seal_money": 327000000.0,
+   "turnover": 2310005104.0,
+   "industry": "广告营销",
+   "reason": "具身智能数据集+AI影视+AI营销+算力"
+  },
+  {
+   "code": "000156",
+   "name": "华数传媒",
+   "limit_count": 1,
+   "first_hhmm": "14:47",
+   "seal_money": 39000000.0,
+   "turnover": 252657828.0,
+   "industry": "电视广播",
+   "reason": "广电智能体+具身智能+智慧家庭+内容审核"
+  },
+  {
+   "code": "300296",
+   "name": "利亚德",
+   "limit_count": 1,
+   "first_hhmm": "13:43",
+   "seal_money": 222000000.00000003,
+   "turnover": 4223460560.0,
+   "industry": "光学光电",
+   "reason": "具身智能+物理AI+光学动捕+智能显示"
+  },
+  {
+   "code": "002474",
+   "name": "榕基软件",
+   "limit_count": 1,
+   "first_hhmm": "09:31",
+   "seal_money": 55000000.00000001,
+   "turnover": 653629728.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "AI政务+信创政务+数据要素"
+  },
+  {
+   "code": "002687",
+   "name": "乔治白",
+   "limit_count": 1,
+   "first_hhmm": "14:03",
+   "seal_money": 21000000.0,
+   "turnover": 236325948.0,
+   "industry": "服装家纺",
+   "reason": "职业装+校服+股东户数下降"
+  },
+  {
+   "code": "600215",
+   "name": "派斯林",
+   "limit_count": 1,
+   "first_hhmm": "13:17",
+   "seal_money": 24000000.0,
+   "turnover": 146890048.0,
+   "industry": "自动化设",
+   "reason": "仿生机器人+工业自动化+北美订单"
+  },
+  {
+   "code": "600094",
+   "name": "大名城",
+   "limit_count": 1,
+   "first_hhmm": "11:17",
+   "seal_money": 21000000.0,
+   "turnover": 201853488.0,
+   "industry": "房地产开",
+   "reason": "房地产开发+低空经济+算力运营+6G"
+  },
+  {
+   "code": "000972",
+   "name": "中基健康",
+   "limit_count": 1,
+   "first_hhmm": "13:00",
+   "seal_money": 56999999.99999999,
+   "turnover": 89598820.0,
+   "industry": "农产品加",
+   "reason": "番茄制品+大消费+国企改革"
+  },
+  {
+   "code": "002421",
+   "name": "达实智能",
+   "limit_count": 1,
+   "first_hhmm": "09:45",
+   "seal_money": 85000000.0,
+   "turnover": 1806858224.0,
+   "industry": "IT服务Ⅱ",
+   "reason": "AIoT+AI智能体+医疗物流机器人+新皇岗口岸"
+  },
+  {
+   "code": "600303",
+   "name": "曙光股份",
+   "limit_count": 1,
+   "first_hhmm": "14:46",
+   "seal_money": 24000000.0,
+   "turnover": 267799398.0,
+   "industry": "商用车",
+   "reason": "新能源客车+汽车车桥+军工"
+  },
+  {
+   "code": "002535",
+   "name": "林州重机",
+   "limit_count": 2,
+   "first_hhmm": "09:30",
+   "seal_money": 36000000.0,
+   "turnover": 169628444.0,
+   "industry": "专用设备",
+   "reason": "机器人+煤矿机械+煤矿服务+军工配套"
+  },
+  {
+   "code": "600187",
+   "name": "*ST国中",
+   "limit_count": 1,
+   "first_hhmm": "13:31",
+   "seal_money": 0.0,
+   "turnover": 0.0,
+   "industry": "未分类",
+   "reason": "股份回购+董事长增持+污水处理"
+  }
+ ],
+ "themes": {
+  "机器人高位博弈": {
+   "kw": [
+    "丝杠"
+   ],
+   "inds": []
+  },
+  "机器人具身智能主线": {
+   "kw": [
+    "机器人",
+    "具身",
+    "人形",
+    "灵巧",
+    "关节",
+    "伺服",
+    "轴承",
+    "触觉",
+    "腱绳",
+    "物理AI",
+    "IMU",
+    "电子皮肤",
+    "仿生",
+    "优必选",
+    "分拣"
+   ],
+   "inds": []
+  },
+  "AI应用数据支线": {
+   "kw": [
+    "AI",
+    "人工智能",
+    "智能体",
+    "数据要素",
+    "数据标注",
+    "算力"
+   ],
+   "inds": []
+  }
+ },
+ "batch": "review_cli_20261023"
+}

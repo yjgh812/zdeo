@@ -1,0 +1,6 @@
+[
+  {"code":"sh600737","name":"中粮糖业","direction":"buy","quantity":10000,"price":"16.21","status":"已成交","filledAt":"2026-09-11 14:16:48"},
+  {"code":"sh600737","name":"中粮糖业","direction":"buy","quantity":500,"price":"16.22","status":"已成交","filledAt":"2026-09-11 14:16:32"},
+  {"code":"sh601118","name":"海南橡胶","direction":"buy","quantity":3000,"price":"6.74","status":"已成交","filledAt":"2026-09-11 14:15:47"},
+  {"code":"sh600519","name":"贵州茅台","direction":"buy","quantity":100,"price":"1700.00","status":"已成交","filledAt":"2026-09-11 14:16:00"}
+]

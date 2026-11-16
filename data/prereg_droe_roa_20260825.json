@@ -1,0 +1,66 @@
+{
+  "id": "20260825-droe_roa-v1",
+  "ts": "2026-08-25T00:00:00",
+  "object": "droe/roa 双因子组合 WFA 门禁正式验证（P2-11 预注册闭环验收）",
+  "engine": "tulong_wfa_gate.v1",
+  "combo": [
+    "droe",
+    "roa"
+  ],
+  "params": {
+    "train": 500,
+    "test": 60,
+    "fwd": 20,
+    "cost": 0.001,
+    "top_pct": 0.1,
+    "start": "20180101",
+    "end": "20260814"
+  },
+  "criterion": {
+    "pos_window_rate": 0.6,
+    "mdd": -0.25,
+    "min_folds": 5,
+    "min_oos_months": 12
+  },
+  "trial_budget": 61,
+  "commitment": "PASS 才允许上线；WARN 降仓观察；FAIL 不上线并归因。",
+  "status": "completed",
+  "result": {
+    "verdict": "FAIL",
+    "oos": {
+      "cagr": 0.1725,
+      "mdd": -0.3892,
+      "sharpe": 0.68,
+      "total": 1.7879
+    },
+    "pbo": null,
+    "cpcv": {
+      "n_paths": 10,
+      "n_blocks": 6,
+      "n_combos": 10,
+      "mean_ic_median": 0.0071,
+      "mean_ic_min": -0.0088,
+      "icir_median": 0.142,
+      "icir_min": -0.073,
+      "pos_path_rate": 0.7,
+      "worst_path": {
+        "train_blocks": [
+          0,
+          2,
+          3
+        ],
+        "test_blocks": [
+          1,
+          4,
+          5
+        ],
+        "mean_ic": -0.0088,
+        "icir": -0.073,
+        "pos_rate": 0.4739,
+        "n_days": 1036
+      },
+      "evidence_weak": false
+    },
+    "ts": "2026-08-25T09:09:15"
+  }
+}

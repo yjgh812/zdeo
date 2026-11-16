@@ -1,0 +1,59 @@
+{
+ "id": "PREREG-TIMING-CONDMATRIX-V1",
+ "title": "情绪状态×引擎A信号条件矩阵（判死边界②首次检验）",
+ "owner": "D:\\zcodesj 择时研究线",
+ "created_at": "2026-09-14",
+ "boundary_basis": "SENTIMENT-CYCLE-DAILY-ALPHA 判死边界条款②『事件×位置条件矩阵选股层路线（未检验，引擎A/B范式）』；主人 2026-09-14『继续』指令兑现 TIMING_METHODS_STUDY_20260914 推荐主线",
+ "predecessor": "SENTIMENT-CYCLE-DAILY-ALPHA（v2 f679a9da / v3 eee84e6b）判死的是『状态→次日等权收益』日频择时用途且冻结两轮后禁第三轮；本 prereg 检验用途不同——状态对『既有过闸信号（引擎A）』条件收益的区分度，不预测市场明日收益；状态定义合法复用 v3 梯队三分制原文（定义未被判死，仅其日频收益用途被判死）",
+ "signal_recipe": {
+  "source": "ENGINE-A-LOWREVERSAL-V1 指纹 19d5c13578b8ca96，全量照抄禁改",
+  "宇宙": "panel_v6 池（PIT：剔ST/北交所/收盘>20元/流动性不足）",
+  "状态准入": "pos250 <= 0.40",
+  "触发事件_任一": [
+   "chan_buy1_10>0.5",
+   "chan_buy2_10>0.5",
+   "island_5>0.5",
+   "gap_up_hold>0.5"
+  ],
+  "负过滤_全部不得触发": [
+   "rounded_20<=0.5",
+   "lhb_buy_5<=0.5",
+   "vwap60_bias<=0.5",
+   "vwap20_bias<=0.5"
+  ],
+  "补丁": "剔除 688 科创板（2026-09-10 B-M5，与影子扫描器一致）",
+  "持有": "T+1 收盘买入 → T+21 收盘卖出（next-bar，qfq）"
+ },
+ "state_definition_v3_frozen": {
+  "高": "max_board >= 5 或 promotion_rate >= 0.40",
+  "低": "max_board <= 2 或 (prev_max_board - max_board) >= 2",
+  "中": "其余",
+  "冲突规则": "高与低同时命中判『低』（防守优先，v3 原文冻结）",
+  "unknown": "max_board 缺失（信号日状态 unknown → 剔除并如实报数）"
+ },
+ "state_computation_note": "qfq 日线推算口径（sentiment_cycle_backfill.py 同款：涨停=change_pct 容差判 / 炸板=触板未封 / streak 递推）；promotion_rate=昨日涨停今日再涨停比例（回填口径，近似梯队晋级率，与 hithink 实拉口径有已知差异，本 prereg 全样本内口径一致）；状态在内存计算，不写生产台账 data/sentiment_cycle_daily.jsonl",
+ "window_frozen": {
+  "start": "20200101",
+  "end": "qfq 库最新截面",
+  "选择依据": "跨 2021 结构牛/2022 熊/2023 震荡/2024 V 型/2025-26 牛，regime 多样性满足分段稳定性检验；按引擎A 历史密度（n=81409/13年≈6千/年）预估 2020-2026 约 3-4 万行，功效充足",
+  "fwd20完整性": "信号日+21 交易日超出 qfq 最大的信号剔除并如实报数"
+ },
+ "metric_frozen": "每信号行超额 = 个股 fwd20（qfq）− 同窗全池等权 fwd20（engineA_shadow_eval.py 同款查询）；聚合两口径：行级均值（对齐锚 +2.91%）与信号日聚簇均值（对齐锚 +1.54%）",
+ "primary_hypothesis": "高状态信号日聚簇超额均值 > 低状态信号日聚簇超额均值",
+ "gates_frozen": [
+  "P0 功效预检：高态信号日数≥30 且 低态信号日数≥30 且 两态信号行数各≥500；任一不满足=INSUFFICIENT_POWER，只记录不判定",
+  "P1 主判据：信号日聚簇口径 高均值−低均值 ≥ +1.0pp 且 Welch t（日级，不假设等方差）≥ 2.0",
+  "P2 分段稳定：全部信号日按日期中位数切半，『高>低』方向前半窗与后半窗均成立"
+ ],
+ "verdict_rule": "P0∧P1∧P2 全过=过闸候选（仍影子；接线须主人裁决，语义=低/退潮状态条件化暂停或降仓，不改信号、不拦-8%止损链）；P1 或 P2 不过=条件矩阵路线关闭并登记 falsified_rules（引用本 prereg 指纹）；P0 不过=影子台账继续积累，禁改判据禁换窗口",
+ "sensitivity_descriptive_not_gates": [
+  "v2 五态（冰点/修复/分歧/狂热/退潮，classify 原函数）描述表，不做检验",
+  "高'=仅 max_board≥5、低'=仅 max_board≤2 的方向一致性观察，不做检验"
+ ],
+ "anti_peek": "本文件先落盘并计算指纹（指纹=除 fingerprint 字段外全文 sha256 前 16 位），之后才运行回填与条件收益计算；窗口起点/状态定义/阈值/判据全部冻结；禁止按结果调参、换状态口径、换窗口；样本外=影子台账自然积累后复核条款",
+ "expected_runtime_artifacts": [
+  "portrait_agent/timing_condmatrix_v1_20260914.py（执行器，唯一写入=结果 JSON）",
+  "data/timing_condmatrix_v1_results_20260914.json（结果，含 verdict）"
+ ],
+ "fingerprint": "d3a154496b6aeb8d"
+}

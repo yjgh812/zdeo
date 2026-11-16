@@ -1,0 +1,8 @@
+[
+  {"code": "600963", "name": "岳阳林纸", "source": "revival_chan", "sector": "轻工制造", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|缠论二买信号日20261104 strength=0.80 60min金叉"},
+  {"code": "600510", "name": "黑牡丹", "source": "revival_chan", "sector": "房地产", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|缠论二买信号日20261104 strength=0.80 60min金叉"},
+  {"code": "600569", "name": "安阳钢铁", "source": "revival_chan", "sector": "钢铁", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|缠论二买信号日20261104 strength=0.63 60min金叉"},
+  {"code": "000037", "name": "深南电A", "source": "revival_chan", "sector": "公用事业", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|缠论二买信号日20261104 strength=0.56 60min金叉"},
+  {"code": "300712", "name": "永福股份", "source": "revival_chan", "sector": "建筑装饰", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|缠论二买顺延补位(博济医药死叉否决) 60min金叉"},
+  {"code": "603890", "name": "春秋电子", "source": "revival_v51_fusion", "sector": "电子", "volume": 100, "note": "补缺件补批次(主人继续令20261109)|V5.1融合score=0.334(海鸥股份死叉否决)"}
+]

@@ -1,0 +1,18 @@
+{
+ "generated": "2026-10-26",
+ "deployed_spec": "A格&vol>0.45&m20<=-5% (test窗2023+)",
+ "n_events": 10792,
+ "mean": 0.0692,
+ "std": 0.1582,
+ "skew": 1.7,
+ "kurt": 15.34,
+ "sr_per_event": 0.4371,
+ "trial_sharpe_var": 0.01548,
+ "DSR": {
+  "N=50": 1.0,
+  "N=270": 1.0,
+  "N=1000": 0.9997
+ },
+ "PBO_cscv_lite_16splits": 0.527,
+ "pbo_interpretation": "<0.5=样本内选择有预测力; ≈0.5=无异于随机"
+}

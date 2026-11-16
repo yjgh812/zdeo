@@ -1,0 +1,49 @@
+{
+  "name": "PREREG_FTD_FOLLOWTHROUGH",
+  "title": "FTD跟进日A股版(指数右侧确认事件)影子验证",
+  "status": "ACTIVE",
+  "approval": {
+    "approved_by": "owner(主人)",
+    "approved_at": "2026-10-07",
+    "decision": "批准激活影子层(裁决单四门/反向风险/fwd60衰减已全量呈报后拍板)",
+    "activation_since": "20261008",
+    "runner": "analysis/ftd_shadow_daily.py(幂等全史重算, 参数单一真源=本文件)",
+    "schedule": "07:45观测层八合一第8步扫描+09:15晨报第10步简报呈现(仅观测调度, 零交易权)"
+  },
+  "registered": "2026-10-07",
+  "family": "market_timing_event",
+  "sibling": "PD-034 PANIC_OVERSHOOT(左侧恐慌锚,ACTIVE) — 本件为右侧确认锚,事件零重叠(29vs26,overlap=0)构成配对",
+  "trigger_locked": {
+    "precondition": "上证指数距最近60日滚动收盘高点回撤>=8%",
+    "day1": "回撤条件满足后的首个收涨日",
+    "window": "Day1后第4~10个交易日(欧奈尔反弹第4天起,A股口径)",
+    "ftd": "窗口内收盘涨幅>=2.0% 且 成交量>前一日(每尝试仅取首个;上一FTD后20交易日冷却)",
+    "lookahead_note": "全部条件T日收盘可计算,零前视",
+    "param_sensitivity": "dd6/8/12 x gain1.5/2/2.5 九组全正(med+1.02~+5.24),平台非尖峰;锁定组=回测同口径8%/2.0%"
+  },
+  "in_sample_evidence": {
+    "data": "vipdoc sh000001.day 19901219~20260930 (8736日)",
+    "n": 29,
+    "fwd20": {"med": 3.28, "win": 65.5, "baseline_med": 0.28, "baseline_win": 51.9},
+    "mdd20_med": -1.73,
+    "regime_split": {"post_19961216": {"n": 23, "med": 3.28, "win": 69.6}, "post_2015": {"n": 7, "med": 3.79, "win": 71.4}},
+    "gates": "G1 n>=20 PASS / G2 med超额>=+1pp PASS(+3.0pp) / G3 win>=55 PASS / G4 分年正14/18 PASS",
+    "worst5": "1995/2005/1997/1996/2007假确认,左尾最深-15.17(vs PD-034左尾-33.7温和,无股灾级)",
+    "novol_control": "n=7过小,量能判据增量不可证(A股涨幅>=2%近似蕴含放量,量能条件接近冗余,保留无害)",
+    "script": "analysis/ftd_followthrough_study_20261007.py",
+    "result_json": "tmp/ftd_followthrough_result_20261007.json"
+  },
+  "quality_layers": {
+    "erp_pct_5y": "记录事件日ERP分位(质量分层字段,非触发条件,沿PD-034家族口径)",
+    "phase": "记录事件日emotion_phase_v2相位",
+    "note": "分层仅记录不门控,防样本掉窗口"
+  },
+  "acceptance_locked": {
+    "window": "日历12月 或 out_of_sample n>=3 先到为准(事件驱动年均约1次)",
+    "pass": "fwd20 med>=+2% 且 win>=60%",
+    "kill_switch": "连续3个out_of_sample事件fwd20全负 -> 提请废案"
+  },
+  "boundary": "纯观测影子层零交易权;不接闸门不接cron;激活须主人明示批准后 --since 当日;🔴配对语义修订(20261007收尾轮B项):26恐慌事件仅3个在60交易日内出现FTD(中位间隔11日)——恐慌→确认链条弱,A股V型反转快于日4窗,FTD不得作为PD-034后续加仓规则,仅作独立右侧择时锚;两锚互补不衔接",
+  "conflict_dossier": "prereg_preflight CONFLICT应答:BREAKOUT-SCOUT二波确认日=个股级追入族,本研究=指数级择时确认层;TIMING-PANIC裸FAIL->PD-034合取PASS先例=多条件合取可过;DEEPFIRST/PORTRAIT_GATES'右侧确认'仅描述性用词",
+  "layer_preflight_20261007": "收尾轮C项:29事件ERP中位47.4/>=60占比46.7%(与估值锚弱相关);相位台账仅覆盖2025-26故28/29空窗——分层字段保留但预期长期零样本,如实"
+}

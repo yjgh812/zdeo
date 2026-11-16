@@ -1,0 +1,13 @@
+{
+  "rebalances": 115,
+  "picks": 575,
+  "top5_win": 47.83,
+  "top5_mean": 0.55,
+  "baseline_win": 48.45,
+  "baseline_mean": 0.79,
+  "top5_excess_pp": -0.24,
+  "bottom5_win": 46.96,
+  "bottom5_mean": 0.81,
+  "top_minus_bottom_pp": -0.26,
+  "by_year": {}
+}

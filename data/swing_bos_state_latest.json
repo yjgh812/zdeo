@@ -1,0 +1,39 @@
+{
+ "scan_date": 20261029,
+ "n_events_today": 2,
+ "candidates_top20": [
+  {
+   "code": "000530",
+   "price": 8.23,
+   "break_pct": 10.03,
+   "pos250": 74.1,
+   "volr": 1.78,
+   "name": "冰山冷热",
+   "p_up": 0.0004,
+   "gate": {
+    "pass": false,
+    "struct": "",
+    "region": null,
+    "reason": "60分无介入结构(等待)"
+   }
+  },
+  {
+   "code": "605338",
+   "price": 18.98,
+   "break_pct": 9.33,
+   "pos250": 14.0,
+   "volr": 2.38,
+   "name": "巴比食品",
+   "p_up": 0.0001,
+   "gate": {
+    "pass": false,
+    "struct": "",
+    "region": null,
+    "reason": "60分追高(距低点21.3%>10%)"
+   }
+  }
+ ],
+ "selected": [],
+ "rule": "收盘实体上穿最近已确认zigzag摆动位(10%阈值)+量≥1.2×20日均量; TinyLSTM P(涨前)主排序+pos250次级≤5只; 分年9/9正+模型真alpha+1.6~2.6pp",
+ "built_at": "2026-10-30 15:56"
+}

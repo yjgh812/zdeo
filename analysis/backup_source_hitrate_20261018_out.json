@@ -1,0 +1,17 @@
+[
+ {
+  "timestamp": "2026-10-18T22:46:59",
+  "runs": 1,
+  "sina_hitrate": "1/1",
+  "baostock_hitrate": "1/1",
+  "tushare_hitrate": "1/1",
+  "detail": [
+   {
+    "run": 1,
+    "sina": "ok",
+    "baostock": "ok",
+    "tushare": "ok"
+   }
+  ]
+ }
+]

@@ -1,0 +1,75 @@
+{
+  "id": "20260920-hmm-regime-v1",
+  "status": "DRAFT_NOT_FROZEN",
+  "status_note": "草案无效力: 主人未过目, 无指纹, 禁止据此执行任何判据回放或影子接线; 冻结须主人裁决后生成指纹并 git 提交",
+  "ts": "2026-09-20",
+  "proposer": "屠龙研究立项agent (主人20260920放行立项评估)",
+  "charter": "reports/swing_c_series_20260919/HMM_PROJECT_CHARTER_20260920.md",
+  "object": "HMM regime 概率轴立项: 滚动PIT版HMM3阴跌中态识别市场fwd20负期望窗口(消C2全样本内拟合事后性); 两阶段=一期回放判据(StageA)+二期只读影子(StageB); 零生产接线, 不改LOW_VOL探针/REGIME_BUDGET_GATE/UP_BUCKET_ENV_GATE任何条款",
+  "evidence_basis": "C2侦察(reports/swing_c_series_20260919/C2_hmm_lowvol.json, 20160101-20260918 n=2604日): 全样本内HMM3中态fwd20 n=981 均值-0.19%/中位-0.39%唯一负期望态; 与LOW_VOL部分重合J(LV_pos,HMM3_mid)=34.2%切换无领先(中位差±3日); 双向增量(LV日内熊/非熊+3.16pp t=5.2; 中态内LV on/off +2.16pp t=4.6; 注意t值基于重叠fwd20有效n被高估, 门禁只取中位数与分年符号); 事后口径为本prereg滚动PIT设计所消对象",
+  "primary_arm_ruling": "主判据=A臂市场域(HMM3中态fwd20市场负期望); B臂选股域(bp_ep Top20影子池fwd20超额增量)降为二期升格判据, 理由: B臂无历史影子序列(multifactor/reports/daily_top20实存仅2026-08-03起13份)不可回放; HMM拟合对象即市场收益, 模型-目标同域; B臂与LOW_VOL同位冗余风险最高",
+  "design_LOCKED_draft": {
+    "series": "全市场等权日收益=qfq库stock_daily_meta_qfq全代码AVG(change_pct)百分数, 20160104起(暖机池), 回放路径file:D:/zcodesj/data/dragon_quant_qfq.db?mode=ro(与C2同源); 落盘db行数+mtime+末日快照; 冻结前须完成与factor_engine副本(1.448GB@2026-09-18)的AVG序列末日对账, 差异>1bp先报告主人",
+    "rolling": "expanding月末重估: 2018-01月末起用截至当月末全历史(首拟约490交易日)拟合, hmmlearn GaussianHMM(full协方差, n_iter=500, tol=1e-4, min_covar=1e-3), K=2与K=3各两种子(主20260919/副7)共4次/月; 判据重估月=2018-01..2026-08月末共104次",
+    "pit_rule": "日t状态概率=上月末冻结模型前向递推: 月初对全历史跑一次前向算法得p_filt, 月内p_pred_t=p_filt_{t-1}@A; t日收益不进入t日判别, 仅日终回填供次日递推; 严禁smoothed口径与当月模型",
+    "state_label": "按当期冻结模型means_升序重标(PIT安全); 主判据态=K=3均值居中态(mid); 跨月不做状态匹配, 相邻月参数跳变仅落诊断",
+    "hysteresis": "进入mid: p_mid>=0.60; 退出: p_mid<0.50; 初始无态(防状态翻转抖动)",
+    "descriptive_only_no_gate": "K=2全部门禁、K=3暴烈熊/牛态、HMM2熊态暴跌反弹轴(+3.54%方向与LOW_VOL相反)、九前缀生产池口径档、去冷启动档、副种子档: 全部仅描述落盘, 不得据此立项或主张(防HARKing)",
+    "lowvol_calendar": "对照=LV_pos单条件(pos250中位<0.30, 与C2同法全历史可得); W2换手仅2020-02起不入门禁; LV_dual⊂LV_pos故¬LV_pos内成立即强于¬LV_dual内成立",
+    "coldstart": "冷启动段=2018-02..2019-12(前24预测月)显式标记; 主门禁用全期不剔除, 去冷启动版为预声明稳定性检查一并落盘",
+    "output": "data/hmm_regime_rolling_v1.csv(date唯一键幂等: date, model_ym, p2_bear, p2_nonbear, p3_s1/s2/s3, p_pred_mid, state3, hyst_mid, seed_divergent, param_jump_diag)"
+  },
+  "stage_A_replay_gate_DRAFT": {
+    "precondition": "本prereg冻结后才允许运行; 冻结前冒烟限2018-01..2018-06子窗且只验运行时/收敛/落盘schema, 禁止计算任何fwd20分组统计",
+    "signal_window": "信号日=2018-02-01..(回放日qfq数据末日-20交易日); fwd20=信号日起20交易日市场等权复利; mid=hyst_on日",
+    "gate_pass_G_A1_all_required": [
+      "mid日数n>=400",
+      "mid日fwd20中位<=-0.30% 且 均值<0 (定标: 内样本中位-0.39%容忍约23%退化; -0.30%/20日约年化-3.7%拖累)",
+      "mid中位-全体日中位<=-0.60pp (判别力, 防全期普跌伪过; 内样本约-1.02pp)",
+      "分年: mid日n>=20的年份中, 年中位为负的年数>=6/9 (2018-2026恰9日历年; 达标年<6不判死不升格, 降级分年证据不足仅观察)"
+    ],
+    "upgrade_line_G_A2_optional": "mid中位<=-0.50% -> 才允许提请与LOW_VOL联动预算门研究候选; 未达仅登记观察项",
+    "gate_fail_ANY_falsified": [
+      "mid中位>0",
+      "负中位年数<4/9",
+      "NOT_LV_pos AND mid子集(n>=150)中位>0 => 判LV已覆盖关闭",
+      "3态结构坍塌(任一态占用<1%或两态均值差<0.1x全样本sd)在>=30%重估月发生 => 判3态不可识别, K=3线关闭且K=2不自动继承门禁"
+    ],
+    "trial_budget": 1
+  },
+  "stage_B_shadow_gate_DRAFT": {
+    "precondition": "StageA G-A1全过 且 主人批准二期; 每日20:05独立任务落盘data/hmm_regime_shadow.csv(幂等UPSERT), 只读影子零拦截零执行权, 不改attribution/market_state_probe.py; schtasks接线须ASCII cmd启动器+schtasks /run实弹验收",
+    "first_review": "影子满>=60有效交易日 且 mid日n>=40(以晚到者为准, 预计2027-01, 与GARCH影子首评同窗)【预判,存在不确定性】",
+    "B1_market_domain": "影子期mid日fwd20中位<=0 (n>=40)",
+    "B2_selection_domain_upgrade": "LV_pos=off AND hyst_mid=on日的bp_ep Top20池fwd20等权超额(vs全市场等权)中位, 比LV_pos=off AND hyst_mid=off日低>=0.8pp, 双臂n>=20; bp_ep影子序列不可得则B2记N/A不判死(数据缺失不等于证伪)",
+    "gate_fail_ANY": "B1中位>+0.3%(明显为正)=>HMM中态负期望前向失效, 整线关闭登记falsified; 中间态=>影子延长60交易日一次, 再中间即关闭",
+    "trial_budget": "影子判据1轮+延期1次"
+  },
+  "relation_to_existing_LOCKED": {
+    "LOW_VOL_probe": "生产设施(attribution/market_state_probe.py每日20:00)不动; HMM影子为旁路; 联动须G-A2+B2双达+新prereg+主人裁决",
+    "REGIME_BUDGET_GATE_dcfa9a31": "价格位置域env门管v5.2族, 与本轴(收益分布域)证据禁混用条款互不引用; env×HMM复合门须新prereg+主人裁决",
+    "UP_BUCKET_ENV_GATE": "同上, 三regime设施证据三账",
+    "GARCH_shadow_20260905": "无共享判据, 首评窗可同月互不干扰"
+  },
+  "parallel_draft_conflict_declared_20260921": "审计发现平行草案 data/PREREG_HMM_ROLLING_SHADOW_20260920.json(swing_p系, origin=reports/swing_p_recon_20260919/C2_hmm_eval_20260920.md)覆盖同一研究对象但协议互异(r2_market_daily 2015起+MarkovRegression 5种子+env联合格判据+影子120日 vs 本草案 qfq AVG 2016暖机+hmmlearn 2种子+fwd20市场域判据+影子60日); 处置建议=冻结时主人裁决单引擎归并(本草案为主引擎, env联合格保留为其Stage C复用本草案滚动状态)或双轨并行(须互写引用条款+mid态命名权独占); 两份均为DRAFT无指纹无判据运行, 当前无生产风险; 详见charter §8",
+  "fail_modes_declared": [
+    "hmmlearn不收敛或数值失败 -> 沿用上月冻结模型并记degraded, 连续2月失败回放中止报结构化错误(不得静默)",
+    "qfq库不可用 -> 当日跳过记fail, 不阻塞其他探针",
+    "主/副种子硬判分歧 -> 分歧日比例落盘, >30%月触发不稳定警示(仅诊断, 不自动判死, 判死只按gate条款)",
+    "冻结前双库对账差异>1bp -> 停下报告主人, 不得自行选库"
+  ],
+  "verdict_semantics": "PASS_CANDIDATE仅=提请主人裁决是否登记影子/研究候选, 零自动接线; FAIL登记falsified_rules(trial_budget=1不重试); 翻案须新指纹+新前提+主人裁决",
+  "data_sources": [
+    "file:D:/zcodesj/data/dragon_quant_qfq.db?mode=ro (AVG(change_pct), 与C2同源)",
+    "D:/workbuddyspace/databases/fundamental_data.db?mode=ro (仅W2诊断)",
+    "reports/swing_c_series_20260919/C2_hmm_lowvol.json + C2_hmm_vs_lowvol.py",
+    "multifactor/reports/daily_top20/ (B2臂影子序列, 现存2026-08-03起13份)"
+  ],
+  "fingerprint_note": "DRAFT无指纹; 冻结=主人过目修订后按冻结日全文哈希生成并git提交, 此前任何判据运行均无效视同peeking",
+  "merge_resolution": {
+    "decided_by": "主人 2026-09-21 晨裁决「按推荐继续」采纳 agent 推荐方案",
+    "resolution": "单引擎归并：本草案（prereg_hmm_regime_20260920_DRAFT，2018起滚动/双种子/主判据A臂市场域/影子60日）为主引擎；PREREG_HMM_ROLLING_SHADOW_20260920 的 env 联合格降级为本草案 Stage C 可选扩展（非主判据）",
+    "counterpart": "data/PREREG_HMM_ROLLING_SHADOW_20260920.json（已加让位注记，档案保留供 Stage C 参考）",
+    "both_drafts_never_frozen": true
+  }
+}

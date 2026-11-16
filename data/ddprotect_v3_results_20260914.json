@@ -1,0 +1,123 @@
+{
+ "prereg_id": "PREREG-DRAWDOWN-PROTECT-V3",
+ "fingerprint": "9c6198e42dfd5242",
+ "carrier": {
+  "ann_ret": 24.53,
+  "ann_vol": 22.67,
+  "sharpe": 1.082,
+  "mdd": -23.75,
+  "cvar5": -3.45,
+  "n": 1626,
+  "active_day_ratio": 0.998
+ },
+ "variants": [
+  {
+   "ma": 20,
+   "floor": 0.3,
+   "mdd": -15.03,
+   "mdd_impr": 8.72,
+   "drag": 4.0,
+   "cvar5": -2.466,
+   "sharpe": 1.224,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  {
+   "ma": 20,
+   "floor": 0.5,
+   "mdd": -17.26,
+   "mdd_impr": 6.49,
+   "drag": 2.84,
+   "cvar5": -2.624,
+   "sharpe": 1.208,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  {
+   "ma": 20,
+   "floor": 0.7,
+   "mdd": -19.49,
+   "mdd_impr": 4.26,
+   "drag": 1.69,
+   "cvar5": -2.909,
+   "sharpe": 1.166,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  {
+   "ma": 60,
+   "floor": 0.3,
+   "mdd": -14.03,
+   "mdd_impr": 9.72,
+   "drag": 6.9,
+   "cvar5": -2.593,
+   "sharpe": 1.016,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  {
+   "ma": 60,
+   "floor": 0.5,
+   "mdd": -16.63,
+   "mdd_impr": 7.12,
+   "drag": 4.92,
+   "cvar5": -2.716,
+   "sharpe": 1.066,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  {
+   "ma": 60,
+   "floor": 0.7,
+   "mdd": -19.21,
+   "mdd_impr": 4.54,
+   "drag": 2.94,
+   "cvar5": -2.959,
+   "sharpe": 1.087,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  }
+ ],
+ "cash_sens_descriptive": {
+  "mdd": -17.03,
+  "ann_ret": 22.0
+ },
+ "P0": {
+  "eval_days": 1626,
+  "active_ratio": 0.998,
+  "pass": true
+ },
+ "P1": {
+  "primary": {
+   "ma": 20,
+   "floor": 0.5,
+   "mdd": -17.26,
+   "mdd_impr": 6.49,
+   "drag": 2.84,
+   "cvar5": -2.624,
+   "sharpe": 1.208,
+   "bh_sharpe": 1.082,
+   "pass_p1": false
+  },
+  "pass": false
+ },
+ "P2": {
+  "n_variants_pass_p1": 0,
+  "halves_mdd_impr": [
+   8.07,
+   5.95
+  ],
+  "yearly_drag": {
+   "2020": 0.83,
+   "2021": 2.9,
+   "2022": 0.66,
+   "2023": 7.09,
+   "2024": 3.87,
+   "2025": 6.51,
+   "2026": -3.7
+  },
+  "drag_ok_year_ratio": 0.43,
+  "pass": false
+ },
+ "verdict": "FAIL"
+}

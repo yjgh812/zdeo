@@ -1,0 +1,26 @@
+{
+  "复跑日期": "2026-09-05",
+  "一致": [
+    "mainline_constraint_stage1(WEAK,t1.387,指纹71b5b6c7)",
+    "mainline_stage2(FAIL,fwd10 t-3.573,指纹bd66553b)",
+    "mainline_stage2_desc(lo+0.978/hi-0.476)",
+    "s2b_lowcatch_stage3(FAIL,年化1.68,指纹7f0626ff)",
+    "winner_profile(51笔,97.9亿/+4.46%)",
+    "winner_profile_years(6年全维一致)",
+    "style_gate_stage4(FAIL,25.12%/t1.334)",
+    "style_gate_stage5(WEAK,NW t2.687/32.37%)",
+    "mom_gate_fullhist(8/10年正,2020 -0.144/2021 -0.095)",
+    "limit_anchor_test(45笔,B1期望-0.199)",
+    "bootstrap_week(我们17分位)",
+    "month_full_fwd(121笔)",
+    "peer_decompose(22笔,Δ-0.63)"
+  ],
+  "非确定缺陷": [
+    "s2b_auction_diag/s2b_period_diag/s2b_lowcatch_stage3: main_inds set迭代受PYTHONHASHSEED随机化影响→多行业lo_codes拼接顺序不同→[:10]截断候选集跨运行漂移(实测同码同库跳6/8/10笔随机);已修=sorted(main_inds),修后双跑完全一致(9/1020)"
+  ],
+  "修复后更新值": {
+    "s2b_auction_diag": "跳9笔/成交1020/成交笔均值+0.68%(原6/1024/+0.97;量级结论不变:真实跳过个位数,竞价翻案无空间)",
+    "s2b_stage3": "s2b年化+5.15%(原+1.68),bench 13.14%不变,FAIL判定不变(跑输8pp/费用档/MDD照旧);skip 6373(原6376,跨组混计性质不变)"
+  },
+  "要点": "所有WEAK/FAIL/PASS判定与档案结论全部不变;非确定性只影响笔级抽样,不影响统计结论;三脚本已修复确定性"
+}

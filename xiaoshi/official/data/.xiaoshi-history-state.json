@@ -1,0 +1,34 @@
+{
+  "availability": null,
+  "base_url": "https://api.shizixi.com",
+  "canonical_contract": "xiaoshi-history-public-v1",
+  "canonical_schema_version": "xiaoshi-history-public-v1",
+  "contract_version": 5,
+  "data_version": "history-canonical-v2-20260930T093000Z",
+  "files": {
+    "history/v2/public/releases/history-public-v1-20260930T093000Z/data/cn-daily/market=CN/adjustment=qfq/year=2026/data.parquet": {
+      "checked_at": "2026-10-01T23:20:15.057931+08:00",
+      "coverage": null,
+      "dataset": "cn-daily",
+      "path": "D:\\zcodesj\\xiaoshi\\official\\data\\o\\69\\69eb9d54819947b0c306beae5ba9e1b89053a911a9f2e58e5a853340d0b09650.parquet",
+      "requested_dataset": "cn-daily",
+      "sha256": "69eb9d54819947b0c306beae5ba9e1b89053a911a9f2e58e5a853340d0b09650",
+      "size": 35439087
+    }
+  },
+  "last_success_at": "2026-10-01T23:20:15.058476+08:00",
+  "logical_datasets": {},
+  "manifest_version": "history-public-v1-20260930T093000Z",
+  "plan_sha256": null,
+  "previous_contract_version": 5,
+  "quality_track": "complete",
+  "remote_generated_at": "2026-09-30T15:58:59.754712+00:00",
+  "specifications": [
+    {
+      "adjust": "qfq",
+      "dataset": "cn-daily",
+      "year": 2026
+    }
+  ],
+  "storage_layout": "content-addressed-short-path-v1"
+}

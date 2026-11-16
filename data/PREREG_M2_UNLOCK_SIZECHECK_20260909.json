@@ -1,0 +1,16 @@
+{
+  "id": "PREREG_M2_UNLOCK_SIZECHECK_20260909",
+  "created": "2026-09-09",
+  "hypothesis_check": "小盘混杂排除检验（主人裁决『不排除小盘混杂』→ stage-2 必做项提前为选股层 prereg 的开工门槛）：高比例解禁的负向超额是否在同日同流通市值桶内仍然成立——若消失则候选降级为『小盘×解禁交互/小盘效应』。",
+  "window_limitation": "daily_basic 市值数据 2016-2019=0 行（如实声明不可检），本检验限定 2020-01-01~2026-09-08 完整覆盖段（事件约 1.44 万）。该窗口包含 2025-2026 弱化年，判据阈值已按此校准（见 gates）。",
+  "method_frozen": "事件对齐同 PREREG_M2_UNLOCK_FULLMKT_20260909（t0=解禁日前第10交易日，fwd10 跨越解禁日）；超额基准改用**同日同流通市值五分位桶**的等权均值（size-adjusted excess）；ratio 五分位重跑 Q5−Q1 日度聚类 t；辅报 ratio 与市值桶的分布计数（高比例解禁是否集中小盘）。",
+  "gates_frozen": {
+    "PASS_解禁特异性维持": "Q5−Q1(size-adjusted) 日度聚类 t ≤ −2.0 且单调 ≥3/4 → 候选维持，混杂声明降级为『已部分排除（2020+ 口径）』，选股层 prereg 可开工",
+    "FAIL_降级": "|t| < 2 或方向反转 → 候选降级为小盘效应/交互，选股层 prereg 不开工，档案更新"
+  },
+  "data": "workbuddyspace fundamental_data.db daily_basic（circ_mv，ts_code 去后缀对齐 qfq code）+ qfq 权威库 + restricted_release_hist_em",
+  "execution": {
+    "script": "D:\\zcodesj\\m2_unlock_sizecheck_20260909.py",
+    "output_dir": "D:\\zcodesj\\reports\\M2_UNLOCK_SIZECHECK_20260909\\"
+  }
+}

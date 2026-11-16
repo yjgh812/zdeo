@@ -1,0 +1,843 @@
+{
+ "ws_total": 502,
+ "local_total": 610,
+ "matched": 448,
+ "only_westock": [
+  {
+   "date": "20260803",
+   "code": "600644",
+   "action": "buy",
+   "qty": 4000,
+   "price": "10.00",
+   "name": "乐山电力"
+  },
+  {
+   "date": "20260803",
+   "code": "601398",
+   "action": "sell",
+   "qty": 9200,
+   "price": "7.99",
+   "name": "工商银行"
+  },
+  {
+   "date": "20260803",
+   "code": "601728",
+   "action": "sell",
+   "qty": 30700,
+   "price": "6.30",
+   "name": "中国电信"
+  },
+  {
+   "date": "20260803",
+   "code": "603065",
+   "action": "buy",
+   "qty": 2900,
+   "price": "13.60",
+   "name": "宿迁联盛"
+  },
+  {
+   "date": "20260803",
+   "code": "605133",
+   "action": "buy",
+   "qty": 16800,
+   "price": "23.92",
+   "name": "嵘泰股份"
+  },
+  {
+   "date": "20260804",
+   "code": "002517",
+   "action": "buy",
+   "qty": 900,
+   "price": "18.49",
+   "name": "恺英网络"
+  },
+  {
+   "date": "20260804",
+   "code": "002517",
+   "action": "buy",
+   "qty": 12700,
+   "price": "18.85",
+   "name": "恺英网络"
+  },
+  {
+   "date": "20260805",
+   "code": "002361",
+   "action": "buy",
+   "qty": 100,
+   "price": "11.36",
+   "name": "神剑股份"
+  },
+  {
+   "date": "20260805",
+   "code": "002361",
+   "action": "buy",
+   "qty": 12000,
+   "price": "11.37",
+   "name": "神剑股份"
+  },
+  {
+   "date": "20260806",
+   "code": "002181",
+   "action": "buy",
+   "qty": 10000,
+   "price": "9.46",
+   "name": "粤 传 媒"
+  },
+  {
+   "date": "20260806",
+   "code": "600644",
+   "action": "buy",
+   "qty": 5100,
+   "price": "10.36",
+   "name": "乐山电力"
+  },
+  {
+   "date": "20260810",
+   "code": "000506",
+   "action": "buy",
+   "qty": 2700,
+   "price": "18.17",
+   "name": "招金黄金"
+  },
+  {
+   "date": "20260810",
+   "code": "000630",
+   "action": "buy",
+   "qty": 7300,
+   "price": "6.89",
+   "name": "铜陵有色"
+  },
+  {
+   "date": "20260810",
+   "code": "002185",
+   "action": "buy",
+   "qty": 2400,
+   "price": "17.80",
+   "name": "华天科技"
+  },
+  {
+   "date": "20260810",
+   "code": "002259",
+   "action": "buy",
+   "qty": 10600,
+   "price": "4.09",
+   "name": "升达林业"
+  },
+  {
+   "date": "20260810",
+   "code": "002297",
+   "action": "buy",
+   "qty": 2300,
+   "price": "18.90",
+   "name": "博云新材"
+  },
+  {
+   "date": "20260810",
+   "code": "002361",
+   "action": "sell",
+   "qty": 7600,
+   "price": "12.16",
+   "name": "神剑股份"
+  },
+  {
+   "date": "20260810",
+   "code": "002428",
+   "action": "buy",
+   "qty": 400,
+   "price": "104.60",
+   "name": "云南锗业"
+  },
+  {
+   "date": "20260810",
+   "code": "002568",
+   "action": "buy",
+   "qty": 2600,
+   "price": "19.70",
+   "name": "百润股份"
+  },
+  {
+   "date": "20260810",
+   "code": "002582",
+   "action": "buy",
+   "qty": 4900,
+   "price": "10.21",
+   "name": "好想你"
+  },
+  {
+   "date": "20260810",
+   "code": "002611",
+   "action": "buy",
+   "qty": 3100,
+   "price": "16.28",
+   "name": "东方精工"
+  },
+  {
+   "date": "20260810",
+   "code": "002923",
+   "action": "buy",
+   "qty": 4400,
+   "price": "11.43",
+   "name": "润都股份"
+  },
+  {
+   "date": "20260810",
+   "code": "003036",
+   "action": "buy",
+   "qty": 900,
+   "price": "55.61",
+   "name": "泰坦股份"
+  },
+  {
+   "date": "20260810",
+   "code": "300363",
+   "action": "buy",
+   "qty": 2300,
+   "price": "21.43",
+   "name": "博腾股份"
+  },
+  {
+   "date": "20260810",
+   "code": "300511",
+   "action": "buy",
+   "qty": 8000,
+   "price": "5.38",
+   "name": "雪榕生物"
+  },
+  {
+   "date": "20260810",
+   "code": "300573",
+   "action": "buy",
+   "qty": 1100,
+   "price": "43.01",
+   "name": "兴齐眼药"
+  },
+  {
+   "date": "20260810",
+   "code": "600199",
+   "action": "buy",
+   "qty": 6300,
+   "price": "8.06",
+   "name": "金种子酒"
+  },
+  {
+   "date": "20260810",
+   "code": "600326",
+   "action": "buy",
+   "qty": 6700,
+   "price": "7.65",
+   "name": "西藏天路"
+  },
+  {
+   "date": "20260810",
+   "code": "600644",
+   "action": "sell",
+   "qty": 3900,
+   "price": "10.33",
+   "name": "乐山电力"
+  },
+  {
+   "date": "20260810",
+   "code": "601101",
+   "action": "buy",
+   "qty": 3700,
+   "price": "13.79",
+   "name": "昊华能源"
+  },
+  {
+   "date": "20260810",
+   "code": "605133",
+   "action": "sell",
+   "qty": 14900,
+   "price": "25.95",
+   "name": "嵘泰股份"
+  },
+  {
+   "date": "20260811",
+   "code": "000506",
+   "action": "sell",
+   "qty": 1700,
+   "price": "19.94",
+   "name": "招金黄金"
+  },
+  {
+   "date": "20260811",
+   "code": "000630",
+   "action": "sell",
+   "qty": 4300,
+   "price": "6.90",
+   "name": "铜陵有色"
+  },
+  {
+   "date": "20260811",
+   "code": "001388",
+   "action": "buy",
+   "qty": 100,
+   "price": "23.88",
+   "name": "信通电子"
+  },
+  {
+   "date": "20260811",
+   "code": "002361",
+   "action": "sell",
+   "qty": 2900,
+   "price": "11.67",
+   "name": "神剑股份"
+  },
+  {
+   "date": "20260811",
+   "code": "002428",
+   "action": "sell",
+   "qty": 400,
+   "price": "98.31",
+   "name": "云南锗业"
+  },
+  {
+   "date": "20260811",
+   "code": "002923",
+   "action": "sell",
+   "qty": 1800,
+   "price": "11.49",
+   "name": "润都股份"
+  },
+  {
+   "date": "20260811",
+   "code": "002923",
+   "action": "sell",
+   "qty": 2600,
+   "price": "11.49",
+   "name": "润都股份"
+  },
+  {
+   "date": "20260811",
+   "code": "300363",
+   "action": "sell",
+   "qty": 1400,
+   "price": "21.65",
+   "name": "博腾股份"
+  },
+  {
+   "date": "20260811",
+   "code": "300573",
+   "action": "sell",
+   "qty": 700,
+   "price": "42.95",
+   "name": "兴齐眼药"
+  },
+  {
+   "date": "20260811",
+   "code": "600644",
+   "action": "sell",
+   "qty": 3300,
+   "price": "10.46",
+   "name": "乐山电力"
+  },
+  {
+   "date": "20260811",
+   "code": "601101",
+   "action": "sell",
+   "qty": 1500,
+   "price": "13.39",
+   "name": "昊华能源"
+  },
+  {
+   "date": "20260811",
+   "code": "601101",
+   "action": "sell",
+   "qty": 2200,
+   "price": "13.39",
+   "name": "昊华能源"
+  },
+  {
+   "date": "20260811",
+   "code": "603102",
+   "action": "buy",
+   "qty": 100,
+   "price": "37.58",
+   "name": "百合股份"
+  },
+  {
+   "date": "20260819",
+   "code": "000725",
+   "action": "buy",
+   "qty": 5100,
+   "price": "6.22",
+   "name": "京东方Ａ"
+  },
+  {
+   "date": "20260825",
+   "code": "002125",
+   "action": "buy",
+   "qty": 2200,
+   "price": "13.23",
+   "name": "湘潭电化"
+  },
+  {
+   "date": "20260904",
+   "code": "601668",
+   "action": "buy",
+   "qty": 1100,
+   "price": "4.40",
+   "name": "中国建筑"
+  }
+ ],
+ "only_local": [
+  {
+   "date": "20260728",
+   "code": "002668",
+   "action": "buy",
+   "qty": 17600,
+   "price": 10.62,
+   "name": "TCL智家"
+  },
+  {
+   "date": "20260729",
+   "code": "601288",
+   "action": "buy",
+   "qty": 21100,
+   "price": 7.02,
+   "name": "农业银行"
+  },
+  {
+   "date": "20260729",
+   "code": "601939",
+   "action": "buy",
+   "qty": 8800,
+   "price": 10.69,
+   "name": "建设银行"
+  },
+  {
+   "date": "20260730",
+   "code": "601006",
+   "action": "buy",
+   "qty": 14800,
+   "price": 5.04,
+   "name": "大秦铁路"
+  },
+  {
+   "date": "20260730",
+   "code": "601088",
+   "action": "buy",
+   "qty": 1600,
+   "price": 45.7,
+   "name": "中国神华"
+  },
+  {
+   "date": "20260730",
+   "code": "601985",
+   "action": "buy",
+   "qty": 8200,
+   "price": 9.07,
+   "name": "中国核电"
+  },
+  {
+   "date": "20260730",
+   "code": "601988",
+   "action": "buy",
+   "qty": 12200,
+   "price": 6.14,
+   "name": "中国银行"
+  },
+  {
+   "date": "20260803",
+   "code": "600644",
+   "action": "buy",
+   "qty": 3900,
+   "price": 10.18,
+   "name": "乐山电力"
+  },
+  {
+   "date": "20260803",
+   "code": "601728",
+   "action": "sell",
+   "qty": 33000,
+   "price": 6.28,
+   "name": "中国电信"
+  },
+  {
+   "date": "20260803",
+   "code": "605133",
+   "action": "buy",
+   "qty": 14900,
+   "price": 23.92,
+   "name": "嵘泰股份"
+  },
+  {
+   "date": "20260804",
+   "code": "002517",
+   "action": "buy",
+   "qty": 13600,
+   "price": 18.67,
+   "name": "恺英网络"
+  },
+  {
+   "date": "20260805",
+   "code": "002361",
+   "action": "buy",
+   "qty": 7600,
+   "price": 11.36,
+   "name": "神剑股份"
+  },
+  {
+   "date": "20260806",
+   "code": "002181",
+   "action": "buy",
+   "qty": 20000,
+   "price": 9.52,
+   "name": "粤传媒"
+  },
+  {
+   "date": "20260815",
+   "code": "002185",
+   "action": "buy",
+   "qty": 2400,
+   "price": 0,
+   "name": "华天科技"
+  },
+  {
+   "date": "20260815",
+   "code": "002859",
+   "action": "sell",
+   "qty": 100,
+   "price": 0,
+   "name": "洁美科技"
+  },
+  {
+   "date": "20260815",
+   "code": "002896",
+   "action": "sell",
+   "qty": 200,
+   "price": 0,
+   "name": "中大力德"
+  },
+  {
+   "date": "20260815",
+   "code": "300638",
+   "action": "sell",
+   "qty": 1000,
+   "price": 0,
+   "name": "广和通"
+  },
+  {
+   "date": "20260815",
+   "code": "300790",
+   "action": "sell",
+   "qty": 1000,
+   "price": 0,
+   "name": "宇瞳光学"
+  },
+  {
+   "date": "20260815",
+   "code": "300943",
+   "action": "sell",
+   "qty": 2100,
+   "price": 0,
+   "name": "春晖智控"
+  },
+  {
+   "date": "20260815",
+   "code": "600900",
+   "action": "sell",
+   "qty": 2400,
+   "price": 0,
+   "name": "长江电力"
+  },
+  {
+   "date": "20260815",
+   "code": "601006",
+   "action": "sell",
+   "qty": 14800,
+   "price": 0,
+   "name": "大秦铁路"
+  },
+  {
+   "date": "20260815",
+   "code": "601088",
+   "action": "sell",
+   "qty": 1600,
+   "price": 0,
+   "name": "中国神华"
+  },
+  {
+   "date": "20260815",
+   "code": "601328",
+   "action": "sell",
+   "qty": 12600,
+   "price": 0,
+   "name": "交通银行"
+  },
+  {
+   "date": "20260815",
+   "code": "601398",
+   "action": "sell",
+   "qty": 9200,
+   "price": 0,
+   "name": "工商银行"
+  },
+  {
+   "date": "20260815",
+   "code": "601728",
+   "action": "sell",
+   "qty": 30700,
+   "price": 0,
+   "name": "中国电信"
+  },
+  {
+   "date": "20260815",
+   "code": "601939",
+   "action": "sell",
+   "qty": 8800,
+   "price": 0,
+   "name": "建设银行"
+  },
+  {
+   "date": "20260815",
+   "code": "601985",
+   "action": "sell",
+   "qty": 8200,
+   "price": 0,
+   "name": "中国核电"
+  },
+  {
+   "date": "20260815",
+   "code": "601988",
+   "action": "sell",
+   "qty": 12200,
+   "price": 0,
+   "name": "中国银行"
+  },
+  {
+   "date": "20260815",
+   "code": "603075",
+   "action": "sell",
+   "qty": 2600,
+   "price": 0,
+   "name": "热威股份"
+  },
+  {
+   "date": "20260815",
+   "code": "605100",
+   "action": "sell",
+   "qty": 1700,
+   "price": 0,
+   "name": "华丰股份"
+  },
+  {
+   "date": "20260824",
+   "code": "000017",
+   "action": "buy",
+   "qty": 1500,
+   "price": 7.82,
+   "name": "深中华A"
+  },
+  {
+   "date": "20260824",
+   "code": "000710",
+   "action": "buy",
+   "qty": 2500,
+   "price": 10.5,
+   "name": "贝瑞基因"
+  },
+  {
+   "date": "20260824",
+   "code": "002038",
+   "action": "buy",
+   "qty": 100,
+   "price": 7.1,
+   "name": "双鹭药业"
+  },
+  {
+   "date": "20260824",
+   "code": "002038",
+   "action": "buy",
+   "qty": 4000,
+   "price": 7.2,
+   "name": "双鹭药业"
+  },
+  {
+   "date": "20260824",
+   "code": "002132",
+   "action": "buy",
+   "qty": 5000,
+   "price": 4.85,
+   "name": "恒星科技"
+  },
+  {
+   "date": "20260824",
+   "code": "002703",
+   "action": "buy",
+   "qty": 800,
+   "price": 15.02,
+   "name": "浙江世宝"
+  },
+  {
+   "date": "20260824",
+   "code": "002936",
+   "action": "buy",
+   "qty": 10000,
+   "price": 1.76,
+   "name": "郑州银行"
+  },
+  {
+   "date": "20260824",
+   "code": "300016",
+   "action": "buy",
+   "qty": 2500,
+   "price": 10.6,
+   "name": "北陆药业"
+  },
+  {
+   "date": "20260824",
+   "code": "600531",
+   "action": "buy",
+   "qty": 1700,
+   "price": 14.05,
+   "name": "豫光金铅"
+  },
+  {
+   "date": "20260824",
+   "code": "600916",
+   "action": "buy",
+   "qty": 3000,
+   "price": 8.2,
+   "name": "中国黄金"
+  },
+  {
+   "date": "20260824",
+   "code": "601169",
+   "action": "buy",
+   "qty": 3000,
+   "price": 5.09,
+   "name": "北京银行"
+  },
+  {
+   "date": "20260824",
+   "code": "601668",
+   "action": "buy",
+   "qty": 4000,
+   "price": 4.4,
+   "name": "中国建筑"
+  },
+  {
+   "date": "20260824",
+   "code": "601997",
+   "action": "buy",
+   "qty": 3000,
+   "price": 5.76,
+   "name": "贵阳银行"
+  },
+  {
+   "date": "20260901",
+   "code": "000001",
+   "action": "sell",
+   "qty": 200,
+   "price": 11.92,
+   "name": "平安银行"
+  },
+  {
+   "date": "20260901",
+   "code": "600928",
+   "action": "sell",
+   "qty": 800,
+   "price": 3.58,
+   "name": "西安银行"
+  },
+  {
+   "date": "20260901",
+   "code": "601229",
+   "action": "sell",
+   "qty": 600,
+   "price": 9.68,
+   "name": "上海银行"
+  }
+ ],
+ "price_mismatch": [
+  {
+   "date": "20260824",
+   "code": "000887",
+   "action": "sell",
+   "qty": 2800,
+   "ws": 21.04,
+   "local": 21.39
+  },
+  {
+   "date": "20260813",
+   "code": "002414",
+   "action": "buy",
+   "qty": 3600,
+   "ws": 14.09,
+   "local": 14.06
+  },
+  {
+   "date": "20260812",
+   "code": "002859",
+   "action": "buy",
+   "qty": 100,
+   "ws": 77.1,
+   "local": 76.55
+  },
+  {
+   "date": "20260812",
+   "code": "002896",
+   "action": "buy",
+   "qty": 200,
+   "ws": 80.8,
+   "local": 80.825
+  },
+  {
+   "date": "20260812",
+   "code": "300638",
+   "action": "buy",
+   "qty": 1000,
+   "ws": 20.8,
+   "local": 20.715
+  },
+  {
+   "date": "20260811",
+   "code": "300080",
+   "action": "buy",
+   "qty": 3900,
+   "ws": 3.8,
+   "local": 3.77
+  },
+  {
+   "date": "20260811",
+   "code": "600728",
+   "action": "buy",
+   "qty": 3100,
+   "ws": 4.82,
+   "local": 4.78
+  },
+  {
+   "date": "20260904",
+   "code": "601083",
+   "action": "buy",
+   "qty": 200,
+   "ws": 13.22,
+   "local": 13.0
+  },
+  {
+   "date": "20260904",
+   "code": "600827",
+   "action": "buy",
+   "qty": 200,
+   "ws": 7.85,
+   "local": 7.81
+  },
+  {
+   "date": "20260904",
+   "code": "600704",
+   "action": "buy",
+   "qty": 1000,
+   "ws": 4.96,
+   "local": 4.9
+  },
+  {
+   "date": "20260904",
+   "code": "601999",
+   "action": "buy",
+   "qty": 500,
+   "ws": 7.07,
+   "local": 6.73
+  }
+ ]
+}

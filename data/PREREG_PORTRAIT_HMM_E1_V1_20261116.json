@@ -1,0 +1,13 @@
+{
+ "name": "PREREG_PORTRAIT_HMM_E1_V1",
+ "date": "20261116",
+ "trigger": "主人『继续』令启动候选池第一位HMM震荡段层。本件=E1指数标定层：先在沪深300/上证标定四状态结构，验证通过才准推广个股（E2另立项决议）。",
+ "data": "data/universe_portrait_fullseries.db market_daily 表 idx_sh_c(上证)/idx_hs300_c(沪深300) 收盘序列，20200101-20261116，1664交易日。",
+ "obs": "观测向量=[日对数收益×100, 该收益20日滚动标准差×100]（滚动窗min_periods=20，首19bar弃用）。每指数各自StandardScaler标准化后入模。",
+ "model": "hmmlearn GaussianHMM(n_components=4, covariance_type='full', n_iter=200)，种子集[42,1,7,2024,99]各拟合一次，取对数似然最高的模型；Viterbi预测逐日状态。",
+ "semantic_map": "按四状态的特征1(日对数收益)均值排序：最高=上涨态，最低=下跌态；其余两态按特征2(20日波动)均值排序：高=宽幅震荡，低=窄幅震荡。",
+ "stages": "连续相同语义标签的游程=阶段样本；输出各状态：天数/占比/日均对数收益(年化=×250×100)/平均20日波动(年化=×√250×100)/平均游程天数/最长游程/自转移概率P(次日同态)。",
+ "verdict": "结构判据=『上涨态年化波动 < 下跌态年化波动』且四态各≥5%天数且上证与沪深300双通过→CALIBRATED(准予E2个股推广决议)；否则FAIL/观察。外部参照数字(涨态均32天/年化波9.6%；跌态均37天/28%)仅并排陈列作参照，不设门。",
+ "discipline": "一词一定义禁事后调参；双跑逐字节一致(输出无时间戳)；零交易权，标定产物不进排行/闸门/执行；产物=本件+analysis/portrait_hmm_e1_calibrate_20261116.py+reports/PORTRAIT_HMM_E1_20261116.json(+_run2)。",
+ "fingerprint": "134dd326edd3c5f2"
+}

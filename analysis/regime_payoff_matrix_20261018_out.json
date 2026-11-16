@@ -1,0 +1,428 @@
+{
+ "bp_ep_top15_20261018": {
+  "yearly": [
+   {
+    "year": 2016,
+    "n": 157,
+    "win_r": 71.97,
+    "win_a": 70.06,
+    "avg_win": 395.0,
+    "avg_loss": -248.0,
+    "pl_ratio": 1.594,
+    "pnl_sum": 31777.0,
+    "stop_share": 14.6,
+    "reb_share": 85.4,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2017,
+    "n": 147,
+    "win_r": 55.78,
+    "win_a": 55.1,
+    "avg_win": 485.0,
+    "avg_loss": -337.0,
+    "pl_ratio": 1.439,
+    "pnl_sum": 17056.0,
+    "stop_share": 19.7,
+    "reb_share": 78.2,
+    "risk_ctrl": 3
+   },
+   {
+    "year": 2018,
+    "n": 146,
+    "win_r": 47.26,
+    "win_a": 45.21,
+    "avg_win": 984.0,
+    "avg_loss": -629.0,
+    "pl_ratio": 1.564,
+    "pnl_sum": 14608.0,
+    "stop_share": 40.4,
+    "reb_share": 50.7,
+    "risk_ctrl": 13
+   },
+   {
+    "year": 2019,
+    "n": 131,
+    "win_r": 51.91,
+    "win_a": 43.51,
+    "avg_win": 561.0,
+    "avg_loss": -432.0,
+    "pl_ratio": 1.3,
+    "pnl_sum": 36.0,
+    "stop_share": 9.9,
+    "reb_share": 52.7,
+    "risk_ctrl": 49
+   },
+   {
+    "year": 2020,
+    "n": 166,
+    "win_r": 50.6,
+    "win_a": 48.19,
+    "avg_win": 625.0,
+    "avg_loss": -369.0,
+    "pl_ratio": 1.693,
+    "pnl_sum": 18256.0,
+    "stop_share": 15.1,
+    "reb_share": 78.3,
+    "risk_ctrl": 11
+   },
+   {
+    "year": 2021,
+    "n": 160,
+    "win_r": 41.88,
+    "win_a": 40.0,
+    "avg_win": 353.0,
+    "avg_loss": -234.0,
+    "pl_ratio": 1.505,
+    "pnl_sum": 76.0,
+    "stop_share": 15.0,
+    "reb_share": 85.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2022,
+    "n": 169,
+    "win_r": 54.44,
+    "win_a": 49.7,
+    "avg_win": 327.0,
+    "avg_loss": -220.0,
+    "pl_ratio": 1.49,
+    "pnl_sum": 8816.0,
+    "stop_share": 12.4,
+    "reb_share": 87.6,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2023,
+    "n": 156,
+    "win_r": 66.03,
+    "win_a": 63.46,
+    "avg_win": 366.0,
+    "avg_loss": -205.0,
+    "pl_ratio": 1.781,
+    "pnl_sum": 24496.0,
+    "stop_share": 1.3,
+    "reb_share": 98.7,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2024,
+    "n": 146,
+    "win_r": 67.81,
+    "win_a": 67.12,
+    "avg_win": 747.0,
+    "avg_loss": -289.0,
+    "pl_ratio": 2.586,
+    "pnl_sum": 59338.0,
+    "stop_share": 10.3,
+    "reb_share": 89.7,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2025,
+    "n": 130,
+    "win_r": 40.77,
+    "win_a": 40.77,
+    "avg_win": 672.0,
+    "avg_loss": -333.0,
+    "pl_ratio": 2.019,
+    "pnl_sum": 9977.0,
+    "stop_share": 16.9,
+    "reb_share": 83.1,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2026,
+    "n": 104,
+    "win_r": 43.27,
+    "win_a": 43.27,
+    "avg_win": 467.0,
+    "avg_loss": -461.0,
+    "pl_ratio": 1.014,
+    "pnl_sum": -6166.0,
+    "stop_share": 26.0,
+    "reb_share": 42.3,
+    "risk_ctrl": 0
+   }
+  ],
+  "sentiment_bands": {
+   "verdict": "结构性无判别力(全部同一倍数, 回测内 L2情绪=常量)",
+   "constant": 0.85,
+   "n": 1612
+  }
+ },
+ "bp_ep_top20_20261016": {
+  "yearly": [
+   {
+    "year": 2016,
+    "n": 211,
+    "win_r": 75.83,
+    "win_a": 72.04,
+    "avg_win": 271.0,
+    "avg_loss": -208.0,
+    "pl_ratio": 1.303,
+    "pnl_sum": 28893.0,
+    "stop_share": 14.2,
+    "reb_share": 85.8,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2017,
+    "n": 178,
+    "win_r": 57.3,
+    "win_a": 54.49,
+    "avg_win": 382.0,
+    "avg_loss": -228.0,
+    "pl_ratio": 1.674,
+    "pnl_sum": 18587.0,
+    "stop_share": 23.6,
+    "reb_share": 76.4,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2018,
+    "n": 199,
+    "win_r": 45.73,
+    "win_a": 43.72,
+    "avg_win": 683.0,
+    "avg_loss": -432.0,
+    "pl_ratio": 1.579,
+    "pnl_sum": 10970.0,
+    "stop_share": 44.7,
+    "reb_share": 52.8,
+    "risk_ctrl": 5
+   },
+   {
+    "year": 2019,
+    "n": 172,
+    "win_r": 49.42,
+    "win_a": 42.44,
+    "avg_win": 452.0,
+    "avg_loss": -330.0,
+    "pl_ratio": 1.371,
+    "pnl_sum": 356.0,
+    "stop_share": 11.0,
+    "reb_share": 52.9,
+    "risk_ctrl": 62
+   },
+   {
+    "year": 2020,
+    "n": 218,
+    "win_r": 50.0,
+    "win_a": 44.95,
+    "avg_win": 453.0,
+    "avg_loss": -232.0,
+    "pl_ratio": 1.95,
+    "pnl_sum": 16508.0,
+    "stop_share": 15.1,
+    "reb_share": 78.9,
+    "risk_ctrl": 13
+   },
+   {
+    "year": 2021,
+    "n": 198,
+    "win_r": 47.47,
+    "win_a": 42.42,
+    "avg_win": 371.0,
+    "avg_loss": -207.0,
+    "pl_ratio": 1.793,
+    "pnl_sum": 7574.0,
+    "stop_share": 18.2,
+    "reb_share": 81.8,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2022,
+    "n": 204,
+    "win_r": 51.47,
+    "win_a": 47.06,
+    "avg_win": 283.0,
+    "avg_loss": -217.0,
+    "pl_ratio": 1.302,
+    "pnl_sum": 3685.0,
+    "stop_share": 13.7,
+    "reb_share": 86.3,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2023,
+    "n": 199,
+    "win_r": 63.32,
+    "win_a": 60.3,
+    "avg_win": 281.0,
+    "avg_loss": -213.0,
+    "pl_ratio": 1.32,
+    "pnl_sum": 16933.0,
+    "stop_share": 7.0,
+    "reb_share": 93.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2024,
+    "n": 175,
+    "win_r": 75.43,
+    "win_a": 74.29,
+    "avg_win": 545.0,
+    "avg_loss": -267.0,
+    "pl_ratio": 2.044,
+    "pnl_sum": 58883.0,
+    "stop_share": 5.1,
+    "reb_share": 94.9,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2025,
+    "n": 172,
+    "win_r": 48.26,
+    "win_a": 47.67,
+    "avg_win": 514.0,
+    "avg_loss": -258.0,
+    "pl_ratio": 1.994,
+    "pnl_sum": 18969.0,
+    "stop_share": 12.8,
+    "reb_share": 87.2,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2026,
+    "n": 136,
+    "win_r": 44.12,
+    "win_a": 42.65,
+    "avg_win": 300.0,
+    "avg_loss": -387.0,
+    "pl_ratio": 0.777,
+    "pnl_sum": -12744.0,
+    "stop_share": 26.5,
+    "reb_share": 42.6,
+    "risk_ctrl": 0
+   }
+  ],
+  "sentiment_bands": {
+   "verdict": "结构性无判别力(全部同一倍数, 回测内 L2情绪=常量)",
+   "constant": 0.85,
+   "n": 2062
+  }
+ },
+ "ml_top20_20261018": {
+  "yearly": [
+   {
+    "year": 2020,
+    "n": 207,
+    "win_r": 57.97,
+    "win_a": 57.0,
+    "avg_win": 401.0,
+    "avg_loss": -257.0,
+    "pl_ratio": 1.56,
+    "pnl_sum": 24450.0,
+    "stop_share": 9.2,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2021,
+    "n": 224,
+    "win_r": 62.5,
+    "win_a": 60.71,
+    "avg_win": 719.0,
+    "avg_loss": -357.0,
+    "pl_ratio": 2.014,
+    "pnl_sum": 66353.0,
+    "stop_share": 12.9,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2022,
+    "n": 213,
+    "win_r": 52.11,
+    "win_a": 51.17,
+    "avg_win": 639.0,
+    "avg_loss": -538.0,
+    "pl_ratio": 1.187,
+    "pnl_sum": 13679.0,
+    "stop_share": 18.3,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2023,
+    "n": 206,
+    "win_r": 52.91,
+    "win_a": 49.51,
+    "avg_win": 586.0,
+    "avg_loss": -369.0,
+    "pl_ratio": 1.586,
+    "pnl_sum": 21358.0,
+    "stop_share": 4.4,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2024,
+    "n": 199,
+    "win_r": 48.24,
+    "win_a": 48.24,
+    "avg_win": 809.0,
+    "avg_loss": -875.0,
+    "pl_ratio": 0.925,
+    "pnl_sum": -12433.0,
+    "stop_share": 26.6,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2025,
+    "n": 199,
+    "win_r": 74.37,
+    "win_a": 73.37,
+    "avg_win": 1159.0,
+    "avg_loss": -359.0,
+    "pl_ratio": 3.228,
+    "pnl_sum": 150180.0,
+    "stop_share": 0.5,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   },
+   {
+    "year": 2026,
+    "n": 91,
+    "win_r": 49.45,
+    "win_a": 46.15,
+    "avg_win": 1008.0,
+    "avg_loss": -940.0,
+    "pl_ratio": 1.072,
+    "pnl_sum": -3732.0,
+    "stop_share": 18.7,
+    "reb_share": 0.0,
+    "risk_ctrl": 0
+   }
+  ],
+  "sentiment_bands": {
+   "verdict": "结构性无判别力(全部同一倍数, 回测内 L2情绪=常量)",
+   "constant": 0.85,
+   "n": 1339
+  }
+ },
+ "attr_2026_top15_vs_top20": {
+  "top15": {
+   "n": 104,
+   "pnl": -6166.061860448273,
+   "p_win": 0.4326923076923077,
+   "avg_win": 467.4703585188229,
+   "avg_loss": -461.05471175924254
+  },
+  "top20": {
+   "n": 136,
+   "pnl": -12743.811056865568,
+   "p_win": 0.4264705882352941,
+   "avg_win": 300.30822439729775,
+   "avg_loss": -386.6883086142159
+  },
+  "effect": {
+   "n": 2999.0,
+   "win_rate": 445.0,
+   "avg_win": 7522.0,
+   "avg_loss": -4388.0
+  }
+ }
+}

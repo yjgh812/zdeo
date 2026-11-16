@@ -1,0 +1,64 @@
+{
+ "prereg_id": "PREREG_LOW_FRESH_MAINLINE_20261021",
+ "status": "STAGE1_EXECUTED_M7_APPROVED_NOT_CONFIRMED_CROSS_PHASE",
+ "created": "2026-10-21",
+ "origin": {
+  "exploratory_source": "d88b429 区分特征扫描: D2主线新鲜度两段同向单调(首日48.37/46.34 > 4日+42.15/42.27), 探索组差+6.2/+4.1pp",
+  "owner_order": "主人「现在干」令 = 立项+激活令(2026-10-21)",
+  "honest_status": "探索性发现转正式预注册确认; 本prereg写入先于任何新鲜度专项计算(分层扫描值仅为探索依据)"
+ },
+ "hypothesis": {
+  "H1": "低位横盘∩主线首日(streak=1)事件 T+20 t20e 胜率 − 低位横盘∩主线尾声(streak>=4)事件 胜率 ≥ +3pp, 且 bootstrap95%CI 不含 0",
+  "H1_note": "对照组选同池尾声段(非随机): 两臂同为'低位∩主线', 仅差新鲜度, 消除主线代理共性误差",
+  "H1_kill": "主段 effect ≤ 0 → 归档证伪库(条款可触发)"
+ },
+ "design": {
+  "groups": {
+   "G_FRESH": "is_A & main_hit & main_streak==1",
+   "G_STALE": "is_A & main_hit & main_streak>=4",
+   "G_LOW_ALL": "is_A 全体(母集参照)",
+   "G_RANDOM": "非is_A随机(市场对照)"
+  },
+  "sampling_symmetry": "合同条款: 四组同规则每日每股池≤20上限(v3 round3教训: 不对称抽样致+5.91虚高)",
+  "windows": "主段2024-01~2026-10 + OOS段2022-01~2023-12; 两段均须过门方为跨相位确认",
+  "variants": "冷却{3,5,10} × 出场{t20e, hold20} 共6变体, 方向为正须≥5/6(主判定用冷却5+t20e)",
+  "delisted": "退市段并入(源内open+close双复权, 视野不足最后收盘强制平仓), 2024+段99只/2022+段187只"
+ },
+ "gates": {
+  "G1": "各段 G_FRESH n≥30",
+  "G2": "两段主口径 G_FRESH−G_STALE 均 ≥+3pp 且 CI不含0",
+  "G3": "6变体 ≥5/6 方向为正(两段分别计)",
+  "kill": "主段(2024+) effect≤0"
+ },
+ "lesson_carried": [
+  "对称抽样入合同(v3r3)",
+  "退市库open+close双复权(v2r1)",
+  "指纹运行时实算写入结果(v2r1)",
+  "verdict禁伪中性(v1)",
+  "Part0基线复现自校验(42.70%阈值±1.5pp)"
+ ],
+ "universe": "code首字6/0/3, 上市>60日, 剔北交所/科创口径同前链; 主线代理=申万L1近5日量比Top3∩涨幅>0(非方向层实测, 与探索扫描同口径)",
+ "activation_record": {
+  "activated_at": "2026-10-21 (主人「现在干」令)",
+  "fingerprint_protocol": "runner运行时实算本文件sha256_16写入结果fingerprint16"
+ },
+ "execution_record": {
+  "executed_at": "2026-10-22 00:44",
+  "runner": "analysis/low_fresh_mainline_runner_20261021.py",
+  "result_file": "analysis/low_fresh_mainline_result_20261021.json",
+  "fingerprint16": "270e2dbde232d60d",
+  "results": {
+   "2024+_段": "PASS: 6/6变体 +4.14~+5.11pp 全CI不含0, 主口径(fresh47.25 vs stale42.14) +5.11pp CI(2.65,7.54)",
+   "2022-23段": "FAIL_GATES: 6/6方向正但 +0.21~+2.25pp 全CI含0",
+   "final": "NOT_CONFIRMED (跨相位门未过; kill未触发)"
+  },
+  "m7_verdict": "放行(独立实例, 指纹MATCH 270e2dbde232d60d; 对称抽样/双复权/无未来函数/判定自洽全PASS)",
+  "m7_debts": [
+   "Part0基线段未实现(同代码族先例在档,回归风险≈0)",
+   "三文件须落提交",
+   "fp16/fingerprint16键名漂移"
+  ],
+  "owner_facing_verdict": "相位条件有效、熊市无效——2024+轮动市强稳健(+4.1~5.1pp), 2022-23效应坍缩不显著; 不跨相位通用; 不入前瞻模拟队列, 仅限主段式相位环境使用并注明依赖"
+ },
+ "updated_at": "2026-10-22 00:44"
+}

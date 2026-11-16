@@ -1,0 +1,55 @@
+{
+  "prereg_id": "PREREG-BREAKOUT-CLUSTER-20260909",
+  "created_at": "2026-09-09T22:00+08:00",
+  "author": "知微（ZCode 会话）",
+  "owner_approval": "主人 2026-09-09 裁决「按你推荐继续」（当日复盘报告 §5 系统优化线索①）",
+  "hypothesis": "breakout_scout 低位首板突破信号中，同日同行业（涨停归因库 limit_up_patterns.industry 同源口径）信号数 >=3 的『主线集群』子集，其 T+1 收益显著优于孤立信号子集（g<=2，含 UNKNOWN）",
+  "motivation": "9/9 复盘实证：9/8 信号 20 只次日 11 涨 9 跌、均值 +1.18%（同期全市场上涨率仅 32.3%），且主线内信号（农业化工/糖/情绪）次日为正、退潮线信号（零售/传媒）全负——突破信号质量可能依赖主线集群背景，须预注册检验而非采信单日观察",
+  "treatment": {
+    "cluster_key": "同 (board_date, industry) 计数 g；industry = limit_up_patterns 当日反查（attribution/attribution.db，主人钦定唯一可靠行业源；feature_industry_momentum 对改名股错标已禁用），反查缺 = UNKNOWN",
+    "mainline_group": "g >= 3",
+    "isolated_group": "g <= 2（UNKNOWN 无行业归属不计入集群，一律归孤立组）"
+  },
+  "sample": {
+    "source": "data/breakout_scout_track.jsonl 全史（20260806-20260909）",
+    "scope_filter": "剔除北交所（92/4/8 开头）、科创板（68 开头）、名称含 ST；信号定义与 track 内 param_fp 指纹一致（涨停 9.8/19.8 | 前 10 日无板 | 低位 gain60<=25 | 量比>=2 等），本检验不改信号定义",
+    "outcome_availability": "结果集 = 个股自身 qfq 日期序列中 T+1 存在收盘价的信号；T+1 缺失（如最新信号日，22:00 链未入库）剔除并计数——PIT 口径，首轮运行即终局，不得以补数据为由重跑改判"
+  },
+  "price_source": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db（生产主库，fail-closed：不存在/0 字节/锁死 exit 2 不静默换源）；R1 = close(T+1)/close(T) - 1；R5 = close(T+5)/close(T) - 1（不足 5 个交易日取最近可得并标记 partial）",
+  "criteria_machine": {
+    "cluster_min": 3,
+    "delta_r1_min_pp": 1.0,
+    "welch_t_min": 2.0,
+    "n_main_min": 30,
+    "n_iso_min": 30
+  },
+  "primary_criterion": {
+    "pass_all": [
+      "mean(R1|主线) - mean(R1|孤立) >= +1.0pp",
+      "Welch t (主线 vs 孤立, R1) >= 2.0",
+      "n_主线 >= 30 且 n_孤立 >= 30"
+    ],
+    "note": "交易级 Welch t（同日信号截面相关性以敏感性③按日配对差缓解）；单假设无多重检验补偿，此为设计性限制并如实声明"
+  },
+  "sensitivity_registered": [
+    "阈值 g>=2 与 g>=4 复算，ΔR1 方向须与主判据一致",
+    "R5 口径 Δ 同方向",
+    "按日配对差（两 组同日均有的交易日，日级 mean 差序列）均值 > 0"
+  ],
+  "on_fail": "falsified_rules.json 登记 BREAKOUT-CLUSTER-FILTER（边界 = 仅判死『同日同细分行业 >=3 接力』这一过滤用法；不判死突破信号本身、不判死主线概念的其他实现，如跨日主线雷达口径）；DAILY_WORKFLOW_SOP 台账同步",
+  "on_pass": "PASS_CANDIDATE 登记（falsified_rules.json rules 段登记 stage 条目，非证伪条目），零生产接线；进入 >=10 交易日影子确认（每日 scout 信号按本口径分组追加登记，主线组影子累计 >=10 只且影子 R1 均值 > 孤立组且主线组胜率 >=55%）后提请主人裁决是否接入提示器/选择器",
+  "reverse_risks": [
+    "集群组或为同日 β（高情绪日整体强）而非主线 α——敏感性③缓解",
+    "细分行业口径无申万 L1 对照（industry_map 表为申万指数→行业名映射不含个股；含个股的 momentum 表对改名股错标已被主人禁用）",
+    "样本仅约 24 个信号日、单一 regime（2026 年 8-9 月轮动市）",
+    "R1 为 close-to-close 研究口径，未假设 T+1 开盘可买（一字板买不进问题不在此检验域，属执行层另案）"
+  ],
+  "no_peeking_statement": "本文件冻结于查看任何分组收益数据之前；此前仅知 9/8→9/9 单日 motivating case（已在复盘报告披露）与各信号日计数元数据。首轮运行即终局，不得迭代阈值或口径。",
+  "data_sources": [
+    "data/breakout_scout_track.jsonl",
+    "attribution/attribution.db (limit_up_patterns)",
+    "workbuddyspace dragon_quant_qfq.db (stock_daily_meta_qfq)"
+  ],
+  "eval_script": "prereg_breakout_cluster_eval.py",
+  "result_report": "reports/PREREG_BREAKOUT_CLUSTER_RESULT_20260909.md"
+}

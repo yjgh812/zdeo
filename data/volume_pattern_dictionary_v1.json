@@ -1,0 +1,646 @@
+{
+ "name": "volume_pattern_dictionary",
+ "version": "v1_20261017",
+ "provenance": "形态名=analysis/booklist_study_20261017/B_local.md 脚本直出(50/50断言, 禁手抄); 预筛标注=量价语义反转假说(WYCKOFF-VOLUME-SEMANTIC-REVERSED amendments 2026-10-17)人工逐条附注, 方向预判非结论",
+ "mechanization_gate": "任一形态升级 prereg_ready 的前置=①纸书/正版电子正文定义页(形态特征+市场含义+案例) ②主人点名立项 ③按语义反转预筛优先序逐形态机械化(qfq+next-bar+PIT+可成交约束)",
+ "prescreen_legend": "偏正候选=低位缩量/惜售/承接族优先定义; 偏负预警=放量族/突破族预期负(验证目的=确证负向而非翻案); 强负预警=高位放量类; 位置条件化=双义须分层; 中性=叙事级",
+ "forms_50": [
+  {
+   "id": "ZY-601",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "冲高回落急速缩量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "冲高后回落+缩量=惜售/无人问津双义, 低位偏正高位偏负"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-602",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "低点盘中宽振不放量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性偏正",
+    "basis": "低位宽振缩量≈弹簧/洗盘语义族"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-603",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "振荡区间放缩量组合",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "组合形态须拆解量能方向"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-604",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "进二退一式放缩量组合",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "同上"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-605",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "\"空中加油\"倍增式放量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "高位放量=分歧兑现(E4高位爆量med20-3.39), 仅景气主导例外(新易盛型)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-606",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "振荡区上方带量整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "带量整理=分歧, 突破前积蓄与派发双义"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-607",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "水平区阻力点温和突破",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "突破族判死六源(温和量亦无增量, E10四档全负)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-608",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "头肩底右肩缩量整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "低位缩量族(形态学前提须验证)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-609",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "旗形整理的放缩量组合",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "组合形态"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-610",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "振荡区多点支撑型量能",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "支撑结构叙事, 量能语义中性"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-611",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "放量回落强势整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "放量回落=出清/出货双义, 低位偏正(E1跌格低位量增较优)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-612",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "回踩阻力位缩量整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "缩量回踩=惜售(低位/强趋势域, Z2s同族)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-613",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "\"仙人指路\"放量线",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "放量长上影≈hi_stall/utad族(威科夫卖侧两臂稳定负)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-614",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "\"红三兵\"放量上涨",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "连续放量上涨=分歧累积(bc_chase族med20-3.59)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-615",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "\"出水芙蓉\"放量穿越线",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "放量突破族判死(9/11九口径+E10+VR-T3)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-616",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "递增式放量加速下跌",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "放量下跌中位负(E1跌|量增|高-3.08全场最毒格)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-617",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "堆量中跌回启动点",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "堆量+回踩启动点=吸筹叙事, 须收回确认(sc_deep_loud同构)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-618",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "放量突破筹码单峰区",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "放量突破族判死(钟杨书内突破族正向语义与系统六源冲突最直接)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-619",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "缩量回踩筹码密集区",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "缩量回踩+支撑=惜售族(回踩带裁决许可域)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-620",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预涨型",
+   "name": "缩量振荡筹码快移动",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "筹码域语义, 日线不可测(筹码峰数据不可得声明)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-701",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "递增式放量上涨",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "递增放量上涨=分歧累积(与6.14同族, 7章预跌位与本系统证据一致)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-702",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "递减式放量回调",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "回调放量衰减=出清衰竭可能(低位偏正)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-703",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "长影线巨量宽振",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "巨量宽振长影=巨量长影族(E3高位巨量长阴med20-7.08方向)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-704",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "阻力位脉冲式放量突破",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "脉冲放量突破=分歧兑现(VR-T3脉冲档最负)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-705",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "加速上涨的脉冲式放量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "同上, 加速段更毒(bc_chase 11/11全负)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-706",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "上涨中的双阳放量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "连阳放量=分歧累积"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-707",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "振荡中的凹式量能",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "量能结构叙事"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-708",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "连续巨量式整理缓升",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "巨量整理=高位分歧(VR-T1高位天量fwd20-3.20)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-709",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "头肩顶右肩缩量整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "顶部缩量反弹=无需求反弹(nd族-0.98同向)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-710",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "放量长阴跌回启动点",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "放量长阴=E3高位巨量长阴(-7.08); 跌回启动点含位置条件"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-711",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "\"高台跳水\"放量破位线",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "强负预警",
+    "basis": "高位放量下跌=全场最毒组合(E1跌|量增|高med60-5.68/E3-7.08)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-712",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "巨量推升中的低开小K线",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "巨量推升后低开=T+1锁定盘抛压兑现(E8隔夜-0.35同向)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-713",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "放量振荡中的缩量回升",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "缩量回升=惜售(低位偏正)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-714",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "水平区支撑位平量破位",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "破位+量能无异=真跌破族(real_breakdown-1.40)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-715",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "缩量下滑的圆弧形",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "阴跌缩量=无人接盘(lo_dryup/阴跌缩量族, 非底部触发器)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-716",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "缩量中的影线区",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "影线结构叙事"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-717",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "相对弱势的缩量运行",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "弱+缩=无人问津(语义反转核心域)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-718",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "高点放量筹码单峰",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "强负预警",
+    "basis": "高位天量=VR-T1(fwd20-3.20/fwd60-4.91)+E4同向"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-719",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "盘整密集峰快速上移",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "筹码域日线不可测"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-720",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "预跌型",
+   "name": "回探筹码峰缩量滞涨",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "缩量滞涨≈nd无需求族(med20-0.98, 9负2正)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-801",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "振荡区间的放量收窄",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "中性",
+    "basis": "黑马型叙事, 量能结构中性"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-802",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "堆积式突破低位缩量区",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "突破族判死为事件级; 低位堆积=吸筹叙事须收回确认"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-803",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "快涨快跌的量能断层",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "量能断层=分歧极值(ebb退潮先行族)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-804",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "等高点后量小前量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "分时域A3实测后量小前量反优于接力(-0.44vs-0.72), 日线待验"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-805",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "强于大市的缩量整理",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "RS+缩量整理=惜售族(威科夫九测试第7条+Z2s同族)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-806",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "逆市温和放量上涨",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "逆市独立放量=真实买盘介入(主线独苗族, 与大盘环境解耦)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-807",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "箱体上沿的大幅缩量",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "箱沿缩量=惜售(sos_range前提族方向但事件级弱)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-808",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "涨停突破点放量振荡",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "位置条件化",
+    "basis": "涨停日放量振荡≈炸板域(E2放量板负/缩量板正)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-809",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "反复涨停的放量振荡",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏负预警",
+    "basis": "连板放量=中板放量王道教条已证伪(-7.34)"
+   },
+   "prereg_ready": false
+  },
+  {
+   "id": "ZY-810",
+   "source": "量价狙击(钟杨,清华2025)",
+   "type": "黑马型",
+   "name": "缩量上穿筹码密集区",
+   "mechanization_status": "blocked_需纸书正文定义",
+   "semantic_reversal_prescreen": {
+    "direction": "偏正候选",
+    "basis": "缩量上穿=惜售穿越(供给枯竭的真语义, 低位域)"
+   },
+   "prereg_ready": false
+  }
+ ],
+ "placeholder_domains": [
+  {
+   "domain": "同花顺盘口挂单形态",
+   "count_est": 47,
+   "families": "上压盘8/下托盘8/夹板7/顶板7/成交单8/细节9",
+   "status": "blocked_需Level2逐笔委托数据+纸书定义",
+   "source": "同花顺盘口技法实战精要(王丽/鲁斌2025)"
+  },
+  {
+   "domain": "炸板量能三维(位置×量能×形态)",
+   "count_est": null,
+   "families": "炸板位置/量能/后走势研判",
+   "status": "blocked_需纸书定义(公开层仅'持有1-3天'一条)",
+   "source": "龙头战法3(龙祺天2025)"
+  },
+  {
+   "domain": "天量位置十态图谱",
+   "count_est": 11,
+   "families": "ch1 No.001-011(含天量突破失效/高位天量见顶已知)",
+   "status": "blocked_需纸书定义",
+   "source": "图解看盘100种图谱(刘文杰2026)"
+  },
+  {
+   "domain": "利弗莫尔资金管理规则",
+   "count_est": 8,
+   "families": "利润一半落袋/金字塔加仓/绝不摊平等",
+   "status": "observe_规则清单已提取(选载一手引文)",
+   "source": "股票大作手操盘术(1940)"
+  },
+  {
+   "domain": "缠论概念定义链",
+   "count_est": 8,
+   "families": "分型/笔/线段/中枢/走势/背驰/三类买卖点",
+   "status": "frozen_三买判死/一二买存活, 缠论过滤族判死",
+   "source": "缠论精解(鲍迪克)+108课骨架"
+  }
+ ]
+}

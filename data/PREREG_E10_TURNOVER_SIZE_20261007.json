@@ -1,0 +1,38 @@
+{
+ "rule": "E10_TURNOVER_SIZE",
+ "fingerprint": "a5cb4ef9248e9f4b",
+ "created": "2026-10-08",
+ "params": {
+  "rule": "E10_TURNOVER_SIZE",
+  "window_start": "20261008",
+  "shadow_days": 60,
+  "turnover_source": "dragon_quant_qfq.db SUM(amount) 全市场日成交额",
+  "turnover_pctl_lookback_days": 60,
+  "signal_threshold_pctl": 0.8,
+  "size_buckets": 10,
+  "size_rank_field": "daily_basic.circ_mv DESC NTILE(10)",
+  "big_bucket": 1,
+  "small_bucket": 10,
+  "spread_definition": "(big1_close_fwd/big1_close - 1) - (small10_close_fwd/small10_close - 1)",
+  "horizons_days": [
+   5,
+   10,
+   20
+  ],
+  "gates": {
+   "G1": "影子窗内信号日fwd10价差均值>0 且高于同期全日基线>=+0.5pp",
+   "G2": "按月分段正增量月份>=2/3",
+   "G3": "信号日数>=12(不足=功效不足挂起,参照M2先例)"
+  },
+  "kill_switch": [
+   "任一自然月信号日价差增量<-3pp",
+   "daily_basic或qfq数据链断供>3日",
+   "owner明示停止"
+  ],
+  "approval": "主人2026-10-07『按推荐继续』批准激活",
+  "activation": "automation-458545f5 每交易日07:00",
+  "schedule_note": "独立07:00 cron(偏差注记见prereg md激活记录), 数据语义与冻结稿一致",
+  "boundary": "影子期零交易权读数仅记录不行动; 评审判读满窗后一次性; regime混杂已知局限"
+ },
+ "provenance": "reports/PREREG_E10_TURNOVER_SIZE_20261007.md"
+}

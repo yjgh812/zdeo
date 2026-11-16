@@ -1,0 +1,592 @@
+{
+ "date": "20261013",
+ "total_limitup": 67,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "出版"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603096",
+    "name": "新经典",
+    "boards": 3,
+    "seal_money": 216938172.0,
+    "mv_wan": 323430.006528
+   },
+   "members": [
+    {
+     "code": "603096",
+     "name": "新经典",
+     "boards": 3,
+     "reason": "出版",
+     "mv_wan": 323430.006528,
+     "role": "龙头"
+    },
+    {
+     "code": "605577",
+     "name": "龙版传媒",
+     "boards": 3,
+     "reason": "出版",
+     "mv_wan": 871111.1122,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "影视院线"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002343",
+    "name": "慈文传媒",
+    "boards": 3,
+    "seal_money": 251983289.0,
+    "mv_wan": 348628.690496
+   },
+   "members": [
+    {
+     "code": "002343",
+     "name": "慈文传媒",
+     "boards": 3,
+     "reason": "影视院线",
+     "mv_wan": 348628.690496,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "互联网电"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605136",
+    "name": "丽人丽妆",
+    "boards": 3,
+    "seal_money": 100856872.0,
+    "mv_wan": 457323.60699999996
+   },
+   "members": [
+    {
+     "code": "605136",
+     "name": "丽人丽妆",
+     "boards": 3,
+     "reason": "互联网电",
+     "mv_wan": 457323.60699999996,
+     "role": "龙头"
+    },
+    {
+     "code": "002640",
+     "name": "跨境通",
+     "boards": 1,
+     "reason": "互联网电",
+     "mv_wan": 606078.0773700001,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "饲料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002696",
+    "name": "百洋股份",
+    "boards": 3,
+    "seal_money": 67280775.0,
+    "mv_wan": 306338.24955199996
+   },
+   "members": [
+    {
+     "code": "002696",
+     "name": "百洋股份",
+     "boards": 3,
+     "reason": "饲料",
+     "mv_wan": 306338.24955199996,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "化学制品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603968",
+    "name": "醋化股份",
+    "boards": 2,
+    "seal_money": 22695477.0,
+    "mv_wan": 293633.27999999997
+   },
+   "members": [
+    {
+     "code": "002917",
+     "name": "金奥博",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 382375.6167,
+     "role": "助攻"
+    },
+    {
+     "code": "603188",
+     "name": "亚邦股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 311312.82,
+     "role": "助攻"
+    },
+    {
+     "code": "603968",
+     "name": "醋化股份",
+     "boards": 2,
+     "reason": "化学制品",
+     "mv_wan": 293633.27999999997,
+     "role": "龙头"
+    },
+    {
+     "code": "002549",
+     "name": "凯美特气",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 990870.758925,
+     "role": "助攻"
+    },
+    {
+     "code": "300107",
+     "name": "建新股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 485681.097284,
+     "role": "助攻"
+    },
+    {
+     "code": "603980",
+     "name": "吉华集团",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 722181.1951199999,
+     "role": "助攻"
+    },
+    {
+     "code": "002430",
+     "name": "杭氧股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 2692445.828352,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "农化制品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001231",
+    "name": "农心科技",
+    "boards": 2,
+    "seal_money": 296275045.0,
+    "mv_wan": 280797.531795
+   },
+   "members": [
+    {
+     "code": "001231",
+     "name": "农心科技",
+     "boards": 2,
+     "reason": "农化制品",
+     "mv_wan": 280797.531795,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "一般零售"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600693",
+    "name": "东百集团",
+    "boards": 2,
+    "seal_money": 129715800.0,
+    "mv_wan": 1069910.88258
+   },
+   "members": [
+    {
+     "code": "600693",
+     "name": "东百集团",
+     "boards": 2,
+     "reason": "一般零售",
+     "mv_wan": 1069910.88258,
+     "role": "龙头"
+    },
+    {
+     "code": "000715",
+     "name": "中兴商业",
+     "boards": 1,
+     "reason": "一般零售",
+     "mv_wan": 312371.21151600004,
+     "role": "助攻"
+    },
+    {
+     "code": "600712",
+     "name": "南宁百货",
+     "boards": 1,
+     "reason": "一般零售",
+     "mv_wan": 321891.31776,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "化学制药"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600851",
+    "name": "海欣股份",
+    "boards": 2,
+    "seal_money": 20695632.0,
+    "mv_wan": 1141875.630632
+   },
+   "members": [
+    {
+     "code": "600851",
+     "name": "海欣股份",
+     "boards": 2,
+     "reason": "化学制药",
+     "mv_wan": 1141875.630632,
+     "role": "龙头"
+    },
+    {
+     "code": "002693",
+     "name": "双成药业",
+     "boards": 1,
+     "reason": "化学制药",
+     "mv_wan": 427959.822,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "电视广播"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600831",
+    "name": "广电网络",
+    "boards": 2,
+    "seal_money": 52693275.0,
+    "mv_wan": 305707.20656
+   },
+   "members": [
+    {
+     "code": "600831",
+     "name": "广电网络",
+     "boards": 2,
+     "reason": "电视广播",
+     "mv_wan": 305707.20656,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "元件"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000823",
+    "name": "超声电子",
+    "boards": 1,
+    "seal_money": 387691257.0,
+    "mv_wan": 1327939.361352
+   },
+   "members": [
+    {
+     "code": "000823",
+     "name": "超声电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1327939.361352,
+     "role": "龙头"
+    },
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 863124.79968,
+     "role": "助攻"
+    },
+    {
+     "code": "605258",
+     "name": "协和电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 356840.0,
+     "role": "助攻"
+    },
+    {
+     "code": "603328",
+     "name": "依顿电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1331922.443074,
+     "role": "中军"
+    },
+    {
+     "code": "603386",
+     "name": "骏亚科技",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 570085.51232,
+     "role": "助攻"
+    },
+    {
+     "code": "301041",
+     "name": "金百泽",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 428213.52,
+     "role": "助攻"
+    },
+    {
+     "code": "002579",
+     "name": "中京电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1006532.39266,
+     "role": "助攻"
+    },
+    {
+     "code": "688655",
+     "name": "迅捷兴",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": null,
+     "role": "助攻"
+    },
+    {
+     "code": "600237",
+     "name": "铜峰电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 569332.2487649999,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链11",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002639",
+    "name": "雪人集团",
+    "boards": 1,
+    "seal_money": 168385991.0,
+    "mv_wan": 1137181.699452
+   },
+   "members": [
+    {
+     "code": "000530",
+     "name": "冰山冷热",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 483160.76651100005,
+     "role": "中军"
+    },
+    {
+     "code": "600202",
+     "name": "哈空调",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 214287.43564799998,
+     "role": "助攻"
+    },
+    {
+     "code": "002639",
+     "name": "雪人集团",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 1137181.699452,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "旅游及景"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600593",
+    "name": "大连圣亚",
+    "boards": 1,
+    "seal_money": 161663469.0,
+    "mv_wan": 650007.4349999999
+   },
+   "members": [
+    {
+     "code": "600593",
+     "name": "大连圣亚",
+     "boards": 1,
+     "reason": "旅游及景",
+     "mv_wan": 650007.4349999999,
+     "role": "龙头"
+    },
+    {
+     "code": "603099",
+     "name": "长白山",
+     "boards": 1,
+     "reason": "旅游及景",
+     "mv_wan": 1248751.6181,
+     "role": "中军"
+    },
+    {
+     "code": "000558",
+     "name": "天府文旅",
+     "boards": 1,
+     "reason": "旅游及景",
+     "mv_wan": 495061.99641599995,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 14,
+   "chain_name": "自动链14",
+   "shared_words": [
+    "数字媒体"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603466",
+    "name": "风语筑",
+    "boards": 1,
+    "seal_money": 125285866.0,
+    "mv_wan": 807182.2636439999
+   },
+   "members": [
+    {
+     "code": "600228",
+     "name": "返利科技",
+     "boards": 1,
+     "reason": "数字媒体",
+     "mv_wan": 422505.840978,
+     "role": "中军"
+    },
+    {
+     "code": "603466",
+     "name": "风语筑",
+     "boards": 1,
+     "reason": "数字媒体",
+     "mv_wan": 807182.2636439999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 17,
+   "chain_name": "自动链17",
+   "shared_words": [
+    "白酒Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000995",
+    "name": "皇台酒业",
+    "boards": 1,
+    "seal_money": 91654500.0,
+    "mv_wan": 217324.8
+   },
+   "members": [
+    {
+     "code": "000995",
+     "name": "皇台酒业",
+     "boards": 1,
+     "reason": "白酒Ⅱ",
+     "mv_wan": 217324.8,
+     "role": "龙头"
+    },
+    {
+     "code": "600199",
+     "name": "金种子酒",
+     "boards": 1,
+     "reason": "白酒Ⅱ",
+     "mv_wan": 499925.58624000003,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 24,
+   "chain_name": "自动链24",
+   "shared_words": [
+    "水泥"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "003037",
+    "name": "三和管桩",
+    "boards": 1,
+    "seal_money": 56671138.0,
+    "mv_wan": 386403.16731
+   },
+   "members": [
+    {
+     "code": "600802",
+     "name": "福建水泥",
+     "boards": 1,
+     "reason": "水泥",
+     "mv_wan": 328105.85439999995,
+     "role": "中军"
+    },
+    {
+     "code": "003037",
+     "name": "三和管桩",
+     "boards": 1,
+     "reason": "水泥",
+     "mv_wan": 386403.16731,
+     "role": "龙头"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

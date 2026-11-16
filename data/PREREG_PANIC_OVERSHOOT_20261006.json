@@ -1,0 +1,49 @@
+{
+  "prereg_id": "PREREG_PANIC_OVERSHOOT_20261006",
+  "linked_decision": "PD-034",
+  "status": "ACTIVE_APPROVED_20261006",
+  "created_date": "2026-10-06",
+  "fingerprint_input": "panic_overshoot_A2xMA5_3pct_x_B80_x_erp60_layer",
+  "origin": {
+    "source": "养家2010淘股吧原帖「我如何在股市赚了200万」(B站专栏cv17533636转载)",
+    "quote": "大盘连续下跌一段后，再出现大阴线，指数远离5日线；超跌的板块再次出现集体性的大幅杀跌，当两者结合的时候，便是超跌的出击时刻。有恐慌效应的情况下，做超跌为主。",
+    "backtest": "reports/yangjia_2010_overshoot_verify_20261006.md",
+    "backtest_summary": "2015-01~2026-09共26事件, fwd20中位+3.53%/win65%, 8年度全正含2018熊; ERP>=60分层后med+5.28%/win77% vs ERP<60组+3.45%/54%"
+  },
+  "trigger_LOCKED": {
+    "cond_A_index": "上证指数(sh.000001)当日涨跌幅<=-2.0% 且 close/MA5-1<=-3.0%",
+    "cond_B_breadth": "全市场(qfq库, 主板+创业板剔ST科创北交, n>800)当日下跌家数占比>=80%",
+    "event": "A且B同日满足, 事件日=当日收盘确认(次日才可行动, 无前视)",
+    "forbidden": "任何参数调优; A/B阈值已在回测钉死, 前向不得改动"
+  },
+  "quality_layer_LOCKED": {
+    "erp_split": "事件日记录 erp_history.db erp_pct_5y; >=60 记 quality=high, <60 记 quality=normal",
+    "note": "分层字段非触发条件——纯情绪反弹层(quality=normal)照常记录, 不丢弃",
+    "phase_field": "emotion_phase_v2 当日相位仅作叙述字段记录, 禁作触发或过滤"
+  },
+  "observation_LOCKED": {
+    "forward": "fwd5/fwd20 上证指数收盘收益(观测层指标); 个股层不在本prereg范围",
+    "ledger": "data/panic_overshoot_shadow.jsonl, 按 event_date 幂等UPSERT, 字段=event_date/cond_A细节/cond_B占比/erp_pct_5y/quality/phase/fwd5/fwd20(后两者自动回填)"
+  },
+  "acceptance_LOCKED": {
+    "window": "日历12个月 或 累计触发n>=3事件, 先到为准(事件驱动信号年均约2.3次, 固定60交易日窗内大概率零事件, 故用事件数验收)",
+    "pass": "n>=3 且 fwd20中位>=+2% 且 win>=60%",
+    "fail_action": "判据不过即废案, 记falsified库, 禁改参数重测(除非走新prereg)",
+    "kill_switch": "连续3个事件fwd20全负 -> 立即提请废案, 不等满窗"
+  },
+  "scope": {
+    "zero_wiring": "观测层影子件, 不接R闸/不接cron/不产生买卖信号/不接executor",
+    "activation": "主人批准PD-034后: status转ACTIVE, 挂daily_chain观测环节(盘后跑, 与emotion_phase_v2同窗口), 激活日声明",
+    "future_upgrade": "满窗验收通过后, 另行呈请是否接入市场状态层(非个股买入信号), 与PD-015(ERP)/深贴回补做三锚合并评分设计"
+  },
+  "pitfalls_recorded": [
+    "erp_history.db date列为INTEGER, 匹配须int()",
+    "baostock日期带横线vs qfq库无横线, 须统一格式",
+    "全市场普跌占比为养家『板块集体杀跌』的全市场近似, 板块级口径(申万行业集体杀跌)列为v2备选, 前向期间不切换"
+  ],
+  "approval": {
+    "approved_by": "主人(AskUserQuestion裁决: 批准激活)",
+    "approved_date": "2026-10-06",
+    "activation": "panic_overshoot_shadow.py --backfill 首跑26事件in_sample入账(与回测逐位一致)+幂等复跑通过; daily_chain [panic_obs]环节挂载(22:00/08:00双链盘后)"
+  }
+}

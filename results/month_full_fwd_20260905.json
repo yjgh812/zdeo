@@ -1,0 +1,129 @@
+{
+  "n_total": 121,
+  "by_gates": [
+    {
+      "key": "3闸",
+      "n": 0,
+      "fwd5_mean": null,
+      "fwd5_median": null,
+      "fwd5_pos_pct": null,
+      "fwd10_mean": null
+    },
+    {
+      "key": "2闸",
+      "n": 19,
+      "fwd5_mean": 7.75,
+      "fwd5_median": 2.96,
+      "fwd5_pos_pct": 67.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "1闸",
+      "n": 82,
+      "fwd5_mean": 0.6,
+      "fwd5_median": 0.83,
+      "fwd5_pos_pct": 53.0,
+      "fwd10_mean": 4.16
+    },
+    {
+      "key": "0闸",
+      "n": 20,
+      "fwd5_mean": -1.53,
+      "fwd5_median": -0.71,
+      "fwd5_pos_pct": 37.0,
+      "fwd10_mean": -12.25
+    }
+  ],
+  "by_source": [
+    {
+      "key": "manual_confirmed",
+      "n": 30,
+      "fwd5_mean": 3.24,
+      "fwd5_median": -1.1,
+      "fwd5_pos_pct": 42.0,
+      "fwd10_mean": -4.55
+    },
+    {
+      "key": "bp_ep",
+      "n": 16,
+      "fwd5_mean": 0.99,
+      "fwd5_median": 1.48,
+      "fwd5_pos_pct": 64.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "master_hist",
+      "n": 15,
+      "fwd5_mean": 0.36,
+      "fwd5_median": 1.38,
+      "fwd5_pos_pct": 73.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "mainline_radar",
+      "n": 14,
+      "fwd5_mean": -2.01,
+      "fwd5_median": -0.85,
+      "fwd5_pos_pct": 43.0,
+      "fwd10_mean": 1.4
+    },
+    {
+      "key": "full_market",
+      "n": 11,
+      "fwd5_mean": 1.32,
+      "fwd5_median": 1.95,
+      "fwd5_pos_pct": 60.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "mass_scan",
+      "n": 11,
+      "fwd5_mean": 0.21,
+      "fwd5_median": -0.54,
+      "fwd5_pos_pct": 43.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "hotspot_breakout",
+      "n": 11,
+      "fwd5_mean": 3.55,
+      "fwd5_median": 1.67,
+      "fwd5_pos_pct": 55.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "smc_s2_roe",
+      "n": 7,
+      "fwd5_mean": 1.08,
+      "fwd5_median": -0.43,
+      "fwd5_pos_pct": 43.0,
+      "fwd10_mean": null
+    },
+    {
+      "key": "bp_ep_core",
+      "n": 6,
+      "fwd5_mean": -1.82,
+      "fwd5_median": -1.87,
+      "fwd5_pos_pct": 17.0,
+      "fwd10_mean": null
+    }
+  ],
+  "by_month": [
+    {
+      "key": "202608",
+      "n": 92,
+      "fwd5_mean": 0.86,
+      "fwd5_median": 0.32,
+      "fwd5_pos_pct": 51.0,
+      "fwd10_mean": -0.89
+    },
+    {
+      "key": "202609",
+      "n": 29,
+      "fwd5_mean": null,
+      "fwd5_median": null,
+      "fwd5_pos_pct": null,
+      "fwd10_mean": null
+    }
+  ]
+}

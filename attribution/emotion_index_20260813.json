@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-08-14T01:21:46.935900",
+  "date": "20260813",
+  "indicators": {
+    "date": "20260813",
+    "limit_up_count": 0,
+    "limit_down_count": 0,
+    "max_consecutive_boards": 0,
+    "consecutive_distribution": {},
+    "broken_count": 0,
+    "sealed_count": 0,
+    "broken_rate_pct": 0,
+    "up_count": 0,
+    "down_count": 0,
+    "flat_count": 0,
+    "total_valid": 0,
+    "up_ratio_pct": 0
+  },
+  "emotion": {
+    "composite_index": 35.0,
+    "stage": "冷🥶",
+    "stage_en": "COLD",
+    "advice": "半仓试错，只做最强主线",
+    "dimensions": {
+      "limit_up_score": {
+        "weight": 0.3,
+        "value": 0,
+        "raw": 0
+      },
+      "board_score": {
+        "weight": 0.25,
+        "value": 0,
+        "raw": 0
+      },
+      "break_rate_score": {
+        "weight": 0.2,
+        "value": 100,
+        "raw": 0
+      },
+      "limit_down_score": {
+        "weight": 0.15,
+        "value": 100,
+        "raw": 0
+      },
+      "up_ratio_score": {
+        "weight": 0.1,
+        "value": 0,
+        "raw": 0
+      }
+    },
+    "position_suggest": {
+      "max_position_pct": 45,
+      "description": "情绪指数35 → 建议仓位上限45%"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+ "task": "B7-crowding-OOS",
+ "params": {
+  "TIER_GRID": [
+   0.8,
+   0.9,
+   0.95,
+   0.99
+  ],
+  "PCT_WINDOWS": {
+   "w120": 120,
+   "w3y": 756
+  },
+  "FROZEN": {
+   "w120": [
+    0.95,
+    0.99
+   ]
+  },
+  "OOS_START": 20220101,
+  "SWEEP_FWD": 20,
+  "WIN_SUFF": 0.9,
+  "SEED": 20261021
+ },
+ "input_snapshots": {
+  "sw_db": {
+   "path": "D:\\workbuddyspace\\databases\\sw_industry.db",
+   "sha16": "f471a7012525e015"
+  },
+  "qfq_db": {
+   "path": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db",
+   "rows": 11931857,
+   "sha16": "27ba2f7292fff144"
+  },
+  "idx_day": {
+   "path": "D:\\anzhuang\\tdx\\vipdoc\\sh\\lday\\sh000001.day",
+   "sha16": "f4f0f4558739cdbf"
+  }
+ },
+ "code": {
+  "file": "D:\\zcodesj\\analysis\\mainline_crowding_oos_20261021.py",
+  "sha16": "0d86f98a6f4db81c"
+ },
+ "random_seed": 20261021,
+ "runtime_s": 15.1,
+ "outputs": {
+  "mainline_crowding_oos_20261021_triggers.csv": {
+   "sha16": "8b28c3a84e566105"
+  },
+  "mainline_crowding_oos_20261021.md": {
+   "sha16": "0c594c4012dd7a8c"
+  }
+ }
+}

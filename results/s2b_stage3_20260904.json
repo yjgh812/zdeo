@@ -1,0 +1,82 @@
+{
+  "fingerprint": "7f0626fff1bdfcd1",
+  "config": {
+    "start": "20210106",
+    "end": "20260813",
+    "step_days": 14,
+    "signal_k": 5,
+    "n_pick": 10,
+    "mom_win": 20,
+    "hold": 10,
+    "mom_floor": -20.0,
+    "max_price": 30.0,
+    "min_amt": 30000000.0,
+    "fee": 0.0015,
+    "fee_hi": 0.003,
+    "limit_main": 9.8,
+    "limit_300": 19.6,
+    "gates": {
+      "G1_years_min": 4,
+      "G2_mdd_max": 25.0,
+      "G3_t": 2.0
+    },
+    "seed": 20260904
+  },
+  "verdicts": {
+    "G1_exc_pos": "False",
+    "G1_years": false,
+    "G2_mdd": false,
+    "G3_t": true,
+    "G4_fee": "False"
+  },
+  "final": "FAIL",
+  "results": {
+    "n_periods": 147,
+    "s2b": {
+      "total_pct": 32.72686393172073,
+      "ann_pct": 5.149586112494164,
+      "mdd_pct": -54.15948194701472
+    },
+    "s2b_fee_hi": {
+      "total_pct": 6.4476971030686725,
+      "ann_pct": 1.1143508814745129,
+      "mdd_pct": -56.75568745650937
+    },
+    "bench": {
+      "total_pct": 100.54515672811206,
+      "ann_pct": 13.135614890429114,
+      "mdd_pct": -30.355854073542943
+    },
+    "hi_ctrl": {
+      "total_pct": -91.66830964540112,
+      "ann_pct": -35.64462364970748,
+      "mdd_pct": -92.54916351513354
+    },
+    "rnd_ctrl": {
+      "total_pct": -68.7626707201561,
+      "ann_pct": -18.646348359284016,
+      "mdd_pct": -73.30268017065468
+    },
+    "yearly_exc": {
+      "2024": 0.783962839974931,
+      "2021": -0.011695677543932081,
+      "2026": -2.425214023178158,
+      "2022": 0.40108098257063285,
+      "2023": -0.31905306783018184,
+      "2025": -0.5720236580879918
+    },
+    "years_exc_positive": 2,
+    "years_total": 6,
+    "vs_hi_paired_t": 3.8579214300101787,
+    "monthly_win_rate_vs_bench": 0.42857142857142855,
+    "aux": {
+      "empty_periods": 44,
+      "skip_limit": 6373,
+      "avg_n_pick": 10.0,
+      "dose_periods": {
+        "5-8": 214,
+        ">=9": 66
+      }
+    }
+  }
+}

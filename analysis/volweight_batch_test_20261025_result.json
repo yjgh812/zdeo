@@ -1,0 +1,41 @@
+{
+ "generated": "2026-10-25",
+ "exploratory": true,
+ "picks_per_batch": 12,
+ "win": {
+  "n_batches": 57,
+  "equal_weight": {
+   "mean": 0.01096,
+   "std": 0.0632,
+   "min": -0.10083,
+   "neg_rate": 0.4912,
+   "mean_over_std": 0.1733
+  },
+  "inv_vol": {
+   "mean": 0.0112,
+   "std": 0.06063,
+   "min": -0.0932,
+   "neg_rate": 0.4737,
+   "mean_over_std": 0.1846
+  },
+  "iv_minus_eq_mean": 0.00024
+ },
+ "full": {
+  "n_batches": 81,
+  "equal_weight": {
+   "mean": 0.01067,
+   "std": 0.05996,
+   "min": -0.14108,
+   "neg_rate": 0.4444,
+   "mean_over_std": 0.1779
+  },
+  "inv_vol": {
+   "mean": 0.0122,
+   "std": 0.05774,
+   "min": -0.13885,
+   "neg_rate": 0.4444,
+   "mean_over_std": 0.2114
+  },
+  "iv_minus_eq_mean": 0.00154
+ }
+}

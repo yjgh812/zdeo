@@ -1,0 +1,9 @@
+{
+ "id": "20260906-shadow-negfilter-rolling-bug",
+ "ts": "2026-09-06T17:20:00",
+ "object": "combo_c_shadow.py负过滤滚动标记实现缺陷登记(主人5只复核轮发现)",
+ "缺陷": "build_section的recent_sig用当日批量重算pats的近N日过滤(dint>=ld-N日历近似), 与配方panel链路的rolling(N交易日)口径不一致→rounded_20等长窗滚动负过滤漏标(v1名单14只中洛凯/红棉/华峰等按严格配方本应被剔; 严格口径名单=8只:红宝丽/常宝/双塔/蓝丰/久远银海/利亚德/赛特新材/和辉)",
+ "影响": "v1影子台账首窗(20260904,13只)名单偏宽; 修复=shadow的负过滤改用panel/交易日窗口口径",
+ "状态": "待修复(与并行会话的v2确认日修复合并处理); 主人选股按严格8只名单修正",
+ "关联": "并行会话P2_CHAN_LOOKAHEAD_AUDIT(前视已修复v2) + 本会话industry_synergy验证"
+}

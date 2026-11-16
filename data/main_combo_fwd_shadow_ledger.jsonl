@@ -1,0 +1,44 @@
+{"type": "meta", "prereg": "PREREG_MAIN_COMBO_FORWARD_SHADOW_DRAFT_20261018.json", "prereg_status": "ACTIVE", "anchor": "2026-10-01", "end": "2026-10-29", "architecture": "engine-reuse-recompute-idempotent", "eos_suppressed": true, "weights": {"bp_ep_core": 0.5, "ml_signal": 0.5, "note": "与回测组合50/50一致"}, "capital_book": 100000}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-13", "code": "301526", "name": "国际复材", "entry_price": 26.418, "exit_price": 24.373, "shares": 100, "pnl": -217.2399999999998, "pnl_pct": -7.740934211522443, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.5998 (Top20, L2情绪0.85x)", "cost": 12.74, "holding_bars": 4}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-15", "code": "600545", "name": "卓郎智能", "entry_price": 3.821, "exit_price": 3.349, "shares": 1300, "pnl": -628.58, "pnl_pct": -12.352787228474217, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.6165 (Top20, L2情绪0.85x)", "cost": 14.98, "holding_bars": 6}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-16", "code": "605580", "name": "恒盛能源", "entry_price": 20.206, "exit_price": 17.655, "shares": 200, "pnl": -524.2399999999998, "pnl_pct": -12.624962882312174, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.6056 (Top20, L2情绪0.85x)", "cost": 14.04, "holding_bars": 7}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-16", "code": "603223", "name": "恒通股份", "entry_price": 9.273, "exit_price": 8.477, "shares": 500, "pnl": -412.77999999999963, "pnl_pct": -8.584061253100394, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.5953 (Top20, L2情绪0.85x)", "cost": 14.780000000000001, "holding_bars": 7}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-16", "code": "300721", "name": "怡达股份", "entry_price": 19.706, "exit_price": 17.435, "shares": 200, "pnl": -468.1700000000002, "pnl_pct": -11.524408809499654, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.5931 (Top20, L2情绪0.85x)", "cost": 13.969999999999999, "holding_bars": 7}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-21", "code": "002602", "name": "世纪华通", "entry_price": 13.254, "exit_price": 11.407, "shares": 300, "pnl": -568.03, "pnl_pct": -13.935415723555145, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.5904 (Top20, L2情绪0.85x)", "cost": 13.93, "holding_bars": 12}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-23", "code": "603226", "name": "菲林格尔", "entry_price": 28.479, "exit_price": 25.182, "shares": 100, "pnl": -342.57000000000005, "pnl_pct": -11.576951437901617, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.6089 (Top20, L2情绪0.85x)", "cost": 12.87, "holding_bars": 14}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-28", "code": "002174", "name": "游族网络", "entry_price": 12.604, "exit_price": 11.367, "shares": 300, "pnl": -384.9599999999995, "pnl_pct": -9.814344652491258, "exit_reason": "stop_loss", "entry_reason": "ML因子ml_prob=0.5896 (Top20, L2情绪0.85x)", "cost": 13.86, "holding_bars": 19}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-29", "code": "600547", "name": "山东黄金", "entry_price": 26.678, "exit_price": 24.123, "shares": 100, "pnl": -268.22999999999996, "pnl_pct": -9.577179698628079, "exit_reason": "max_holding", "entry_reason": "ML因子ml_prob=0.6029 (Top20, L2情绪0.85x)", "cost": 12.73, "holding_bars": 20}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-29", "code": "002625", "name": "光启技术", "entry_price": 23.057, "exit_price": 20.764, "shares": 200, "pnl": -473.30999999999983, "pnl_pct": -9.944919113501316, "exit_reason": "max_holding", "entry_reason": "ML因子ml_prob=0.5983 (Top20, L2情绪0.85x)", "cost": 14.71, "holding_bars": 20}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-29", "code": "000783", "name": "长江证券", "entry_price": 7.702, "exit_price": 7.038, "shares": 600, "pnl": -413.1699999999998, "pnl_pct": -8.621137366917676, "exit_reason": "max_holding", "entry_reason": "ML因子ml_prob=0.5962 (Top20, L2情绪0.85x)", "cost": 14.77, "holding_bars": 20}
+{"type": "trade", "arm": "ml_signal", "entry_date": "2026-10-09", "exit_date": "2026-10-29", "code": "603926", "name": "铁流股份", "entry_price": 16.355, "exit_price": 16.615, "shares": 300, "pnl": 62.5399999999994, "pnl_pct": 1.589727911953509, "exit_reason": "max_holding", "entry_reason": "ML因子ml_prob=0.5898 (Top20, L2情绪0.85x)", "cost": 15.46, "holding_bars": 20}
+{"type": "daily", "date": "2026-10-08", "bp_eq": 100000.0, "ml_eq": 100000.0, "combo_eq": 100000.0}
+{"type": "daily", "date": "2026-10-09", "bp_eq": 99109.46, "ml_eq": 100059.04, "combo_eq": 99584.25}
+{"type": "daily", "date": "2026-10-12", "bp_eq": 100492.09, "ml_eq": 99081.24, "combo_eq": 99792.3}
+{"type": "daily", "date": "2026-10-13", "bp_eq": 99411.46, "ml_eq": 99217.63, "combo_eq": 99324.43}
+{"type": "daily", "date": "2026-10-14", "bp_eq": 99758.12, "ml_eq": 98517.86, "combo_eq": 99147.35}
+{"type": "daily", "date": "2026-10-15", "bp_eq": 98752.84, "ml_eq": 96951.46, "combo_eq": 97859.58}
+{"type": "daily", "date": "2026-10-16", "bp_eq": 99468.13, "ml_eq": 96828.5, "combo_eq": 98151.93}
+{"type": "daily", "date": "2026-10-19", "bp_eq": 100127.78, "ml_eq": 97225.58, "combo_eq": 98678.65}
+{"type": "daily", "date": "2026-10-20", "bp_eq": 99210.81, "ml_eq": 97314.58, "combo_eq": 98271.96}
+{"type": "daily", "date": "2026-10-21", "bp_eq": 98710.15, "ml_eq": 96827.94, "combo_eq": 97778.29}
+{"type": "daily", "date": "2026-10-22", "bp_eq": 97683.15, "ml_eq": 96401.94, "combo_eq": 97054.54}
+{"type": "daily", "date": "2026-10-23", "bp_eq": 97526.15, "ml_eq": 96727.12, "combo_eq": 97140.24}
+{"type": "daily", "date": "2026-10-26", "bp_eq": 98773.15, "ml_eq": 96560.12, "combo_eq": 97677.42}
+{"type": "daily", "date": "2026-10-27", "bp_eq": 99628.15, "ml_eq": 95719.12, "combo_eq": 97674.81}
+{"type": "daily", "date": "2026-10-28", "bp_eq": 99490.15, "ml_eq": 96228.49, "combo_eq": 97867.05}
+{"type": "daily", "date": "2026-10-29", "bp_eq": 100062.15, "ml_eq": 95361.26, "combo_eq": 97707.39}
+{"type": "open", "arm": "bp+ep_core", "code": "601997", "name": "贵阳银行", "shares": 1100, "avg_cost": 5.652, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "600016", "name": "民生银行", "shares": 1800, "avg_cost": 3.551, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601668", "name": "中国建筑", "shares": 1500, "avg_cost": 4.391, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "002958", "name": "青农商行", "shares": 2200, "avg_cost": 2.951, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "002936", "name": "郑州银行", "shares": 3800, "avg_cost": 1.741, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601818", "name": "光大银行", "shares": 2100, "avg_cost": 3.081, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601186", "name": "中国铁建", "shares": 1000, "avg_cost": 6.072, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601169", "name": "北京银行", "shares": 1100, "avg_cost": 5.682, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601860", "name": "紫金银行", "shares": 2500, "avg_cost": 2.601, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "603323", "name": "苏农银行", "shares": 1500, "avg_cost": 4.439, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "600000", "name": "浦发银行", "shares": 600, "avg_cost": 9.703, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601166", "name": "兴业银行", "shares": 300, "avg_cost": 18.245, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "600015", "name": "华夏银行", "shares": 1000, "avg_cost": 6.312, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "601577", "name": "长沙银行", "shares": 600, "avg_cost": 9.863, "open_date": "2026-10-09"}
+{"type": "open", "arm": "bp+ep_core", "code": "600739", "name": "辽宁成大", "shares": 600, "avg_cost": 10.153, "open_date": "2026-10-09"}

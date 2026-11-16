@@ -1,0 +1,42 @@
+{
+  "name": "PREREG_ZT10_POP_CLEAN_SAMPLE",
+  "title": "情绪未激活干净样本(w_zt10无板×w_pop未上榜)增量归因影子(DeepSeek审计E-5提案第二顺位)",
+  "status": "DRAFT",
+  "approval": {
+    "status": "DRAFT",
+    "decision_trail": [
+      "2026-10-18 DeepSeek审计E-5提案#2(外部方案审计7c6b82c采纳为可选第二顺位)",
+      "2026-10-18 主人「全面落地」=批准DRAFT固化(不激活不建runner), 激活须主人二次裁决"
+    ],
+    "approved_by": null, "approved_at": null, "activation_since": null,
+    "runner": "未建(DRAFT; 激活时建runner并按params复算指纹)"
+  },
+  "hypothesis": "从未涨停(w_zt10=无)且从未上榜(w_pop=未上榜)的票=情绪未激活干净样本——追高族的镜像假设：如果追高族全负，那么远离情绪端的票应有正先验(与语义反转假说的低位+缩量正格互补而非重叠)",
+  "sibling_boundary": "与V16#1(vr120×w_stage)划界: 那条测stage调制，本条测情绪端零暴露；与T1低位枯竭修复族划界: T1=事件日触发型(破跌停)，本族=截面状态型(winner5快照行)；与V16#3划界: 那条测乖离×波动，本条测涨停基因×人气",
+  "evidence_report": "reports/petition_batch4_20261018.md §五#2 + DeepSeek审计raw E-5 + 外部方案审计7c6b82c",
+  "in_sample_evidence": "未跑(诚实空白): w_zt10与w_pop均来自winner5五维标签层，标签层零交易权铁律不变——本prereg仅将两维组合作为研究假设预注册",
+  "params": {
+    "universe_source": "data/universe_portrait_winner5_latest.json",
+    "zt10_arm": "w_zt10=无(近10日涨停0次)",
+    "pop_arm": "w_pop=未上榜(东财人气榜无排名)",
+    "cross_condition": "w_zt10=无 AND w_pop=未上榜(情绪双零暴露)",
+    "dedup_days": 5,
+    "entry": "snapshot_day_close(持有语义)",
+    "holding_horizons": [5, 20, 30],
+    "main_horizon": 20,
+    "universe_exclude_prefix": ["688", "689", "920"],
+    "data_source_daily": "dragon_quant_qfq.db(wb单一真源; 幸存者敞口注记同V4)"
+  },
+  "gates_locked": {
+    "oos_window": "激活日起60个有效截面日或n>=30先到",
+    "pass": "双零暴露臂fwd20 med>=+1.0% 且 win>=52% 且 与全域基准48%的lift>=+4pp",
+    "kill": "前20有效截面日med20<-2% -> 提请废案",
+    "yield_clause": "前20有效截面日日均候选<3只 → 自动SKIP提请产量裁决(不占60日窗)"
+  },
+  "trigger_locked": "T日=winner5快照行满足 w_zt10=无 AND w_pop=未上榜; 参数以本文件params为单一真源",
+  "red_line_check": {
+    "名单制": "不涉", "突破追高族": "不涉(情绪零暴露)", "放量确认族": "不涉",
+    "非PIT": "不涉", "黑名单模型": "不涉",
+    "标签层铁律": "w_zt10/w_pop仅作本研究分臂，标签层零交易权铁律不变"
+  }
+}

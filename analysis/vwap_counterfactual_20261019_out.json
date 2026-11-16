@@ -1,0 +1,21 @@
+{
+ "segment": "2024-2026",
+ "open": {
+  "n": 104,
+  "avg": 0.744,
+  "med": 0.407,
+  "win_pct": 52.88,
+  "p95_sum": 51.0
+ },
+ "vwap": {
+  "n": 104,
+  "avg": -2.718,
+  "med": -3.835,
+  "win_pct": 31.73,
+  "p95_sum": 53.76
+ },
+ "tail5_open": 42.87,
+ "tail5_vwap": 39.89,
+ "tail5_retention_pct": 93.05,
+ "miss": 276
+}

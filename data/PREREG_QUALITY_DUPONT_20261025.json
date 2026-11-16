@@ -1,0 +1,29 @@
+{
+ "id": "PREREG_QUALITY_DUPONT_20261025",
+ "title": "质量因子(ROE)月度TopN·主臂 + 杜邦分解对照臂 (主人「继续」令开测第一梯队首位)",
+ "declared": "2026-10-25",
+ "origin": "主人第1-22轮授课质量因子候选(叙事谬误冷落优质Why支撑) + 屠龙候选栈首位(六轮推荐); 框架=第17轮策略库+第22轮组合化复现臂强制",
+ "rule_frozen": {
+  "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日, close<=30, volume>0 (与all_methods_fulltest同宇宙)",
+  "snapshot": "月末交易日T, get_pit_factor_v2(T, max_stale_days=400), 排除tail前视行(snap_rule=tail AND ref_date<pit_avail_date)",
+  "main_arm": "roe 降序 Top20 (唯一声明检验臂)",
+  "control_arms": "droe降序/roa降序/pm降序/ato降序/lev升序 Top20 (对照描述臂, 不适用门禁)",
+  "entry": "T次一交易日收盘(诚实口径c1)",
+  "exit_event": "t20e: T+20收盘 or 先触-8%收盘止损(与全量测试同机械)",
+  "exit_portfolio": "持有至下一月末交易日, 月频轮动, 双边成本0.3%",
+  "benchmarks": "同日全宇宙等权t20e均值(事件级); 全宇宙等权月度含费(组合级); bp_ep PIT Top20同月篮子(正交参照)",
+  "window": "20160101-20261023 (PIT v2覆盖期, 月末日期取qfq)"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_portfolio": "主臂组合级2016-2026年化超额(全宇宙等权基准, 含双边0.3%费) >= +3.0pp",
+  "G2_by_year": "11个年度中>=7年组合级超额>0",
+  "G3_orthogonality": "与bp_ep同月篮子平均重叠率<=30% 或 主臂相对bp_ep篮子的月均超额>0 (二者其一)",
+  "G4_event": "主臂t20e事件级胜率超额(匹配日期基准) >= +1.5pp",
+  "verdict_rule": "四门全过=PASS_CANDIDATE(提请主人裁决接线); 主臂任一门未过=FAIL(登记负结果不接线, 对照臂如实描述); 不做跑后挖新变体"
+ },
+ "multiple_testing_note": "主臂唯一=ROE; 五个对照臂(杜邦分解)为描述性, 不设门禁不产生PASS判定——防族级多重比较(第17轮纪律)",
+ "failure_clause": "FAIL时质量因子族不接线; 翻案须新指纹+新前提(铁律7)",
+ "fingerprint": "672fc7b73cbedf60",
+ "status": "executed_FAIL_20261025",
+ "result_ref": "reports/QUALITY_DUPONT_PREREG_RESULT_20261025.md"
+}

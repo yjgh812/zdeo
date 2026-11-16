@@ -1,0 +1,34 @@
+{
+  "id": "PREREG_STRONG_NEWHIGH_LEADER_20261006",
+  "created": "2026-10-06",
+  "linked_pd": "PD-033",
+  "concept": "强档新高龙头(观察层): 强情绪档日(涨停家数>=61)中, 涨停且收盘创60日新高的票——五案例(馒头/炒家/大导弹/刺客/退学)收敛出的「强档+题材主线+新高龙头」打法的可机械化核心; 退学炒股2019Q1用此打法10周+229%(300万→986.56万)",
+  "evidence_context": "reports/txgf_dav_case5_discovery_20261006.md§五§六: 13锚点pos60[T-1]中位107.5, 100%在新高区零笔低位, 卖后f5 med-9.22%胜率14%(卖在最高区); 案例④刺客94%入场在H区; 五案例情绪闸原话全收敛(「大赚后自信大增须警醒」等五句); 关键前提=该打法只在强情绪市成立(退学04-10回撤-26%=强转弱代价)",
+  "universe": "A股全市场剔北交所/科创(code前缀00/30/60, qfq推算口径; ST由执行层R闸拦截, 影子层不过滤)",
+  "trigger": "T日三条件合取: (1)强档=当日全市场涨停家数>=61(PD-025阈值族, qfq change_pct>=9.5推算, 与deepfirst/emotion_layer同口径); (2)当日涨停=change_pct>=9.5; (3)收盘创60日新高=close[T]>max(close[T-60..T-1])(前视隔离, 需>=60根前置bar)",
+  "entry": "影子记账零交易权; fwd自T收盘起算(诚实注记: 可执行入场为T+1追价, close锚定偏乐观)",
+  "exit": "若未来激活: 五案例一致可迁移资产=卖在反抽/强势日兑现(强中卖纪律); 止损S-5",
+  "duration": "自首个前向事件日起60个交易日",
+  "gates": "G1=影子窗f5中位>=+1%; G2=影子窗f5胜率>=50%; G3=影子窗n>=30; 三门全过->呈请主人裁决升级; 任一不过->falsified登记STRONG-NEWHIGH-LEADER-OBS禁复活(条件不同须引用本prereg差异)",
+  "in_sample_boundary": "20261006前=backfill参考层(in_sample=true)不计判据, 含2019Q1证据窗复现检验; 20261006起=前向样本计判据",
+  "enrichment": "主线标注为增强字段: 并行会话theme_roles_scanner(五角色标注器)链数据可用时记录所属链, 不可用时留空; 不参与触发条件(避免依赖活跃开发中的工具)",
+  "baseline_comparison": "同窗全市场全日f5基线 + 2019Q1证据窗复现读数(仅参考非通过线)",
+  "boundary": "纯观察零交易权; 不接闸门不接cron不接schtasks(接线须PD-033主人批准); 台账=data/strong_newhigh_leader_ledger.jsonl(幂等); 快照=data/strong_newhigh_leader_latest.json; 脚本=analysis/strong_newhigh_leader_daily.py(与deepfirst_shadow同构)",
+  "falsification_note": "若三门不过: 强档新高龙头假设与前向证据不符; 不影响已定谳的深位首板(PD-031)与情绪档门控体系",
+  "amendments": [
+    {
+      "date": "2026-10-07",
+      "type": "sensitivity_check",
+      "title": "剔ST敏感性检验(10/7)",
+      "finding": "ST代码345/4626只。剔ST后f5 med=-1.91% win=43.0% n=48,535,与含ST口径(-1.95%/42.9%)几乎不变——负期望本质不因剔ST改变。🔴关键削弱:此前唯一正窗2019Q1(+2.20%)剔ST后缩至+0.46%,正贡献大部分来自ST票。PD-033不获批准的证据进一步加权。",
+      "action": "仅记录,不改判据;门评估以剔ST口径为准"
+    }
+  ],
+  "owner_ruling_20261007": {
+    "decision": "不批准,归档",
+    "ruling_date": "2026-10-07",
+    "evidence_basis": "10/7剔ST敏感性再削弱:剔ST后f5 med=-1.91%(与含ST几乎不变=负期望本质);唯一正窗2019Q1从+2.20%缩至+0.46%=正贡献大半来自ST票",
+    "note": "影子窗不开启,不接线不积累;若未来重启须引用本档案差异并说明条件变化"
+  },
+  "fingerprint": "4bcd19a238d120c7"
+}

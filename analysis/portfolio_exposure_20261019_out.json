@@ -1,0 +1,350 @@
+{
+  "by_year": {
+    "2024": {
+      "top1_ind_share": 0.748,
+      "eff_industries": 2.95,
+      "amt_med_wan": 26892.6,
+      "sz_lt5000wan_share": 0.127,
+      "vr_median": 1.083,
+      "vr_gt15_share": 0.106,
+      "month_ends": 12
+    },
+    "2025": {
+      "top1_ind_share": 0.734,
+      "eff_industries": 3.055,
+      "amt_med_wan": 28685.5,
+      "sz_lt5000wan_share": 0.068,
+      "vr_median": 0.892,
+      "vr_gt15_share": 0.069,
+      "month_ends": 12
+    },
+    "2026": {
+      "top1_ind_share": 0.762,
+      "eff_industries": 2.16,
+      "amt_med_wan": 29935.5,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.051,
+      "vr_gt15_share": 0.119,
+      "month_ends": 9
+    }
+  },
+  "month_detail": {
+    "20240131": {
+      "n": 70,
+      "top1_ind_share": 0.643,
+      "eff_industries": 4.28,
+      "amt_med_wan": 14155.9,
+      "sz_lt5000wan_share": 0.179,
+      "vr_median": 1.661,
+      "vr_gt15_share": 0.731
+    },
+    "20240229": {
+      "n": 50,
+      "top1_ind_share": 0.92,
+      "eff_industries": 1.4,
+      "amt_med_wan": 26599.3,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.27,
+      "vr_gt15_share": 0.25
+    },
+    "20240329": {
+      "n": 65,
+      "top1_ind_share": 0.708,
+      "eff_industries": 3.32,
+      "amt_med_wan": 30980.3,
+      "sz_lt5000wan_share": 0.175,
+      "vr_median": 1.055,
+      "vr_gt15_share": 0.063
+    },
+    "20240430": {
+      "n": 60,
+      "top1_ind_share": 0.9,
+      "eff_industries": 1.62,
+      "amt_med_wan": 28430.5,
+      "sz_lt5000wan_share": 0.017,
+      "vr_median": 1.124,
+      "vr_gt15_share": 0.203
+    },
+    "20240531": {
+      "n": 60,
+      "top1_ind_share": 0.883,
+      "eff_industries": 1.72,
+      "amt_med_wan": 25088.5,
+      "sz_lt5000wan_share": 0.067,
+      "vr_median": 0.862,
+      "vr_gt15_share": 0.117
+    },
+    "20240628": {
+      "n": 48,
+      "top1_ind_share": 0.917,
+      "eff_industries": 1.41,
+      "amt_med_wan": 33020.9,
+      "sz_lt5000wan_share": 0.042,
+      "vr_median": 0.774,
+      "vr_gt15_share": 0.0
+    },
+    "20240731": {
+      "n": 63,
+      "top1_ind_share": 0.73,
+      "eff_industries": 3.37,
+      "amt_med_wan": 15167.2,
+      "sz_lt5000wan_share": 0.175,
+      "vr_median": 0.889,
+      "vr_gt15_share": 0.095
+    },
+    "20240830": {
+      "n": 53,
+      "top1_ind_share": 0.83,
+      "eff_industries": 2.29,
+      "amt_med_wan": 27185.9,
+      "sz_lt5000wan_share": 0.113,
+      "vr_median": 1.095,
+      "vr_gt15_share": 0.0
+    },
+    "20240930": {
+      "n": 59,
+      "top1_ind_share": 0.712,
+      "eff_industries": 3.6,
+      "amt_med_wan": 19584.0,
+      "sz_lt5000wan_share": 0.169,
+      "vr_median": 2.216,
+      "vr_gt15_share": 0.915
+    },
+    "20241031": {
+      "n": 55,
+      "top1_ind_share": 0.727,
+      "eff_industries": 2.97,
+      "amt_med_wan": 23794.5,
+      "sz_lt5000wan_share": 0.236,
+      "vr_median": 1.109,
+      "vr_gt15_share": 0.127
+    },
+    "20241129": {
+      "n": 72,
+      "top1_ind_share": 0.722,
+      "eff_industries": 3.48,
+      "amt_med_wan": 36670.6,
+      "sz_lt5000wan_share": 0.083,
+      "vr_median": 1.071,
+      "vr_gt15_share": 0.042
+    },
+    "20241231": {
+      "n": 85,
+      "top1_ind_share": 0.765,
+      "eff_industries": 2.93,
+      "amt_med_wan": 37690.9,
+      "sz_lt5000wan_share": 0.141,
+      "vr_median": 1.046,
+      "vr_gt15_share": 0.0
+    },
+    "20250127": {
+      "n": 75,
+      "top1_ind_share": 0.893,
+      "eff_industries": 1.4,
+      "amt_med_wan": 42621.7,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 0.813,
+      "vr_gt15_share": 0.0
+    },
+    "20250228": {
+      "n": 86,
+      "top1_ind_share": 0.779,
+      "eff_industries": 2.55,
+      "amt_med_wan": 25983.5,
+      "sz_lt5000wan_share": 0.128,
+      "vr_median": 0.67,
+      "vr_gt15_share": 0.047
+    },
+    "20250331": {
+      "n": 78,
+      "top1_ind_share": 0.769,
+      "eff_industries": 2.61,
+      "amt_med_wan": 23404.1,
+      "sz_lt5000wan_share": 0.128,
+      "vr_median": 0.687,
+      "vr_gt15_share": 0.026
+    },
+    "20250430": {
+      "n": 71,
+      "top1_ind_share": 0.746,
+      "eff_industries": 3.05,
+      "amt_med_wan": 24090.9,
+      "sz_lt5000wan_share": 0.056,
+      "vr_median": 1.036,
+      "vr_gt15_share": 0.099
+    },
+    "20250530": {
+      "n": 75,
+      "top1_ind_share": 0.773,
+      "eff_industries": 2.54,
+      "amt_med_wan": 24130.6,
+      "sz_lt5000wan_share": 0.08,
+      "vr_median": 1.14,
+      "vr_gt15_share": 0.04
+    },
+    "20250630": {
+      "n": 69,
+      "top1_ind_share": 0.725,
+      "eff_industries": 3.06,
+      "amt_med_wan": 42546.6,
+      "sz_lt5000wan_share": 0.043,
+      "vr_median": 1.346,
+      "vr_gt15_share": 0.435
+    },
+    "20250731": {
+      "n": 72,
+      "top1_ind_share": 0.625,
+      "eff_industries": 3.9,
+      "amt_med_wan": 39163.9,
+      "sz_lt5000wan_share": 0.111,
+      "vr_median": 1.142,
+      "vr_gt15_share": 0.208
+    },
+    "20250829": {
+      "n": 66,
+      "top1_ind_share": 0.742,
+      "eff_industries": 2.54,
+      "amt_med_wan": 40570.1,
+      "sz_lt5000wan_share": 0.045,
+      "vr_median": 1.284,
+      "vr_gt15_share": 0.455
+    },
+    "20250930": {
+      "n": 67,
+      "top1_ind_share": 0.701,
+      "eff_industries": 3.21,
+      "amt_med_wan": 34790.1,
+      "sz_lt5000wan_share": 0.03,
+      "vr_median": 0.798,
+      "vr_gt15_share": 0.09
+    },
+    "20251031": {
+      "n": 71,
+      "top1_ind_share": 0.634,
+      "eff_industries": 3.73,
+      "amt_med_wan": 31387.5,
+      "sz_lt5000wan_share": 0.028,
+      "vr_median": 0.971,
+      "vr_gt15_share": 0.254
+    },
+    "20251128": {
+      "n": 71,
+      "top1_ind_share": 0.606,
+      "eff_industries": 4.56,
+      "amt_med_wan": 21864.5,
+      "sz_lt5000wan_share": 0.155,
+      "vr_median": 0.682,
+      "vr_gt15_share": 0.0
+    },
+    "20251231": {
+      "n": 59,
+      "top1_ind_share": 0.542,
+      "eff_industries": 4.59,
+      "amt_med_wan": 22136.5,
+      "sz_lt5000wan_share": 0.119,
+      "vr_median": 0.576,
+      "vr_gt15_share": 0.0
+    },
+    "20260130": {
+      "n": 38,
+      "top1_ind_share": 0.658,
+      "eff_industries": 1.9,
+      "amt_med_wan": 18131.3,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.268,
+      "vr_gt15_share": 0.447
+    },
+    "20260227": {
+      "n": 25,
+      "top1_ind_share": 1.0,
+      "eff_industries": 1.0,
+      "amt_med_wan": 17036.1,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 0.852,
+      "vr_gt15_share": 0.0
+    },
+    "20260331": {
+      "n": 33,
+      "top1_ind_share": 0.939,
+      "eff_industries": 1.26,
+      "amt_med_wan": 38747.7,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 0.838,
+      "vr_gt15_share": 0.0
+    },
+    "20260430": {
+      "n": 42,
+      "top1_ind_share": 0.762,
+      "eff_industries": 2.39,
+      "amt_med_wan": 50175.2,
+      "sz_lt5000wan_share": 0.071,
+      "vr_median": 1.173,
+      "vr_gt15_share": 0.19
+    },
+    "20260529": {
+      "n": 36,
+      "top1_ind_share": 0.889,
+      "eff_industries": 1.59,
+      "amt_med_wan": 13872.5,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 0.802,
+      "vr_gt15_share": 0.0
+    },
+    "20260630": {
+      "n": 39,
+      "top1_ind_share": 0.769,
+      "eff_industries": 2.16,
+      "amt_med_wan": 47481.6,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.051,
+      "vr_gt15_share": 0.154
+    },
+    "20260731": {
+      "n": 42,
+      "top1_ind_share": 0.738,
+      "eff_industries": 2.46,
+      "amt_med_wan": 50607.4,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.278,
+      "vr_gt15_share": 0.119
+    },
+    "20260831": {
+      "n": 38,
+      "top1_ind_share": 0.605,
+      "eff_industries": 4.86,
+      "amt_med_wan": 29935.5,
+      "sz_lt5000wan_share": 0.0,
+      "vr_median": 1.13,
+      "vr_gt15_share": 0.263
+    },
+    "20260930": {
+      "n": 41,
+      "top1_ind_share": 0.707,
+      "eff_industries": 2.95,
+      "amt_med_wan": 24743.8,
+      "sz_lt5000wan_share": 0.171,
+      "vr_median": 0.861,
+      "vr_gt15_share": 0.024
+    }
+  },
+  "bp_202008_breakpoint": {
+    "pre": {
+      "n": 696,
+      "win_pct": 56.32,
+      "med_pct": 1.251
+    },
+    "post": {
+      "n": 536,
+      "win_pct": 53.36,
+      "med_pct": 0.351
+    }
+  },
+  "ic_table": {
+    "rows": 75,
+    "date_range": [
+      "20260612",
+      "20260717"
+    ],
+    "verdict": "仅1个月覆盖(75行), IC衰减曲线不可作, 登记数据缺口"
+  }
+}

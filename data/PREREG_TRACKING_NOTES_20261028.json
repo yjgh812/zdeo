@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-28",
+  "master_observations": [
+    {
+      "id": "OBS-1",
+      "finding": "突破共振组第一天跑赢所有老方法（万向钱潮+4.7%），验证回测证伪≠模拟盘证伪",
+      "master_directive": "这个要记住",
+      "status": "登记为持续跟踪观察点",
+      "validation_plan": "突破+主线共振prereg(PREREG_BREAKOUT_MAINLINE_20261026) n>=15时判定，20日后结算",
+      "implication_if_confirmed": "回测证伪的方法可能有实盘优势（盘中入场价/实时主线判断/板块共振氛围），需要对其他已证伪方法重新用模拟盘验证"
+    },
+    {
+      "id": "OBS-2",
+      "finding": "中枢对照(银行/地产/消费)在市场下跌时天然跑赢，但这个优势可能随市场反弹而消失",
+      "master_directive": "这个要继续模拟盘验证",
+      "status": "登记为持续跟踪观察点",
+      "validation_plan": "④中枢对照组持续持有观察，对比HIGHWIN组在市场反弹时的表现分化",
+      "implication_if_confirmed": "防御板块在深跌市中确实是alpha来源，需要考虑是否在策略中加入防御/进攻切换因子"
+    }
+  ],
+  "tracking_until": "2026-11-20"
+}

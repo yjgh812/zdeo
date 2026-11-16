@@ -1,0 +1,55 @@
+{
+ "last_beat": "2026-10-30T17:33:01",
+ "artifacts": {
+  "backup_log": {
+   "path": "reports/backup_log.txt",
+   "mtime": "2026-10-30T09:36:11",
+   "lag_hours": 7.9,
+   "stale": false
+  },
+  "trailing_monitor_log": {
+   "path": "reports/trailing_monitor_log.txt",
+   "mtime": "2026-10-30T14:40:01",
+   "lag_hours": 2.9,
+   "stale": false
+  },
+  "notifications_log": {
+   "path": "data/notifications.log",
+   "mtime": "2026-10-30T09:33:39",
+   "lag_hours": 8.0,
+   "stale": false
+  },
+  "vibe_card": {
+   "path": "data/vibe_card_latest.json",
+   "status": "missing"
+  },
+  "timing_state_brief": {
+   "path": "data/timing_state_brief_latest.txt",
+   "mtime": "2026-10-28T09:27:07",
+   "lag_hours": 56.1,
+   "stale": true
+  },
+  "prereg_registry": {
+   "path": "reports/prereg_registry_latest.md",
+   "mtime": "2026-10-14T09:52:16",
+   "lag_hours": 391.7,
+   "stale": false
+  },
+  "data_locations": {
+   "path": "DATA_LOCATIONS.md",
+   "mtime": "2026-10-20T13:27:27",
+   "lag_hours": 244.1,
+   "stale": false
+  },
+  "winner5_feed": {
+   "path": "data/universe_portrait_winner5_latest.json",
+   "mtime": "2026-10-28T08:32:05",
+   "lag_hours": 57.0,
+   "stale": true
+  }
+ },
+ "qfq_max_date": "20261029",
+ "qfq_replica_max_date": "20261029",
+ "qfq_replica_lag_days": 0,
+ "stale_count": 2
+}

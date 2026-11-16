@@ -1,0 +1,32 @@
+{
+ "built_at": "20261029",
+ "n_clean": 1766541,
+ "drop_new": 0,
+ "base_train": {
+  "n": 746243,
+  "mean": 0.19,
+  "win": 45.3,
+  "med": -0.89
+ },
+ "base_test": {
+  "n": 901171,
+  "mean": 0.54,
+  "win": 46.4,
+  "med": -0.71
+ },
+ "pool": [
+  {
+   "dims": "dstate|mkt|pos",
+   "key": "forming_up|range|mid",
+   "train": {
+    "n": 74,
+    "mean": 3.56,
+    "win": 58.1,
+    "med": 0.78
+   },
+   "test": null
+  }
+ ],
+ "excl": [],
+ "final_pool": []
+}

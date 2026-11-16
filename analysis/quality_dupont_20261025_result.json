@@ -1,0 +1,179 @@
+{
+ "meta": {
+  "generated_at": "2026-10-25",
+  "order": "继续→第一梯队开测(质量因子首位)",
+  "prereg": "D:\\zcodesj\\data\\PREREG_QUALITY_DUPONT_20261025.json",
+  "fingerprint": "672fc7b73cbedf60",
+  "gates_LOCKED": {
+   "G1_portfolio": "主臂组合级2016-2026年化超额(全宇宙等权基准, 含双边0.3%费) >= +3.0pp",
+   "G2_by_year": "11个年度中>=7年组合级超额>0",
+   "G3_orthogonality": "与bp_ep同月篮子平均重叠率<=30% 或 主臂相对bp_ep篮子的月均超额>0 (二者其一)",
+   "G4_event": "主臂t20e事件级胜率超额(匹配日期基准) >= +1.5pp",
+   "verdict_rule": "四门全过=PASS_CANDIDATE(提请主人裁决接线); 主臂任一门未过=FAIL(登记负结果不接线, 对照臂如实描述); 不做跑后挖新变体"
+  },
+  "zero_trade_authority": true
+ },
+ "main_arm_roe": {
+  "n_months": 126,
+  "events": 2482,
+  "win_event": 0.3956,
+  "win_base_matched": 0.4287,
+  "ann_return": -0.0631,
+  "base_ann_return": -0.0074,
+  "ann_excess_pp": -5.57,
+  "by_year_excess": {
+   "2016": -1.39,
+   "2017": 3.22,
+   "2018": -1.11,
+   "2019": -0.73,
+   "2020": 1.38,
+   "2021": -1.49,
+   "2022": -1.4,
+   "2023": -0.42,
+   "2024": -1.11,
+   "2025": -1.01,
+   "2026": -0.92
+  },
+  "n_pos_years": 2,
+  "mean_ret_event": -0.001,
+  "overlap_bp_ep_mean": 0.0052
+ },
+ "control_arms": {
+  "droe": {
+   "n_months": 126,
+   "events": 2481,
+   "win_event": 0.3886,
+   "win_base_matched": 0.4281,
+   "ann_return": -0.0672,
+   "base_ann_return": -0.0074,
+   "ann_excess_pp": -5.98,
+   "by_year_excess": {
+    "2016": -0.54,
+    "2017": 1.37,
+    "2018": -0.23,
+    "2019": -0.25,
+    "2020": 0.52,
+    "2021": -1.19,
+    "2022": -1.32,
+    "2023": -0.6,
+    "2024": -1.27,
+    "2025": -0.04,
+    "2026": -1.36
+   },
+   "n_pos_years": 2,
+   "mean_ret_event": 0.0007,
+   "overlap_bp_ep_mean": 0.0
+  },
+  "roa": {
+   "n_months": 126,
+   "events": 2491,
+   "win_event": 0.4063,
+   "win_base_matched": 0.428,
+   "ann_return": -0.0833,
+   "base_ann_return": -0.0074,
+   "ann_excess_pp": -7.59,
+   "by_year_excess": {
+    "2016": -1.24,
+    "2017": 2.86,
+    "2018": -0.13,
+    "2019": -0.81,
+    "2020": -0.08,
+    "2021": -1.4,
+    "2022": -2.28,
+    "2023": -1.98,
+    "2024": -1.25,
+    "2025": -0.01,
+    "2026": -0.66
+   },
+   "n_pos_years": 1,
+   "mean_ret_event": -0.0024,
+   "overlap_bp_ep_mean": 0.002
+  },
+  "pm": {
+   "n_months": 125,
+   "events": 2463,
+   "win_event": 0.4206,
+   "win_base_matched": 0.4295,
+   "ann_return": -0.0592,
+   "base_ann_return": -0.0048,
+   "ann_excess_pp": -5.44,
+   "by_year_excess": {
+    "2016": 0.75,
+    "2017": -0.38,
+    "2018": -0.23,
+    "2019": -0.91,
+    "2020": 0.14,
+    "2021": -1.45,
+    "2022": -0.42,
+    "2023": 0.21,
+    "2024": 0.03,
+    "2025": -0.56,
+    "2026": -2.26
+   },
+   "n_pos_years": 4,
+   "mean_ret_event": -0.0009,
+   "overlap_bp_ep_mean": 0.0095
+  },
+  "ato": {
+   "n_months": 125,
+   "events": 2462,
+   "win_event": 0.4387,
+   "win_base_matched": 0.4297,
+   "ann_return": -0.0343,
+   "base_ann_return": -0.0048,
+   "ann_excess_pp": -2.95,
+   "by_year_excess": {
+    "2016": -0.17,
+    "2017": 0.17,
+    "2018": -0.58,
+    "2019": -0.52,
+    "2020": 1.64,
+    "2021": 0.54,
+    "2022": -0.89,
+    "2023": -0.87,
+    "2024": -0.56,
+    "2025": 0.59,
+    "2026": -2.02
+   },
+   "n_pos_years": 4,
+   "mean_ret_event": 0.0044,
+   "overlap_bp_ep_mean": 0.0
+  },
+  "lev": {
+   "n_months": 125,
+   "events": 2466,
+   "win_event": 0.412,
+   "win_base_matched": 0.4291,
+   "ann_return": -0.0604,
+   "base_ann_return": -0.0048,
+   "ann_excess_pp": -5.56,
+   "by_year_excess": {
+    "2016": -1.35,
+    "2017": -0.36,
+    "2018": 0.17,
+    "2019": 0.62,
+    "2020": -0.23,
+    "2021": 0.01,
+    "2022": -1.45,
+    "2023": 0.07,
+    "2024": 0.09,
+    "2025": -0.98,
+    "2026": -1.28
+   },
+   "n_pos_years": 5,
+   "mean_ret_event": 0.0003,
+   "overlap_bp_ep_mean": 0.0
+  }
+ },
+ "orthogonality": {
+  "overlap_mean": 0.0052,
+  "rel_excess_vs_bp_ep_pp_monthly": -0.4
+ },
+ "gates": {
+  "G1_portfolio(ann_excess>=+3.0pp)": false,
+  "G2_by_year(>=7/11正)": false,
+  "G3_orthogonality(重叠<=30%或相对bp_ep>0)": true,
+  "G4_event(win超额>=+1.5pp)": false
+ },
+ "verdict": "FAIL"
+}

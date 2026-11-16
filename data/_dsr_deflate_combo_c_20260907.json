@@ -1,0 +1,226 @@
+{
+  "method": "Bailey & Lopez de Prado (2014) Deflated Sharpe Ratio, t-value approximation",
+  "formula": "E[max t] = sigma * ((1-gamma)*Z(1-1/N) + gamma*Z(1-1/(N*e))), gamma=0.5772",
+  "family_t_values_in_archive": {
+    "v1_base": 3.78,
+    "expand_pos_pool": 1.74,
+    "l2_synergy_2x": 3.84,
+    "ind_h1_between": 4.11,
+    "v2_no_lookahead": 3.75
+  },
+  "sigma_family_empirical": 0.9631,
+  "sigma_family_mean": 3.444,
+  "trials_N_basis": {
+    "narrow": "组合C配方族12变体（5个有在案t值：v1 3.78/扩正池1.74/L2 3.84/组间差4.11/v2 3.75；另7个无t记录变体计入N）",
+    "wide": "全项目保守下界200（falsified_rules 33 + prereg 19 + 时序26臂 + skill_sweep 60 + morph 56 = 194）"
+  },
+  "decision_table": [
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 1.6034,
+      "survive": true,
+      "margin": 2.1466
+    },
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 1.6034,
+      "survive": true,
+      "margin": 2.1766
+    },
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 1.6648,
+      "survive": true,
+      "margin": 2.0852
+    },
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 1.6648,
+      "survive": true,
+      "margin": 2.1152
+    },
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 3.3296,
+      "survive": true,
+      "margin": 0.4204
+    },
+    {
+      "N": 12,
+      "N_label": "narrow_family_12",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 3.3296,
+      "survive": true,
+      "margin": 0.4504
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 2.6636,
+      "survive": true,
+      "margin": 1.0864
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 2.6636,
+      "survive": true,
+      "margin": 1.1164
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 2.7655,
+      "survive": true,
+      "margin": 0.9845
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 2.7655,
+      "survive": true,
+      "margin": 1.0145
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 5.531,
+      "survive": false,
+      "margin": -1.781
+    },
+    {
+      "N": 200,
+      "N_label": "wide_project_200",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 5.531,
+      "survive": false,
+      "margin": -1.751
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 2.94,
+      "survive": true,
+      "margin": 0.81
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 0.9631,
+      "sigma_label": "family_empirical",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 2.94,
+      "survive": true,
+      "margin": 0.84
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 3.0525,
+      "survive": true,
+      "margin": 0.6975
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 1.0,
+      "sigma_label": "conservative_1.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 3.0525,
+      "survive": true,
+      "margin": 0.7275
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.75,
+      "t_obs_label": "v2_no_lookahead",
+      "E_max_t": 6.1051,
+      "survive": false,
+      "margin": -2.3551
+    },
+    {
+      "N": 500,
+      "N_label": "wide_project_500",
+      "sigma": 2.0,
+      "sigma_label": "pessimistic_2.0",
+      "t_obs": 3.78,
+      "t_obs_label": "v1_base",
+      "E_max_t": 6.1051,
+      "survive": false,
+      "margin": -2.3251
+    }
+  ],
+  "survival_capacity_max_trials": {
+    "v2_no_lookahead@sigma=family_empirical": 11444,
+    "v1_base@sigma=family_empirical": 13018,
+    "v2_no_lookahead@sigma=conservative_1.0": 6396,
+    "v1_base@sigma=conservative_1.0": 7212,
+    "v2_no_lookahead@sigma=pessimistic_2.0": 18,
+    "v1_base@sigma=pessimistic_2.0": 19
+  },
+  "generated": "2026-09-07"
+}

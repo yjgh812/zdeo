@@ -1,0 +1,96 @@
+{
+ "prereg_id": "PREREG-LOW-CONSOLIDATION-ALPHA-20261021",
+ "status": "STAGE1B_OOS_CONFIRMED_M7_APPROVED",
+ "created": "2026-10-21",
+ "origin": {
+  "exploratory_finding": "v1链(winrate A/B, 869a997)意外发现: 低位横盘事件(冷却5日口径)自身正超额 G_LOW 49.92% vs G_RANDOM 46.39% (+3.53pp)",
+  "honest_status": "探索性发现(post-hoc), 须按本prereg稳健性矩阵确认, 不得直接宣称",
+  "owner_order": "主人「继续」令承接推荐主线C = 激活令; v1链按A归档(ARCHIVED_DIRECTIONAL_NEGATIVE)"
+ },
+ "hypothesis": {
+  "H1": "低位横盘事件(gauge官方口径 pos250<30 且 |chg5|<3, 冷却5日) t20e 胜率 > 全市场随机对照, 主口径增量 ≥ +2pp 且 bootstrap95%CI 不含 0",
+  "H1_kill": "含退市股修正后 主口径 effect ≤ 0 → 归档证伪库(本条款必须可触发)"
+ },
+ "lesson_carried_from_v1": [
+  "退市段接入为阶段0前置(非caveat): delisted_segments_baostock.db 252只退市股并入, 收益率在baostock源内自洽(raw×backAdjustFactor后复权), 不与qfq主库跨源拼价, 只并事件",
+  "退市股T+20视野不足时用其序列最后收盘价强制平仓(经济语义=退市清算), 不允许删失剔除(快退市触发不得静默消失)",
+  "稳健性矩阵预注册: 探索性发现须跨变体确认, 禁单口径宣称",
+  "m7独立校验前置承诺: 执行后必派m7, verdict标签不得伪中性"
+ ],
+ "robustness_matrix_12": {
+  "variants": "冷却{3,5,10} × 出场口径{t20e止损, 纯T+20持有} × 入场{T收盘, T+1开盘}",
+  "pass_rule": "≥10/12 变体 effect 方向为正(>0), 且主口径(冷却5+t20e+收盘)满足G2",
+  "approx_disclosure": "T+1开盘口径不含涨停顺延(开盘>0即可成交近似), 如实披露"
+ },
+ "gates": {
+  "G1": "主口径每组 n≥30",
+  "G2": "主口径(含退市) effect ≥+2pp 且 bootstrap(1000) 95%CI 不含 0",
+  "G3": "稳健性矩阵 ≥10/12 方向为正",
+  "kill": "H1_kill 触发即归档证伪库, 禁参数扫描救活"
+ },
+ "universe": "主库=qfq(code首字6/0/3, 上市>60日, 官方口径); 退市库=delisted_segments(2024+窗口, 99只); 事件窗口2024-01至T+20完整",
+ "survivorship_protocol": "主判定=含退市股; 不含退市股版本仅作对比披露并输出偏差量化(两组effect差)",
+ "data_sources": {
+  "main": "D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db stock_daily_meta_qfq (复刻gauge口径)",
+  "delisted": "data/delisted_segments_baostock.db stock_daily_delisted_raw + adjust_factor(事件式ffill)",
+  "baseline_check": "Part0复现gauge A格子(上轮42.70%/43.2%先例, 阈值±1.5pp)"
+ },
+ "activation_record": {
+  "activated_at": "2026-10-21 23:01",
+  "owner_signal": "主人「继续」令承接推荐主线C(v1链收口时列明)",
+  "prereg_sha256_16": "1a160f793cdeb7bb",
+  "lesson_binding": "v1两项m7合同违背已前置为本prereg阶段0与矩阵条款",
+  "final_sha256_16": "7fe216e88e1d5413",
+  "fingerprint_protocol": "final_sha256_16=含激活记录的最终文件hash; runner运行时实算并写入结果fingerprint16, 二者一致为绑定校验",
+  "m7_round1": "打回: 退市库open未复权伪影(t1四变体无效)/超2024+窗口(74%事件在宇宙外)/指纹硬编码失绑 → 已修复重跑",
+  "updated_at": "2026-10-21 23:32"
+ },
+ "m7_round2": {
+  "verdict": "放行",
+  "key_evidence": "三项修复实证到位; 12变体独立复跑零偏差(≤0.005pp); 指纹真实绑定(result.fp16=bbc423d3d41979ec=当前文件实算); PASS_H1为合同必然结论",
+  "debt_registered": [
+   "幸存者对比量化未单列(m7复跑参考: 仅主库cd5_t20e≈+4.1pp vs 含退市+4.55pp, 偏差≈0.4pp不改变结论), 下次触达补正式交付",
+   "survivorship_note'252只'失实(宇宙收敛后实际99只入库), 待更正",
+   "死指纹1a160f793cdeb7bb残值及runner docstring首行, 待注废; 激活记录协议句自相矛盾待更正(实际生效校验=result.fp16==文件实算值)"
+  ]
+ },
+ "conclusion_for_owner": {
+  "finding": "低位横盘事件(gauge官方口径) T+20 正超额获预注册矩阵确认: 主口径+4.55pp CI(3.3,5.88), 12/12变体方向为正",
+  "practical": "T+1开盘可执行口径同强(+4.5~+5.5pp), 效应不依赖收盘前视; 止损口径增幅最大=低回撤特性",
+  "boundary": "效应量为胜率差4.5pp级别(非暴利), 且为2024+窗口单一市场相位样本; 扩仓使用须主人立项, 本结果零交易权"
+ },
+ "updated_at": "2026-10-21 23:56",
+ "stage1b_oos": {
+  "registered_at": "2026-10-21 23:45",
+  "motivation": "阶段1结论边界=2024+单一市场相位; 2022-2023段从未进入任何一次计算(LOAD_FROM=20240101实锤)=干净样本外",
+  "window": "事件窗20220101-20231231(pos250回看用2021+数据); 退市库段2022+",
+  "protocol": "主口径(冷却5+t20e收盘入场+含退市, 强制平仓同阶段1) + 纯持有对照; OOS脚本独立新件(不改动已归档runner, 保复现性)",
+  "pass": "effect > 0 → 跨相位稳健, 阶段1结论升级为跨相位确认",
+  "fail": "effect ≤ 0 → 记录'效应限2024+相位', 阶段1结论降级为相位条件有效, 禁宣称普适",
+  "note": "本条款写入先于OOS任何计算(时点证据=本文件mtime+git)"
+ },
+ "stage1b_execution_record": {
+  "executed_at": "2026-10-21 23:56",
+  "runner": "analysis/low_consol_alpha_oos_20222023_20261021.py",
+  "result_file": "analysis/low_consol_alpha_oos_20222023_result_20261021.json",
+  "raw_result": {
+   "主口径t20e": "A=45.2% R=39.3% eff=+5.91pp CI(4.93,6.93)",
+   "纯持有": "+4.71pp CI(3.69,5.77)"
+  },
+  "m7_round3": "放行(附强制补正)",
+  "mandatory_corrections": [
+   "抽样协议不对称: OOS脚本A组缺每日≤20上限(随机组有), docstring'完全一致'声明不实——已由m7补算对称协议版",
+   "协议可比口径=对称抽样 +2.75pp CI(1.38,4.07) [m7补算], 原始+5.91系无上限日聚集加权+iid bootstrap反保守产物(聚集中位306事件/日), 量级虚高约一倍",
+   "方向结论双协议稳健: 2024+段+4.55pp / 2022-23段对称口径+2.75pp, 均CI不含0, 跨相位确认成立"
+  ],
+  "verdict": "OOS_ROBUST_CONFIRM (协议可比口径: 2024+=+4.55pp, 2022-23=+2.75pp, 双段显著为正; 熊市段效应量缩水约半, 如实披露)",
+  "final_status": "跨相位稳健确认; admit管线接线/模拟盘前瞻队列立项呈主人"
+ },
+ "survivorship_debt_settled": {
+  "settled_at": "2026-10-21",
+  "main_only": 3.68,
+  "with_delisted": 4.55,
+  "bias_pp": 0.87,
+  "file": "analysis/lowconsol_survivorship_check_20261021.json"
+ }
+}

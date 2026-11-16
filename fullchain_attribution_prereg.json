@@ -1,0 +1,15 @@
+{
+  "id": "20261107-fullchain-attribution",
+  "ts": "2026-11-07T05:00:00",
+  "object": "信号→闸门→成交全链归因（终局问题: 系统的钱是谁挣的）。三层定义冻结: L1信号层=全部快照信号fwd5超额(已知-0.15pp); L2闸门层=闸门检查REJECT组 vs PASS组(PASS/PASS_WITH_WARN)的fwd5超额差(选择价值); L3成交层=信号↔成交配对中 实际pnl vs 信号fwd5 的差(执行+干预价值)。",
+  "engine": "analysis/chain_attribution.py：signal_snapshots(379) × guard_precheck_log(3506, 买侧verdict按code+date聚合, 任一REJECT=拒) × position_history(259平仓) × index_daily(000300基准)。",
+  "params": {
+    "match_rule": "信号↔成交: code6相同且 entry_date ∈ [signal_date, signal_date+7自然日], 贪婪一对一(最早配最早)",
+    "fwd5": "执行日=次一交易日, fwd5=第5交易日收盘/执行日收盘-1, 超额=个股-沪深300同期",
+    "buckets": "闸门: REJECT vs PASS类; 成交: 配对成功 vs 未配对(其他来源)"
+  },
+  "criterion": {
+    "commitment": "①L2选择价值=PASS组超额中位-REJECT组超额中位, >2pp=闸门正贡献, 0~2pp=噪声区, <0=闸门负贡献(呈主人裁决); ②L3执行+干预价值=配对成交实际pnl中位-其信号fwd5中位; ③各组n≥20才出方向性结论, 不足如实标注; ④诚实边界=成交pnl含人工干预(已知+19pp子集), 闸门日志含快照外来源的检查, 配对率如实列示。零交易权, 只读归因库。",
+    "honesty": "本归因是回看统计, 不是因果实验; 闸门拒绝集的反事实(如果不拒会怎样)用fwd5近似, 存在幸存者式近似误差, 如实标注。"
+  }
+}

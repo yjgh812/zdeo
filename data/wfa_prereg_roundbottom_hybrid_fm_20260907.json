@@ -1,0 +1,22 @@
+{
+  "prereg_id": "roundbottom_hybrid_fm_20260907",
+  "created": "2026-09-07",
+  "owner_directive": "主人裁决'彻底了结方法之争: 授权跑第三个设计(同深跌匹配+FM混合)'",
+  "background": "方法之争: 9/2 verify 反转正交 PASS(对照=ret30<=rbot样本25分位的更深跌非rbot股, Welch t=4.43) vs 9/7 FM rev5线性控制 FAIL(t=1.59, 池内仅rbot)。两者控制变量与参照系均不同。混合设计=把 9/2 口径对照组拉进 FM 框架, 同时控制 rev30(匹配维度连续化)+rev5(上轮维度), 双系数分别回答形态增量与缓弧过滤增量",
+  "oos_lock": "统计 year<=2025, 数据载入同 classical_pattern_prescreen",
+  "design": {
+    "pool": "rbot 处理组(同 compare/orth 管线) + 对照组(完全照抄 verify: 同日 ret30<=rbot样本ret30的25分位 & 当日非rbot & 非停牌, 随机抽样 seed=20260902, n_ctrl=min(候选,max(n_rbot,5000)), 同尺子N10)",
+    "M1_form_alpha": "合并池按年 FM: ret = a + b1*is_rbot + b2*rev30 + b3*rev5 → b1 = rbot 形态对深跌对照的增量(同时控制两个反转维度)",
+    "M2_curve_filter": "仅 rbot 样本按年 FM: ret = a + c1*is_zhongtai + c2*rev5 + c3*rev30 → c1 = 缓弧过滤在 rev30+rev5 双控制下是否恢复显著"
+  },
+  "criteria": {
+    "M1": "FM_t(b1)>=3 且 mean(b1)>=0.005 (对齐 verify DIFF_PASS=+0.5%/笔)",
+    "M2": "FM_t(c1)>=3 且 mean(c1)>0"
+  },
+  "verdicts": {
+    "M1_pass_M2_fail": "方法之争了结=形态alpha真/缓弧细化无独立增量 → 11/20真窗复核点照走, 缓弧过滤不入闸门",
+    "M1_pass_M2_pass": "缓弧过滤有独立增量 → 缓弧版升级建议(另行新指纹预注册)",
+    "M1_fail": "9/2 PASS 依赖对照构造, 形态增量存疑 → 上报主人(真窗复核点仍照走, 不越权改判)"
+  },
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/HYBRID_FM_ROUND-BOTTOM_20260907.{json,md} + wfa_trials.jsonl"
+}

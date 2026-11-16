@@ -1,0 +1,52 @@
+{
+  "prereg_id": "PREREG_BPEP_TIEBREAK_20261018",
+  "version": 1,
+  "status": "DRAFT",
+  "title": "bp_ep Top15 边界同分 tie-break(vr120 低优先)观察层候选——DRAFT 不激活不接线",
+  "fingerprint_algorithm": "sha256(canonical_json_minus_fingerprint)截16位（系统惯例；激活时计算）",
+  "fingerprint": "TBD_DRAFT_NOT_ACTIVE",
+  "hypothesis": "bp_ep 月度 Top15 截断边界处 score(三位小数)同分票的入选顺序由任意 rank 序决定(D4实测:边界15与rank14同分率60.8%,边界大半任意);以 vr120(量比口径 vma5/vma120)升序作同分组内 tie-break,组合腿收益不劣于现 rank 序且实现波动不升——近零成本杠杆候选(登记表坑位D4)",
+  "tested_conditions": {
+    "sample_start": "2026-10-20(OOS影子起点,与low_repair族同日)",
+    "sample_end": "60个交易日或同分边界事件 n>=30 先到",
+    "universe": "与生产 bp_ep 月度批次完全一致(全A剔北交所/ST/科创板)",
+    "exclusions": ["T+1一字板", "停牌", "ST", "上市未满60日", "成交额<5000万"],
+    "cost_model": "沿用回测引擎双边费税与滑点假设(登记表口径, 双轨对齐)"
+  },
+  "params": {
+    "note": "参数单一真源=本字段；缺字段fail-closed；激活后禁改",
+    "tiebreak_key": "vr120升序(量比口径 vma5/vma120, 低量比优先)——amend 2026-10-19: 原稿误写「近120日年化波动率」, 按主人「按推荐继续」定锚统一为系统量比口径(A池画像格/高位爆量哨/登记表/PREREG_VR120_FILTER_20261018 同源)",
+    "tiebreak_apply_scope": "仅 score 三位小数完全相等的同分组内; 不同分票次序不变",
+    "selection_n": 15,
+    "shadow_arm": "记账影子=同月批次两套排序(tie-break臂 vs 现rank序臂)逐月对照, 零交易权零接线"
+  },
+  "metrics": {
+    "primary": ["组合bp_ep腿TWR差(tie-break臂-现rank臂)", "实现年化波动差"],
+    "secondary": ["fwd20中位差", "胜率差", "MDD差"]
+  },
+  "decision_rules": {
+    "G1": "OOS窗(60交易日或同分边界事件n>=30先到)tie-break臂TWR不劣于现rank臂(容差>=-0.5pp)",
+    "G2": "实现年化波动与MDD均不劣化(<=+0.5pp容差)",
+    "G3": "同分边界事件n>=30",
+    "kill_switch": "OOS前10个同分边界事件fwd20中位<-1pp(逐字呈报提请废案)"
+  },
+  "validity": {
+    "owner_second_gate": "激活/接线/任何闸门化均须主人第二道裁决",
+    "dependency": "依赖D4同分率实测(reports/analysis 91a72b2)与登记表双轨口径; 口径变更须amend",
+    "review_date": "2027-01-20"
+  },
+  "ledger": {
+    "type": "shadow_only",
+    "path": "data/ 下按激活日新建 bpep_tiebreak_shadow_ledger.jsonl",
+    "note": "DRAFT阶段不建runner不落账"
+  },
+  "boundaries": [
+    "DRAFT不激活: 不改回测引擎/夜链/shadow任何生产面",
+    "本件为选股层排序语义, 禁止与出场/止损/仓位域合并叙述",
+    "登记表(selection_winrate_registry_20261018.md)为唯一口径真源, 引用数字须双轨对齐"
+  ],
+  "approval": {
+    "drafted": "2026-10-18",
+    "owner_decision": "【2026-10-19 主人「按推荐继续」终裁=维持DRAFT不激活】诊断⑤实证帧序中性(119期仅15期边界事件, 配对差+0.37pp CI含零=tie-break属中性重构非alpha修正, 无先验收益, 见reports/winrate_tier2_diag2_20261018.md§六); 口径已定锚量比vma5/vma120; 未来若激活(仅为主人重新提出确定性诉求时)按本件批准后算指纹建影子, 当前归档不动作"
+  }
+}

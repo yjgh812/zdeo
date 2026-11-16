@@ -1,0 +1,460 @@
+{
+ "generated": "2026-09-05",
+ "purpose": "华泰AutoResearch借鉴项①方向网络复盘(只读)",
+ "nodes": [
+  {
+   "id": "KRONOS_0815",
+   "date": "2026-08-15",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "Kronos零样本#1"
+  },
+  {
+   "id": "KRONOS_0818",
+   "date": "2026-08-18",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "Kronos零样本#2"
+  },
+  {
+   "id": "S4_ATR",
+   "date": "2026-08-28",
+   "family": "止损/退出层",
+   "verdict": "falsified",
+   "label": "ATR全局止损"
+  },
+  {
+   "id": "S5_TIMESTOP",
+   "date": "2026-08-28",
+   "family": "止损/退出层",
+   "verdict": "scope_restricted",
+   "label": "时间止损"
+  },
+  {
+   "id": "HOTSPOT",
+   "date": "2026-08-28",
+   "family": "动量/追热族",
+   "verdict": "retired",
+   "label": "hotspot退役"
+  },
+  {
+   "id": "M1_SECTORCAP",
+   "date": "2026-08-29",
+   "family": "组合构造层",
+   "verdict": "falsified",
+   "label": "板块集中度cap"
+  },
+  {
+   "id": "SMC",
+   "date": "2026-08-29",
+   "family": "动量/追热族",
+   "verdict": "retired",
+   "label": "smc退役(前视)"
+  },
+  {
+   "id": "P2B_SECTORMOM",
+   "date": "2026-08-29",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "板块动量双证伪"
+  },
+  {
+   "id": "BT_FAIL005",
+   "date": "2026-08-29",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "BT-FAIL005追确认"
+  },
+  {
+   "id": "BPEP_TRENDUP",
+   "date": "2026-08-31",
+   "family": "估值/价值层",
+   "verdict": "prereg",
+   "label": "bpep风格prereg"
+  },
+  {
+   "id": "QYOY3",
+   "date": "2026-09-01",
+   "family": "估值/价值层",
+   "verdict": "prereg",
+   "label": "营收利润prereg×3"
+  },
+  {
+   "id": "CLASSICAL_PAT",
+   "date": "2026-09-02",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "经典形态全证伪"
+  },
+  {
+   "id": "ROUND_BOTTOM",
+   "date": "2026-09-02",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "圆弧底=动量载体(正交)"
+  },
+  {
+   "id": "S3_TOPN",
+   "date": "2026-09-02",
+   "family": "组合构造层",
+   "verdict": "falsified",
+   "label": "TopN15孤峰"
+  },
+  {
+   "id": "M3_TECHGRID",
+   "date": "2026-09-02",
+   "family": "止损/退出层",
+   "verdict": "pass",
+   "label": "techgrid PASS"
+  },
+  {
+   "id": "DROE_ROA",
+   "date": "2026-09-02",
+   "family": "估值/价值层",
+   "verdict": "observation",
+   "label": "droe/roa观察"
+  },
+  {
+   "id": "ROUND12_ML",
+   "date": "2026-09-03",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "round12复活FAIL"
+  },
+  {
+   "id": "M3_EQUITY_AB",
+   "date": "2026-09-03",
+   "family": "止损/退出层",
+   "verdict": "pass",
+   "label": "净值级A/B PASS"
+  },
+  {
+   "id": "E1_NTOP",
+   "date": "2026-09-03",
+   "family": "组合构造层",
+   "verdict": "noise_eq",
+   "label": "n值三臂噪声等价"
+  },
+  {
+   "id": "B4_TILT",
+   "date": "2026-09-04",
+   "family": "估值/价值层",
+   "verdict": "falsified",
+   "label": "tilt池内零增量"
+  },
+  {
+   "id": "F3_AMEAN",
+   "date": "2026-09-04",
+   "family": "估值/价值层",
+   "verdict": "pass_candidate",
+   "label": "F3均额IC双PASS"
+  },
+  {
+   "id": "B6_TOP20",
+   "date": "2026-09-04",
+   "family": "估值/价值层",
+   "verdict": "noise_eq",
+   "label": "B6噪声等价"
+  },
+  {
+   "id": "RANKLOSS_S1",
+   "date": "2026-09-04",
+   "family": "ML/模型层",
+   "verdict": "observation",
+   "label": "排序损失s1"
+  },
+  {
+   "id": "RANKLOSS_S2",
+   "date": "2026-09-04",
+   "family": "ML/模型层",
+   "verdict": "pass_candidate",
+   "label": "排序损失s2"
+  },
+  {
+   "id": "REGIME_ADAPT",
+   "date": "2026-09-04",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "regime训练FAIL"
+  },
+  {
+   "id": "KRONOS_0904",
+   "date": "2026-09-04",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "Kronos#3"
+  },
+  {
+   "id": "MAINLINE_S1",
+   "date": "2026-09-04",
+   "family": "动量/追热族",
+   "verdict": "weak",
+   "label": "涨幅榜主线WEAK"
+  },
+  {
+   "id": "MAINLINE_S2",
+   "date": "2026-09-04",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "涨停主线证伪"
+  },
+  {
+   "id": "S2B_LOWPOS",
+   "date": "2026-09-04",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "低位补涨证伪"
+  },
+  {
+   "id": "SKILLSWEEP1",
+   "date": "2026-09-04",
+   "family": "外部skill族",
+   "verdict": "falsified",
+   "label": "skill批1 4/5包证伪"
+  },
+  {
+   "id": "MACD_FLOW",
+   "date": "2026-09-04",
+   "family": "动量/追热族",
+   "verdict": "falsified",
+   "label": "macd_flow动量载体"
+  },
+  {
+   "id": "DIP_STAGE2",
+   "date": "2026-09-04",
+   "family": "超卖/反转族",
+   "verdict": "falsified",
+   "label": "dip动量暴露"
+  },
+  {
+   "id": "STYLE_GATE_S4",
+   "date": "2026-09-04",
+   "family": "风格/不追高闸",
+   "verdict": "weak",
+   "label": "三闸gate FAIL"
+  },
+  {
+   "id": "M3_REVIVAL",
+   "date": "2026-09-04",
+   "family": "止损/退出层",
+   "verdict": "adopted_owner",
+   "label": "M-3复活(owner)"
+  },
+  {
+   "id": "SKILLSWEEP2",
+   "date": "2026-09-05",
+   "family": "外部skill族",
+   "verdict": "falsified",
+   "label": "skill批2零真超额"
+  },
+  {
+   "id": "PANIC_TIMING",
+   "date": "2026-09-05",
+   "family": "超卖/反转族",
+   "verdict": "falsified",
+   "label": "恐慌日双FAIL"
+  },
+  {
+   "id": "S3_REOPEN",
+   "date": "2026-09-05",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "S3重开重测FAIL"
+  },
+  {
+   "id": "CHIP_3GATE",
+   "date": "2026-09-05",
+   "family": "筹码族",
+   "verdict": "falsified",
+   "label": "筹码池内0/48格"
+  },
+  {
+   "id": "MOM_GATE_FH",
+   "date": "2026-09-05",
+   "family": "风格/不追高闸",
+   "verdict": "observation",
+   "label": "不追高闸8/10年正"
+  },
+  {
+   "id": "STYLE_GATE_S5",
+   "date": "2026-09-05",
+   "family": "风格/不追高闸",
+   "verdict": "adopted_owner",
+   "label": "升SOP(owner)"
+  },
+  {
+   "id": "RANKLOSS_W1",
+   "date": "2026-09-05",
+   "family": "ML/模型层",
+   "verdict": "falsified",
+   "label": "WIRE-1交易层FAIL"
+  },
+  {
+   "id": "EXT_CHIP",
+   "date": "2026-09-05",
+   "family": "外部材料源",
+   "verdict": "source",
+   "label": "华泰筹码材料"
+  },
+  {
+   "id": "PORTRAIT",
+   "date": "2026-09-05",
+   "family": "owner新线",
+   "verdict": "active",
+   "label": "Portrait影子15%"
+  },
+  {
+   "id": "TS_CURRICULUM",
+   "date": "2026-09-05",
+   "family": "owner新线",
+   "verdict": "knowledge",
+   "label": "时序26臂"
+  }
+ ],
+ "edges": [
+  {
+   "from": "KRONOS_0815",
+   "to": "KRONOS_0818",
+   "label": "同线复测"
+  },
+  {
+   "from": "KRONOS_0818",
+   "to": "KRONOS_0904",
+   "label": "同线复测"
+  },
+  {
+   "from": "HOTSPOT",
+   "to": "MAINLINE_S2",
+   "label": "追热族互相印证"
+  },
+  {
+   "from": "ROUND_BOTTOM",
+   "to": "MACD_FLOW",
+   "label": "动量载体同族"
+  },
+  {
+   "from": "BT_FAIL005",
+   "to": "MACD_FLOW",
+   "label": "追确认同族"
+  },
+  {
+   "from": "MAINLINE_S1",
+   "to": "MAINLINE_S2",
+   "label": "stage1→2"
+  },
+  {
+   "from": "MAINLINE_S2",
+   "to": "S2B_LOWPOS",
+   "label": "唯一活口→组合终证"
+  },
+  {
+   "from": "SKILLSWEEP1",
+   "to": "DIP_STAGE2",
+   "label": "批1活口续批(owner)"
+  },
+  {
+   "from": "DIP_STAGE2",
+   "to": "SKILLSWEEP2",
+   "label": "活口清零→全量补测"
+  },
+  {
+   "from": "SKILLSWEEP2",
+   "to": "PANIC_TIMING",
+   "label": "超卖族=时机载体→立项(owner)"
+  },
+  {
+   "from": "RANKLOSS_S1",
+   "to": "RANKLOSS_S2",
+   "label": "stage1→2"
+  },
+  {
+   "from": "RANKLOSS_S2",
+   "to": "RANKLOSS_W1",
+   "label": "接线评估(owner裁决A)"
+  },
+  {
+   "from": "M3_TECHGRID",
+   "to": "M3_EQUITY_AB",
+   "label": "techgrid→净值级"
+  },
+  {
+   "from": "M3_EQUITY_AB",
+   "to": "M3_REVIVAL",
+   "label": "三重门禁→复活"
+  },
+  {
+   "from": "ROUND12_ML",
+   "to": "M3_REVIVAL",
+   "label": "owner覆盖(FAIL原文保留)"
+  },
+  {
+   "from": "ROUND12_ML",
+   "to": "S3_REOPEN",
+   "label": "L-1条款:旧腿虚高假说重测"
+  },
+  {
+   "from": "REGIME_ADAPT",
+   "to": "S3_REOPEN",
+   "label": "regime层互证"
+  },
+  {
+   "from": "STYLE_GATE_S4",
+   "to": "STYLE_GATE_S5",
+   "label": "同线功效增强"
+  },
+  {
+   "from": "STYLE_GATE_S5",
+   "to": "MOM_GATE_FH",
+   "label": "主人纠偏→十年补测"
+  },
+  {
+   "from": "B4_TILT",
+   "to": "B6_TOP20",
+   "label": "池内增量问题延伸"
+  },
+  {
+   "from": "EXT_CHIP",
+   "to": "CHIP_3GATE",
+   "label": "外部材料触发prereg"
+  }
+ ],
+ "convergence_anchors": {
+  "动量载体/追确认负选择": [
+   "ROUND_BOTTOM",
+   "MACD_FLOW",
+   "DIP_STAGE2",
+   "BT_FAIL005",
+   "SKILLSWEEP2追涨族"
+  ],
+  "全截面α≠池内α": [
+   "B4_TILT",
+   "CHIP_3GATE",
+   "B6_TOP20"
+  ],
+  "IC赢交易层输": [
+   "hotspot参数预筛",
+   "v23冒烟",
+   "RANKLOSS_W1"
+  ],
+  "同日两端负选择/中间价值层正区": [
+   "SKILLSWEEP2追涨",
+   "SKILLSWEEP2超卖",
+   "PANIC_TIMING"
+  ],
+  "样本内虚高/验证集衰减": [
+   "ROUND11(ml)",
+   "S3_REOPEN",
+   "华泰研报自证(外部旁证)"
+  ]
+ },
+ "metrics": {
+  "total_directions": 44,
+  "falsified_or_retired": 25,
+  "adopted_owner": 2,
+  "active_owner_line": 1,
+  "observation_weak_noise": 8,
+  "pass_or_candidate": 4,
+  "prereg_entries": 2,
+  "documented_edges": 21
+ }
+}

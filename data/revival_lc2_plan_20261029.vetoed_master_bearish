@@ -1,0 +1,28 @@
+[
+ {
+  "code": "600649",
+  "name": "城投控股",
+  "source": "lowconsol_batch",
+  "price": 3.61,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 3.67,
+  "note": "大涨前介入(低位横盘,OOS+2.43pp集合级): 逆波动率2席 子样本未验证披露 volr0.57候选池最低波动",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "000672",
+  "name": "上峰材料",
+  "source": "lowconsol_batch",
+  "price": 13.9,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 13.27,
+  "note": "大涨前介入(低位横盘,OOS+2.43pp集合级): 逆波动率2席 子样本未验证披露 volr0.64次稳",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

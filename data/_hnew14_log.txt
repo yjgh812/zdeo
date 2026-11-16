@@ -1,0 +1,13 @@
+[load] codes=2148
+[map] level分布: {'L1': 5526}
+[map] L1映射行数: 5526 覆盖股票数: 5526 样例: [('801950', '美容护理'), ('801760', '美容护理')]
+[sw] L1序列 31 行 142029 最新日 20260914
+[HNEW6] 最新日C1行业: []
+H1a_低位平台放量突破 {'n': 64592, 'fwd5_mean': 0.0034, 'fwd5_win': 0.4722, 'fwd20_mean': 0.0142, 'fwd20_win': 0.4902}
+H1b_高位平台放量突破 {'n': 39586, 'fwd5_mean': 0.0024, 'fwd5_win': 0.4467, 'fwd20_mean': 0.0099, 'fwd20_win': 0.4524}
+H3_突破放量x板块共振 {'n': 908, 'fwd5_mean': -0.0045, 'fwd5_win': 0.4119, 'fwd20_mean': 0.0052, 'fwd20_win': 0.4262}
+H4_个股放量x板块缩量 {'n': 3032, 'fwd5_mean': -0.0046, 'fwd5_win': 0.4208, 'fwd20_mean': -0.0023, 'fwd20_win': 0.441}
+BASE_POSLOW {'n': 2314175, 'fwd5_mean': 0.0035, 'fwd5_win': 0.4951, 'fwd20_mean': 0.0131, 'fwd20_win': 0.5026}
+BASE_ALL {'n': 0}
+baseline: {'n': 4456372, 'fwd5_mean': 0.0021, 'fwd5_win': 0.4799, 'fwd20_mean': 0.0085, 'fwd20_win': 0.479}
+[done] D:\zcodesj\data\_hnew14_empirical_20260916_result.json 24s

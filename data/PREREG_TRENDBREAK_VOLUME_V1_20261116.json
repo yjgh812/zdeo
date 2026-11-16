@@ -1,0 +1,23 @@
+{
+ "name": "PREREG_TRENDBREAK_VOLUME_V1",
+ "date": "20261116",
+ "trigger": "主人2026-11-16『继续』令启动。trend_checker v2.2走坏判定是纯价格+均线规则（不含量能），外部教科书共识强调破位日量能确认。本测在系统实际卖出口径下检验破位日量比能否区分卖飞。零交易权。",
+ "hypothesis": "缩量破位更可能是洗盘假破（卖后易反弹=卖飞），放量破位更可能是真出逃（卖后继续跌）。若成立，走坏卖出链叠加量能确认可减少卖飞；若层间无差，量能条件无边际，永久不采纳。",
+ "layers": {
+  "L1_缩量层": "量比<1.0",
+  "L2_正常层": "1.0≤量比<1.5",
+  "L3_放量层": "量比≥1.5"
+ },
+ "volume_ratio": "量比=破位首日成交量÷前5日均量。前5日均量=破位首日前5个交易日成交量均值，任一缺失则该事件剔除并计数（excluded_vol_missing）。",
+ "bear_definition": "与trend_checker v2.2同口径：bear日=收盘<MA20 且 MA5<MA10<MA20（严格）且 depth=(MA20-close)/MA20≥1%。MA窗口任一收盘缺失→当日非bear。None收盘破坏连续链（该日按非bear处理，破坏连续2日链）。",
+ "confirm_and_dedupe": "确认=连续2个该股交易日均为bear日，确认日=第二日。去重：确认后抑制至首个 close≥MA20 的恢复日（恢复前不再产生新事件）。",
+ "break_day": "破位首日 t0=确认日前10个交易日内最后一个上→下穿越日（close[t-1]≥MA20[t-1] 且 close[t]<MA20[t]，MA取当日值）；10日内无穿越则 t0=确认序列首日(c-1)。",
+ "sell_rule": "确认日c：gap=close[c]/MA20[c]−1，slope5=(MA20[c]−MA20[c−5])/MA20[c−5]（MA20[c−5]缺失→slope5视为正，即不满足A组斜率条件）。A组=gap≤−3%或slope5≤−0.05→c+1开盘卖（open缺失回退close，仍缺→剔除计数exec_missing）；B组=c+1收盘≥MA20[c+1]→收回不卖（计数recovered）；否则c+2开盘卖（缺失回退close，仍缺剔除）。",
+ "forward_return": "ret20=卖出后第20个交易日收盘÷执行价−1（执行日=第0日，即索引X+20的收盘）。X+20无bar或收盘缺失→回退至执行日后最近有效收盘并标记truncated；执行日后无任何有效收盘→剔除计数truncated_no_fwd。",
+ "split": "主窗=确认日≥20160000；留出窗=确认日<20160000，仅报告。",
+ "judge": "仅对主窗已执行卖出的事件分层统计。Welch t（缩量层均值−放量层均值，总体口径标准差ddof=0）。样本=缩量+放量两层合计：总样本<2000→观察不采信（样本不足）；t≥2且层间差为正→PASS_candidate（呈报主人进闸门语义修改评审，不上证伪库）；t≤−2→FAIL归档禁复活；其余（含1.5≤t<2）→观察不采信。",
+ "universe": "6位码前缀60/00/30（EXCL前缀4/8/9/68），确认日PIT剔ST（st_daily时点判定），确认日往前该股须已有≥60根bar。",
+ "costs": "事件研究不计交易费用（度量的是卖出时点后验收益，非策略净收益）。",
+ "discipline": "一词一定义禁事后调参；双跑逐字节一致（输出json无时间戳）；零交易权；产物=本文件+attribution/trendbreak_volume_event_study.py+reports/TRENDBREAK_VOLUME_EVENT_STUDY_20261116.json(+_run2)+（若FAIL）falsified_rules.json追加key=TRENDBREAK-VOLUME-V1-FAIL-20261116（既有条目一字不动）；观察结局不追加证伪库（照SLOWBULL-PLAYBOOK先例）；PASS不证伪库，呈报主人进闸门评审。",
+ "fingerprint": "83c84e2bced24ae5"
+}

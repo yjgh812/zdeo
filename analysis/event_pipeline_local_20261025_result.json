@@ -1,0 +1,178 @@
+{
+ "meta": {
+  "generated_at": "2026-10-25",
+  "order": "继续→统一事件流水线·第一批本地事件",
+  "prereg": "D:\\zcodesj\\data\\PREREG_EVENT_PIPELINE_LOCAL_20261025.json",
+  "fingerprint": "ce9575c9c80992ec",
+  "blocked_events_note": "增持/回购/定增两节点/大宗折价/PEAD长窗/调研/控制权变更/连续并购=数据通道阻塞缓测(本地token无权限, MCP批量不可行; akshare stock_yjyg_em已探明可全史拉=解锁路径)",
+  "zero_trade_authority": true
+ },
+ "events": {
+  "E1_st_uncap": {
+   "n": 436,
+   "win": 0.2064,
+   "base_win": 0.4426,
+   "win_excess_pp": -23.62,
+   "mean_ret": -0.0355,
+   "base_mean_ret": 0.0047,
+   "ret_excess_pp": -4.02,
+   "by_year": {
+    "2016": {
+     "n": 13,
+     "win_exc_pp": -6.78
+    },
+    "2017": {
+     "n": 14,
+     "win_exc_pp": -17.46
+    },
+    "2018": {
+     "n": 18,
+     "win_exc_pp": -20.53
+    },
+    "2019": {
+     "n": 17,
+     "win_exc_pp": -29.71
+    },
+    "2020": {
+     "n": 14,
+     "win_exc_pp": -28.11
+    },
+    "2021": {
+     "n": 94,
+     "win_exc_pp": -20.16
+    },
+    "2022": {
+     "n": 73,
+     "win_exc_pp": -36.92
+    },
+    "2023": {
+     "n": 50,
+     "win_exc_pp": -31.52
+    },
+    "2024": {
+     "n": 37,
+     "win_exc_pp": -18.23
+    },
+    "2025": {
+     "n": 48,
+     "win_exc_pp": -33.0
+    },
+    "2026": {
+     "n": 58,
+     "win_exc_pp": -4.64
+    }
+   },
+   "n_pos_years": 0,
+   "n_neg_years": 11
+  },
+  "E2_gw_impair": {
+   "n": 2113,
+   "win": 0.4065,
+   "base_win": 0.4197,
+   "win_excess_pp": -1.32,
+   "mean_ret": -0.0022,
+   "base_mean_ret": 0.0043,
+   "ret_excess_pp": -0.65,
+   "by_year": {
+    "2018": {
+     "n": 54,
+     "win_exc_pp": 6.92
+    },
+    "2019": {
+     "n": 83,
+     "win_exc_pp": 0.84
+    },
+    "2020": {
+     "n": 210,
+     "win_exc_pp": -5.79
+    },
+    "2021": {
+     "n": 183,
+     "win_exc_pp": -0.46
+    },
+    "2022": {
+     "n": 194,
+     "win_exc_pp": 0.5
+    },
+    "2023": {
+     "n": 180,
+     "win_exc_pp": -6.24
+    },
+    "2024": {
+     "n": 212,
+     "win_exc_pp": -3.74
+    },
+    "2025": {
+     "n": 200,
+     "win_exc_pp": 5.3
+    },
+    "2026": {
+     "n": 797,
+     "win_exc_pp": -1.46
+    }
+   },
+   "n_pos_years": 4,
+   "n_neg_years": 5
+  },
+  "E3_gw_high": {
+   "n": 586,
+   "win": 0.3686,
+   "base_win": 0.4128,
+   "win_excess_pp": -4.42,
+   "mean_ret": -0.0121,
+   "base_mean_ret": 0.0003,
+   "ret_excess_pp": -1.24,
+   "by_year": {
+    "2018": {
+     "n": 58,
+     "win_exc_pp": -15.84
+    },
+    "2019": {
+     "n": 93,
+     "win_exc_pp": -4.11
+    },
+    "2020": {
+     "n": 83,
+     "win_exc_pp": -0.21
+    },
+    "2021": {
+     "n": 63,
+     "win_exc_pp": -1.79
+    },
+    "2022": {
+     "n": 54,
+     "win_exc_pp": -4.34
+    },
+    "2023": {
+     "n": 40,
+     "win_exc_pp": 6.62
+    },
+    "2024": {
+     "n": 37,
+     "win_exc_pp": -11.46
+    },
+    "2025": {
+     "n": 32,
+     "win_exc_pp": -3.66
+    },
+    "2026": {
+     "n": 126,
+     "win_exc_pp": -5.16
+    }
+   },
+   "n_pos_years": 1,
+   "n_neg_years": 8
+  }
+ },
+ "gates": {
+  "E1_descriptive(n>=100, exc>=+2.0)": false,
+  "E1_escalated(n>=150, exc>=+2.5, ret>=+1.0, years>=6/11)": false,
+  "E2_escalated(exc<=-1.5, neg_years>=6)": false,
+  "E3_escalated(exc<=-1.5, neg_years>=6)": true
+ },
+ "verdicts": {
+  "E1_st_uncap_buy": "FAIL",
+  "E2_gw_impairment": "未确认(中性登记)",
+  "E3_gw_high": "排雷确认(避雷价值成立)"
+ }
+}

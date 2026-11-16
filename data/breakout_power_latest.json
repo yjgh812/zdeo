@@ -1,0 +1,62 @@
+{
+ "asof": 20261026,
+ "baseline": {
+  "n": 217640,
+  "mu": 0.0076,
+  "sigma": 0.11183,
+  "win_rate": 0.4751,
+  "cost_rt": 0.0035
+ },
+ "table_a_n_for_excess": {
+  "0.5pp": 3927,
+  "1.0pp": 982,
+  "2.0pp": 246,
+  "3.0pp": 110,
+  "5.0pp": 40
+ },
+ "table_b_n_per_group": {
+  "+5pp": {
+   "per_group": 1569,
+   "total": 3138
+  },
+  "+10pp": {
+   "per_group": 391,
+   "total": 782
+  },
+  "+19pp": {
+   "per_group": 106,
+   "total": 212
+  }
+ },
+ "table_c_three_outcome": {
+  "15": {
+   "pass_min_wins": 12,
+   "fail_max_wins": 2
+  },
+  "30": {
+   "pass_min_wins": 22,
+   "fail_max_wins": 7
+  },
+  "60": {
+   "pass_min_wins": 40,
+   "fail_max_wins": 18
+  },
+  "100": {
+   "pass_min_wins": 63,
+   "fail_max_wins": 32
+  },
+  "160": {
+   "pass_min_wins": 97,
+   "fail_max_wins": 55
+  },
+  "250": {
+   "pass_min_wins": 147,
+   "fail_max_wins": 90
+  },
+  "500": {
+   "pass_min_wins": 285,
+   "fail_max_wins": 190
+  }
+ },
+ "generated_at": "2026-10-27 13:32:56"
+}

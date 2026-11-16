@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T20:57:42.815211",
+    "data_source": "qlib_bin (V1 PASS)",
+    "date_range": "2020-01-02 ~ 2026-08-06",
+    "leakage": "None (t-1 factors predict t-day)"
+  },
+  "momentum_deciles": [
+    {
+      "decile": 0,
+      "total": 555689,
+      "zt": 5830,
+      "zt_rate": 1.05,
+      "vs_baseline": -0.34
+    },
+    {
+      "decile": 1,
+      "total": 555689,
+      "zt": 5835,
+      "zt_rate": 1.05,
+      "vs_baseline": -0.34
+    },
+    {
+      "decile": 2,
+      "total": 555689,
+      "zt": 6945,
+      "zt_rate": 1.25,
+      "vs_baseline": -0.14
+    },
+    {
+      "decile": 3,
+      "total": 555689,
+      "zt": 7556,
+      "zt_rate": 1.36,
+      "vs_baseline": -0.03
+    },
+    {
+      "decile": 4,
+      "total": 555689,
+      "zt": 9008,
+      "zt_rate": 1.62,
+      "vs_baseline": 0.23
+    },
+    {
+      "decile": 5,
+      "total": 555689,
+      "zt": 6752,
+      "zt_rate": 1.22,
+      "vs_baseline": -0.17
+    },
+    {
+      "decile": 6,
+      "total": 555689,
+      "zt": 6649,
+      "zt_rate": 1.2,
+      "vs_baseline": -0.19
+    },
+    {
+      "decile": 7,
+      "total": 555689,
+      "zt": 5919,
+      "zt_rate": 1.07,
+      "vs_baseline": -0.32
+    },
+    {
+      "decile": 8,
+      "total": 555689,
+      "zt": 6343,
+      "zt_rate": 1.14,
+      "vs_baseline": -0.25
+    },
+    {
+      "decile": 9,
+      "total": 562644,
+      "zt": 16499,
+      "zt_rate": 2.93,
+      "vs_baseline": 1.54
+    }
+  ],
+  "baseline_zt_rate": 1.39,
+  "top_bottom_spread": 1.88,
+  "ic_stats": {
+    "mean": 0.0135,
+    "icir": 0.0973,
+    "ic_positive_pct": 54.2,
+    "n_days": 24,
+    "t_stat": 0.467,
+    "p_value": 0.645213
+  }
+}

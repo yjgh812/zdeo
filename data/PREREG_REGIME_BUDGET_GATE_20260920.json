@@ -1,0 +1,35 @@
+{
+  "name": "REGIME_BUDGET_GATE_ENV70",
+  "date_frozen": "2026-09-20",
+  "proposer": "知微(v5.3终版钉牢), owner裁决待主人",
+  "hypothesis": "六层标准+v5.2最优介入(5~10%)系统在上证env_pos250>=70时放行优于无条件运行; env<40时该系统期望为负应禁入",
+  "arms_frozen": {
+    "E": "v5.2条件 ∧ env_pos250>=70",
+    "poison_mid": "env 40-69",
+    "poison_low": "env<40",
+    "baseline": "v5.2无条件"
+  },
+  "evidence_insample": {
+    "E_abs": "n=76 胜率60.5% 均值+4.71% PF2.53 最大连亏4 (2024+4.3%/2025+6.1%双正)",
+    "E_excess_vs_SH": "+4.01%/胜率50%/PF2.49, beta贡献仅0.7pp",
+    "threshold_sensitivity": "env>=60/65/70/75/80单调增强(53.1%->61.0%), 无悬崖",
+    "stop_structure": "止损率25.0% vs 基线42.1%",
+    "poison": "env40-69: 27.9%/-3.34%/PF0.51; env<=50: 28.9%/PF0.42; fwd60中位: env20-40=-18.7%"
+  },
+  "complementarity_clause_P2": "与P2'UP桶×env<40门控候选'不冲突——两族确认方式×环境匹配: 放量大阳确认(六层)价值在牛市(env高), 安静缩量深跌(UP桶)价值在熊市末(env低), 中间带(40-69)两族皆负(毒药带双方独立互证)。两prereg并行不互斥, 禁止混用(放量系统不得引用UP桶证据反之亦然)",
+  "oos_criteria": {
+    "window": "冻结日起前向, 每季度评估",
+    "gate_pass": "臂E前向样本n>=30且胜率>=50%且均值>0; 或env>=70期间系统实盘/影子超额>=+2pp",
+    "gate_fail": "臂E前向胜率<45%或均值<-1% => 登记falsified关闭",
+    "gate_current_state": "当前env=31(2026-09) => 系统停跑状态即为条款生效(第零问闭环), 不构成gate_pass证据"
+  },
+  "scope_limits": "仅管六层标准+v5.2系统族; 不外推到bp_ep/引擎A/组合C(各自regime另行验证); 冻结期(至9/30)零接线, 解冻评估须主人裁决",
+  "data_sources": [
+    "data/sh_index_5yr_20260919.json(env_pos250)",
+    "data/backtest_v53_trades.json(逐笔)",
+    "reports/backtest_v53_sensitivity_20260919.md",
+    "reports/backtest_v53_final_20260920.md",
+    "reports/p2_recon_up_deepdd_20260919.md"
+  ],
+  "fingerprint": "dcfa9a318ce4eb6b31da62f87ad65c31"
+}

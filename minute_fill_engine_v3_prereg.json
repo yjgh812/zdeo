@@ -1,0 +1,14 @@
+{
+  "id": "20261107-minute-fill-engine-v3",
+  "ts": "2026-11-07T03:40:00",
+  "object": "分钟撮合语义升级为唯一owner引擎模块（minute_fill_engine.py：lc5_day加载/bar定位/walk_fill限价单盘中撮合）。定位=架构前置件：replay与minute_fill_replay的重复实现收编为单一真源，未来日线引擎接线(v3.1)与信号回放适配器统一消费本模块API，杜绝撮合语义第二实现。",
+  "engine": "minute_fill_engine.py（新）← 收编 replay_reconciliation._lc5_day/_bar_at 与 minute_fill_replay._walk；两消费方改import。",
+  "params": {
+    "api": "lc5_day(code,date)→(日低,日高,bars{bar结束hhmm:(o,h,l,c,vol)})；walk_fill(code,date,action,limit,qty)→{fills,filled,avg,expired}；bar_at(bars,filled_hms)",
+    "semantics_v1v2继承": "触达即成交(买=bar低≤限价,成交=min(限价,bar开))；单bar量25%帽；无量bar不成交；当日未成交作废"
+  },
+  "criterion": {
+    "commitment": "①确定性=walk_fill同输入双跑输出逐字节一致；②守卫继承=无量/量帽/当日有效行为与v1v2实测一致（652腿重跑聚合数字不变）；③消费方回归=replay_reconciliation与minute_fill_replay重构后重跑，全部已发布指标数字与重构前完全一致（19.3%/92.7%/55.1%/67.8%/0.794pp/0.181pp/0/18）。任一数字漂移=重构引入语义变化，打回。",
+    "honesty": "v3不含日线引擎接线（v3.1另立项）——本件只做语义收编与单一owner化，接线消费在v3.1设计里评审。"
+  }
+}

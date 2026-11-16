@@ -1,0 +1,22 @@
+{
+ "cost": {
+  "ann_nocost_pct": 20.7,
+  "ann_cost_fixed_pct": 16.43,
+  "ann_cost_turnover_pct": 16.47,
+  "ann_base_pct": 9.13,
+  "avg_turnover": 0.992,
+  "t_nocost": 3.78,
+  "侵蚀年化pp": 4.2,
+  "n_windows": 128
+ },
+ "pool_increment": {
+  "域": "2016+(bp_ep持仓数据起点)",
+  "avg_overlap_pct": 0.8,
+  "ex_in_pool_mean_pct": 1.615,
+  "ex_in_pool_t": 1.64,
+  "ex_out_pool_mean_pct": 0.856,
+  "ex_out_pool_t": 3.73,
+  "n_in_windows": 32,
+  "n_out_windows": 4118
+ }
+}

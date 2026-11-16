@@ -1,0 +1,38 @@
+{
+ "task": "B7b",
+ "run_at": "2026-10-21T12:53:58",
+ "checks": {
+  "date_coverage": {
+   "pass": true,
+   "value": 1.0
+  },
+  "duplicates": {
+   "pass": true,
+   "count": 0
+  },
+  "null_rate": {
+   "pass": true,
+   "rate": 0.0
+  },
+  "monotonic_unique": {
+   "pass": true
+  },
+  "bench_note": {
+   "pass": true,
+   "sh": "上证指数(vipdoc, 全史, 贴天风原文口径)",
+   "ew": "等权全A(qfq派生, 行数=3009, ≈2016起, 敏感性)"
+  },
+  "early_years_industries": {
+   "pass": true,
+   "counts": {
+    "2010": 44,
+    "2011": 48,
+    "2012": 48,
+    "2013": 48,
+    "2014": 69,
+    "2015": 69
+   }
+  }
+ },
+ "overall": "PASS"
+}

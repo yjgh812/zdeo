@@ -1,0 +1,40 @@
+{
+  "name": "PREREG_DIP_ENV_ABS_ACTIVE_20261029",
+  "status": "ACTIVE_SHADOW",
+  "draft_source": "工作区 PREREG_DIP_ENV_ABS_DRAFT_20261029.json",
+  "approval_record": {
+    "mode": "按推荐继续先例(宪法记载裁决模式, 先例=S1S2修剪/admit源修剪)",
+    "context": "主人于停口声明后连续多次「继续」, 推荐清单(五项)已多轮明示",
+    "activated_at": "2026-10-29",
+    "scope": "仅影子记账(每日15:45扫描落盘+Top10抽样清单), 零买入; 模拟盘买入需主人另行批准",
+    "revocation": "删除本文件+禁用DipShadowScan_1545任务即撤"
+  },
+  "fingerprint": "177e7b7ad12aa6e03f9db04a1e56a33c0d78b37f28041ac21eac0b2058439cc8",
+  "frozen_caliber": {
+    "event": "cl[i]/max(cl[i-19:i+1])-1 <= -0.20",
+    "env_switch": "eq_close < eq_ma20 (5905只等权)",
+    "entry": "T+1 close",
+    "exit": "T+20 close (backtest) / -8% stop chain (live)",
+    "cost": 0.0015,
+    "primary_judge": "ON T+20 win>=55% AND med>=+1.5% (3段一致)",
+    "reference_judge_non_primary": "超额口径仅参考",
+    "shadow_buy": "random.sample(ON_events, N=10, seed=YYYYMMDD), 100股/只, 仅影子记账零买入直至主人另批",
+    "entry_timing_rule": "低开<-2%: 日内60min放量阳线根介入; 其余: T+1收盘介入 (60min执行层子协议)"
+  },
+  "positioning_declaration": "绝对收益策略(非超额策略); 超额三段不稳定(-0.75/+0.25/-0.59pp), 禁用跑赢指数考核",
+  "recon_disclosure": "全部数字已经过全史侦察(2026-10-29, 60.6万事件); prereg价值=执行口径冻结+真实时间推进影子验证+防接线后改参; 侦察数字: 训练55.7%/+1.82%, 样本外67.3%/+7.11%, 2026实时61.0%/+4.21%",
+  "known_failure_modes": [
+    "阴跌市(2017/2019/2020/2023)超额为负; 2020抱团虹吸-2.11pp",
+    "第二层过滤(阴跌市识别)另行预注册, 本prereg不含",
+    "顶格d35+|p<25组件: regime依赖, 不接线, 登记为环境状态机组件"
+  ],
+  "kill_conditions": "影子期任一20日滚动窗 绝对胜率<45% 或 中位<-1.0% => 落盘KILL_ALERT+通知主人, 由主人决定是否暂停(2026-10-29全史回放: 原自动暂停版触发率41%含盈利年2024 54.9%=过严, 按推荐C改为仅告警; 跟踪器行为已一致)",
+  "kill_replay_evidence": "全史1209个滚动窗天: 触发496天(41.0%), 分年2017 49.6%/2018 49.0%/2019 68.1%/2020 26.5%/2021 12.2%/2022 64.6%/2023 44.1%/2024 54.9%(盈利年)/2025 14.3%/2026 40.8%——自动暂停会中断含924行情的盈利年, 仅告警版保留主人暂停权",
+  "bos_related_decision": "swingbosscan_1555/swingbosbuy_0938 已于2026-10-29禁用(P1: 终审数字不可复现+结构B 60min判死); 恢复命令: schtasks /change /tn <任务名> /enable",
+  "related_artifacts": [
+    "PHASE_REPORT_20261029.md(工作区阶段总结)",
+    "dip_env_switch_20261029.py / dip_layer2_20261029.py / oversold_deep_recompute_20261029.py / dip_topn_combo_20261029.py(侦察链)",
+    "dip_shadow_scan_proto_20261029.py(原型, 今日ON+1098信号+6秒实测)"
+  ],
+  "pending": "模拟盘买入批准后需解决账户隔离(新开 vs practice_190)"
+}

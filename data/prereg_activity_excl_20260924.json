@@ -1,0 +1,31 @@
+{
+ "arm": "ACT-EXCL-V2",
+ "universe": "小石cn-daily qfq: 沪深主板+创业板(60/00/30), 剔688科创/北交所/上市<60交易日/停牌; ST无法历史剔除(已披露)",
+ "factor": "F1 当日换手率 = cn-daily.turnover_pct (停牌空值不作0)",
+ "rule": "信号日t收盘: 取最近一个换手率可用的交易日asof(源滞后如实记录lag_days), 在asof日sig_ok宇宙内取换手率前10%(TOP_FRAC=0.10), 自t+1起20个交易日列入禁买负面清单",
+ "period": "影子60个信号日(约3个日历月)",
+ "hold": "20交易日(差值观察窗, t+1收盘进, T+1)",
+ "stop": "无(影子不涉真实交易)",
+ "gate": "影子期满: settled n>=60 且 mean(spread_pp)<0 且 Newey-West(滞后5阶) t<=-2; 任一不满足=FAIL禁止提产; 另: 影子期lag_days中位数>40则宣告口径不可用",
+ "shadow_start": "20260922",
+ "note": "V2修订: V1当日口径未启用即废止——小石换手率源滞后约25个交易日(2026-08-14后未回填,历史系回填),当日口径实盘不可复制; V2用最近可用截面并记录滞后。其余警示: 未剔ST/未做行业中性(已剔流动性规模成分)/未建模涨跌停可成交/回测样本2020-2026/可能不含退市股=幸存者偏差上偏/服务端T+2节奏",
+ "top_frac": 0.1,
+ "version": "V2",
+ "superseded": "V1(同日废止:换手率源滞后~25交易日,当日口径实盘不可用,未产生任何影子记录)",
+ "fingerprint": "f65996d1e1a73085",
+ "frozen_at": "2026-09-24",
+ "anchor": {
+  "h5_test_ic_raw": -0.07,
+  "h5_test_ic_t": -8.27,
+  "h5_test_ic_neut": -0.048,
+  "h5_test_ic_neut_t": -6.23,
+  "years_negative": "7/7",
+  "monthly_excl_train_pp": 34.54,
+  "monthly_excl_test_pp": 25.21,
+  "d10_test_gross_ann_pct": -8.94,
+  "uni_test_gross_ann_pct": 16.28,
+  "d10_monthly_turnover_pct": 61.8,
+  "turnover_source_lag_days": "~25(2026-08-14后缺失,待回填)"
+ },
+ "evidence_files": "D:/zcodesj/tmp/xiaoshi_pkg/factor_activity_report/{summary.json,lab2_summary.json}"
+}

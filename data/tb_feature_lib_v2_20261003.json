@@ -1,0 +1,254 @@
+{
+ "id": "TB_FEATURE_LIB_V2_20261003",
+ "created": "2026-10-03",
+ "name": "个股顶底特征库 v2（波段级+极值级双层, 全宇宙2010+标定, 500只二十年三档盲验）",
+ "owner": "D:/zcodesj/reports/topbottom_feature_lib_v2_20261003.md",
+ "supersedes": "TB_FEATURE_LIB_20261003(v1, 保留为纯2016+口径参考)",
+ "data_basis": {
+  "calibration": "全宇宙60/00/30共4,938只各自2010+全部真实历史(qfq前复权), 200,144波段顶+198,932波段底+4,565主顶+4,292主底+375,189基线日",
+  "zigzag": "wave_portrait_builder 同款算法, 摆动阈值15%, 末端未确认点丢弃",
+  "blind_validation": "500只三档(seed=777): 档A起点<=2007共119只(2004/2007起真19-22年) + 档B起点2008-2015共79只 + 档C起点2016+共302只; 阈值零验证样本泄漏",
+  "coverage_disclosure": "qfq库2004-2015为部分回填(约200只/年), 长史票池物理上限~198只, 三档结构如实分档",
+  "price_basis": "qfq前复权收盘, 至20260930, 全部本地可复算"
+ },
+ "features_16": [
+  "pos250",
+  "vr20",
+  "vr120",
+  "vol20d",
+  "ret5",
+  "ret20",
+  "ret60",
+  "ret120",
+  "high_gap",
+  "low_gap",
+  "a5_20",
+  "dn20",
+  "b20",
+  "b60",
+  "consec_up",
+  "consec_dn"
+ ],
+ "dist_median": {
+  "MAIN_TOP": {
+   "pos250": 105.8,
+   "ret120": 98.8,
+   "vr120": 2.0,
+   "b60": 42.4,
+   "consec_up": 3
+  },
+  "MAIN_BOT": {
+   "pos250": -2.6,
+   "ret120": -38.6,
+   "vr120": 0.8,
+   "b60": -22.8,
+   "consec_dn": 3
+  },
+  "SW_TOP": {
+   "pos250": 74.7,
+   "ret120": 22.4,
+   "vr120": 2.4,
+   "b60": 16.9,
+   "consec_up": 3
+  },
+  "SW_BOT": {
+   "pos250": 17.7,
+   "ret120": -11.9,
+   "vr120": 0.8,
+   "b60": -12.6,
+   "consec_dn": 3
+  },
+  "BASE": {
+   "pos250": 39.1,
+   "ret120": -0.7,
+   "vr120": 0.8,
+   "b60": -0.9
+  }
+ },
+ "rules_v2": {
+  "TB_TOP_v2": {
+   "level": "极值级(主顶预警)",
+   "logic": "5特征命中>=4",
+   "features": [
+    [
+     "pos250",
+     ">=",
+     90
+    ],
+    [
+     "ret120",
+     ">=",
+     40
+    ],
+    [
+     "b60",
+     ">=",
+     15
+    ],
+    [
+     "vr120",
+     ">=",
+     2
+    ],
+    [
+     "consec_up",
+     ">=",
+     3
+    ]
+   ]
+  },
+  "TB_BOT_v2": {
+   "level": "极值级(主底预警)",
+   "logic": "5特征命中>=4",
+   "features": [
+    [
+     "pos250",
+     "<=",
+     10
+    ],
+    [
+     "ret120",
+     "<=",
+     -27
+    ],
+    [
+     "b60",
+     "<=",
+     -13
+    ],
+    [
+     "vol20d",
+     "<=",
+     0.5
+    ],
+    [
+     "consec_dn",
+     ">=",
+     4
+    ]
+   ]
+  },
+  "TB_SW_TOP_v2": {
+   "level": "波段级(波段顶预警)",
+   "logic": "5特征命中>=4",
+   "features": [
+    [
+     "pos250",
+     ">=",
+     85
+    ],
+    [
+     "ret60",
+     ">=",
+     20
+    ],
+    [
+     "b20",
+     ">=",
+     8
+    ],
+    [
+     "vr20",
+     ">=",
+     1.6
+    ],
+    [
+     "consec_up",
+     ">=",
+     2
+    ]
+   ]
+  },
+  "TB_SW_BOT_v2": {
+   "level": "波段级(波段底预警)",
+   "logic": "5特征命中>=4",
+   "features": [
+    [
+     "pos250",
+     "<=",
+     15
+    ],
+    [
+     "ret60",
+     "<=",
+     -15
+    ],
+    [
+     "b20",
+     "<=",
+     -7
+    ],
+    [
+     "vol20d",
+     "<=",
+     0.6
+    ],
+    [
+     "consec_dn",
+     ">=",
+     3
+    ]
+   ]
+  }
+ },
+ "blind_validation_500_20y": {
+  "MAIN_TOP": {
+   "n": 485,
+   "capture_pct": 63.5,
+   "lead_days_med": 11
+  },
+  "MAIN_BOT": {
+   "n": 306,
+   "capture_pct": 57.2,
+   "lead_days_med": 5
+  },
+  "SW_TOP": {
+   "n": 30030,
+   "capture_pct": 41.6,
+   "lead_days_med": 2
+  },
+  "SW_BOT": {
+   "n": 29955,
+   "capture_pct": 41.4,
+   "lead_days_med": 1
+  },
+  "fwd_semantics": {
+   "TB_TOP_f60_med": -6.64,
+   "TB_BOT_f60_med": 0.58,
+   "SW_TOP_f20_med": -1.96,
+   "SW_BOT_f20_med": 0.91
+  },
+  "ancient_2004_2009": {
+   "main_top": "30/35=85.7%",
+   "main_bot": "12/12=100%"
+  },
+  "shift_test": {
+   "own_dd_med": -61.17,
+   "next20_dd_med": -46.89
+  },
+  "cross_period_stability": "v1十年(72.6%)→v2二十年(63.5%)阈值零调整衰减9pp仍强; 古段(6124牛熊)85.7%/100%最强; TB_TOP后f60中位-7.3%→-6.64%跨期稳健"
+ },
+ "usage_note": "打分器: python tmp/tb_scorer_v2_20261003.py --code X; 波段级=高频薄利预警(41%捕获/密度1%), 极值级=主顶底预警(63.6%/57.2%); 语义=区域预警非择日; 不构成交易信号(prereg纪律不变)",
+ "status": "CALIBRATED_20Y_BLIND_VERIFIED_COMPLETE_LABELING",
+ "fingerprint": "tblib-v2-20261003-500blind-20y",
+ "labeling_v2_1_complete": {
+  "date": "2026-10-03",
+  "layers": {
+   "L0_大顶底(多轮)": "前120日收盘极值∧后250日回撤/反弹>=25%∧去重60日 — 全宇宙36,029顶+39,996底(每只7.6/8.4个)",
+   "L1_波段15%": "zigzag15%去重+端部伪影已剔 — 119,316顶+118,923底",
+   "L2_细波段8%": "zigzag8%去重+端部伪影已剔 — 280,492顶+279,251底"
+  },
+  "verify_100pct": {
+   "dual_run_identical": true,
+   "l0_def_selfcheck_fail": 0,
+   "l1_min_swing": 0.15,
+   "l2_min_swing": 0.08,
+   "l1_pairs": 234783,
+   "l2_pairs": 559873
+  },
+  "total_points": 874007,
+  "note": "L0与L1为独立定义的完备标注,嵌套率66%(非嵌套源于圆弧顶等尺度语义差异,非标注错误); 明细=tmp/tb_complete_labels_20261003.jsonl; 执行件=tmp/tb_complete_labeling_20261003.py",
+  "fingerprint": "tblib-v2.1-complete-labeling-886k",
+  "audit": "独立复核通过(R1结构/R2独立实现99.7%与96.1%/R4人工4对4)+端部伪影12617点已修正"
+ }
+}

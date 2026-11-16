@@ -1,0 +1,198 @@
+{
+ "prereg": "PREREG_LOW_FRESH_MAINLINE_20261021",
+ "fp16": "270e2dbde232d60d",
+ "segments": {
+  "2024+": {
+   "cd3_t20e": {
+    "n_fresh": 4922,
+    "n_stale": 2765,
+    "win_fresh": 46.83,
+    "win_stale": 41.92,
+    "eff_pp": 4.91,
+    "ci95": [
+     2.81,
+     7.12
+    ],
+    "pos": true,
+    "n_lowall": 13067,
+    "n_rnd": 13120
+   },
+   "cd3_hold20": {
+    "n_fresh": 4922,
+    "n_stale": 2765,
+    "win_fresh": 49.31,
+    "win_stale": 45.17,
+    "eff_pp": 4.14,
+    "ci95": [
+     1.7,
+     6.4
+    ],
+    "pos": true,
+    "n_lowall": 13067,
+    "n_rnd": 13120
+   },
+   "cd5_t20e": {
+    "n_fresh": 4863,
+    "n_stale": 2589,
+    "win_fresh": 47.25,
+    "win_stale": 42.14,
+    "eff_pp": 5.11,
+    "ci95": [
+     2.65,
+     7.54
+    ],
+    "pos": true,
+    "n_lowall": 13027,
+    "n_rnd": 13120
+   },
+   "cd5_hold20": {
+    "n_fresh": 4863,
+    "n_stale": 2589,
+    "win_fresh": 50.24,
+    "win_stale": 45.31,
+    "eff_pp": 4.93,
+    "ci95": [
+     2.75,
+     7.25
+    ],
+    "pos": true,
+    "n_lowall": 13027,
+    "n_rnd": 13120
+   },
+   "cd10_t20e": {
+    "n_fresh": 4726,
+    "n_stale": 2483,
+    "win_fresh": 46.66,
+    "win_stale": 41.56,
+    "eff_pp": 5.09,
+    "ci95": [
+     2.61,
+     7.51
+    ],
+    "pos": true,
+    "n_lowall": 12816,
+    "n_rnd": 13071
+   },
+   "cd10_hold20": {
+    "n_fresh": 4726,
+    "n_stale": 2483,
+    "win_fresh": 49.45,
+    "win_stale": 44.58,
+    "eff_pp": 4.87,
+    "ci95": [
+     2.53,
+     7.22
+    ],
+    "pos": true,
+    "n_lowall": 12816,
+    "n_rnd": 13071
+   },
+   "gates": {
+    "G1": true,
+    "G2_eff>=3pp&CI>0": true,
+    "G3_matrix>=5/6": true,
+    "matrix_pos": "6/6"
+   },
+   "verdict": "PASS"
+  },
+  "2022-23": {
+   "cd3_t20e": {
+    "n_fresh": 4669,
+    "n_stale": 2640,
+    "win_fresh": 41.08,
+    "win_stale": 40.87,
+    "eff_pp": 0.21,
+    "ci95": [
+     -2.13,
+     2.63
+    ],
+    "pos": true,
+    "n_lowall": 9680,
+    "n_rnd": 9680
+   },
+   "cd3_hold20": {
+    "n_fresh": 4669,
+    "n_stale": 2640,
+    "win_fresh": 44.44,
+    "win_stale": 43.75,
+    "eff_pp": 0.69,
+    "ci95": [
+     -1.63,
+     3.22
+    ],
+    "pos": true,
+    "n_lowall": 9680,
+    "n_rnd": 9680
+   },
+   "cd5_t20e": {
+    "n_fresh": 4621,
+    "n_stale": 2524,
+    "win_fresh": 42.13,
+    "win_stale": 41.52,
+    "eff_pp": 0.61,
+    "ci95": [
+     -1.74,
+     3.12
+    ],
+    "pos": true,
+    "n_lowall": 9680,
+    "n_rnd": 9680
+   },
+   "cd5_hold20": {
+    "n_fresh": 4621,
+    "n_stale": 2524,
+    "win_fresh": 45.44,
+    "win_stale": 44.29,
+    "eff_pp": 1.15,
+    "ci95": [
+     -1.29,
+     3.44
+    ],
+    "pos": true,
+    "n_lowall": 9680,
+    "n_rnd": 9680
+   },
+   "cd10_t20e": {
+    "n_fresh": 4473,
+    "n_stale": 2467,
+    "win_fresh": 42.79,
+    "win_stale": 40.9,
+    "eff_pp": 1.89,
+    "ci95": [
+     -0.55,
+     4.32
+    ],
+    "pos": true,
+    "n_lowall": 9666,
+    "n_rnd": 9661
+   },
+   "cd10_hold20": {
+    "n_fresh": 4473,
+    "n_stale": 2467,
+    "win_fresh": 45.94,
+    "win_stale": 43.7,
+    "eff_pp": 2.25,
+    "ci95": [
+     -0.17,
+     4.67
+    ],
+    "pos": true,
+    "n_lowall": 9666,
+    "n_rnd": 9661
+   },
+   "gates": {
+    "G1": true,
+    "G2_eff>=3pp&CI>0": false,
+    "G3_matrix>=5/6": true,
+    "matrix_pos": "6/6"
+   },
+   "verdict": "FAIL_GATES"
+  }
+ },
+ "final": "NOT_CONFIRMED",
+ "caveats": [
+  "主线代理非方向层实测",
+  "退市段并入(双复权+强制平仓)",
+  "探索性来源=d88b429分层扫描, 本件为其确认协议"
+ ]
+}

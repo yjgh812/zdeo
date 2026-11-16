@@ -1,0 +1,32 @@
+{
+ "date": "20261027",
+ "arms": {
+  "B": {
+   "planned": [
+    "601857",
+    "000559",
+    "300369",
+    "001979",
+    "002223"
+   ],
+   "submitted": [],
+   "filled_ledger": [],
+   "cum_submitted": 0,
+   "band": "n=0 无判决带"
+  },
+  "A": {
+   "planned": [
+    "603278",
+    "300307",
+    "000700",
+    "002439",
+    "300015"
+   ],
+   "submitted": [],
+   "filled_ledger": [],
+   "cum_submitted": 0,
+   "band": "n=0 无判决带"
+  }
+ },
+ "regime_now": "下跌市down"
+}

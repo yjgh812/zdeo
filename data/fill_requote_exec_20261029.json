@@ -1,0 +1,116 @@
+{
+ "date": "20261029",
+ "execute": false,
+ "rows": [
+  {
+   "code": "sh600320",
+   "name": "振华重工",
+   "limit": 4.2,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": true,
+   "live": "已撤单",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已撤单, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh601577",
+   "name": "长沙银行",
+   "limit": 9.68,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": true,
+   "live": "已撤单",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已撤单, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh603803",
+   "name": "瑞斯康达",
+   "limit": 8.85,
+   "qty": 1700,
+   "confirmed": 0,
+   "requoted": true,
+   "live": "已撤单",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已撤单, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh603697",
+   "name": "有友食品",
+   "limit": 9.4,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "live": "已成交",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已成交, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh600098",
+   "name": "广州发展",
+   "limit": 6.44,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "live": "已成交",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已成交, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh600926",
+   "name": "杭州银行",
+   "limit": 16.87,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": true,
+   "live": "已撤单",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已撤单, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sh600968",
+   "name": "海油发展",
+   "limit": 4.23,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 4.31,
+   "status": "REQ",
+   "new_price": 4.25,
+   "live": "待成交",
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sz300230",
+   "name": "永利股份",
+   "limit": 4.47,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "live": "已成交",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已成交, 本地OPEN行为滞后残影",
+   "action_taken": "dry-run(skip)"
+  },
+  {
+   "code": "sz002690",
+   "name": "美亚光电",
+   "limit": 16.34,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 16.53,
+   "status": "REQ",
+   "new_price": 16.42,
+   "live": "待成交",
+   "action_taken": "dry-run"
+  }
+ ]
+}

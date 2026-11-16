@@ -1,0 +1,8 @@
+{
+ "manifest_version": "portrait.manifest.v1",
+ "generator": "universe_portrait",
+ "built_at": "2026-10-29T23:02:43",
+ "files": {
+  "data/universe_portrait_latest.json": "sha256:87293a82d71e4aa13160c02a997ba459d72a460cb21ac2ba27b38c83ea20be7f"
+ }
+}

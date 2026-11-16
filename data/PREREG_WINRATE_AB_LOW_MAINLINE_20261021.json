@@ -1,0 +1,95 @@
+{
+ "prereg_id": "PREREG-WINRATE-AB-LOW-MAINLINE-20261021",
+ "status": "ARCHIVED_DIRECTIONAL_NEGATIVE",
+ "created": "2026-10-21",
+ "revision": "r2 (勘察后修正: ml_prob逐股历史不可回放, 改两阶段; 低位格子基线锚定43.2%)",
+ "activation_requires": "主人批准激活令后计算指纹并建 runner；激活前禁止任何回测执行",
+ "origin": {
+  "experiment": "winrate-top10-20261019 (data/winrate_top10_experiment_20261019.json)",
+  "owner_order": "主人20261021「继续」令(回测侧立项呈报)",
+  "trigger_case": "兆讯传媒B组+11.6%但信号T1被证伪(refuted); B组5只分化巨大(+11.6%~ -3.7%), 疑似变量=主线爆发日共振",
+  "baseline_calibration": "全局基线 ml Top档 2026 实证 46.15%; 低位格子基线 gauge A低位横盘 t20e_win 43.2% (n=213608, 250日窗, forward_up_prob_gauge v2_t20e)——低位维度单独为负贡献, 本 prereg 检验的是主线共振能否逆转它"
+ },
+ "hypothesis": {
+  "H1_stage1": "二维叠加组(低位横盘 pos60≤40分位 ∩ 主线代理命中) T+20胜率 > 低位格子基线43.2%, 且 ≥ 全局基线46.15%",
+  "H1_stage1_kill": "叠加组 T+20 胜率 ≤ 43.2% (主线共振无增强) → 归档证伪库, 传导结论=B组兆讯案例属时运右尾不可复制",
+  "H2_stage2": "在前者之上再叠加 ml_prob≥45% 能进一步提升胜率(前瞻队列验证, 见 stage2)"
+ },
+ "stage1_backtest": {
+  "design": "二维叠加 vs 三对照: ①低位∩主线(叠加组) ②低位全体(格子基线) ③主线代理全体 ④全市场随机等量对照",
+  "entry": "画像触发日 T+1 开盘价 (qfq, next-bar 铁律)",
+  "exit": "T+20 交易日收盘 (qfq); 涨停不可成交按次日开盘替补",
+  "universe": "A股全市场, 剔除北交所/ST/科创/上市<60日",
+  "metrics": [
+   "四组 T+20 胜率/均值/中位",
+   "叠加组右尾P90",
+   "逐月分解(共振增强是否稳定)",
+   "叠加组相对①组的增量分解(主线贡献 vs 低位贡献)"
+  ],
+  "gates": {
+   "G1_sample": "叠加组 n≥30",
+   "G2_effect": "叠加−43.2% ≥ +5pp 且 bootstrap(1000) 95%CI 不含 0",
+   "G3_robust": "逐月分解无单月独撑",
+   "kill": "H1_stage1_kill 触发即归档证伪库, 禁参数扫描救活"
+  }
+ },
+ "stage2_forward_queue": {
+  "design": "三条件叠加(低位∩主线∩ml_prob≥45%)前瞻队列, 自激活日起逐日记录, 不回测不回填",
+  "prerequisite": "ml 管线逐股 ml_prob 输出增加日度持久化(数据合同小变更, 须另行呈报主人批准), 攒样至 n≥30 后按实验同口径结算",
+  "due": "无固定期限, 样本驱动"
+ },
+ "data_requirements": {
+  "low_position": "data/entry_portrait.db episodes(pos20/pos60/pos250, 1201行, 已勘察确认)",
+  "mainline_proxy": "方向层主线仅latest无历史序列(勘察实锤)——代理口径=申万一级行业近5日量比Top3∩近5日涨幅为正(与direction_layer source1_mainline.volr_top3同构, sw日线重算); 代理与方向层实测口径在重叠期(20261013-1021)一致性≥80%方可使用, 否则本prereg不成立",
+  "ml_prob": "勘察实锤: forward_up_prob_gauge_*.json(13日, 20260928起)为格子统计+当日targets, 不含逐股ml_prob历史; 逐股ml_prob仅实验当日推理产出不可回放 → ml_prob维度转stage2前瞻",
+  "price": "dragon_quant_qfq.db (回测唯一价源, next-bar)",
+  "delisted": "退市段处理接入 data/delisted_segments_baostock.db, 禁止幸存者宇宙"
+ },
+ "caveats": [
+  "阶段1结论只针对二维叠加; 兆讯案例的三条件(含ml_prob)归因须等stage2队列, 不得提前宣称",
+  "主线代理与方向层实测口径偏差风险: 一致性<80%则假设检验不成立(口径≠原始假设)",
+  "回测验收属三段式必走条件: 激活后执行须 m1供数→m2/m4/m6分析→m7校验",
+  "本prereg为DRAFT, 主人未批准激活前任何脚本不得读取上述数据源执行本假设回测; stage2前置的ml_prob落盘属数据合同变更, 单独呈报"
+ ],
+ "activation_record": {
+  "activated_at": "2026-10-21 22:41:10",
+  "owner_signal": "主人「继续」令(2026-10-21对话链, 承接prereg三决策项之第1项)",
+  "prereg_sha256_16": "313c8fccd3abf25a",
+  "source_snapshots": {
+   "data/entry_portrait.db": "4aeec878e96f(663552B)",
+   "data/delisted_segments_baostock.db": "3d3d6debd5ab(50597888B)"
+  },
+  "note": "stage2前置(ml_prob日度落盘)未批准, 保持挂起; 激活仅限stage1回测"
+ },
+ "stage1_execution_record": {
+  "executed_at": "2026-10-21 22:56",
+  "runner": "analysis/winrate_ab_stage1_runner_20261021.py",
+  "result_file": "analysis/winrate_ab_stage1_result_20261021.json",
+  "part0_baseline_repro": "PASS (win=42.70% vs 声明43.2%, 偏差0.5pp<1.5pp)",
+  "raw_verdict_by_script": "INCONCLUSIVE_LOW_POWER",
+  "m7_verdict": "打回",
+  "m7_findings": [
+   "INCONCLUSIVE标签为伪中性: CI[-4.97,-1.12]全负+n充足, 应判H1_stage1不成立=主线共振对低位横盘显著负贡献(-3.08pp)",
+   "prereg合同违背1: 退市段未接入delisted_segments_baostock.db, 幸存者宇宙违反明文禁令",
+   "prereg合同违背2: 主线代理与方向层一致性验证未做, prereg原文'一致性<80%则本prereg不成立'为前置条件被降格为事后补录"
+  ],
+  "honest_interpretation": "方向性强提示=负(主线共振无增强反拖累), 但因两项前置合同未落实, 本次运行不构成对H1_stage1的有效最终判决; 字面kill(叠加≤43.2%)未触发(46.84>42.7), 是否入证伪库报主人裁决",
+  "numbers": {
+   "G_LOW_MAIN": "46.84% n=3890",
+   "G_LOW": "49.92% n=9316",
+   "G_MAIN_NONLOW": "43.47% n=8795",
+   "G_RANDOM": "46.39% n=11719",
+   "effect_pp": -3.08,
+   "ci95": [
+    -4.97,
+    -1.12
+   ]
+  },
+  "pending_owner_decision": "A.接受'方向性负+合同缺陷'定性归档 / B.批准修复(退市段接入+一致性窗口积累)后重判 / C.不入证伪库仅归档方向性提示"
+ },
+ "owner_decision": {
+  "resolved": "C(主人「继续」令承接推荐主线)",
+  "note": "负结论归档不翻案不入证伪库(字面kill未触发), 正副产物(低位横盘事件正超额)转立新prereg: PREREG-LOW-CONSOLIDATION-ALPHA-20261021",
+  "resolved_at": "2026-10-21 22:58"
+ }
+}

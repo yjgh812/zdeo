@@ -1,0 +1,136 @@
+{
+ "prereg_id": "PREREG-DDPROTECT-V6",
+ "fingerprint": "b411db6294b5144a",
+ "carrier": {
+  "ann_ret": 24.53,
+  "sharpe": 1.082,
+  "mdd": -23.75,
+  "cvar5": -3.45,
+  "n": 1626
+ },
+ "variants": [
+  {
+   "kind": "baseline",
+   "param": null,
+   "floor": 1.0,
+   "mdd": -23.75,
+   "mdd_impr": 0.0,
+   "drag": -0.03,
+   "cvar5": -3.45,
+   "flips_per_year": 26.8,
+   "pass_p1": false
+  },
+  {
+   "kind": "baseline",
+   "param": null,
+   "floor": 0.5,
+   "mdd": -18.19,
+   "mdd_impr": 5.56,
+   "drag": 4.84,
+   "cvar5": -2.585,
+   "flips_per_year": 26.8,
+   "pass_p1": false
+  },
+  {
+   "kind": "hyst",
+   "param": 0.01,
+   "floor": 0.5,
+   "mdd": -17.39,
+   "mdd_impr": 6.36,
+   "drag": 5.77,
+   "cvar5": -2.622,
+   "flips_per_year": 13.1,
+   "pass_p1": false
+  },
+  {
+   "kind": "hyst",
+   "param": 0.01,
+   "floor": 0.7,
+   "mdd": -19.57,
+   "mdd_impr": 4.18,
+   "drag": 3.45,
+   "cvar5": -2.906,
+   "flips_per_year": 13.1,
+   "pass_p1": false
+  },
+  {
+   "kind": "hyst",
+   "param": 0.02,
+   "floor": 0.5,
+   "mdd": -16.68,
+   "mdd_impr": 7.07,
+   "drag": 3.8,
+   "cvar5": -2.678,
+   "flips_per_year": 7.6,
+   "pass_p1": false
+  },
+  {
+   "kind": "hyst",
+   "param": 0.02,
+   "floor": 0.7,
+   "mdd": -19.24,
+   "mdd_impr": 4.51,
+   "drag": 2.27,
+   "cvar5": -2.94,
+   "flips_per_year": 7.6,
+   "pass_p1": false
+  },
+  {
+   "kind": "confirm2",
+   "param": null,
+   "floor": 0.5,
+   "mdd": -19.45,
+   "mdd_impr": 4.3,
+   "drag": 4.33,
+   "cvar5": -2.659,
+   "flips_per_year": 15.2,
+   "pass_p1": false
+  },
+  {
+   "kind": "confirm2",
+   "param": null,
+   "floor": 0.7,
+   "mdd": -20.03,
+   "mdd_impr": 3.72,
+   "drag": 2.58,
+   "cvar5": -2.927,
+   "flips_per_year": 15.2,
+   "pass_p1": false
+  },
+  {
+   "kind": "weekly",
+   "param": null,
+   "floor": 0.5,
+   "mdd": -17.38,
+   "mdd_impr": 6.37,
+   "drag": 5.59,
+   "cvar5": -2.695,
+   "flips_per_year": 13.7,
+   "pass_p1": false
+  },
+  {
+   "kind": "weekly",
+   "param": null,
+   "floor": 0.7,
+   "mdd": -18.8,
+   "mdd_impr": 4.95,
+   "drag": 3.34,
+   "cvar5": -2.949,
+   "flips_per_year": 13.7,
+   "pass_p1": false
+  }
+ ],
+ "P0": {
+  "eval_days": 1626,
+  "pass": true
+ },
+ "P2": {
+  "pass": false,
+  "note": "无变体过P1"
+ },
+ "P1": {
+  "n_pass": 0,
+  "pass": false
+ },
+ "verdict": "FAIL"
+}

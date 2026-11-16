@@ -1,0 +1,5 @@
+{"date": "20261023", "eq_ret_pct": 1.86, "prev_date": "20261022", "prev_eq_ret": -2.77, "is_dip": false, "threshold": -2.0}
+{"date": "20261026", "eq_ret_pct": -0.62, "prev_date": "20261023", "prev_eq_ret": 1.86, "is_dip": false, "threshold": -2.0}
+{"date": "20261027", "eq_ret_pct": -2.82, "prev_date": "20261026", "prev_eq_ret": -0.62, "is_dip": true, "threshold": -2.0}
+{"date": "20261028", "eq_ret_pct": 1.89, "prev_date": "20261027", "prev_eq_ret": -2.82, "is_dip": false, "threshold": -2.0}
+{"date": "20261029", "eq_ret_pct": -2.59, "prev_date": "20261028", "prev_eq_ret": 1.89, "is_dip": true, "threshold": -2.0}

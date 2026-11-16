@@ -1,0 +1,67 @@
+{
+ "name": "PRELAUNCH_EMBRYO_SHADOW",
+ "status": "TERMINATED_PRE_ACTIVATION",
+ "registered": "2026-10-19",
+ "owner_report": "reports/prelaunch_lowpos_formal_20261019.md",
+ "evidence_base": {
+  "in_sample": "2024-2025 修正宇宙(60+00+30, 剔68/92), 去簇n=18425: medF20=+4.35% win=61.6% P(20日出板)=41.8%(2.2x基线) P(H>=2|出板)=28.4%(1.44x)",
+  "year_split": "2024 medF20+3.02/win56.5 | 2025 medF20+5.03/win66.3",
+  "state_def_frozen": "pos60>=60 & 0<ret20<20 & 板史60>=2 & 近5日无板(zt5==0) & 当日未板; 板史=pos60同一60bar窗内派生qfq相邻收盘比>=thr(9.85/19.85/4.85ST)计数",
+  "timing": "胚胎→首板间隔 med=12bar P25=8 P75=16; 前期medF5=-0.57%=等待成本"
+ },
+ "hypothesis": "胚胎状态日收盘埋伏(等权影子记账), 20日前瞻中位超额为正且胜率>=55%(样本外)",
+ "gates_frozen_before_activation": {
+  "LOCKED": "60交易日或去簇独立事件n>=30 先到",
+  "pass": "medF20>=+2% 且 win>=55%",
+  "kill": "前10个去簇独立事件f20全负 或 medF20<0",
+  "oos_start": "激活日次日(激活前数据一律为样内, 2024-2025结果不得用于放宽判据)"
+ },
+ "boundaries": [
+  "runner ZT阈值=主板9.7/创业19.5(low_repair同构), 未做ST 4.85特判(与stage研究4.85口径的微小边界差, 如实声明)",
+  "纯持有记账无止损; R2分段止损(-12%/-8%)属接线域, 撞S-5待主人裁决",
+  "对照组口径见 reports/prelaunch_lowpos_formal_20261019.md PartF; 宇宙=60+00+30(剔68/92/北交)"
+ ],
+ "activation": "须主人一行批准; 不激活则本件仅为候选登记",
+ "approval": {
+  "approved_by": "主人「继续」令 2026-10-19",
+  "activation_since": 20261019,
+  "note": "文件名含DRAFT为创建日锚, 状态以status字段为准(SOP一百四十七先例)"
+ },
+ "activation_since": 20261019,
+ "params": {
+  "pos_min": 60.0,
+  "ret20_lo": 0.0,
+  "ret20_hi": 20.0,
+  "hist_min": 2,
+  "quiet_bars": 5,
+  "dedup_days": 10,
+  "horizons": [
+   5,
+   20
+  ],
+  "warmup_bars": 59,
+  "activation_since": 20261019,
+  "lock_days": 60,
+  "lock_n": 30,
+  "pass_med": 2.0,
+  "pass_win": 55.0,
+  "kill_first_n": 10,
+  "universe": [
+   "60",
+   "00",
+   "30"
+  ],
+  "zt_thr_main": 9.7,
+  "zt_thr_gem": 19.5,
+  "entry": "signal_day_close(持有语义)",
+  "stop_sim": "none(纯持有记账; 分段止损属接线域待主人裁决)"
+ },
+ "fingerprint": "c5b69ad38aec4965",
+ "fingerprint_method": "sha256(json.dumps(params,sort_keys=True))[:16]",
+ "terminated": {
+  "date": "2026-10-19",
+  "reason": "复现测试抓出实证研究前视缺陷: prelaunch_lowpos_formal_20261019.py 卷积切片[k:n+k]实为未来k根板数(前视), 胚胎域正增量(+4.35/43%出板/板史判别δ0.37)全部为前视伪影; 修正后(纯回看)胚胎域 medF20=-2.28/配对对照中位-1.37 CI[-1.67,-1.0]/0.8效率规则FAIL=三闸门全FAIL",
+  "contamination_scope": "未挂夜链/未产生任何OOS观测/未接交易/未产出交易动作; runner文件保留(实现为正确纯回看口径), prereg终态=本文件",
+  "fingerprint_void": true
+ }
+}

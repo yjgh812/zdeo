@@ -1,0 +1,168 @@
+{
+ "rows": [
+  {
+   "N": 3,
+   "n_trades": 353,
+   "ret": -17.46,
+   "cagr": -1.76,
+   "mdd": 28.73,
+   "win_a": 40.23,
+   "win_r": 48.44,
+   "ci95": [
+    41.69,
+    55.49
+   ],
+   "med": -0.056,
+   "pl": 1.119,
+   "pnl_sum": -17463.0,
+   "stop_share": 0.0,
+   "combo": 76.06
+  },
+  {
+   "N": 5,
+   "n_trades": 591,
+   "ret": -16.46,
+   "cagr": -1.65,
+   "mdd": 24.57,
+   "win_a": 41.46,
+   "win_r": 47.88,
+   "ci95": [
+    41.15,
+    54.07
+   ],
+   "med": -0.053,
+   "pl": 1.132,
+   "pnl_sum": -16456.0,
+   "stop_share": 0.0,
+   "combo": 77.14
+  },
+  {
+   "N": 8,
+   "n_trades": 887,
+   "ret": 43.58,
+   "cagr": 3.4,
+   "mdd": 43.77,
+   "win_a": 46.22,
+   "win_r": 49.15,
+   "ci95": [
+    41.44,
+    56.42
+   ],
+   "med": -0.051,
+   "pl": 1.41,
+   "pnl_sum": 41958.0,
+   "stop_share": 11.5,
+   "combo": 137.95
+  },
+  {
+   "N": 10,
+   "n_trades": 1102,
+   "ret": 53.3,
+   "cagr": 4.03,
+   "mdd": 34.04,
+   "win_a": 46.55,
+   "win_r": 49.18,
+   "ci95": [
+    42.15,
+    56.18
+   ],
+   "med": -0.045,
+   "pl": 1.414,
+   "pnl_sum": 51832.0,
+   "stop_share": 14.5,
+   "combo": 146.28
+  },
+  {
+   "N": 15,
+   "n_trades": 1612,
+   "ret": 181.17,
+   "cagr": 10.03,
+   "mdd": 23.35,
+   "win_a": 51.92,
+   "win_r": 54.28,
+   "ci95": [
+    47.75,
+    60.29
+   ],
+   "med": 0.692,
+   "pl": 1.543,
+   "pnl_sum": 178269.0,
+   "stop_share": 16.1,
+   "combo": 232.78
+  },
+  {
+   "N": 20,
+   "n_trades": 2064,
+   "ret": 170.57,
+   "cagr": 9.64,
+   "mdd": 22.59,
+   "win_a": 52.42,
+   "win_r": 55.77,
+   "ci95": [
+    49.86,
+    61.78
+   ],
+   "med": 0.91,
+   "pl": 1.474,
+   "pnl_sum": 168073.0,
+   "stop_share": 17.3,
+   "combo": 226.03
+  }
+ ],
+ "ml_isolation": {
+  "ok": true,
+  "distinct": {
+   "(261.55, 1339)": [
+    3,
+    5,
+    8,
+    10,
+    15,
+    20
+   ]
+  }
+ },
+ "tiedump": {
+  "3": {
+   "n_dates": 119,
+   "boundary_tie_rate": 14.3,
+   "avg_tie_count": 1.19,
+   "max_tie_count": 2
+  },
+  "5": {
+   "n_dates": 119,
+   "boundary_tie_rate": 12.6,
+   "avg_tie_count": 1.17,
+   "max_tie_count": 2
+  },
+  "8": {
+   "n_dates": 119,
+   "boundary_tie_rate": 10.1,
+   "avg_tie_count": 1.18,
+   "max_tie_count": 3
+  },
+  "10": {
+   "n_dates": 119,
+   "boundary_tie_rate": 19.3,
+   "avg_tie_count": 1.33,
+   "max_tie_count": 3
+  },
+  "15": {
+   "n_dates": 119,
+   "boundary_tie_rate": 15.1,
+   "avg_tie_count": 1.29,
+   "max_tie_count": 4
+  },
+  "20": {
+   "n_dates": 119,
+   "boundary_tie_rate": 10.9,
+   "avg_tie_count": 1.22,
+   "max_tie_count": 4
+  }
+ },
+ "prod_static_dup_in_chosen": {
+  "total_dates": 119,
+  "dup_dates": 115,
+  "dup_rate": 96.6
+ }
+}

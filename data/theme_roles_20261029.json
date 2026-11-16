@@ -1,0 +1,290 @@
+{
+ "date": "20261029",
+ "total_limitup": 39,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "休闲食品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001219",
+    "name": "青岛食品",
+    "boards": 4,
+    "seal_money": 165299295.0,
+    "mv_wan": 353505.6294
+   },
+   "members": [
+    {
+     "code": "001219",
+     "name": "青岛食品",
+     "boards": 4,
+     "reason": "休闲食品",
+     "mv_wan": 353505.6294,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "汽车零部"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002708",
+    "name": "光洋股份",
+    "boards": 4,
+    "seal_money": 8538217.0,
+    "mv_wan": 1170850.134
+   },
+   "members": [
+    {
+     "code": "002708",
+     "name": "光洋股份",
+     "boards": 4,
+     "reason": "汽车零部",
+     "mv_wan": 1170850.134,
+     "role": "龙头"
+    },
+    {
+     "code": "603006",
+     "name": "联明股份",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 300274.3283,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "家电零部"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "601956",
+    "name": "东贝集团",
+    "boards": 3,
+    "seal_money": 183435682.0,
+    "mv_wan": 416483.122
+   },
+   "members": [
+    {
+     "code": "601956",
+     "name": "东贝集团",
+     "boards": 3,
+     "reason": "家电零部",
+     "mv_wan": 416483.122,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "游戏Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600715",
+    "name": "文投控股",
+    "boards": 3,
+    "seal_money": 40134962.0,
+    "mv_wan": 921586.7445
+   },
+   "members": [
+    {
+     "code": "600715",
+     "name": "文投控股",
+     "boards": 3,
+     "reason": "游戏Ⅱ",
+     "mv_wan": 921586.7445,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603131",
+    "name": "上海沪工",
+    "boards": 2,
+    "seal_money": 134216060.0,
+    "mv_wan": 537366.984
+   },
+   "members": [
+    {
+     "code": "600592",
+     "name": "龙溪股份",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 695622.8176,
+     "role": "助攻"
+    },
+    {
+     "code": "603131",
+     "name": "上海沪工",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 537366.984,
+     "role": "龙头"
+    },
+    {
+     "code": "000530",
+     "name": "冰山冷热",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 693963.8875,
+     "role": "助攻"
+    },
+    {
+     "code": "002943",
+     "name": "宇晶股份",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 737001.032,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "文娱用品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002862",
+    "name": "实丰文化",
+    "boards": 2,
+    "seal_money": 405744138.0,
+    "mv_wan": 286777.08
+   },
+   "members": [
+    {
+     "code": "002862",
+     "name": "实丰文化",
+     "boards": 2,
+     "reason": "文娱用品",
+     "mv_wan": 286777.08,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "专用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002526",
+    "name": "山东矿机",
+    "boards": 2,
+    "seal_money": 97105016.0,
+    "mv_wan": 584756.3664
+   },
+   "members": [
+    {
+     "code": "002526",
+     "name": "山东矿机",
+     "boards": 2,
+     "reason": "专用设备",
+     "mv_wan": 584756.3664,
+     "role": "龙头"
+    },
+    {
+     "code": "001225",
+     "name": "和泰机电",
+     "boards": 1,
+     "reason": "专用设备",
+     "mv_wan": 302202.6372,
+     "role": "助攻"
+    },
+    {
+     "code": "600501",
+     "name": "航天晨光",
+     "boards": 1,
+     "reason": "专用设备",
+     "mv_wan": 722595.0738,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "医疗服务"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002172",
+    "name": "澳洋健康",
+    "boards": 2,
+    "seal_money": 75332508.0,
+    "mv_wan": 411198.2451
+   },
+   "members": [
+    {
+     "code": "002172",
+     "name": "澳洋健康",
+     "boards": 2,
+     "reason": "医疗服务",
+     "mv_wan": 411198.2451,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 24,
+   "chain_name": "自动链24",
+   "shared_words": [
+    "食品加工"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603536",
+    "name": "惠发食品",
+    "boards": 1,
+    "seal_money": 28900634.0,
+    "mv_wan": 251115.7212
+   },
+   "members": [
+    {
+     "code": "605338",
+     "name": "巴比食品",
+     "boards": 1,
+     "reason": "食品加工",
+     "mv_wan": 454697.5966,
+     "role": "中军"
+    },
+    {
+     "code": "603536",
+     "name": "惠发食品",
+     "boards": 1,
+     "reason": "食品加工",
+     "mv_wan": 251115.7212,
+     "role": "龙头"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

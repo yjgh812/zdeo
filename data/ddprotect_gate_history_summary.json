@@ -1,0 +1,26 @@
+{
+ "window": [
+  "2020-02-06",
+  "2026-09-14"
+ ],
+ "days": 1587,
+ "defense_ratio_pct": 43.7,
+ "flips_total": 49,
+ "flips_per_year": 7.5,
+ "defense_episodes": 25,
+ "defense_episode_days_median": 23.0,
+ "defense_episode_days_max": 74,
+ "defense_ratio_by_year_pct": {
+  "2020": 47.8,
+  "2021": 27.2,
+  "2022": 41.7,
+  "2023": 63.6,
+  "2024": 50.8,
+  "2025": 35.0,
+  "2026": 38.4
+ },
+ "current_episode": {
+  "state": "满仓",
+  "days": 0
+ }
+}

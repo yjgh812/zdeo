@@ -1,0 +1,70 @@
+{
+ "n_events": 214,
+ "n_strong": 181,
+ "H1_regime": {
+  "strong_rebuy": {
+   "n": 153,
+   "win": 43.8,
+   "median": -1.48,
+   "mean": -0.6
+  },
+  "weak_rebuy": {
+   "n": 22,
+   "win": 40.9,
+   "median": -0.32,
+   "mean": 1.53
+  }
+ },
+ "H2_limit95": {
+  "fill_rate": 37.4,
+  "perf": {
+   "n": 80,
+   "win": 48.8,
+   "median": -1.05,
+   "mean": 2.05
+  }
+ },
+ "H3_dryvol": {
+  "trigger_rate": 60.3,
+  "perf": {
+   "n": 129,
+   "win": 42.6,
+   "median": -1.89,
+   "mean": 0.06
+  }
+ },
+ "H4_oracle": {
+  "n": 52,
+  "win": 88.5,
+  "median": 7.87,
+  "mean": 9.8
+ },
+ "H5_B_holdout": {
+  "dev_julaug": {
+   "n": 7,
+   "win": 42.9,
+   "median": -4.03,
+   "mean": -0.13
+  },
+  "oos_sep": {
+   "n": 0
+  }
+ },
+ "H6_reason": {
+  "other": {
+   "n": 194,
+   "fly_rate": 38.1,
+   "bd_median": 7.31
+  },
+  "S5": {
+   "n": 13,
+   "fly_rate": 38.5,
+   "bd_median": 4.57
+  },
+  "trend": {
+   "n": 7,
+   "fly_rate": 28.6,
+   "bd_median": 7.67
+  }
+ }
+}

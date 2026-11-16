@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "data": {
+    "totalAssets": 1000000.0,
+    "marketValue": 992000.0,
+    "availableFunds": 8000.0,
+    "profitLoss": -1200.0
+  }
+}

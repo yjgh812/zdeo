@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-09",
+  "source": "盘前agent实拉(腾讯行情/金十/财联社/华尔街见闻, 02:00-02:42)",
+  "indices": [
+    {"name": "道琼斯", "change_pct": -1.08},
+    {"name": "纳斯达克", "change_pct": -0.21},
+    {"name": "标普500", "change_pct": -0.41},
+    {"name": "恒生指数昨收", "change_pct": -0.38}
+  ],
+  "commodities": [
+    {"name": "WTI原油", "change_pct": 1.69},
+    {"name": "布伦特原油", "change_pct": 1.2},
+    {"name": "SC原油夜盘", "change_pct": 1.62},
+    {"name": "LME铜", "change_pct": 1.37},
+    {"name": "沪铜夜盘", "change_pct": 0.94},
+    {"name": "沪铝夜盘", "change_pct": 0.8},
+    {"name": "氧化铝夜盘", "change_pct": 1.41},
+    {"name": "沪金夜盘", "change_pct": -0.7},
+    {"name": "沪银夜盘", "change_pct": -0.25}
+  ],
+  "us_stocks": [
+    {"name": "英特尔", "change_pct": 10.0},
+    {"name": "高通", "change_pct": 5.0},
+    {"name": "台积电", "change_pct": 2.0},
+    {"name": "纳斯达克金龙中国指数", "change_pct": -2.0}
+  ],
+  "news_bullets": [
+    "美国战略石油储备原油库存降至2.854亿桶，创1982年以来最低",
+    "调查显示OPEC上月产量大幅下滑，沙特石油供应受限",
+    "OpenAI推出ChatGPT Images 2.5并向全平台开放",
+    "美国财政部3年期国债得标利率4.474%创2024年以来新高",
+    "瑞银预计美联储9月和12月各加息25个基点",
+    "汇丰上调布油2026年均价预测至90美元"
+  ]
+}

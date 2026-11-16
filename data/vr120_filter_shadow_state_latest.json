@@ -1,0 +1,32 @@
+{
+ "generated_at": "2026-10-29 23:40:02",
+ "prereg": "PREREG_VR120_FILTER_20261018",
+ "fingerprint": "ac59abfc027d3b20",
+ "batch_date": "20261029",
+ "stale_dump": false,
+ "today_batch": {
+  "ml": {
+   "filtered_hits": 2,
+   "backfilled": 2,
+   "vr_unknown_kept": 0
+  },
+  "bp_ep": {
+   "filtered_hits": 0,
+   "backfilled": 0,
+   "vr_unknown_kept": 0
+  }
+ },
+ "settled_batches": {
+  "ml": null,
+  "bp_ep": null
+ },
+ "kill_watch": {
+  "rule": "OOS前15个过滤事件过滤臂TWR落后现行臂>2pp 或 胜率差<=0(逐字呈报提请废案)",
+  "ml_worse_events": null
+ },
+ "gate": {
+  "sample_start": "2026-10-20",
+  "window": "60交易日或过滤事件n>=30先到"
+ },
+ "ledger": "D:/zcodesj\\data\\vr120_filter_shadow_ledger.jsonl"
+}

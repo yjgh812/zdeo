@@ -1,0 +1,27 @@
+{
+ "id": "PREREG_SHOCK_BREAKOUT_20261110",
+ "title": "震仓后放量收复突破前高·入场口径预注册 (主人「继续」令·次优买点②严格版)",
+ "declared": "2026-11-10",
+ "origin": "主人四阶段第四份框架次优买点②(震仓后放量收复失地并突破震仓前高时试仓)提请验证, 上轮PASS_CANDIDATE后标deferred, 主人「继续」令授权执行",
+ "family_archive_citation": "①PREREG_FIRSTBOARD_PULLBACK_20261025(executed_FAIL): 确认日次收入场t20e超额不达标, 同为确认后入场口径负先验; ②PREREG_SHOCK_RECOVERY_20261110(executed_PASS_CANDIDATE): 震仓收复判别力成立(收复=持有纪律), 但回补口径(E+2收盘买入)=-0.48%负。本研究差异: 入场口径更晚更严(放量1.5x+收复失地+突破E前5日最高收盘三条件, C属[E+1,E+3]首个满足日次收入场), 与回补口径同事件域直接对照",
+ "rule_frozen": {
+  "study_id": "SHOCK_BREAKOUT_20261110",
+  "执行合同": "规则执行真源=attribution/prereg_shock_breakout_study.py 内嵌 PARAMS(指纹锚定)",
+  "event_domain": "与shock_recovery_study完全一致(S1-S4结构全集+事件E+20bar冷却), 不重新发明",
+  "confirm_C": "C属[E+1,E+3]首个满足: vol>=1.5x其前5日均量 且 close>high(E) 且 close>max(close[E前5日])",
+  "entry": "C次一交易日收盘(收盘确认口径, 同FIRSTBOARD先例)",
+  "returns": "主口径ret5=close[C+5]/entry-1; 辅助retE5=close[E+5]/entry-1; 回补对照=同事件域E+1收复时E+2买入到E+5",
+  "deferred_dims": "量倍2.0x/前高窗口3日变体未测, 留待新指纹"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_sample": "可判入场 n>=40 否则INSUFFICIENT_DATA",
+  "G2_relative": "主口径t5均值>回补对照均值+1.0pp 且 主口径胜率>=45% (严于回补才值得存在)",
+  "G3_absolute": "主口径t5均值>0",
+  "verdict_rule": "三门全过=PASS_CANDIDATE(提请主人); 任一未过=FAIL(突破前高入场口径判死, 震仓只保留持有/离场纪律, 翻案须新指纹)"
+ },
+ "multiple_testing_note": "主口径唯一(三条件确认+次日收盘入场); 变体全列deferred不跑后挖",
+ "failure_clause": "FAIL时突破前高入场口径判死并归档负结果; 震仓事件的用途收敛为持有/离场纪律(收复=持有, 未收复=离场评估); 翻案须新指纹+新前提",
+ "fingerprint": "bf55a3d9b3a0bc5a",
+ "status": "executed_INSUFFICIENT_DATA_20261110",
+ "result_ref": "reports/SHOCK_BREAKOUT_PREREG_RESULT_20261110.json"
+}

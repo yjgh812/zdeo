@@ -1,0 +1,8 @@
+{
+ "date": "20260906",
+ "scope": "全历史",
+ "fixed_rows": 10171692,
+ "fixed_codes": 5258,
+ "after_fix_consistency": "87.691%",
+ "note": "v2全史修复; v1(2026范围)报告见QFQ_AMOUNT_FIX_20260906.json"
+}

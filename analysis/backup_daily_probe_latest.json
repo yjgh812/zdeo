@@ -1,0 +1,390 @@
+{
+ "ts": "2026-10-09 02:36:12",
+ "samples": [
+  "sh600519",
+  "sz000858",
+  "sz300750"
+ ],
+ "days": 5,
+ "channels": {
+  "baostock": {
+   "samples": [
+    {
+     "sample": "sh600519",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz000858",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz300750",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    }
+   ],
+   "verdict": "PASS"
+  },
+  "tushare": {
+   "samples": [
+    {
+     "sample": "sh600519",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz000858",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz300750",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      }
+     ]
+    }
+   ],
+   "verdict": "PASS"
+  },
+  "tencent": {
+   "samples": [
+    {
+     "sample": "sh600519",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1.1e-05,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1.1e-05,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1.1e-05,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1.7e-05,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz000858",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 3e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 2e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 2e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 2e-06,
+       "verdict": "OK"
+      }
+     ]
+    },
+    {
+     "sample": "sz300750",
+     "checked": 5,
+     "bad": 0,
+     "verdict": "PASS",
+     "detail": [
+      {
+       "date": 20260924,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 0.0,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260928,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260929,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 2e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20260930,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1e-06,
+       "verdict": "OK"
+      },
+      {
+       "date": 20261008,
+       "price_maxdiff": 0.0,
+       "vol_reldiff": 1e-06,
+       "verdict": "OK"
+      }
+     ]
+    }
+   ],
+   "verdict": "PASS"
+  },
+  "eastmoney": {
+   "samples": [
+    {
+     "sample": "sh600519",
+     "verdict": "ERROR",
+     "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+     "sample": "sz000858",
+     "verdict": "ERROR",
+     "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+     "sample": "sz300750",
+     "verdict": "ERROR",
+     "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    }
+   ],
+   "verdict": "FAIL"
+  }
+ },
+ "base": "vipdoc_ok",
+ "summary": "3/4 channels pass"
+}

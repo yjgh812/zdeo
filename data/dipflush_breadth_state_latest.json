@@ -1,0 +1,26 @@
+{
+ "name": "PREREG_DIPFLUSH_BREADTH_BASKET",
+ "status": "ACTIVE",
+ "generated_at": "2026-10-29 23:42:30",
+ "since": 20261012,
+ "gated_event_days": 2255,
+ "fired_days_breadth_ge_min": 71,
+ "in_sample": {
+  "n": 71,
+  "settled": 71,
+  "med_r5_bp": 159.7
+ },
+ "oos": {
+  "n_days": 0,
+  "n_settled": 0,
+  "med_r5_bp": null,
+  "win_pct": null
+ },
+ "gate": {
+  "window": "OOS到期篮子n>=10 或 日历2027-06-30 先到为准",
+  "pass_rule": "OOS到期篮子R5中位>=+100bp 且 胜率>=60%",
+  "kill_switch": "OOS前5个到期篮子R5中位<0 -> 提请废案",
+  "oos_n_settled": 0
+ },
+ "elapsed_s": 147.6
+}

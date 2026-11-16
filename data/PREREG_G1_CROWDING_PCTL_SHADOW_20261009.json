@@ -1,0 +1,33 @@
+{
+  "name": "PREREG_G1_CROWDING_PCTL_SHADOW",
+  "title": "G1_CROWDING_PCTL 市值分组成交额占比分位(微盘/中证500代理)影子验证",
+  "status": "ACTIVE",
+  "approval": "owner(主人) 2026-10-09 令「升级」=批准R46报告§十二呈请: G1相对分位读数升级为在轨影子",
+  "registered": "2026-10-09",
+  "family": "style_crowding_state",
+  "sibling": "与小市值2026失效四支柱归因(R46§三.1)/9-28弱者组诊断互补; 零接线零拦截",
+  "evidence_report": "reports/bili_r46_mcp_fullsweep_study_20261009.md §十二(G1行); 验证脚本analysis/r46_g1_smallcap_crowding_study_20261009.py; 民间绝对阈值不可平移实锤=代理口径10年0天>30%",
+  "in_sample_evidence": {
+    "range": "20200102~20261008(daily_basic有效覆盖)",
+    "zz500_pct": "10年14.58~18.81% med16.05",
+    "latest": "20261008 zz500=18.08%(99.3分位) micro=11.67%(82.6分位)=AI虹吸极值",
+    "conclusion": "民间绝对阈值不可用, 相对分位=本方分布重标定口径"
+  },
+  "params": {
+    "micro_n": 400,
+    "zz500_band": [301, 800],
+    "roll": 250,
+    "warn_zz500_pctl": 90,
+    "warn_micro_pctl": 80,
+    "min_stocks": 800,
+    "data": "fund库(D:/workbuddyspace/databases/fundamental_data.db)daily_basic.total_mv按日排序 + qfq库(zcodesj)amount成交额, 双库流式归并",
+    "activation_since": "20261009"
+  },
+  "acceptance_locked": {
+    "horizon": "60交易日",
+    "observe": "两警戒区发生率 + 警戒区后20日微盘组相对全市场等权超额(描述性记账, 到期判读)",
+    "kill_switch": "数据断供>5交易日 或 分位序列NaN>10% 判数据失真提请停影",
+    "note": "warn线=本方分布描述线非民间阈值, 影子期只记不发"
+  },
+  "boundary": "纯风格拥挤状态影子, 零交易权禁接闸门; 代理口径=市值排名非真实中证500指数成分已标注(券商转述与真实指数口径差异在案); runner=analysis/r46_g1_crowding_shadow_daily.py 全史重算幂等(约1-2分钟), 参数单一真源=本文件params字段缺即fail-closed退出"
+}

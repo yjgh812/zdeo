@@ -1,0 +1,9 @@
+{
+  "flag": "SWINGBOS_TASKS_DISABLED_BY_P1",
+  "disabled_at": "2026-10-29 23:30 (本会话第二次禁用: 22:53首次禁用后于23:21被并行会话恢复, 事件日志铁证Id=140)",
+  "tasks": ["swingbosscan_1555", "swingbosbuy_0938"],
+  "reason": "P1裁决: BOS终审数字(分年9/9正)不可复现——双变体×3窗口独立复算超额-0.33~-5.13%, 正超额年仅0-1/11; 且结构B真60min口径判死(-2.85%); 详见data/PREREG_DIP_ENV_ABS_ACTIVE_20261029.json的bos_related_decision与DAILY_WORKFLOW_SOP一百八十六补记二",
+  "recovery": "若主人裁决恢复: schtasks /change /tn swingbosscan_1555 /enable + schtasks /change /tn swingbosbuy_0938 /enable, 并删除本旗标文件",
+  "conflict_note": "23:21并行会话(60分K窗口翻倍工作)恢复了本两任务——两会话对同一资源操作相反, 已呈主人仲裁; 本会话保持安全侧(禁用)直至主人明确裁决",
+  "owner_decision_needed": true
+}

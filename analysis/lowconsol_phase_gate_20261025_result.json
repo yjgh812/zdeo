@@ -1,0 +1,127 @@
+{
+  "current_phase": {
+    "date": 20261023,
+    "trend": "bear",
+    "activity": "active",
+    "amt_q": 0.803
+  },
+  "windows": {
+    "agg_2020_plus": {
+      "trend_bull": {
+        "bull": {
+          "win": 43.85,
+          "n": 213341
+        },
+        "bear": {
+          "win": 49.12,
+          "n": 217571
+        },
+        "bull_effect_pp": 4.02,
+        "baseline_bull": 39.83,
+        "interaction_pp": -5.27
+      },
+      "amt_active": {
+        "bull": {
+          "win": 45.8,
+          "n": 187760
+        },
+        "bear": {
+          "win": 47.06,
+          "n": 243152
+        },
+        "bull_effect_pp": 3.29,
+        "baseline_bull": 42.51,
+        "interaction_pp": -1.26
+      }
+    },
+    "Y2024": {
+      "trend_bull": {
+        "bull": {
+          "win": 35.26,
+          "n": 15456
+        },
+        "bear": {
+          "win": 46.22,
+          "n": 65094
+        },
+        "bull_effect_pp": -2.49,
+        "baseline_bull": 37.75,
+        "interaction_pp": -10.96
+      },
+      "amt_active": {
+        "bull": {
+          "win": 47.57,
+          "n": 13834
+        },
+        "bear": {
+          "win": 43.4,
+          "n": 66716
+        },
+        "bull_effect_pp": 7.74,
+        "baseline_bull": 39.83,
+        "interaction_pp": 4.17
+      }
+    },
+    "Y2025": {
+      "trend_bull": {
+        "bull": {
+          "win": 58.5,
+          "n": 17625
+        },
+        "bear": {
+          "win": 77.21,
+          "n": 7428
+        },
+        "bull_effect_pp": 7.08,
+        "baseline_bull": 51.42,
+        "interaction_pp": -18.71
+      },
+      "amt_active": {
+        "bull": {
+          "win": 64.04,
+          "n": 25053
+        },
+        "bear": {
+          "win": null,
+          "n": 0
+        },
+        "bull_effect_pp": 9.74,
+        "baseline_bull": 54.3,
+        "interaction_pp": null
+      }
+    },
+    "Y2026ytd": {
+      "trend_bull": {
+        "bull": {
+          "win": 26.04,
+          "n": 23072
+        },
+        "bear": {
+          "win": 47.98,
+          "n": 26689
+        },
+        "bull_effect_pp": -1.56,
+        "baseline_bull": 27.6,
+        "interaction_pp": -21.94
+      },
+      "amt_active": {
+        "bull": {
+          "win": 37.81,
+          "n": 49761
+        },
+        "bear": {
+          "win": null,
+          "n": 0
+        },
+        "bull_effect_pp": 2.49,
+        "baseline_bull": 35.32,
+        "interaction_pp": null
+      }
+    }
+  },
+  "verdict": {
+    "phase_gate": "FALSIFIED",
+    "y2026_bull_effect_pp": -1.56,
+    "y2026_bull_sign": "non_positive"
+  }
+}

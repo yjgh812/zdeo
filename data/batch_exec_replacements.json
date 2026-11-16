@@ -1,0 +1,68 @@
+[
+ {
+  "code": "600105",
+  "name": "永鼎股份",
+  "volume": 100,
+  "price": 28.2,
+  "source": "method_picks",
+  "sector": "通信",
+  "prev_close": 27.92,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "600547",
+  "name": "山东黄金",
+  "volume": 100,
+  "price": 26.26,
+  "source": "method_picks",
+  "sector": "有色金属",
+  "prev_close": 26.0,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "601288",
+  "name": "农业银行",
+  "volume": 300,
+  "price": 7.26,
+  "source": "method_picks",
+  "sector": "银行",
+  "prev_close": 7.19,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "601899",
+  "name": "紫金矿业",
+  "volume": 100,
+  "price": 29.08,
+  "source": "method_picks",
+  "sector": "有色金属",
+  "prev_close": 28.79,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "002241",
+  "name": "歌尔股份",
+  "volume": 100,
+  "price": 23.34,
+  "source": "method_picks",
+  "sector": "电子",
+  "prev_close": 23.11,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000725",
+  "name": "京东方Ａ",
+  "volume": 500,
+  "price": 4.98,
+  "source": "method_picks",
+  "sector": "电子",
+  "prev_close": 4.93,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

@@ -1,0 +1,44 @@
+{
+ "run_at": "2026-09-15 09:31:10",
+ "execute": true,
+ "amount_each": 20000,
+ "n_ok": 5,
+ "n_total": 5,
+ "results": [
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"gate_verdict\": \"PASS_WITH_WARN\","
+  },
+  {
+   "code": "603637",
+   "name": "镇海股份",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"gate_verdict\": \"PASS_WITH_WARN\","
+  },
+  {
+   "code": "002966",
+   "name": "苏州银行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"gate_verdict\": \"PASS_WITH_WARN\","
+  },
+  {
+   "code": "601077",
+   "name": "渝农商行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"gate_verdict\": \"PASS_WITH_WARN\","
+  },
+  {
+   "code": "300214",
+   "name": "日科化学",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"gate_verdict\": \"PASS_WITH_WARN\","
+  }
+ ]
+}

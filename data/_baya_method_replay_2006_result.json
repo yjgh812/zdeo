@@ -1,0 +1,477 @@
+{
+ "spec": "BAYA-METHOD-REPLAY 2006-2026 (ep域Top20 × R∧地量∧门控)",
+ "overall": {
+  "domain_all": {
+   "fwd20": {
+    "n": 3847,
+    "mean": 0.18,
+    "median": -0.31,
+    "win": 48.1
+   },
+   "fwd40": {
+    "n": 3805,
+    "mean": 0.36,
+    "median": -0.35,
+    "win": 48.2
+   },
+   "fwd60": {
+    "n": 3758,
+    "mean": 0.79,
+    "median": -0.12,
+    "win": 49.2
+   }
+  },
+  "R_group": {
+   "fwd20": {
+    "n": 739,
+    "mean": -0.33,
+    "median": -0.88,
+    "win": 44.8
+   },
+   "fwd40": {
+    "n": 729,
+    "mean": -0.03,
+    "median": -1.44,
+    "win": 46.0
+   },
+   "fwd60": {
+    "n": 711,
+    "mean": 1.3,
+    "median": -1.2,
+    "win": 47.8
+   }
+  },
+  "F_group": {
+   "fwd20": {
+    "n": 490,
+    "mean": -0.62,
+    "median": -0.96,
+    "win": 44.5
+   },
+   "fwd40": {
+    "n": 483,
+    "mean": -0.4,
+    "median": -1.93,
+    "win": 44.9
+   },
+   "fwd60": {
+    "n": 478,
+    "mean": 0.94,
+    "median": -2.85,
+    "win": 45.6
+   }
+  },
+  "market": {
+   "fwd20": {
+    "n": 381824,
+    "mean": 0.64,
+    "median": 0.46,
+    "win": 51.7
+   },
+   "fwd40": {
+    "n": 377539,
+    "mean": 1.18,
+    "median": 0.86,
+    "win": 52.4
+   },
+   "fwd60": {
+    "n": 373659,
+    "mean": 1.64,
+    "median": 1.21,
+    "win": 53.0
+   }
+  }
+ },
+ "yearly": [
+  {
+   "year": "2006",
+   "domain_all": {
+    "n": 84,
+    "mean": -2.02
+   },
+   "R_group": {
+    "n": 23,
+    "mean": -7.01
+   },
+   "F_group": {
+    "n": 6,
+    "mean": -0.96
+   },
+   "market": {
+    "n": 84,
+    "mean": -2.02
+   }
+  },
+  {
+   "year": "2007",
+   "domain_all": {
+    "n": 81,
+    "mean": -3.2
+   },
+   "R_group": {
+    "n": 7,
+    "mean": -8.23
+   },
+   "F_group": null,
+   "market": {
+    "n": 81,
+    "mean": -3.2
+   }
+  },
+  {
+   "year": "2008",
+   "domain_all": {
+    "n": 107,
+    "mean": 10.98
+   },
+   "R_group": {
+    "n": 33,
+    "mean": 9.8
+   },
+   "F_group": {
+    "n": 30,
+    "mean": 10.89
+   },
+   "market": {
+    "n": 107,
+    "mean": 10.98
+   }
+  },
+  {
+   "year": "2009",
+   "domain_all": {
+    "n": 129,
+    "mean": -5.22
+   },
+   "R_group": {
+    "n": 5,
+    "mean": -24.17
+   },
+   "F_group": {
+    "n": 3,
+    "mean": -24.51
+   },
+   "market": {
+    "n": 129,
+    "mean": -5.22
+   }
+  },
+  {
+   "year": "2010",
+   "domain_all": {
+    "n": 147,
+    "mean": 1.3
+   },
+   "R_group": {
+    "n": 35,
+    "mean": -3.85
+   },
+   "F_group": {
+    "n": 26,
+    "mean": -6.93
+   },
+   "market": {
+    "n": 147,
+    "mean": 1.3
+   }
+  },
+  {
+   "year": "2011",
+   "domain_all": {
+    "n": 148,
+    "mean": 4.52
+   },
+   "R_group": {
+    "n": 55,
+    "mean": 6.35
+   },
+   "F_group": {
+    "n": 39,
+    "mean": 3.77
+   },
+   "market": {
+    "n": 148,
+    "mean": 4.52
+   }
+  },
+  {
+   "year": "2012",
+   "domain_all": {
+    "n": 183,
+    "mean": 0.9
+   },
+   "R_group": {
+    "n": 98,
+    "mean": -2.94
+   },
+   "F_group": {
+    "n": 86,
+    "mean": -3.87
+   },
+   "market": {
+    "n": 183,
+    "mean": 0.9
+   }
+  },
+  {
+   "year": "2013",
+   "domain_all": {
+    "n": 183,
+    "mean": 0.67
+   },
+   "R_group": {
+    "n": 54,
+    "mean": -1.4
+   },
+   "F_group": {
+    "n": 39,
+    "mean": -2.49
+   },
+   "market": {
+    "n": 183,
+    "mean": 0.67
+   }
+  },
+  {
+   "year": "2014",
+   "domain_all": {
+    "n": 169,
+    "mean": -1.17
+   },
+   "R_group": {
+    "n": 18,
+    "mean": -1.14
+   },
+   "F_group": {
+    "n": 12,
+    "mean": -0.55
+   },
+   "market": {
+    "n": 169,
+    "mean": -1.17
+   }
+  },
+  {
+   "year": "2015",
+   "domain_all": {
+    "n": 152,
+    "mean": -7.78
+   },
+   "R_group": {
+    "n": 12,
+    "mean": -10.55
+   },
+   "F_group": {
+    "n": 4,
+    "mean": -9.39
+   },
+   "market": {
+    "n": 152,
+    "mean": -7.78
+   }
+  },
+  {
+   "year": "2016",
+   "domain_all": {
+    "n": 158,
+    "mean": 1.01
+   },
+   "R_group": {
+    "n": 52,
+    "mean": -0.84
+   },
+   "F_group": {
+    "n": 42,
+    "mean": -1.5
+   },
+   "market": {
+    "n": 158,
+    "mean": 1.01
+   }
+  },
+  {
+   "year": "2017",
+   "domain_all": {
+    "n": 231,
+    "mean": -0.35
+   },
+   "R_group": {
+    "n": 12,
+    "mean": 1.15
+   },
+   "F_group": {
+    "n": 8,
+    "mean": 2.02
+   },
+   "market": {
+    "n": 23649,
+    "mean": 2.44
+   }
+  },
+  {
+   "year": "2018",
+   "domain_all": {
+    "n": 237,
+    "mean": 3.72
+   },
+   "R_group": {
+    "n": 74,
+    "mean": 4.82
+   },
+   "F_group": {
+    "n": 54,
+    "mean": 4.31
+   },
+   "market": {
+    "n": 33213,
+    "mean": 3.1
+   }
+  },
+  {
+   "year": "2019",
+   "domain_all": {
+    "n": 239,
+    "mean": -0.83
+   },
+   "R_group": {
+    "n": 59,
+    "mean": -5.11
+   },
+   "F_group": {
+    "n": 49,
+    "mean": -5.15
+   },
+   "market": {
+    "n": 38116,
+    "mean": -1.52
+   }
+  },
+  {
+   "year": "2020",
+   "domain_all": {
+    "n": 240,
+    "mean": 1.11
+   },
+   "R_group": {
+    "n": 35,
+    "mean": -0.62
+   },
+   "F_group": {
+    "n": 17,
+    "mean": -0.66
+   },
+   "market": {
+    "n": 37821,
+    "mean": 0.43
+   }
+  },
+  {
+   "year": "2021",
+   "domain_all": {
+    "n": 240,
+    "mean": 0.81
+   },
+   "R_group": {
+    "n": 59,
+    "mean": 1.31
+   },
+   "F_group": {
+    "n": 11,
+    "mean": -6.23
+   },
+   "market": {
+    "n": 38502,
+    "mean": -0.14
+   }
+  },
+  {
+   "year": "2022",
+   "domain_all": {
+    "n": 240,
+    "mean": 0.88
+   },
+   "R_group": {
+    "n": 46,
+    "mean": 0.08
+   },
+   "F_group": {
+    "n": 33,
+    "mean": 1.45
+   },
+   "market": {
+    "n": 41937,
+    "mean": 1.55
+   }
+  },
+  {
+   "year": "2023",
+   "domain_all": {
+    "n": 240,
+    "mean": -0.02
+   },
+   "R_group": {
+    "n": 21,
+    "mean": 0.45
+   },
+   "F_group": {
+    "n": 12,
+    "mean": 1.16
+   },
+   "market": {
+    "n": 44576,
+    "mean": -0.0
+   }
+  },
+  {
+   "year": "2024",
+   "domain_all": {
+    "n": 240,
+    "mean": -2.09
+   },
+   "R_group": {
+    "n": 19,
+    "mean": 1.49
+   },
+   "F_group": {
+    "n": 16,
+    "mean": 2.91
+   },
+   "market": {
+    "n": 48035,
+    "mean": 1.3
+   }
+  },
+  {
+   "year": "2025",
+   "domain_all": {
+    "n": 239,
+    "mean": -1.9
+   },
+   "R_group": null,
+   "F_group": null,
+   "market": {
+    "n": 45750,
+    "mean": -1.82
+   }
+  },
+  {
+   "year": "2026",
+   "domain_all": {
+    "n": 160,
+    "mean": 2.3
+   },
+   "R_group": {
+    "n": 22,
+    "mean": -2.31
+   },
+   "F_group": {
+    "n": 3,
+    "mean": -2.42
+   },
+   "market": {
+    "n": 28684,
+    "mean": 2.98
+   }
+  }
+ ]
+}

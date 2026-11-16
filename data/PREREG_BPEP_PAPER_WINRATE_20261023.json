@@ -1,0 +1,26 @@
+{
+  "prereg_id": "PREREG_BPEP_PAPER_WINRATE_20261023",
+  "created": "2026-10-23",
+  "authorization": "主人「继续，胜率还需模拟盘验证」——bp_ep 前瞻胜率模拟盘验证轨道",
+  "track": {
+    "source": "bp_ep_core (PROVEN, 手册core-satellite核心层)",
+    "basket": "bp_ep 20261021 月度Top20 (剔除600035已持仓 → 19只执行)",
+    "sizing": "约1.2-1.3万/只(名义~24.5万, 占账户~30%), 现金30.7万内",
+    "deployment": "R37情绪档开放的首个交易日经trade_executor双层防线建仓(每日09:37 schtasks重试, 关闭日静默)",
+    "rebalance": "每月最后交易日按bp_ep机器新篮子轮换(卖出走executor留痕), 到期前一日出计划"
+  },
+  "winrate_protocol": {
+    "unit": "每笔已平仓交易(pnl>0为胜, 与回测口径一致)",
+    "ledger": "data/bpep_fwd_winrate_ledger.jsonl (BUY/SELL全事件, executor回执)",
+    "minimum_sample": "≥30笔已平仓方可下统计学结论",
+    "baseline_backtest": "引擎BP腿豁免全窗胜率64.1% (1618+笔, 同源篮子); 机器口径月度轮换胜率未单独统计, 以引擎口径为对照基线"
+  },
+  "acceptance": "前瞻胜率≥55% (64.1%基线的80%容差带下沿) 且方向性为正 → 轨道继续并扩容; 40-55% → 缩容观察; <40% → 轨道暂停复盘",
+  "falsification": "前瞻期显著低于回测基线(前30笔<45%)即触发'回测-实盘差距'复盘, 检查执行滑点/闸门摩擦/篮子漂移三因",
+  "known_divergences_vs_backtest": [
+    "生产闸门含R37情绪档(回测引擎未实现) → 弱档日不建仓, 胜率预期存在上偏可能",
+    "篮子为20261021成形版, 与回测历史篮子构成同源不同期",
+    "600035已持仓未重复买入, 19/20执行"
+  ],
+  "notes": "本轨道为模拟盘(practice_190)零真实风险; 全部买卖经trade_executor留痕; 月度轮换执行前出计划呈报。"
+}

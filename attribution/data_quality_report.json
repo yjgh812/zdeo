@@ -1,0 +1,409 @@
+{
+  "run_time": "2026-08-10T20:43:18.645607",
+  "meta_db": {
+    "source": "dragon_quant_meta.db",
+    "monthly": [
+      {
+        "month": "202608",
+        "total_records": 37088,
+        "trading_days": 6,
+        "zero_count": 22580,
+        "zero_pct": 60.9,
+        "anomaly_count": 3257,
+        "reliable": false
+      },
+      {
+        "month": "202607",
+        "total_records": 125684,
+        "trading_days": 23,
+        "zero_count": 34083,
+        "zero_pct": 27.1,
+        "anomaly_count": 45992,
+        "reliable": false
+      },
+      {
+        "month": "202606",
+        "total_records": 100739,
+        "trading_days": 22,
+        "zero_count": 9850,
+        "zero_pct": 9.8,
+        "anomaly_count": 39954,
+        "reliable": false
+      },
+      {
+        "month": "202605",
+        "total_records": 82408,
+        "trading_days": 18,
+        "zero_count": 1596,
+        "zero_pct": 1.9,
+        "anomaly_count": 68998,
+        "reliable": false
+      },
+      {
+        "month": "202604",
+        "total_records": 95861,
+        "trading_days": 21,
+        "zero_count": 2011,
+        "zero_pct": 2.1,
+        "anomaly_count": 77994,
+        "reliable": false
+      },
+      {
+        "month": "202603",
+        "total_records": 100400,
+        "trading_days": 22,
+        "zero_count": 1535,
+        "zero_pct": 1.5,
+        "anomaly_count": 85888,
+        "reliable": false
+      },
+      {
+        "month": "202602",
+        "total_records": 63866,
+        "trading_days": 14,
+        "zero_count": 1395,
+        "zero_pct": 2.2,
+        "anomaly_count": 49513,
+        "reliable": false
+      },
+      {
+        "month": "202601",
+        "total_records": 91123,
+        "trading_days": 20,
+        "zero_count": 2160,
+        "zero_pct": 2.4,
+        "anomaly_count": 71989,
+        "reliable": false
+      },
+      {
+        "month": "202512",
+        "total_records": 107489,
+        "trading_days": 23,
+        "zero_count": 2935,
+        "zero_pct": 2.7,
+        "anomaly_count": 81002,
+        "reliable": false
+      },
+      {
+        "month": "202511",
+        "total_records": 93473,
+        "trading_days": 20,
+        "zero_count": 2341,
+        "zero_pct": 2.5,
+        "anomaly_count": 71154,
+        "reliable": false
+      },
+      {
+        "month": "202510",
+        "total_records": 79399,
+        "trading_days": 17,
+        "zero_count": 1936,
+        "zero_pct": 2.4,
+        "anomaly_count": 62220,
+        "reliable": false
+      },
+      {
+        "month": "202509",
+        "total_records": 102673,
+        "trading_days": 22,
+        "zero_count": 2477,
+        "zero_pct": 2.4,
+        "anomaly_count": 81156,
+        "reliable": false
+      },
+      {
+        "month": "202508",
+        "total_records": 97912,
+        "trading_days": 21,
+        "zero_count": 3166,
+        "zero_pct": 3.2,
+        "anomaly_count": 71616,
+        "reliable": false
+      },
+      {
+        "month": "202507",
+        "total_records": 107158,
+        "trading_days": 23,
+        "zero_count": 3547,
+        "zero_pct": 3.3,
+        "anomaly_count": 76472,
+        "reliable": false
+      },
+      {
+        "month": "202506",
+        "total_records": 93062,
+        "trading_days": 20,
+        "zero_count": 3133,
+        "zero_pct": 3.4,
+        "anomaly_count": 68590,
+        "reliable": false
+      },
+      {
+        "month": "202505",
+        "total_records": 88255,
+        "trading_days": 19,
+        "zero_count": 2618,
+        "zero_pct": 3.0,
+        "anomaly_count": 67035,
+        "reliable": false
+      },
+      {
+        "month": "202504",
+        "total_records": 97612,
+        "trading_days": 21,
+        "zero_count": 2700,
+        "zero_pct": 2.8,
+        "anomaly_count": 77675,
+        "reliable": false
+      },
+      {
+        "month": "202503",
+        "total_records": 97572,
+        "trading_days": 21,
+        "zero_count": 2842,
+        "zero_pct": 2.9,
+        "anomaly_count": 74418,
+        "reliable": false
+      },
+      {
+        "month": "202502",
+        "total_records": 83638,
+        "trading_days": 18,
+        "zero_count": 2184,
+        "zero_pct": 2.6,
+        "anomaly_count": 65719,
+        "reliable": false
+      },
+      {
+        "month": "202501",
+        "total_records": 83548,
+        "trading_days": 18,
+        "zero_count": 2237,
+        "zero_pct": 2.7,
+        "anomaly_count": 66105,
+        "reliable": false
+      },
+      {
+        "month": "202412",
+        "total_records": 101950,
+        "trading_days": 22,
+        "zero_count": 2114,
+        "zero_pct": 2.1,
+        "anomaly_count": 82762,
+        "reliable": false
+      },
+      {
+        "month": "202411",
+        "total_records": 97244,
+        "trading_days": 21,
+        "zero_count": 1694,
+        "zero_pct": 1.7,
+        "anomaly_count": 83025,
+        "reliable": false
+      },
+      {
+        "month": "202410",
+        "total_records": 83255,
+        "trading_days": 18,
+        "zero_count": 1432,
+        "zero_pct": 1.7,
+        "anomaly_count": 72139,
+        "reliable": false
+      },
+      {
+        "month": "202409",
+        "total_records": 87810,
+        "trading_days": 19,
+        "zero_count": 2610,
+        "zero_pct": 3.0,
+        "anomaly_count": 71712,
+        "reliable": false
+      },
+      {
+        "month": "202408",
+        "total_records": 101675,
+        "trading_days": 22,
+        "zero_count": 3490,
+        "zero_pct": 3.4,
+        "anomaly_count": 80089,
+        "reliable": false
+      },
+      {
+        "month": "202407",
+        "total_records": 106311,
+        "trading_days": 23,
+        "zero_count": 3301,
+        "zero_pct": 3.1,
+        "anomaly_count": 86451,
+        "reliable": false
+      },
+      {
+        "month": "202406",
+        "total_records": 87970,
+        "trading_days": 19,
+        "zero_count": 2145,
+        "zero_pct": 2.4,
+        "anomaly_count": 73163,
+        "reliable": false
+      },
+      {
+        "month": "202405",
+        "total_records": 92583,
+        "trading_days": 20,
+        "zero_count": 2603,
+        "zero_pct": 2.8,
+        "anomaly_count": 73374,
+        "reliable": false
+      },
+      {
+        "month": "202404",
+        "total_records": 92858,
+        "trading_days": 20,
+        "zero_count": 1876,
+        "zero_pct": 2.0,
+        "anomaly_count": 79193,
+        "reliable": false
+      },
+      {
+        "month": "202403",
+        "total_records": 97467,
+        "trading_days": 21,
+        "zero_count": 2659,
+        "zero_pct": 2.7,
+        "anomaly_count": 78395,
+        "reliable": false
+      },
+      {
+        "month": "202402",
+        "total_records": 69588,
+        "trading_days": 15,
+        "zero_count": 1035,
+        "zero_pct": 1.5,
+        "anomaly_count": 62431,
+        "reliable": false
+      },
+      {
+        "month": "202401",
+        "total_records": 101939,
+        "trading_days": 22,
+        "zero_count": 2429,
+        "zero_pct": 2.4,
+        "anomaly_count": 84199,
+        "reliable": false
+      }
+    ],
+    "valid_dates_count": 20,
+    "valid_dates": [
+      20260810,
+      20260805,
+      20260728,
+      20260727,
+      20260721,
+      20260707,
+      20260706,
+      20260703,
+      20260702,
+      20260701,
+      20260629,
+      20260627,
+      20260626,
+      20260625,
+      20260624,
+      20260623,
+      20260618,
+      20260617,
+      20260616,
+      20260615
+    ]
+  },
+  "qlib_bin": {
+    "source": "qlib_bin",
+    "calendar_days": 2565,
+    "date_range": "2016-01-04 ~ 2026-08-07",
+    "total_stocks": 5573,
+    "sample_check": [
+      {
+        "stock": "sh600000",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 9.21
+      },
+      {
+        "stock": "sh600004",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 7.58
+      },
+      {
+        "stock": "sh600005",
+        "records": 260,
+        "zeros": 1,
+        "zero_pct": 0.38,
+        "first_val": 0.0,
+        "last_val": 3.71
+      },
+      {
+        "stock": "sh600006",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 5.4
+      },
+      {
+        "stock": "sh600007",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 18.3
+      },
+      {
+        "stock": "sh600008",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 2.84
+      },
+      {
+        "stock": "sh600009",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 23.86
+      },
+      {
+        "stock": "sh600010",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 2.28
+      },
+      {
+        "stock": "sh600011",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 6.99
+      },
+      {
+        "stock": "sh600012",
+        "records": 2566,
+        "zeros": 1,
+        "zero_pct": 0.04,
+        "first_val": 0.0,
+        "last_val": 16.12
+      }
+    ],
+    "verdict": "CLEAN"
+  },
+  "recommendation": "使用qlib bin数据重跑所有回测，meta db仅用于近期（2026年6月后）实时数据查询"
+}

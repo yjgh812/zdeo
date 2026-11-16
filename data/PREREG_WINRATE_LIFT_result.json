@@ -1,0 +1,102 @@
+{
+ "prereg": "PREREG_WINRATE_LIFT_20260915",
+ "ran_at": "2026-09-15T23:46:49",
+ "elapsed_min": 0.4,
+ "codes_scanned": 4811,
+ "exp2_pullback_form": {
+  "chase": {
+   "n": 429741,
+   "win_rate": 43.4,
+   "mean": -0.285,
+   "median": -0.875,
+   "worst": -87.29
+  },
+  "pullback": {
+   "n": 56869,
+   "win_rate": 43.03,
+   "mean": -0.254,
+   "median": -1.045,
+   "worst": -69.5
+  },
+  "year_consistency": {
+   "2016": {
+    "chase_wr": 44.8,
+    "pullback_wr": 45.6,
+    "diff_pp": 0.8
+   },
+   "2017": {
+    "chase_wr": 44.4,
+    "pullback_wr": 43.2,
+    "diff_pp": -1.2
+   },
+   "2018": {
+    "chase_wr": 36.0,
+    "pullback_wr": 34.0,
+    "diff_pp": -2.0
+   },
+   "2019": {
+    "chase_wr": 49.4,
+    "pullback_wr": 46.8,
+    "diff_pp": -2.58
+   },
+   "2020": {
+    "chase_wr": 43.2,
+    "pullback_wr": 41.8,
+    "diff_pp": -1.41
+   },
+   "2021": {
+    "chase_wr": 46.7,
+    "pullback_wr": 45.9,
+    "diff_pp": -0.81
+   },
+   "2022": {
+    "chase_wr": 39.7,
+    "pullback_wr": 40.3,
+    "diff_pp": 0.51
+   },
+   "2023": {
+    "chase_wr": 46.3,
+    "pullback_wr": 42.7,
+    "diff_pp": -3.56
+   },
+   "2024": {
+    "chase_wr": 35.6,
+    "pullback_wr": 41.6,
+    "diff_pp": 6.0
+   },
+   "2025": {
+    "chase_wr": 45.2,
+    "pullback_wr": 43.8,
+    "diff_pp": -1.35
+   },
+   "2026": {
+    "chase_wr": 43.3,
+    "pullback_wr": 45.5,
+    "diff_pp": 2.28
+   }
+  },
+  "year_consistent_ratio": 0.36,
+  "win_rate_diff_pp": -0.37,
+  "verdict": "FAIL"
+ },
+ "exp4_stop_atr2": {
+  "fixed": {
+   "n": 429741,
+   "win_rate": 34.42,
+   "mean": 0.085,
+   "median": -8.0,
+   "worst": -47.03
+  },
+  "atr": {
+   "n": 429741,
+   "win_rate": 31.91,
+   "mean": -0.111,
+   "median": -4.902,
+   "worst": -47.38
+  },
+  "mean_diff": -0.196,
+  "worst_worsen_gt3pp": false,
+  "verdict": "FAIL"
+ },
+ "note": "T+1开盘买/T+5收盘卖(实验4:止损或20日上限); qfq; 全部判据见 PREREG_WINRATE_LIFT_20260915.json"
+}

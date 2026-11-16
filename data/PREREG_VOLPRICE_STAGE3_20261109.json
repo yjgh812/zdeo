@@ -1,0 +1,15 @@
+{
+  "id": "PREREG_VOLPRICE_STAGE3_20261109",
+  "status": "frozen",
+  "frozen_at": "2026-11-09 (主人精确定义轮, 跑前冻结, 每检验trial_budget=1)",
+  "context": "stage-1/2已证伪: 低位爆量/低位5日簇状堆量/红肥绿瘦/高位滞涨退出增量。本轮测主人新给出的精确定义, 与已测口径不同=新前提",
+  "tests_frozen": {
+    "T8_zhen_duiliang": "低位(pos五分位Q0)内按近20日hot天数(tr>1.5x tr60)分组: 真堆量=hot20>=8(两周持续), 短簇=hot20 3-7且hot5>=2, 无量=hot20<=2; 主判据: 真堆量-短簇 fwd10差>0且t>=2, 真堆量-无量差>0且t>=2; 两尾都报",
+    "T9_diliang_chaodingliang": "低位Q0内: 超顶量组=当前tr5>过去250日tr5最大值(近10日除外); 对照=安静组(tr5处250日50分位下); 主判据: 超顶量-安静 fwd10差>0且t>=2",
+    "T10_shizhi_fenceng": "circ_mv三档(<50亿/50-300亿/>300亿), 每档内换手率五分位fwd20; 主判据(方向检验): 各档内 Q最高-Q最低 spread 方向与显著性逐档报告; 描述各档最优档位(主人假设: 有效区间随市值上移); 两尾",
+    "T11_ciri_yizhi": "信号日: tr∈(4.5,5.5)%且volume_ratio∈(2,3); 入场T+1收盘持1日(T+2收盘卖, 费0.3%); 主判据: 该组fwd1-全市场基线fwd1差<0且t>=2 (主人假设: 次日反向约束41%/47%); 附报组胜率"
+  },
+  "shared": "同stage-2管线(qfq+daily_basic含circ_mv/volume_ratio+ST点时), next-bar, FM日度聚类t, 最小日数300, 不足记insufficient_power",
+  "deferred": "T5背离不对称(MACD口径, 下轮); T6情境资金流(字段待核); T7板块扩散(管线待建); 分时族(分钟库立项)",
+  "filing": "结果落 reports/VOLPRICE_STAGE3_20261109/, 全部观察级"
+}

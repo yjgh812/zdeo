@@ -1,0 +1,26 @@
+{
+ "thresholds": {
+  "d1": -20000000.0,
+  "d5": -15000000.0,
+  "d20": -30000000.0
+ },
+ "warn": [],
+ "pass": [],
+ "err": [
+  [
+   "002958",
+   "青农商行",
+   "RemoteDisconnected"
+  ],
+  [
+   "603323",
+   "苏农银行",
+   "RemoteDisconnected"
+  ],
+  [
+   "601916",
+   "浙商银行",
+   "RemoteDisconnected"
+  ]
+ ]
+}

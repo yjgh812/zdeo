@@ -1,0 +1,17 @@
+{
+  "prereg_id": "lhb_inst_timing_20260908",
+  "created": "2026-09-08",
+  "owner_directive": "主人'龙虎榜数据已更新,其他继续'=课题#2解锁(席位明细238万行2010-2026/4051交易日零缺口已落地)",
+  "external_source": "华创证券2022-06《物极必反,龙虎榜机构模型》方法论(经QuantsPlaybook calc_func.py核实): 席位名含'机构专用|机构投资者'=机构席位; 日特征=全市场机构席位净买总额/指数当日成交额; 特征分布建模=特征在滚动历史分布中的分位驱动择时",
+  "negative_prior_disclosure": "择时族负先验: TIMING-PANIC-STAGE1/SKILL-SWEEP2/S3-REOPEN 均falsified。口径差异声明: TIMING-PANIC=恐慌日事件择时(大跌日触发); 本课题=机构净买强度连续特征的滚动分布分位(数据源=龙虎榜机构席位净买,机制=机构行为强度), 数据源/频率/机制均不同。主判据不预设方向(高分位=机构爆买,后市可跌[物极必反]可涨[机构聪明钱],方向如实记录)",
+  "data": "lhb_seat_detail(fundamental_data.db, operate_dept_name LIKE '%机构专用%'), 去重口径=drop_duplicates(trade_date,security_code,net)(多上榜原因重复披露同值合并); 指数=dragon_quant.index_daily 000300(沪深300, 2005+含amount); 分位窗口=250交易日(2010暖机,统计2011+)",
+  "criteria": {
+    "P1_extreme_diff": "最高分位桶(80-100%)与最低分位桶(0-20%)的沪深300次20日收益差 |Welch t|>=2, 方向如实记录",
+    "P2_year_consistency": "以P1主方向为准, 方向一致年 >= 6/10"
+  },
+  "verdicts": {
+    "P1_P2_pass": "机构净买强度分位含择时信息 → 登记观察族, 方向/幅度如实呈报(阈值分位记录), 禁直接生产",
+    "fail": "无信息 → 归档(择时族负先验家族再添一员)"
+  },
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/LHB_INST_TIMING_20260908.{json,md} + wfa_trials.jsonl"
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "version": "1.1",
+    "generated": "2026-08-22",
+    "source": "五轮全域历史回测迭代收敛 (2016-01-01 ~ 2026-08-14, QFQ前复权, 10万本金)",
+    "note": "回测历史理论绩效不代表未来实盘收益; v1.1: bp_ep月度调仓裁决落地"
+  },
+  "production_combo": {
+    "name": "核心-卫星 60/40",
+    "strategy": [
+      "bp+ep_core",
+      "ml_signal"
+    ],
+    "weights": {
+      "bp+ep_core": 0.6,
+      "ml_signal": 0.4
+    },
+    "account_mode": "独立账户各自按原频率调仓，按权重合成净值（禁用框架PortfolioBacktest周频模式）",
+    "backtest": {
+      "total_return_pct": 242.5,
+      "cagr_pct": 12.4,
+      "sharpe": 0.65,
+      "max_drawdown_pct": -15.4,
+      "final_equity": 342500,
+      "note": "2026-08-22裁决: bp_ep改月度(22日)调仓后重算; 对照V1(5日)组合185.21%; ⚠️2026-08-24作废: 本版本数字基于非PIT stock_factors_fundamental(55.7%行前视泄漏), 以v1.2 PIT修复版为准"
+    }
+  },
+  "strategies": {
+    "bp+ep_core": {
+      "signal": "stock_factors_fundamental EP+BP等权排名Top20",
+      "price_filter": "<=30元",
+      "rebalance": "monthly(22日)",
+      "max_holding_bars": 0,
+      "max_weight_per_stock": 0.2,
+      "status": "core",
+      "backtest": {
+        "total_return_pct": 259.2,
+        "cagr_pct": 12.8,
+        "sharpe": 0.65,
+        "max_drawdown_pct": -24.5,
+        "note": "2026-08-22频率扫描: 22日月度最优(5日163.6%/60日59.1%); ⚠️2026-08-24作废: 非PIT前视虚高, PIT修复后+134.2%(Top20)/+144.3%(Top15)"
+      }
+    },
+    "ml_signal": {
+      "signal": "stock_ml_scores_v22.ml_prob Top20",
+      "rebalance": "monthly",
+      "max_holding_bars": 45,
+      "max_weight_per_stock": 0.2,
+      "status": "satellite",
+      "backtest": {
+        "total_return_pct": 217.61,
+        "cagr_pct": 11.46,
+        "sharpe": 0.68,
+        "max_drawdown_pct": -33.7
+      }
+    },
+    "p2_signal": {
+      "signal": "stock_signals_p2.p2_prob, 牛市>=0.65/熊市>=0.70, Top5",
+      "rebalance": "daily",
+      "max_holding_bars": 45,
+      "max_weight_per_stock": 0.2,
+      "status": "auxiliary",
+      "backtest": {
+        "total_return_pct": 18.64,
+        "cagr_pct": 1.62,
+        "sharpe": 0.2,
+        "max_drawdown_pct": -33.5
+      }
+    },
+    "composite_signal": {
+      "signal": "stock_signals_v4 composite_score>=0.55 AND ai_prob_5d>=0.35, Top10",
+      "rebalance": "daily",
+      "max_holding_bars": 45,
+      "max_weight_per_stock": 0.2,
+      "status": "research_only",
+      "backtest": {
+        "total_return_pct": -24.7,
+        "cagr_pct": -2.6,
+        "sharpe": -0.64,
+        "max_drawdown_pct": -25.6
+      }
+    },
+    "v375_signal": {
+      "status": "RETIRED",
+      "reason": "阈值0.60~0.75全区间亏损(-50%~-98%)",
+      "action": "从生产信号源移除"
+    }
+  },
+  "risk_rules": {
+    "max_weight_per_stock": 0.2,
+    "stop_loss_pct": 0.08,
+    "stop_loss_pct_note": "卖出三铁律-8%恒定不变(2026-08-22主人确认,不落实盘执行器); S2=6.5%仅限回测引擎口径预提(收盘触发修正跳空滑点, bp_ep MDD+2.1pp) 记录于回测配置tulong_backtest_full_report.py, 实盘/模拟盘执行器保持-8%",
+    "max_positions": 50,
+    "price_limit": 30.0,
+    "time_stop_days": {
+      "signal_strategies": 45,
+      "core_bp_ep": 0
+    },
+    "t_plus_1": true,
+    "st_filter": true,
+    "exclude": [
+      "688",
+      "689",
+      "8",
+      "4",
+      "92",
+      "43"
+    ]
+  },
+  "pending_enhancements": [
+    "板块集中度控制: 单板块<=30%",
+    "归因经验库联动选股",
+    "ATR(14)x2.5动态止损替换固定-8%",
+    "组合胜率目标78-82%未达成(实际50.5%), 年化200%目标为A股不可达(实际10.3%)",
+    "V3终验(2026-08-19终局): S1 Gap保护: 2%大亏130->127笔(-2.3%)/3%大亏130笔(0改善)均亏幅反升 -(-30%验收未达) => 最终否决, 不采用(收益-4.7~-8pp换不来风控改善)",
+    "V3终验: M4旧版(回撤20%减半)已否决(bp_ep -130pp); M4改版(回撤25%仅停买)已否决(收益-16.9pp仅MDD+0.9pp, 阈值过高2026-07才触发)",
+    "V3终验: 唯一通过验收=S2止损6.5%(-5.8pp换MDD+2.1pp夏普持平), 已入试点待执行器同步",
+    "V3终验: 自定义Backtest类回归bug已定位(bp_ep信号被削弱致收益-77%), 官方结论一律用原生SingleStrategyBacktest复验",
+    "2026-08-22落地: bp_ep quarterly(实际5日)→monthly(22日), 组合185.21%→242.5%; 引擎mapping已修quarterly:60; trailing框架已实现默认关"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "name": "stock-analysis-mcp",
+  "version": "0.3.0",
+  "description": "Local-first A-share stock analysis MCP with Agent Skills, screening, chart structure, reports, multi-timeframe analysis, and backtesting",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "stock-analysis-mcp": "./index.js",
+    "stock-analysis": "./bin/stock-analysis.js"
+  },
+  "files": [
+    "index.js",
+    "bin/",
+    "lib/",
+    "src/**/*.py",
+    "skills/",
+    ".claude-plugin/",
+    ".mcp.json",
+    "pyproject.toml",
+    "README.md",
+    "README.zh-CN.md",
+    "AGENTS.md",
+    "ARCHITECTURE.md",
+    "CLAUDE.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node bin/stock-analysis.js postinstall",
+    "test:node": "node --test node-tests/*.test.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stock",
+    "stock-analysis",
+    "china-stock",
+    "a-stock",
+    "ai",
+    "finance"
+  ],
+  "author": "lalal-zzz <lalal-zzz@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lalal-zzz/stock-analysis-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/lalal-zzz/stock-analysis-mcp/issues"
+  },
+  "homepage": "https://github.com/lalal-zzz/stock-analysis-mcp#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "mcp": {
+    "server": {
+      "command": "npx",
+      "args": [
+        "stock-analysis-mcp"
+      ]
+    },
+    "tools": [
+      "init_full_data",
+      "update_daily_data",
+      "get_data_status",
+      "screen_stocks",
+      "get_kline_local_or_net",
+      "render_stock_charts",
+      "get_stock_kline_period",
+      "get_rank_trend_data",
+      "get_sector_list",
+      "get_stock_belong_sectors",
+      "generate_stock_report",
+      "scan_patterns",
+      "scan_sector_patterns",
+      "get_pattern_history",
+      "get_key_levels",
+      "sync_stock_kline_universe",
+      "screen_rising_candidates",
+      "prepare_stock_analysis",
+      "find_cross_timeframe_similar_patterns",
+      "backtest_pattern_strategy"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

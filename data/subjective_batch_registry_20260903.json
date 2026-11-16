@@ -1,0 +1,64 @@
+{
+ "_meta": {
+  "purpose": "主观批专项跟踪登记（O-N4，2026-09-08 第八轮自省 A1 收口）",
+  "background": "2026-09-03 五笔题材买入绕过 trade_executor（violation_log 根目录 21:41:45+21:45 富字段双记录，naked_audit compliance_rate=0.0）。已实现损失：郑中设计 9/8 清仓 -6,720 元；金信诺 9/7 清仓 -6,106 元；本登记为在仓 3 只的专项跟踪标签。",
+  "constraints": [
+   "禁止摊薄补仓：登记内任何代码的新 BUY 须主人逐笔显式指令，executor/会话不得自行加仓",
+   "退出口径与普通持仓一致：-8% 硬止损自动执行；趋势仓按 trend_checker v2.2 判定走坏只读提请（本批不属抄底仓，不进 position_class_registry 豁免名单）",
+   "本登记为只读跟踪标签，不修改任何 executor 拦截逻辑（按主人 2026-09-08『按推荐继续』批准的默认口径：只读标签+人工纪律，拦截为可选未启用）",
+   "清仓后本登记对应条目标记 closed 并保留作违规代价台账"
+  ],
+  "registered_by": "zcode session 20260908（主人『按推荐继续』授权轮）",
+  "updated": "2026-09-15 自省第二期S5收口: 大烨智能/神力股份 S-5清仓标closed(台账open_orders真值); 在仓=open唯一=300025 华星创业18100股(9/14收盘5.81 qfq口径, entry 6.05, 浮亏约-3.97%, 距-8%线5.566约4.2%, 趋势仓走坏监控+S-5链兜底不变)"
+ },
+ "batch_id": "subjective_batch_20260903",
+ "origin_channel": "题材主观买入（违宪裸奔，已记 violation_log type=naked_trade repeat_30d=5 escalate）",
+ "build_date": "20260903",
+ "total_cost": 547614,
+ "realized": [
+  {
+   "code": "002811",
+   "name": "郑中设计",
+   "exit_date": "20260908",
+   "exit_price": 14.62,
+   "pnl_amount": -6720,
+   "status": "closed"
+  },
+  {
+   "code": "300252",
+   "name": "金信诺",
+   "exit_date": "20260907",
+   "pnl_amount": -6106,
+   "status": "closed"
+  },
+  {
+   "code": "300670",
+   "name": "大烨智能",
+   "exit_date": "20260911",
+   "exit_price": 6.76,
+   "pnl_amount": -10658.0,
+   "status": "closed",
+   "exit_channel": "S-5止损(SELL_ALL) executor",
+   "pnl_basis": "entry_price x 台账FILLED卖价 x qty"
+  },
+  {
+   "code": "603819",
+   "name": "神力股份",
+   "exit_date": "20260914",
+   "exit_price": 15.47,
+   "pnl_amount": -9490.0,
+   "status": "closed",
+   "exit_channel": "S-5止损(SELL_ALL) executor",
+   "pnl_basis": "entry_price x 台账FILLED卖价 x qty"
+  }
+ ],
+ "open_positions": [
+  {
+   "code": "300025",
+   "name": "华星创业",
+   "entry_price": 6.05,
+   "volume": 18100,
+   "note": "约10.9万，禁补仓"
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "scan_date": 20261029,
+ "built_at": "2026-10-30 15:45",
+ "env_switch": "ON",
+ "eq": 23.34,
+ "eq_ma20": 25.55,
+ "n_signals": 1098,
+ "shadow_sample_top10_random_seed_scan_date": [
+  {
+   "code": "601127",
+   "drawdown20_pct": 20.1,
+   "close": 41.79,
+   "name": "赛力斯"
+  },
+  {
+   "code": "603890",
+   "drawdown20_pct": 21.8,
+   "close": 12.5,
+   "name": "春秋电子"
+  },
+  {
+   "code": "001212",
+   "drawdown20_pct": 27.9,
+   "close": 27.61,
+   "name": "中旗新材"
+  },
+  {
+   "code": "300311",
+   "drawdown20_pct": 24.0,
+   "close": 4.9,
+   "name": "任子行"
+  },
+  {
+   "code": "600661",
+   "drawdown20_pct": 21.4,
+   "close": 7.95,
+   "name": "昂立教育"
+  },
+  {
+   "code": "601026",
+   "drawdown20_pct": 25.8,
+   "close": 11.31,
+   "name": "道生天合"
+  },
+  {
+   "code": "000739",
+   "drawdown20_pct": 29.4,
+   "close": 19.5,
+   "name": "普洛药业"
+  },
+  {
+   "code": "002836",
+   "drawdown20_pct": 21.4,
+   "close": 9.65,
+   "name": "新宏泽"
+  },
+  {
+   "code": "002748",
+   "drawdown20_pct": 22.1,
+   "close": 10.64,
+   "name": "世龙实业"
+  },
+  {
+   "code": "301282",
+   "drawdown20_pct": 34.5,
+   "close": 32.68,
+   "name": "金禄电子"
+  }
+ ],
+ "prereg": "PREREG_DIP_ENV_ABS_ACTIVE_20261029 fp=177e7b7a",
+ "note": "shadow-only zero-buy; simulated buy needs owner approval"
+}

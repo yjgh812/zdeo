@@ -1,0 +1,535 @@
+{
+ "version": "3.0",
+ "established": "2026-09-20",
+ "source_of_truth": "reports/deep_self_review_full_spectrum_20260920.md §一 E轨/S轨（初始化；本文件=提取的结构化唯一真源；模式状态演进在本文件维护）；增量来源reports/deep_self_review_full_spectrum_20260923.md（20260923登记E15/S11-S16）",
+ "match_note": "keywords=辅助匹配非决定；月度自省强制人工对照全表，命中即 --hit 登记",
+ "human_track": {
+  "E1": {
+   "name": "追热点手动买入",
+   "keywords": [
+    "追热点",
+    "手动买入",
+    "高换手",
+    "追涨",
+    "盘感单"
+   ],
+   "evidence": "换手≥80分位112笔占86%亏损;pos60-80追涨段胜率3.3%",
+   "measures": "查一第零问LOW_VOL默认不买+名单制",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E2": {
+   "name": "拖延止损/走坏不卖",
+   "keywords": [
+    "止损拖延",
+    "走坏不卖",
+    "手动批止损",
+    "拖延处置"
+   ],
+   "evidence": "8月底-9月上旬手动批-3.6万(止损)-2.5万(走坏)",
+   "measures": "S-5自动链四重+悬置时效台账",
+   "recurrence_count": 1,
+   "status": "active"
+  },
+  "E3": {
+   "name": "逆势重仓加仓",
+   "keywords": [
+    "逆势加仓",
+    "退潮加仓",
+    "尾盘加仓",
+    "越跌越买"
+   ],
+   "evidence": "9/11糖链退潮日尾盘加仓至20%+,3日兑现-2.92万",
+   "measures": "EXP-SH-20260912在册+B3簇禁买",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E4": {
+   "name": "绕系统通道买入",
+   "keywords": [
+    "绕闸门",
+    "App端",
+    "裸奔",
+    "通道外",
+    "涨乐"
+   ],
+   "evidence": "App端三笔买入归因/闸门/台账三环节失明(9/11)",
+   "measures": "模拟盘唯一平台铁律+naked_trade_audit",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E5": {
+   "name": "集中度超标悬置不决",
+   "keywords": [
+    "集中度",
+    "悬置",
+    "超线",
+    "26%"
+   ],
+   "evidence": "弘信电子26%超线9/17提请悬置4天(实仓实测)",
+   "measures": "B2悬置48h硬上限+PendingAging_1545自动提醒",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E6": {
+   "name": "板块簇集中重蹈覆辙",
+   "keywords": [
+    "簇",
+    "聚簇",
+    "板块集中",
+    "同行业多仓",
+    "止损带拥挤"
+   ],
+   "evidence": "糖链5股T+5全灭后煤炭三仓再聚簇同向逼近止损,止损带拥挤12.6%市值",
+   "measures": "B3簇禁买(同申万L1或主题簇>15%禁新买)+SectorClusterAlert_1400",
+   "recurrence_count": 1,
+   "status": "active"
+  },
+  "E7": {
+   "name": "主线识别滞后",
+   "keywords": [
+    "主线漏判",
+    "识别滞后",
+    "接棒",
+    "零暴露",
+    "轮动初期"
+   ],
+   "evidence": "汽车零部件8涨停接棒零暴露(9/17);红棉糖链五首板漏判(9/9)",
+   "measures": "首板共振探测器+mainline_radar",
+   "recurrence_count": 1,
+   "status": "active"
+  },
+  "E8": {
+   "name": "预判侵蚀客观",
+   "keywords": [
+    "漏查",
+    "预判",
+    "主观先于数据",
+    "加息"
+   ],
+   "evidence": "山金国际漏查美联储加息被撤回呈报(9/18纠偏)",
+   "measures": "preflight查二三源降级+事实预判物理隔离",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E9": {
+   "name": "归因晚一拍",
+   "keywords": [
+    "归因晚",
+    "前馈缺位",
+    "盘感卡片漏",
+    "事后解释"
+   ],
+   "evidence": "红棉首板共振当日盘感卡片判无主线(9/9)",
+   "measures": "板块共振优先于连板高度的判定顺序",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E10": {
+   "name": "盈利归因错觉",
+   "keywords": [
+    "归因错觉",
+    "浮盈归因",
+    "能力错觉",
+    "选股能力"
+   ],
+   "evidence": "实测赢家=低位埋伏+regime馈赠+2-6周持有非选股能力",
+   "measures": "第零问+六赢家归因报告对照",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E11": {
+   "name": "自省设施误读",
+   "keywords": [
+    "真源误读",
+    "占位文件",
+    "废弃文件",
+    "未过检索闸"
+   ],
+   "evidence": "初版误将data/violation_log占位文件当真源(已勘误)",
+   "measures": "真源优先级§2+检索闸N7",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E12": {
+   "name": "复盘归纳转化率不足",
+   "keywords": [
+    "转化率",
+    "归纳不落地",
+    "组合级教训",
+    "变体重演"
+   ],
+   "evidence": "62证伪+167经验但组合级教训直到实仓逼出来(糖链→煤炭)",
+   "measures": "本注册表+月度对照+B3",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E13": {
+   "name": "建而不验(存在性验收冒充可用性验收)",
+   "keywords": [
+    "上线",
+    "就绪",
+    "建好",
+    "定时任务",
+    "schtasks",
+    "dry实测",
+    "静默空转"
+   ],
+   "evidence": "MondayBuy_0928三重拦截静默空转0挂单(9/21,REJECT日志09:28可见无人读)+PortraitAgent_2250哑火(9/8二次实锤)+health伪健康(9/10)=第三次重演; 共性=验收停在任务存在/文件存在, 从未实测产出",
+   "measures": "定时交易脚本上线前必须--dry实测+人工读输出; 执行后核验成交+REJECT即toast; 计划定稿必附现金对账行",
+   "recurrence_count": 3,
+   "status": "active"
+  },
+  "E14": {
+   "name": "评审立场双标(先站队后找理由)",
+   "keywords": [
+    "对比",
+    "外部",
+    "其他AI",
+    "空头排列",
+    "多头确认",
+    "范式",
+    "不建议",
+    "否决"
+   ],
+   "evidence": "电魂603258基本面锚否决量价最强票当日涨停证伪(9/21)+对比外部AI空头排列一票否决(对方一周5/5全正+7.44%超额+6.83pp)+反思时口径未核实被主人二次纠正",
+   "measures": "对比评审协议(核口径基期→声明范式互评→可实现性横向比→立场风险段); 外部基准跟踪组(基期9/11)30日对账; 绝对化断言视为自查信号",
+   "recurrence_count": 3,
+   "status": "active"
+  },
+  "E15": {
+   "name": "执行同回合销账缺失",
+   "keywords": [
+    "销账",
+    "台账虚挂",
+    "PD台账",
+    "同回合",
+    "事实脱节",
+    "SLA"
+   ],
+   "evidence": "PD-001山西焦煤9/21已成交但台账open虚挂5个交易日(9/23双源核验才销账);台账与事实脱节超SLA;deep_self_review_full_spectrum_20260923.md",
+   "measures": "B8销账同回合条款(交易执行完成当日销改对应PD台账条目)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "E16": {
+   "name": "缺真值越界推演持仓状态",
+   "keywords": [
+    "止损误判",
+    "浮亏推演",
+    "当日跌幅",
+    "持仓口径",
+    "伪预警",
+    "单日涨跌判趋势",
+    "口径冒充",
+    "成本价",
+    "真值缺失"
+   ],
+   "evidence": "20261022凌晨复盘会话:广汇物流(sz600603)当日-6.19%被误判为逼近-8%硬止损(S-5锚定成本价浮亏;agent无westock盈亏真值,用当日行情口径冒充盈亏口径),级联复制4处(复盘§5.4/盘前§八/补丁§四/关注名单);真值修正=浮盈+3.97%,S-5不触发,即使次日跌停浮亏亦约-6.4%。伴生:同夜按单日涨跌标持仓强弱被qfq趋势口径反转(飞南资源+2.11%实为下跌趋势反弹、中电港破位漏报)。reports/daily_review_holdings_tech_check_20261022.md §一/§二||R0根因补充(20261022 01:20对账):持仓成本/浮盈真值当晚21:00已存在reports/daily_review_4dim_20261021.md(并行会话产物,广汇成本4.808/浮盈+3.97%白纸黑字),分析agent开工未检索reports/当日既有产物=真源审计不彻底(A1违规),若先读4dim则误判不会发生;同时4dim揭示广汇-6.19%真正催化=10-19晚三季报净利-68.27%利空补跌(技术复核归因漏核心利空),且电池链当日重挫(宁德-12.03%)为创业板-1.62%主因,复盘均漏检",
+   "measures": "①复盘/盘前产物持仓段双口径合同:止损止盈预警仅引用westock成本/浮盈真值,缺真值标N/A,禁用当日涨跌幅替代;②技术状态仅引用qfq生产真源(D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db)且强制校验maxdate=目标交易日;③产出后grep历史错误表述自查;④快照加cost字段属数据合同变更待主人裁决(holdings_snapshot_refresh.py三要素为有意设计,哨族用qfq行情)",
+   "recurrence_count": 1,
+   "status": "active"
+  }
+ },
+ "system_track": {
+  "S1": {
+   "name": "静默失效族",
+   "keywords": [
+    "静默失效",
+    "MCP漂移",
+    "哑火",
+    "断链",
+    "漏派发"
+   ],
+   "evidence": "台账10类:trend_checker漂移两天/14:30漏派发/qfq副本滞后/schtasks哑火9-7/画像断链/22:00僵死",
+   "measures": "链锁心跳+health探针+产物探针优先于进程匹配",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S2": {
+   "name": "存量仓位无regime联动",
+   "keywords": [
+    "满仓扛跌",
+    "regime联动",
+    "停跑语义",
+    "持仓语义错配"
+   ],
+   "evidence": "LOW_VOL期间88.7%满仓扛跌,普涨受益属运气非机制",
+   "measures": "T1-R19集中度影子+regime预算闸门prereg(10/1)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S3": {
+   "name": "集中度闸门空白",
+   "keywords": [
+    "闸门空白",
+    "存量无闸",
+    "R1-R18不管存量"
+   ],
+   "evidence": "单票26%/煤炭簇7.2%无一闸门拦截",
+   "measures": "T1-R19影子在途",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S4": {
+   "name": "主线前馈未闭环",
+   "keywords": [
+    "前馈",
+    "注入手工",
+    "作战清单"
+   ],
+   "evidence": "首板共振探测器已落地但作战清单注入仍手工",
+   "measures": "mainline_radar --auto快照接线",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S5": {
+   "name": "卖出侧单薄",
+   "keywords": [
+    "卖出链路",
+    "滞仓",
+    "去弱留强",
+    "小亏放血"
+   ],
+   "evidence": "趋势走坏链路长;20日到期=最优可操作未接生产;34只小亏票滞仓",
+   "measures": "M3卖出20日prereg(待立)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S6": {
+   "name": "情绪周期设施未验证",
+   "keywords": [
+    "情绪周期",
+    "heuristic未验证"
+   ],
+   "evidence": "v1阈值无判别力+退潮方向相反(n2604重放+P-B1双证伪)",
+   "measures": "主人裁决PD-03选C停用(2026-09-20)",
+   "recurrence_count": 0,
+   "status": "resolved_20260920_stop"
+  },
+  "S7": {
+   "name": "regime判定滞后",
+   "keywords": [
+    "regime滞后",
+    "切换慢一拍",
+    "LOW_VOL确认"
+   ],
+   "evidence": "连续3日确认才切换,切换日当天无法事前知道",
+   "measures": "HMM概率轴二期(10/1后)候选解法",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S8": {
+   "name": "数据层残余缺陷",
+   "keywords": [
+    "单元格修订",
+    "副本滞后",
+    "锚漂移",
+    "历史行改写"
+   ],
+   "evidence": "qfq历史单元格修订未根治(600064@0726下修2.8%);副本滞后1日常态化",
+   "measures": "漂移v3移交数据层+历史行变更对比守卫候选",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S9": {
+   "name": "调度工艺债",
+   "keywords": [
+    "GBK",
+    "电池",
+    "僵死",
+    "杀进程",
+    "schtasks坑"
+   ],
+   "evidence": "GBK崩溃族反复/电池条件强杀/嵌套僵死杀8进程",
+   "measures": "纯ASCII启动器+电源双豁免+单实例锁四态",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S10": {
+   "name": "好策略在场外",
+   "keywords": [
+    "零上场",
+    "在场外",
+    "冻结期",
+    "正期望无法转化"
+   ],
+   "evidence": "组合C 11年+202%但9月零买入;闸门冻结期(至10/1)与LOW_VOL停跑叠加",
+   "measures": "10/1解冻评估+bp_ep 10/8首执+组合C 11/20复核",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S11": {
+   "name": "盈亏账本口径断裂",
+   "keywords": [
+    "realizedProfit",
+    "账本口径",
+    "对账层",
+    "已实现盈亏",
+    "月度账本"
+   ],
+   "evidence": "westock realizedProfit(仅当前持仓)与本地trade_records已实现盈亏矛盾无对账层,月度账本不可全自动生成;9/23审计实测-68,998 vs 0;deep_self_review_full_spectrum_20260923.md",
+   "measures": "monthly_ledger_recon.py月度对账件(9/30首跑)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S12": {
+   "name": "归因库覆盖偏科",
+   "keywords": [
+    "归因偏科",
+    "持仓归因",
+    "limit_up",
+    "闭环断链",
+    "反向赋能"
+   ],
+   "evidence": "engine_attribution_log只记涨停事件归因不记持仓买卖归因,最近20条全为limit_up(9/23审计);归因经验库反向赋能选股闭环断链;deep_self_review_full_spectrum_20260923.md",
+   "measures": "record链路同步归因行(前向)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S13": {
+   "name": "executor撤单工艺缺陷",
+   "keywords": [
+    "撤单",
+    "废单",
+    "低价校验",
+    "撤单分类",
+    "撤单率"
+   ],
+   "evidence": "撤单率21%含0.05元废单混入,无低价前置校验无撤单分类;9月401条订单审计;deep_self_review_full_spectrum_20260923.md",
+   "measures": "T7低价前置校验+撤单分类日志(20260923当轮修复,测试16/16通过)",
+   "recurrence_count": 0,
+   "status": "resolved_20260923"
+  },
+  "S14": {
+   "name": "数据截面滞后引用",
+   "keywords": [
+    "截面滞后",
+    "日期戳",
+    "宽度数据",
+    "滞后引用",
+    "无标注"
+   ],
+   "evidence": "9/18大涨日复盘json引用9/17涨跌宽度,源滞后>1交易日无标注(第2次复现,东财板块口径三份json均注滞后);deep_self_review_full_spectrum_20260923.md",
+   "measures": "B10截面日期戳强制条款",
+   "recurrence_count": 2,
+   "status": "active"
+  },
+  "S15": {
+   "name": "注册表计数漂移",
+   "keywords": [
+    "计数漂移",
+    "条数不符",
+    "文档≠事实",
+    "静默失效变体",
+    "章程勘误"
+   ],
+   "evidence": "章程记录注册表22条模式实际24条,文档≠事实(静默失效族变体);9/23审计;deep_self_review_full_spectrum_20260923.md",
+   "measures": "章程两处已勘误并留注(20260923)+月度自省强制人工对照全表",
+   "recurrence_count": 0,
+   "status": "resolved_20260923"
+  },
+  "S16": {
+   "name": "走坏核销延迟不可观测",
+   "keywords": [
+    "核销延迟",
+    "提请时间戳",
+    "卖出效率",
+    "不可观测",
+    "走坏处置"
+   ],
+   "evidence": "trade_records无提请时间戳,卖出侧(走坏→核销)效率无法测量;9/23审计尝试测量失败如实记录;deep_self_review_full_spectrum_20260923.md",
+   "measures": "trend_checker提请时间戳落盘(20260923同日另件落地)",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S17": {
+   "name": "碎仓清理无个股状态过滤",
+   "keywords": [
+    "碎仓清理",
+    "金额排序",
+    "无盈亏过滤",
+    "涨停误清",
+    "留强汰弱缺失",
+    "红档减仓"
+   ],
+   "evidence": "10/21 PD-042 L2 清理: 兆讯传媒浮盈+11.6%且当日20cm涨停(出版板块20/29家上涨)与山东出版-3.7%亏损碎仓同名单同批机械清理,卖后当日最高+5.0%,主人裁定'趋势没坏不该卖';复盘daily_review_4dim_20261021.md",
+   "measures": "PD-042 L2 碎仓清理执行器已按主人 2026-10-21 令整体废除(PROJECT_BOUNDARY §74, 脚本归档 archive/pd042_l2_execute_20261021_abolished_20261021.py, 禁复活: 碎仓治理重启须主人重新立项且不得销毁研究样本)——根治优于过滤; 教训沉淀为设计原则: 未来任何批量卖出/清理名单生成时, 名单必须含个股状态输入(浮盈/当日涨幅/板块热度), 不得仅按仓位金额机械排序",
+   "recurrence_count": 0,
+   "status": "active"
+  },
+  "S18": {
+   "name": "工具依赖替代资源盘点",
+   "keywords": [
+    "现成工具",
+    "外部插件",
+    "数据源遗漏",
+    "冗余下载",
+    "口径分裂",
+    "推理闸第四问"
+   ],
+   "evidence": "2026-10-22形态相似检索: 直接调eastmoney-quant插件并准备init_full_data下载全市场320根K, 而项目dragon_quant_qfq.db(1194万行全市场日线, 本链十余次回测的数据源)完全可自研30根归一化形态距离; 主人抓出'本地有k线你是不是搞错了'; init_full_data被主人取消未遂; 根因=推理闸§4第4问'当前真源在哪里/是否已有同职责数据源'未执行",
+   "measures": "引入任何外部工具前强制盘点项目数据源(data/*.db+workbuddyspace因子库+vipdoc); 自研优先原则: 简单向量化计算不得引入第二数据源; S18入注册表, 下次触达任何外部数据工具时先跑资源盘点清单",
+   "recurrence_count": 0,
+   "status": "active"
+  }
+ },
+ "recurrence_log": [
+  {
+   "date": "2026-09-20",
+   "pattern": "E6",
+   "variant_of": "E3",
+   "note": "煤炭簇=糖链簇变体重演第1次(三仓同向逼近-8%)",
+   "measure_escalation": "B3簇禁买触发",
+   "registered_by": "自省第三期§六#4初始化"
+  },
+  {
+   "date": "2026-10-21",
+   "pattern": "E2",
+   "variant_of": "E2",
+   "note": "上海临港-8%止损触发后拖延至-9.9%才清仓(约多亏437元),止损时效违规第1次复发;同日S-5规则内单(北汽蓝谷/深圳瑞捷)执行正常",
+   "measure_escalation": "止损链增加'-8%触发后T+1未执行告警探针'待办(复盘报告5.3#4)",
+   "registered_by": "daily_review_4dim_20261021"
+  },
+  {
+   "date": "2026-10-22",
+   "pattern": "S11",
+   "variant_of": "S11",
+   "note": "复盘会话无持仓浮盈真值可用(holdings快照三要素合同+会话无westock MCP),分析层越界用当日涨跌幅冒充盈亏口径→广汇物流止损误报;人为层伴生模式已登记E16,本条为S11系统层根因(盈亏真值链路未通达复盘消费端)显形",
+   "measure_escalation": "双口径合同落复盘管线待主人裁决(reports/pending_owner_decisions_20261022.md#2);快照加cost字段为可选解",
+   "registered_by": "daily_review_full_20261022"
+  },
+  {
+   "date": "2026-10-22",
+   "pattern": "S14",
+   "variant_of": "S14",
+   "note": "持仓技术复核首跑误读backups/dragon_quant_qfq/manual_snapshot_20261016_0833/(maxdate=20261015,落后4交易日)冒充生产库,靠强制打印逐股日期拦截未污染产物;生产真源=D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db(maxdate=20261021)",
+   "measure_escalation": "backup快照库改名/库内打标+脚本残留路径D:/zcodesj/data/dragon_quant_qfq.db清理待主人裁决(pending_owner_decisions_20261022.md#5)",
+   "registered_by": "daily_review_full_20261022"
+  },
+  {
+   "date": "2026-10-22",
+   "pattern": "E7",
+   "variant_of": "E7",
+   "note": "方向层c1=传媒(10/19口径,申万L1量比)滞后于概念级新主线(算力租赁/词元出海/太空算力已领先2-3个交易日);PD035八标签(创新药/低空/固态电池/人形机器人/军工/黄金/CPO等)全部退潮态=旧标签库对新叙事零覆盖;数据层根因挂S11族(主线代理数据源未含概念资金流)",
+   "measure_escalation": "PD035标签扩充+方向层概念资金流辅助源待主人裁决(reports/pending_owner_decisions_20261022.md#3)",
+   "registered_by": "daily_review_full_20261022"
+  },
+  {
+   "date": "2026-10-22",
+   "pattern": "E16",
+   "variant_of": "E16",
+   "note": "同日第2次自查抓获(登记后约30分钟):情绪先验统计犯run-end bias——\"ebbing>=2日后29/29转healing\"为同义反复(run定义保证run后一天非ebbbing),据此给出\"75%强修复\"先验系条件子样冒充无条件预测;修正=run长度分布显示第2日后46%(低分位子层6/13)概率继续ebbbing,合成明日强修复无条件概率约46%(54%×86%)而非75%;两次输出(盘前§八/补丁)均已修正重写",
+   "measure_escalation": "E16 measures追加:统计推断须区分条件分布与无条件预测,run/窗口类统计先查是否存在定义性同义反复",
+   "registered_by": "daily_review_full_20261022"
+  },
+  {
+   "date": "2026-10-22",
+   "pattern": "S8",
+   "variant_of": "S8",
+   "note": "宽度数据单源事故:Wind指数行情接口的上涨/下跌家数字段采信未验证,qfq生产库裁决证伪(接口合计3456涨vs真源1941涨,差近倍,字段语义不明);导致复盘宽度定性反转(误判涨占65.2%中小票普涨,真相跌占59%中位-0.38%普跌市)+漏检宁德时代-12.03%创业板权重杀跌与电池板块主力流出50.7亿全市场第一事件;宽度/家数类数据今后强制双源交叉(如wind+qfq库count)方可引用",
+   "measure_escalation": "S8变体升级呈报:指数行情聚合接口的派生字段(涨跌家数类)加入数据源黑名单待核,复盘宽度改用qfq库count直算",
+   "registered_by": "daily_review_full_20261022"
+  }
+ ]
+}

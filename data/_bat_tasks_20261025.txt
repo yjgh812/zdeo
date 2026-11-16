@@ -1,0 +1,111 @@
+AQDailyPicker
+BpEpFwdDeploy_0937
+CacheSnapshot_Daily_0610
+Claw_DailyDeploy
+Claw_DailyPick
+ClsNewsArchive_Hourly
+DeescalCheck_2130
+IndustryVolState_2252
+Launch Adobe CCXProcess
+LowConsolSignal_2230
+MONTHLY_PNL_D1
+MorningStarShadow_0030
+PortraitDailyPipeline_2300
+PtwtShadow_0935
+QfqFullRefresh_Sat0700
+S5IntradayWatch_15min
+ScanBoardWatch_5min
+SealSnapshot_1515
+SealSnapshot_Live_1457
+SignalPilot_0931
+StopLoss_Intraday_1430
+TulongBaostockDaily0730
+TulongHeartbeat_Hourly
+TulongLowconsolArchive2240
+TulongNightChain_2230
+TulongStockDossierAlert_0925
+TulongStockDossier_2330
+TulongSTPanelBackfillResume
+TulongThsSectorDaily2050
+Verify5Buy_0935
+VolTargetShadow_1540
+WorkBuddy_DiskMonitor
+WorkBuddy_TempCleanup
+WpsUpdateLogonTask_Administrator
+WpsUpdateTask_Administrator
+LenovoSmartEngineTask
+.NET Framework NGEN v4.0.30319
+.NET Framework NGEN v4.0.30319 64
+AD RMS Rights Policy Template Management (Manual)
+VerifiedPublisherCertStoreCheck
+MareBackup
+StartupAppTask
+CleanupTemporaryState
+DsSvcCleanup
+Backup
+Pre-staged app cleanup
+BgTaskRegistrationMaintenanceTask
+maintenancetasks
+UserTask-Roam
+ProactiveScan
+CmCleanup
+UsbCeip
+Data Integrity Check And Scan
+Data Integrity Scan
+Data Integrity Scan for Crash Recovery
+ScheduledDefrag
+Metadata Refresh
+RegisterDeviceProtectionStateChanged
+Scheduled
+SilentCleanup
+Microsoft-Windows-DiskDiagnosticDataCollector
+Diagnostics
+StorageSense
+File History (maintenance mode)
+RestoreDevice
+WakeUpAndContinueUpdates
+WakeUpAndScanForUpdates
+La57Cleanup
+Installation
+ReconcileLanguageResources
+Uninstallation
+WinSAT
+MapsUpdateTask
+AutomaticOfflineMemoryDiagnostic
+ProcessMemoryDiagnosticEvents
+RunFullMemoryDiagnostic
+LPRemove
+Logon Synchronization
+Sqm-Tasks
+PrinterCleanupTask
+PrintJobCleanupTask
+VerifyWinRE
+RegIdleBackup
+OOBEFodSetup
+StartComponentCleanup
+Account Cleanup
+IndexerAutomaticMaintenance
+ThemeAssetTask_SyncFODState
+ThemesSyncedImageDownload
+SvcRestartTask
+SvcRestartTaskNetwork
+SpeechModelDownloadTask
+PowerGridForecastTask
+HybridDriveCachePrepopulate
+WsSwapAssessmentTask
+SR
+Schedule Maintenance Work
+Schedule Scan
+Schedule Wake To Work
+Schedule Work
+UsageAndQualityInsights-MaintenanceTask
+Windows Defender Cache Maintenance
+Windows Defender Cleanup
+Windows Defender Verification
+ModelCachingIdle
+ModelCachingLimit
+ModelCachingUpdate
+WIM-Hash-Management
+WIM-Hash-Validation
+Work Folders Maintenance Work
+XblGameSaveTask

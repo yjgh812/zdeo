@@ -1,0 +1,58 @@
+{
+ "task": "B7b",
+ "params": {
+  "BIAS_GRID": [
+   0.04,
+   0.05,
+   0.06,
+   0.07
+  ],
+  "P_GRID": [
+   10,
+   15,
+   20
+  ],
+  "BIAS_PRIMARY": 0.05,
+  "P_PRIMARY": 10,
+  "DD_TH": -0.015,
+  "LOOKBACK": 20,
+  "TOP_CAND": 3,
+  "SAMPLE_START": 20100101,
+  "WIN_INS_END": 20241231,
+  "N_MIN": 30,
+  "N_BOOT": 1000,
+  "SEED": 20261021
+ },
+ "input_snapshots": {
+  "sw_db": {
+   "path": "D:\\workbuddyspace\\databases\\sw_industry.db",
+   "sha16": "f471a7012525e015"
+  },
+  "qfq_db": {
+   "path": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db",
+   "rows": 11931857,
+   "sha16": "27ba2f7292fff144"
+  },
+  "idx_day": {
+   "path": "D:\\anzhuang\\tdx\\vipdoc\\sh\\lday\\sh000001.day",
+   "sha16": "f4f0f4558739cdbf"
+  }
+ },
+ "code": {
+  "file": "D:\\zcodesj\\analysis\\mainline_eventfeas_20261021.py",
+  "sha16": "02c6c47d7e99c785"
+ },
+ "random_seed": 20261021,
+ "runtime_s": 14.9,
+ "outputs": {
+  "mainline_eventfeas_20261021_grid.csv": {
+   "sha16": "ee130dc8caf2b663"
+  },
+  "mainline_eventfeas_20261021_events.csv": {
+   "sha16": "60f6a5de7d761bc5"
+  },
+  "mainline_eventfeas_20261021.md": {
+   "sha16": "67d652dfd202cad4"
+  }
+ }
+}

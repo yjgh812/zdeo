@@ -1,0 +1,221 @@
+{
+ "probe_time": "2026-10-20 12:18:58",
+ "listed_probe": {
+  "query_profit_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  },
+  "query_balance_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  },
+  "query_cash_flow_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  },
+  "query_growth_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  },
+  "query_operation_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  },
+  "query_dupont_data": {
+   "first_year": 2007,
+   "first_quarter": 1,
+   "pubDate": "2007-04-28",
+   "statDate": "2007-03-31"
+  }
+ },
+ "delisted_probe": {
+  "sh.600005": {
+   "query_profit_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   },
+   "query_balance_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   },
+   "query_cash_flow_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   },
+   "query_growth_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   },
+   "query_operation_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   },
+   "query_dupont_data": {
+    "2016Q4": {
+     "ok": false,
+     "pubDate": ""
+    },
+    "2015Q4": {
+     "ok": true,
+     "pubDate": "2016-04-26"
+    },
+    "2013Q4": {
+     "ok": true,
+     "pubDate": "2014-04-29"
+    }
+   }
+  },
+  "sh.600068": {
+   "query_profit_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   },
+   "query_balance_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   },
+   "query_cash_flow_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   },
+   "query_growth_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   },
+   "query_operation_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   },
+   "query_dupont_data": {
+    "2021Q4": {
+     "ok": true,
+     "pubDate": "2022-04-27"
+    },
+    "2019Q4": {
+     "ok": true,
+     "pubDate": "2020-04-01"
+    },
+    "2016Q4": {
+     "ok": true,
+     "pubDate": "2017-03-30"
+    }
+   }
+  }
+ },
+ "names": {
+  "sh.600000": "浦发银行",
+  "sh.600005": "武钢股份",
+  "sh.600068": "葛洲坝"
+ },
+ "elapsed_sec": 9.9
+}

@@ -1,0 +1,31 @@
+{
+ "S3": {
+  "n_trigger_main": 3,
+  "triggers_main": [
+   "2020-05",
+   "2022-11",
+   "2024-09"
+  ],
+  "triggers_2026": [
+   "2026-09"
+  ],
+  "fwd3_mean": 4.352,
+  "uncond_fwd3_mean": 2.288
+ },
+ "S2": {
+  "n_trigger_main": 0,
+  "triggers_main": [],
+  "triggers_2026": [
+   "2026-03"
+  ],
+  "fwd3_mean": null,
+  "uncond_fwd3_mean": 2.288
+ },
+ "_meta": {
+  "scale_adaptation": "月批次尺度原型; prereg的20日交易日尺度需日线级组合序列(后续回测件)",
+  "S3_proxy": "生产fork净口径批次(非raw; L0a_raw仅2024-2026)",
+  "S1": "N/A: 低位修复族影子2026-10-20才激活, 无历史",
+  "eval_main": "2018-2025(热身24期)",
+  "y2026_policy": "单列陈述不进CI(2026只验证一次)"
+ }
+}

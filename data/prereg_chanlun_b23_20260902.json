@@ -1,0 +1,56 @@
+{
+ "id": "20260902-chanlun-b23-v1",
+ "ts": "2026-09-02T01:30:00",
+ "object": "缠论 buy2+buy3 共振形态信号 事件研究 — 预注册（主人口头命题『这种上涨K线形态可用』的可检验形式）",
+ "origin": "000893/600251 相似性分析（reports/CASE_ENGINE_BLINDSPOT_000893_20260901.md 衍生会话）；主人归纳『两股不同时间同形态都上涨→形态可用』；按宪法须将 n=2 事后归纳转为事前可证伪命题",
+ "event_definition_LOCKED": {
+  "engine": "chanlun_engine.ChanAnalyzer(pivot_source='stroke') 八层唯一分解",
+  "window": "月末交易日 T 往前 64 个交易日(含T)",
+  "event": "该次分解的 buy_sell_points 同时含 type='buy2' 与 type='buy3'（同窗共振，价格不限）",
+  "universe": "qfq库窗口内>=60根K线的全部A股",
+  "no_lookahead": "分解仅用<=T数据; 收益自T+1交易日起算"
+ },
+ "protocol": {
+  "snapshots": "2019-01 ~ 2026-06 每月最后交易日 (102个快照)",
+  "horizons": [
+   20,
+   60
+  ],
+  "ret": "T收市→T+N交易日的 close/close-1",
+  "benchmark": "同月非事件股中随机抽取与事件数相同的样本, 1000次bootstrap, 取均值分布",
+  "cost": "单边0.1% (与wfa_gate现行口径一致), 事件收益减去2×cost",
+  "subperiod": "2019-2022 / 2023-2026H1 两段方向一致性"
+ },
+ "criterion_LOCKED": {
+  "usable": "20日与60日两个视野: 事件净超额收益中位数>0 且 bootstrap p<0.05, 且两个子区间方向一致",
+  "falsified": "任一视野不满足 → 证伪",
+  "note": "本事件研究为研究级判据, 即使usable也不构成上线证据, 策略化仍须另走wfa_gate"
+ },
+ "commitment": "只跑一次, 不调参数重试(视野/窗口/阈值/周期全部事前锁死); FAIL即按纪律归档证伪并关闭『形态形态可用』方向(登记BOUNDARY级结论); PASS(预期外)也仅记录为『值得wfa_gate复核』而非可用。外部先验: Marshall系列(2006/2008)+内部hotspot形态45组全负均指向FAIL, 本验证的预期价值=以全市场样本获得干净定论。",
+ "trial_budget": 1,
+ "status": "falsified",
+ "result": {
+  "verdict": "FALSIFIED",
+  "snapshots": 90,
+  "events": 23206,
+  "pool_rows": 380078,
+  "n20": {
+   "event_mean": 0.0073,
+   "event_median": -0.0133,
+   "benchmark": 0.0134,
+   "excess": -0.0061,
+   "z": -5.46,
+   "win_rate": 0.447
+  },
+  "n60": {
+   "event_mean": 0.0198,
+   "event_median": -0.0225,
+   "benchmark": 0.0303,
+   "excess": -0.0105,
+   "z": -5.27,
+   "win_rate": 0.442
+  },
+  "subperiods_consistent": true,
+  "conclusion": "buy2+buy3共振信号在23,206个历史实例上系统性跑输随机基准(z=-5.3~-5.5, 扣成本前), 中位数事件亏损, 胜率<45%——形态结构不仅无超额, 且为显著负alpha(追高属性实锤)。方向正式关闭。"
+ }
+}

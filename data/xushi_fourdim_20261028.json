@@ -1,0 +1,59 @@
+{
+ "signal_date": 20261028,
+ "n_watchlist": 2,
+ "note": "四重共振观察池——等待放量突破+缩量回踩不破的介入确认信号",
+ "watchlist": [
+  {
+   "code": "600731",
+   "name": "湖南海利",
+   "close": 5.61,
+   "d1": {
+    "glue_pct": 2.8,
+    "pass": true,
+    "ma20_up": false,
+    "ma5": 5.67,
+    "ma20": 5.8,
+    "ma60": 5.83
+   },
+   "d2": {
+    "v5_v60_ratio": 0.46,
+    "pass": true
+   },
+   "d3": {
+    "amp50_pct": 8.9,
+    "amp10_pct": 3.7,
+    "pass": true
+   },
+   "d4": {
+    "pos250_pct": 17,
+    "pass": true
+   }
+  },
+  {
+   "code": "603277",
+   "name": "银都股份",
+   "close": 10.97,
+   "d1": {
+    "glue_pct": 2.9,
+    "pass": true,
+    "ma20_up": false,
+    "ma5": 10.84,
+    "ma20": 10.92,
+    "ma60": 11.13
+   },
+   "d2": {
+    "v5_v60_ratio": 0.37,
+    "pass": true
+   },
+   "d3": {
+    "amp50_pct": 16.6,
+    "amp10_pct": 3.9,
+    "pass": true
+   },
+   "d4": {
+    "pos250_pct": 14,
+    "pass": true
+   }
+  }
+ ]
+}

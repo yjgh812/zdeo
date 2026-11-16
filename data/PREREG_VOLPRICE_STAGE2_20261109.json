@@ -1,0 +1,16 @@
+{
+  "id": "PREREG_VOLPRICE_STAGE2_20261109",
+  "status": "frozen",
+  "frozen_at": "2026-11-09 (主人量价框架指令后, 跑前冻结, 每检验trial_budget=1)",
+  "owner_framework": "位置×量价方向矩阵; 底部吸筹=持续温和堆量(非单日脉冲)+红肥绿瘦; 顶部出货=放量+价格不涨(滞涨); 换手率看价量同向性CTC(低者次月更好); 量能作否决/确认层不作触发层",
+  "tests_frozen": {
+    "T1_CTC": "corr20=过去20日close与turnover逐股滚动Pearson(标准化积滚动均值法); 每日截面五分位; 主判据: Q1(低CTC)-Q5(高CTC) 的fwd20差>0 且日度聚类t>=3; C1b分年spread>0年数>=5/7; C1c单调: Q1>Q2>Q3>Q4>Q5至少4段同向; 对照: 主人引用实证方向(低CTC组次月更优), 绝对值不比(口径不同)",
+    "T2_DUI_vs_PULSE": "低位(posQ0)内按近5日hot天数分组: hot=tr>1.5x tr60; G堆量=hot天数>=3, G脉冲=hot天数1-2, G无量=hot天数=0; 主判据: 堆量-脉冲 fwd10差>0 且t>=2; 次判据: 堆量-无量差>0 t>=2",
+    "T3_HONGFEILVSHOU": "低位(posQ0)内 近10日 ln(阳线量和)-ln(阴线量和)(阴量和=0剔除); 每日截面五分位; 主判据: 顶档-底档 fwd10差>0 且t>=2",
+    "T4_TOP_VOL_STALL": "高位(posQ4)且爆量(vrQ4)内按ret5分: 滞涨组(ret5<=0) vs 拉升组(ret5>0); 主判据: 滞涨组fwd10均值显著<0 (t<=-2); 次判据: 滞涨-拉升差<0 且t>=2"
+  },
+  "shared": "同 stage-1 数据管线(qfq+daily_basic+ST点时), next-bar入场(T+1收盘买, 持10/20日), 往返费0.3%, FM日度聚类t, 最小日数300(组间)/不足记insufficient_power",
+  "excluded_this_round": "分时后量超前量(需minute_archive专用管线, 数据仅10个月, 登记为后续决策项); 突破族量能条件化(突破族九口径全负在案, 禁未引用档案重测)",
+  "two_tailed": true,
+  "filing": "结果落 reports/VOLPRICE_STAGE2_20261109/, 全部观察级不接线, 接线另走立项流程"
+}

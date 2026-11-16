@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-10-29 23:45:23",
+  "anchor": "2026-10-01",
+  "end": "2026-10-29",
+  "repro_mode": false,
+  "prereg": "PREREG_MAIN_COMBO_FORWARD_SHADOW_DRAFT_20261018.json",
+  "bp_ep": {
+    "final_eq": 100062.15,
+    "ret_pct": 0.06,
+    "closed": 0
+  },
+  "ml": {
+    "final_eq": 95361.26,
+    "ret_pct": -4.64,
+    "closed": 12
+  },
+  "combo": {
+    "final_eq": 97707.39,
+    "ret_pct": -2.29
+  },
+  "open_positions_n": 15,
+  "gate": {
+    "activation": "2026-10-18",
+    "oos_end": "2027-10-18",
+    "calendar_days_elapsed": 11,
+    "closed_total": 12,
+    "pass": "前向组合TWR≥0 且 vs沪深300同期超额≥0 且 双臂各closed n≥20笔 且 实测成本拖累≤引擎假设2倍",
+    "kill": "前3个自然月组合TWR<-10% → 提请废案(报主人裁决,不自动删除不自动停)"
+  },
+  "ledger": "D:/zcodesj\\data\\main_combo_fwd_shadow_ledger.jsonl"
+}

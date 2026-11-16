@@ -1,0 +1,14 @@
+{
+  "name": "PREREG_SLOWBULL_FIP_V1",
+  "date": "20261116",
+  "trigger": "主人『继续』令。全网学习后按宪法流程落地：慢牛爬升形态+FIP信息离散度因子须回测背书才准入；当前 slow_bull_v1 在 method_registry 标记 verified=False，本测为其准入回测，零交易权纯研究。",
+  "hypothesis": "FIP(Da-Gurun-Warachka 2012)预测连续小幅信息(低ID平滑爬升=慢牛爬升)未来跑赢，离散跳涨(高ID暴拉)未来跑输；A股纯动量已证伪(rules131/R1)，本测检验『平滑性修正』是否为不同物。",
+  "arms": {
+    "S1_主判据_慢牛七判据": "每月末最后交易日收盘判定，命中者等权持有至下月末(收盘到收盘)。记c[-k]=信号日往前第k根收盘(c[-1]=信号日)。C1 c[-1]>MA20(mean(close[-20:]))>MA60(mean(close[-60:])) 且 MA60上行(mean(close[-60:])>mean(close[-70:-10])) 且 120日涨幅=c[-1]/c[-121]-1>0；C2 60日涨幅=c[-1]/c[-61]-1∈[10%,60%]；C3 近60日收盘最大回撤(close[-61:]内滚动峰值到谷)<12%；C4 小阴小阳：近60根bar的qfq change_pct(百分数)无>9.5、无<-6、|值|>5天数≤3(任一bar缺change_pct则不通过)；C5 c[-1]/max(close[-61:])≥0.97；C6 对close[-61:]共60点取t=0..59对log(close)最小二乘回归，R²≥0.75；C7 趋势角度=atan(日斜率%)∈[18°,45°]，日斜率=(exp(回归斜率)-1)*100，回归斜率单位=每交易日log收益。",
+    "S2_描述_慢牛+ID连续": "S1全部判据 且 ID≤0。ID=sign(CG)*(p_pos-p_neg)，CG=60日复利收益符号(C2同口径)，p_pos/p_neg=近60个交易日(61根收盘的60个日收益)中日收益>0/<0的占比。",
+    "S3_对照_暴拉高ID": "60日涨幅∈[10%,60%] 且 ID>0 且 换仓日收盘∈[2,30]元(其余慢牛判据不要求)——预期为负，FIP反向验证。"
+  },
+  "common": "数据=qfq库D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db(表stock_daily_meta_qfq，change_pct为百分数)；指数基准=dragon_quant_meta.db index_daily_meta code='000001'上证(逐月描述性参考，不参与超额判定)；数据窗20100101-20261113；剔代码前缀4/8/9/68；2016起PIT剔ST(st_history.db st_daily is_st时点判定)，2010-2015留出窗无PIT ST近似已声明；每只股票月末回看窗口要求bars≥130(数据窗内根数，次新剔除)；换仓日收盘价格带[2,30]元；持有=月末收盘到下月末收盘等权；换仓费单边0.3%计入(按换手双边：0.3%×对称差换手率，首期建仓全额)；基准=全池(剔前缀后全体)等权同月收益；命中数0的月份跳过并计入统计；主窗2016-01-01~2026-11判据：S1年化净超额>0 且 月超额t≥2 且 正超额年份占比≥50% → PASS_candidate；S1月均超额t≤-2且为负 → FAIL归档禁复活；其余情形=观察不采信；留出窗2010-2015仅报告不判定。",
+  "discipline": "一词一定义禁事后调参；双跑diff一致(输出json不含时间戳/运行号/文件名字段，run1/run2逐字节一致)；零交易权；产物=本文件+attribution/slow_bull_backtest.py+reports/SLOWBULL_PREREG_TEST_20261116.md+(若FAIL)falsified_rules.json登记。",
+  "fingerprint": "f97c0568d104cf12"
+}

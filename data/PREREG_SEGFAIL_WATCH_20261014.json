@@ -1,0 +1,19 @@
+{
+ "name": "PREREG_SEGFAIL_WATCH",
+ "title": "段起失效候选证伪跟随·持仓哨提示层扩展（低位启动失效闸持仓化, 提请制零交易权）",
+ "status": "ACTIVE",
+ "registered": "2026-10-14",
+ "family": "sell_side_watch_petition",
+ "runner": "strong_sell_watch.py（唯一runner, 与wyckoff三信号+起航二信号+volspike_top同件提请制；挂载调度零改动）",
+ "evidence_report": "reports/universe_select5_20261008.md(呈报自带失效闸原文『段起点若跌破-3%即失效』) + reports/klai_603960_buy_postmortem_20261014.md(前向验证) + reports/attr_1008_buys_20261009.md",
+ "signal_locked": {
+  "segfail": "持仓在最近15份universe_startup_scan池json中存在锚(该票最新一次在池期的px与off_start字段)→段起价=px/(1+off_start/100)→最新收盘<段起价*0.97即报; 锚超45自然日=SKIP; 无锚=SKIP(少报不误报); 全部判定只用<=T数据零前视",
+  "note": "口径=低位启动呈报自带失效闸的持仓跟随化(候选证伪即降权/退出呈报); 段起价由呈报字段反推存在±0.05元级舍入"
+ },
+ "evidence": "603960前向验证单案例: 呈报失效闸10/8收盘即触发(收16.19<段起16.31), 按规则次日退出约-4.5% vs 实际持有至S-5执行-9.18%, 差4.7pp; 扫描池下游10/9、10/12、10/13三期603960零命中佐证失效闸下游一直在轨",
+ "honesty_layers": "单案例前向验证非统计证据(n=1); 池内票入场时必>=-3%(扫描器自带闸)故本哨语义=入场后失效检测非入场前过滤; 锚过期/无锚不报=少报不误报; 提示层非卖出依据, 是否处置由主人裁决",
+ "shadow_rule": "命中写入strong_sell_watch_ledger.jsonl(tag=segfail, 键=signal_date+code+tag幂等); 影子窗=20261014起60个交易日, 记录命中与后续T+20走向",
+ "gates": "窗满评估: segfail命中后T+20中位<0且n>=3=维持; n<3=统计力不足仅持续记录不做裁决; 若命中后中位转正连续出现=登记falsified SEGFAIL-HOLDING-DOMAIN-REVERSED并撤哨(持仓域反号家族先例=hi_stall)",
+ "boundary": "纯提示层零交易权: 禁止自动卖出禁触trade_executor禁撤单改单; 提请制=toast弹清单待主人裁决; 不改买入闸门不改卖出执行链; 生产链改动=strong_sell_watch.py单文件扩展+本prereg+SOP回写",
+ "fingerprint": "4b0b58c544c1891d"
+}

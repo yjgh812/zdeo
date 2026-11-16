@@ -1,0 +1,13 @@
+[
+ {
+  "code": "002354",
+  "name": "天娱数科",
+  "volume": 300,
+  "price": 8.27,
+  "source": "type_sample_F_driver",
+  "sector": "传媒",
+  "prev_close": 8.03,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

@@ -1,0 +1,552 @@
+{
+ "date": "20260929",
+ "total_limitup": 56,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "出版传媒题材链(萌芽)",
+   "shared_words": [
+    "出版传媒题材链(萌芽)(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600825",
+    "name": "新华传媒",
+    "boards": 6,
+    "seal_money": 1852830200,
+    "mv_wan": 983239.4668500001
+   },
+   "members": [
+    {
+     "code": "600825",
+     "name": "新华传媒",
+     "boards": 6,
+     "reason": "拟收购界面财联社+财经新媒体+上海国资",
+     "mv_wan": 983239.4668500001,
+     "role": "龙头"
+    },
+    {
+     "code": "601811",
+     "name": "新华文轩",
+     "boards": 1,
+     "reason": "拟收购民族出版社+教科书发行+数字教育+华字辈",
+     "mv_wan": 2513334.117,
+     "role": "中军"
+    },
+    {
+     "code": "601949",
+     "name": "中国出版",
+     "boards": 1,
+     "reason": "AI出版+图书出版+中国出版集团",
+     "mv_wan": 1144284.800454,
+     "role": "补涨"
+    },
+    {
+     "code": "000607",
+     "name": "华媒控股",
+     "boards": 1,
+     "reason": "文化传媒+AI漫剧+杭州日报+华字辈",
+     "mv_wan": 420309.44333,
+     "role": "补涨"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "商用车热管理",
+    "新能源风扇",
+    "宇树科技投资"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603949",
+    "name": "雪龙集团",
+    "boards": 4,
+    "seal_money": 146045680,
+    "mv_wan": 430956.56377
+   },
+   "members": [
+    {
+     "code": "603949",
+     "name": "雪龙集团",
+     "boards": 4,
+     "reason": "商用车热管理+新能源风扇+宇树科技投资",
+     "mv_wan": 430956.56377,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "机器人链",
+   "shared_words": [
+    "机器人链(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000678",
+    "name": "襄阳轴承",
+    "boards": 3,
+    "seal_money": 149711220,
+    "mv_wan": 538665.026084
+   },
+   "members": [
+    {
+     "code": "000678",
+     "name": "襄阳轴承",
+     "boards": 3,
+     "reason": "机器人轴承+汽车轴承+湖北国资",
+     "mv_wan": 538665.026084,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "地产链",
+   "shared_words": [
+    "地产链(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000011",
+    "name": "深物业A",
+    "boards": 2,
+    "seal_money": 57477468,
+    "mv_wan": 663324.729396
+   },
+   "members": [
+    {
+     "code": "000011",
+     "name": "深物业A",
+     "boards": 2,
+     "reason": "房地产开发+物业管理+深圳国资",
+     "mv_wan": 663324.729396,
+     "role": "龙头"
+    },
+    {
+     "code": "000002",
+     "name": "万科A",
+     "boards": 1,
+     "reason": "房地产开发+城市更新+深铁支持",
+     "mv_wan": 4867729.464168,
+     "role": "中军"
+    },
+    {
+     "code": "600657",
+     "name": "信达地产",
+     "boards": 1,
+     "reason": "房地产开发+轻资产代建+信达资源",
+     "mv_wan": 963934.96511,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "厨房小家电",
+    "炒菜机器人",
+    "太空科技"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002242",
+    "name": "九阳股份",
+    "boards": 2,
+    "seal_money": 184822870,
+    "mv_wan": 866787.3119999999
+   },
+   "members": [
+    {
+     "code": "002242",
+     "name": "九阳股份",
+     "boards": 2,
+     "reason": "厨房小家电+炒菜机器人+太空科技",
+     "mv_wan": 866787.3119999999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "网络安全",
+    "AI安全",
+    "数据安全",
+    "政务智能体",
+    "AI出海",
+    "算力"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002912",
+    "name": "中新赛克",
+    "boards": 2,
+    "seal_money": 65667697,
+    "mv_wan": 497229.824
+   },
+   "members": [
+    {
+     "code": "002912",
+     "name": "中新赛克",
+     "boards": 2,
+     "reason": "AI安全+网络安全+数据安全",
+     "mv_wan": 497229.824,
+     "role": "龙头"
+    },
+    {
+     "code": "603636",
+     "name": "南威软件",
+     "boards": 1,
+     "reason": "网络安全+政务智能体+AI出海+算力",
+     "mv_wan": 456743.731601,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "锂电池",
+    "镍氢电池",
+    "辽宁国资"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600241",
+    "name": "时代万恒",
+    "boards": 2,
+    "seal_money": 90643044,
+    "mv_wan": 260163.06966
+   },
+   "members": [
+    {
+     "code": "600241",
+     "name": "时代万恒",
+     "boards": 2,
+     "reason": "锂电池+镍氢电池+辽宁国资",
+     "mv_wan": 260163.06966,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "染料中间体",
+    "氯代吡啶",
+    "染料产业链"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "301190",
+    "name": "善水科技",
+    "boards": 2,
+    "seal_money": 47031129,
+    "mv_wan": 642621.6810000001
+   },
+   "members": [
+    {
+     "code": "301190",
+     "name": "善水科技",
+     "boards": 2,
+     "reason": "染料中间体+氯代吡啶+业绩增长",
+     "mv_wan": 642621.6810000001,
+     "role": "龙头"
+    },
+    {
+     "code": "603188",
+     "name": "亚邦股份",
+     "boards": 1,
+     "reason": "染料中间体+染料产业链+业绩增长",
+     "mv_wan": 279953.47000000003,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "绿色电力",
+    "风电",
+    "智慧运维"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600032",
+    "name": "浙江新能",
+    "boards": 2,
+    "seal_money": 79678121,
+    "mv_wan": 1964619.7397079999
+   },
+   "members": [
+    {
+     "code": "600032",
+     "name": "浙江新能",
+     "boards": 2,
+     "reason": "绿色电力+风电+智慧运维",
+     "mv_wan": 1964619.7397079999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "食欲素",
+    "药品注册",
+    "氨基酸制剂",
+    "甾体激素"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600488",
+    "name": "津药药业",
+    "boards": 2,
+    "seal_money": 46222500,
+    "mv_wan": 753401.8092
+   },
+   "members": [
+    {
+     "code": "600488",
+     "name": "津药药业",
+     "boards": 2,
+     "reason": "食欲素+药品注册+氨基酸制剂+甾体激素",
+     "mv_wan": 753401.8092,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "固态电池萌芽链",
+   "shared_words": [
+    "固态电池萌芽链(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002074",
+    "name": "国轩高科",
+    "boards": 1,
+    "seal_money": 625270720,
+    "mv_wan": 5204632.280855999
+   },
+   "members": [
+    {
+     "code": "002058",
+     "name": "紫竹高科",
+     "boards": 1,
+     "reason": "铝塑膜+固态电池+客户供货",
+     "mv_wan": 263371.137552,
+     "role": "助攻"
+    },
+    {
+     "code": "002074",
+     "name": "国轩高科",
+     "boards": 1,
+     "reason": "海外扩产+固态电池+大众合作",
+     "mv_wan": 5204632.280855999,
+     "role": "龙头"
+    },
+    {
+     "code": "002866",
+     "name": "传艺科技",
+     "boards": 1,
+     "reason": "钠离子电池+固态电池+AI PC键盘",
+     "mv_wan": 444706.185216,
+     "role": "助攻"
+    },
+    {
+     "code": "603200",
+     "name": "上海洗霸",
+     "boards": 1,
+     "reason": "固态电池+液冷服务器+水处理",
+     "mv_wan": 713677.5789010001,
+     "role": "助攻"
+    },
+    {
+     "code": "002882",
+     "name": "金龙羽",
+     "boards": 1,
+     "reason": "固态电池+机器人电池+电线电缆",
+     "mv_wan": 1061037.9000000001,
+     "role": "中军"
+    },
+    {
+     "code": "301513",
+     "name": "尚水智能",
+     "boards": 1,
+     "reason": "固态电池设备+锂电智能装备+制浆龙头",
+     "mv_wan": 514200.0,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "高端PCB",
+    "AI算力",
+    "服务器PCB",
+    "封装基板",
+    "AI服务器",
+    "可转债"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002913",
+    "name": "奥士康",
+    "boards": 1,
+    "seal_money": 165210010,
+    "mv_wan": 2890519.470432
+   },
+   "members": [
+    {
+     "code": "002815",
+     "name": "崇达技术",
+     "boards": 1,
+     "reason": "高端PCB+服务器PCB+封装基板",
+     "mv_wan": 3016265.8358560004,
+     "role": "中军"
+    },
+    {
+     "code": "002913",
+     "name": "奥士康",
+     "boards": 1,
+     "reason": "高端PCB+AI服务器+可转债",
+     "mv_wan": 2890519.470432,
+     "role": "龙头"
+    },
+    {
+     "code": "603328",
+     "name": "依顿电子",
+     "boards": 1,
+     "reason": "高端PCB+AI算力+控股股东增持",
+     "mv_wan": 1441751.130284,
+     "role": "助攻"
+    },
+    {
+     "code": "688655",
+     "name": "迅捷兴",
+     "boards": 1,
+     "reason": "AI算力+高端HDI+定增审核通过",
+     "mv_wan": null,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 14,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "PCB",
+    "覆铜板",
+    "高阶HDI",
+    "HDI板",
+    "AI服务器电源",
+    "具身智能"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000823",
+    "name": "超声电子",
+    "boards": 1,
+    "seal_money": 116912990,
+    "mv_wan": 1451689.98284
+   },
+   "members": [
+    {
+     "code": "000823",
+     "name": "超声电子",
+     "boards": 1,
+     "reason": "PCB+高阶HDI+覆铜板",
+     "mv_wan": 1451689.98284,
+     "role": "龙头"
+    },
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 1,
+     "reason": "PCB+HDI板+AI服务器电源+具身智能",
+     "mv_wan": 851833.7152000001,
+     "role": "助攻"
+    },
+    {
+     "code": "605198",
+     "name": "安德利",
+     "boards": 1,
+     "reason": "浓缩果汁+覆铜板+并购重组",
+     "mv_wan": 2194946.7840000005,
+     "role": "中军"
+    },
+    {
+     "code": "605258",
+     "name": "协和电子",
+     "boards": 1,
+     "reason": "PCB+高频通讯+新能源电池",
+     "mv_wan": 387288.0,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 16,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "AI短剧",
+    "短剧出海",
+    "数字阅读",
+    "全域营销",
+    "AI营销",
+    "字节概念"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603533",
+    "name": "掌阅科技",
+    "boards": 1,
+    "seal_money": 85085605,
+    "mv_wan": 1037991.0147749999
+   },
+   "members": [
+    {
+     "code": "603533",
+     "name": "掌阅科技",
+     "boards": 1,
+     "reason": "AI短剧+短剧出海+数字阅读",
+     "mv_wan": 1037991.0147749999,
+     "role": "龙头"
+    },
+    {
+     "code": "603598",
+     "name": "引力传媒",
+     "boards": 1,
+     "reason": "AI短剧+全域营销+业绩增长",
+     "mv_wan": 516537.9298,
+     "role": "中军"
+    },
+    {
+     "code": "603602",
+     "name": "纵横通信",
+     "boards": 1,
+     "reason": "AI营销+AI短剧+字节概念+低空经济",
+     "mv_wan": 293674.07487400004,
+     "role": "助攻"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

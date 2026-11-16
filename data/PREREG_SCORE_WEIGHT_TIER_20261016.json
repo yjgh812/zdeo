@@ -1,0 +1,27 @@
+{
+ "name": "PREREG_SCORE_WEIGHT_TIER",
+ "title": "#802 score加权持仓分层(bp_ep月度Top20窄带三分位, 高1.5/中1.0/低0.5)60交易日影子",
+ "status": "ACTIVE",
+ "fingerprint_sha256": "03021090acf58ea3b37950dc7bd2654236327e53a5bafc68a9ed0845e518a653",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-16', 'decision': '主人「继续」令(对10/15全域回测收口报告呈请队列第一顺位#802的既定惯例解读: 先例=10/9强中卖哨prereg经「继续」令落地[第二顺位]); 本件为完整落地(prereg ACTIVE+影子挂daily_chain[swt_shadow] shadow组); 禁接线语义不变, wfa_gate/接线须影子末第二道主人裁决'}",
+ "registered": "2026-10-16",
+ "family": "bp_ep_score_weight_tier",
+ "sibling": "候选源=full_backtest_report_20261015.md §六#5+#802; OOS研究=analysis/score_band_oos_20261016.py(样内审计+前向OOS为样内外关系, 本件=真前向影子)",
+ "evidence_report": "reports/full_backtest_report_20261015.md §八附录 + tmp/score_band_oos_20261016.json",
+ "in_sample_evidence": "{'note': '可审计口径(原10/15 ad-hoc中/高分位数字经口径网格扫描不可复现已作废, 以研究脚本口径为底)', 'is_cuts': [0.991, 0.995], 'oos_2023_2026': {'high': 'n=337 wr63.5% mean+5.38%', 'low': 'n=140 wr55.7% mean+2.67%', 'mean_diff_pp': 2.71, 'boot90_ci': [0.97, 4.45], 'wr_diff_pp': 7.8}, 'gates': 'G1方向/G2显著/G3幻象(2/4正年+剔最佳年+1.51>0)/G4剂量 全过, 口径C排他同构更强(+3.09pp)', 'year_exposure_disclosure': 'OOS边际集中2023/2024, 2025(-3.1)/2026(-0.44)高分位反输=非全天候'}",
+ "params": {
+  "weights": {"high": 1.5, "mid": 1.0, "low": 0.5},
+  "activation_since": "20261016",
+  "window_days": 60,
+  "window_hard_cap": "20270131",
+  "gates": {"g1_promote_cum_pp": 1.0, "g2_kill_roll20_pp": -1.5, "g3_kill_roll40_pp": -1.0},
+  "cuts_quantile": "rolling_IS_prior_months: sorted[n//3], sorted[2n//3](与OOS研究同函数)",
+  "bootstrap_source": "reports/backtest_full_20261015_eod/bp_ep_core_trades_full.csv(引擎主臂已实现交易score按月, 2062笔; 与OOS研究同底), 前向逐月追加生产批次score",
+  "picker": "multifactor/bp_ep_monthly_picks.py --date 月首个交易日 --no-sync(Top20, 价格≤30, 生产唯一真源零复刻)"
+ },
+ "trigger_locked": "批次锚=每月第一个交易日(bp_ep生产调仓口径), 当月批次幂等复用; 切点=严格早于当月的全部月选score(滚动IS零前视, 底史<300笔fail-closed); 权重=带权{1.5,1.0,0.5}归一化Σ=1, base=等权1/N, 同批同日入场(批次日收盘); 日频qfq收盘mark-to-market(停牌沿用前收), 链式日超额d=(1+r_w)/(1+r_b)-1; 窗口读数仅计激活日(20261016)起交易日, kill粘滞",
+ "quality_layers": "{'freshness': 'qfq尾<指数尾→skip fail-closed(链未落)', 'picker_guard': '选股器非零退出/无新CSV/批次<15只→fail-closed退出', 'no_sync': '选股器一律--no-sync(防生产观察名单副作用)', 'cuts_guard': '底史不足fail-closed', 'writes': '仅写自己台账/最新态/score底史, 主库零写入'}",
+ "control_arm": "对照=同批次等权base(bp_ep现行口径), 链式日超额即相对base的差分; 晋级第二道=影子末主人裁决后走wfa_gate四门(纯OOS)方议接线",
+ "acceptance_locked": "{'window': '激活(20261016)起60交易日为最短影子窗, 或至20270131硬上限先到为准', 'pass': 'G1=窗口日>=60且窗口累计超额>=+1.0pp→呈请第二道主人裁决(非自动接线)', 'kill_switch': 'G2=20日滚动超额<-1.5pp或G3=40日滚动超额<-1.0pp→kill粘滞标记, 影子末随裁决归档', 'failing': '窗口满未达G1→归档falsified_rules(条目: 前向影子未复现OOS边际)', 'adjudicator': '门读数仅记录, 判定权=影子末主人裁决'}",
+ "boundary": "纯观测影子层零交易权, 不接闸门不接交易cron不接executor; 挂daily_chain[swt_shadow]仅产出台账与快照; 费用差=两臂同批持仓的二阶差, 影子不计(如实声明, 方向=对加权臂略偏乐观的微小量); 信号权=主人"
+}

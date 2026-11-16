@@ -1,0 +1,54 @@
+{
+ "name": "PREREG_MORNINGSTAR_NEXTBAR",
+ "generated_at": "2026-10-30T00:31:18",
+ "qfq_max": "20261029",
+ "stale_dump": false,
+ "params_fingerprint": "53a74bdf6bef845d",
+ "activation_since": 20261021,
+ "dedup_days": 5,
+ "counts": {
+  "total": 21483,
+  "in_sample": 21420,
+  "oos": 63
+ },
+ "in_sample_ref": {
+  "nb10": {
+   "n": 21302,
+   "med": 2.658,
+   "win": 63.55
+  },
+  "nb20": {
+   "n": 21302,
+   "med": 2.414,
+   "win": 58.9
+  },
+  "nb5": {
+   "n": 21302,
+   "med": 2.805,
+   "win": 69.57
+  }
+ },
+ "oos": {
+  "nb10": {
+   "n": 0,
+   "med": null,
+   "win": null
+  },
+  "nb20": {
+   "n": 0,
+   "med": null,
+   "win": null
+  },
+  "nb5": {
+   "n": 0,
+   "med": null,
+   "win": null
+  }
+ },
+ "judge": {
+  "lock_rule": "OOS 60个交易日或已结算n>=30 先到",
+  "pass": "OOS nb20 med>=+1.5% 且 win>=52% (绝对口径, 基线参考层另行记录不进判据)",
+  "kill_switch": "OOS 前10个到期事件 nb20 med 全<0 提请废案",
+  "lock_rule_progress": "已结算OOS n=0(门=n>=30或60交易日)"
+ }
+}

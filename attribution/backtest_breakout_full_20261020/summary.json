@@ -1,0 +1,26 @@
+{
+ "r9_rand42": {
+  "final_eq": 82775.66,
+  "total_ret": -0.1722,
+  "cagr": -0.0174,
+  "max_dd": -0.3573,
+  "trades": 283,
+  "win_rate": 0.3039
+ },
+ "r9_rand7": {
+  "final_eq": 85453.67,
+  "total_ret": -0.1455,
+  "cagr": -0.0144,
+  "max_dd": -0.3323,
+  "trades": 254,
+  "win_rate": 0.311
+ },
+ "r9_rand2026": {
+  "final_eq": 55004.52,
+  "total_ret": -0.45,
+  "cagr": -0.0538,
+  "max_dd": -0.458,
+  "trades": 266,
+  "win_rate": 0.2632
+ }
+}

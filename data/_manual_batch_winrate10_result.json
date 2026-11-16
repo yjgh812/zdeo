@@ -1,0 +1,79 @@
+{
+ "run_at": "2026-09-14 11:06:04",
+ "execute": true,
+ "amount_each": 20000,
+ "n_ok": 8,
+ "n_total": 10,
+ "results": [
+  {
+   "code": "603328",
+   "name": "依顿电子",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R-S5不追高[warn]: mom20=+18.4% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\","
+  },
+  {
+   "code": "002966",
+   "name": "苏州银行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R-S5不追高[warn]: mom20=+9.8% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\","
+  },
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R-S5不追高[warn]: mom20=+8.7% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\","
+  },
+  {
+   "code": "603637",
+   "name": "镇海股份",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-14~2026-10-04） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维"
+  },
+  {
+   "code": "002478",
+   "name": "常宝股份",
+   "rc": 2,
+   "ok": false,
+   "verdict": "\"gate_verdict\": \"REJECT\","
+  },
+  {
+   "code": "603162",
+   "name": "海通发展",
+   "rc": 2,
+   "ok": false,
+   "verdict": "\"gate_verdict\": \"REJECT\","
+  },
+  {
+   "code": "002942",
+   "name": "新农股份",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R-S5不追高[warn]: mom20=+10.8% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\","
+  },
+  {
+   "code": "300214",
+   "name": "日科化学",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-14~2026-10-04） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维"
+  },
+  {
+   "code": "601077",
+   "name": "渝农商行",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-14~2026-10-04） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维"
+  },
+  {
+   "code": "300154",
+   "name": "瑞凌股份",
+   "rc": 0,
+   "ok": true,
+   "verdict": "\"R-S5不追高[warn]: mom20=+19.3% > +2% 不追高闸(STYLE-GATE-STAGE5) → WARN留痕(9/8主人裁决撤销REJECT分支)\","
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+  "fingerprint": "d9cae4933bc681f1",
+  "config": {
+    "start": "20240102",
+    "end": "20260820",
+    "max_price": 30.0,
+    "min_amt": 30000000.0,
+    "mom_win": 20,
+    "fwd": 5,
+    "gate_mom": 2.0,
+    "gate_mv": 70.0,
+    "gate_to": 3.0,
+    "nw_lag": 10,
+    "rebal_weekday": 2,
+    "fee": 0.0015,
+    "fee_hi": 0.003,
+    "gates": {
+      "G1_nwt": 2.0,
+      "G3_mdd_deg": 5.0
+    }
+  },
+  "verdicts": {
+    "G1_nwt": "True",
+    "G2_years": "True",
+    "G3_mdd": true,
+    "G4_fee": "False"
+  },
+  "final": "WEAK",
+  "results": {
+    "n_daily_sections": 570,
+    "mean_daily_delta_mom": 0.4551498327821553,
+    "NW_t_mom": 2.687079542694985,
+    "naive_t_mom": 5.130077651450178,
+    "NW_t_gate3": 2.9077295808783274,
+    "yearly_delta": {
+      "2024": 0.6116506554013584,
+      "2025": 0.3224976180463469,
+      "2026": 0.48703696582452977
+    },
+    "exec": {
+      "n_weeks": 124,
+      "mom_gate": {
+        "ann_pct": 32.36770019144779,
+        "mdd_pct": -35.49877848603607,
+        "total_pct": 94.80839171215666,
+        "n": 124
+      },
+      "mom_gate_fee_hi": {
+        "ann_pct": 22.44534039564765,
+        "mdd_pct": -37.63640636422595,
+        "total_pct": 61.85791038655748,
+        "n": 124
+      },
+      "bench": {
+        "ann_pct": 23.19132690029846,
+        "mdd_pct": -33.08861920971658,
+        "total_pct": 64.21279811622402,
+        "n": 124
+      }
+    }
+  }
+}

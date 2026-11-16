@@ -1,0 +1,40 @@
+{
+  "name": "PREREG_BIAS20_VOL20_LOWVOL",
+  "title": "低乖离×低波动 维度组合影子(DeepSeek审计E-5提案第三顺位; ⚠️邻近黑名单「低波×趋势」须引档案确认条件不同)",
+  "status": "DRAFT",
+  "approval": {
+    "status": "DRAFT",
+    "decision_trail": [
+      "2026-10-18 DeepSeek审计E-5提案#3——审计报告标注⚠️邻近黑名单「低波×趋势」(PROJECT_BOUNDARY §3), 优先级最低",
+      "2026-10-18 主人「全面落地」=批准DRAFT固化(不激活不建runner), 激活须主人二次裁决+引证伪档案确认条件不同"
+    ],
+    "approved_by": null, "approved_at": null, "activation_since": null,
+    "runner": "未建(DRAFT)"
+  },
+  "hypothesis": "低乖离(bias20<10%)×低波动(vol20_pct<30分位)组合——材料§四.3已证高波动收紧在验证窗反号(+32%→-2.5%)，反向推低波动应有正先验，但不得从高波动证伪直接推出低波动正格(方案自警的『单维口诀跨域移植』错误)",
+  "sibling_boundary": "⚠️与黑名单「低波×趋势」(PROJECT_BOUNDARY §3)邻近但不同义：那为策略级趋势跟随(已证伪)，本条为维度组合诊断(bias20与vol20_pct正交于趋势方向)。立项前须主人确认条件差异足够",
+  "evidence_report": "reports/petition_batch4_20261018.md §五#3 + PROJECT_BOUNDARY §3 黑名单 + DeepSeek审计E-5",
+  "in_sample_evidence": "未跑",
+  "params": {
+    "universe_source": "data/universe_portrait_winner5_latest.json",
+    "bias20_max": 0.10,
+    "vol20_pct_max": 30,
+    "dedup_days": 5,
+    "entry": "snapshot_day_close",
+    "holding_horizons": [5, 20, 30],
+    "main_horizon": 20,
+    "universe_exclude_prefix": ["688", "689", "920"]
+  },
+  "gates_locked": {
+    "oos_window": "激活日起60个有效截面日或n>=30先到",
+    "pass": "组合臂fwd20 med>=+1.0% 且 win>=52%",
+    "kill": "前20有效截面日med20<-2% -> 提请废案",
+    "yield_clause": "前20有效截面日日均候选<3只 → 自动SKIP提请产量裁决"
+  },
+  "trigger_locked": "T日=winner5快照行满足 bias20<0.10 AND vol20_pct<30; 参数以本文件params为单一真源",
+  "red_line_check": {
+    "名单制": "不涉", "突破追高族": "不涉", "放量确认族": "不涉",
+    "非PIT": "不涉", "黑名单模型": "不涉",
+    "⚠️邻近黑名单": "「低波×趋势」在§3——本条无趋势方向过滤，仅低乖离×低波动特征筛选，条件不同但须主人最终确认"
+  }
+}

@@ -1,0 +1,32 @@
+# 名单制废除(9/24终局令)后 buy_whitelist 引用存量扫描 2026-09-28 (S6 附带, 债务登记非清理授权)
+# 分类原则: 生成器本体/历史档案脚本=留档不动; 生产链活消费=逐文件核语义后单独批次清理
+_common.py	1
+bp_ep_exec_brief.py	5
+chain_artifacts_tally.py	1
+chip_manual_3gate.py	1
+chip_manual_3gate_v13.py	1
+classical_pattern_prescreen.py	1
+classical_rbot_orthogonal_check.py	1
+daily_chain_update.py	1
+daily_trade_plan.py	2
+discipline_stats.py	3
+fetch_turnover_baostock.py	1
+holding_horizon.py	1
+missed_cost_audit.py	2
+portrait_ab_track.py	1
+portrait_shadow_v1.py	5
+prompt_metrics_tracker.py	2
+pullback_buy_alert.py	1
+qfq_sanity_check.py	1
+reconcile_pending_fills.py	2
+signal_forward_tracker.py	1
+skill_rules_prescreen_20260904.py	1
+stop_reentry_plan.py	1
+test_full_guard_v2.py	1
+test_r14_r18_regression.py	2
+trade_executor.py	1
+tulong_buy_whitelist.py	4
+tulong_hotspot_breakout_picker.py	6
+universe_portrait_recon_20260923.py	3
+vbt_hotspot_prescreen_step_a.py	1
+write_positions_snapshot.py	1

@@ -1,0 +1,839 @@
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, xml.etree.ElementTree as ET, time, io
+
+QUERIES = [
+ 'Smart Money Concepts SMC trading ICT order block fair value gap liquidity',
+ 'SMC trading strategy backtest effectiveness evidence criticism',
+ 'smart money order flow institutional orders detection python quantitative',
+ 'order block fair value gap liquidity sweep break of structure backtest',
+ '聪明钱概念 交易 订单块 公允价值缺口 ICT',
+ 'SMC 聪明钱 策略 回测 量化 有效性',
+ '聪明钱 因子 资金流 识别 算法 A股',
+]
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_bing_results.txt", "w", encoding="utf-8")
+for q in QUERIES:
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(q) + "&format=rss&mkt=en-US&count=20"
+    out.write("="*70 + "\nQUERY: " + q + "\n" + "="*70 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = urllib.request.urlopen(req, timeout=25).read()
+        root = ET.fromstring(data)
+        items = root.findall(".//item")
+        if not items:
+            out.write("[NO ITEMS]\n")
+        for it in items:
+            t = it.findtext("title") or ""
+            l = it.findtext("link") or ""
+            d = (it.findtext("description") or "").replace("\n", " ").strip()
+            out.write("TITLE: %s\nLINK: %s\nDESC: %s\n---\n" % (t, l, d[:400]))
+    except Exception as e:
+        out.write("[ERROR] %s: %s\n" % (q, e))
+    time.sleep(1.2)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, xml.etree.ElementTree as ET, time, io, json
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_bing_results2.txt", "w", encoding="utf-8")
+
+def bing(q):
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(q) + "&format=rss&mkt=en-US&count=15"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = urllib.request.urlopen(req, timeout=25).read()
+        root = ET.fromstring(data)
+        for it in root.findall(".//item"):
+            t = it.findtext("title") or ""
+            l = it.findtext("link") or ""
+            d = (it.findtext("description") or "").replace("\n", " ").strip()
+            out.write("TITLE: %s\nLINK: %s\nDESC: %s\n---\n" % (t, l, d[:350]))
+    except Exception as e:
+        out.write("[ERR] %s\n" % e)
+
+# 1) 开源证券聪明钱2.0 新浪直链
+out.write("="*70 + "\n[1] 开源证券聪明钱2.0\n" + "="*70 + "\n")
+bing('"聪明钱因子模型的2.0版本" 开源证券')
+time.sleep(1.2)
+out.write("="*70 + "\n[2] smart money factor research\n" + "="*70 + "\n")
+bing('"smart money factor" A-share minute data research report')
+time.sleep(1.2)
+# 2) SMC 英文原教旨（引号规避歧义）
+out.write("="*70 + "\n[3] SMC intro\n" + "="*70 + "\n")
+bing('"Smart Money Concepts" ICT "order block" "fair value gap" guide')
+time.sleep(1.2)
+# 3) SMC 有效性/批评
+out.write("="*70 + "\n[4] SMC effectiveness criticism\n" + "="*70 + "\n")
+bing('"Smart Money Concepts" trading "does it work" OR "backtest" OR criticism')
+time.sleep(1.2)
+
+# 4) 中文维基 smart money
+try:
+    url = "https://zh.wikipedia.org/w/api.php?action=query&list=search&srsearch=%E8%81%AA%E6%98%8E%E9%92%B1&format=json&utf8=1&srlimit=8"
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    data = urllib.request.urlopen(req, timeout=20).read()
+    j = json.loads(data)
+    out.write("="*70 + "\n[5] zh.wikipedia 聪明钱\n" + "="*70 + "\n")
+    for it in j.get("query", {}).get("search", []):
+        out.write("TITLE: %s\nLINK: https://zh.wikipedia.org/wiki/%s\n" % (it["title"], urllib.parse.quote(it["title"])))
+except Exception as e:
+    out.write("[zh-wiki ERR] %s\n" % e)
+
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, xml.etree.ElementTree as ET, time, sys, io
+
+QUERIES = [
+ "A股 因子有效性 实证 研究 多因子",
+ "动量因子 反转因子 A股 实证 结论",
+ "换手率因子 A股 选股 有效性",
+ "小市值因子 A股 壳价值 失效",
+ "涨停板 连板 特征 量化 研究",
+ "涨停 封单量 首次封板时间 连板 胜率",
+ "XGBoost 股票 涨跌预测 特征重要性",
+ "LightGBM 选股 特征重要性 A股",
+ "情绪因子 涨停家数 炸板率 市场宽度",
+ "筹码分布 股东户数 因子 A股 有效性",
+ "多因子模型 IC 分层回测 因子检验 流程",
+ "券商 金工 多因子选股 研报 华泰 国泰君安",
+ "北向资金 聪明钱 因子 选股 有效性",
+ "均线偏离 技术因子 有效性 A股",
+ "量价关系 因子 A股 研究 换手",
+ "机器学习 随机森林 股票 预测 特征重要性 A股",
+ "涨停 首板 换手率 炸板 研究 结论",
+]
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\bing_results.txt", "w", encoding="utf-8")
+
+for q in QUERIES:
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(q) + "&format=rss&mkt=zh-CN"
+    out.write("="*60 + "\nQUERY: " + q + "\n" + "="*60 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        root = ET.fromstring(data)
+        items = root.findall(".//item")
+        if not items:
+            out.write("[NO ITEMS]\n")
+        for it in items:
+            t = it.findtext("title") or ""
+            l = it.findtext("link") or ""
+            d = (it.findtext("description") or "").replace("\n", " ").strip()
+            out.write("TITLE: %s\nLINK: %s\nDESC: %s\n---\n" % (t, l, d[:220]))
+    except Exception as e:
+        out.write("[ERROR] %s: %s\n" % (q, e))
+    time.sleep(1)
+
+out.close()
+print("done, queries:", len(QUERIES))
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, xml.etree.ElementTree as ET, time, io
+
+QUERIES = [
+ 'site:zhihu.com 动量 反转 因子 A股 有效性',
+ 'site:xueqiu.com 因子 有效性 动量 换手率',
+ 'site:blog.csdn.net 因子选股 有效性 IC 多因子',
+ '"换手率" "负相关" A股 收益 因子',
+ '"小市值" 因子 失效 壳价值 2017',
+ '涨停 次日 溢价 概率 统计 连板 晋级率',
+ '涨停板 封单 首封时间 次日 表现 实证',
+ 'A股 短期反转 中期动量 实证 结论 论文',
+ '华泰证券 金工 因子 研报 系列 多因子',
+ 'Qlib LightGBM 特征重要性 A股 因子',
+ '"炸板率" 情绪 指标 A股 研究',
+ '"股东户数" 因子 选股 有效性 研究',
+ '"筹码集中度" 因子 有效性 A股',
+ 'site:joinquant.com 因子 有效性 测试',
+ '光年之外 因子 Lab 有效性 数据库',
+ '"北向资金" 因子 有效性 研报 结论',
+]
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\bing_results2.txt", "w", encoding="utf-8")
+
+for q in QUERIES:
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(q) + "&format=rss&mkt=zh-CN"
+    out.write("="*60 + "\nQUERY: " + q + "\n" + "="*60 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        root = ET.fromstring(data)
+        items = root.findall(".//item")
+        if not items:
+            out.write("[NO ITEMS]\n")
+        for it in items:
+            t = it.findtext("title") or ""
+            l = it.findtext("link") or ""
+            d = (it.findtext("description") or "").replace("\n", " ").strip()
+            out.write("TITLE: %s\nLINK: %s\nDESC: %s\n---\n" % (t, l, d[:250]))
+    except Exception as e:
+        out.write("[ERROR] %s: %s\n" % (q, e))
+    time.sleep(1)
+out.close()
+print("done", len(QUERIES))
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, xml.etree.ElementTree as ET, time, io
+
+QUERIES = [
+ 'China A-share momentum reversal anomaly empirical study',
+ 'turnover rate factor China stock returns negative relation',
+ 'limit-up stocks China next day return study',
+ 'small cap size factor China stock market shell value 2017',
+ 'machine learning stock prediction feature importance China A-share LightGBM',
+ '北向资金 smart money factor China stock selection',
+]
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\bing_results3.txt", "w", encoding="utf-8")
+for q in QUERIES:
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(q) + "&format=rss&mkt=en-US"
+    out.write("="*60 + "\nQUERY: " + q + "\n" + "="*60 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        root = ET.fromstring(data)
+        items = root.findall(".//item")
+        if not items:
+            out.write("[NO ITEMS]\n")
+        for it in items:
+            t = it.findtext("title") or ""
+            l = it.findtext("link") or ""
+            d = (it.findtext("description") or "").replace("\n", " ").strip()
+            out.write("TITLE: %s\nLINK: %s\nDESC: %s\n---\n" % (t, l, d[:300]))
+    except Exception as e:
+        out.write("[ERROR] %s: %s\n" % (q, e))
+    time.sleep(1)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+"""迁移第一步:全局替换硬编码路径 D:\\workbuddyspace / D:\\reasonix -> D:\\zcodesj\\ 下对应位置"""
+import os, sys
+
+ROOTS = [r'D:\workbuddyspace', r'D:\reasonix']
+EXCLUDE_DIRS = {'node_modules', '.venv', 'venv', 'site-packages', '__pycache__',
+                '.git', 'qlib_data', 'databases', 'data', 'redis_data', 'tdx_csv', 'cache'}
+TEXT_EXT = {'.py', '.bat', '.ps1', '.json', '.toml', '.sh', '.txt', '.cfg',
+            '.ini', '.yaml', '.yml', '.md', '.url'}
+
+# 顺序无关:三种写法的字节序列互不包含
+PAIRS = [
+    ('D:\\\\workbuddyspace', 'D:\\\\zcodesj\\\\workbuddyspace'),
+    ('d:\\\\workbuddyspace', 'd:\\\\zcodesj\\\\workbuddyspace'),
+    ('D:\\workbuddyspace', 'D:\\zcodesj\\workbuddyspace'),
+    ('d:\\workbuddyspace', 'd:\\zcodesj\\workbuddyspace'),
+    ('D:/workbuddyspace', 'D:/zcodesj/workbuddyspace'),
+    ('d:/workbuddyspace', 'd:/zcodesj/workbuddyspace'),
+    ('D:\\\\reasonix', 'D:\\\\zcodesj\\\\reasonix'),
+    ('d:\\\\reasonix', 'd:\\\\zcodesj\\\\reasonix'),
+    ('D:\\reasonix', 'D:\\zcodesj\\reasonix'),
+    ('d:\\reasonix', 'd:\\zcodesj\\reasonix'),
+    ('D:/reasonix', 'D:/zcodesj/reasonix'),
+    ('d:/reasonix', 'd:/zcodesj/reasonix'),
+]
+
+changed, skipped_bin = [], 0
+for root in ROOTS:
+    for dirpath, dirnames, filenames in os.walk(root):
+        rel = os.path.relpath(dirpath, root)
+        top = rel.split(os.sep)[0]
+        if top.startswith('2026-'):      # 近期会话快照,不动
+            dirnames[:] = []
+            continue
+        dirnames[:] = [d for d in dirnames if d not in EXCLUDE_DIRS]
+        for fn in filenames:
+            if os.path.splitext(fn)[1].lower() not in TEXT_EXT:
+                continue
+            p = os.path.join(dirpath, fn)
+            try:
+                raw = open(p, 'rb').read()
+            except OSError:
+                continue
+            if b'\x00' in raw[:8192]:     # 二进制跳过
+                skipped_bin += 1
+                continue
+            new = raw
+            for old, rep in PAIRS:
+                new = new.replace(old.encode(), rep.encode())
+            if new != raw:
+                open(p, 'wb').write(new)
+                changed.append(p)
+
+with open(r'D:\zcodesj\migration_manifest_20260809.txt', 'w', encoding='utf-8') as f:
+    f.write('\n'.join(changed))
+print(f'changed={len(changed)} skipped_bin={skipped_bin}')
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, html as htmllib, time
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+
+QUERIES = [
+ "动量因子 反转因子 A股 实证 研究",
+ "换手率因子 A股 收益 负相关",
+ "小市值 壳价值 因子 A股 失效 2017",
+ "涨停 封单量 首板 次日 溢价 研究",
+ "连板 晋级率 统计 1990 2020 雪球",
+ "XGBoost 特征重要性 股票 预测 因子",
+ "股东户数 筹码集中度 因子 选股",
+ "华泰证券 金工 多因子 研报 动量",
+ "北向资金 因子 有效性 选股 研究",
+ "涨停家数 情绪指标 量化 市场宽度",
+ "随机森林 股票 涨跌 预测 特征重要性 A股",
+ "打板 胜率 统计 研究 换手率 涨停",
+ "华泰 金工 研报 反转 因子 量价",
+ "筹码分布 主力 成本 因子 量化",
+]
+
+def clean(raw):
+    t = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', ' ', raw)
+    t = re.sub(r'<[^>]+>', ' ', t)
+    t = htmllib.unescape(t)
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n\s*\n+', '\n', t)
+    return t.strip()
+
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\so360_results.txt", "w", encoding="utf-8")
+for q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*60 + "\nQUERY: " + q + "\n" + "="*60 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        txt = clean(data.decode("gbk", errors="replace"))
+        out.write(txt[:5500] + "\n\n")
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2.5)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, time
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+
+QUERIES = [
+ ("打板模式胜率", "各类打板模式胜率 数据 14点 涨停 首板 晋级"),
+ ("连板晋级率雪球", "连板晋级率统计 1990 2020 基本结论 雪球"),
+ ("华泰北向", "华泰金工 机构拆解 北向资金 有效性"),
+ ("换手率北大学报", "换手率与股票收益 流动性溢价还是投机性泡沫"),
+ ("中国软科学动量", "中国A股市场动量效应和反转效应的实证研究及理论解释"),
+ ("小市值失效网易", "小盘股因子失效 2017 网易 壳价值"),
+ ("涨停封单成交比", "封单成交比 涨停 次日 溢价 雪球"),
+]
+
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\so360_links.txt", "w", encoding="utf-8")
+for name, q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*50 + "\n%s | %s\n" % (name, q) + "="*50 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        raw = data.decode("gbk", errors="replace")
+        # find result blocks: <li class="res-list"> ... <h3 ...><a href="..." ...>TITLE</a> ... <p class="res-desc">DESC</p>
+        blocks = re.split(r'<li class="res-list"', raw)
+        for b in blocks[1:8]:
+            mt = re.search(r'<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)</a>', b)
+            md = re.search(r'class="res-desc"[^>]*>([\s\S]*?)</p>', b)
+            mc = re.search(r'<cite[^>]*>([\s\S]*?)</cite>', b)
+            if mt:
+                href = mt.group(1)
+                t = re.sub(r'<[^>]+>', '', mt.group(2)).strip()
+                d = re.sub(r'<[^>]+>', '', md.group(1)).strip() if md else ''
+                c = re.sub(r'<[^>]+>', '', mc.group(1)).strip() if mc else ''
+                out.write("TITLE: %s\nURL: %s\nCITE: %s\nDESC: %s\n---\n" % (t[:110], href[:200], c[:80], d[:240]))
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, time
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+QUERIES = [
+ ("A股缺口回补", "A股 跳空缺口 回补 概率 实证 统计 研究"),
+ ("涨跌停实证", "A股 涨停板 溢价效应 实证 研究 封单 竞价"),
+ ("竞价行为", "A股 集合竞价 9:20 不可撤单 尾盘竞价 14:57 行为 规律"),
+ ("炸板统计", "A股 炸板 统计 规律 封板 概率 研究"),
+ ("事件研究法", "事件研究法 CAAR 异常收益 检验 A股 方法"),
+]
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_p0_results.txt", "w", encoding="utf-8")
+for name, q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*50 + "\n%s | %s\n" % (name, q) + "="*50 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        raw = data.decode("gbk", errors="replace")
+        blocks = re.split(r'<li class="res-list"', raw)
+        for b in blocks[1:9]:
+            mt = re.search(r'<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)</a>', b)
+            md = re.search(r'class="res-desc"[^>]*>([\s\S]*?)</p>', b)
+            mc = re.search(r'<cite[^>]*>([\s\S]*?)</cite>', b)
+            if mt:
+                href = mt.group(1)
+                t = re.sub(r'<[^>]+>', '', mt.group(2)).strip()
+                d = re.sub(r'<[^>]+>', '', md.group(1)).strip() if md else ''
+                c = re.sub(r'<[^>]+>', '', mc.group(1)).strip() if mc else ''
+                out.write("TITLE: %s\nURL: %s\nCITE: %s\nDESC: %s\n---\n" % (t[:130], href[:200], c[:80], d[:300]))
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, io, re, html as htmllib
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+PAGES = [
+ ("csdn_factor", "https://blog.csdn.net/ye_yumo/article/details/154949979"),
+ ("dzh_zt", "https://webrelease.dzh.com.cn/htmlweb/ztts/index.php"),
+ ("factors_dir", "https://factors.directory/zh"),
+ ("zhihu_zt", "https://zhuanlan.zhihu.com/p/50603388"),
+ ("xueqiu_chip", "https://xueqiu.com/2182560125/67336827"),
+]
+
+def clean(raw):
+    t = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', ' ', raw)
+    t = re.sub(r'<[^>]+>', ' ', t)
+    t = htmllib.unescape(t)
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n\s*\n+', '\n', t)
+    return t.strip()
+
+for name, url in PAGES:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=25).read()
+        txt = clean(data.decode("utf-8", errors="replace"))
+        with io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\%s.txt" % name, "w", encoding="utf-8") as f:
+            f.write(txt[:60000])
+        print(name, "OK", len(txt))
+    except Exception as e:
+        print(name, "ERROR", e)
+# -*- coding: utf-8 -*-
+import urllib.request, io, re, html as htmllib
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+PAGES = [
+ ("sengcheng_zt", "https://www.sengcheng.com/article/116113.html"),
+ ("163_chip", "https://www.163.com/dy/article/KN0T477O0553AF6B.html"),
+ ("zhihu_zt2", "https://zhuanlan.zhihu.com/p/23169383415"),
+ ("sogou_test", "https://www.sogou.com/web?query=%E6%B6%A8%E5%81%9C%E6%9D%BF%20%E8%BF%9E%E6%9D%BF%20%E6%99%8B%E7%BA%A7%E7%8E%87"),
+ ("joinquant", "https://www.joinquant.com/view/community/list"),
+ ("bigquant", "https://bigquant.com/community/"),
+]
+
+def clean(raw):
+    t = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', ' ', raw)
+    t = re.sub(r'<[^>]+>', ' ', t)
+    t = htmllib.unescape(t)
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n\s*\n+', '\n', t)
+    return t.strip()
+
+for name, url in PAGES:
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=25).read()
+        txt = clean(data.decode("utf-8", errors="replace"))
+        with io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\%s.txt" % name, "w", encoding="utf-8") as f:
+            f.write(txt[:60000])
+        print(name, "OK", len(txt))
+    except Exception as e:
+        print(name, "ERROR", e)
+# -*- coding: utf-8 -*-
+import urllib.request, io, re, html as htmllib, json
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+
+def get(url, timeout=25):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+    return urllib.request.urlopen(req, timeout=timeout).read()
+
+def clean(raw):
+    t = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', ' ', raw)
+    t = re.sub(r'<[^>]+>', ' ', t)
+    t = htmllib.unescape(t)
+    t = re.sub(r'[ \t]+', ' ', t)
+    t = re.sub(r'\n\s*\n+', '\n', t)
+    return t.strip()
+
+# 1. Baidu Baike: 涨停板
+try:
+    data = get("https://baike.baidu.com/item/%E6%B6%A8%E5%81%9C%E6%9D%BF/128156")
+    txt = clean(data.decode("utf-8", errors="replace"))
+    io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\baike_zt.txt","w",encoding="utf-8").write(txt[:40000])
+    print("baike_zt OK", len(txt))
+except Exception as e:
+    print("baike_zt ERROR", e)
+
+# 2. cnblogs search
+try:
+    data = get("https://zzk.cnblogs.com/s?w=%E6%B6%A8%E5%81%9C%E6%9D%BF%20%E8%BF%9E%E6%9D%BF%20%E7%A0%94%E7%A9%B6")
+    txt = clean(data.decode("utf-8", errors="replace"))
+    io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\cnblogs_zt.txt","w",encoding="utf-8").write(txt[:30000])
+    print("cnblogs OK", len(txt))
+except Exception as e:
+    print("cnblogs ERROR", e)
+
+# 3. GitHub API: repos about A股因子/涨停
+try:
+    req = urllib.request.Request("https://api.github.com/search/repositories?q=%E5%9B%A0%E5%AD%90+%E9%87%8F%E5%8C%96+A%E8%82%A1&sort=stars&per_page=10", headers={"User-Agent": "research-script", "Accept": "application/vnd.github+json"})
+    data = json.loads(get("https://api.github.com/search/repositories?q=%E5%9B%A0%E5%AD%90+%E9%87%8F%E5%8C%96+A%E8%82%A1&sort=stars&per_page=10".replace(" ", "%20").replace("+","%20")))
+    with io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\github_repos.json","w",encoding="utf-8") as f:
+        json.dump([{"full_name": r.get("full_name"), "desc": (r.get("description") or "")[:200], "stars": r.get("stargazers_count")} for r in data.get("items", [])], f, ensure_ascii=False, indent=1)
+    print("github OK", len(data.get("items", [])))
+except Exception as e:
+    print("github ERROR", e)
+
+# 4. Wikipedia price limit (Chinese)
+try:
+    data = get("https://zh.wikipedia.org/wiki/%E6%B6%A8%E8%B7%8C%E5%81%9C%E6%9D%BF")
+    txt = clean(data.decode("utf-8", errors="replace"))
+    io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\wiki_zt.txt","w",encoding="utf-8").write(txt[:50000])
+    print("wiki OK", len(txt))
+except Exception as e:
+    print("wiki ERROR", e)
+
+# 5. CSDN search
+try:
+    data = get("https://so.csdn.net/api/v3/search?q=%E6%B6%A8%E5%81%9C%E6%9D%BF%20%E8%BF%9E%E6%9D%BF%20%E9%87%8F%E5%8C%96&t=all&p=1")
+    txt = clean(data.decode("utf-8", errors="replace"))
+    io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\csdn_search.txt","w",encoding="utf-8").write(txt[:40000])
+    print("csdn_search OK", len(txt))
+except Exception as e:
+    print("csdn_search ERROR", e)
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, time
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+
+QUERIES = [
+ ("SMC英文", "Smart Money Concepts trading ICT order block fair value gap"),
+ ("SMC中文", "聪明钱 概念 交易 订单块 公允价值缺口 ICT"),
+ ("SMC回测", "SMC 交易策略 回测 有效性 订单块"),
+ ("FVG实现", "fair value gap 公允价值缺口 指标 量化 实现"),
+ ("聪明钱识别", "聪明钱 识别 大单 资金流 算法 因子"),
+ ("聪明钱A股", "聪明钱 因子 A股 量化 资金流 主买"),
+]
+
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_so360_links.txt", "w", encoding="utf-8")
+for name, q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*50 + "\n%s | %s\n" % (name, q) + "="*50 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        raw = data.decode("gbk", errors="replace")
+        blocks = re.split(r'<li class="res-list"', raw)
+        for b in blocks[1:9]:
+            mt = re.search(r'<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)</a>', b)
+            md = re.search(r'class="res-desc"[^>]*>([\s\S]*?)</p>', b)
+            mc = re.search(r'<cite[^>]*>([\s\S]*?)</cite>', b)
+            if mt:
+                href = mt.group(1)
+                t = re.sub(r'<[^>]+>', '', mt.group(2)).strip()
+                d = re.sub(r'<[^>]+>', '', md.group(1)).strip() if md else ''
+                c = re.sub(r'<[^>]+>', '', mc.group(1)).strip() if mc else ''
+                out.write("TITLE: %s\nURL: %s\nCITE: %s\nDESC: %s\n---\n" % (t[:120], href[:250], c[:80], d[:260]))
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, time
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+QUERIES = [
+ ("SMC机构应用", "Smart Money Concepts 量化 机构 应用 订单块 回测"),
+ ("SMC回测", "SMC 订单块 FVG 策略 回测 结果 胜率 量化"),
+ ("A股SMC", "SMC 聪明钱 A股 订单块 缺口 量化 策略 实现"),
+ ("FVG回测", "fair value gap 回测 胜率 统计"),
+]
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_inst_results.txt", "w", encoding="utf-8")
+for name, q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*50 + "\n%s | %s\n" % (name, q) + "="*50 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        raw = data.decode("gbk", errors="replace")
+        blocks = re.split(r'<li class="res-list"', raw)
+        for b in blocks[1:8]:
+            mt = re.search(r'<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)</a>', b)
+            md = re.search(r'class="res-desc"[^>]*>([\s\S]*?)</p>', b)
+            mc = re.search(r'<cite[^>]*>([\s\S]*?)</cite>', b)
+            if mt:
+                href = mt.group(1)
+                t = re.sub(r'<[^>]+>', '', mt.group(2)).strip()
+                d = re.sub(r'<[^>]+>', '', md.group(1)).strip() if md else ''
+                c = re.sub(r'<[^>]+>', '', mc.group(1)).strip() if mc else ''
+                out.write("TITLE: %s\nURL: %s\nCITE: %s\nDESC: %s\n---\n" % (t[:130], href[:180], c[:80], d[:300]))
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2)
+out.close()
+print("done")
+# -*- coding: utf-8 -*-
+"""Batch-update northbound_holding with latest quarterly data from westock CLI.
+
+Source : npx -y westock-data-skillhub@1.0.5 fund north-holding <codes> --raw
+Target : D:\\workbuddyspace\\databases\\fundamental_data.db  (northbound_holding)
+"""
+import json
+import sqlite3
+import subprocess
+import sys
+import time
+
+DB = r"D:\workbuddyspace\databases\fundamental_data.db"
+BATCH = 200
+SLEEP = 0.2
+NPX = "npx.cmd"
+PKG = "westock-data-skillhub@1.0.5"
+
+
+def to_westock(ts_code: str) -> str:
+    num, sfx = ts_code.split(".")
+    return {"SH": "sh", "SZ": "sz", "BJ": "bj"}[sfx] + num
+
+
+def to_tscode(wcode: str) -> str:
+    pfx, num = wcode[:2], wcode[2:]
+    return num + {"sh": ".SH", "sz": ".SZ", "bj": ".BJ"}[pfx]
+
+
+def fetch_batch(codes):
+    """Return (items, error_str). items may be None on hard failure."""
+    cmd = [NPX, "-y", PKG, "fund", "north-holding", ",".join(codes), "--raw"]
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True,
+                           encoding="utf-8", timeout=300)
+    except Exception as e:  # noqa: BLE001
+        return None, f"subprocess error: {e}"
+    if r.returncode != 0:
+        return None, f"rc={r.returncode} stderr={r.stderr[:300]}"
+    try:
+        return json.loads(r.stdout), None
+    except Exception as e:  # noqa: BLE001
+        return None, f"json parse error: {e}; head={r.stdout[:200]}"
+
+
+def main():
+    conn = sqlite3.connect(DB)
+    cur = conn.cursor()
+    cur.execute("SELECT DISTINCT ts_code FROM northbound_holding ORDER BY ts_code")
+    ts_codes = [r[0] for r in cur.fetchall()]
+    wcodes = [to_westock(c) for c in ts_codes]
+    w2ts = dict(zip(wcodes, ts_codes))
+    print(f"total codes: {len(wcodes)}", flush=True)
+
+    # existing (ts_code, trade_date) keys for upsert decision
+    cur.execute("SELECT ts_code, trade_date FROM northbound_holding")
+    existing = set(cur.fetchall())
+
+    n_insert = n_update = 0
+    ok_codes = set()
+    fail_codes = []      # (code, reason)
+    empty_codes = []     # codes absent from response
+
+    batches = [wcodes[i:i + BATCH] for i in range(0, len(wcodes), BATCH)]
+    for bi, batch in enumerate(batches, 1):
+        items, err = fetch_batch(batch)
+        if items is None:
+            print(f"[batch {bi}/{len(batches)}] FAILED: {err}", flush=True)
+            fail_codes.extend((c, err) for c in batch)
+        else:
+            got = {d.get("code") for d in items}
+            for c in batch:
+                if c not in got:
+                    empty_codes.append(c)
+            rows = []
+            for d in items:
+                code = d.get("code")
+                if not code or code not in w2ts:
+                    continue
+                end = str(d.get("披露截止") or "").replace("-", "")
+                if len(end) != 8:
+                    continue
+                cap = d.get("持股市值")
+                ratio = d.get("持股比例(%)")
+                name = d.get("name")
+                rows.append((w2ts[code], end, name, cap, ratio))
+                ok_codes.add(code)
+            for ts_code, tdate, name, cap, ratio in rows:
+                if (ts_code, tdate) in existing:
+                    cur.execute(
+                        "UPDATE northbound_holding SET name=?, holding_market_cap=?, "
+                        "holding_ratio=? WHERE ts_code=? AND trade_date=?",
+                        (name, cap, ratio, ts_code, tdate))
+                    n_update += 1
+                else:
+                    cur.execute(
+                        "INSERT INTO northbound_holding "
+                        "(trade_date, ts_code, name, close, change_pct, "
+                        "holding_market_cap, holding_ratio) VALUES (?,?,?,?,?,?,?)",
+                        (tdate, ts_code, name, None, None, cap, ratio))
+                    n_insert += 1
+                    existing.add((ts_code, tdate))
+            conn.commit()
+            print(f"[batch {bi}/{len(batches)}] ok: +{len(rows)} rows "
+                  f"(ins={n_insert}, upd={n_update})", flush=True)
+        if bi < len(batches):
+            time.sleep(SLEEP)
+
+    cur.execute("SELECT MAX(trade_date) FROM northbound_holding")
+    max_date = cur.fetchone()[0]
+    cur.execute("SELECT COUNT(*) FROM northbound_holding")
+    total = cur.fetchone()[0]
+    conn.close()
+
+    print("\n===== SUMMARY =====")
+    print(f"codes ok (data returned): {len(ok_codes)}")
+    print(f"codes empty (no data):    {len(empty_codes)}")
+    print(f"codes failed (errors):    {len(fail_codes)}")
+    print(f"rows inserted: {n_insert}")
+    print(f"rows updated:  {n_update}")
+    print(f"table total rows: {total}")
+    print(f"latest trade_date: {max_date}")
+    if empty_codes:
+        print("empty codes:", ",".join(empty_codes))
+    if fail_codes:
+        print("failed codes:", fail_codes[:20])
+
+    with open("nb_update_result.json", "w", encoding="utf-8") as f:
+        json.dump({"ok": sorted(ok_codes), "empty": empty_codes,
+                   "failed": [c for c, _ in fail_codes],
+                   "inserted": n_insert, "updated": n_update,
+                   "max_trade_date": max_date}, f, ensure_ascii=False, indent=1)
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+# -*- coding: utf-8 -*-
+"""给 m5/m67 打补丁:benchmark 改为沪深300成分等权收益(本地 dump 无指数)"""
+import re
+
+BENCH_HELPER = '''
+def get_universe_bench(start, end):
+    """沪深300成分等权日收益作为基准(本地 dump 无指数行情)"""
+    from qlib.data import D
+    df = D.features(D.instruments(market="csi300"), ["$close/Ref($close,1)-1"],
+                    start_time=start, end_time=end)
+    return df.groupby("datetime").iloc[:, 0].mean()
+'''
+
+for fn in ['m5_backtest.py', 'm67_advanced.py']:
+    s = open(fn, encoding='utf-8').read()
+    if 'get_universe_bench' not in s:
+        s = s.replace('qlib.init(', BENCH_HELPER + '\nqlib.init(', 1)
+    s = s.replace('benchmark="SH000300",', 'benchmark=None,')
+    # 回测区间起止用于基准计算
+    if fn == 'm5_backtest.py':
+        s = s.replace('excess = report_df["return"] - report_df["bench"] - report_df["cost"]',
+                      'bench = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      'excess = report_df["return"] - report_df["cost"] - bench\n'
+                      'excess = excess.dropna()')
+    else:
+        s = s.replace('excess = report_df["return"] - report_df["bench"] - report_df["cost"]',
+                      'bench = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      '    excess = (report_df["return"] - report_df["cost"] - bench).dropna()')
+    open(fn, 'w', encoding='utf-8').write(s)
+    print(fn, 'patched')
+# -*- coding: utf-8 -*-
+"""补丁 v2:benchmark 直接传等权收益 Series"""
+for fn in ['m5_backtest.py', 'm67_advanced.py']:
+    s = open(fn, encoding='utf-8').read()
+    # 回测调用前算好基准 Series
+    if fn == 'm5_backtest.py':
+        s = s.replace('portfolio_metric, indicator = qbacktest(',
+                      'bench_series = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      'portfolio_metric, indicator = qbacktest(')
+        s = s.replace('benchmark=None,', 'benchmark=bench_series,')
+        s = s.replace('bench = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      'excess = report_df["return"] - report_df["cost"] - bench\n'
+                      'excess = excess.dropna()',
+                      'excess = report_df["return"] - report_df["bench"] - report_df["cost"]')
+    else:
+        s = s.replace('    pm, _ = qbacktest(',
+                      '    bench_series = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      '    pm, _ = qbacktest(')
+        s = s.replace('benchmark=None,', 'benchmark=bench_series,')
+        s = s.replace('bench = get_universe_bench("2025-07-01", "2026-08-07")\n'
+                      '    excess = (report_df["return"] - report_df["cost"] - bench).dropna()',
+                      'excess = report_df["return"] - report_df["bench"] - report_df["cost"]')
+    open(fn, 'w', encoding='utf-8').write(s)
+    print(fn, 'patched v2')
+# -*- coding: utf-8 -*-
+"""回滚:按 manifest 把 D:\\zcodesj\\workbuddyspace / D:\\zcodesj\\reasonix 改回原路径"""
+import os
+
+PAIRS = [
+    ('D:\\\\zcodesj\\\\workbuddyspace', 'D:\\\\workbuddyspace'),
+    ('d:\\\\zcodesj\\\\workbuddyspace', 'd:\\\\workbuddyspace'),
+    ('D:\\zcodesj\\workbuddyspace', 'D:\\workbuddyspace'),
+    ('d:\\zcodesj\\workbuddyspace', 'd:\\workbuddyspace'),
+    ('D:/zcodesj/workbuddyspace', 'D:/workbuddyspace'),
+    ('d:/zcodesj/workbuddyspace', 'd:/workbuddyspace'),
+    ('D:\\\\zcodesj\\\\reasonix', 'D:\\\\reasonix'),
+    ('d:\\\\zcodesj\\\\reasonix', 'd:\\\\reasonix'),
+    ('D:\\zcodesj\\reasonix', 'D:\\reasonix'),
+    ('d:\\zcodesj\\reasonix', 'd:\\reasonix'),
+    ('D:/zcodesj/reasonix', 'D:/reasonix'),
+    ('d:/zcodesj/reasonix', 'd:/reasonix'),
+]
+
+restored, missing = 0, []
+for line in open(r'D:\zcodesj\migration_manifest_20260809.txt', encoding='utf-8'):
+    p = line.strip()
+    if not p:
+        continue
+    if not os.path.exists(p):
+        missing.append(p)
+        continue
+    raw = open(p, 'rb').read()
+    new = raw
+    for old, rep in PAIRS:
+        new = new.replace(old.encode(), rep.encode())
+    if new != raw:
+        open(p, 'wb').write(new)
+        restored += 1
+
+print(f'restored={restored} missing={len(missing)}')
+for m in missing[:10]:
+    print('MISSING:', m)
+# -*- coding: utf-8 -*-
+import urllib.request, urllib.parse, io, re, time
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+QUERIES = [
+ ("SMC有效吗", "Smart Money Concepts 订单块 FVG 回测 胜率 有效 统计"),
+ ("ICT概念", "ICT 订单块 公允价值缺口 流动性 扫除 市场结构 概念 定义"),
+ ("SMC批评", "订单块 指标 回测 效果 研究 分析 是否 有效"),
+]
+out = io.open(r"D:\zcodesj\.zcode\workspace\default\research_tmp\smc_so360_valid.txt", "w", encoding="utf-8")
+for name, q in QUERIES:
+    url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+    out.write("="*50 + "\n%s | %s\n" % (name, q) + "="*50 + "\n")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "zh-CN,zh;q=0.9"})
+        data = urllib.request.urlopen(req, timeout=20).read()
+        raw = data.decode("gbk", errors="replace")
+        blocks = re.split(r'<li class="res-list"', raw)
+        for b in blocks[1:9]:
+            mt = re.search(r'<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)</a>', b)
+            md = re.search(r'class="res-desc"[^>]*>([\s\S]*?)</p>', b)
+            mc = re.search(r'<cite[^>]*>([\s\S]*?)</cite>', b)
+            if mt:
+                href = mt.group(1)
+                t = re.sub(r'<[^>]+>', '', mt.group(2)).strip()
+                d = re.sub(r'<[^>]+>', '', md.group(1)).strip() if md else ''
+                c = re.sub(r'<[^>]+>', '', mc.group(1)).strip() if mc else ''
+                out.write("TITLE: %s\nURL: %s\nCITE: %s\nDESC: %s\n---\n" % (t[:130], href[:200], c[:80], d[:300]))
+    except Exception as e:
+        out.write("[ERROR] %s\n" % e)
+    time.sleep(2)
+out.close()
+print("done")

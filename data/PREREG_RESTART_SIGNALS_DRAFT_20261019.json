@@ -1,0 +1,45 @@
+{
+  "prereg_id": "RESTART_SIGNALS_20261019",
+  "status": "ACTIVE_REVISED",
+  "activated_at": "2026-10-19",
+  "activation_note": "主人「按推荐继续」批准激活修订版: S2按kill条款删除(主段0触发不可判), S3保留为候选监测(n=3不可判, 触发仅开题), S1待影子积累(约2027首评); runner/看板未建(月批次核查脚本已可手工跑, 自动化挂链待批)",
+  "revised_signals": ["S1_statistical(待影子)", "S3_engine(保留)"],
+  "removed_signals": ["S2_structural(2026-10-19按kill条款: 主段0触发)"],
+  "owner_approval": "2026-10-19「按推荐继续」批准六项清单之③B3激活(修订版)",
+  "purpose": "新样本期重启条件(DeepSeek方案B3; 不推翻2026 regime失效审计结论, 触发仅开题不改引擎)",
+  "signals": [
+    {
+      "id": "S1_statistical",
+      "desc": "在役OOS影子(低位修复族+vr120)滚动OOS期望连续8周为正且累计样本>=60笔",
+      "source": "在役fwd_shadow管线",
+      "data_ready": true
+    },
+    {
+      "id": "S2_structural",
+      "desc": "20日滚动组合波动率较2026年均值偏离>=1个标准差且持续>=10个交易日",
+      "source": "qfq组合自算",
+      "data_ready": true
+    },
+    {
+      "id": "S3_engine",
+      "desc": "双引擎raw信号滚动20日期望由负转正且持续>=15个交易日",
+      "source": "信号CSV+qfq(next-bar)",
+      "data_ready": true
+    }
+  ],
+  "feasibility_status": {
+    "checked_at": "2026-10-19",
+    "script": "analysis/b3_restart_feasibility_20261019.py",
+    "scale_adaptation": "月批次尺度原型(66共同月, 2020-02~2026-09, 受ml起点2020限制); prereg的20日交易日尺度需日线级组合序列(后续回测件)",
+    "S1": "N/A: 影子管线2026-10-20才激活, 无历史可回测; 最早评估约2027",
+    "S3": "主段(2018-2025)触发3次, 前向3期均值+4.35% vs 无条件+2.29%(差+2.06pp) 方向性为正; n=3<10 不可判(阈值保守不放宽); 2026-09触发1次单列(开题级, 无动作); 扩样本路径=单引擎变体延长至2016或日线版",
+    "S2": "主段0触发=当前阈值下不可判; 按kill条款候选删除或等日线版重构; 不放宽阈值凑样本(防data dredging)",
+    "verdict": "部分可行: S3候选保留待扩样本, S2按kill条款建议删除/重构, S1等待影子积累; 本结果回写后B3激活决策交主人"
+  },
+  "trigger_action": "仅输出《重启评估备忘录》(触发信号/样本量/拟评估问题/数据截止日); 不自动改引擎权重不自动恢复仓位; 开题须主人批准",
+  "validation_protocol": "三信号先做2012-2026历史回测: 触发后60日组合收益vs随机; 历史触发>=10次方可统计检验, 不足10次仅描述性参考且阈值保守; FAIL(置信区间跨0)的信号删除或调阈值后重验",
+  "kill_conditions": "任一信号历史回测无优势(CI跨0)即删除该信号; 全部信号FAIL则本prereg归档",
+  "decision_rights": "阈值设定=管理员提议+主人批准; 开题=主人批准; 看板计算=管理员",
+  "cost": "低", "priority": "P1",
+  "compat": "右尾兼容: 重启的是评估流程不是砍持仓; 评估期持仓逻辑不变"
+}

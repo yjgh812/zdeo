@@ -1,0 +1,92 @@
+{
+ "prereg_sha256": "798c85fc71231890548cb6c61035fd7e7f1587da5b367cf61b6e0e1918aeb17f",
+ "theta": 0.5,
+ "n": 251,
+ "n_high": 235,
+ "n_low": 16,
+ "verdicts": {
+  "short": {
+   "HIGH_n": 235,
+   "HIGH_mean_pp": -0.463,
+   "HIGH_t_week": -1.08,
+   "HIGH_weeks": 53,
+   "LOW_n": 16,
+   "LOW_median": 7.749,
+   "LOW_dates": [
+    "20260720",
+    "20260721",
+    "20260722",
+    "20260723",
+    "20260724",
+    "20260727",
+    "20260728",
+    "20260729",
+    "20260730",
+    "20260731",
+    "20260803",
+    "20260804",
+    "20260805",
+    "20260806",
+    "20260807",
+    "20260810"
+   ],
+   "LOW_mean_pp": 7.973,
+   "delta_pp": -8.436,
+   "t_welch": -6.38,
+   "HIGH_pos_month_ratio": 0.385,
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "verdict": "FAIL"
+  },
+  "mid": {
+   "HIGH_n": 235,
+   "HIGH_mean_pp": -0.245,
+   "HIGH_t_week": -0.45,
+   "HIGH_weeks": 53,
+   "LOW_n": 16,
+   "LOW_median": 5.391,
+   "LOW_dates": [
+    "20260720",
+    "20260721",
+    "20260722",
+    "20260723",
+    "20260724",
+    "20260727",
+    "20260728",
+    "20260729",
+    "20260730",
+    "20260731",
+    "20260803",
+    "20260804",
+    "20260805",
+    "20260806",
+    "20260807",
+    "20260810"
+   ],
+   "LOW_mean_pp": 7.744,
+   "delta_pp": -7.989,
+   "t_welch": -5.57,
+   "HIGH_pos_month_ratio": 0.462,
+   "G1": false,
+   "G2": false,
+   "G3": false,
+   "verdict": "FAIL"
+  }
+ },
+ "overall": "FAIL",
+ "sensitivity_short_top20h5": {
+  "theta_0.4": {
+   "HIGH_mean_pp": -0.074,
+   "LOW_mean_pp": 7.417,
+   "n_high": 246,
+   "n_low": 5
+  },
+  "theta_0.6": {
+   "HIGH_mean_pp": -0.44,
+   "LOW_mean_pp": 5.718,
+   "n_high": 230,
+   "n_low": 21
+  }
+ }
+}

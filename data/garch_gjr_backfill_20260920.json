@@ -1,0 +1,14 @@
+{
+ "backfill_ok": 0,
+ "backfill_fail": 0,
+ "synthetic_rows": 241,
+ "total_rows": 250,
+ "qlke_pairs_evaluated": 249,
+ "elapsed_s": 6.3,
+ "generated": "2026-09-20 23:09",
+ "qlike_garch": 0.09542,
+ "n_garch": 249,
+ "qlike_gjr": 0.11339,
+ "n_gjr": 249,
+ "gjr_minus_garch": 0.01797
+}

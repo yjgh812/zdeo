@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "episodes": 1201,
+    "qfq_rows": 1291000,
+    "king_def": "zt_entry=1 且 vol_band=<0.8缩量",
+    "bucket_def": "层级回退: (日×L1×涨停态×量比带)→(日×涨停×带)→(日×带), 取非游资成员≥5的最细层",
+    "bucket_diag": {
+      "n_q": 1291000,
+      "is_ep_true": 1160,
+      "bstat_sizes": {
+        "bkey": 23133,
+        "bkey3": 1719,
+        "bkey2": 910
+      },
+      "bmean_hit": 1187011,
+      "blevel_counts": {
+        "L3行业层": 1165595,
+        "L2日×涨停×带": 21186,
+        "L1日×带": 230
+      }
+    },
+    "note": "83%先验带OOS腰斩+月度价值域n=0注记, 全部观察级"
+  },
+  "A_king_vs_rest": {
+    "王者格": {
+      "n": 74,
+      "mfe_runup20_med": 26.36,
+      "mae_dd20_med": -9.875,
+      "f20": {
+        "n": 74,
+        "win_pct": 52.7,
+        "med": 1.48
+      },
+      "ex20": {
+        "n": 58,
+        "win_pct": 43.1,
+        "med": -0.0423
+      },
+      "seg_ret_win": 66.22
+    },
+    "格外": {
+      "n": 1127,
+      "mfe_runup20_med": 15.61,
+      "mae_dd20_med": -12.36,
+      "f20": {
+        "n": 1126,
+        "win_pct": 40.41,
+        "med": -3.865
+      },
+      "ex20": {
+        "n": 1023,
+        "win_pct": 35.39,
+        "med": -0.0584
+      },
+      "seg_ret_win": 44.54
+    },
+    "全体": {
+      "n": 1201,
+      "mfe_runup20_med": 16.355,
+      "mae_dd20_med": -12.21,
+      "f20": {
+        "n": 1200,
+        "win_pct": 41.17,
+        "med": -3.69
+      },
+      "ex20": {
+        "n": 1081,
+        "win_pct": 35.8,
+        "med": -0.0569
+      },
+      "seg_ret_win": 45.88
+    }
+  },
+  "B_loto": {
+    "王者格": {
+      "full_win_f20": 0.527,
+      "n": 74,
+      "rows": [
+        {
+          "exclude": "02IM",
+          "n_excluded": 10,
+          "player_own_win": 0.4,
+          "loo_win": 0.547,
+          "swing_pp": 1.98
+        },
+        {
+          "exclude": "丨木丨",
+          "n_excluded": 4,
+          "player_own_win": 0.5,
+          "loo_win": 0.529,
+          "swing_pp": 0.15
+        },
+        {
+          "exclude": "只核",
+          "n_excluded": 21,
+          "player_own_win": 0.667,
+          "loo_win": 0.472,
+          "swing_pp": -5.53
+        },
+        {
+          "exclude": "小蟒夫",
+          "n_excluded": 6,
+          "player_own_win": 0.5,
+          "loo_win": 0.529,
+          "swing_pp": 0.24
+        },
+        {
+          "exclude": "神明",
+          "n_excluded": 12,
+          "player_own_win": 0.25,
+          "loo_win": 0.581,
+          "swing_pp": 5.36
+        },
+        {
+          "exclude": "黄金",
+          "n_excluded": 21,
+          "player_own_win": 0.619,
+          "loo_win": 0.491,
+          "swing_pp": -3.65
+        }
+      ]
+    },
+    "全体": {
+      "full_win_f20": 0.411,
+      "n": 1201,
+      "rows": [
+        {
+          "exclude": "02IM",
+          "n_excluded": 136,
+          "player_own_win": 0.375,
+          "loo_win": 0.416,
+          "swing_pp": 0.46
+        },
+        {
+          "exclude": "丨木丨",
+          "n_excluded": 82,
+          "player_own_win": 0.439,
+          "loo_win": 0.409,
+          "swing_pp": -0.2
+        },
+        {
+          "exclude": "只核",
+          "n_excluded": 246,
+          "player_own_win": 0.423,
+          "loo_win": 0.408,
+          "swing_pp": -0.29
+        },
+        {
+          "exclude": "小蟒夫",
+          "n_excluded": 190,
+          "player_own_win": 0.426,
+          "loo_win": 0.409,
+          "swing_pp": -0.28
+        },
+        {
+          "exclude": "神明",
+          "n_excluded": 167,
+          "player_own_win": 0.353,
+          "loo_win": 0.421,
+          "swing_pp": 0.94
+        },
+        {
+          "exclude": "黄金",
+          "n_excluded": 380,
+          "player_own_win": 0.429,
+          "loo_win": 0.403,
+          "swing_pp": -0.82
+        }
+      ]
+    }
+  },
+  "B_dimstats_dispersion": {
+    "0.8-1.2平量": {
+      "players": 7,
+      "win5_min": 46.9,
+      "win5_max": 100.0,
+      "spread_pp": 5310.0
+    },
+    "1.2-2放量": {
+      "players": 7,
+      "win5_min": 44.4,
+      "win5_max": 64.0,
+      "spread_pp": 1960.0
+    },
+    "<0.8缩量": {
+      "players": 7,
+      "win5_min": 50.0,
+      "win5_max": 78.3,
+      "spread_pp": 2830.0
+    },
+    ">=2爆量": {
+      "players": 7,
+      "win5_min": 41.9,
+      "win5_max": 61.5,
+      "spread_pp": 1960.0
+    }
+  },
+  "C_t0": {
+    "hold0_n": 158,
+    "king_with_t0": {
+      "n": 74,
+      "win_pct": 52.7,
+      "med": 1.48
+    },
+    "king_no_t0": {
+      "n": 59,
+      "win_pct": 61.02,
+      "med": 3.83
+    }
+  }
+}

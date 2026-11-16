@@ -1,0 +1,12 @@
+{"date": "20260901", "pool": "pool3", "n_member": 38, "n_settled": 38, "mean": -4.12, "med": -8.35, "win": 28.9, "stop_rate": 52.6, "settled_at": "2026-09-28 09:07:20"}
+{"date": "20260901", "pool": "pool_a8", "n_member": 504, "n_settled": 502, "mean": -2.32, "med": -2.95, "win": 25.3, "stop_rate": 3.8, "settled_at": "2026-10-01 07:46:22"}
+{"date": "20260924", "pool": "pool3", "n_member": 29, "n_settled": 29, "mean": -6.7, "med": -11.15, "win": 10.3, "stop_rate": 69.0, "settled_at": "2026-10-12 07:46:31"}
+{"date": "20260928", "pool": "pool3", "n_member": 12, "n_settled": 11, "mean": -0.26, "med": -5.77, "win": 18.2, "stop_rate": 36.4, "settled_at": "2026-10-14 07:46:17"}
+{"date": "20260929", "pool": "pool3", "n_member": 14, "n_settled": 12, "mean": 3.11, "med": -8.55, "win": 41.7, "stop_rate": 58.3, "settled_at": "2026-10-14 07:46:17"}
+{"date": "20260930", "pool": "pool3", "n_member": 21, "n_settled": 19, "mean": -2.76, "med": -8.7, "win": 26.3, "stop_rate": 68.4, "settled_at": "2026-10-16 07:46:31"}
+{"date": "20261008", "pool": "pool3", "n_member": 16, "n_settled": 15, "mean": -0.9, "med": -4.94, "win": 46.7, "stop_rate": 46.7, "settled_at": "2026-10-16 07:46:31"}
+{"date": "20261009", "pool": "pool3", "n_member": 24, "n_settled": 23, "mean": -3.96, "med": -8.21, "win": 39.1, "stop_rate": 52.2, "settled_at": "2026-10-19 07:46:10"}
+{"date": "20261013", "pool": "pool3", "n_member": 21, "n_settled": 21, "mean": -4.92, "med": -9.23, "win": 23.8, "stop_rate": 52.4, "settled_at": "2026-10-23 07:46:46"}
+{"date": "20261015", "pool": "pool3", "n_member": 13, "n_settled": 13, "mean": -9.71, "med": -10.22, "win": 7.7, "stop_rate": 84.6, "settled_at": "2026-10-23 07:46:46"}
+{"date": "20261016", "pool": "pool3", "n_member": 11, "n_settled": 11, "mean": 3.23, "med": 1.0, "win": 54.5, "stop_rate": 36.4, "settled_at": "2026-10-26 07:46:22"}
+{"date": "20261019", "pool": "pool3", "n_member": 11, "n_settled": 11, "mean": 0.62, "med": -4.03, "win": 36.4, "stop_rate": 36.4, "settled_at": "2026-10-27 07:46:18"}

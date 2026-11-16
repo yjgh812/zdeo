@@ -1,0 +1,62 @@
+[
+ {
+  "code": "002534",
+  "name": "西子洁能",
+  "source": "swing_bos_bull",
+  "price": 16.17,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.0% 量比1.35 P涨前=0.0008 pos250=31.5% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600078",
+  "name": "澄星股份",
+  "source": "swing_bos_bull",
+  "price": 9.89,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.05% 量比3.87 P涨前=0.0002 pos250=11.3% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "603219",
+  "name": "富佳股份",
+  "source": "swing_bos_bull",
+  "price": 13.87,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+9.17% 量比1.9 P涨前=0.0002 pos250=16.4% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "605566",
+  "name": "福莱蒽特",
+  "source": "swing_bos_bull",
+  "price": 30.03,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.0% 量比1.23 P涨前=0.0002 pos250=22.8% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "300787",
+  "name": "海能实业",
+  "source": "swing_bos_bull",
+  "price": 12.1,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+13.5% 量比1.49 P涨前=0.0002 pos250=57.6% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

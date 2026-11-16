@@ -1,0 +1,58 @@
+{
+ "name": "PREREG_MORNINGSTAR_NEXTBAR",
+ "title": "早晨之星 next-bar 口径影子验证(经典蜡烛图形态族 next-bar 修正轮最强净增量形态)",
+ "status": "ACTIVE",
+ "approval": {
+  "status": "ACTIVE",
+  "decision_trail": [
+   "2026-10-19 主人转贴 workbuddy K线形态选股盘点, 例=早晨之星+放量1.5倍; 当晚 T 收盘口径误判族级零达标(SOP167/168, 后撤回)",
+   "2026-10-20 主人质疑「K线形态是否判断正确」→ 复核抓出口径错误: 抽样9例实现无误但入场口径=T收盘, 不合屠龙 next-bar 回测铁律 → 撤回初轮定谳(SOP169, 3472330)",
+   "2026-10-20 next-bar 修正轮(analysis/kline_pattern_nextbar_full_20261020.py): morning_star n=21354 nb20中位+2.43%/胜率59.0%, 分年正超额30/34, 2026失效regime单年+2.08pp; 对照拆分=阴-小体-阳无约束基率+1.33pp, 形态净增量+1.64pp/胜率差+5.7pp(族内最强); 看跌镜像全负(-2.78~-1.83pp)对称性佐证检验真实",
+   "2026-10-20 呈请「早晨之星列 prereg 候选, 批准则按三段式固化后进影子(与低位修复族同流程)」→ 主人「继续」=批准",
+   "2026-10-20 runner 三项工程测试: 复现(dedup=0 与批量研究逐位一致)/幂等(双跑md5一致)/fail-closed(缺字段exit1)"
+  ],
+  "approved_by": "owner(主人)",
+  "approved_at": "2026-10-20",
+  "activation_since": 20261021,
+  "runner": "analysis/morning_star_shadow_daily.py(全史重算幂等, 参数单一真源=本文件params字段, 缺字段fail-closed退出)"
+ },
+ "registered": "2026-10-20",
+ "family": "stock_event_kline_pattern_reversal",
+ "sibling_boundary": "与低位修复族(PREREG_LOW_DRYUP_REPAIR_FAMILY, 低位+缩量/破跌停域)不同族: 本件=经典三K反转形态(阴-星-阳, 无低位/量能约束, next-bar执行语义); 与追入语义判死族(突破追入/涨停追入)不同域(本事件T日收盘确认T+1收盘执行, 非追入); 不并轨不替代",
+ "evidence_report": "reports/KLINE_PATTERN_NEXTBAR_20261020.md + reports/KLINE_PATTERN_VERIFY_20261020.md(见stdout, analysis/kline_pattern_verify_sample_20261020.py)",
+ "in_sample_evidence": {
+  "n": 21354,
+  "nb20_med": 2.43,
+  "nb20_win": 59.0,
+  "baseline_med": -0.54,
+  "baseline_win": 47.6,
+  "excess": 2.97,
+  "years_pos": "30/34",
+  "y2026": "+2.08pp(屠龙已知双引擎失效regime)",
+  "net_vs_unconstrained_ctrl": "+1.64pp(vs 阴-小体-阳无约束对照, 胜率差+5.7pp)",
+  "caveats": [
+   "费前口径未扣双边费用",
+   "ST用当前名单过滤, 历史逐日ST无法标记(口径限制)",
+   "样内描述统计非因果; 影子层dedup_days=5与样内未去重口径存在已知差异",
+   "量能维度: 放量交叉口径在next-bar下+4.14pp(高于裸形态), 但影子主判据冻结裸形态避免事后加条件"
+  ]
+ },
+ "params": {
+  "pattern": "morning_star",
+  "touch_definitions": "T-2长阴(close[T-2]<open[T-2]且(close[T-2]-close[T-3])/close[T-3]<=-0.015); T-1星线(|close[T-1]-open[T-1]|/close[T-2]<=0.005且max(open,close)[T-1]<=close[T-2]); T日阳线(close[T]>open[T])且close[T]>=(open[T-2]+close[T-2])/2; 趋势前置=close[T-2]<close[T-12]",
+  "entry": "next_bar_close(T+1收盘入场)",
+  "horizons": [20],
+  "observe_horizons": [5, 10],
+  "dedup_days": 5,
+  "judge": {
+   "lock_rule": "OOS 60个交易日或已结算n>=30 先到",
+   "pass": "OOS nb20 med>=+1.5% 且 win>=52% (绝对口径, 基线参考层另行记录不进判据)",
+   "kill_switch": "OOS 前10个到期事件 nb20 med 全<0 提请废案"
+  },
+  "activation_since": 20261021,
+  "universe_exclude_prefix": ["68", "4", "8", "92"],
+  "st_filter": "stock_info.is_st=1 当前名单剔除(历史逐日ST不可得, 口径限制声明)",
+  "data_source_daily": "dragon_quant_qfq.db stock_daily_meta_qfq(wb单一真源)",
+  "boundary": "纯观测影子层零交易权, 禁止接交易闸门/交易cron/executor; 本件结论仅用于形态信号研究判定"
+ }
+}

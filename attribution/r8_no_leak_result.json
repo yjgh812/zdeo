@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "run_time": "2026-08-10T20:55:46.238391",
+    "data_source": "qlib_bin (V1预检PASS)",
+    "date_range": "2023-08-01 ~ 2026-08-06",
+    "leakage_fixed": true,
+    "sector_ranking_timing": "t-1 (无数据泄露)"
+  },
+  "r8_top5": {
+    "n": 1382,
+    "win_rate": 47.0,
+    "avg_return_pct": -0.72,
+    "pf": 0.73,
+    "median_return_pct": -0.68
+  },
+  "baseline": {
+    "n": 4111,
+    "win_rate": 45.4,
+    "avg_return_pct": -0.97,
+    "pf": 0.66,
+    "median_return_pct": -0.75
+  },
+  "dsr_r8": {
+    "sr_daily": -0.1305,
+    "sr_annual": -2.07,
+    "skew": -0.3,
+    "kurtosis": 0.06,
+    "psr0": 0.0,
+    "sr0_hurdle": 0.0272,
+    "dsr": 0.0,
+    "n_trials": 8,
+    "sample_size": 1382,
+    "verdict": "❌ 可能是multiple testing"
+  },
+  "dsr_baseline": {
+    "sr_daily": -0.1744,
+    "sr_annual": -2.77,
+    "skew": -0.34,
+    "kurtosis": -0.19,
+    "psr0": 0.0,
+    "sr0_hurdle": 0.0156,
+    "dsr": 0.0,
+    "n_trials": 8,
+    "sample_size": 4111,
+    "verdict": "❌ 可能是multiple testing"
+  },
+  "difference_test": {
+    "mean_diff_pp": 0.25,
+    "t_stat": 1.479,
+    "p_value": 0.1392
+  }
+}

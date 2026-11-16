@@ -1,0 +1,896 @@
+{
+ "date": "20260916",
+ "source": "hithink limit_up_pool date_ms=1789488000000 (2026-10-06落盘)",
+ "item": [
+  {
+   "ticker": "000993",
+   "name": "闽东电力",
+   "continue_day_cnt": 6,
+   "limit_up_reason": "海上风电+清洁能源+福建国资",
+   "seal_money": 43368956,
+   "limit_up_time": "09:36",
+   "is_st": false,
+   "last_price": 18.48
+  },
+  {
+   "ticker": "605058",
+   "name": "澳弘电子",
+   "continue_day_cnt": 4,
+   "limit_up_reason": "印制电路板+高密度互连板+服务器电源",
+   "seal_money": 68033251,
+   "limit_up_time": "09:34",
+   "is_st": false,
+   "last_price": 44.33
+  },
+  {
+   "ticker": "688004",
+   "name": "博汇科技",
+   "continue_day_cnt": 3,
+   "limit_up_reason": "协议转让+AI内容安全+视听大数据",
+   "seal_money": 10324842,
+   "limit_up_time": "10:31",
+   "is_st": false,
+   "last_price": 32.86
+  },
+  {
+   "ticker": "001216",
+   "name": "华瓷股份",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "氧化锆粉体+MLCC验证+越南基地",
+   "seal_money": 133558677,
+   "limit_up_time": "09:25",
+   "is_st": false,
+   "last_price": 18.07
+  },
+  {
+   "ticker": "002491",
+   "name": "通鼎互联",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "光纤光缆+网络安全+中报增长",
+   "seal_money": 156222570,
+   "limit_up_time": "11:24",
+   "is_st": false,
+   "last_price": 24.45
+  },
+  {
+   "ticker": "002584",
+   "name": "西陇科学",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "光刻胶配套试剂+PCB用化学试剂+氢氟酸",
+   "seal_money": 148050790,
+   "limit_up_time": "09:32",
+   "is_st": false,
+   "last_price": 9.55
+  },
+  {
+   "ticker": "002631",
+   "name": "德尔未来",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "半导体设备+石墨烯+大家居",
+   "seal_money": 60831338,
+   "limit_up_time": "10:36",
+   "is_st": false,
+   "last_price": 11.23
+  },
+  {
+   "ticker": "002846",
+   "name": "英联股份",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "固态电池+复合集流体+易开盖",
+   "seal_money": 41162381,
+   "limit_up_time": "09:31",
+   "is_st": false,
+   "last_price": 12.75
+  },
+  {
+   "ticker": "003026",
+   "name": "中晶科技",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "半导体硅片+订单充足+股权激励",
+   "seal_money": 106535357,
+   "limit_up_time": "09:32",
+   "is_st": false,
+   "last_price": 33.64
+  },
+  {
+   "ticker": "601579",
+   "name": "会稽山",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "高端黄酒+兰亭+全国化扩张",
+   "seal_money": 67599205,
+   "limit_up_time": "09:55",
+   "is_st": false,
+   "last_price": 28.33
+  },
+  {
+   "ticker": "603082",
+   "name": "北自科技",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "玻纤+具身智能+智能物流+资产收购",
+   "seal_money": 57991749,
+   "limit_up_time": "09:30",
+   "is_st": false,
+   "last_price": 52.98
+  },
+  {
+   "ticker": "603248",
+   "name": "锡华科技",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "风电齿轮箱+大兆瓦装备+高端部件",
+   "seal_money": 67743396,
+   "limit_up_time": "09:30",
+   "is_st": false,
+   "last_price": 20.31
+  },
+  {
+   "ticker": "000055",
+   "name": "方大集团",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "智能轨交+幕墙+光伏建筑",
+   "seal_money": 28750821,
+   "limit_up_time": "10:38",
+   "is_st": false,
+   "last_price": 3.82
+  },
+  {
+   "ticker": "000592",
+   "name": "平潭发展",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "林业+林板一体化+海峡两岸",
+   "seal_money": 188862870,
+   "limit_up_time": "10:17",
+   "is_st": false,
+   "last_price": 8.71
+  },
+  {
+   "ticker": "000670",
+   "name": "盈方微",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "存储芯片+电子元器件分销+资产重组",
+   "seal_money": 80667786,
+   "limit_up_time": "09:51",
+   "is_st": false,
+   "last_price": 7.96
+  },
+  {
+   "ticker": "000720",
+   "name": "新能泰山",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光纤+电缆+实控人中国华能",
+   "seal_money": 36638871,
+   "limit_up_time": "09:39",
+   "is_st": false,
+   "last_price": 4.17
+  },
+  {
+   "ticker": "000731",
+   "name": "四川美丰",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化肥尿素+车用尿素+回购",
+   "seal_money": 16677519,
+   "limit_up_time": "11:00",
+   "is_st": false,
+   "last_price": 7.99
+  },
+  {
+   "ticker": "000753",
+   "name": "漳州发展",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光伏+绿色电力+福建国资",
+   "seal_money": 38008850,
+   "limit_up_time": "10:30",
+   "is_st": false,
+   "last_price": 5.5
+  },
+  {
+   "ticker": "001209",
+   "name": "洪兴股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "家居服+跨境电商+半年报增长",
+   "seal_money": 24291336,
+   "limit_up_time": "13:17",
+   "is_st": false,
+   "last_price": 19.23
+  },
+  {
+   "ticker": "001326",
+   "name": "联域股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "机器人+植物照明+LED照明+业绩增长",
+   "seal_money": 18642820,
+   "limit_up_time": "13:11",
+   "is_st": false,
+   "last_price": 85.4
+  },
+  {
+   "ticker": "001378",
+   "name": "德冠新材",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "功能薄膜+业绩增长+新能源膜",
+   "seal_money": 8631689,
+   "limit_up_time": "11:01",
+   "is_st": false,
+   "last_price": 22.55
+  },
+  {
+   "ticker": "002068",
+   "name": "黑猫股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "炭黑涨价+导电炭黑+炭黑龙头",
+   "seal_money": 160883730,
+   "limit_up_time": "09:30",
+   "is_st": false,
+   "last_price": 10.14
+  },
+  {
+   "ticker": "002095",
+   "name": "生意宝",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "大宗电商+AI应用+业绩扭亏",
+   "seal_money": 65407161,
+   "limit_up_time": "14:24",
+   "is_st": false,
+   "last_price": 16.35
+  },
+  {
+   "ticker": "002137",
+   "name": "实益达",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "先进封装+间接持股宇树科技+参股六度人和",
+   "seal_money": 37046780,
+   "limit_up_time": "09:59",
+   "is_st": false,
+   "last_price": 8.2
+  },
+  {
+   "ticker": "002161",
+   "name": "远望谷",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "拟收购光泰通信+光通信+AI赋能+RFID物联网",
+   "seal_money": 12509499,
+   "limit_up_time": "10:20",
+   "is_st": false,
+   "last_price": 7.17
+  },
+  {
+   "ticker": "002281",
+   "name": "光迅科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "高速光模块+NPO+H股发行",
+   "seal_money": 339861090,
+   "limit_up_time": "10:35",
+   "is_st": false,
+   "last_price": 185.21
+  },
+  {
+   "ticker": "002285",
+   "name": "世联行",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "房地产服务+大资管+珠海国资",
+   "seal_money": 4988169,
+   "limit_up_time": "13:03",
+   "is_st": false,
+   "last_price": 2.39
+  },
+  {
+   "ticker": "002300",
+   "name": "太阳电缆",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "海上风电+海底电缆+电线电缆",
+   "seal_money": 101697082,
+   "limit_up_time": "09:36",
+   "is_st": false,
+   "last_price": 8.38
+  },
+  {
+   "ticker": "002303",
+   "name": "美盈森",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "包装一体化+消费电子包装+模切业务+海外产能",
+   "seal_money": 19885176,
+   "limit_up_time": "13:43",
+   "is_st": false,
+   "last_price": 5.79
+  },
+  {
+   "ticker": "002383",
+   "name": "合众思壮",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "北斗导航+商业航天+农机",
+   "seal_money": 54357212,
+   "limit_up_time": "09:42",
+   "is_st": false,
+   "last_price": 8.16
+  },
+  {
+   "ticker": "002388",
+   "name": "新亚制程",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "胶粘剂+AI服务器电源+六氟磷酸锂",
+   "seal_money": 23699490,
+   "limit_up_time": "10:51",
+   "is_st": false,
+   "last_price": 6.78
+  },
+  {
+   "ticker": "002396",
+   "name": "星网锐捷",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "数据中心交换机+光通信+福建国资",
+   "seal_money": 126536952,
+   "limit_up_time": "13:12",
+   "is_st": false,
+   "last_price": 38.83
+  },
+  {
+   "ticker": "002442",
+   "name": "龙星科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "炭黑+行业龙头+绿色低碳",
+   "seal_money": 45342304,
+   "limit_up_time": "09:25",
+   "is_st": false,
+   "last_price": 5.68
+  },
+  {
+   "ticker": "002489",
+   "name": "浙江永强",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "户外家具+全球渠道+东南亚产能",
+   "seal_money": 27909632,
+   "limit_up_time": "14:10",
+   "is_st": false,
+   "last_price": 3.04
+  },
+  {
+   "ticker": "002577",
+   "name": "雷柏科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电竞外设+无线键鼠+股份回购",
+   "seal_money": 21370452,
+   "limit_up_time": "14:09",
+   "is_st": false,
+   "last_price": 19.89
+  },
+  {
+   "ticker": "002617",
+   "name": "露笑科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "碳化硅衬底+半导体材料+大尺寸拓展",
+   "seal_money": 155561280,
+   "limit_up_time": "09:34",
+   "is_st": false,
+   "last_price": 7.02
+  },
+  {
+   "ticker": "002655",
+   "name": "共达电声",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "AI算力+电声元器件+苹果概念+汽车电子",
+   "seal_money": 101158976,
+   "limit_up_time": "13:07",
+   "is_st": false,
+   "last_price": 37.06
+  },
+  {
+   "ticker": "002679",
+   "name": "福建金森",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "林业主业+海峡两岸+国有控股",
+   "seal_money": 64305588,
+   "limit_up_time": "10:32",
+   "is_st": false,
+   "last_price": 11.28
+  },
+  {
+   "ticker": "002724",
+   "name": "海洋王",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "AI照明+应急照明",
+   "seal_money": 9873387,
+   "limit_up_time": "10:53",
+   "is_st": false,
+   "last_price": 7.27
+  },
+  {
+   "ticker": "002730",
+   "name": "电光科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "算力服务+数据中心+矿用防爆电器",
+   "seal_money": 58183860,
+   "limit_up_time": "10:01",
+   "is_st": false,
+   "last_price": 23.8
+  },
+  {
+   "ticker": "002780",
+   "name": "三夫户外",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "户外品牌运营+X-BIONIC+ODLO代理",
+   "seal_money": 69520043,
+   "limit_up_time": "09:47",
+   "is_st": false,
+   "last_price": 14.04
+  },
+  {
+   "ticker": "002787",
+   "name": "华源控股",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "半导体设备+光模块+金属包装+股份回购",
+   "seal_money": 32445960,
+   "limit_up_time": "13:05",
+   "is_st": false,
+   "last_price": 25.4
+  },
+  {
+   "ticker": "002806",
+   "name": "华锋股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "超级电容材料+铝箔材+SiC控制器",
+   "seal_money": 32544832,
+   "limit_up_time": "10:58",
+   "is_st": false,
+   "last_price": 15.62
+  },
+  {
+   "ticker": "002824",
+   "name": "和胜股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "折叠屏铝材+液冷算力+业绩增长",
+   "seal_money": 77418849,
+   "limit_up_time": "13:01",
+   "is_st": false,
+   "last_price": 28.09
+  },
+  {
+   "ticker": "002903",
+   "name": "宇环数控",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "半导体设备+数控磨床+消费电子",
+   "seal_money": 17313548,
+   "limit_up_time": "11:14",
+   "is_st": false,
+   "last_price": 28.95
+  },
+  {
+   "ticker": "002913",
+   "name": "奥士康",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "高端PCB+AI服务器+全球制造",
+   "seal_money": 115553318,
+   "limit_up_time": "11:25",
+   "is_st": false,
+   "last_price": 83.11
+  },
+  {
+   "ticker": "002956",
+   "name": "西麦食品",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "燕麦食品+食养粉+中报增长",
+   "seal_money": 39947733,
+   "limit_up_time": "13:41",
+   "is_st": false,
+   "last_price": 16.74
+  },
+  {
+   "ticker": "002957",
+   "name": "科瑞技术",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光模块设备+半导体设备+人形机器人",
+   "seal_money": 86824524,
+   "limit_up_time": "11:16",
+   "is_st": false,
+   "last_price": 42.65
+  },
+  {
+   "ticker": "002961",
+   "name": "瑞达期货",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "期货业务+CTA资管+赴港上市",
+   "seal_money": 49109643,
+   "limit_up_time": "10:17",
+   "is_st": false,
+   "last_price": 20.97
+  },
+  {
+   "ticker": "002963",
+   "name": "豪尔赛",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "拟收购新能动力+智慧能源+照明工程",
+   "seal_money": 80184978,
+   "limit_up_time": "09:46",
+   "is_st": false,
+   "last_price": 20.71
+  },
+  {
+   "ticker": "002976",
+   "name": "瑞玛精密",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光通信散热+空气悬架+5G通信",
+   "seal_money": 43806595,
+   "limit_up_time": "10:32",
+   "is_st": false,
+   "last_price": 26.3
+  },
+  {
+   "ticker": "003001",
+   "name": "中岩大地",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "PCB刀具+核电工程+岩土固化剂",
+   "seal_money": 94952423,
+   "limit_up_time": "09:30",
+   "is_st": false,
+   "last_price": 18.47
+  },
+  {
+   "ticker": "003031",
+   "name": "中瓷电子",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光通信陶瓷+电子陶瓷+氮化镓",
+   "seal_money": 256364680,
+   "limit_up_time": "09:35",
+   "is_st": false,
+   "last_price": 137.72
+  },
+  {
+   "ticker": "300243",
+   "name": "瑞丰高材",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "CSR增韧剂+PCB+PVC助剂+拟收购觅拓新材",
+   "seal_money": 64194900,
+   "limit_up_time": "13:16",
+   "is_st": false,
+   "last_price": 19.85
+  },
+  {
+   "ticker": "300464",
+   "name": "星徽股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "液冷散热+服务器滑轨+精密五金",
+   "seal_money": 17659248,
+   "limit_up_time": "13:01",
+   "is_st": false,
+   "last_price": 10.02
+  },
+  {
+   "ticker": "300656",
+   "name": "民德电子",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "功率半导体+晶圆代工+定增扩产",
+   "seal_money": 139076700,
+   "limit_up_time": "11:14",
+   "is_st": false,
+   "last_price": 29.57
+  },
+  {
+   "ticker": "300992",
+   "name": "泰福泵业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "液冷泵+民用水泵+控制权变更",
+   "seal_money": 44441766,
+   "limit_up_time": "13:02",
+   "is_st": false,
+   "last_price": 28.44
+  },
+  {
+   "ticker": "301251",
+   "name": "威尔高",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "AI电源PCB+DC-DC+产能扩张",
+   "seal_money": 25799954,
+   "limit_up_time": "10:09",
+   "is_st": false,
+   "last_price": 81.78
+  },
+  {
+   "ticker": "301486",
+   "name": "致尚科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光通信+MPC+MPO满产",
+   "seal_money": 138298600,
+   "limit_up_time": "10:36",
+   "is_st": false,
+   "last_price": 214.34
+  },
+  {
+   "ticker": "600059",
+   "name": "古越龙山",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "黄酒主业+高端化+全国化",
+   "seal_money": 45938667,
+   "limit_up_time": "10:04",
+   "is_st": false,
+   "last_price": 9.77
+  },
+  {
+   "ticker": "600103",
+   "name": "青山纸业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光模块+竹浆纸+电子通讯",
+   "seal_money": 113129570,
+   "limit_up_time": "10:25",
+   "is_st": false,
+   "last_price": 3.69
+  },
+  {
+   "ticker": "600105",
+   "name": "永鼎股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光通信+光芯片订单+业绩增长",
+   "seal_money": 641975320,
+   "limit_up_time": "10:07",
+   "is_st": false,
+   "last_price": 45.22
+  },
+  {
+   "ticker": "600135",
+   "name": "乐凯胶片",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "TAC膜+锂电隔膜+膜材料+实控人航天科技",
+   "seal_money": 32609981,
+   "limit_up_time": "09:43",
+   "is_st": false,
+   "last_price": 8.09
+  },
+  {
+   "ticker": "600206",
+   "name": "有研新材",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "存储芯片+半导体靶材+产能扩建",
+   "seal_money": 386042670,
+   "limit_up_time": "10:07",
+   "is_st": false,
+   "last_price": 51.63
+  },
+  {
+   "ticker": "600371",
+   "name": "万向德农",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "转基因玉米+玉米种业+新品研发",
+   "seal_money": 65780070,
+   "limit_up_time": "09:40",
+   "is_st": false,
+   "last_price": 14.22
+  },
+  {
+   "ticker": "600500",
+   "name": "中化国际",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "覆铜板上游PPE树脂+光纤概念+拟收购南通星辰",
+   "seal_money": 51563736,
+   "limit_up_time": "13:09",
+   "is_st": false,
+   "last_price": 6.03
+  },
+  {
+   "ticker": "600545",
+   "name": "卓郎智能",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "玻纤设备+纺织机械+工业自动化",
+   "seal_money": 41147072,
+   "limit_up_time": "11:21",
+   "is_st": false,
+   "last_price": 4.72
+  },
+  {
+   "ticker": "600616",
+   "name": "金枫酒业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "黄酒主业+渠道拓展+半年报减亏",
+   "seal_money": 8136970,
+   "limit_up_time": "09:55",
+   "is_st": false,
+   "last_price": 4.88
+  },
+  {
+   "ticker": "600644",
+   "name": "乐山电力",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电力水电+虚拟电厂+储能",
+   "seal_money": 53124902,
+   "limit_up_time": "09:32",
+   "is_st": false,
+   "last_price": 10.38
+  },
+  {
+   "ticker": "600793",
+   "name": "宜宾纸业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "醋酸纤维素+TAC膜+竹浆造纸+宜宾国资",
+   "seal_money": 6283876,
+   "limit_up_time": "14:52",
+   "is_st": false,
+   "last_price": 16.36
+  },
+  {
+   "ticker": "601208",
+   "name": "东材科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "高速树脂+MLCC基膜+眉山量产",
+   "seal_money": 296615210,
+   "limit_up_time": "11:19",
+   "is_st": false,
+   "last_price": 54.31
+  },
+  {
+   "ticker": "603023",
+   "name": "威帝股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "乘用车电子+精密金属零部件+资产过户",
+   "seal_money": 18746556,
+   "limit_up_time": "13:06",
+   "is_st": false,
+   "last_price": 4.26
+  },
+  {
+   "ticker": "603042",
+   "name": "华脉科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光纤光缆+光通信+6G布局",
+   "seal_money": 97875887,
+   "limit_up_time": "09:35",
+   "is_st": false,
+   "last_price": 17.16
+  },
+  {
+   "ticker": "603052",
+   "name": "可川科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "硅光芯片+高速光模块+功能性器件",
+   "seal_money": 65028297,
+   "limit_up_time": "10:51",
+   "is_st": false,
+   "last_price": 60.24
+  },
+  {
+   "ticker": "603122",
+   "name": "合富中国",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "AI医疗+医疗数智化+体外诊断+海峡两岸",
+   "seal_money": 57109997,
+   "limit_up_time": "09:36",
+   "is_st": false,
+   "last_price": 13.01
+  },
+  {
+   "ticker": "603155",
+   "name": "新亚强",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光纤材料+电子化学品+国资控股",
+   "seal_money": 33258487,
+   "limit_up_time": "09:43",
+   "is_st": false,
+   "last_price": 15.4
+  },
+  {
+   "ticker": "603230",
+   "name": "内蒙新华",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "教育服务+文化消费+出版发行",
+   "seal_money": 38346108,
+   "limit_up_time": "09:38",
+   "is_st": false,
+   "last_price": 11.14
+  },
+  {
+   "ticker": "603255",
+   "name": "鼎际得",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "POE新材料+催化剂助剂+半年报增长",
+   "seal_money": 13547840,
+   "limit_up_time": "13:04",
+   "is_st": false,
+   "last_price": 32.0
+  },
+  {
+   "ticker": "603276",
+   "name": "恒兴新材",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "锂电电解液+精细化工+半年报增长",
+   "seal_money": 4466250,
+   "limit_up_time": "13:03",
+   "is_st": false,
+   "last_price": 17.86
+  },
+  {
+   "ticker": "603328",
+   "name": "依顿电子",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "高端PCB+AI算力+绵阳国资",
+   "seal_money": 110647338,
+   "limit_up_time": "14:29",
+   "is_st": false,
+   "last_price": 14.31
+  },
+  {
+   "ticker": "603607",
+   "name": "京华激光",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "IP卡牌+激光防伪+烟草包装",
+   "seal_money": 55078724,
+   "limit_up_time": "13:00",
+   "is_st": false,
+   "last_price": 24.41
+  },
+  {
+   "ticker": "603900",
+   "name": "莱绅通灵",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "黄金珠宝+艺术珠宝+黄金租赁",
+   "seal_money": 57055600,
+   "limit_up_time": "11:18",
+   "is_st": false,
+   "last_price": 7.1
+  },
+  {
+   "ticker": "603956",
+   "name": "威派格",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "PCB钻针+智慧水务+AI应用",
+   "seal_money": 40261002,
+   "limit_up_time": "14:26",
+   "is_st": false,
+   "last_price": 6.99
+  },
+  {
+   "ticker": "605100",
+   "name": "华丰股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "算电协同+数据中心电源+业绩增长",
+   "seal_money": 53331690,
+   "limit_up_time": "13:11",
+   "is_st": false,
+   "last_price": 34.08
+  },
+  {
+   "ticker": "605358",
+   "name": "立昂微",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "半导体硅片涨价+VCSEL芯片+AI算力+中报扭亏",
+   "seal_money": 132873531,
+   "limit_up_time": "13:10",
+   "is_st": false,
+   "last_price": 44.87
+  },
+  {
+   "ticker": "605378",
+   "name": "野马电池",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "锌锰电池+智能制造+海外基地",
+   "seal_money": 20994468,
+   "limit_up_time": "10:43",
+   "is_st": false,
+   "last_price": 15.22
+  },
+  {
+   "ticker": "605566",
+   "name": "福莱蒽特",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "分散染料+服务器采购+机器人皮肤",
+   "seal_money": 60731160,
+   "limit_up_time": "09:37",
+   "is_st": false,
+   "last_price": 27.58
+  },
+  {
+   "ticker": "688432",
+   "name": "有研硅",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "半导体硅材料+12英寸硅片+重大资产重组",
+   "seal_money": 214910500,
+   "limit_up_time": "10:09",
+   "is_st": false,
+   "last_price": 54.06
+  },
+  {
+   "ticker": "688478",
+   "name": "晶升股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "碳化硅设备+12英寸+氮化铝设备",
+   "seal_money": 68937510,
+   "limit_up_time": "11:00",
+   "is_st": false,
+   "last_price": 47.78
+  }
+ ]
+}

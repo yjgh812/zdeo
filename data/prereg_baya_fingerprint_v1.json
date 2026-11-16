@@ -1,0 +1,31 @@
+{
+ "prereg": "BAYA-FINGERPRINT-V1",
+ "registered_at": "20260915",
+ "owner_approval": "20260915会话主人『继续』指令, 影子观察性质零交易影响",
+ "type": "prereg_shadow_observation",
+ "hypothesis": "bp_ep月名单中满足完整百亚型指纹 F = R(pos250<=45 ∧ 距年高<=-30% ∧ ret60<=0 ∧ ret20>=-12 ∧ vol20<=4) ∧ 地量(amt_ratio<0.35) 的成员, 其 fwd20 等权收益跑赢全市场等权, 且组内中位数为正(探索性检验中唯一正中位数效应)",
+ "discovery_disclosure": "规则产生于20260915对938笔交易的6切片探索性扫描(同一样本多重检验风险已声明); 区分度来源=地量子规律(S4: 阈值0.25~0.45敏感性单调, 地量组fwd20 +4.97%/中位+2.58%/胜率60%, 非地量组-0.43%)与市场门控(S5: HIGH态指纹失效-1.37%)",
+ "frozen_thresholds": {
+  "R": "pos250<=45, dist_hi<=-30%, ret60<=0, ret20>=-12, vol20<=4 (同prereg_bpep_highpos_filter_v1的发现样本)",
+  "amt_ratio": "<0.35 (现20日均额/过去250bar内20日均额峰值, qfq amount列; 历史<60bar者视为不满足)",
+  "market_gate": "上证指数(sh.000001) pos250 @T0 < 67 (T0收盘口径); >=67 当期不构成F组并如实记录"
+ },
+ "arms": {
+  "F_group": "每期名单rank<=20中满足F的成员, 等权",
+  "baseline": "全市场等权同期fwd20"
+ },
+ "horizon_and_judgment": {
+  "periods": "3期OOS月度名单(文件第一段>=20261001)",
+  "validity": "3期累计F组成员>=10只方可评定; 否则记'样本不足,判据不可评'",
+  "pass": "F组合并fwd20-全市场等权 >= +2.0pp 且 F组内中位数>0 → PASS_CANDIDATE(仅提请, 不自动落地)",
+  "fail": "其余情形FAIL归档; 措辞纪律: FAIL=该实现未通过验证, 不否定方向本身(主人20260914裁决)"
+ },
+ "related": ["prereg_bpep_highpos_filter_v1(负过滤臂, 并行不冲突)", "baya_pattern_track(13票T+20观察池)", "reports/baya_pattern_research_20260915.md §3.4-3.5"],
+ "data_inputs": {
+  "lists": "multifactor/reports/daily_top20/bp_ep_monthly_*.csv (rank<=20截断, 21~50为fill池不用于本实验)",
+  "price_volume": "D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db (mode=ro)",
+  "index": "data/_sh_index_daily.csv (baostock sh.000001, snapshot时自动刷新)"
+ },
+ "eval_cmd": "python data/baya_fingerprint_shadow.py --eval",
+ "snapshot_cmd": "python data/baya_fingerprint_shadow.py --snapshot (幂等, 输入不可变故晚跑不改冻结值)"
+}

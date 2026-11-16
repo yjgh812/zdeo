@@ -1,0 +1,29 @@
+{
+ "id": "TEXTBOOK-BS-POINTS-20261003",
+ "mode": "independent_reimpl",
+ "weekly_macd_cross": {
+  "n": 20619,
+  "win20": 0.4231,
+  "med20_pct": -1.767,
+  "orig": "n=19171 win42.8%"
+ },
+ "support_shrink_hammer": {
+  "n": 132546,
+  "win20": 0.4559,
+  "med20_pct": -0.811,
+  "orig": "n=20004 win47.2%"
+ },
+ "low_engulfing": {
+  "n": 284055,
+  "win20": 0.4919,
+  "med20_pct": -0.114,
+  "orig": "n=41468 win50.3%"
+ },
+ "baseline_sampled": {
+  "n": 225081,
+  "win20": 0.4713
+ },
+ "caveats": [
+  "ST未剔(原名服务未接, 影响约2-3%股票); 原档跑在已失考本地副本(谱系发现F9); 5日去重=模式内独立计数"
+ ]
+}

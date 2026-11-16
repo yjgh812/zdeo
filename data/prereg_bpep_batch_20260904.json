@@ -1,0 +1,39 @@
+{
+  "prereg_id": "PREREG_BPEP_BATCH_20260904_V2",
+  "created_at": "2026-09-03T21:0x",
+  "type": "名单制验证批次（主人指令：框架选5只，明日westock practice_190买入验证）",
+  "revision": "V2——主人裁决'都是银行不行'(2026-09-03晚)，买入前修订：池子Top20→Top50(E1实证背书:n值噪声等价,Δ年化+0.25/+0.36pp均处±2pp带,git bdee3c3,预注册1b5d52a801a2eab4)+新增行业分散约束(申万一级≤1只)+板块5日主力资金为正硬筛",
+  "source": "bp_ep_monthly_20260901_20260903_n50.csv（同源生成器 --date 20260901 -n 50 --no-sync）",
+  "selection_rule": "Top50池 → 剔除已持仓 → 板块5日主力净流入为正(剔除环保/中药/生物制品/电力/纺织/地产/园区开发8只) → checklist三道核对 → 行业分散(同申万一级取排名优先)取5",
+  "selected": [
+    {"code": "sh601668", "name": "中国建筑", "rank": 2, "industry": "建筑工程/房屋建设", "sector5d_netinflow_wan": 23465.93, "runup_days": 1, "pos_pct": 1.9, "watch_low": 4.31, "budget_yuan": 5000},
+    {"code": "sh600694", "name": "大商股份", "rank": 32, "industry": "一般零售/百货", "sector5d_netinflow_wan": 147153.70, "runup_days": 1, "pos_pct": 4.2, "watch_low": 14.40, "budget_yuan": 5000},
+    {"code": "sh600704", "name": "物产中大", "rank": 36, "industry": "仓储物流", "sector5d_netinflow_wan": 6708.29, "runup_days": 0, "pos_pct": 1.4, "watch_low": 4.90, "budget_yuan": 5000},
+    {"code": "sh600035", "name": "楚天高速", "rank": 37, "industry": "路桥/铁路公路", "sector5d_netinflow_wan": 40004.47, "runup_days": 0, "pos_pct": 12.0, "watch_low": 3.72, "budget_yuan": 5000, "note": "位置WARN(+12%<15%阈值)不否决"},
+    {"code": "sh600717", "name": "天津港", "rank": 48, "industry": "港口/航运港口", "sector5d_netinflow_wan": 12682.29, "runup_days": 1, "pos_pct": 3.8, "watch_low": 4.32, "budget_yuan": 5000}
+  ],
+  "benchmarks_dropped": [
+    {"name": "百联股份", "reason": "同一般零售让位大商股份(排名32<42)"},
+    {"name": "中原高速", "reason": "同路桥让位楚天高速(排名37<50)"},
+    {"name": "V1批次民生/浦发/兴业/华夏银行", "reason": "主人裁决'都是银行不行'，4只银行剔除，tips提醒已清"}
+  ],
+  "rejected_by_check": [
+    {"names": "辽宁成大/吉林敖东/江苏国信/鲁泰A/中原环保/城发环境/新黄浦/南京高科", "reason": "所处申万行业5日主力净流入为负(生物制品-12.3亿/中药-3.0亿/电力-15.2亿/纺织-2.2亿/环境治理-6.5亿/房地产-5.8亿)"},
+    {"names": "光大银行/长沙银行/无锡银行", "reason": "题材天数>=3 FAIL"},
+    {"names": "贵阳银行/青农商行/苏农银行/紫金银行/中国铁建/中国中铁", "reason": "板块5日净流出"}
+  ],
+  "breaker_note": "批次熔断当前OPEN(9/2批-1225/9/3批-3365连亏)。本批次为名单制批次=SOP§六第11条①规定的'恢复名单制'恢复动作，题材批次继续封锁；checklist熔断项以本预注册登记为核销依据",
+  "execution_plan": "20260904 09:25竞价后补核高开项(>=3%剔除/1-3%等回踩)；09:30后走trade_executor.py buy下单(--source=bp_ep_list写台账过闸门)，每只约5000元按100股整数倍，总预算25,000元(可用现金29,542.74留缓冲)；观察位westock提醒已设(中国建筑4.31延续/大商14.40/物产4.90/楚天3.72/天津港4.32)，4只V1银行提醒已清待复核",
+  "validation_protocol": {
+    "primary": "T+1/T+3/T+5收盘超额收益 vs 上证指数（买入价=成交均价，qfq口径）",
+    "secondary": "V1银行批作废不执行，故无AB对照；分散批自身按行业归因",
+    "stop": "-8%硬止损(S-5)触发即执行；跌破观察位(9/3 low)按预案请示主人减仓",
+    "success_criteria": "T+5加权超额为正 且 无一票触发-8%",
+    "fail_handling": "若本批亦亏：名单制框架进入复盘审查（与题材批对照归因），不因单批否决框架（60样本铁律），连续累计按熔断纪律处理"
+  },
+  "honest_notes": [
+    "行业分散约束为新增框架内加权，未过WFA(方向保守：降低单一行业集中风险)；E1噪声等价结论为Top50池提供了实证许可",
+    "本批金额从轻(2.5万/95.4万总资产≈2.6%)因账户满仓现金仅2.95万，验证的是方向而非收益贡献",
+    "5只全部为低估值低位无连涨+板块5日资金净流入特征，与9/3题材批(第4天追涨+板块流出)完全反义"
+  ]
+}

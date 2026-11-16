@@ -1,0 +1,34 @@
+[
+ {
+  "code": "605338",
+  "name": "巴比食品",
+  "volume": 600,
+  "price": 17.47,
+  "source": "stop_loss",
+  "sector": "食品",
+  "prev_close": 17.47,
+  "owner_approve_ddgate": true
+ },
+ {
+  "code": "000559",
+  "name": "万向钱潮",
+  "volume": 200,
+  "price": 12.9,
+  "source": "breakout_mainline",
+  "sector": "汽车",
+  "prev_close": 12.71,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "603278",
+  "name": "尤安设计",
+  "volume": 100,
+  "price": 17.48,
+  "source": "breakout_mainline",
+  "sector": "建筑装饰",
+  "prev_close": 17.25,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

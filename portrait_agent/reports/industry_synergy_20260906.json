@@ -1,0 +1,44 @@
+{
+ "L1": {
+  "lim_grp": {
+   "label": "联动组(涨停≥3)",
+   "n": 15724,
+   "ex_mean_pct": 1.352,
+   "t": 14.55,
+   "win_pct": 47.6,
+   "fwd_mean_pct": 4.617,
+   "fwd_win_pct": 61.0,
+   "dn_rate": 3.79
+  },
+  "nolim_grp": {
+   "label": "无联动组",
+   "n": 82400,
+   "ex_mean_pct": 0.94,
+   "t": 24.91,
+   "win_pct": 46.8,
+   "fwd_mean_pct": 2.75,
+   "fwd_win_pct": 56.2,
+   "dn_rate": 4.19
+  },
+  "welch_t": 4.11,
+  "p": 0.0
+ },
+ "L2": {
+  "baseline": {
+   "n": 128,
+   "ann": 20.7,
+   "ann_b": 9.13,
+   "t": 3.78,
+   "win": 62.5,
+   "avg_ex": 0.869
+  },
+  "lim_priority": {
+   "n": 128,
+   "ann": 20.34,
+   "ann_b": 9.13,
+   "t": 3.69,
+   "win": 61.7,
+   "avg_ex": 0.841
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "corrected_at": "2026-10-08 18:19:13",
+ "reason": "10/8晨假阳性勘误:executor rc=0但拒绝盲卖零卖出被误记executed_submitted;摘除恢复pending(否决窗口重开,次晨09:40重执行);解析兜底分支已修",
+ "removed_records": [
+  {
+   "request_date": "20260929",
+   "code": "600035",
+   "name": "楚天高速",
+   "action": "executed_submitted",
+   "ts": "2026-10-08 09:41:25",
+   "detail": "rc=0;   \"reason\": \"无有效价格（行情获取失败且未传--price），拒绝盲卖，请显式传 --price\" | }"
+  },
+  {
+   "request_date": "20260929",
+   "code": "600018",
+   "name": "上港集团",
+   "action": "executed_submitted",
+   "ts": "2026-10-08 09:41:25",
+   "detail": "rc=0;   \"reason\": \"无有效价格（行情获取失败且未传--price），拒绝盲卖，请显式传 --price\" | }"
+  },
+  {
+   "request_date": "20260930",
+   "code": "601866",
+   "name": "中远海发",
+   "action": "executed_submitted",
+   "ts": "2026-10-08 09:41:25",
+   "detail": "rc=0;   \"reason\": \"无有效价格（行情获取失败且未传--price），拒绝盲卖，请显式传 --price\" | }"
+  },
+  {
+   "request_date": "20260930",
+   "code": "603637",
+   "name": "镇海股份",
+   "action": "executed_submitted",
+   "ts": "2026-10-08 09:41:25",
+   "detail": "rc=0;   \"reason\": \"无有效价格（行情获取失败且未传--price），拒绝盲卖，请显式传 --price\" | }"
+  },
+  {
+   "request_date": "20260928",
+   "code": "600035",
+   "name": "楚天高速",
+   "action": "executed_submitted",
+   "ts": "2026-10-08 09:41:25",
+   "detail": "rc=0;   \"reason\": \"无有效价格（行情获取失败且未传--price），拒绝盲卖，请显式传 --price\" | }"
+  }
+ ],
+ "note2": "二轮勘误:补摘(20260928,600035)同批假终态,共5条(时间戳2026-10-08 09:41:25全量对账口径:凡该时间戳+拒绝盲卖detail一律摘)"
+}

@@ -1,0 +1,90 @@
+{
+ "tag": "MAIN",
+ "window": [
+  "20160101",
+  "20251231"
+ ],
+ "prereg_id": "20260909-weekly-filter-chan12-v1",
+ "prereg_fingerprint": "75f5775b6d71d8c5",
+ "ma_week": 20,
+ "types": [
+  "buy3"
+ ],
+ "h5": {
+  "filtered": {
+   "n": 2102,
+   "mean": 0.01663,
+   "t": 8.9,
+   "hit": 0.5433
+  },
+  "unfiltered": {
+   "n": 3252,
+   "mean": 0.0155,
+   "t": 10.45,
+   "hit": 0.5458
+  },
+  "increment_mean": 0.00113,
+  "increment_t": 0.47,
+  "excess_vs_market_filtered_mean": 0.01251,
+  "excess_vs_market_unfiltered_mean": 0.01151,
+  "net_increment_after_cost_2bp0": -0.00087
+ },
+ "h10": {
+  "filtered": {
+   "n": 2102,
+   "mean": 0.02536,
+   "t": 9.49,
+   "hit": 0.5528
+  },
+  "unfiltered": {
+   "n": 3252,
+   "mean": 0.02161,
+   "t": 9.87,
+   "hit": 0.5424
+  },
+  "increment_mean": 0.00375,
+  "increment_t": 1.09,
+  "excess_vs_market_filtered_mean": 0.01838,
+  "excess_vs_market_unfiltered_mean": 0.01538,
+  "net_increment_after_cost_2bp0": 0.00175
+ },
+ "h20": {
+  "filtered": {
+   "n": 2102,
+   "mean": 0.02441,
+   "t": 7.12,
+   "hit": 0.5233
+  },
+  "unfiltered": {
+   "n": 3252,
+   "mean": 0.01762,
+   "t": 6.44,
+   "hit": 0.5052
+  },
+  "increment_mean": 0.00679,
+  "increment_t": 1.55,
+  "excess_vs_market_filtered_mean": 0.01665,
+  "excess_vs_market_unfiltered_mean": 0.01118,
+  "net_increment_after_cost_2bp0": 0.00479,
+  "filtered_by_year": {
+   "2016": 0.01838,
+   "2017": 0.01386,
+   "2018": -0.03485,
+   "2019": 0.07245,
+   "2020": 0.05987,
+   "2021": 0.02957,
+   "2022": -0.03418,
+   "2023": -0.02666,
+   "2024": 0.00986,
+   "2025": 0.05781
+  },
+  "years_nonneg": 7,
+  "years_total": 10
+ },
+ "gate": {
+  "increment_t_ge_2": false,
+  "years_nonneg_ge_7": true,
+  "market_excess_positive": true,
+  "PASS": false
+ }
+}

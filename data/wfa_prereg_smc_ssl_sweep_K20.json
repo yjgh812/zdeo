@@ -1,0 +1,43 @@
+{
+  "id": "20260829-smc-ssl-sweep-K20-v1",
+  "ts": "2026-08-29T00:45:00",
+  "object": "SMC SSL 扫荡做多 参数扫描（SWING×RANGE）技术网格门禁正式验证 —— 预注册声明，K=20 固定（生产持有期）",
+  "engine": "tulong_wfa_gate.techgrid.v1",
+  "strategy": "smc_ssl_sweep",
+  "grid": {
+    "x": [
+      8,
+      12,
+      16,
+      20,
+      24
+    ],
+    "y": [
+      0.005,
+      0.01,
+      0.02,
+      0.03
+    ],
+    "fixed": {
+      "K": 20
+    }
+  },
+  "criterion": {
+    "min_plateau_n": 100,
+    "min_plateau_win": 0.52,
+    "min_cells": 12,
+    "semantics": "参数扫描结论只认全正 2×2 平台期（参数稳定区间），禁止采单点最优格（邻域尖峰=过拟合特征）"
+  },
+  "trial_budget": 60,
+  "commitment": "PASS=存在稳健平台（累计笔数≥100 且 平均胜率≥52%）且最优格非孤立尖峰，方允许进一步研究；WARN=降级观察；FAIL=不采任何参数。绝对数字禁对账，参数采纳须再过 R1-R18 闸门 + 名单制。",
+  "status": "completed",
+  "result": {
+    "verdict": "PASS",
+    "oos": {
+      "n": 1576
+    },
+    "pbo": null,
+    "cpcv": null,
+    "ts": "2026-08-29T00:44:49"
+  }
+}

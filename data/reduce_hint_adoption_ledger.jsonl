@@ -1,0 +1,1 @@
+{"_meta": {"ledger": "reduce_hint_adoption", "created": "2026-10-19", "schema": ["date", "code", "name", "hint_layer", "adopted", "sell_qty_actual", "fwd5_ret", "fwd20_ret", "note"], "redline": "大浮盈核心仓不入减仓候选清单; S-5硬止损铁律优先于红线", "status": "SCHEMA_ONLY_未接晨报"}}

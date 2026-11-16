@@ -1,0 +1,29 @@
+{
+  "comment": "提示词版本注册表：仅登记 cron prompt 与关键分析提示词，非生产代码。版本变更需同步本表+SOP台账。",
+  "versions": [
+    {
+      "id": "v20260829_0910",
+      "scope": "09:10 盘前全准备十一合一",
+      "file": "automation-e88f1de1",
+      "change_summary": "2026-08-29 ②b无条件重跑加固(8/28已定稿)+Few-shot盘前简报骨架嵌入(9行模板)",
+      "metrics_to_watch": ["白名单只数", "闸门拦截率", "当日胜率", "持仓集中度"],
+      "status": "PENDING_APPLY(待新会话应用)"
+    },
+    {
+      "id": "v20260829_2200",
+      "scope": "22:00 晚间全管线十二合一",
+      "file": "automation-462607b7",
+      "change_summary": "2026-08-29 第九步②纪律看板汇报嵌入Few-shot期望输出骨架(6行模板)+第二步B提示词版本×指标追踪器(prompt_metrics_tracker.py)+第四步③hotspot证伪退役标注(监控源不入白名单)",
+      "metrics_to_watch": ["合规率", "裸奔笔数", "归因覆盖率", "数据链产物完整度"],
+      "status": "Few-shot已生效; 第二步B+第四步③标注待新会话应用(_cache/cron_462607b7_prompt_final_20260829.json)"
+    },
+    {
+      "id": "v20260828_1430",
+      "scope": "14:30 收盘前全操作",
+      "file": "automation-abd520fd",
+      "change_summary": "2026-08-28 R5时间周期退出pre_sell前置收口+K1止损再入场计划器接线",
+      "metrics_to_watch": ["止损执行及时率", "C6判定覆盖率", "再入场候选命中数"]
+    }
+  ],
+  "created_at": "2026-08-29T01:15:00"
+}

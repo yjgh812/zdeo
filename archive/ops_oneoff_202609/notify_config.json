@@ -1,0 +1,16 @@
+{
+  "channels": {
+    "pushplus": {
+      "token": ""
+    },
+    "sct": {
+      "sendkey": ""
+    },
+    "bark": {
+      "device": ""
+    },
+    "wecom": {
+      "webhook": ""
+    }
+  }
+}

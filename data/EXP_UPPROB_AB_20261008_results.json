@@ -1,0 +1,172 @@
+{
+ "generated_at": "2026-10-08T09:47:00+08:00",
+ "experiment": "EXP_UPPROB_AB_20261008",
+ "source": "upprob_ab",
+ "market_env": {
+  "sh_open": 3838.98,
+  "sh_now": 3851.54,
+  "sh_open_pct": -0.08,
+  "sh_now_pct": 0.24,
+  "regime_notes": "门A开∧门C关(9/30截面)=唯一出手格; 档位=中档(9/30涨停56只含ST)=谨慎限购; PD-037熔断闸零拦截"
+ },
+ "execution_notes": [
+  "westock行情空壳触发executor buy侧F2已知债务(price=None崩溃), 现场用--price传腾讯实时价适配, 闸门全跑零绕过; F2债务(sell侧有降级链/buy侧缺)记录待修",
+  "台账发现同票manual_confirmed批(主人另一通道手动单, 10只, 含本批资金不足失败的克来机电/上海临港/金地集团); 两笔卖出回笼(大连热电/百亚股份)",
+  "现金12,392元不足后4笔1.5万单(含手续费)提交失败; 未擅改合同金额, 如实记录",
+  "验收口径以9/30收盘为基准算超额, 与入场价无关, manual/upprob混合入场不影响验收"
+ ],
+ "orders": [
+  {
+   "code": "600603",
+   "name": "广汇物流",
+   "group": "A",
+   "action": "filled",
+   "order_price": 4.83,
+   "qty": 3100,
+   "oid_tail": "0182115412",
+   "note": "成交"
+  },
+  {
+   "code": "002053",
+   "name": "云南能投",
+   "group": "A",
+   "action": "filled",
+   "order_price": 9.64,
+   "qty": 1500,
+   "oid_tail": "0186815414",
+   "note": "成交"
+  },
+  {
+   "code": "603098",
+   "name": "森特股份",
+   "group": "A",
+   "action": "filled",
+   "order_price": 10.71,
+   "qty": 1400,
+   "oid_tail": "3979088706",
+   "note": "即时成交, 加仓(存量400→1800, 另有manual批1800)"
+  },
+  {
+   "code": "300978",
+   "name": "东箭科技",
+   "group": "A",
+   "action": "filled",
+   "order_price": 8.84,
+   "qty": 1600,
+   "oid_tail": "0182555413",
+   "note": "09:47:14价格回落触发限价单成交"
+  },
+  {
+   "code": "002513",
+   "name": "蓝丰生化",
+   "group": "R",
+   "action": "filled",
+   "order_price": 5.75,
+   "qty": 2600,
+   "oid_tail": "0188047412",
+   "note": "09:49:28价格回落触发限价单成交"
+  },
+  {
+   "code": "000503",
+   "name": "国新健康",
+   "group": "R",
+   "action": "filled",
+   "order_price": 7.85,
+   "qty": 1900,
+   "oid_tail": "3980570717",
+   "note": "成交"
+  },
+  {
+   "code": "000006",
+   "name": "深振业Ａ",
+   "group": "R",
+   "action": "filled",
+   "order_price": 7.61,
+   "qty": 1900,
+   "oid_tail": "0182149417",
+   "note": "成交"
+  },
+  {
+   "code": "603982",
+   "name": "泉峰汽车",
+   "group": "R",
+   "action": "filled",
+   "order_price": 6.81,
+   "qty": 2200,
+   "oid_tail": "0187671416",
+   "note": "成交"
+  },
+  {
+   "code": "600848",
+   "name": "上海临港",
+   "group": "R",
+   "action": "filled_small",
+   "reject_gates": [
+    "insufficient_cash(含手续费)"
+   ],
+   "note": "资金不足后按主人令小额补买,即时成交",
+   "order_price": 9.08,
+   "qty": 300,
+   "amount": 2800
+  },
+  {
+   "code": "600383",
+   "name": "金地集团",
+   "group": "R",
+   "action": "filled_small",
+   "reject_gates": [
+    "insufficient_cash(含手续费)"
+   ],
+   "note": "资金不足后按主人令小额补买,即时成交",
+   "order_price": 2.65,
+   "qty": 1000,
+   "amount": 2800
+  },
+  {
+   "code": "603960",
+   "name": "克来机电",
+   "group": "R",
+   "action": "filled_small",
+   "reject_gates": [
+    "insufficient_cash(订单票据无效=同族错误)"
+   ],
+   "note": "资金不足后按主人令小额补买,即时成交",
+   "order_price": 16.73,
+   "qty": 100,
+   "amount": 2800
+  },
+  {
+   "code": "601226",
+   "name": "华电科工",
+   "group": "R",
+   "action": "filled_small",
+   "reject_gates": [
+    "insufficient_cash(含手续费)"
+   ],
+   "note": "资金不足后按主人令小额补买",
+   "order_price": 6.64,
+   "qty": 400,
+   "amount": 2800
+  }
+ ],
+ "summary": {
+  "submitted": 8,
+  "filled": 8,
+  "pending_open": 0,
+  "rejected": 4,
+  "skipped_gap_up": 0,
+  "circuit_gate_blocks": 0,
+  "owner_approve_flags_used": 0,
+  "exposure_12of12": true,
+  "cash_left": 12392.24,
+  "upprob_batch_cost_approx": 86000,
+  "small_lot_refill": "4笔x2800元补买(主人令「按现有资金分配少买一点」), 等权均值判据不受仓位大小影响",
+  "final": "upprob批8/8全部成交+4笔小额补买全成交=12只全部直接持仓,执行侧闭环"
+ },
+ "evaluation": {
+  "t5_date": "2026-10-15",
+  "t20_date": "2026-11-05前后",
+  "benchmark": "上证指数000001.SH, 基准锚=20260930收盘(与入场价无关)",
+  "primary_judge": "A组(600603/002053/603098/300978)T+20超额均值 > R组(其余8只)"
+ }
+}

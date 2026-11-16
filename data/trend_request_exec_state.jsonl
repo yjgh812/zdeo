@@ -1,0 +1,39 @@
+{"request_date": "20260924", "code": "603585", "name": "苏利股份", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260924", "code": "600704", "name": "物产中大", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260924", "code": "002481", "name": "双塔食品", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260928", "code": "603585", "name": "苏利股份", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260928", "code": "600704", "name": "物产中大", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260928", "code": "002481", "name": "双塔食品", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260928", "code": "600348", "name": "华阳股份", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260929", "code": "600704", "name": "物产中大", "action": "skipped_not_held", "ts": "2026-10-02 01:40:47", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20260928", "code": "600035", "name": "楚天高速", "action": "vetoed", "ts": "2026-10-08 18:24:33", "detail": "主人当次否决(600035)"}
+{"request_date": "20260929", "code": "600035", "name": "楚天高速", "action": "vetoed", "ts": "2026-10-08 18:24:33", "detail": "主人当次否决(600035)"}
+{"request_date": "20260929", "code": "600018", "name": "上港集团", "action": "vetoed", "ts": "2026-10-08 18:24:33", "detail": "主人当次否决(600018)"}
+{"request_date": "20260930", "code": "601866", "name": "中远海发", "action": "vetoed", "ts": "2026-10-08 18:24:33", "detail": "主人当次否决(601866)"}
+{"request_date": "20260930", "code": "603637", "name": "镇海股份", "action": "skipped_not_held", "ts": "2026-10-09 09:41:27", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20261008", "code": "603637", "name": "镇海股份", "action": "skipped_not_held", "ts": "2026-10-09 09:41:27", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20261009", "code": "603098", "name": "森特股份", "action": "blocked_pre_sell", "ts": "2026-10-12 09:41:40", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261013", "code": "300573", "name": "兴齐眼药", "action": "executed_submitted", "ts": "2026-10-14 09:39:12", "detail": "rc=0;   \"executed\": true | }"}
+{"request_date": "20261013", "code": "600966", "name": "博汇纸业", "action": "blocked_pre_sell", "ts": "2026-10-14 09:39:12", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261013", "code": "002056", "name": "横店东磁", "action": "blocked_pre_sell", "ts": "2026-10-14 09:39:12", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261014", "code": "600966", "name": "博汇纸业", "action": "vetoed", "ts": "2026-10-14 11:32:31", "detail": "主人20261014令「趋势走坏的先退出一半」:半仓3000股已executor卖出留痕,剩余半仓回归常规S-5/走坏监控,全清提请与主人意图不符销单"}
+{"request_date": "20261014", "code": "603098", "name": "森特股份", "action": "vetoed", "ts": "2026-10-14 11:32:31", "detail": "主人20261014令「趋势走坏的先退出一半」:半仓1800股已executor卖出留痕,剩余半仓回归常规S-5/走坏监控,全清提请与主人意图不符销单"}
+{"request_date": "20261014", "code": "002056", "name": "横店东磁", "action": "vetoed", "ts": "2026-10-14 11:32:31", "detail": "主人20261014令「趋势走坏的先退出一半」:半仓500股已executor卖出留痕,剩余半仓回归常规S-5/走坏监控,全清提请与主人意图不符销单"}
+{"request_date": "20261020", "code": "002688", "name": "金河生物", "action": "failed", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"fill_status\": \"PENDING_CONFIRM\" | }"}
+{"request_date": "20261020", "code": "002174", "name": "游族网络", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "601022", "name": "宁波远洋", "action": "failed", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"fill_status\": \"PENDING_CONFIRM\" | }"}
+{"request_date": "20261020", "code": "601866", "name": "中远海发", "action": "excluded_v2b", "ts": "2026-10-21 09:42:14", "detail": "v2_action=hold_reclaim_check 观察期(非主人否决)"}
+{"request_date": "20261020", "code": "601226", "name": "华电科工", "action": "failed", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"fill_status\": \"PENDING_CONFIRM\" | }"}
+{"request_date": "20261020", "code": "600966", "name": "博汇纸业", "action": "skipped_not_held", "ts": "2026-10-21 09:42:14", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20261020", "code": "603098", "name": "森特股份", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "002053", "name": "云南能投", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "300978", "name": "东箭科技", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "300402", "name": "宝色股份", "action": "executed_submitted", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": true | }"}
+{"request_date": "20261020", "code": "000410", "name": "沈阳机床", "action": "executed_submitted", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": true | }"}
+{"request_date": "20261020", "code": "000670", "name": "盈方微", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "001287", "name": "中电港", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "300263", "name": "隆华科技", "action": "executed_submitted", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": true | }"}
+{"request_date": "20261020", "code": "301500", "name": "飞南资源", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "603803", "name": "瑞斯康达", "action": "blocked_pre_sell", "ts": "2026-10-21 09:42:14", "detail": "rc=0;   \"executed\": false | }"}
+{"request_date": "20261020", "code": "601866", "name": "中远海发", "action": "skipped_not_held", "ts": "2026-10-23 09:41:18", "detail": "westock实时持仓无此码(已卖/已清)"}
+{"request_date": "20261021", "code": "600626", "name": "申达股份", "action": "blocked_pre_sell", "ts": "2026-10-23 09:41:18", "detail": "rc=0;   \"executed\": false | }"}

@@ -1,0 +1,163 @@
+{
+ "variants": {
+  "cd3_t20e": {
+   "n_A": 9421,
+   "n_R": 11920,
+   "win_A": 50.63,
+   "win_R": 45.17,
+   "effect_pp": 5.46,
+   "ci95": [
+    4.16,
+    6.81
+   ],
+   "direction_positive": true
+  },
+  "cd3_hold20": {
+   "n_A": 9421,
+   "n_R": 11920,
+   "win_A": 52.85,
+   "win_R": 50.04,
+   "effect_pp": 2.81,
+   "ci95": [
+    1.45,
+    4.11
+   ],
+   "direction_positive": true
+  },
+  "cd3_t1_stop": {
+   "n_A": 9415,
+   "n_R": 11918,
+   "win_A": 50.88,
+   "win_R": 45.41,
+   "effect_pp": 5.47,
+   "ci95": [
+    4.11,
+    6.88
+   ],
+   "direction_positive": true
+  },
+  "cd3_t1_hold": {
+   "n_A": 9411,
+   "n_R": 11912,
+   "win_A": 53.07,
+   "win_R": 50.26,
+   "effect_pp": 2.81,
+   "ci95": [
+    1.44,
+    4.1
+   ],
+   "direction_positive": true
+  },
+  "cd5_t20e": {
+   "n_A": 9341,
+   "n_R": 11920,
+   "win_A": 49.72,
+   "win_R": 45.17,
+   "effect_pp": 4.55,
+   "ci95": [
+    3.3,
+    5.88
+   ],
+   "direction_positive": true
+  },
+  "cd5_hold20": {
+   "n_A": 9341,
+   "n_R": 11920,
+   "win_A": 52.23,
+   "win_R": 50.04,
+   "effect_pp": 2.19,
+   "ci95": [
+    0.83,
+    3.55
+   ],
+   "direction_positive": true
+  },
+  "cd5_t1_stop": {
+   "n_A": 9336,
+   "n_R": 11918,
+   "win_A": 49.94,
+   "win_R": 45.41,
+   "effect_pp": 4.53,
+   "ci95": [
+    3.21,
+    5.81
+   ],
+   "direction_positive": true
+  },
+  "cd5_t1_hold": {
+   "n_A": 9332,
+   "n_R": 11912,
+   "win_A": 52.39,
+   "win_R": 50.26,
+   "effect_pp": 2.13,
+   "ci95": [
+    0.74,
+    3.47
+   ],
+   "direction_positive": true
+  },
+  "cd10_t20e": {
+   "n_A": 9068,
+   "n_R": 11920,
+   "win_A": 49.71,
+   "win_R": 45.17,
+   "effect_pp": 4.55,
+   "ci95": [
+    3.16,
+    5.88
+   ],
+   "direction_positive": true
+  },
+  "cd10_hold20": {
+   "n_A": 9068,
+   "n_R": 11920,
+   "win_A": 52.19,
+   "win_R": 50.04,
+   "effect_pp": 2.15,
+   "ci95": [
+    0.8,
+    3.52
+   ],
+   "direction_positive": true
+  },
+  "cd10_t1_stop": {
+   "n_A": 9062,
+   "n_R": 11918,
+   "win_A": 50.33,
+   "win_R": 45.41,
+   "effect_pp": 4.92,
+   "ci95": [
+    3.57,
+    6.27
+   ],
+   "direction_positive": true
+  },
+  "cd10_t1_hold": {
+   "n_A": 9062,
+   "n_R": 11912,
+   "win_A": 52.58,
+   "win_R": 50.26,
+   "effect_pp": 2.32,
+   "ci95": [
+    0.98,
+    3.67
+   ],
+   "direction_positive": true
+  }
+ },
+ "prereg": "PREREG-LOW-CONSOLIDATION-ALPHA-20261021",
+ "fp16": "bbc423d3d41979ec",
+ "verdict": "PASS_H1",
+ "matrix_pass": "12/12",
+ "gates": {
+  "G1": true,
+  "G2": true,
+  "G3_matrix>=10/12": true
+ },
+ "survivorship_note": "主判定已含252只退市股(99只2024+); 视野不足用退市前最后收盘强制平仓; 不含退市对比变体见cd5_t20e仅主库版(未单列, 如需可补跑)",
+ "caveats": [
+  "探索性发现(+3.53pp)来自v1全窗seed42; 本轮12变体为其确认协议",
+  "退市库为baostock口径, 收益率源内自洽, 未与qfq拼价",
+  "T+1开盘口径不含涨停顺延近似, 已披露"
+ ]
+}

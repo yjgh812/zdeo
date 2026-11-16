@@ -1,0 +1,72 @@
+{
+  "W1_faithful": {
+    "win_A": 41.78,
+    "n_A": 9680,
+    "win_R": 39.56,
+    "n_R": 9680,
+    "effect_pp": 2.22,
+    "load_from": "20210101",
+    "dl_on": true,
+    "forced_exit": true
+  },
+  "W2_faithful": {
+    "win_A": 46.0,
+    "n_A": 10863,
+    "win_R": 41.75,
+    "n_R": 13540,
+    "effect_pp": 4.25,
+    "load_from": "20240101",
+    "dl_on": true,
+    "forced_exit": true
+  },
+  "W2_trunc_nodl": {
+    "win_A": 48.19,
+    "n_A": 9729,
+    "win_R": 44.36,
+    "n_R": 12340,
+    "effect_pp": 3.83,
+    "load_from": "20240101",
+    "dl_on": false,
+    "forced_exit": false
+  },
+  "W2_full_nodl": {
+    "win_A": 46.05,
+    "n_A": 13415,
+    "win_R": 42.67,
+    "n_R": 13540,
+    "effect_pp": 3.38,
+    "load_from": "20190101",
+    "dl_on": false,
+    "forced_exit": false
+  },
+  "W1_full_nodl": {
+    "win_A": 42.12,
+    "n_A": 9680,
+    "win_R": 40.48,
+    "n_R": 9680,
+    "effect_pp": 1.64,
+    "load_from": "20190101",
+    "dl_on": false,
+    "forced_exit": false
+  },
+  "W1_oos_exact": {
+    "win_A": 45.23,
+    "n_A": 156189,
+    "win_R": 39.56,
+    "n_R": 9680,
+    "effect_pp": 5.68,
+    "load_from": "20210101",
+    "dl_on": true,
+    "forced_exit": true
+  },
+  "W1_full_uncapped": {
+    "win_A": 45.3,
+    "n_A": 155431,
+    "win_R": 40.48,
+    "n_R": 9680,
+    "effect_pp": 4.82,
+    "load_from": "20190101",
+    "dl_on": false,
+    "forced_exit": false
+  }
+}

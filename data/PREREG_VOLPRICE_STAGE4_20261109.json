@@ -1,0 +1,13 @@
+{
+  "id": "PREREG_VOLPRICE_STAGE4_20261109",
+  "status": "frozen",
+  "frozen_at": "2026-11-09 (跑前冻结, 每检验trial_budget=1)",
+  "tests_frozen": {
+    "T12_tr_band_x_pos_grid": "绝对换手率六档(0-1/1-3/3-7/7-15/15-30/30+%) × 位置三档(pos<=0.33/0.33-0.66/>0.66) = 18格, 每格FM日度均值fwd10; 主判据: A)低pos×tr(3-7) 减 低pos×tr(0-1) 差>0且t>=2 (温和吸筹带优于死水区); B)低pos×tr>15 减 低pos×tr(3-7) 差<0且t>=2 (低位爆量出逃陷阱); C)高pos×tr>20 减 高pos×tr(0-3) 差<0且t>=2 (高位派发)",
+    "T13_hi_tr_lo_vr_ratio": "tr>5%且volume_ratio<2 vs tr>5%且volume_ratio∈(2,3): 主判据 前者fwd10差<0且t>=2 (高换手无新资金承接=反向警示)",
+    "T14_pos_asymmetry_extreme": "tr>10%且volume_ratio>5: 低位组(pos<=0.33) vs 高位组(pos>0.66) fwd10差>0且t>=2 (低位吸筹/高位出货不对称)"
+  },
+  "shared": "同stage-3管线(qfq+daily_basic含volume_ratio+ST点时), next-bar持10日, 费0.3%, FM日度聚类t, 最小日数300, 不足记insufficient_power",
+  "multipletesting_note": "累计已冻结14+项检验, t>=2近似5%显著水平下期望约1项假阳性; 判定以t值强度为主(如T1 CTC t=6.2远超偶然), 过/不过二值仅作参考",
+  "filing": "结果落 reports/VOLPRICE_STAGE4_20261109/, 观察级"
+}

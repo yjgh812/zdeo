@@ -1,0 +1,527 @@
+{
+ "generated": "2026-09-23T03:00+08:00",
+ "source": "limit_up_patterns(attribution.db,2318行)+tdx-local sh999999",
+ "daily": [
+  {
+   "date": "20260810",
+   "lu": 99,
+   "lu_next": 58,
+   "first": 87,
+   "ge2": 12,
+   "prom12": 13.8,
+   "prom_any": 33.3,
+   "ret_next": -0.82
+  },
+  {
+   "date": "20260811",
+   "lu": 58,
+   "lu_next": 93,
+   "first": 42,
+   "ge2": 16,
+   "prom12": 16.7,
+   "prom_any": 56.2,
+   "ret_next": 0.32
+  },
+  {
+   "date": "20260812",
+   "lu": 93,
+   "lu_next": 59,
+   "first": 77,
+   "ge2": 16,
+   "prom12": 15.6,
+   "prom_any": 56.2,
+   "ret_next": -0.5
+  },
+  {
+   "date": "20260813",
+   "lu": 59,
+   "lu_next": 63,
+   "first": 37,
+   "ge2": 22,
+   "prom12": 13.5,
+   "prom_any": 27.3,
+   "ret_next": 0.01
+  },
+  {
+   "date": "20260814",
+   "lu": 63,
+   "lu_next": 106,
+   "first": 52,
+   "ge2": 11,
+   "prom12": 19.2,
+   "prom_any": 45.5,
+   "ret_next": 1.41
+  },
+  {
+   "date": "20260817",
+   "lu": 106,
+   "lu_next": 77,
+   "first": 91,
+   "ge2": 15,
+   "prom12": 1.1,
+   "prom_any": 0.0,
+   "ret_next": 0.19
+  },
+  {
+   "date": "20260818",
+   "lu": 77,
+   "lu_next": 36,
+   "first": 75,
+   "ge2": 2,
+   "prom12": 9.3,
+   "prom_any": 0.0,
+   "ret_next": -2.4
+  },
+  {
+   "date": "20260819",
+   "lu": 36,
+   "lu_next": 79,
+   "first": 29,
+   "ge2": 7,
+   "prom12": 10.3,
+   "prom_any": 14.3,
+   "ret_next": 0.24
+  },
+  {
+   "date": "20260820",
+   "lu": 79,
+   "lu_next": 54,
+   "first": 75,
+   "ge2": 4,
+   "prom12": 13.3,
+   "prom_any": 25.0,
+   "ret_next": 0.04
+  },
+  {
+   "date": "20260821",
+   "lu": 54,
+   "lu_next": 46,
+   "first": 43,
+   "ge2": 11,
+   "prom12": 14.0,
+   "prom_any": 36.4,
+   "ret_next": -0.59
+  },
+  {
+   "date": "20260824",
+   "lu": 46,
+   "lu_next": 65,
+   "first": 36,
+   "ge2": 10,
+   "prom12": 11.1,
+   "prom_any": 40.0,
+   "ret_next": 0.19
+  },
+  {
+   "date": "20260825",
+   "lu": 65,
+   "lu_next": 52,
+   "first": 56,
+   "ge2": 9,
+   "prom12": 17.9,
+   "prom_any": 33.3,
+   "ret_next": 0.59
+  },
+  {
+   "date": "20260826",
+   "lu": 52,
+   "lu_next": 77,
+   "first": 39,
+   "ge2": 13,
+   "prom12": 20.5,
+   "prom_any": 61.5,
+   "ret_next": 1.13
+  },
+  {
+   "date": "20260827",
+   "lu": 77,
+   "lu_next": 82,
+   "first": 61,
+   "ge2": 16,
+   "prom12": 16.4,
+   "prom_any": 50.0,
+   "ret_next": -0.11
+  },
+  {
+   "date": "20260828",
+   "lu": 82,
+   "lu_next": 88,
+   "first": 64,
+   "ge2": 18,
+   "prom12": 15.6,
+   "prom_any": 44.4,
+   "ret_next": 0.86
+  },
+  {
+   "date": "20260831",
+   "lu": 88,
+   "lu_next": 83,
+   "first": 70,
+   "ge2": 18,
+   "prom12": 12.9,
+   "prom_any": 50.0,
+   "ret_next": -0.16
+  },
+  {
+   "date": "20260901",
+   "lu": 83,
+   "lu_next": 52,
+   "first": 65,
+   "ge2": 18,
+   "prom12": 10.8,
+   "prom_any": 33.3,
+   "ret_next": -0.97
+  },
+  {
+   "date": "20260902",
+   "lu": 52,
+   "lu_next": 45,
+   "first": 39,
+   "ge2": 13,
+   "prom12": 15.4,
+   "prom_any": 23.1,
+   "ret_next": 0.02
+  },
+  {
+   "date": "20260903",
+   "lu": 45,
+   "lu_next": 39,
+   "first": 36,
+   "ge2": 9,
+   "prom12": 16.7,
+   "prom_any": 11.1,
+   "ret_next": -0.3
+  },
+  {
+   "date": "20260904",
+   "lu": 39,
+   "lu_next": 93,
+   "first": 32,
+   "ge2": 7,
+   "prom12": 28.1,
+   "prom_any": 57.1,
+   "ret_next": 0.07
+  },
+  {
+   "date": "20260907",
+   "lu": 93,
+   "lu_next": 73,
+   "first": 80,
+   "ge2": 13,
+   "prom12": 15.0,
+   "prom_any": 46.2,
+   "ret_next": 0.2
+  },
+  {
+   "date": "20260908",
+   "lu": 73,
+   "lu_next": 48,
+   "first": 55,
+   "ge2": 18,
+   "prom12": 18.2,
+   "prom_any": 27.8,
+   "ret_next": 0.28
+  },
+  {
+   "date": "20260909",
+   "lu": 48,
+   "lu_next": 35,
+   "first": 33,
+   "ge2": 15,
+   "prom12": 18.2,
+   "prom_any": 20.0,
+   "ret_next": -0.43
+  },
+  {
+   "date": "20260910",
+   "lu": 35,
+   "lu_next": 40,
+   "first": 26,
+   "ge2": 9,
+   "prom12": 15.4,
+   "prom_any": 33.3,
+   "ret_next": -1.18
+  },
+  {
+   "date": "20260911",
+   "lu": 40,
+   "lu_next": 55,
+   "first": 33,
+   "ge2": 7,
+   "prom12": 21.2,
+   "prom_any": 57.1,
+   "ret_next": -0.07
+  },
+  {
+   "date": "20260914",
+   "lu": 55,
+   "lu_next": 32,
+   "first": 44,
+   "ge2": 11,
+   "prom12": 6.8,
+   "prom_any": 36.4,
+   "ret_next": -0.54
+  },
+  {
+   "date": "20260915",
+   "lu": 32,
+   "lu_next": 89,
+   "first": 25,
+   "ge2": 7,
+   "prom12": 36.0,
+   "prom_any": 42.9,
+   "ret_next": 0.71
+  },
+  {
+   "date": "20260916",
+   "lu": 89,
+   "lu_next": 47,
+   "first": 77,
+   "ge2": 12,
+   "prom12": 6.5,
+   "prom_any": 33.3,
+   "ret_next": -0.41
+  },
+  {
+   "date": "20260917",
+   "lu": 47,
+   "lu_next": 78,
+   "first": 38,
+   "ge2": 9,
+   "prom12": 21.1,
+   "prom_any": 44.4,
+   "ret_next": 0.94
+  },
+  {
+   "date": "20260918",
+   "lu": 78,
+   "lu_next": 103,
+   "first": 66,
+   "ge2": 12,
+   "prom12": 19.7,
+   "prom_any": 66.7,
+   "ret_next": 0.97
+  },
+  {
+   "date": "20260921",
+   "lu": 103,
+   "lu_next": 63,
+   "first": 82,
+   "ge2": 21,
+   "prom12": 20.7,
+   "prom_any": 33.3,
+   "ret_next": 0.06
+  }
+ ],
+ "summary": {
+  "sample": "20260810~20260922 n=31个交易日(单regime,观察级)",
+  "prom12": {
+   "mean": 15.8,
+   "median": 15.6,
+   "q1": 12.9,
+   "q3": 19.2,
+   "min": 1.1,
+   "max": 36.0
+  },
+  "bands": {
+   "ice_le10": {
+    "n": 4,
+    "ret_mean": -0.79,
+    "ret_median": -0.47,
+    "neg_days": 3
+   },
+   "normal_10_25": {
+    "n": 25,
+    "ret_mean": 0.09,
+    "ret_median": 0.04,
+    "neg_days": 10
+   },
+   "hot_ge25": {
+    "n": 2,
+    "ret_mean": 0.39,
+    "ret_median": 0.39,
+    "neg_days": 0
+   }
+  },
+  "corr_prom12_vs_next_ret": 0.43,
+  "latest": {
+   "d_0921": "晋级率21%(正常带);9/22待今日盘中验证",
+   "d_0922_snapshot": "63涨停/39首板/24只≥2板(max6板);梯队占比38%=样本内最高档;今日1→2晋级率=三看#1核心读数"
+  },
+  "notable": "8/17晋级率1%+全梯队0%+首板潮(106板75首板)→8/18首板潮77板晋级9%→8/19上证-2.40%=样本内唯一退潮连环;9/18晋级20%+2→3板62%→9/21 +0.97%"
+ },
+ "caveats": [
+  "仅6周样本且单一上行震荡regime",
+  "库为归因库口径(≈当日涨停全集但含回灌补录)",
+  "真封率无历史基线(seal_snapshot 9/22起三态,待累积)",
+  "观察级参考,非prereg非生产信号"
+ ],
+ "seal_rate_baseline": {
+  "note": "9/23凌晨新增: seal_snapshot当日窗口(14:55-15:10)抓取的12个可信交易日;8/14,8/17,8/21隔夜/次日抓+8/24混合异常已剔除(快照非收盘定格态=失真)",
+  "daily_good": [
+   {
+    "date": "20260827",
+    "sealed": 10,
+    "fake": 66,
+    "broken": 21,
+    "total": 97,
+    "seal_rate": 10.3,
+    "snap": "2026-08-27 14:58:55"
+   },
+   {
+    "date": "20260828",
+    "sealed": 8,
+    "fake": 72,
+    "broken": 25,
+    "total": 105,
+    "seal_rate": 7.6,
+    "snap": "2026-08-28 14:59:20"
+   },
+   {
+    "date": "20260831",
+    "sealed": 10,
+    "fake": 77,
+    "broken": 36,
+    "total": 123,
+    "seal_rate": 8.1,
+    "snap": "2026-08-31 14:58:40"
+   },
+   {
+    "date": "20260903",
+    "sealed": 24,
+    "fake": 22,
+    "broken": 35,
+    "total": 81,
+    "seal_rate": 29.6,
+    "snap": "2026-09-03 15:05:42"
+   },
+   {
+    "date": "20260904",
+    "sealed": 3,
+    "fake": 38,
+    "broken": 49,
+    "total": 90,
+    "seal_rate": 3.3,
+    "snap": "2026-09-04 14:59:09"
+   },
+   {
+    "date": "20260907",
+    "sealed": 9,
+    "fake": 85,
+    "broken": 24,
+    "total": 118,
+    "seal_rate": 7.6,
+    "snap": "2026-09-07 14:59:15"
+   },
+   {
+    "date": "20260908",
+    "sealed": 6,
+    "fake": 68,
+    "broken": 39,
+    "total": 113,
+    "seal_rate": 5.3,
+    "snap": "2026-09-08 14:58:51"
+   },
+   {
+    "date": "20260915",
+    "sealed": 8,
+    "fake": 24,
+    "broken": 25,
+    "total": 57,
+    "seal_rate": 14.0,
+    "snap": "2026-09-15 15:00:07"
+   },
+   {
+    "date": "20260917",
+    "sealed": 9,
+    "fake": 40,
+    "broken": 22,
+    "total": 71,
+    "seal_rate": 12.7,
+    "snap": "2026-09-17 14:59:11"
+   },
+   {
+    "date": "20260918",
+    "sealed": 13,
+    "fake": 69,
+    "broken": 26,
+    "total": 108,
+    "seal_rate": 12.0,
+    "snap": "2026-09-18 14:58:55"
+   },
+   {
+    "date": "20260921",
+    "sealed": 4,
+    "fake": 98,
+    "broken": 31,
+    "total": 133,
+    "seal_rate": 3.0,
+    "snap": "2026-09-21 14:59:16"
+   },
+   {
+    "date": "20260922",
+    "sealed": 7,
+    "fake": 57,
+    "broken": 29,
+    "total": 93,
+    "seal_rate": 7.5,
+    "snap": "2026-09-22 14:58:21"
+   }
+  ],
+  "daily_bad": [
+   {
+    "date": "20260814",
+    "sealed": 60,
+    "fake": 0,
+    "broken": 22,
+    "total": 82,
+    "seal_rate": 73.2,
+    "snap": "2026-08-16 02:33:15"
+   },
+   {
+    "date": "20260817",
+    "sealed": 7,
+    "fake": 72,
+    "broken": 29,
+    "total": 108,
+    "seal_rate": 6.5,
+    "snap": "2026-08-18 14:58:45"
+   },
+   {
+    "date": "20260821",
+    "sealed": 57,
+    "fake": 1,
+    "broken": 20,
+    "total": 78,
+    "seal_rate": 73.1,
+    "snap": "2026-08-22 18:38:49"
+   },
+   {
+    "date": "20260824",
+    "sealed": 37,
+    "fake": 98,
+    "broken": 69,
+    "total": 204,
+    "seal_rate": 18.1,
+    "snap": "2026-08-24 15:00:13"
+   },
+   {
+    "date": "20260826",
+    "sealed": 55,
+    "fake": 2,
+    "broken": 28,
+    "total": 85,
+    "seal_rate": 64.7,
+    "snap": "2026-08-26 23:59:28"
+   }
+  ],
+  "stats": {
+   "n": 12,
+   "median": 7.85,
+   "mean": 10.1,
+   "min": 3.0,
+   "max": 29.6
+  },
+  "caliber": "真封板=收盘涨停+收盘封单>=300万; 真封率=sealed/(sealed+fake+broken); 来源=seal_snapshot.py(TSP五档修正口径)"
+ }
+}

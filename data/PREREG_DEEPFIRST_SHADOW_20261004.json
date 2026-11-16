@@ -1,0 +1,41 @@
+{
+  "id": "PREREG_DEEPFIRST_SHADOW_20261004",
+  "created": "2026-10-04",
+  "linked_pd": "PD-031",
+  "concept": "深位首板信号前向影子: pos60[T-1]<=25 的低位票出现真首板涨停+放量, 右侧确认式买点(与G区缩量低吸=左侧互补)",
+  "evidence_context": "reports/deep_firstboard_signal_20261004.md: 5年全市场(20220401-20260930, qfq) n=1464, f20 win=60.9% med=+4.78% RR=1.70; 优于G×强档×COMBO(59.7%/+2.32%); 分年4/6正(2023/2026负, 与G区同构的regime调制), 仍需情绪档门控; 低位+首板+放量三条件合取才出信号(缺任一退化为超卖反弹+0.36%)",
+  "universe": "A股全市场剔北交所/科创/ST(code前缀00/30/60, 与回测口径一致; ST由执行层R闸拦截, 影子层不过滤)",
+  "trigger": "T日三条件合取: (1)pos60[T-1]<=25(前一日收盘在60日高低区间下四分之一); (2)当日change_pct>=9.5涨停 且 前一日非涨停 且 近10日(不含当日)无涨停(真首板非反包); (3)当日成交量>=1.5×前5日均量",
+  "entry": "影子记账零交易权; 若未来激活, 买点=信号日次日开盘(per T1执行优先级)",
+  "exit": "若未来激活: 止损=信号日低点或-8%(S-5优先); 退出=爆量盈出或T20到期",
+  "duration": "自首笔影子事件日起60个交易日",
+  "gates": "G1=影子窗f20中位>=+2%; G2=影子窗f20胜率>=55%; G3=影子窗n>=30; 三门全过->呈请主人裁决生产接线; 任一门不过->归档falsified禁复活(条件不同须引用本prereg差异)",
+  "in_sample_boundary": "20261004前的事件=backfill参考层(in_sample=true), 不计入三门判据; 20261004起的事件=前向样本(in_sample=false), 计入判据",
+  "baseline_comparison": "同窗全市场全日f20基线(-0.33%/48.4%) + 回测样本内基准(60.9%/+4.78%, 仅作漂移参照非通过线)",
+  "boundary": "纯影子零交易权, 不接闸门不接cron不接schtasks(接线须PD-031主人批准); 生产链零改动; 台账=data/deepfirst_shadow_ledger.jsonl(幂等, code+date主键); 快照=data/deepfirst_shadow_latest.json; 脚本=analysis/deepfirst_shadow_daily.py(手动运行, 与回测lowpos_firstboard_20261004.py同式同库同口径)",
+  "falsification_note": "若三门不过: 登记falsified DEEPFIRST-FORWARD-FAIL, 深位首板假设与前向证据不符; 不影响已定谳的G区收紧建议(25-40带负信号-1.16%系独立回测结论)",
+  "amendment_20261006": "前向修订(2026-10-06, 早于10/9首个前向事件, 合法修订窗): (1)台账每行新增zt_cnt=信号日全市场涨停家数(qfq change_pct>=9.5推算, 00/30/60宇宙, 与sentiment_cycle_daily.jsonl既有'qfq日线推算'source同族口径, 非交易所精确口径), 已回填520条in_sample行; (2)预登记两个次级观察窗=zt_cnt>=40 与 zt_cnt>=61(PD-025情绪档阈值族), 快照每次运行输出次级窗med/win/n读数, 仅供激活裁决参考, 不构成主判据通过/否决条件; (3)主判据(全窗f20med>=+2%/win>=55%/n>=30)一字不动; (4)动机=样本内观察性分层(analysis/deepfirst_emotion_layer_20261006.py): 弱档n=90 med-3.76%/win36.7% vs 强档med+7.10%/win65.8%, 门控形态zt>=40剔除90笔后med+5.24%, 但有过拟合风险且2023强档内仍负(-1.27%)=门控救不活2023, 诚实登记不做样本内规则优化",
+  "amendments": [
+    {
+      "date": "20261006",
+      "type": "secondary_observation_field",
+      "field": "panic_window",
+      "definition": "信号日是否落在某个PD-034恐慌事件日(PANIC_OVERSHOOT台账)起6个交易日内",
+      "status": "机械输出次级字段, 不参与信号定义不改主判据, 门控取舍留主人裁决",
+      "evidence": "reports/yangjia_2010_overshoot_verify_20261006.md §九 (2026段+8pp/2022-25段+1pp跨期不稳, 观察级)"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "sensitivity_check",
+      "title": "剔ST敏感性检验(10/7,影子期前)",
+      "finding": "影子层不滤ST系本prereg明文设计(universe字段: ST由执行层R闸拦截),非缺陷。10/7用名称接口对台账520行全量排查: ST/退市代码27只占事件31行(6.0%)。剔ST后f20 med=+2.08% win=55.6% n=462,三门全过且优于含ST口径(med +1.86%/win 55.3%)——信号本质在干净宇宙下更稳健。",
+      "action": "代码不改(合同内行为);门评估时以剔ST口径为准呈报"
+    },
+    {
+      "date": "2026-10-07",
+      "type": "owner_authorization",
+      "title": "2026-10-07主人「模拟盘实战验证授权」(",
+      "note": "2026-10-07主人「模拟盘实战验证授权」(PD-036):深位首板从被动影子升级signal_pilot.py小额实战(每笔1.5万/并发≤3/T+20退出/R闸全跑),影子记账照跑与pilot并行互证;判据不变"
+    }
+  ]
+}

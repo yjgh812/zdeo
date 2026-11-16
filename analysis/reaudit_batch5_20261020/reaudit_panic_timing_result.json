@@ -1,0 +1,30 @@
+{
+ "id": "TIMING-PANIC-STAGE1",
+ "mode": "independent_reimpl",
+ "n_panic_days_total": 210,
+ "n_days_total": 2619,
+ "main_N5": {
+  "n_panic": 134,
+  "panic_mean_pct": 0.567,
+  "base_mean_pct": 0.29,
+  "excess_pct": 0.277,
+  "welch_t": 0.67
+ },
+ "recent5y_N5": {
+  "n_panic": 57,
+  "panic_mean_pct": -0.04,
+  "base_mean_pct": 0.29,
+  "excess_pct": -0.33,
+  "welch_t": -0.53
+ },
+ "main_N20": {
+  "n_panic": 74,
+  "panic_mean_pct": 1.187,
+  "base_mean_pct": 0.944,
+  "excess_pct": 0.243,
+  "welch_t": 0.23
+ },
+ "caveats": [
+  "非重叠=贪婪跳过窗口重叠恐慌日; 基线=无条件日等步长抽样; 原档208/2593天"
+ ]
+}

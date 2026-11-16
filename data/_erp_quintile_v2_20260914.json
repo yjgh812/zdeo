@@ -1,0 +1,52 @@
+{
+ "note": "ERP=1/PE−十债(erp_history本地口径), 60月滚动分位自算(erp_pct_5y字段已坏仅9/258), 下月收益=qfq全池等权相邻锚点; 纯描述非判据, ERP tilt是否越IC择时黑名单仍待主人裁决",
+ "n_valid": 198,
+ "quantile_edges_pct": [
+  28.3,
+  56.7,
+  78.3,
+  93.3
+ ],
+ "quintiles": {
+  "Q1": {
+   "n": 44,
+   "mean": -1.09,
+   "median": -1.07,
+   "win_rate": 0.41
+  },
+  "Q2": {
+   "n": 36,
+   "mean": 3.17,
+   "median": 1.66,
+   "win_rate": 0.67
+  },
+  "Q3": {
+   "n": 40,
+   "mean": 1.15,
+   "median": -0.28,
+   "win_rate": 0.47
+  },
+  "Q4": {
+   "n": 45,
+   "mean": 0.06,
+   "median": -0.24,
+   "win_rate": 0.49
+  },
+  "Q5": {
+   "n": 33,
+   "mean": 1.61,
+   "median": 3.18,
+   "win_rate": 0.7
+  }
+ },
+ "extremes": {
+  "pct>=80": {
+   "n": 78,
+   "mean": 0.72
+  },
+  "pct<=20": {
+   "n": 30,
+   "mean": -0.39
+  }
+ }
+}

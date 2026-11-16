@@ -1,0 +1,46 @@
+{
+ "id": "BREAKOUT-CLUSTER-FILTER",
+ "mode": "independent_reimpl",
+ "window": [
+  "20260810",
+  "20261016"
+ ],
+ "n_events": 2274,
+ "groups": {
+  "isolated": {
+   "n": 1419,
+   "r1_mean_pct": 0.474,
+   "r1_median_pct": -0.619,
+   "win": 0.4567
+  },
+  "mainline": {
+   "n": 855,
+   "r1_mean_pct": 0.712,
+   "r1_median_pct": -0.171,
+   "win": 0.4889
+  }
+ },
+ "delta_pp_welch_t": 0.92,
+ "orig_window_le_20260909": {
+  "groups": {
+   "isolated": {
+    "n": 821,
+    "r1_mean_pct": 0.529,
+    "r1_median_pct": -0.619,
+    "win": 0.4507
+   },
+   "mainline": {
+    "n": 562,
+    "r1_mean_pct": 0.324,
+    "r1_median_pct": -0.985,
+    "win": 0.4502
+   }
+  },
+  "delta_pp_welch_t": -0.62,
+  "n": 1383
+ },
+ "caveats": [
+  "limit_up_patterns 20260812起; 原档9/9时点数据窗更短(42/331只), 本检窗口更长n更大",
+  "附原窗口(<=20260909)对拍用于归因: 若原窗口方向亦不复现则为口径差异而非时间衰减"
+ ]
+}

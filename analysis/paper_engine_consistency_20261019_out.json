@@ -1,0 +1,57 @@
+{
+  "a1_set_overlap": {
+    "window": [
+      "2026-07-22",
+      "2026-10-16"
+    ],
+    "engine_entries": 48,
+    "paper_entries": 152,
+    "intersection_code_date": 0,
+    "intersection_code_only": 7,
+    "jaccard_code_date": 0.0,
+    "engine_only_n": 48,
+    "paper_only_n": 152
+  },
+  "a2_entry_premium": {
+    "matched_n": 0,
+    "qfq_suspect_excluded": 0,
+    "prem_vs_engine_pct": {
+      "median": NaN,
+      "mean": NaN,
+      "gt3pct_n": 0
+    },
+    "prem_vs_qfqopen_pct": {
+      "median": NaN,
+      "mean": NaN,
+      "gt3pct_n": 0
+    }
+  },
+  "a2b_all_paper_premium": {
+    "n_all": 117,
+    "n_suspect_excluded": 7,
+    "median_pct": 0.086,
+    "mean_pct": 0.224,
+    "gt3pct_n": 7,
+    "lt_m3pct_n": 3
+  },
+  "a3_winrate": {
+    "paper_closed": {
+      "n": 166,
+      "win_pct": 18.67,
+      "med_pct": -2.37,
+      "pl_ratio": 0.569
+    },
+    "engine_window_closed": {
+      "n": 48,
+      "win_pct": 56.25,
+      "med_pct": 0.756,
+      "pl_ratio": 2.107
+    }
+  },
+  "notes": [
+    "paper=主人批准制买入+止损链卖出; engine=机械Top15月度调仓 → 集合重合度非100%属设计口径差",
+    "paper真值=westock MCP; 本件读其派生台账 position_history(closed_loop_sync FIFO唯一写入器, updated 2026-10-17)",
+    "入场价差两口径: vs引擎成交价(含3bp滑点) 与 vs当日qfq开盘; |vs开盘|>5% 判疑似复权因子差剔除并计数",
+    "核心结论: 窗内 code+日 零重合 → 回测-模拟盘胜率差主要是组合定义差异(批准制+主动止损链), 非执行层伪成交(伪成交由 verify_fill_consistency 在役管控)"
+  ]
+}

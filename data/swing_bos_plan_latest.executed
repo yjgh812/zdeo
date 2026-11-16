@@ -1,0 +1,62 @@
+[
+ {
+  "code": "300715",
+  "name": "凯伦股份",
+  "source": "swing_bos_bull",
+  "price": 14.42,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.82% 量比1.46 P涨前=0.0102 pos250=20.7% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600601",
+  "name": "方正科技",
+  "source": "swing_bos_bull",
+  "price": 10.84,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.02% 量比1.68 P涨前=0.0025 pos250=24.6% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "002915",
+  "name": "中欣氟材",
+  "source": "swing_bos_bull",
+  "price": 16.82,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.03% 量比2.67 P涨前=0.0016 pos250=10.8% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600173",
+  "name": "卧龙新能",
+  "source": "swing_bos_bull",
+  "price": 5.72,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.1% 量比1.53 P涨前=0.0012 pos250=9.3% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "002534",
+  "name": "西子洁能",
+  "source": "swing_bos_bull",
+  "price": 16.17,
+  "volume": 100,
+  "sector": "",
+  "note": "破局: 上穿结构位+10.0% 量比1.35 P涨前=0.0008 pos250=31.5% | 限价=今收+5%(次日不追涨停)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

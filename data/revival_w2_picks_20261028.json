@@ -1,0 +1,132 @@
+{
+ "signal_date": "20261027",
+ "wave": 2,
+ "generated": "2026-10-28T01:10:45.881491",
+ "methods": {
+  "w2_bpep_weekly": {
+   "picks": [
+    {
+     "code": "601985",
+     "name": "中国核电",
+     "price": 9.5,
+     "volume": 100,
+     "source": "w2_bpep_weekly",
+     "rule": "机器分周排=66.0"
+    },
+    {
+     "code": "600406",
+     "name": "国电南瑞",
+     "price": 23.48,
+     "volume": 100,
+     "source": "w2_bpep_weekly",
+     "rule": "机器分周排=72.5"
+    },
+    {
+     "code": "601169",
+     "name": "北京银行",
+     "price": 5.61,
+     "volume": 100,
+     "source": "w2_bpep_weekly",
+     "rule": "机器分周排=76.0"
+    },
+    {
+     "code": "601818",
+     "name": "光大银行",
+     "price": 3.08,
+     "volume": 100,
+     "source": "w2_bpep_weekly",
+     "rule": "机器分周排=78.5"
+    },
+    {
+     "code": "600900",
+     "name": "长江电力",
+     "price": 29.83,
+     "volume": 100,
+     "source": "w2_bpep_weekly",
+     "rule": "机器分周排=84.5"
+    }
+   ],
+   "cost": 7150.0,
+   "cand_total": 151,
+   "short": false
+  },
+  "w2_mvp_fusion": {
+   "picks": [
+    {
+     "code": "000507",
+     "name": "珠海港",
+     "price": 4.71,
+     "volume": 100,
+     "source": "w2_mvp_fusion",
+     "rule": "价值秩28+换手秩26"
+    },
+    {
+     "code": "601669",
+     "name": "中国电建",
+     "price": 4.46,
+     "volume": 100,
+     "source": "w2_mvp_fusion",
+     "rule": "价值秩25+换手秩27"
+    },
+    {
+     "code": "600820",
+     "name": "隧道股份",
+     "price": 5.32,
+     "volume": 100,
+     "source": "w2_mvp_fusion",
+     "rule": "价值秩29+换手秩23"
+    },
+    {
+     "code": "000778",
+     "name": "新兴铸管",
+     "price": 3.43,
+     "volume": 100,
+     "source": "w2_mvp_fusion",
+     "rule": "价值秩31+换手秩21"
+    },
+    {
+     "code": "600585",
+     "name": "海螺水泥",
+     "price": 18.48,
+     "volume": 100,
+     "source": "w2_mvp_fusion",
+     "rule": "价值秩26+换手秩24"
+    }
+   ],
+   "cost": 3640.0,
+   "cand_total": 32,
+   "short": false
+  },
+  "w2_indmom_tail": {
+   "picks": [
+    {
+     "code": "601900",
+     "name": "南方传媒",
+     "price": 14.4,
+     "volume": 100,
+     "source": "w2_indmom_tail",
+     "rule": "头部行业出版业 r20=18.5%"
+    },
+    {
+     "code": "002966",
+     "name": "苏州银行",
+     "price": 9.48,
+     "volume": 100,
+     "source": "w2_indmom_tail",
+     "rule": "头部行业银行 r20=3.5%"
+    },
+    {
+     "code": "002807",
+     "name": "江阴银行",
+     "price": 4.13,
+     "volume": 100,
+     "source": "w2_indmom_tail",
+     "rule": "头部行业银行 r20=2.5%"
+    }
+   ],
+   "cost": 2801.0,
+   "cand_total": 6,
+   "short": true
+  }
+ }
+}

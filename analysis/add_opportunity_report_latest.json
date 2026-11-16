@@ -1,0 +1,138 @@
+{
+ "ts": "2026-10-30 14:00:20",
+ "gate": "防御档",
+ "gate_block": true,
+ "scanned": 121,
+ "n_opportunities": 16,
+ "n_actionable_if_gate_open": 0,
+ "opportunities": [
+  {
+   "code": "002807",
+   "name": "江阴银行",
+   "price": 4.36,
+   "prev19_max": 4.18,
+   "breakout_pct": 4.31,
+   "gate_block": true
+  },
+  {
+   "code": "002936",
+   "name": "郑州银行",
+   "price": 1.76,
+   "prev19_max": 1.75,
+   "breakout_pct": 0.57,
+   "gate_block": true
+  },
+  {
+   "code": "002966",
+   "name": "苏州银行",
+   "price": 9.92,
+   "prev19_max": 9.56,
+   "breakout_pct": 3.77,
+   "gate_block": true
+  },
+  {
+   "code": "300015",
+   "name": "爱尔眼科",
+   "price": 8.52,
+   "prev19_max": 8.42,
+   "breakout_pct": 1.19,
+   "gate_block": true
+  },
+  {
+   "code": "600000",
+   "name": "浦发银行",
+   "price": 10.02,
+   "prev19_max": 9.85,
+   "breakout_pct": 1.73,
+   "gate_block": true
+  },
+  {
+   "code": "600018",
+   "name": "上港集团",
+   "price": 5.79,
+   "prev19_max": 5.5899999999998045,
+   "breakout_pct": 3.58,
+   "gate_block": true
+  },
+  {
+   "code": "600035",
+   "name": "楚天高速",
+   "price": 3.85,
+   "prev19_max": 3.84,
+   "breakout_pct": 0.26,
+   "gate_block": true
+  },
+  {
+   "code": "600380",
+   "name": "健康元",
+   "price": 10.06,
+   "prev19_max": 9.94,
+   "breakout_pct": 1.21,
+   "gate_block": true
+  },
+  {
+   "code": "600887",
+   "name": "伊利股份",
+   "price": 30.13,
+   "prev19_max": 28.89,
+   "breakout_pct": 4.29,
+   "gate_block": true
+  },
+  {
+   "code": "601166",
+   "name": "兴业银行",
+   "price": 19.61,
+   "prev19_max": 19.1,
+   "breakout_pct": 2.67,
+   "gate_block": true
+  },
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "price": 8.6,
+   "prev19_max": 8.34,
+   "breakout_pct": 3.12,
+   "gate_block": true
+  },
+  {
+   "code": "601668",
+   "name": "中国建筑",
+   "price": 4.65,
+   "prev19_max": 4.58,
+   "breakout_pct": 1.53,
+   "gate_block": true
+  },
+  {
+   "code": "601857",
+   "name": "中国石油",
+   "price": 13.77,
+   "prev19_max": 13.38,
+   "breakout_pct": 2.91,
+   "gate_block": true
+  },
+  {
+   "code": "601919",
+   "name": "中远海控",
+   "price": 17.94,
+   "prev19_max": 16.842215384614597,
+   "breakout_pct": 6.52,
+   "gate_block": true
+  },
+  {
+   "code": "601939",
+   "name": "建设银行",
+   "price": 12.01,
+   "prev19_max": 11.78,
+   "breakout_pct": 1.95,
+   "gate_block": true
+  },
+  {
+   "code": "601997",
+   "name": "贵阳银行",
+   "price": 5.81,
+   "prev19_max": 5.68,
+   "breakout_pct": 2.29,
+   "gate_block": true
+  }
+ ]
+}

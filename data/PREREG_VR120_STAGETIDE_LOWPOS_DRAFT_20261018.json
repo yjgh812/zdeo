@@ -1,0 +1,58 @@
+{
+  "name": "PREREG_VR120_STAGETIDE_LOWPOS",
+  "title": "低位缩量×板块退潮 增量归因影子（DeepSeek外部审计E-5提案第一顺位；vs 低位缩量族同象限基线的 stage 调制增量）",
+  "status": "DRAFT",
+  "approval": {
+    "status": "DRAFT",
+    "decision_trail": [
+      "2026-10-18 DeepSeek外部审计E-5提案三条+红线审查(petition_batch4_20261018.md§五): 本条为推荐第一顺位(与已激活低位枯竭修复族同象限,增量归因清晰,不与该族合并)",
+      "2026-10-18 主人「继续」按推荐=立DRAFT固化判据(不激活不建runner), 激活须主人二次裁决(影子通用协议)",
+      "红线核对: 不涉突破/追高/放量确认(语义反转正格向); vr120=线B OOS唯一幸存维度(系统自有证据); 无财务因子(PIT无关); 非黑名单模型族"
+    ],
+    "approved_by": null,
+    "approved_at": null,
+    "activation_since": null,
+    "runner": "未建(DRAFT; 激活时建 runner 并按 params/canonical 字段复算指纹, 缺字段 fail-closed)"
+  },
+  "hypothesis": "低位(pos250<40)×缩量(vr120<1.0)截面状态域内, 所属概念板块处于PD-035退潮阶段的事件, fwd20修复力优于非退潮阶段同构事件——情绪冰点×个股缩量双重低位(语义反转正格向的stage调制增量)",
+  "sibling_boundary": "与PREREG_LOW_DRYUP_REPAIR_FAMILY(T1事件型:破跌停触发)划界: 本族=截面状态型(每日快照行), 触发语义不同, 域可能重叠; 增量归因=同象限stage调制, 判据为两臂差而非绝对水平, 不与该族合并计数",
+  "evidence_report": "reports/petition_batch4_20261018.md §五 + DeepSeek审计raw E-5 + analysis/semantic_reversal_adversarial_20261018_out.md(假说对抗存活背景)",
+  "in_sample_evidence": "未跑(诚实空白): 历史截面无w_stage回填(universe_portrait_grid_history不含stage维), 样内基线锚定同构家族=T1 fwd20 med+6.31%/win68.8(2026-10-17臂级对照)与A池口径; 判据据此预钉",
+  "params": {
+    "universe_source": "data/universe_portrait_winner5_latest.json(每日winner5快照, 含w_stage)",
+    "stage_source": "concept_stage_ledger.jsonl(PD-035四阶段, 经winner5 w_stage透传)",
+    "low_pos_max": 0.40,
+    "vr120_max": 1.0,
+    "tide_arm": "w_stage含「退潮」",
+    "control_arm": "w_stage不含「退潮」的同构低位缩量行(同截面日配对域)",
+    "dedup_days": 5,
+    "entry": "snapshot_day_close(持有语义,qfq收盘起)",
+    "holding_horizons": [5, 20, 30],
+    "main_horizon": 20,
+    "universe_exclude_prefix": ["688", "689", "920"],
+    "data_source_daily": "dragon_quant_qfq.db(wb单一真源; 幸存者敞口注记:退市段未回填前读数按V4复核口径标注)"
+  },
+  "production_clauses": {
+    "purpose": "DeepSeek审计E-4产量建议首个落地: 产量不足不占影子窗预算",
+    "effective_day": "当日退潮臂候选≥1只即有效日",
+    "yield_kill": "前20个有效截面日退潮臂日均候选<1只 → 自动SKIP并提请产量裁决(信号域定义修订), 不消耗60日窗",
+    "monthly_report": "每月输出产量健康度(有效日数/候选数/两臂对比预览)"
+  },
+  "gates_locked": {
+    "oos_window": "激活日(主人二次裁决定)起60个有效截面日, 或退潮臂OOS到期事件n>=30先到",
+    "pass": "增量判据: 退潮臂fwd20 med - 对照臂fwd20 med >= +1.0pp 且 退潮臂fwd20 med>=+1.5% 且 退潮臂win>=52%",
+    "kill": "前20个有效截面日退潮臂med20<-2% -> 提请废案; 或对照臂med20>退潮臂med20(方向反转哨, 独立不构成通过)",
+    "fail_note": "任一门不过=归档falsified防复活; 三门全过=呈请主人二次裁决升级",
+    "horizon_note": "5=观察窗, 20=主验收窗, 30=延长观察窗",
+    "fingerprint_note": "激活时由runner按本文件params/gates_locked/canonical字段复算sha256指纹, 不一致exit2(DRAFT期无指纹, 激活即冻结)"
+  },
+  "trigger_locked": "T日=winner5快照行满足 pos250<0.40 ∧ vr120<=1.0, 按w_stage分退潮臂/对照臂; 参数以本文件params为单一真源, 不得事后调整; forward-only禁回溯重建历史日候选防前视",
+  "red_line_check": {
+    "名单制": "不涉(全宇宙快照, 无白名单)",
+    "突破追高族": "不涉(低位缩量正格向)",
+    "放量确认族": "不涉(vr120<1.0=缩量域)",
+    "非PIT": "不涉(无财务因子)",
+    "黑名单模型": "不涉(规则式分层)",
+    "其他": "五维标签零交易权铁律——w_stage仅作分臂呈现与本研究域, 禁入排序/过滤/闸门(2026-10-07标签层铁律不变); 本研究若过三门升级, 升级形态亦为呈现/研究层, 接交易链须另走闸门接线审批"
+  }
+}

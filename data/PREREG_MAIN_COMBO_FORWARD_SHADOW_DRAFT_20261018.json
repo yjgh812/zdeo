@@ -1,0 +1,74 @@
+{
+  "name": "PREREG_MAIN_COMBO_FORWARD_SHADOW",
+  "title": "主组合前向机械影子臂（bp_ep月度Top20 + ml h20，50/50纯记账）——8/26 OOS一票制落地案",
+  "status": "ACTIVE",
+  "approval": {
+    "status": "APPROVED",
+    "approved_by": "主人「继续」令(2026-10-18)",
+    "approved_at": "2026-10-18",
+    "activation_since": "2026-10-01",
+    "activation_note": "上轮收官明示『您批准即激活建runner』,主人「继续」令即第二道批准;activation_since=计算锚(当月首个自然日,首调仓日=窗口首交易日2026-10-09,首次成交=2026-10-12开盘);激活后禁改params/gates(参数单一真源纪律,缺字段fail-closed)",
+    "runner": "analysis/main_combo_forward_shadow_daily.py",
+    "note": "激活后本文件为参数单一真源",
+    "decision_trail": [
+      "2026-10-17 外部文档TULONG-REFLECTION-20261017审计呈请B(reports/external_reflection_audit_20261017.md §四/§六)",
+      "2026-10-18 主人「继续」令批准呈请A/B/C/D落地,本文件=呈请B的DRAFT固化",
+      "2026-10-18 主人第二次「继续」令=激活批准,runner按low_repair先例三测试(复现/幂等/fail-closed)后挂夜链",
+      "悬置项来源=8/26全维自省『回测达标↔实盘未达标:剩余缺口=OOS一票制未落地(待主人确认)』(reports/FULL_DIMENSION_SELF_REVIEW_20260826.md)"
+    ]
+  },
+  "registered": "2026-10-18",
+  "family": "portfolio_forward_mechanical_shadow",
+  "sibling_boundary": "与月度影子哨兵(analysis/monthly_shadow_sentry.py,已在役)分工:哨兵=回测equity切片↔模拟盘混合流程对账;本臂=回测口径的纯记账前向复刻。与practice_190零接触,与executor零接触,不产生任何真实订单,不接任何闸门权重。",
+  "evidence_report": "reports/external_reflection_audit_20261017.md + reports/FULL_DIMENSION_SELF_REVIEW_20260826.md + reports/external_profitratio_audit_20261017.md",
+  "in_sample_evidence": {
+    "backtest_reference": "reports/backtest_full_20261016_eod(全史组合+226.37%/CAGR+11.60%/MDD-11.53%,2062+1339笔溯源)",
+    "per_trade_stats": "analysis/pnl_distribution_audit_20261017_out.md(bp_ep盈亏比1.97/偏度+2.40/前5%贡献128.1%;ml 1.53/+5.80/89.5%)",
+    "category_note": "模拟盘非本组合机械执行(类别差异,见external_reflection审计§3.4),本臂是唯一能回答『回测口径当下regime前向兑现度』的instrument"
+  },
+  "params": {
+    "arms": {
+      "bp_ep_core": {
+        "rebalance": "monthly",
+        "top_n": 20,
+        "signal_source": "PIT bp+ep 月度排名(与回测引擎同口径,factor_pit.db PIT事实)",
+        "holding_note": "至止损或月末轮换;禁时间止损(S-5 scope_restricted:bp_ep侧禁用)"
+      },
+      "ml_signal": {
+        "holding_bars": 20,
+        "signal_source": "生产日频ml信号管线输出",
+        "trailing_note": "M-3已登记:ml复活时默认启用trailing 10%(hold=20),本臂随登记生效"
+      }
+    },
+    "weights": {"bp_ep_core": 0.5, "ml_signal": 0.5, "note": "与回测组合50/50一致"},
+    "execution_assumptions": {
+      "entry": "next-bar开盘价",
+      "slippage_pp": 0.03,
+      "costs": "双边佣金+印花税(引擎同口径)",
+      "limit_up_block": "已核验(2026-10-18,核验项闭环): core/backtest_system/engine.py L100 _check_price_limit + L128 submit_order拒单——buy价≥prev_close×(1+limit)−ε 拒单/sell价≤prev_close×(1−limit)+ε 拒单;limit按板=ST 5%/创业科创 20%/主板 10%;一字涨停开盘买入被拒=外部文档『回测可能假设买到涨停』疑虑不成立;残余近似=开盘价略低于涨停(如+9.9%)仍可成交而实盘排队未必可得,如实声明"
+    },
+    "ledger_only": true,
+    "capital_book": 100000,
+    "activation_anchor": "2026-10-01",
+    "refresh": "每交易日收盘后由runner更新当日净值/持仓/台账;窗口对账由月度哨兵引用",
+    "mechanics_verified": {
+      "rebalance": "每22个交易日触发(非自然月首日),窗口首日即调仓(days_since=999语义);runner复用引擎整套机制:analysis层薄壳import tulong_backtest_full_report,进程内覆盖START_DATE=anchor/END_DATE=最新qfq日,TULONG_ARMS=bp+ep_core,ml_signal",
+      "entry": "T日收盘信号→T+1开盘成交(pending_weights,无未来函数)",
+      "stop": "收盘判断收盘价即时成交(保守口径);-8%固定(atr_stop_mult=0)",
+      "risk_liquidate": "T+1开盘清仓并放弃当日调仓",
+      "m1_cap": "单票权重截断<=20%",
+      "eos_suppression": "进程内monkey-patch BacktestEngineV4.liquidate_all:exit_reason=end_of_sample时no-op(影子语义=持仓延续净值连续),不改factor_engine任何文件",
+      "p2_gate_stale_note": "p2信号20260921停更,停更后get_p2_signals缺省→p2_confirmed=1.0(ml权重不受抑制),与引擎前向行为一致,如实声明",
+      "file_renaming_note": "文件名含DRAFT为创建日锚,激活状态以本文件status字段为准"
+    }
+  },
+  "trigger_locked": "无事件触发:纯前向时间驱动,激活日起每交易日机械记账;信号生成失败当日fail-closed记N/A禁跳过禁补造",
+  "gates_locked": {
+    "oos_window": "激活日起12个自然月,或双臂合计closed n≥60笔,先到者进入判读",
+    "pass": "前向组合TWR≥0 且 vs沪深300同期超额≥0 且 双臂各closed n≥20笔 且 实测成本拖累≤引擎假设2倍",
+    "kill": "前3个自然月组合TWR<-10% → 提请废案(报主人裁决,不自动删除不自动停)",
+    "readout": "前向TWR/CAGR/MDD/每笔分布(对照analysis/pnl_distribution_audit_20261017_out.md)/与回测同期equity切片逐月差异归因(信号/执行/成本)",
+    "boundary": "pass/kill结论仅呈报主人,不自动接线任何生产权重;影子层零交易权",
+    "horizon_note": "12个月为最小有意义窗口(月度调仓臂月内不可评价);期间只记账不判读,月度哨兵只呈现不裁决"
+  }
+}

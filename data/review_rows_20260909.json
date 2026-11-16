@@ -1,0 +1,573 @@
+{
+ "_说明": "9/9复盘复核稿(知微判定,财联社焦点复盘9/9验证):主线=农业农化(延续,糖业代糖三股连板晋级+化肥晋级+粮食种业分歧)+油运航运(新,VLCC TCE 76万/天历史新高板块加速);支线=煤炭涨价(短期空间有限)/算力硬件(分化)/化工油气/医疗/地产零售;未设主题=散点脉冲。机器人词表保留但今日无成员命中。",
+ "batch": "review_20260909",
+ "themes": {
+  "农业农化主线": [
+   "种业",
+   "玉米",
+   "制种",
+   "糖",
+   "化肥",
+   "尿素",
+   "农",
+   "粮",
+   "磷",
+   "油脂",
+   "橡胶",
+   "饲料",
+   "棉",
+   "种植",
+   "渔",
+   "代糖",
+   "糖醇"
+  ],
+  "油运航运主线": [
+   "油运",
+   "干散货",
+   "航运",
+   "港口",
+   "锚链",
+   "船舶",
+   "集运",
+   "原油中转"
+  ],
+  "煤炭涨价支线": [
+   "煤炭",
+   "动力煤",
+   "煤价",
+   "焦煤"
+  ],
+  "算力硬件支线": [
+   "PCB",
+   "HDI",
+   "光模块",
+   "存储",
+   "算力",
+   "FPGA",
+   "光纤",
+   "CPO",
+   "光通信",
+   "封测",
+   "芯片",
+   "覆铜板",
+   "液冷",
+   "铜连接"
+  ],
+  "医疗CXO支线": [
+   "CRO",
+   "药",
+   "培养基"
+  ],
+  "化工油气地缘支线": [
+   "煤化工",
+   "甲醇",
+   "焦炭",
+   "油气",
+   "石油",
+   "天然气",
+   "页岩气",
+   "供气",
+   "氦气",
+   "炼化",
+   "成品油",
+   "有机硅",
+   "炭黑",
+   "铜"
+  ],
+  "机器人高位博弈": [
+   "机器人",
+   "丝杠"
+  ],
+  "地产零售低位补涨": [
+   "房产",
+   "物业",
+   "零售",
+   "商业",
+   "百货",
+   "地产",
+   "经纪"
+  ]
+ },
+ "rows": [
+  {
+   "code": "600865",
+   "name": "百大集团",
+   "limit_count": 5,
+   "first_hhmm": "09:32",
+   "seal_money": 59781144.0,
+   "turnover": 1038728608.0,
+   "industry": "一般零售",
+   "reason": "商业零售+恒隆租约+物业租赁"
+  },
+  {
+   "code": "002470",
+   "name": "金正大",
+   "limit_count": 3,
+   "first_hhmm": "09:25",
+   "seal_money": 175404670.0,
+   "turnover": 296155888.0,
+   "industry": "农化制品",
+   "reason": "复合肥+磷化工+缓控释肥"
+  },
+  {
+   "code": "603042",
+   "name": "华脉科技",
+   "limit_count": 3,
+   "first_hhmm": "09:25",
+   "seal_money": 154024510.0,
+   "turnover": 85302857.0,
+   "industry": "通信设备",
+   "reason": "股权转让+光通信+6G布局"
+  },
+  {
+   "code": "000759",
+   "name": "中百集团",
+   "limit_count": 3,
+   "first_hhmm": "09:33",
+   "seal_money": 167944920.0,
+   "turnover": 1541911504.0,
+   "industry": "一般零售",
+   "reason": "商业零售+硬折扣+本地生活"
+  },
+  {
+   "code": "000978",
+   "name": "桂林旅游",
+   "limit_count": 3,
+   "first_hhmm": "13:06",
+   "seal_money": 35255418.0,
+   "turnover": 1009111008.0,
+   "industry": "旅游及景",
+   "reason": "AI文旅+景区旅游+票务整合"
+  },
+  {
+   "code": "000523",
+   "name": "红棉股份",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 345851860.0,
+   "turnover": 108357676.0,
+   "industry": "综合Ⅱ",
+   "reason": "食糖+代糖饮料+半年报增长"
+  },
+  {
+   "code": "000912",
+   "name": "泸天化",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 9328477.0,
+   "turnover": 767886016.0,
+   "industry": "农化制品",
+   "reason": "尿素+化肥+精细化工"
+  },
+  {
+   "code": "002295",
+   "name": "精艺股份",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 104291078.0,
+   "turnover": 84449026.0,
+   "industry": "工业金属",
+   "reason": "铜加工+铜板合同+国资控股"
+  },
+  {
+   "code": "002790",
+   "name": "瑞尔特",
+   "limit_count": 2,
+   "first_hhmm": "09:25",
+   "seal_money": 152075460.0,
+   "turnover": 170843793.0,
+   "industry": "家居用品",
+   "reason": "智能卫浴+适老卫浴+冲水组件"
+  },
+  {
+   "code": "000980",
+   "name": "众泰汽车",
+   "limit_count": 2,
+   "first_hhmm": "09:30",
+   "seal_money": 115358279.0,
+   "turnover": 347256832.0,
+   "industry": "汽车零部",
+   "reason": "自研车型+新能源整车+海外布局"
+  },
+  {
+   "code": "000930",
+   "name": "中粮科技",
+   "limit_count": 2,
+   "first_hhmm": "09:32",
+   "seal_money": 137798530.0,
+   "turnover": 556141696.0,
+   "industry": "农产品加",
+   "reason": "功能糖+淀粉糖+燃料乙醇"
+  },
+  {
+   "code": "605077",
+   "name": "华康股份",
+   "limit_count": 2,
+   "first_hhmm": "09:34",
+   "seal_money": 53113205.0,
+   "turnover": 457738080.0,
+   "industry": "化学制品",
+   "reason": "糖醇+玉米加工+食品配料"
+  },
+  {
+   "code": "002349",
+   "name": "精华制药",
+   "limit_count": 2,
+   "first_hhmm": "09:50",
+   "seal_money": 78077440.0,
+   "turnover": 1083827408.0,
+   "industry": "中药Ⅱ",
+   "reason": "创新药+中药+原料药"
+  },
+  {
+   "code": "600792",
+   "name": "云煤能源",
+   "limit_count": 2,
+   "first_hhmm": "10:50",
+   "seal_money": 62596668.0,
+   "turnover": 539145008.0,
+   "industry": "焦炭Ⅱ",
+   "reason": "焦炭主业+焦炭增产+钢企直供"
+  },
+  {
+   "code": "002068",
+   "name": "黑猫股份",
+   "limit_count": 2,
+   "first_hhmm": "13:10",
+   "seal_money": 57002586.0,
+   "turnover": 1192876352.0,
+   "industry": "橡胶",
+   "reason": "超级电容+导电炭黑+炭黑龙头"
+  },
+  {
+   "code": "002162",
+   "name": "悦心健康",
+   "limit_count": 1,
+   "first_hhmm": "09:25",
+   "seal_money": 5309483.0,
+   "turnover": 491451008.0,
+   "industry": "家居用品",
+   "reason": "康养机器人+养老服务+中报增长"
+  },
+  {
+   "code": "603421",
+   "name": "鼎信通讯",
+   "limit_count": 1,
+   "first_hhmm": "09:30",
+   "seal_money": 88940787.0,
+   "turnover": 176790298.0,
+   "industry": "通信设备",
+   "reason": "智能电网+液流储能+工业消防"
+  },
+  {
+   "code": "002077",
+   "name": "大港股份",
+   "limit_count": 1,
+   "first_hhmm": "09:32",
+   "seal_money": 53601100.0,
+   "turnover": 1129163504.0,
+   "industry": "半导体",
+   "reason": "集成电路测试+产能满产+镇江国资"
+  },
+  {
+   "code": "600359",
+   "name": "新农开发",
+   "limit_count": 1,
+   "first_hhmm": "09:33",
+   "seal_money": 59850195.0,
+   "turnover": 335687760.0,
+   "industry": "种植业",
+   "reason": "棉花种业+粮食加工+甘草深加工"
+  },
+  {
+   "code": "000972",
+   "name": "中基健康",
+   "limit_count": 1,
+   "first_hhmm": "09:34",
+   "seal_money": 61202287.0,
+   "turnover": 202316898.0,
+   "industry": "农产品加",
+   "reason": "番茄制品+农业种植+国企改革"
+  },
+  {
+   "code": "605198",
+   "name": "安德利",
+   "limit_count": 1,
+   "first_hhmm": "09:35",
+   "seal_money": 68591600.0,
+   "turnover": 302336880.0,
+   "industry": "农产品加",
+   "reason": "并购重组+覆铜板材料+浓缩果汁"
+  },
+  {
+   "code": "603650",
+   "name": "彤程新材",
+   "limit_count": 1,
+   "first_hhmm": "09:41",
+   "seal_money": 68565786.0,
+   "turnover": 2156858320.0,
+   "industry": "橡胶",
+   "reason": "拟H股上市+光刻胶+业绩增长"
+  },
+  {
+   "code": "600255",
+   "name": "鑫科材料",
+   "limit_count": 1,
+   "first_hhmm": "09:46",
+   "seal_money": 67248375.0,
+   "turnover": 595074368.0,
+   "industry": "金属新材",
+   "reason": "高速铜连接+高端铜合金+业绩增长"
+  },
+  {
+   "code": "601579",
+   "name": "会稽山",
+   "limit_count": 1,
+   "first_hhmm": "09:51",
+   "seal_money": 41153638.0,
+   "turnover": 819278144.0,
+   "industry": "非白酒",
+   "reason": "高端黄酒+云集系列+爽酒"
+  },
+  {
+   "code": "600403",
+   "name": "大有能源",
+   "limit_count": 1,
+   "first_hhmm": "09:57",
+   "seal_money": 96365603.0,
+   "turnover": 1083284272.0,
+   "industry": "煤炭开采",
+   "reason": "煤炭+产销增长+吸收合并"
+  },
+  {
+   "code": "603162",
+   "name": "海通发展",
+   "limit_count": 1,
+   "first_hhmm": "09:58",
+   "seal_money": 128560692.0,
+   "turnover": 977358272.0,
+   "industry": "航运港口",
+   "reason": "干散货航运+定增募资+业绩增长"
+  },
+  {
+   "code": "002498",
+   "name": "汉缆股份",
+   "limit_count": 1,
+   "first_hhmm": "09:59",
+   "seal_money": 70674911.0,
+   "turnover": 1030267072.0,
+   "industry": "电网设备",
+   "reason": "高压电缆+国网中标+南网中标"
+  },
+  {
+   "code": "603308",
+   "name": "应流股份",
+   "limit_count": 1,
+   "first_hhmm": "10:01",
+   "seal_money": 75355797.0,
+   "turnover": 1429703264.0,
+   "industry": "通用设备",
+   "reason": "燃气轮机+航空发动机+核能材料"
+  },
+  {
+   "code": "603186",
+   "name": "华正新材",
+   "limit_count": 1,
+   "first_hhmm": "10:03",
+   "seal_money": 101900132.0,
+   "turnover": 4658624512.0,
+   "industry": "元件",
+   "reason": "高速覆铜板+AI算力+业绩增长"
+  },
+  {
+   "code": "600778",
+   "name": "友好集团",
+   "limit_count": 1,
+   "first_hhmm": "10:05",
+   "seal_money": 4695808.0,
+   "turnover": 285223952.0,
+   "industry": "一般零售",
+   "reason": "零售+业绩增长+便利店扩张"
+  },
+  {
+   "code": "000019",
+   "name": "深粮控股",
+   "limit_count": 1,
+   "first_hhmm": "10:05",
+   "seal_money": 61400142.0,
+   "turnover": 581275008.0,
+   "industry": "农产品加",
+   "reason": "粮食储备+食用油储备+深圳国资"
+  },
+  {
+   "code": "600540",
+   "name": "新赛股份",
+   "limit_count": 1,
+   "first_hhmm": "10:06",
+   "seal_money": 52509514.0,
+   "turnover": 1291393680.0,
+   "industry": "种植业",
+   "reason": "棉花全产业链+业绩增长+棉蛋白"
+  },
+  {
+   "code": "002046",
+   "name": "国机精工",
+   "limit_count": 1,
+   "first_hhmm": "10:08",
+   "seal_money": 52502758.0,
+   "turnover": 1252215680.0,
+   "industry": "通用设备",
+   "reason": "金刚石散热+半导体耗材+商业航天"
+  },
+  {
+   "code": "002040",
+   "name": "南 京 港",
+   "limit_count": 1,
+   "first_hhmm": "10:11",
+   "seal_money": 37816386.0,
+   "turnover": 344393200.0,
+   "industry": "航运港口",
+   "reason": "港口航运+原油中转+集装箱"
+  },
+  {
+   "code": "601890",
+   "name": "亚星锚链",
+   "limit_count": 1,
+   "first_hhmm": "10:15",
+   "seal_money": 20813628.0,
+   "turnover": 1335611104.0,
+   "industry": "航海装备",
+   "reason": "锚链龙头+海上油气+军用锚链"
+  },
+  {
+   "code": "000798",
+   "name": "中水渔业",
+   "limit_count": 1,
+   "first_hhmm": "10:24",
+   "seal_money": 12876521.0,
+   "turnover": 1150095136.0,
+   "industry": "渔业",
+   "reason": "远洋渔业+半年报增长+AI渔业"
+  },
+  {
+   "code": "600192",
+   "name": "长城电工",
+   "limit_count": 1,
+   "first_hhmm": "10:32",
+   "seal_money": 16223450.0,
+   "turnover": 237057143.0,
+   "industry": "电网设备",
+   "reason": "输变电设备+核电+资产剥离"
+  },
+  {
+   "code": "002377",
+   "name": "国创高新",
+   "limit_count": 1,
+   "first_hhmm": "10:34",
+   "seal_money": 7152311.0,
+   "turnover": 528317056.0,
+   "industry": "炼化及贸",
+   "reason": "业绩增长+改性沥青+控股股东增持"
+  },
+  {
+   "code": "000565",
+   "name": "渝三峡Ａ",
+   "limit_count": 1,
+   "first_hhmm": "10:42",
+   "seal_money": 12534327.0,
+   "turnover": 270737856.0,
+   "industry": "化学制品",
+   "reason": "辐射制冷+工业涂料+国资控股"
+  },
+  {
+   "code": "600698",
+   "name": "湖南天雁",
+   "limit_count": 1,
+   "first_hhmm": "10:46",
+   "seal_money": 74706904.0,
+   "turnover": 822155280.0,
+   "industry": "汽车零部",
+   "reason": "央企背景+涡轮增压器+电子水泵"
+  },
+  {
+   "code": "000993",
+   "name": "闽东电力",
+   "limit_count": 1,
+   "first_hhmm": "10:54",
+   "seal_money": 23289021.0,
+   "turnover": 327480752.0,
+   "industry": "电力",
+   "reason": "清洁能源+海上风电+福建国资"
+  },
+  {
+   "code": "601872",
+   "name": "招商轮船",
+   "limit_count": 1,
+   "first_hhmm": "10:55",
+   "seal_money": 82100601.0,
+   "turnover": 3892801792.0,
+   "industry": "航运港口",
+   "reason": "油运高景气+干散货+中报增长"
+  },
+  {
+   "code": "600121",
+   "name": "郑州煤电",
+   "limit_count": 1,
+   "first_hhmm": "10:55",
+   "seal_money": 49156116.0,
+   "turnover": 1165089408.0,
+   "industry": "煤炭开采",
+   "reason": "煤炭涨价+智算中心+国企"
+  },
+  {
+   "code": "605162",
+   "name": "新中港",
+   "limit_count": 1,
+   "first_hhmm": "11:04",
+   "seal_money": 4999596.0,
+   "turnover": 697972960.0,
+   "industry": "电力",
+   "reason": "弗迪供汽+电网储能+热电联产"
+  },
+  {
+   "code": "603328",
+   "name": "依顿电子",
+   "limit_count": 1,
+   "first_hhmm": "13:05",
+   "seal_money": 45897405.0,
+   "turnover": 502327008.0,
+   "industry": "元件",
+   "reason": "高端PCB+AI算力+国资定增"
+  },
+  {
+   "code": "603900",
+   "name": "莱绅通灵",
+   "limit_count": 1,
+   "first_hhmm": "13:52",
+   "seal_money": 23647045.0,
+   "turnover": 274873568.0,
+   "industry": "饰品",
+   "reason": "黄金珠宝+艺术珠宝+黄金租赁"
+  },
+  {
+   "code": "002155",
+   "name": "湖南黄金",
+   "limit_count": 1,
+   "first_hhmm": "13:53",
+   "seal_money": 9911183.0,
+   "turnover": 4053062624.0,
+   "industry": "贵金属",
+   "reason": "重大重组+黄金锑钨+业绩增长"
+  },
+  {
+   "code": "600869",
+   "name": "远东股份",
+   "limit_count": 1,
+   "first_hhmm": "14:27",
+   "seal_money": 155198200.0,
+   "turnover": 7371147008.0,
+   "industry": "电网设备",
+   "reason": "液冷散热+光纤互联+算力订单"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "NEWS_EVENT_CLASSIFIER_QUALITY_BASELINE",
+ "created_at": "2026-09-09 20:0x",
+ "method": "37条分层人工抽检(bearish13全查/mixed6/bullish8/neutral10), 判据=sentiment与新闻对个股/市场真实影响方向的一致性",
+ "v1_rule": {
+  "direction_accuracy": "19/37≈51%(接近抛硬币,不可用)",
+  "bearish_precision": "4/13≈31%(误报9条中8条type∈geo/other=灾害/国际政治字面噪声)",
+  "type_accuracy": "≈86%(32/37, 类型分类尚可)",
+  "歧义实证": [
+   "东兴证券『终止上市』=吸收合并正常流程被判利空(方向反)",
+   "晶澳科技『大幅增长大概率不会出现』含『增长』被判利好(方向反)"
+  ]
+ },
+ "v2_domain_limited": {
+  "change": "geo/other强制neutral不判方向",
+  "same_batch_agreement": "17/37≈46%(较v1 51%反降)",
+  "bearish_precision": "3/6=50%(升)",
+  "bullish_precision": "3/8=38%(降,误杀other类真利好×3: 拜耳III期突破/Nscale-Figure 60亿/Nebius-Palantir)",
+  "conclusion": "判定域限制=零和游戏: 误报降误杀升, 证实规则分类器无法从字面区分字面命中与实质语义"
+ },
+ "verdict": "规则分类器方向判定不可用(~50%); 可用部分=type分类(86%)+stocks个股关联(数据自带100%); 方向判定须LLM语义增强(候选v3: 须密钥配置合规+标注验证集+准确率≥80%才准进过滤层)",
+ "filter_layer_status": "过滤层(负向排雷/正向确认)依赖方向判定 → BLOCKED于LLM增强立项; type分类与个股关联可先行服务方向层板块映射",
+ "boundary": "本基线针对规则版; 台账rule_v2_domain_limited字段保留domain_note不丢信息",
+ "v3_llm_minimax": {
+  "status": "blocked(2026-09-09实探: 错误码2056『Token Plan用量上限已达』, 套餐配额耗尽非速率限制)",
+  "model_family_explored": "MiniMax-M3/M2.7/M2.5/M2.1系列(8个现役, /v1/models实探; 旧abab族套餐不兼容2061)",
+  "endpoint": "https://api.minimaxi.com/v1/chat/completions (OpenAI兼容)",
+  "blocked_at": "探针阶段(单条请求), 全量187条未发起",
+  "ready_when_unlocked": "news_event_classifier_llm.py(--probe/--run/--validate三模式, 429退避内置) + data/news_events_human_labels_37.json验证集(37条人工标签固化) 全部就绪, 套餐恢复/换key后一键三步",
+  "gate": "验证集方向准确率≥80%才准进过滤层(meta冻结判据不变)",
+  "key_note": "MINIMAX_API_KEY环境变量有效(鉴权通过), 仅配额问题"
+ },
+ "session_llm_zhiwei": {
+  "status": "2026-09-09会话内LLM语义判定145条落地(唯一id去重后), classifier=session_llm_zhiwei_v1_non_independent",
+  "vs_rule": "sentiment一致率71%(29%被语义纠正), type一致率73%",
+  "validation_note": "37条验证集覆盖22条, 一致20/22=91%——⚠️转录一致性非独立验证(session_llm与人工判定同源=知微既判), 不作准确率主张",
+  "value": "①MiniMax v3的对照基线(解锁后跑量对比) ②过滤层方向判定的语义级先行参考(标注non_independent) ③规则版51%→语义级91%的差距实证=字面vs语义瓶颈确认",
+  "distribution": {
+   "bullish": 33,
+   "bearish": 15,
+   "mixed": 1,
+   "neutral": 96
+  }
+ }
+}

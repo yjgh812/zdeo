@@ -1,0 +1,30 @@
+{
+ "id": "PREREG_REPURCHASE_20261025",
+ "title": "回购公告事件检验 (事件流水线E7, 复合治理信号族首个, 主人第31-32轮升格)",
+ "declared": "2026-10-25",
+ "origin": "第31轮新朋发现(回购公告>量价共振)+第32轮五粮液/雅戈尔案例; 数据=akshare stock_repurchase_em全史5,599行(2006-2026, 2016+覆盖5,400+条); 三案例锚=新朋(6000万-1.2亿+液冷+特斯拉=5天34.8%)/雅戈尔(23.37亿+增持5轮=5年110%)/五粮液(80-100亿+分红200亿=合计8.1%)",
+ "data_limitation": "最新公告日期非首次公告日(可能为实施进展更新日); 回购起始时间通常晚于公告日; PIT语义=最新公告日当日已知信息",
+ "rule_frozen": {
+  "data": "data/repurchase_stage_full.csv(akshare全史), 最新公告日期PIT锚",
+  "main_arm": "全部回购公告(不区分进度), 剔除停止实施/股东大会否决",
+  "control_arms": "A大额(计划下限>=1亿)/B小额(<1亿)/C预案阶段(董事会预案+股东大会通过)/D完成实施",
+  "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日, 入场日close<=30, volume>0",
+  "entry": "最新公告日期(非交易日顺延)次一bar收盘(c1)",
+  "exit": "t20e与t60e(-8%止损/到期收盘)",
+  "baseline": "同日全宇宙同口径均值(匹配日期)",
+  "dedup": "同股90日历日冷却",
+  "window": "20160101-20261023"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_events": "主臂n>=500",
+  "G2_t20e_exc": ">=+1.5pp",
+  "G3_net_exc": "含费(0.3%)均值超额>=+0.5pp",
+  "G4_by_year": ">=6个年度正(有>=20事件的年)",
+  "G5_t60e_exc": ">=+1.0pp",
+  "verdict_rule": "五门全过=PASS_CANDIDATE(提请主人); 任一未过=FAIL"
+ },
+ "multiple_testing_note": "主臂唯一; A/B/C/D对照臂描述不判定",
+ "failure_clause": "FAIL时回购单事件不接线; 复合治理信号(回购+增持+低PB)须组合数据另立项",
+ "fingerprint": "540b75cfce805e07",
+ "status": "executed_FAIL_20261025_右偏结构登记"
+}

@@ -1,0 +1,21 @@
+{
+ "scanned": {
+  "from": 20190101,
+  "to": 20260930,
+  "latest_data_date": 20260930
+ },
+ "added": 52075,
+ "fwd_updated": 0,
+ "total_rows": 52075,
+ "shadow_window": {
+  "n": 0,
+  "gates": {
+   "f5_med_min": 1.0,
+   "f5_win_min": 50.0,
+   "n_min": 30
+  },
+  "verdict": "NO_DATA"
+ },
+ "runtime_sec": 47.8,
+ "ts": "2026-10-06 14:49:20"
+}

@@ -1,0 +1,45 @@
+{
+ "window": [
+  "2026-10-14",
+  "2026-10-16"
+ ],
+ "samples": {
+  "sh.600000": {
+   "name": "浦发银行",
+   "local_bars": 144,
+   "bs_bars": 144,
+   "aligned": 144,
+   "close_match_rate": 1.0,
+   "close_max_abs_diff": 0.0,
+   "close_med_diff": 0.0,
+   "vol_ratio_med": 1.0
+  },
+  "sz.000001": {
+   "name": "平安银行",
+   "local_bars": 144,
+   "bs_bars": 144,
+   "aligned": 144,
+   "close_match_rate": 0.6042,
+   "close_max_abs_diff": 0.02,
+   "close_med_diff": 0.0,
+   "vol_ratio_med": 1.0
+  }
+ },
+ "conventions": {
+  "local_time": "bar末分钟int(935)",
+  "local_volume": "股(待验证)",
+  "bs_time": "bar末'YYYY-MM-DD HH:MM:SS'",
+  "tol": 0.005
+ },
+ "verdict": {
+  "both_aligned_full": true,
+  "close_rates": [
+   1.0,
+   0.6042
+  ],
+  "vol_ratios": [
+   1.0,
+   1.0
+  ]
+ }
+}

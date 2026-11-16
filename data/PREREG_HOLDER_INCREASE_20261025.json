@@ -1,0 +1,28 @@
+{
+ "id": "PREREG_HOLDER_INCREASE_20261025",
+ "title": "股东增持事件·比例收紧检验 (事件流水线E6, 主人第28轮令)",
+ "declared": "2026-10-25",
+ "origin": "主人第16/28轮: 高管+比例0.05-0.5%+小市值<50亿+低估值分位四条件; 数据=akshare stock_ggcg_em全史147,200行(增持33,881/减持113,319, 1994-2026); 高管判定因名称字段无职称仅57笔→控制臂标注不判定; 市值/估值分位维度因数据未接入缓测",
+ "rule_frozen": {
+  "data": "data/ggcg_stage_full.csv(akshare全史), 公告日PIT锚",
+  "main_arm": "增减=增持 且 占流通股比例 0.05-0.5(百分比)",
+  "control_arms": "A全量增持(无比例)/B减持(负向对照)/C高管增持(名称含职称关键词, n=57小样本)",
+  "universe": "6/0/3剔688/689, 上市>60, 非ST日, 入场日close<=30",
+  "entry": "公告日(非交易日顺延)次一bar收盘(c1)",
+  "exit": "t20e(-8%止损/T+20)与t60e(-8%止损/T+60)",
+  "baseline": "同日全宇宙同口径均值",
+  "dedup": "同股90日历日冷却(取占流通股比例最大笔)",
+  "window": "20160101-20261023",
+  "deferred_dims": "流通市值/估值分位/高管精确判定——数据未接入缓测"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_events": "主臂n>=500",
+  "G2_t20e_exc": ">=+1.5pp",
+  "G3_net_exc": "含费(0.3%)均值超额>=+0.5pp",
+  "G4_by_year": ">=6个年度正(有>=20事件的年)",
+  "G5_t60e_exc": ">=+1.0pp",
+  "verdict_rule": "五门全过=PASS_CANDIDATE; 任一未过=FAIL"
+ },
+ "failure_clause": "FAIL时增持口径不接线; 缓测维度翻案须新指纹",
+ "fingerprint": "68a320211bb12c8b"
+}

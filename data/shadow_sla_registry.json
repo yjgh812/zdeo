@@ -1,0 +1,9 @@
+{
+  "comment": "影子判读SLA日历(PD-044①, 2026-10-16「继续」令)。口径: window_trading_days=自activated起N个已收盘交易日(qfq主库distinct date); due_date=已定格日历日。新增影子激活时须同步登记本表(呈请#15同源纪律), 到期≤3交易日toast。",
+  "shadows": [
+    {"name": "e10_turnover_size", "desc": "E10量能×市值联动影子(PD-037)", "activated": "2026-10-08", "window_trading_days": 60, "source": "PD-037 APPROVED_ACTIVE 2026-10-08"},
+    {"name": "swt_score_weight_tier", "desc": "#802 score加权分层影子(三门G1满60日)", "activated": "2026-10-16", "window_trading_days": 60, "source": "PREREG_SCORE_WEIGHT_TIER_20261016 ACTIVE 指纹03021090"},
+    {"name": "ptwt_portrait_softweight", "desc": "画像软权重影子(三门)", "activated": "2026-10-09", "due_date": "2026-12-30", "source": "2026-10-09登记 满窗读出≈12/30"},
+    {"name": "t1_exit_ab", "desc": "T1信号退出制A/B影子(PD-028①)", "activated": "2026-10-03", "window_trading_days": 60, "source": "PREREG_EXIT_T1_20261003 10/3激活"}
+  ]
+}

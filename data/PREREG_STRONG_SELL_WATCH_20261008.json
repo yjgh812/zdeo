@@ -1,0 +1,19 @@
+{
+ "name": "PREREG_STRONG_SELL_WATCH",
+ "title": "候选乙强中卖机械化·持仓哨提示层（提请制，零交易权）",
+ "status": "ACTIVE",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-08', 'decision': '主人令「候选乙（强中卖机械化），到卖出时，需要提示」=批准接提示层：持仓票触发卖侧信号时提示主人裁决；非自动卖出，非闸门（layer3未激活）', 'runner': 'strong_sell_watch.py（根目录，与exit_gate_watch/stock_zones_watch同族），挂07:45九合一第10步'}",
+ "registered": "2026-10-08",
+ "family": "sell_side_watch_petition",
+ "sibling": "exit_gate_watch.py(PD-036④逃生门,提请制同构)/stock_zones_watch.py(区域哨,同持仓真源)",
+ "evidence_report": "reports/wyckoff_full_study_20261007.md §5/§9.3/§13.1",
+ "signal_locked": {
+  "hi_stall": "收盘>=60日最高×0.95 且 量比>=2.0×截至T-1的20日均量 且 当日涨幅<=1.0%（高位放量滞涨）",
+  "utad_loud": "盘中破20日高 且 收盘回落至20日高之下 且 收盘>=60日高×0.9 且 量比>=1.5（高位放量上冲回落）",
+  "nd": "阳线 且 量比<=0.7 且 实体<=昨收1% 且 收盘>=60日高×0.9（上涨中缩量窄阳无需求）",
+  "note": "三口径与reports/wyckoff_full_study_20261007.md第二波研究逐字一致; H20/H60/vr均截至T-1零前视"
+ },
+ "honesty_layers": "🔴提示文案必须内嵌持仓域削弱证据（报告§13.1）：hi_stall在本系统2026持仓域历史反号(med20+3.17 vs 全市场-1.32,强票滞涨=洗盘居多)、utad_loud弱化(-0.94)、nd一致但弱(-0.98)——提示仅为警示呈报，历史证据不支持其作为独立卖出依据，是否减仓全由主人裁决",
+ "boundary": "纯提示层零交易权：禁止自动卖出、禁止触碰trade_executor、禁止撤单改单；提请制=toast弹清单待主人裁决；持仓真源=westock MCP实时（data/holdings_codes_latest.json仅批量快照）；信号为T-1收盘确认型，07:45扫描提示『昨日触发』语义",
+ "acceptance_note": "提示层无OOS验收门（非信号立项）；台账strong_sell_watch_ledger.jsonl幂等(date+code+tag)，供日后回看提示准确率"
+}

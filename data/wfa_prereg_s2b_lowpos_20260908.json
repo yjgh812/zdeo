@@ -1,0 +1,16 @@
+{
+ "prereg_id": "s2b_lowpos_20260908",
+ "created": "2026-09-08",
+ "owner_directive": "主人裁决白名单供给修复五连之P1: S2B主线内低位补涨新prereg, 影子期不接通道, 过wfa_gate后提请裁决",
+ "hypothesis": "T-1申万L1行业涨停>=5家内, 20日动量<=行业中位(低位组)的股票T+10超额>0; 对照=高位组与无条件基准",
+ "evidence_prior": "MAINLINE_STAGE2子集S2B低位组T+10+1.85%(n=33388,t=+4.42)vs高位组+0.04%; 独立同向=9/6板块轮动研究(板内Q1次月+3.05%最优/Q5龙头-1.31%最差)",
+ "multiplicity_disclosure": "S2B为FAIL主框架下子集发现(同批4假设); 与stage-1 G2(全池动量分组无差异t=0.43)存在条件依赖矛盾待解; 追高族5次证伪先验在案",
+ "data": "涨停回填qfq口径+申万L1映射+dragon_quant_qfq; 管线复用mainline_stage2口径(行业涨停>=5定义/20日动量中位分组不变)",
+ "sample": "训练窗2021-01~2025-12周截面; 2026留真窗oos_lock(year>=2026仅终验方向)",
+ "criteria": "P1事件层:低位组T+10超额>0且池内时序t>=2且分年6窗>=4正; P2组合层:成本千三10窗口超额>=3%且t>=2(wfa_gate口径); P3样本外:2026方向一致",
+ "verdicts": "全过=仅提请主人裁决接通道(影子先行); 部分=observation续影子; 全不过=falsified_rules(S2B-LOWPOS)替代层关闭",
+ "shadow_semantics": "每周截面登记reports/s2b_lowpos_shadow/仅供观测, 零信号权零拦截权",
+ "doc": "reports/PREREG_S2B_LOWPOS_20260908.md",
+ "fingerprint": "sha256:c2b3520db9eff4c9",
+ "immutable": "跑前钉死跑后禁改; 结果落reports/S2B_LOWPOS_RESULT_20260908.{json,md}+wfa_trials.jsonl"
+}

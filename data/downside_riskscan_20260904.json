@@ -1,0 +1,13 @@
+{
+ "date": "20260904",
+ "kind": "riskscan_baseline",
+ "rows": [
+  {
+   "code": "603193",
+   "name": "润本股份",
+   "risk_score": NaN,
+   "risk_grp": "池外",
+   "triggers": "价>20元或流动性池外"
+  }
+ ]
+}

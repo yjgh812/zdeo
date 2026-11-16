@@ -1,0 +1,280 @@
+{
+ "bp_ep_top15": {
+  "yearly": {
+   "2016": {
+    "n": 157,
+    "win_rate_pct": 70.06,
+    "avg_win": 394.7,
+    "avg_loss": -247.7,
+    "pl_ratio": 1.594,
+    "flat_n": 0,
+    "pnl_sum": 31777.0
+   },
+   "2017": {
+    "n": 147,
+    "win_rate_pct": 55.1,
+    "avg_win": 485.3,
+    "avg_loss": -337.1,
+    "pl_ratio": 1.439,
+    "flat_n": 0,
+    "pnl_sum": 17056.0
+   },
+   "2018": {
+    "n": 146,
+    "win_rate_pct": 45.21,
+    "avg_win": 983.5,
+    "avg_loss": -628.8,
+    "pl_ratio": 1.564,
+    "flat_n": 0,
+    "pnl_sum": 14608.0
+   },
+   "2019": {
+    "n": 131,
+    "win_rate_pct": 43.51,
+    "avg_win": 560.9,
+    "avg_loss": -431.6,
+    "pl_ratio": 1.3,
+    "flat_n": 0,
+    "pnl_sum": 36.0
+   },
+   "2020": {
+    "n": 166,
+    "win_rate_pct": 48.19,
+    "avg_win": 625.3,
+    "avg_loss": -369.4,
+    "pl_ratio": 1.693,
+    "flat_n": 0,
+    "pnl_sum": 18256.0
+   },
+   "2021": {
+    "n": 160,
+    "win_rate_pct": 40.0,
+    "avg_win": 352.9,
+    "avg_loss": -234.4,
+    "pl_ratio": 1.505,
+    "flat_n": 0,
+    "pnl_sum": 76.0
+   },
+   "2022": {
+    "n": 169,
+    "win_rate_pct": 49.7,
+    "avg_win": 327.1,
+    "avg_loss": -219.6,
+    "pl_ratio": 1.49,
+    "flat_n": 0,
+    "pnl_sum": 8816.0
+   },
+   "2023": {
+    "n": 156,
+    "win_rate_pct": 63.46,
+    "avg_win": 365.6,
+    "avg_loss": -205.2,
+    "pl_ratio": 1.781,
+    "flat_n": 0,
+    "pnl_sum": 24496.0
+   },
+   "2024": {
+    "n": 146,
+    "win_rate_pct": 67.12,
+    "avg_win": 747.0,
+    "avg_loss": -288.8,
+    "pl_ratio": 2.586,
+    "flat_n": 0,
+    "pnl_sum": 59338.0
+   },
+   "2025": {
+    "n": 130,
+    "win_rate_pct": 40.77,
+    "avg_win": 671.6,
+    "avg_loss": -332.7,
+    "pl_ratio": 2.019,
+    "flat_n": 0,
+    "pnl_sum": 9977.0
+   },
+   "2026": {
+    "n": 104,
+    "win_rate_pct": 43.27,
+    "avg_win": 467.5,
+    "avg_loss": -461.1,
+    "pl_ratio": 1.014,
+    "flat_n": 0,
+    "pnl_sum": -6166.0
+   }
+  },
+  "hist_2016_2025": {
+   "n": 1508,
+   "win_rate_pct": 52.52,
+   "avg_win": 536.2,
+   "avg_loss": -335.5,
+   "pl_ratio": 1.598,
+   "flat_n": 0,
+   "pnl_sum": 184435.0
+  },
+  "y2026": {
+   "n": 104,
+   "win_rate_pct": 43.27,
+   "avg_win": 467.5,
+   "avg_loss": -461.1,
+   "pl_ratio": 1.014,
+   "flat_n": 0,
+   "pnl_sum": -6166.0
+  },
+  "winrate_test": {
+   "z": -1.826,
+   "p_two_tail": 0.0678,
+   "wilson95_2026": [
+    34.16,
+    52.86
+   ],
+   "diff_pp": -9.25,
+   "diff95CI_pp": [
+    -19.1,
+    0.6
+   ],
+   "MDE_pp_at_n2026": 19.4
+  },
+  "pl_bootstrap": {
+   "y2026_95CI": [
+    0.354,
+    1.784
+   ],
+   "hist_95CI": [
+    1.265,
+    2.001
+   ],
+   "y2026_mean": 1.007,
+   "hist_mean": 1.6,
+   "overlap_hist_CI": true,
+   "y2026_CI_contains_1": true
+  },
+  "sell_reason_2026": {
+   "stop_loss": 27,
+   "rebalance": 44,
+   "end_of_sample": 33
+  },
+  "hold_days_median_2026": 62
+ },
+ "ml_top20": {
+  "yearly": {
+   "2020": {
+    "n": 207,
+    "win_rate_pct": 57.0,
+    "avg_win": 401.1,
+    "avg_loss": -257.0,
+    "pl_ratio": 1.56,
+    "flat_n": 0,
+    "pnl_sum": 24450.0
+   },
+   "2021": {
+    "n": 224,
+    "win_rate_pct": 60.71,
+    "avg_win": 718.9,
+    "avg_loss": -357.0,
+    "pl_ratio": 2.014,
+    "flat_n": 0,
+    "pnl_sum": 66353.0
+   },
+   "2022": {
+    "n": 213,
+    "win_rate_pct": 51.17,
+    "avg_win": 638.9,
+    "avg_loss": -538.1,
+    "pl_ratio": 1.187,
+    "flat_n": 0,
+    "pnl_sum": 13679.0
+   },
+   "2023": {
+    "n": 206,
+    "win_rate_pct": 49.51,
+    "avg_win": 586.0,
+    "avg_loss": -369.4,
+    "pl_ratio": 1.586,
+    "flat_n": 0,
+    "pnl_sum": 21358.0
+   },
+   "2024": {
+    "n": 199,
+    "win_rate_pct": 48.24,
+    "avg_win": 809.4,
+    "avg_loss": -875.1,
+    "pl_ratio": 0.925,
+    "flat_n": 0,
+    "pnl_sum": -12433.0
+   },
+   "2025": {
+    "n": 199,
+    "win_rate_pct": 73.37,
+    "avg_win": 1158.9,
+    "avg_loss": -359.0,
+    "pl_ratio": 3.228,
+    "flat_n": 0,
+    "pnl_sum": 150180.0
+   },
+   "2026": {
+    "n": 91,
+    "win_rate_pct": 46.15,
+    "avg_win": 1008.2,
+    "avg_loss": -940.3,
+    "pl_ratio": 1.072,
+    "flat_n": 0,
+    "pnl_sum": -3732.0
+   }
+  },
+  "hist_2016_2025": {
+   "n": 1248,
+   "win_rate_pct": 56.65,
+   "avg_win": 737.5,
+   "avg_loss": -476.6,
+   "pl_ratio": 1.547,
+   "flat_n": 0,
+   "pnl_sum": 263587.0
+  },
+  "y2026": {
+   "n": 91,
+   "win_rate_pct": 46.15,
+   "avg_win": 1008.2,
+   "avg_loss": -940.3,
+   "pl_ratio": 1.072,
+   "flat_n": 0,
+   "pnl_sum": -3732.0
+  },
+  "winrate_test": {
+   "z": -1.948,
+   "p_two_tail": 0.0514,
+   "wilson95_2026": [
+    36.27,
+    56.34
+   ],
+   "diff_pp": -10.5,
+   "diff95CI_pp": [
+    -21.11,
+    0.11
+   ],
+   "MDE_pp_at_n2026": 20.58
+  },
+  "pl_bootstrap": {
+   "y2026_95CI": [
+    0.469,
+    1.915
+   ],
+   "hist_95CI": [
+    1.161,
+    2.096
+   ],
+   "y2026_mean": 1.131,
+   "hist_mean": 1.57,
+   "overlap_hist_CI": true,
+   "y2026_CI_contains_1": true
+  },
+  "sell_reason_2026": {
+   "max_holding": 74,
+   "stop_loss": 17
+  },
+  "hold_days_median_2026": 12
+ },
+ "_note": {
+  "top20_source": "bp_ep Top20 逐笔不在10/18 fork产物内，Top20口径引用 regime_payoff_matrix_20261018_out.json 聚合数(n=136,win44.12%,PL0.777)，显著性检验以聚合近似另行标注",
+  "flat_handling": "平盘不计入胜负分子分母，单独flat_n列报",
+  "data_source": "reports/backtest_full_20261018_dose_n15（N15逐位复现生产181.17%/1612/51.92%）"
+ }
+}

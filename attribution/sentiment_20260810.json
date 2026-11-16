@@ -1,0 +1,35 @@
+{
+  "date": "20260810",
+  "indicators": {
+    "limit_up_count": 101,
+    "limit_down_count": 8,
+    "max_consecutive_boards": 1,
+    "consecutive_distribution": {
+      "1": 101
+    },
+    "broken_rate_pct": 2.88,
+    "sealed_count": 98,
+    "broken_count": 3,
+    "up_count": 3748,
+    "down_count": 1121,
+    "flat_count": 78,
+    "up_ratio_pct": 75.8
+  },
+  "stage": "主升期",
+  "confidence_pct": 62.5,
+  "scores": {
+    "启动期": 2,
+    "主升期": 5,
+    "分歧期": 0,
+    "退潮期": 1
+  },
+  "indicator_details": {
+    "涨停数": "101→主升",
+    "连板高度": "1板→退潮",
+    "炸板率": "2.9%→主升/启动",
+    "跌停数": "8→安全",
+    "涨跌比": "76%→偏热"
+  },
+  "advice": "✅ 允许满仓，主线板块限定+AB竞价确认。情绪热烈，各手法均有盈利效应。",
+  "run_time": "2026-08-10T20:27:53.880374"
+}

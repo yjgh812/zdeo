@@ -1,0 +1,15 @@
+{
+  "id": "PREREG_PORTRAIT_Z2S_COMPOSITE_20261002",
+  "created": "2026-10-02",
+  "concept": "画像选什么(portrait top50%=模型看好) + Z2s选何时(缩量回踩=买点) = 复合信号",
+  "universe": "scores_short pct >= 50 (画像前50%, ~1560只)",
+  "trigger": "Z2s条件: 回踩带内(距MA20 <= 3%) ∧ 缩量(量比 < 0.8) ∧ 画像pct >= 50",
+  "entry": "Z2s触发日 T+1 开盘",
+  "exit": "S-5(-8%) 或 trend_checker 或 20交易日到期",
+  "duration": "60交易日前向影子",
+  "gates": "G1=复合fwd20>全市场等权基线(ex>=1pp); G2=胜率>=52%; G3=n>=30; 三门全过→提请主人裁决生产接线; 任一不过→归档",
+  "baseline_comparison": "画像top50%+Z2s vs 画像bottom50%+Z2s (同触发不同画像=画像增量); 画像top50%无Z2s vs 画像top50%+Z2s (Z2s增量)",
+  "boundary": "纯影子零交易权; 复合信号不替代现有任何闸门; 结果呈报主人裁决",
+  "evidence_context": "画像截面D1-D10差18.8pp(60日); Z2s影子1239行积累中; A/B首验fwd5+2.36pp短期正; 镇海603637画像83%vs趋势走坏=live案例",
+  "fingerprint": "9fffa0e83c53c696"
+}

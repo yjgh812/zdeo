@@ -1,0 +1,35 @@
+{
+ "prereg": "PREREG-LOW-CONSOLIDATION-ALPHA-20261021",
+ "stage": "1b_oos_2022_2023",
+ "prereg_fp16_at_exec": "6ba84efd4346d32b",
+ "results": {
+  "主口径_t20e止损": {
+   "n_A": 156379,
+   "n_R": 9680,
+   "win_A": 45.2,
+   "win_R": 39.3,
+   "effect_pp": 5.91,
+   "ci95": [
+    4.93,
+    6.93
+   ]
+  },
+  "纯T+20持有": {
+   "n_A": 156379,
+   "n_R": 9680,
+   "win_A": 48.41,
+   "win_R": 43.7,
+   "effect_pp": 4.71,
+   "ci95": [
+    3.69,
+    5.77
+   ]
+  }
+ },
+ "verdict": "OOS_ROBUST_CONFIRM",
+ "clause": "pass=effect>0跨相位稳健; fail=效应限2024+相位",
+ "caveats": [
+  "2022-2023段无官方gauge基线锚, Part0复现不适用(实现与阶段1同一代码族已通过2024+复现)",
+  "退市段2022+并入, 强制平仓口径同阶段1"
+ ]
+}

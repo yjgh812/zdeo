@@ -1,0 +1,24 @@
+[
+ {
+  "code": "000576",
+  "name": "甘化科工",
+  "volume": 200,
+  "price": 9.86,
+  "source": "type_sample_F_driver",
+  "sector": "国防军工",
+  "prev_close": 9.57,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000002",
+  "name": "万科Ａ",
+  "volume": 700,
+  "price": 3.47,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 3.37,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

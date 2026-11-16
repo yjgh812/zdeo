@@ -1,0 +1,207 @@
+{
+ "verdict": "FAIL(全市场排名维持, 行业中性化无增量)",
+ "prereg_fp": "9cb6b66caf7a48ee",
+ "gates": {
+  "G1_V1": false,
+  "G1_V2": false,
+  "G2": false,
+  "G3": false,
+  "G4": false,
+  "G5_t": 0.21,
+  "G6_pbo": null
+ },
+ "arms_full": {
+  "V0": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0348,
+    "mdd": -0.168,
+    "sharpe": -1.15,
+    "plr_monthly": 0.85,
+    "win_monthly": 0.316
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0407,
+    "mdd": -0.0812,
+    "sharpe": -2.68,
+    "plr_monthly": 0.34,
+    "win_monthly": 0.261
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0308,
+    "mdd": -0.1264,
+    "sharpe": -0.82,
+    "plr_monthly": 0.96,
+    "win_monthly": 0.353
+   }
+  },
+  "('V1', 0.05)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0307,
+    "mdd": -0.1431,
+    "sharpe": -0.79,
+    "plr_monthly": 0.87,
+    "win_monthly": 0.386
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0292,
+    "mdd": -0.0592,
+    "sharpe": -1.05,
+    "plr_monthly": 0.99,
+    "win_monthly": 0.304
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0318,
+    "mdd": -0.1431,
+    "sharpe": -0.69,
+    "plr_monthly": 0.76,
+    "win_monthly": 0.441
+   }
+  },
+  "('V1', 0.1)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0332,
+    "mdd": -0.1526,
+    "sharpe": -0.9,
+    "plr_monthly": 0.73,
+    "win_monthly": 0.404
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.035,
+    "mdd": -0.066,
+    "sharpe": -1.6,
+    "plr_monthly": 0.54,
+    "win_monthly": 0.348
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.032,
+    "mdd": -0.1483,
+    "sharpe": -0.72,
+    "plr_monthly": 0.74,
+    "win_monthly": 0.441
+   }
+  },
+  "('V1', 0.15)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.031,
+    "mdd": -0.1495,
+    "sharpe": -0.91,
+    "plr_monthly": 0.68,
+    "win_monthly": 0.421
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0311,
+    "mdd": -0.0636,
+    "sharpe": -1.48,
+    "plr_monthly": 0.47,
+    "win_monthly": 0.391
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0308,
+    "mdd": -0.1495,
+    "sharpe": -0.75,
+    "plr_monthly": 0.73,
+    "win_monthly": 0.441
+   }
+  },
+  "('V2', 0.05)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0255,
+    "mdd": -0.1404,
+    "sharpe": -0.69,
+    "plr_monthly": 1.07,
+    "win_monthly": 0.351
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0309,
+    "mdd": -0.0598,
+    "sharpe": -1.57,
+    "plr_monthly": 0.6,
+    "win_monthly": 0.304
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0219,
+    "mdd": -0.1404,
+    "sharpe": -0.47,
+    "plr_monthly": 1.13,
+    "win_monthly": 0.382
+   }
+  },
+  "('V2', 0.1)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0255,
+    "mdd": -0.1404,
+    "sharpe": -0.69,
+    "plr_monthly": 1.07,
+    "win_monthly": 0.351
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0309,
+    "mdd": -0.0598,
+    "sharpe": -1.57,
+    "plr_monthly": 0.6,
+    "win_monthly": 0.304
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0219,
+    "mdd": -0.1404,
+    "sharpe": -0.47,
+    "plr_monthly": 1.13,
+    "win_monthly": 0.382
+   }
+  },
+  "('V2', 0.15)": {
+   "全窗": {
+    "n_months": 57,
+    "annual": -0.0255,
+    "mdd": -0.1404,
+    "sharpe": -0.69,
+    "plr_monthly": 1.07,
+    "win_monthly": 0.351
+   },
+   "发现窗2022-23": {
+    "n_months": 23,
+    "annual": -0.0309,
+    "mdd": -0.0598,
+    "sharpe": -1.57,
+    "plr_monthly": 0.6,
+    "win_monthly": 0.304
+   },
+   "验证窗2024-26": {
+    "n_months": 34,
+    "annual": -0.0219,
+    "mdd": -0.1404,
+    "sharpe": -0.47,
+    "plr_monthly": 1.13,
+    "win_monthly": 0.382
+   }
+  }
+ },
+ "yearly": {
+  "2022": false,
+  "2023": true,
+  "2024": true,
+  "2025": false,
+  "2026": false
+ },
+ "st_filter": false,
+ "n_rebalances": 57,
+ "n_empty_periods": 4
+}

@@ -1,0 +1,32 @@
+{
+ "name": "PREREG_CLS_NEWS_SHADOW",
+ "title": "财联社新闻暴露前瞻影子(严定义漏斗未来事件x个股新闻层)60交易日OOS",
+ "status": "ACTIVE",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-11', 'decision': '主人令b=批准B方向(财联社前瞻影子); 历史回填已证不可行(cls roll无游标寻址,探针记忆cls-news-probe-20261011), 本件=forward-only造测试集', 'activation_since': '20261012', 'runner': 'analysis/cls_news_archive_daily.py(每日归档, 挂daily_chain[cls_news]槽位)'}",
+ "registered": "2026-10-11",
+ "family": "rightside_startup",
+ "evidence_report": "reports/rightside_startup_20261011.md(严定义漏斗) + 情绪档切片5fc3c95(反向调制=情绪层主题依据)",
+ "in_sample_evidence": "{'note': '无历史回测(数据层forward-only); 依据=情绪维三切片结论与宽定义P2情绪调制, 预期方向不定故G2设双向哨'}",
+ "params": {
+  "archive": "data/cls_news_archive.jsonl",
+  "levels": [
+   "A",
+   "B"
+  ],
+  "sampling": "roll接口单窗30条无翻页; 每链次运行采样(02:00/09:10/14:30/22:00), 日覆盖率约50-70%(部分覆盖)",
+  "exposure_window": "[D-3, D+1] (采样稀疏故缩窗, 预冻结)",
+  "exposure_match": "stock_list含该股 或 title/brief含股票简称",
+  "big_exposure": "窗内A加红条数>=1",
+  "judge_metric": "f60_net(净h60, 与收官主口径同)",
+  "gates": {
+   "G1": "有暴露组净h60均值-无暴露组 >= +2.0pp 且 事件日聚5日块bootstrap 95%CI不含0",
+   "G2": "方向哨: 有暴露组win >= 无暴露组win-5pp, 否则FAIL(方向反转)",
+   "G3": "有暴露组n >= 20(稀疏采样下调)"
+  },
+  "kill": "前向累计前15个暴露事件净h60均值<0",
+  "min_shadow_days": 60,
+  "rights": "零交易权, 判定权主人"
+ },
+ "fingerprint": "9a0f62c15f11837b",
+ "judge_plan": "影子满60交易日后由analysis/cls_news_shadow_judge.py(到期前落地呈请)判读; 采样稀疏如实注记, 完整覆盖升级=小时级schtasks待主人批"
+}

@@ -1,0 +1,29 @@
+{
+ "id": "HAISHI-BOARD-WIDTH-THRESHOLD-FALSIFIED",
+ "mode": "independent_reimpl",
+ "n_events": 12988,
+ "buckets": {
+  "lt5": {
+   "n": 1268,
+   "promote_rate": 0.3541,
+   "med_t1_pct": 2.876,
+   "med_t2_promo_pct": 7.503
+  },
+  "5to9": {
+   "n": 5229,
+   "promote_rate": 0.3635,
+   "med_t1_pct": 2.795,
+   "med_t2_promo_pct": 8.015
+  },
+  "ge10": {
+   "n": 6491,
+   "promote_rate": 0.3335,
+   "med_t1_pct": 2.283,
+   "med_t2_promo_pct": 6.417
+  }
+ },
+ "caveats": [
+  "涨停串=zt_pool qfq派生重建口径(9.85/19.85+0.35, 与原同库同口径), 收益腿=本检从qfq重算",
+  "晋级判定=同code下一记录boards>=3(zt_pool按涨停日记录)"
+ ]
+}

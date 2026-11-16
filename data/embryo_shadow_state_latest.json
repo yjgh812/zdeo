@@ -1,0 +1,19 @@
+{
+ "run": "prelaunch_embryo_shadow",
+ "prereg": "PREREG_PRELAUNCH_EMBRYO_SHADOW_DRAFT_20261019.json",
+ "fingerprint": "c5b69ad38aec4965",
+ "activation_since": 20240101,
+ "state_def": "pos60>=60 & 0<ret20<20 & 板史60>=2 & 近5日无板 & 当日未板",
+ "booked_total": 17741,
+ "matured_n": 17245,
+ "open_n": 496,
+ "med20": -3.0,
+ "win20": 41.2,
+ "trade_days_since_activation": 673,
+ "lock_progress": "673/60交易日, 到期n=17245/30",
+ "lock_hit": true,
+ "kill_switch": true,
+ "gate_pass_now": false,
+ "gate_pass_rule": "med>=2.0% 且 win>=55.0%",
+ "kill_rule": "前10个到期事件fwd20全<0"
+}

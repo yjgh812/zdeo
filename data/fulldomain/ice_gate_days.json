@@ -1,0 +1,38 @@
+[
+ {
+  "d": 20160126,
+  "qfq_cnt": 9,
+  "raw_full_mkt": 0,
+  "raw_tier": "<20"
+ },
+ {
+  "d": 20160128,
+  "qfq_cnt": 9,
+  "raw_full_mkt": 0,
+  "raw_tier": "<20"
+ },
+ {
+  "d": 20171204,
+  "qfq_cnt": 9,
+  "raw_full_mkt": 10,
+  "raw_tier": "<20"
+ },
+ {
+  "d": 20171220,
+  "qfq_cnt": 9,
+  "raw_full_mkt": 4,
+  "raw_tier": "<20"
+ },
+ {
+  "d": 20180830,
+  "qfq_cnt": 9,
+  "raw_full_mkt": 11,
+  "raw_tier": "<20"
+ },
+ {
+  "d": 20201030,
+  "qfq_cnt": 6,
+  "raw_full_mkt": 12,
+  "raw_tier": "<20"
+ }
+]

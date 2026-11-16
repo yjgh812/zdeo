@@ -1,0 +1,33 @@
+{
+  "pack_id": "EXEC_PACK_BPEP_BATCH_20260904",
+  "prereg": "PREREG_BPEP_BATCH_20260904_V2 (git a9d610c)",
+  "gate_replay_log": "P0-A拦截source=bp_ep_list_top50(白名单外)→改manual_confirmed主人特批通道; R6拦截+3%限价(追高形态)→限价降为9/3区间65%分位(≤收盘价,真低吸); 时段守卫拒绝盘后--execute(fail-closed正确,焦煤override先例不适用本批)",
+  "execution_window": "20260904 09:30-09:35 交易时段内执行(限价单开盘后挂出,若开盘价>限价则排队等回踩,不追)",
+  "orders": [
+    {
+      "cmd": "python trade_executor.py buy --code sh601668 --name 中国建筑 --source manual_confirmed --sector 建筑工程 --price 4.37 --volume 1100 --prev-close 4.37 --budget 5000 --intent \"主人A确认+预注册V2;低吸限价65分位\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh600694 --name 大商股份 --source manual_confirmed --sector 商贸零售 --price 14.73 --volume 300 --prev-close 14.75 --budget 5000 --intent \"同上\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh600704 --name 物产中大 --source manual_confirmed --sector 交通运输 --price 4.90 --volume 1000 --prev-close 4.90 --budget 5000 --intent \"同上\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh600035 --name 楚天高速 --source manual_confirmed --sector 交通运输 --price 3.74 --volume 1300 --prev-close 3.74 --budget 5000 --intent \"同上\" --execute"
+    },
+    {
+      "cmd": "python trade_executor.py buy --code sh600717 --name 天津港 --source manual_confirmed --sector 交通运输 --price 4.36 --volume 1100 --prev-close 4.36 --budget 5000 --intent \"同上\" --execute"
+    }
+  ],
+  "dry_run_status": "5/5 PASS_WITH_WARN(零reject) 20260903晚验证",
+  "total_budget": 23784,
+  "amend_note": "V2.1修订=原'09:25高开核对'升级为限价机制内嵌(限价≤收盘价,高开即不成交等回踩),修订依据=R6闸门语义,更严格非更松",
+  "watch_lows": {
+    "sh601668": 4.31,
+    "sh600694": 14.4,
+    "sh600704": 4.9,
+    "sh600035": 3.72,
+    "sh600717": 4.32
+  }
+}

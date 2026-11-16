@@ -1,0 +1,84 @@
+{
+ "task": "B7",
+ "params": {
+  "BIAS_TH": 0.07,
+  "DD_TH": -0.015,
+  "LOOKBACK": 20,
+  "TOP_CAND_L2": 3,
+  "TOP_PERSIST_L2": 10,
+  "TOP_PCT_L1": 0.08,
+  "T_PLUSES": [
+   5,
+   10
+  ],
+  "WIN_DESIGN": [
+   20160101,
+   20211231
+  ],
+  "WIN_IN": [
+   20220101,
+   20241231
+  ],
+  "WIN_OOS_START": 20250101,
+  "TIER_GRID": [
+   0.8,
+   0.9,
+   0.95,
+   0.99
+  ],
+  "PCT_WINDOWS": {
+   "w120": 120,
+   "w3y": 756
+  },
+  "SWEEP_FWD": 20,
+  "N_BOOT": 1000,
+  "SEED": 20261021,
+  "SAMPLE_START": 20160101,
+  "N_MIN": 30
+ },
+ "input_snapshots": {
+  "sw_db": {
+   "path": "D:\\workbuddyspace\\databases\\sw_industry.db",
+   "mtime": "2026-10-21T09:28:28",
+   "sha16": "f471a7012525e015"
+  },
+  "qfq_db": {
+   "path": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db",
+   "mtime": "2026-10-20T19:56:44",
+   "rows": 11931857,
+   "sha16": "27ba2f7292fff144"
+  },
+  "idx_day": {
+   "path": "D:\\anzhuang\\tdx\\vipdoc\\sh\\lday\\sh000001.day",
+   "sha16": "f4f0f4558739cdbf"
+  },
+  "bench_day": {
+   "path": "D:\\anzhuang\\tdx\\vipdoc\\sh\\lday\\sh000985.day",
+   "sha16": "e8234c5909be0581",
+   "chosen": "等权全A(qfq派生cumprod; 降级原因: 本地sh000985仅覆盖2005-2016已停更, 契约v1.0预授权降级路径)"
+  }
+ },
+ "code": {
+  "file": "D:\\zcodesj\\analysis\\mainline_backtest_20261021.py",
+  "sha16": "8f022b74ed78b186"
+ },
+ "random_seed": 20261021,
+ "runtime_s": 66.8,
+ "outputs": {
+  "mainline_backtest_20261021_events.csv": {
+   "sha16": "8513be2bd5ab7a00"
+  },
+  "mainline_backtest_20261021_sweep.csv": {
+   "sha16": "e16de1dfa101e0af"
+  },
+  "mainline_backtest_20261021_randombench.csv": {
+   "sha16": "f3e1ad72fd68cb3f"
+  },
+  "mainline_backtest_20261021_eventdiag.csv": {
+   "sha16": "e95d6d2707ec00ac"
+  },
+  "mainline_backtest_20261021.md": {
+   "sha16": "94bb0871b3ed09cb"
+  }
+ }
+}

@@ -1,0 +1,1631 @@
+{
+ "backfill": [
+  {
+   "date": "20260803",
+   "code": "601398",
+   "action": "sell",
+   "qty": 9200,
+   "vwap": 7.99,
+   "fills": 1
+  },
+  {
+   "date": "20260803",
+   "code": "603065",
+   "action": "buy",
+   "qty": 2900,
+   "vwap": 13.6,
+   "fills": 1
+  },
+  {
+   "date": "20260806",
+   "code": "600644",
+   "action": "buy",
+   "qty": 5100,
+   "vwap": 10.36,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "000506",
+   "action": "buy",
+   "qty": 2700,
+   "vwap": 18.17,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "000630",
+   "action": "buy",
+   "qty": 7300,
+   "vwap": 6.89,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002185",
+   "action": "buy",
+   "qty": 2400,
+   "vwap": 17.8,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002259",
+   "action": "buy",
+   "qty": 10600,
+   "vwap": 4.09,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002297",
+   "action": "buy",
+   "qty": 2300,
+   "vwap": 18.9,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002361",
+   "action": "sell",
+   "qty": 7600,
+   "vwap": 12.16,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002428",
+   "action": "buy",
+   "qty": 400,
+   "vwap": 104.6,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002568",
+   "action": "buy",
+   "qty": 2600,
+   "vwap": 19.7,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002582",
+   "action": "buy",
+   "qty": 4900,
+   "vwap": 10.21,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002611",
+   "action": "buy",
+   "qty": 3100,
+   "vwap": 16.28,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "002923",
+   "action": "buy",
+   "qty": 4400,
+   "vwap": 11.43,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "003036",
+   "action": "buy",
+   "qty": 900,
+   "vwap": 55.61,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "300363",
+   "action": "buy",
+   "qty": 2300,
+   "vwap": 21.43,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "300511",
+   "action": "buy",
+   "qty": 8000,
+   "vwap": 5.38,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "300573",
+   "action": "buy",
+   "qty": 1100,
+   "vwap": 43.01,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "600199",
+   "action": "buy",
+   "qty": 6300,
+   "vwap": 8.06,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "600326",
+   "action": "buy",
+   "qty": 6700,
+   "vwap": 7.65,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "600644",
+   "action": "sell",
+   "qty": 3900,
+   "vwap": 10.33,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "601101",
+   "action": "buy",
+   "qty": 3700,
+   "vwap": 13.79,
+   "fills": 1
+  },
+  {
+   "date": "20260810",
+   "code": "605133",
+   "action": "sell",
+   "qty": 14900,
+   "vwap": 25.95,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "000506",
+   "action": "sell",
+   "qty": 1700,
+   "vwap": 19.94,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "000630",
+   "action": "sell",
+   "qty": 4300,
+   "vwap": 6.9,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "001388",
+   "action": "buy",
+   "qty": 100,
+   "vwap": 23.88,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "002428",
+   "action": "sell",
+   "qty": 400,
+   "vwap": 98.31,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "002923",
+   "action": "sell",
+   "qty": 4400,
+   "vwap": 11.49,
+   "fills": 2
+  },
+  {
+   "date": "20260811",
+   "code": "300363",
+   "action": "sell",
+   "qty": 1400,
+   "vwap": 21.65,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "300573",
+   "action": "sell",
+   "qty": 700,
+   "vwap": 42.95,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "600644",
+   "action": "sell",
+   "qty": 3300,
+   "vwap": 10.46,
+   "fills": 1
+  },
+  {
+   "date": "20260811",
+   "code": "601101",
+   "action": "sell",
+   "qty": 3700,
+   "vwap": 13.39,
+   "fills": 2
+  },
+  {
+   "date": "20260811",
+   "code": "603102",
+   "action": "buy",
+   "qty": 100,
+   "vwap": 37.58,
+   "fills": 1
+  },
+  {
+   "date": "20260904",
+   "code": "601668",
+   "action": "buy",
+   "qty": 1100,
+   "vwap": 4.4,
+   "fills": 1
+  }
+ ],
+ "qty_fixed": [
+  {
+   "date": "20260722",
+   "code": "002191",
+   "action": "buy",
+   "new_qty": 54900,
+   "new_vwap": 3.64,
+   "row_id": 9
+  },
+  {
+   "date": "20260722",
+   "code": "002537",
+   "action": "buy",
+   "new_qty": 35900,
+   "new_vwap": 5.57,
+   "row_id": 7
+  },
+  {
+   "date": "20260722",
+   "code": "002866",
+   "action": "buy",
+   "new_qty": 100,
+   "new_vwap": 15.64,
+   "row_id": 1
+  },
+  {
+   "date": "20260722",
+   "code": "601059",
+   "action": "buy",
+   "new_qty": 12100,
+   "new_vwap": 16.5,
+   "row_id": 5
+  },
+  {
+   "date": "20260722",
+   "code": "601065",
+   "action": "buy",
+   "new_qty": 30100,
+   "new_vwap": 6.63,
+   "row_id": 3
+  },
+  {
+   "date": "20260723",
+   "code": "002191",
+   "action": "sell",
+   "new_qty": 54900,
+   "new_vwap": 3.62,
+   "row_id": 10
+  },
+  {
+   "date": "20260723",
+   "code": "002537",
+   "action": "sell",
+   "new_qty": 35900,
+   "new_vwap": 5.47,
+   "row_id": 8
+  },
+  {
+   "date": "20260723",
+   "code": "002866",
+   "action": "sell",
+   "new_qty": 100,
+   "new_vwap": 14.04,
+   "row_id": 2
+  },
+  {
+   "date": "20260723",
+   "code": "300142",
+   "action": "buy",
+   "new_qty": 15000,
+   "new_vwap": 13.14,
+   "row_id": 15
+  },
+  {
+   "date": "20260723",
+   "code": "300534",
+   "action": "buy",
+   "new_qty": 15000,
+   "new_vwap": 12.83,
+   "row_id": 11
+  },
+  {
+   "date": "20260723",
+   "code": "601728",
+   "action": "buy",
+   "new_qty": 33000,
+   "new_vwap": 6.05,
+   "row_id": 13
+  },
+  {
+   "date": "20260727",
+   "code": "002668",
+   "action": "buy",
+   "new_qty": 10000,
+   "new_vwap": 10.7,
+   "row_id": 246
+  },
+  {
+   "date": "20260727",
+   "code": "300142",
+   "action": "sell",
+   "new_qty": 15000,
+   "new_vwap": 11.94,
+   "row_id": 16
+  },
+  {
+   "date": "20260727",
+   "code": "300534",
+   "action": "sell",
+   "new_qty": 15000,
+   "new_vwap": 11.18,
+   "row_id": 12
+  },
+  {
+   "date": "20260727",
+   "code": "601065",
+   "action": "sell",
+   "new_qty": 30100,
+   "new_vwap": 6.61,
+   "row_id": 4
+  },
+  {
+   "date": "20260728",
+   "code": "002668",
+   "action": "buy",
+   "new_qty": 7600,
+   "new_vwap": 10.55,
+   "row_id": 17
+  },
+  {
+   "date": "20260728",
+   "code": "600795",
+   "action": "buy",
+   "new_qty": 16000,
+   "new_vwap": 4.86,
+   "row_id": 21
+  },
+  {
+   "date": "20260728",
+   "code": "601059",
+   "action": "sell",
+   "new_qty": 12100,
+   "new_vwap": 16.09,
+   "row_id": 6
+  },
+  {
+   "date": "20260728",
+   "code": "601939",
+   "action": "buy",
+   "new_qty": 7500,
+   "new_vwap": 10.57,
+   "row_id": 244
+  },
+  {
+   "date": "20260729",
+   "code": "002668",
+   "action": "sell",
+   "new_qty": 17600,
+   "new_vwap": 10.4,
+   "row_id": 18
+  },
+  {
+   "date": "20260729",
+   "code": "600795",
+   "action": "sell",
+   "new_qty": 16000,
+   "new_vwap": 4.8,
+   "row_id": 22
+  },
+  {
+   "date": "20260729",
+   "code": "600900",
+   "action": "buy",
+   "new_qty": 2400,
+   "new_vwap": 29.6,
+   "row_id": 23
+  },
+  {
+   "date": "20260729",
+   "code": "601288",
+   "action": "buy",
+   "new_qty": 21100,
+   "new_vwap": 7.014,
+   "row_id": 27
+  },
+  {
+   "date": "20260729",
+   "code": "601328",
+   "action": "buy",
+   "new_qty": 12600,
+   "new_vwap": 7.15,
+   "row_id": 25
+  },
+  {
+   "date": "20260729",
+   "code": "601728",
+   "action": "sell",
+   "new_qty": 2300,
+   "new_vwap": 6.25,
+   "row_id": 235
+  },
+  {
+   "date": "20260729",
+   "code": "601939",
+   "action": "buy",
+   "new_qty": 1300,
+   "new_vwap": 10.8,
+   "row_id": 19
+  },
+  {
+   "date": "20260731",
+   "code": "300943",
+   "action": "buy",
+   "new_qty": 2100,
+   "new_vwap": 22.9,
+   "row_id": 39
+  },
+  {
+   "date": "20260731",
+   "code": "601006",
+   "action": "buy",
+   "new_qty": 14800,
+   "new_vwap": 5.04,
+   "row_id": 229
+  },
+  {
+   "date": "20260731",
+   "code": "601088",
+   "action": "buy",
+   "new_qty": 1600,
+   "new_vwap": 45.7,
+   "row_id": 231
+  },
+  {
+   "date": "20260731",
+   "code": "601288",
+   "action": "sell",
+   "new_qty": 21100,
+   "new_vwap": 6.8,
+   "row_id": 28
+  },
+  {
+   "date": "20260731",
+   "code": "601398",
+   "action": "buy",
+   "new_qty": 9200,
+   "new_vwap": 8.15,
+   "row_id": 233
+  },
+  {
+   "date": "20260731",
+   "code": "601985",
+   "action": "buy",
+   "new_qty": 8200,
+   "new_vwap": 9.07,
+   "row_id": 232
+  },
+  {
+   "date": "20260731",
+   "code": "601988",
+   "action": "buy",
+   "new_qty": 12200,
+   "new_vwap": 6.14,
+   "row_id": 230
+  },
+  {
+   "date": "20260731",
+   "code": "603075",
+   "action": "buy",
+   "new_qty": 2600,
+   "new_vwap": 18.48,
+   "row_id": 37
+  },
+  {
+   "date": "20260731",
+   "code": "605100",
+   "action": "buy",
+   "new_qty": 1700,
+   "new_vwap": 29.2,
+   "row_id": 41
+  },
+  {
+   "date": "20260803",
+   "code": "600644",
+   "action": "buy",
+   "new_qty": 4000,
+   "new_vwap": 10.0,
+   "row_id": 59
+  },
+  {
+   "date": "20260803",
+   "code": "601728",
+   "action": "sell",
+   "new_qty": 30700,
+   "new_vwap": 6.3,
+   "row_id": 14
+  },
+  {
+   "date": "20260803",
+   "code": "605133",
+   "action": "buy",
+   "new_qty": 16800,
+   "new_vwap": 23.92,
+   "row_id": 57
+  },
+  {
+   "date": "20260805",
+   "code": "002361",
+   "action": "buy",
+   "new_qty": 12100,
+   "new_vwap": 11.37,
+   "row_id": 61
+  },
+  {
+   "date": "20260811",
+   "code": "002361",
+   "action": "sell",
+   "new_qty": 3400,
+   "new_vwap": 11.713,
+   "row_id": 215
+  },
+  {
+   "date": "20260811",
+   "code": "002885",
+   "action": "buy",
+   "new_qty": 200,
+   "new_vwap": 29.22,
+   "row_id": 204
+  },
+  {
+   "date": "20260812",
+   "code": "002859",
+   "action": "buy",
+   "new_qty": 100,
+   "new_vwap": 77.1,
+   "row_id": 65
+  },
+  {
+   "date": "20260812",
+   "code": "002896",
+   "action": "buy",
+   "new_qty": 200,
+   "new_vwap": 80.8,
+   "row_id": 64
+  },
+  {
+   "date": "20260812",
+   "code": "300638",
+   "action": "buy",
+   "new_qty": 1000,
+   "new_vwap": 20.8,
+   "row_id": 63
+  },
+  {
+   "date": "20260812",
+   "code": "300790",
+   "action": "buy",
+   "new_qty": 1000,
+   "new_vwap": 19.01,
+   "row_id": 66
+  },
+  {
+   "date": "20260814",
+   "code": "002104",
+   "action": "buy",
+   "new_qty": 300,
+   "new_vwap": 10.45,
+   "row_id": 132
+  },
+  {
+   "date": "20260814",
+   "code": "002119",
+   "action": "buy",
+   "new_qty": 2000,
+   "new_vwap": 24.17,
+   "row_id": 139
+  },
+  {
+   "date": "20260814",
+   "code": "002167",
+   "action": "buy",
+   "new_qty": 3000,
+   "new_vwap": 17.5,
+   "row_id": 136
+  },
+  {
+   "date": "20260814",
+   "code": "002185",
+   "action": "buy",
+   "new_qty": 3000,
+   "new_vwap": 18.14,
+   "row_id": 138
+  },
+  {
+   "date": "20260814",
+   "code": "002194",
+   "action": "buy",
+   "new_qty": 1500,
+   "new_vwap": 10.68,
+   "row_id": 133
+  },
+  {
+   "date": "20260814",
+   "code": "002259",
+   "action": "sell",
+   "new_qty": 12600,
+   "new_vwap": 3.92,
+   "row_id": 125
+  },
+  {
+   "date": "20260814",
+   "code": "002378",
+   "action": "buy",
+   "new_qty": 1900,
+   "new_vwap": 26.62,
+   "row_id": 135
+  },
+  {
+   "date": "20260814",
+   "code": "002668",
+   "action": "sell",
+   "new_qty": 5000,
+   "new_vwap": 9.92,
+   "row_id": 131
+  },
+  {
+   "date": "20260814",
+   "code": "003006",
+   "action": "sell",
+   "new_qty": 3600,
+   "new_vwap": 13.35,
+   "row_id": 144
+  },
+  {
+   "date": "20260814",
+   "code": "300077",
+   "action": "buy",
+   "new_qty": 2500,
+   "new_vwap": 19.91,
+   "row_id": 137
+  },
+  {
+   "date": "20260814",
+   "code": "300170",
+   "action": "sell",
+   "new_qty": 3400,
+   "new_vwap": 17.71,
+   "row_id": 146
+  },
+  {
+   "date": "20260814",
+   "code": "300655",
+   "action": "buy",
+   "new_qty": 2000,
+   "new_vwap": 13.36,
+   "row_id": 134
+  },
+  {
+   "date": "20260814",
+   "code": "300711",
+   "action": "sell",
+   "new_qty": 3300,
+   "new_vwap": 17.93,
+   "row_id": 145
+  },
+  {
+   "date": "20260814",
+   "code": "600186",
+   "action": "sell",
+   "new_qty": 4400,
+   "new_vwap": 10.82,
+   "row_id": 148
+  },
+  {
+   "date": "20260814",
+   "code": "600236",
+   "action": "sell",
+   "new_qty": 4800,
+   "new_vwap": 10.09,
+   "row_id": 126
+  },
+  {
+   "date": "20260814",
+   "code": "600267",
+   "action": "buy",
+   "new_qty": 4000,
+   "new_vwap": 14.12,
+   "row_id": 140
+  },
+  {
+   "date": "20260814",
+   "code": "600338",
+   "action": "sell",
+   "new_qty": 3600,
+   "new_vwap": 13.63,
+   "row_id": 143
+  },
+  {
+   "date": "20260814",
+   "code": "600499",
+   "action": "sell",
+   "new_qty": 3500,
+   "new_vwap": 14.04,
+   "row_id": 130
+  },
+  {
+   "date": "20260814",
+   "code": "600601",
+   "action": "sell",
+   "new_qty": 4600,
+   "new_vwap": 12.66,
+   "row_id": 128
+  },
+  {
+   "date": "20260814",
+   "code": "600661",
+   "action": "sell",
+   "new_qty": 5500,
+   "new_vwap": 9.11,
+   "row_id": 129
+  },
+  {
+   "date": "20260814",
+   "code": "600711",
+   "action": "sell",
+   "new_qty": 4100,
+   "new_vwap": 11.55,
+   "row_id": 147
+  },
+  {
+   "date": "20260814",
+   "code": "600719",
+   "action": "buy",
+   "new_qty": 3000,
+   "new_vwap": 7.57,
+   "row_id": 141
+  },
+  {
+   "date": "20260814",
+   "code": "601991",
+   "action": "buy",
+   "new_qty": 8000,
+   "new_vwap": 6.55,
+   "row_id": 142
+  },
+  {
+   "date": "20260814",
+   "code": "603025",
+   "action": "sell",
+   "new_qty": 100,
+   "new_vwap": 15.18,
+   "row_id": 127
+  },
+  {
+   "date": "20260819",
+   "code": "000725",
+   "action": "buy",
+   "new_qty": 15100,
+   "new_vwap": 6.22,
+   "row_id": 379
+  },
+  {
+   "date": "20260820",
+   "code": "000100",
+   "action": "buy",
+   "new_qty": 14000,
+   "new_vwap": 5.12,
+   "row_id": 281
+  },
+  {
+   "date": "20260820",
+   "code": "300452",
+   "action": "buy",
+   "new_qty": 1100,
+   "new_vwap": 13.7,
+   "row_id": 278
+  },
+  {
+   "date": "20260820",
+   "code": "600186",
+   "action": "sell",
+   "new_qty": 2200,
+   "new_vwap": 11.28,
+   "row_id": 280
+  },
+  {
+   "date": "20260820",
+   "code": "600829",
+   "action": "sell",
+   "new_qty": 700,
+   "new_vwap": 10.4,
+   "row_id": 279
+  },
+  {
+   "date": "20260824",
+   "code": "000887",
+   "action": "sell",
+   "new_qty": 2800,
+   "new_vwap": 21.04,
+   "row_id": 287
+  },
+  {
+   "date": "20260824",
+   "code": "002936",
+   "action": "buy",
+   "new_qty": 8000,
+   "new_vwap": 1.77,
+   "row_id": 289
+  },
+  {
+   "date": "20260824",
+   "code": "600267",
+   "action": "sell",
+   "new_qty": 4000,
+   "new_vwap": 12.75,
+   "row_id": 315
+  },
+  {
+   "date": "20260824",
+   "code": "601668",
+   "action": "buy",
+   "new_qty": 3000,
+   "new_vwap": 4.42,
+   "row_id": 305
+  },
+  {
+   "date": "20260824",
+   "code": "603881",
+   "action": "sell",
+   "new_qty": 1000,
+   "new_vwap": 27.01,
+   "row_id": 316
+  },
+  {
+   "date": "20260825",
+   "code": "002125",
+   "action": "buy",
+   "new_qty": 3300,
+   "new_vwap": 13.23,
+   "row_id": 339
+  },
+  {
+   "date": "20260904",
+   "code": "000567",
+   "action": "buy",
+   "new_qty": 1400,
+   "new_vwap": 6.8,
+   "row_id": 522
+  },
+  {
+   "date": "20260904",
+   "code": "002174",
+   "action": "buy",
+   "new_qty": 100,
+   "new_vwap": 12.32,
+   "row_id": 521
+  },
+  {
+   "date": "20260904",
+   "code": "300588",
+   "action": "buy",
+   "new_qty": 300,
+   "new_vwap": 25.4,
+   "row_id": 523
+  },
+  {
+   "date": "20260904",
+   "code": "600704",
+   "action": "buy",
+   "new_qty": 1000,
+   "new_vwap": 4.96,
+   "row_id": 527
+  },
+  {
+   "date": "20260904",
+   "code": "600827",
+   "action": "buy",
+   "new_qty": 200,
+   "new_vwap": 7.85,
+   "row_id": 538
+  },
+  {
+   "date": "20260904",
+   "code": "601083",
+   "action": "buy",
+   "new_qty": 200,
+   "new_vwap": 13.22,
+   "row_id": 562
+  },
+  {
+   "date": "20260904",
+   "code": "601186",
+   "action": "buy",
+   "new_qty": 1600,
+   "new_vwap": 6.11,
+   "row_id": 524
+  },
+  {
+   "date": "20260904",
+   "code": "601999",
+   "action": "buy",
+   "new_qty": 500,
+   "new_vwap": 7.07,
+   "row_id": 541
+  },
+  {
+   "date": "20260907",
+   "code": "000911",
+   "action": "buy",
+   "new_qty": 1500,
+   "new_vwap": 6.04,
+   "row_id": 559
+  },
+  {
+   "date": "20260907",
+   "code": "600737",
+   "action": "buy",
+   "new_qty": 500,
+   "new_vwap": 16.69,
+   "row_id": 553
+  },
+  {
+   "date": "20260907",
+   "code": "601229",
+   "action": "sell",
+   "new_qty": 600,
+   "new_vwap": 9.45,
+   "row_id": 558
+  }
+ ],
+ "qty_deleted": [
+  {
+   "date": "20260727",
+   "code": "002668",
+   "action": "buy",
+   "deleted_row_id": 469,
+   "old_qty": 10000
+  },
+  {
+   "date": "20260728",
+   "code": "601939",
+   "action": "buy",
+   "deleted_row_id": 467,
+   "old_qty": 7500
+  },
+  {
+   "date": "20260729",
+   "code": "601728",
+   "action": "sell",
+   "deleted_row_id": 458,
+   "old_qty": 2300
+  },
+  {
+   "date": "20260731",
+   "code": "601006",
+   "action": "buy",
+   "deleted_row_id": 452,
+   "old_qty": 14800
+  },
+  {
+   "date": "20260731",
+   "code": "601088",
+   "action": "buy",
+   "deleted_row_id": 454,
+   "old_qty": 1600
+  },
+  {
+   "date": "20260731",
+   "code": "601398",
+   "action": "buy",
+   "deleted_row_id": 456,
+   "old_qty": 9200
+  },
+  {
+   "date": "20260731",
+   "code": "601985",
+   "action": "buy",
+   "deleted_row_id": 455,
+   "old_qty": 8200
+  },
+  {
+   "date": "20260731",
+   "code": "601988",
+   "action": "buy",
+   "deleted_row_id": 453,
+   "old_qty": 12200
+  },
+  {
+   "date": "20260812",
+   "code": "002859",
+   "action": "buy",
+   "deleted_row_id": 183,
+   "old_qty": 100
+  },
+  {
+   "date": "20260812",
+   "code": "002896",
+   "action": "buy",
+   "deleted_row_id": 184,
+   "old_qty": 200
+  },
+  {
+   "date": "20260812",
+   "code": "300638",
+   "action": "buy",
+   "deleted_row_id": 185,
+   "old_qty": 1000
+  },
+  {
+   "date": "20260812",
+   "code": "300790",
+   "action": "buy",
+   "deleted_row_id": 153,
+   "old_qty": 1000
+  },
+  {
+   "date": "20260814",
+   "code": "002104",
+   "action": "buy",
+   "deleted_row_id": 431,
+   "old_qty": 300
+  },
+  {
+   "date": "20260814",
+   "code": "002119",
+   "action": "buy",
+   "deleted_row_id": 438,
+   "old_qty": 2000
+  },
+  {
+   "date": "20260814",
+   "code": "002167",
+   "action": "buy",
+   "deleted_row_id": 435,
+   "old_qty": 3000
+  },
+  {
+   "date": "20260814",
+   "code": "002185",
+   "action": "buy",
+   "deleted_row_id": 437,
+   "old_qty": 3000
+  },
+  {
+   "date": "20260814",
+   "code": "002194",
+   "action": "buy",
+   "deleted_row_id": 432,
+   "old_qty": 1500
+  },
+  {
+   "date": "20260814",
+   "code": "002259",
+   "action": "sell",
+   "deleted_row_id": 424,
+   "old_qty": 12600
+  },
+  {
+   "date": "20260814",
+   "code": "002378",
+   "action": "buy",
+   "deleted_row_id": 434,
+   "old_qty": 1900
+  },
+  {
+   "date": "20260814",
+   "code": "002668",
+   "action": "sell",
+   "deleted_row_id": 430,
+   "old_qty": 5000
+  },
+  {
+   "date": "20260814",
+   "code": "003006",
+   "action": "sell",
+   "deleted_row_id": 443,
+   "old_qty": 3600
+  },
+  {
+   "date": "20260814",
+   "code": "300077",
+   "action": "buy",
+   "deleted_row_id": 436,
+   "old_qty": 2500
+  },
+  {
+   "date": "20260814",
+   "code": "300170",
+   "action": "sell",
+   "deleted_row_id": 445,
+   "old_qty": 3400
+  },
+  {
+   "date": "20260814",
+   "code": "300655",
+   "action": "buy",
+   "deleted_row_id": 433,
+   "old_qty": 2000
+  },
+  {
+   "date": "20260814",
+   "code": "300711",
+   "action": "sell",
+   "deleted_row_id": 444,
+   "old_qty": 3300
+  },
+  {
+   "date": "20260814",
+   "code": "600186",
+   "action": "sell",
+   "deleted_row_id": 447,
+   "old_qty": 4400
+  },
+  {
+   "date": "20260814",
+   "code": "600236",
+   "action": "sell",
+   "deleted_row_id": 425,
+   "old_qty": 4800
+  },
+  {
+   "date": "20260814",
+   "code": "600267",
+   "action": "buy",
+   "deleted_row_id": 439,
+   "old_qty": 4000
+  },
+  {
+   "date": "20260814",
+   "code": "600338",
+   "action": "sell",
+   "deleted_row_id": 442,
+   "old_qty": 3600
+  },
+  {
+   "date": "20260814",
+   "code": "600499",
+   "action": "sell",
+   "deleted_row_id": 429,
+   "old_qty": 3500
+  },
+  {
+   "date": "20260814",
+   "code": "600601",
+   "action": "sell",
+   "deleted_row_id": 427,
+   "old_qty": 4600
+  },
+  {
+   "date": "20260814",
+   "code": "600661",
+   "action": "sell",
+   "deleted_row_id": 428,
+   "old_qty": 5500
+  },
+  {
+   "date": "20260814",
+   "code": "600711",
+   "action": "sell",
+   "deleted_row_id": 446,
+   "old_qty": 4100
+  },
+  {
+   "date": "20260814",
+   "code": "600719",
+   "action": "buy",
+   "deleted_row_id": 440,
+   "old_qty": 3000
+  },
+  {
+   "date": "20260814",
+   "code": "601991",
+   "action": "buy",
+   "deleted_row_id": 441,
+   "old_qty": 8000
+  },
+  {
+   "date": "20260814",
+   "code": "603025",
+   "action": "sell",
+   "deleted_row_id": 426,
+   "old_qty": 100
+  },
+  {
+   "date": "20260820",
+   "code": "000100",
+   "action": "buy",
+   "deleted_row_id": 376,
+   "old_qty": 14000
+  },
+  {
+   "date": "20260820",
+   "code": "300452",
+   "action": "buy",
+   "deleted_row_id": 373,
+   "old_qty": 1100
+  },
+  {
+   "date": "20260820",
+   "code": "600186",
+   "action": "sell",
+   "deleted_row_id": 375,
+   "old_qty": 2200
+  },
+  {
+   "date": "20260820",
+   "code": "600829",
+   "action": "sell",
+   "deleted_row_id": 374,
+   "old_qty": 700
+  },
+  {
+   "date": "20260824",
+   "code": "000887",
+   "action": "sell",
+   "deleted_row_id": 296,
+   "old_qty": 2800
+  },
+  {
+   "date": "20260824",
+   "code": "002936",
+   "action": "buy",
+   "deleted_row_id": 311,
+   "old_qty": 10000
+  },
+  {
+   "date": "20260824",
+   "code": "600267",
+   "action": "sell",
+   "deleted_row_id": 320,
+   "old_qty": 4000
+  },
+  {
+   "date": "20260824",
+   "code": "601668",
+   "action": "buy",
+   "deleted_row_id": 312,
+   "old_qty": 4000
+  },
+  {
+   "date": "20260824",
+   "code": "603881",
+   "action": "sell",
+   "deleted_row_id": 318,
+   "old_qty": 1000
+  },
+  {
+   "date": "20260904",
+   "code": "000567",
+   "action": "buy",
+   "deleted_row_id": 535,
+   "old_qty": 1400
+  },
+  {
+   "date": "20260904",
+   "code": "002174",
+   "action": "buy",
+   "deleted_row_id": 539,
+   "old_qty": 100
+  },
+  {
+   "date": "20260904",
+   "code": "300588",
+   "action": "buy",
+   "deleted_row_id": 536,
+   "old_qty": 300
+  },
+  {
+   "date": "20260904",
+   "code": "600704",
+   "action": "buy",
+   "deleted_row_id": 544,
+   "old_qty": 1000
+  },
+  {
+   "date": "20260904",
+   "code": "600827",
+   "action": "buy",
+   "deleted_row_id": 542,
+   "old_qty": 200
+  },
+  {
+   "date": "20260904",
+   "code": "600827",
+   "action": "buy",
+   "deleted_row_id": 545,
+   "old_qty": 200
+  },
+  {
+   "date": "20260904",
+   "code": "601083",
+   "action": "buy",
+   "deleted_row_id": 563,
+   "old_qty": 200
+  },
+  {
+   "date": "20260904",
+   "code": "601083",
+   "action": "buy",
+   "deleted_row_id": 564,
+   "old_qty": 200
+  },
+  {
+   "date": "20260904",
+   "code": "601186",
+   "action": "buy",
+   "deleted_row_id": 533,
+   "old_qty": 1600
+  },
+  {
+   "date": "20260904",
+   "code": "601999",
+   "action": "buy",
+   "deleted_row_id": 543,
+   "old_qty": 500
+  },
+  {
+   "date": "20260907",
+   "code": "000911",
+   "action": "buy",
+   "deleted_row_id": 579,
+   "old_qty": 1500
+  },
+  {
+   "date": "20260907",
+   "code": "600737",
+   "action": "buy",
+   "deleted_row_id": 569,
+   "old_qty": 500
+  },
+  {
+   "date": "20260907",
+   "code": "601229",
+   "action": "sell",
+   "deleted_row_id": 581,
+   "old_qty": 600
+  }
+ ],
+ "zero_deleted": [
+  {
+   "row_id": 261,
+   "date": "20260815",
+   "code": "002185",
+   "name": "华天科技"
+  },
+  {
+   "row_id": 262,
+   "date": "20260815",
+   "code": "002859",
+   "name": "洁美科技"
+  },
+  {
+   "row_id": 263,
+   "date": "20260815",
+   "code": "002896",
+   "name": "中大力德"
+  },
+  {
+   "row_id": 264,
+   "date": "20260815",
+   "code": "300638",
+   "name": "广和通"
+  },
+  {
+   "row_id": 265,
+   "date": "20260815",
+   "code": "300790",
+   "name": "宇瞳光学"
+  },
+  {
+   "row_id": 266,
+   "date": "20260815",
+   "code": "300943",
+   "name": "春晖智控"
+  },
+  {
+   "row_id": 267,
+   "date": "20260815",
+   "code": "600900",
+   "name": "长江电力"
+  },
+  {
+   "row_id": 268,
+   "date": "20260815",
+   "code": "601006",
+   "name": "大秦铁路"
+  },
+  {
+   "row_id": 269,
+   "date": "20260815",
+   "code": "601088",
+   "name": "中国神华"
+  },
+  {
+   "row_id": 270,
+   "date": "20260815",
+   "code": "601328",
+   "name": "交通银行"
+  },
+  {
+   "row_id": 271,
+   "date": "20260815",
+   "code": "601398",
+   "name": "工商银行"
+  },
+  {
+   "row_id": 272,
+   "date": "20260815",
+   "code": "601728",
+   "name": "中国电信"
+  },
+  {
+   "row_id": 273,
+   "date": "20260815",
+   "code": "601939",
+   "name": "建设银行"
+  },
+  {
+   "row_id": 274,
+   "date": "20260815",
+   "code": "601985",
+   "name": "中国核电"
+  },
+  {
+   "row_id": 275,
+   "date": "20260815",
+   "code": "601988",
+   "name": "中国银行"
+  },
+  {
+   "row_id": 276,
+   "date": "20260815",
+   "code": "603075",
+   "name": "热威股份"
+  },
+  {
+   "row_id": 277,
+   "date": "20260815",
+   "code": "605100",
+   "name": "华丰股份"
+  }
+ ],
+ "ghost_fixed": [
+  {
+   "local_date": "20260730",
+   "true_date": "20260731",
+   "code": "601006",
+   "action": "buy",
+   "qty": 14800
+  },
+  {
+   "local_date": "20260730",
+   "true_date": "20260731",
+   "code": "601088",
+   "action": "buy",
+   "qty": 1600
+  },
+  {
+   "local_date": "20260730",
+   "true_date": "20260731",
+   "code": "601985",
+   "action": "buy",
+   "qty": 8200
+  },
+  {
+   "local_date": "20260730",
+   "true_date": "20260731",
+   "code": "601988",
+   "action": "buy",
+   "qty": 12200
+  },
+  {
+   "local_date": "20260901",
+   "true_date": "20260902",
+   "code": "000001",
+   "action": "sell",
+   "qty": 200
+  },
+  {
+   "local_date": "20260901",
+   "true_date": "20260902",
+   "code": "600928",
+   "action": "sell",
+   "qty": 800
+  },
+  {
+   "local_date": "20260901",
+   "true_date": "20260902",
+   "code": "601229",
+   "action": "sell",
+   "qty": 600
+  }
+ ],
+ "ghost_unverified": [
+  {
+   "date": "20260824",
+   "code": "000017",
+   "action": "buy",
+   "qty": 1500
+  },
+  {
+   "date": "20260824",
+   "code": "000710",
+   "action": "buy",
+   "qty": 2500
+  },
+  {
+   "date": "20260824",
+   "code": "002038",
+   "action": "buy",
+   "qty": 4100
+  },
+  {
+   "date": "20260824",
+   "code": "002132",
+   "action": "buy",
+   "qty": 5000
+  },
+  {
+   "date": "20260824",
+   "code": "002703",
+   "action": "buy",
+   "qty": 800
+  },
+  {
+   "date": "20260824",
+   "code": "300016",
+   "action": "buy",
+   "qty": 2500
+  },
+  {
+   "date": "20260824",
+   "code": "600531",
+   "action": "buy",
+   "qty": 1700
+  },
+  {
+   "date": "20260824",
+   "code": "600916",
+   "action": "buy",
+   "qty": 3000
+  },
+  {
+   "date": "20260824",
+   "code": "601169",
+   "action": "buy",
+   "qty": 3000
+  },
+  {
+   "date": "20260824",
+   "code": "601997",
+   "action": "buy",
+   "qty": 3000
+  }
+ ]
+}

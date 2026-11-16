@@ -1,0 +1,437 @@
+{
+ "date": "20261008",
+ "source": "akshare stock_zt_pool_em (theme_daily_refresh 落盘)",
+ "caliber_note": "行业聚类降级模式(无reason)",
+ "item": [
+  {
+   "ticker": "002058",
+   "name": "紫竹高科",
+   "continue_day_cnt": 3,
+   "limit_up_reason": "电池",
+   "seal_money": 142263550.0,
+   "limit_up_time": "092500",
+   "is_st": false,
+   "last_price": 22.22
+  },
+  {
+   "ticker": "002242",
+   "name": "九阳股份",
+   "continue_day_cnt": 4,
+   "limit_up_reason": "小家电",
+   "seal_money": 240453537.0,
+   "limit_up_time": "092500",
+   "is_st": false,
+   "last_price": 13.75
+  },
+  {
+   "ticker": "600812",
+   "name": "华北制药",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学制药",
+   "seal_money": 20936707.0,
+   "limit_up_time": "092500",
+   "is_st": false,
+   "last_price": 5.48
+  },
+  {
+   "ticker": "600825",
+   "name": "新华传媒",
+   "continue_day_cnt": 8,
+   "limit_up_reason": "出版",
+   "seal_money": 1775758428.0,
+   "limit_up_time": "092500",
+   "is_st": false,
+   "last_price": 11.39
+  },
+  {
+   "ticker": "605303",
+   "name": "园林股份",
+   "continue_day_cnt": 3,
+   "limit_up_reason": "基础建设",
+   "seal_money": 150949875.0,
+   "limit_up_time": "092502",
+   "is_st": false,
+   "last_price": 31.53
+  },
+  {
+   "ticker": "002687",
+   "name": "乔治白",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "服装家纺",
+   "seal_money": 41328732.0,
+   "limit_up_time": "093021",
+   "is_st": false,
+   "last_price": 6.14
+  },
+  {
+   "ticker": "600663",
+   "name": "陆家嘴",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "房地产开",
+   "seal_money": 49243374.0,
+   "limit_up_time": "093022",
+   "is_st": false,
+   "last_price": 11.12
+  },
+  {
+   "ticker": "600513",
+   "name": "联环药业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学制药",
+   "seal_money": 8640300.0,
+   "limit_up_time": "093028",
+   "is_st": false,
+   "last_price": 16.6
+  },
+  {
+   "ticker": "002951",
+   "name": "金时科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "其他电源",
+   "seal_money": 82488114.0,
+   "limit_up_time": "093106",
+   "is_st": false,
+   "last_price": 17.17
+  },
+  {
+   "ticker": "600026",
+   "name": "中远海能",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "航运港口",
+   "seal_money": 180378779.0,
+   "limit_up_time": "093129",
+   "is_st": false,
+   "last_price": 22.62
+  },
+  {
+   "ticker": "600617",
+   "name": "国新能源",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "燃气Ⅱ",
+   "seal_money": 29720658.0,
+   "limit_up_time": "093137",
+   "is_st": false,
+   "last_price": 3.74
+  },
+  {
+   "ticker": "600241",
+   "name": "时代万恒",
+   "continue_day_cnt": 4,
+   "limit_up_reason": "电池",
+   "seal_money": 126269307.0,
+   "limit_up_time": "093142",
+   "is_st": false,
+   "last_price": 10.69
+  },
+  {
+   "ticker": "300522",
+   "name": "世名科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学制品",
+   "seal_money": 35625395.0,
+   "limit_up_time": "093351",
+   "is_st": false,
+   "last_price": 16.56
+  },
+  {
+   "ticker": "002733",
+   "name": "雄韬股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电池",
+   "seal_money": 107782203.0,
+   "limit_up_time": "093403",
+   "is_st": false,
+   "last_price": 18.89
+  },
+  {
+   "ticker": "002866",
+   "name": "传艺科技",
+   "continue_day_cnt": 3,
+   "limit_up_reason": "消费电子",
+   "seal_money": 78655925.0,
+   "limit_up_time": "093506",
+   "is_st": false,
+   "last_price": 18.59
+  },
+  {
+   "ticker": "002774",
+   "name": "快意电梯",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "专用设备",
+   "seal_money": 78545712.0,
+   "limit_up_time": "093548",
+   "is_st": false,
+   "last_price": 19.04
+  },
+  {
+   "ticker": "603928",
+   "name": "兴业股份",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "塑料",
+   "seal_money": 76424623.0,
+   "limit_up_time": "093627",
+   "is_st": false,
+   "last_price": 14.38
+  },
+  {
+   "ticker": "603863",
+   "name": "松炀资源",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "造纸",
+   "seal_money": 18711156.0,
+   "limit_up_time": "093705",
+   "is_st": false,
+   "last_price": 13.62
+  },
+  {
+   "ticker": "301697",
+   "name": "贝特利",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "光伏设备",
+   "seal_money": 27429644.0,
+   "limit_up_time": "093815",
+   "is_st": false,
+   "last_price": 31.51
+  },
+  {
+   "ticker": "002565",
+   "name": "顺灏股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "包装印刷",
+   "seal_money": 38095875.0,
+   "limit_up_time": "094024",
+   "is_st": false,
+   "last_price": 9.28
+  },
+  {
+   "ticker": "603137",
+   "name": "恒尚节能",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "装修装饰",
+   "seal_money": 61162965.0,
+   "limit_up_time": "094045",
+   "is_st": false,
+   "last_price": 19.56
+  },
+  {
+   "ticker": "605378",
+   "name": "野马电池",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电池",
+   "seal_money": 17551846.0,
+   "limit_up_time": "094115",
+   "is_st": false,
+   "last_price": 17.27
+  },
+  {
+   "ticker": "002805",
+   "name": "丰元股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电池",
+   "seal_money": 64396901.0,
+   "limit_up_time": "094118",
+   "is_st": false,
+   "last_price": 17.67
+  },
+  {
+   "ticker": "605298",
+   "name": "必得科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "轨交设备",
+   "seal_money": 82676715.0,
+   "limit_up_time": "094333",
+   "is_st": false,
+   "last_price": 44.97
+  },
+  {
+   "ticker": "601975",
+   "name": "招商南油",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "航运港口",
+   "seal_money": 27909581.0,
+   "limit_up_time": "094401",
+   "is_st": false,
+   "last_price": 4.97
+  },
+  {
+   "ticker": "002869",
+   "name": "金溢科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "计算机设",
+   "seal_money": 43839213.0,
+   "limit_up_time": "094457",
+   "is_st": false,
+   "last_price": 19.14
+  },
+  {
+   "ticker": "001300",
+   "name": "三柏硕",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "文娱用品",
+   "seal_money": 195062784.0,
+   "limit_up_time": "094530",
+   "is_st": false,
+   "last_price": 13.51
+  },
+  {
+   "ticker": "600408",
+   "name": "安泰集团",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "焦炭Ⅱ",
+   "seal_money": 20030432.0,
+   "limit_up_time": "094607",
+   "is_st": false,
+   "last_price": 3.44
+  },
+  {
+   "ticker": "600722",
+   "name": "金牛化工",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学原料",
+   "seal_money": 49257977.0,
+   "limit_up_time": "094629",
+   "is_st": false,
+   "last_price": 16.19
+  },
+  {
+   "ticker": "601956",
+   "name": "东贝集团",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "家电零部",
+   "seal_money": 33386825.0,
+   "limit_up_time": "094937",
+   "is_st": false,
+   "last_price": 5.52
+  },
+  {
+   "ticker": "603073",
+   "name": "彩蝶实业",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学纤维",
+   "seal_money": 23641114.0,
+   "limit_up_time": "095902",
+   "is_st": false,
+   "last_price": 22.97
+  },
+  {
+   "ticker": "001336",
+   "name": "楚环科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "环保设备",
+   "seal_money": 22864506.0,
+   "limit_up_time": "100036",
+   "is_st": false,
+   "last_price": 20.65
+  },
+  {
+   "ticker": "603200",
+   "name": "上海洗霸",
+   "continue_day_cnt": 3,
+   "limit_up_reason": "环境治理",
+   "seal_money": 14329952.0,
+   "limit_up_time": "100556",
+   "is_st": false,
+   "last_price": 49.21
+  },
+  {
+   "ticker": "920627",
+   "name": "力王股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电池",
+   "seal_money": 5563512.0,
+   "limit_up_time": "100644",
+   "is_st": false,
+   "last_price": 17.83
+  },
+  {
+   "ticker": "600310",
+   "name": "广西能源",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电力",
+   "seal_money": 51693312.0,
+   "limit_up_time": "101731",
+   "is_st": false,
+   "last_price": 4.97
+  },
+  {
+   "ticker": "600400",
+   "name": "红豆股份",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "服装家纺",
+   "seal_money": 7340274.0,
+   "limit_up_time": "103839",
+   "is_st": false,
+   "last_price": 3.62
+  },
+  {
+   "ticker": "000869",
+   "name": "张  裕Ａ",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "非白酒",
+   "seal_money": 19521074.0,
+   "limit_up_time": "104300",
+   "is_st": false,
+   "last_price": 18.76
+  },
+  {
+   "ticker": "300530",
+   "name": "领湃科技",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "电池",
+   "seal_money": 34157480.0,
+   "limit_up_time": "110015",
+   "is_st": false,
+   "last_price": 24.08
+  },
+  {
+   "ticker": "688196",
+   "name": "卓越新能",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "化学制品",
+   "seal_money": 29655350.0,
+   "limit_up_time": "110046",
+   "is_st": false,
+   "last_price": 36.12
+  },
+  {
+   "ticker": "603788",
+   "name": "宁波高发",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "汽车零部",
+   "seal_money": 19959900.0,
+   "limit_up_time": "130432",
+   "is_st": false,
+   "last_price": 15.0
+  },
+  {
+   "ticker": "603906",
+   "name": "龙蟠科技",
+   "continue_day_cnt": 2,
+   "limit_up_reason": "电池",
+   "seal_money": 12226154.0,
+   "limit_up_time": "131309",
+   "is_st": false,
+   "last_price": 20.94
+  },
+  {
+   "ticker": "002702",
+   "name": "海欣食品",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "食品加工",
+   "seal_money": 71758688.0,
+   "limit_up_time": "133106",
+   "is_st": false,
+   "last_price": 5.92
+  },
+  {
+   "ticker": "002490",
+   "name": "山东墨龙",
+   "continue_day_cnt": 1,
+   "limit_up_reason": "专用设备",
+   "seal_money": 85658080.0,
+   "limit_up_time": "142730",
+   "is_st": false,
+   "last_price": 7.6
+  }
+ ]
+}

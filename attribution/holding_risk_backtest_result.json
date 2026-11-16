@@ -1,0 +1,100 @@
+{
+  "tier_results": {
+    "safe": {
+      "n": 280310,
+      "avg_ret5": 0.0047,
+      "median_ret5": -0.0012,
+      "win_rate": 0.4848,
+      "avg_ret1": 0.0012
+    },
+    "low": {
+      "n": 56887,
+      "avg_ret5": 0.0037,
+      "median_ret5": -0.0015,
+      "win_rate": 0.4813,
+      "avg_ret1": 0.0006
+    },
+    "mid": {
+      "n": 50823,
+      "avg_ret5": 0.0049,
+      "median_ret5": 0.0,
+      "win_rate": 0.4964,
+      "avg_ret1": 0.0032
+    },
+    "high": {
+      "n": 36605,
+      "avg_ret5": 0.0133,
+      "median_ret5": 0.0116,
+      "win_rate": 0.5755,
+      "avg_ret1": 0.0085
+    }
+  },
+  "dimension_results": {
+    "R1": {
+      "hit_n": 79059,
+      "hit_avg5": 0.0087,
+      "miss_n": 345566,
+      "miss_avg5": 0.0045,
+      "diff": 0.0042
+    },
+    "R2": {
+      "hit_n": 123242,
+      "hit_avg5": 0.007,
+      "miss_n": 301383,
+      "miss_avg5": 0.0046,
+      "diff": 0.0024
+    },
+    "R3": {
+      "hit_n": 29627,
+      "hit_avg5": 0.0148,
+      "miss_n": 394998,
+      "miss_avg5": 0.0046,
+      "diff": 0.0102
+    },
+    "R4": {
+      "hit_n": 61396,
+      "hit_avg5": 0.003,
+      "miss_n": 363229,
+      "miss_avg5": 0.0057,
+      "diff": -0.0027
+    },
+    "R5": {
+      "hit_n": 65487,
+      "hit_avg5": 0.0057,
+      "miss_n": 359138,
+      "miss_avg5": 0.0052,
+      "diff": 0.0005
+    }
+  },
+  "monotonicity": {
+    "is_monotone": false,
+    "avg_rets": [
+      0.0047,
+      0.0037,
+      0.0049,
+      0.0133
+    ]
+  },
+  "v1_precheck": {
+    "status": "pass",
+    "warnings": [],
+    "score_distribution": {
+      "-0.0": 281067,
+      "0.2": 79234,
+      "0.4": 29249,
+      "0.6": 35075
+    }
+  },
+  "v2_dsr": {
+    "p_value": 1.0,
+    "n_trials": 9,
+    "label": "⚠️ 不显著",
+    "high_n": 36605,
+    "low_n": 280310
+  },
+  "meta": {
+    "window": "20240801~20260807",
+    "sampling": "每周一采样（控制计算量）",
+    "honest_note": "评分维度权重来自经验库定性提炼非统计优化；R2简化为绝对阈值(非实时大盘对比)；全市场周一采样"
+  }
+}

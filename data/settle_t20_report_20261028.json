@@ -1,0 +1,326 @@
+{
+ "asof": 20261028,
+ "generated_at": "2026-10-30 00:20",
+ "sources": {
+  "bp_ep_core": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "breakout_ab_A": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "breakout_mainline": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "lowconsol_batch": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "manual_confirmed": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 30,
+   "no_price": 0,
+   "total_builds": 30
+  },
+  "manual_master_app_backfill": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 1,
+   "no_price": 0,
+   "total_builds": 1
+  },
+  "method_picks": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 23,
+   "no_price": 0,
+   "total_builds": 23
+  },
+  "ml_signal": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 10,
+   "no_price": 0,
+   "total_builds": 10
+  },
+  "revival_ampA_3f": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_amp_a": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_amp_b": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_anom118": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_bpep_weekly": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_composite": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_dazhan": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 1,
+   "no_price": 0,
+   "total_builds": 1
+  },
+  "revival_dbd_gru": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_dibo": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_dikai": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "revival_gapup": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 1,
+   "no_price": 0,
+   "total_builds": 1
+  },
+  "revival_hy_tail": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "revival_hydl": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 2,
+   "no_price": 0,
+   "total_builds": 2
+  },
+  "revival_icir_sue": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_lianban": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 2,
+   "no_price": 0,
+   "total_builds": 2
+  },
+  "revival_lstm": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_master_hist": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_mvp_fusion": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "revival_p2": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 1,
+   "no_price": 0,
+   "total_builds": 1
+  },
+  "revival_shendu": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "revival_t1seal": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "revival_tandi": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "revival_xushi_res9": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "sold_rebuy_deep8": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 2,
+   "no_price": 0,
+   "total_builds": 2
+  },
+  "swing_bos_bull": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "type_sample_B_oversold": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "type_sample_C_starter": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 3,
+   "no_price": 0,
+   "total_builds": 3
+  },
+  "type_sample_D_control": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 2,
+   "no_price": 0,
+   "total_builds": 2
+  },
+  "type_sample_F_driver": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 5,
+   "no_price": 0,
+   "total_builds": 5
+  },
+  "upprob_ab": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 12,
+   "no_price": 0,
+   "total_builds": 12
+  },
+  "xushi_manxian": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  },
+  "xushi_shuangyou": {
+   "settled": {
+    "n": 0
+   },
+   "pending": 4,
+   "no_price": 0,
+   "total_builds": 4
+  }
+ }
+}

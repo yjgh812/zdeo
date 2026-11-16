@@ -1,0 +1,14 @@
+{
+  "name": "PREREG_EARNINGS_ACCEL_V4",
+  "date": "20261114",
+  "trigger": "主人「可，继续」批准业绩加速/盈利改善因子实测（CANSLIM式业绩改善假设的全网对比后唯一未测信息源）。CANSLIM原口径（单季EPS同比加速度）因tushare利润表接口无权限不可得，改用factor_pit v2自带的PIT口径 droe=净利润(累计)/期末净资产−4季前同季（build_meta droe_def原文），同一假设（业绩改善→下月涨）的可执行口径，如实声明口径差。",
+  "hypothesis": "盈利同比改善（droe高）的票下月跑赢全池等权",
+  "arms": {
+    "E1_主判据_Top30": "每月末交易日，在[2,30]元非ST非4/8/9/68股票中按最新已披露droe降序取Top30等权持有次月",
+    "E2_描述_Top10": "同口径Top10",
+    "E3_描述_Bottom30": "同口径Bottom30（盈利恶化者，预期负）"
+  },
+  "common": "数据=factor_pit v2（pit_avail_date≤月末为准，PIT无前视）；价格=qfq全池；窗口2016-20261113；月末等权持次月；换仓费0.3%×换手比例；基准=全池等权；判据（E1）：年化净超额>0+月度超额t≥2+正超额年份占比≥50%。黑名单区分：'多因子ICIR含SUE'为多因子组合口径，本测=单因子月频组合，条件不同；与主线bp_ep同源声明：bp_ep用ep/bp水平值，droe用变化量，同族不同字段。",
+  "caveats": "droe=累计口径盈利改善（非CANSLIM单季EPS同比原口径，接口无权限已声明）；样本内单段，PASS≠接线，仅登记candidate待主人裁决；ST过滤2016起可用",
+  "fingerprint": "1e99373cb52dc51b"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "UP_BUCKET_ENV_GATE",
+  "date_frozen": "2026-09-20",
+  "proposer": "P2侦察(9/19 p2_recon_up_deepdd)+v5.3交叉核对补冻结; owner裁决待主人",
+  "hypothesis": "direction_census UP桶(深跌+段起锚+多头+regime缩量,无放量大阳确认)仅在上证env_pos250<40时作候选池入口有效; env>=40时UP桶fwd60为负禁用",
+  "arms_frozen": {
+    "gated": "UP桶 ∧ env_pos250<40",
+    "ungated_FAIL": "UP桶无条件(已登记FAIL禁引用)"
+  },
+  "evidence_insample": {
+    "env_0_19": "fwd60中位+45.9% (n=126)",
+    "env_20_39": "+15.3% (n=40, 样本不足单独下结论)",
+    "env_60_79": "-10.9% (n=1302)",
+    "mirror_check": "六层信号(放量确认族)同口径完全镜像(env20-39=-18.7%/env80+=+8.6%)=两族确认方式×环境匹配互补"
+  },
+  "complementarity_clause": "与REGIME_BUDGET_GATE_ENV70(prereg dcfa9a31)为同一硬币两面: 放量确认系统归env>=70, 安静缩量系统归env<40; 两prereg并行不互斥,禁止交叉引用证据; 中间带40-69两族皆负=双禁区间",
+  "oos_criteria": {
+    "window": "冻结日起前向, 每季度评估",
+    "gate_pass": "gated臂前向n>=30且fwd60中位>0且胜率>=50%",
+    "gate_fail": "gated臂前向fwd60中位<0或胜率<45% => falsified关闭",
+    "current_state": "当前env=31处于20-39桶(n=40样本不足)——当前不构成放行证据, 须env<20桶或更多前向样本"
+  },
+  "scope_limits": "仅管direction_census UP桶候选池入口语义; 影子期未开始(需主人裁决启动); 冻结期零接线",
+  "data_sources": [
+    "reports/p2_recon_up_deepdd_20260919.md",
+    "reports/backtest_v53_final_20260920.md",
+    "data/sh_index_5yr_20260919.json"
+  ],
+  "fingerprint": "206ca4b1807b7fc83c70ed7894ecf26c"
+}

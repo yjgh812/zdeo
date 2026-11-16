@@ -1,0 +1,52 @@
+{
+  "name": "PREREG_CONFIRM_GATE_20261008",
+  "created": "2026-10-08",
+  "candidate": "入场确认闸（候选编号R42暂定，R40疑空缺待核，最终编号以闸门台账为准）",
+  "hypothesis": "主线池内回踩企稳触发（回踩10线±3% ∧ 当日收阳）上叠加当日量能确认（当日量≥1.5×前20日均量）可提升前瞻收益——回踩日的放量承接区分『修复启动』与『下跌中继』",
+  "hypothesis_source": [
+    "reports/entry_zone_stats_20261008.md §三/§五.2: 打板族入场日涨停确认55%vs38%(17pp)为样本内最锐单一判据; §五.4自限=直接判据不可迁移, 迁移形态=入场日强度确认",
+    "证伪库WYCKOFF-VOLUME-SEMANTIC-REVERSED: A股量价语义反转, 放量出清族强正/缩量健康族全线≤0",
+    "证伪库ENGINE-B2-PULLBACK-R31 failure_attribution: 强势+回踩条件在截面语境=下跌中继筛选器 → 需要判别器区分修复vs中继, 量能是该判别器的未测候选"
+  ],
+  "collision_map": {
+    "涨停日确认买入": "证伪库MANTOU-CHASE-LIMITUP六方证伪(fwd20域) + entry_zone_stats §五.4自限(打板族隔日兑现域, 屠龙持仓域不适用) → 不立项",
+    "K线形态确认(锤子/阳包阴/早晨之星)": "methodology-crosscheck续轮双FAIL(21.4万裸样本≈零/格内增量+0.14pp) → 不立项",
+    "突破确认过滤": "证伪库BREAKOUT-CONFIRM-FILTER(强基座上增量不显著G2/G3 FAIL) → 不立项",
+    "收阳确认": "已内嵌于pool_pullback_event_study_20261007触发定义(pct>0), 该研究结论=+0.11%薄边际分年1正2负不满足立项门 → 无独立增量空间",
+    "全市场/缩量回踩": "证伪库R31+ENGINE-B2-PULLBACK-R31判死; ENGINE-B2触发含『缩量』按语义反转系错误方向, 放量方向未测=本prereg唯一残留假设"
+  },
+  "domain": {
+    "pool": "九主线成分507只(现势成分无历史成分, 前视偏乐观已声明, 与10/7研究同池同口径)",
+    "trend_filter": "close>MA20 ∧ ret20>0",
+    "trigger_A0": "回踩10线±3%带内(close∈[MA10*0.97,MA10*1.02]) ∧ 当日收阳(pct>0)",
+    "window": "20240101~最新, qfq库stock_daily_meta_qfq, T日收盘锚"
+  },
+  "arms": {
+    "A1_treatment": "A0 ∧ 当日量(vol) ≥ 1.5 × vol_ma20(前20交易日均量, T-20..T-1)",
+    "A0ex_control": "A0 ∧ 当日量 < 1.5 × vol_ma20 (排除他组, 主对照)",
+    "A0_all": "A0全组(参考读数)"
+  },
+  "frozen_criteria": {
+    "G1_absolute": "A1组n≥300 且 f5中位≥0 且 f5均值>0",
+    "G2_increment": "A1−A0ex f5增量≥+0.5pp 且 日聚簇t≥2(按信号日配对均值差, 事件级Welch t同报)",
+    "G3_stability": "分年(2024/2025/2026)增量方向≥2/3正 且 A1−A0ex f20增量同向不反转",
+    "verdict_rule": "三闸全过→SUGGEST立项呈主人; 任一不过→SUGGEST_REJECT归档(PD-38式零成本止损闭环)"
+  },
+  "zero_dof": [
+    "量能阈值1.5×=sc_spring家族既有阈值原样复用, 禁调参",
+    "回踩带±3%/趋势过滤/收阳定义=10/7研究原样复用",
+    "增量阈+0.5pp与聚簇t≥2跑前冻结, 结果出来后禁改",
+    "零调参自由度: 不做任何参数扫描, 敏感性仅冻结一项(volr<1.0缩量桶, 描述层)"
+  ],
+  "descriptive_not_gate": [
+    "A0 ∧ 当日涨停(pct≥9.5)与A0 ∧ 大阳(pct≥6)分桶: 仅呈报读数不判据(涨停确认已在MANTOU-CHASE-LIMITUP六方证伪域, 描述层满足呈报完整性)",
+    "A0 ∧ 缩量(volr<1.0)桶: 描述层"
+  ],
+  "boundaries": [
+    "现势成分无历史成分(前视偏乐观已声明)",
+    "qfq收盘锚未含开盘差价与手续费(增量双臂同成本口径下不敏感)",
+    "T日量能确认口径=收盘后可知, 对应执行=尾盘/T+1, next-bar纪律不破坏",
+    "情绪档分层是10/7研究预留的独立下一候选(强档∧池内回踩), 本prereg不覆盖不混入"
+  ],
+  "fingerprint_note": "本文件sha256=跑前冻结指纹, 研究脚本零自由度, 结果与指纹同报"
+}

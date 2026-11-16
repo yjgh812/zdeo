@@ -1,0 +1,72 @@
+{
+ "generated": "2026-10-25",
+ "exploratory": true,
+ "n_events": 523380,
+ "convention": "R倍数=每事件1R风险预算(止损距离8%); V3加仓腿各1R; 成本未计",
+ "win": {
+  "n": 361451,
+  "V1_lump_t20e": {
+   "mean_R": 0.09,
+   "median_R": -0.164,
+   "win": 0.4483,
+   "p95_R": 2.69,
+   "avg_hold": 16.7
+  },
+  "V2_lump_trailing": {
+   "mean_R": 0.094,
+   "median_R": -0.449,
+   "win": 0.3685,
+   "p95_R": 3.16,
+   "avg_hold": 22.4
+  },
+  "V3_turtle_riskunit": {
+   "mean_R": 0.145,
+   "median_R": -1.033,
+   "win": 0.226,
+   "p95_R": 7.14,
+   "avg_hold": 23.2,
+   "per_unit_R": -0.361,
+   "avg_units": 2.27,
+   "add_rate": 0.6279
+  },
+  "units_dist": {
+   "1": 134511,
+   "2": 83794,
+   "3": 55432,
+   "4": 87714
+  }
+ },
+ "full": {
+  "n": 487963,
+  "V1_lump_t20e": {
+   "mean_R": 0.106,
+   "median_R": -0.156,
+   "win": 0.4508,
+   "p95_R": 2.76,
+   "avg_hold": 16.7
+  },
+  "V2_lump_trailing": {
+   "mean_R": 0.129,
+   "median_R": -0.421,
+   "win": 0.3776,
+   "p95_R": 3.26,
+   "avg_hold": 22.3
+  },
+  "V3_turtle_riskunit": {
+   "mean_R": 0.23,
+   "median_R": -1.027,
+   "win": 0.2301,
+   "p95_R": 7.55,
+   "avg_hold": 23.1,
+   "per_unit_R": -0.334,
+   "avg_units": 2.29,
+   "add_rate": 0.6335
+  },
+  "units_dist": {
+   "1": 178830,
+   "2": 112036,
+   "3": 74099,
+   "4": 122998
+  }
+ }
+}

@@ -1,0 +1,138 @@
+{
+ "date": "20261026",
+ "execute": false,
+ "rows": [
+  {
+   "code": "sz000547",
+   "name": "航天发展",
+   "limit": 12.79,
+   "qty": 3200,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 12.59,
+   "status": "HOLD",
+   "reason": "现价低于挂单价(市场可成交)或改价无收益/已改过一次/余量0",
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh600879",
+   "name": "航天电子",
+   "limit": 12.94,
+   "qty": 3200,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 12.95,
+   "status": "REQ",
+   "new_price": 12.98,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh600990",
+   "name": "四创电子",
+   "limit": 17.55,
+   "qty": 1400,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 17.21,
+   "status": "HOLD",
+   "reason": "现价低于挂单价(市场可成交)或改价无收益/已改过一次/余量0",
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh600685",
+   "name": "中船防务",
+   "limit": 27.24,
+   "qty": 900,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 27.14,
+   "status": "HOLD",
+   "reason": "现价低于挂单价(市场可成交)或改价无收益/已改过一次/余量0",
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sz000560",
+   "name": "我爱我家",
+   "limit": 2.88,
+   "qty": 400,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 2.98,
+   "status": "REQ",
+   "new_price": 2.89,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh600363",
+   "name": "联创光电",
+   "limit": 8.82,
+   "qty": 500,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 9.07,
+   "status": "REQ",
+   "new_price": 8.86,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sz300017",
+   "name": "网宿科技",
+   "limit": 15.01,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 15.22,
+   "status": "REQ",
+   "new_price": 15.09,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh603638",
+   "name": "艾迪精密",
+   "limit": 18.57,
+   "qty": 500,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 18.66,
+   "status": "REQ",
+   "new_price": 18.66,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sh603636",
+   "name": "南威软件",
+   "limit": 8.63,
+   "qty": 500,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 8.77,
+   "status": "REQ",
+   "new_price": 8.67,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sz000029",
+   "name": "深深房Ａ",
+   "limit": 20.5,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 20.59,
+   "status": "REQ",
+   "new_price": 20.6,
+   "action_taken": "dry-run"
+  },
+  {
+   "code": "sz000031",
+   "name": "大悦城",
+   "limit": 2.11,
+   "qty": 1100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 2.14,
+   "status": "REQ",
+   "new_price": 2.12,
+   "action_taken": "dry-run"
+  }
+ ]
+}

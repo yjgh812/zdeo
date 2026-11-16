@@ -1,0 +1,56 @@
+{
+ "prereg_sha256": "ea25b11e0b29f53de915492e11a4972ca6a4de078c0e06e99198e32543a7aaad",
+ "window": [
+  "20250102",
+  "20260731"
+ ],
+ "n_signals": 901364,
+ "buckets": {
+  "0": {
+   "n": 299875,
+   "mean_pp": 0.36,
+   "win%": 49.5,
+   "t_week": -0.13
+  },
+  "1": {
+   "n": 455230,
+   "mean_pp": 0.094,
+   "win%": 47.7,
+   "t_week": 0.89
+  },
+  "2": {
+   "n": 129989,
+   "mean_pp": -0.074,
+   "win%": 46.8,
+   "t_week": -0.5
+  },
+  "3": {
+   "n": 16270,
+   "mean_pp": -0.361,
+   "win%": 43.9,
+   "t_week": -0.63
+  }
+ },
+ "ref_pos_lt20": {
+  "n": 167552,
+  "mean_pp": -0.089,
+  "win%": 46.2
+ },
+ "sens_q2_80_100": {
+  "n": 158804,
+  "mean_pp": 0.258
+ },
+ "sens_any_vs_none": {
+  "any1_pp": 0.045,
+  "none_pp": 0.36
+ },
+ "gates": {
+  "G1_3hit_neg_t<=-2": false,
+  "G2_monotone_delta>=1pp": false,
+  "G3_seg_dir>=2of3": true,
+  "seg_n": 3,
+  "dir_ok": 2,
+  "verdict": "FAIL"
+ },
+ "ref_pos_lt20_note": "H2参考臂非主判定"
+}

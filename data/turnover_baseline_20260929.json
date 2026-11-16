@@ -1,0 +1,65 @@
+{
+ "version": "turnover_baseline_v1",
+ "asof": "20260929",
+ "window": [
+  "20260722",
+  "20260929"
+ ],
+ "n_trades": 519,
+ "trade_days_observed": 41,
+ "annualize_factor": 5.951,
+ "total_buy": 10921954,
+ "total_sell": 9933394,
+ "cost_assumption": {
+  "buy": 0.00025,
+  "sell": 0.00075
+ },
+ "total_cost_est": 10181,
+ "months": {
+  "202607": {
+   "buy_amt": 2574913,
+   "sell_amt": 1554660,
+   "buy_n": 24,
+   "sell_n": 11
+  },
+  "202608": {
+   "buy_amt": 6464444,
+   "sell_amt": 6836018,
+   "buy_n": 181,
+   "sell_n": 164
+  },
+  "202609": {
+   "buy_amt": 1882597,
+   "sell_amt": 1542716,
+   "buy_n": 71,
+   "sell_n": 65
+  }
+ },
+ "sensitivity_by_capital_wan": {
+  "80": {
+   "annual_turnover_x": 155.14,
+   "cost_drag_pct_of_capital": 1.273,
+   "period_turnover_x": 26.07
+  },
+  "88": {
+   "annual_turnover_x": 141.04,
+   "cost_drag_pct_of_capital": 1.157,
+   "period_turnover_x": 23.7
+  },
+  "95": {
+   "annual_turnover_x": 130.65,
+   "cost_drag_pct_of_capital": 1.072,
+   "period_turnover_x": 21.95
+  }
+ },
+ "src_split": {
+  "其他": {
+   "buy": 9956334,
+   "sell": 8520814
+  },
+  "executor": {
+   "buy": 965620,
+   "sell": 1412580
+  }
+ }
+}

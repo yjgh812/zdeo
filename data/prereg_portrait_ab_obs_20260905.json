@@ -1,0 +1,13 @@
+{
+ "id": "20260905-portrait-ab-obs-v1",
+ "ts": "2026-09-05T23:30:00",
+ "object": "画像增强排序 A/B 前向首验登记 —— prereg=reports/PREREG_PORTRAIT_AB_20260905.md（主人 9/5「全面对接」裁决配套，9/30 首验不哑火保障）",
+ "decision_rule_LOCKED": "首验日 2026-09-30（及以后任一交易日）跑 python portrait_ab_track.py eval --k 20（fwd5/fwd10 双口径，次开等权入场，无费用观察口径）；对照 prereg 判据：B(画像重排前K)−A(名单原序前K) fwd5≥+0.5pp 且 fwd10 同号 且命中不劣 且影子期无连败 → 才可提请主人裁决给画像信号权；任一不达 → 维持零拦截权继续观察或降权，禁自行接线",
+ "boundary_LOCKED": "画像层=影子/观察池层零拦截权（PROJECT_BOUNDARY §3 AI画像层四裁决）；本登记仅保障首验数据积累与到期提醒，不授权任何信号权/降档/拦截；观察池买入仍受名单制+逐笔特批约束（宪法§10）",
+ "observation_LOCKED": {
+  "数据积累": "9/7 起每交易日白名单链自动 append（tulong_buy_whitelist.py 尾部 fail-open 接线；A=白名单最终序，B=画像分重排，K=20）",
+  "首验前置": "台账须有 ≥10 个选股日登记行且 9/23 前的行 fwd5 已实现；不足则如实 insufficient 延后首验，禁伪造",
+  "口径": "eval 输出为观察证据非门禁结论；最终裁决 owner=主人"
+ },
+ "review_checkpoint": "2026-09-30 画像A/B首验（portrait_ab_track eval；prereg=reports/PREREG_PORTRAIT_AB_20260905.md）"
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-31",
+  "title": "信号源赛马淘汰规则草案(待11/26 T+20满窗数据执行)",
+  "authority": "主人'继续'令批准立项; 停用/退役动作须主人终审",
+  "authoritative_data": "settle_t20_20261029.py 的 T+20 满窗结算(唯一权威); 192笔至今浮盈(horse_race)仅作提前参考",
+  "retire_rules": [
+    {
+      "level": "观察",
+      "condition": "满窗>=8笔 且 均值<=-3% 且 胜率<=35%",
+      "action": "移入 EXPERIMENTAL 观察名单, 停止新开仓, 存量按-8%+T20处置"
+    },
+    {
+      "level": "退役候选",
+      "condition": "满窗>=8笔 且 均值<=-6%",
+      "action": "上报主人终审退役(参考当前至今浮盈尾部: upprob_ab -11.02%/lstm -10.61%/amp_a -8.25%)"
+    }
+  ],
+  "promote_rules": [
+    {
+      "level": "加预算提名",
+      "condition": "满窗>=5笔 且 均值>=+3% 且 胜率>=60%",
+      "action": "上报主人提名加预算(参考当前头部: tandi +9.73%/满弦+3.75%/dibo+2.73%)"
+    }
+  ],
+  "exclusions": "manual_confirmed 等人工仓独立管理不参与赛马; 满窗不足的源顺延到下一结算周期",
+  "semantics_note": "观察/退役=降风险动作(风险控制)非统计证伪——满8笔样本统计力有限(MinTRL教训); 证伪性退役仍走证据链档案(先例: hotspot_breakout/smc_s2_roe)。提名受60源并行选优的多重检验虚高影响, 主人终审=人工防线。学习报告缺口4(连续两周期同向判罚)未采纳, 待主人另裁。",
+  "landing_20261031": {
+    "observe_set": "_common.OBSERVE_SOURCES(空集; 判罚时编辑本集合, admit/executor自动生效)",
+    "settle_enhance": "settle_t20_20261029.py 增 等权全A基准超额(settled.excess)+HMM环境分组(by_env)+顶层bench声明, schema只增不改",
+    "probe": "health_check_daily.check_horse_race_settle(首跑20261126前SKIP, 逾期WARN)"
+  },
+  "settlement_dates": ["20261126", "此后每月末滚动"],
+  "basis": "十年环境闸裁决(2029段)+192笔赛马扩展版: alpha来源=入场选择力x环境过滤, 退出工程已定谳无alpha"
+}

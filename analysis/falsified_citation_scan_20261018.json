@@ -1,0 +1,793 @@
+{
+ "generated": "2026-10-18",
+ "rules_total": 107,
+ "rows": [
+  {
+   "id": "S-1",
+   "n_files": 136,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "v375_signal 已退役（PROJECT_BOUNDARY §3），优化退役策略违反宪法 §10-8"
+  },
+  {
+   "id": "S-2",
+   "n_files": 158,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "p2_signal 已退役（PROJECT_BOUNDARY §3），优化退役策略违反宪法 §10-8"
+  },
+  {
+   "id": "S-3",
+   "n_files": 205,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "TopN 20→15 孤峰证伪：Δ+25.3pp 但六点邻域扫描(10/12/18/25)实证 15 为参数曲面孤立尖峰（12→15 跳+5"
+  },
+  {
+   "id": "S-4",
+   "n_files": 663,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "ATR(14)×2.5 全局替换固定止损：bp_ep +138.2%→+39.9%（MDD 22.5→31.4）、ml +250.8%→+1"
+  },
+  {
+   "id": "S-5",
+   "n_files": 695,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "时间止损对 bp_ep（及月频策略）显式禁用（round8『bp_ep 禁时间止损』逻辑族：bp_ep 盈利笔中位持仓 102 天、≥30 "
+  },
+  {
+   "id": "M-1",
+   "n_files": 590,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "板块集中度 cap 双证伪（round12a：集中度非回撤主因，MDD 反增 0.25pp；round12b：分散收益无逐年一致性，4 年劣"
+  },
+  {
+   "id": "M-2",
+   "n_files": 591,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "解禁过滤已物化为 R19 闸门、商誉/风险标签已部分入 R1-R18 与 label 体系；提案前须核对 R1-R18 现状，禁止重复开发"
+  },
+  {
+   "id": "M-3",
+   "n_files": 200,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "移动止盈仅 ml 侧合法（bp_ep 侧严禁：-1.6%，1841 次止盈截断长线复利）；模板『全策略』范围与证伪档案冲突。tech-gri"
+  },
+  {
+   "id": "M-4",
+   "n_files": 95,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "卖出防线 C6/C7/pre_sell 前置已物化；提案前核对 DAILY_WORKFLOW_SOP 卖出链现状"
+  },
+  {
+   "id": "L-1",
+   "n_files": 105,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "S3 regime_weights 已落地（现纯观测，8/29 切纯 bpep 随单腿关闭）；重开=regime 判据+主人裁决"
+  },
+  {
+   "id": "L-2",
+   "n_files": 116,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "归因经验库（experience_library）已运行并接入防线；增量提案须指名具体缺口"
+  },
+  {
+   "id": "B4-TURNOVER-TILT",
+   "n_files": 17,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "换手率/成交额tilt池内无增量(三闸两过一拦):stage-1全截面IC-0.0788/t-5.95(121月,11年全负)+stage-"
+  },
+  {
+   "id": "REGIME-ADAPT-STAGE1",
+   "n_files": 14,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "regime自适应训练机制在LightGBM/highwin载体无增量(96折全完成):24月短窗B1配对ΔRankIC-0.0039/t-"
+  },
+  {
+   "id": "RANKLOSS-STAGE1",
+   "n_files": 11,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "排序目标函数stage-1(同号不强):L2回归C1 vs 在产二分类A0配对ΔRankIC+0.0107/t+1.41未达闸门2.0,但分"
+  },
+  {
+   "id": "KRONOS-ZS-STAGE1",
+   "n_files": 11,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "Kronos-base零样本A股截面三次独立研究一致FAIL:①8/15沪深300+Fwd20三关全FAIL(meanIC-0.0321/t"
+  },
+  {
+   "id": "MAINLINE-CONSTRAINT-STAGE1",
+   "n_files": 8,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "会话选股主线约束stage-1(指纹71b5b6c7bf8fefa2,预注册20260904跑前写死):臂B低估值池20周截面T+5主线内+"
+  },
+  {
+   "id": "MAINLINE-STAGE2",
+   "n_files": 16,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "涨停聚合主线资格方向整体证伪(指纹bd66553bf899ca07,预注册跑前写死):低估值池293周截面/52万观测,T-1行业涨停≥5("
+  },
+  {
+   "id": "MAINLINE-STAGE2-S2B-LOWPOS",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero",
+   "reason": "['S2B低位补涨组合级FAIL(指纹7f0626fff1bdfcd1)+翻案路径诊断关闭(9/4勘误版):组合年化+1.68% vs 全市"
+  },
+  {
+   "id": "SKILL-SWEEP-STAGE1",
+   "n_files": 7,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "选股类skill全量测试stage-1(预注册指纹见prereg,52.03万信号/51.20万笔):5规则包15判定,12 falsifi"
+  },
+  {
+   "id": "SKILL-SWEEP-STAGE2",
+   "n_files": 8,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "macd_flow动量正交增量FAIL(预注册PREREG_MACDFLOW_STAGE2_20260904跑前钉死,97333信号/967"
+  },
+  {
+   "id": "STYLE-GATE-STAGE4",
+   "n_files": 8,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "风格三闸画像组合级验证(指纹见json,预注册跑前写死):三闸组(mv≤70亿+mom20≤+2%+换手≤3%)年化25.12% vs 无闸"
+  },
+  {
+   "id": "STYLE-GATE-STAGE5",
+   "n_files": 15,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "不追高单闸日度功效增强验证(指纹d9cae4933bc681f1,预注册跑前写死):570日度截面(2024-2026)日度Δ+0.455%"
+  },
+  {
+   "id": "CHIP-MANUAL-3GATE",
+   "n_files": 25,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "v1.3全量测试(主人9/5批评后, baostock换手率回填1000万行补齐十年, canonical宇宙4411只, 201601~2"
+  },
+  {
+   "id": "MOM-GATE-FULLHIST",
+   "n_files": 7,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": "不追高闸2016-2023八年补测(指纹14c64fec7ee50071,预注册跑前写死,触发=主人二度纠偏「要全部测试」——硬约束此前仅2"
+  },
+  {
+   "id": "SKILL-SWEEP2-STAGE1",
+   "n_files": 5,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "主人9/5纠偏「不能按经验武断判断要全部测试」后补测批(预注册PREREG_SKILL_SWEEP2_20260905跑前钉死):Part1"
+  },
+  {
+   "id": "TIMING-PANIC-STAGE1",
+   "n_files": 14,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": "恐慌日时机器stage-1(预注册PREREG_PANIC_TIMING_20260905跑前钉死,主人9/5裁决「继续」兑现SKILL-S"
+  },
+  {
+   "id": "S3-REOPEN-STAGE1",
+   "n_files": 7,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "S3环境权重重开stage-1(主人L-1重开条款裁决兑现,预注册PREREG_S3_REOPEN_20260905跑前钉死):规格逐字恢复"
+  },
+  {
+   "id": "HOLDING-DECAY-OBSERVATION",
+   "n_files": 4,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "8月fwd5+0.86%转fwd10-0.89%的持有期衰减线索:专项核验发现fwd10可得样本仅个位数(8/21后买入的T+10超出数据窗"
+  },
+  {
+   "id": "MOM-GATE-REPRODUCIBILITY-FIX",
+   "n_files": 3,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "主人指令「研究脚本逐一复跑」发现s2b三脚本(main_inds set迭代)受PYTHONHASHSEED随机化影响:多行业低位候选拼接顺"
+  },
+  {
+   "id": "BOX-BREAKOUT-LOWPOS",
+   "n_files": 25,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "低位横盘放量突破十年回测三闸全FAIL:22,215信号日聚簇-0.83%/t-3.70,相对bp_ep池内增量t-7.31;分年拆解正贡献"
+  },
+  {
+   "id": "COMBOC-CHAN-LOOKAHEAD",
+   "n_files": 9,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": "P2源码级审计(fractal.py:24自注释'中间K线'+chan_batch.py:36映射)=chan_buy1_10/chan_b"
+  },
+  {
+   "id": "BREAKOUT-SCOUT-TRADEABLE",
+   "n_files": 13,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "首板蓄势二波(低位首板→蓄势不破→间隔>=3日再板,入场=二板日次日收盘)全历史事件研究2018-2026.9四闸1过3FAIL: 5950"
+  },
+  {
+   "id": "PROFILE-STARTUP-COND",
+   "n_files": 12,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "全市场回测2016-2024(9年, 28.7万信号/2151信号日): fwd20超额均值-1.111%, NW(5) t=-3.46显著"
+  },
+  {
+   "id": "WINRATE-RANK-TOP10",
+   "n_files": 17,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "组合累计-8.1%/年化-3.22%/MDD-44.6%; 同约束池不排序等权+47.3%(年化+16.18%), 20元全池等权+37.7"
+  },
+  {
+   "id": "ENGINE-B-HIGHPOS-BREAKOUT",
+   "n_files": 15,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "n=7172: 均值-1.04%/胜率38.7%/t=-6.04; 池内增量-1.74pp Welch t=-10.09(比同状态无事件还差"
+  },
+  {
+   "id": "L2-LHB-SEAT-INST-STAGE1",
+   "n_files": 12,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "prereg=PREREG_LHB_SEAT_INST_RATIO_20260909(判据跑前冻结,方向先验=负向排雷,先验源=下画像lhb"
+  },
+  {
+   "id": "ENGINE-B2-PULLBACK-R31",
+   "n_files": 11,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "均值+0.37%但全池基准+0.86%→超额-0.49pp; 日聚簇NW(5) t=+0.27无显著性; vs强趋势非贴线对照增量+0.14"
+  },
+  {
+   "id": "WEEKLY-FILTER-CHAN12",
+   "n_files": 18,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "周线趋势代理(周收盘>周MA_n且周MA上行,仅用信号日前已完整周K)过滤缠论buy1+buy2为显著负增量: ma20主口径增量-0.60"
+  },
+  {
+   "id": "WEEKLY-FILTER-CHAN3",
+   "n_files": 8,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "重启线(H2语义匹配假设,引用WEEKLY-FILTER-CHAN12按宪法§10-8条件不同=信号类型buy1/buy2→buy3同向匹配"
+  },
+  {
+   "id": "M2-UNLOCK-FILTER",
+   "n_files": 8,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "prereg=PREREG_M2_UNLOCK_FILTER_20260909(判据跑前冻结:train窗θ∈{1,3,5,10}%取满足n"
+  },
+  {
+   "id": "SECTOR-FILTER-CHAN12",
+   "n_files": 10,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "H3跨尺度假设(行业周线方向×个股一二买, 与已证伪H1的区别=条件尺度行业层vs个股层): 行业等权指数周线MA过滤增量 ma20 -0."
+  },
+  {
+   "id": "SENTIMENT-CYCLE-DAILY-ALPHA",
+   "n_files": 20,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "情绪状态→次日等权收益的日频择时信号不成立: 250交易日台账(qfq日线推算口径, 2025-08-29~2026-09-08)上, v2"
+  },
+  {
+   "id": "BREAKOUT-CLUSTER-FILTER",
+   "n_files": 13,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "『突破信号同日同细分行业≥3只才接力』假设反向成立: 归因库行业口径(limit_up_patterns, 主人钦定唯一可靠行业源)下主线组"
+  },
+  {
+   "id": "BREAKOUT-CONFIRM-FILTER",
+   "n_files": 10,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "确认组n=437(仅占池0.6%,227信号日)均值+3.82%/胜率57.7%/t_day4.24=G1过, 但增量+1.056pp配对t"
+  },
+  {
+   "id": "BREAKOUT-MIDPOS",
+   "n_files": 13,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "mid带突破组n=87548/2382信号日: 胜率44.0%/点估均值+0.27%但日聚簇t=-8.86; 同带增量-0.235pp/配对"
+  },
+  {
+   "id": "BREAKOUT-PULLBACK-ENTRY",
+   "n_files": 15,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "相对维度压倒性: 配对增量+2.656pp/t48.87(2401事件日,同事件配对SE小t大如实披露), 11/11年全正, 五敏感性(K"
+  },
+  {
+   "id": "L2-SELFLOSS-FILTER",
+   "n_files": 7,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "M2-GOODWILL-FILTER",
+   "n_files": 3,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "Y-REALIZABLE-LABEL-VARIANT",
+   "n_files": 9,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "NEG-TURNOVER-POOL-TOP500",
+   "n_files": 13,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "TIMING-CONDMATRIX-STAGE1",
+   "n_files": 6,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "条件矩阵stage-1(预注册PREREG-TIMING-CONDMATRIX-V1指纹d3a154496b6aeb8d跑前钉死,主人9/1"
+  },
+  {
+   "id": "TIMING-VOLTARGET-STAGE1",
+   "n_files": 6,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "市场层波动率目标仓位stage-1(预注册PREREG-VOLTARGET-V1指纹688a0017c003c5cf跑前钉死,主人9/14两"
+  },
+  {
+   "id": "TIMING-VOLTARGET-STAGE2",
+   "n_files": 5,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "实现族级扩展验证(PREREG-VOLTARGET-V2指纹5a765ec776cd07e4跑前钉死, 新前提=主人9/14「不要否定,也许"
+  },
+  {
+   "id": "TIMING-DDPROTECT-STAGE1",
+   "n_files": 4,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "回撤保护覆盖层stage-1(PREREG-DRAWDOWN-PROTECT-V3指纹9c6198e42dfd5242跑前钉死, 主人9/1"
+  },
+  {
+   "id": "TIMING-DDPROTECT-STAGE2",
+   "n_files": 4,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "组合C本体载体回撤保护覆盖层(PREREG-DDPROTECT-V4指纹89688de9dfc92763跑前钉死, 主人9/14第四轮「继续"
+  },
+  {
+   "id": "TIMING-DDPROTECT-STAGE3",
+   "n_files": 4,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "组合C载体×门控信号外生化(PREREG-DDPROTECT-V5指纹3d7d4c6047c71252跑前钉死, 主人9/14第五轮「继续」"
+  },
+  {
+   "id": "TIMING-DDPROTECT-STAGE4",
+   "n_files": 5,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "门控降鞭挞变体验证(PREREG-DDPROTECT-V6指纹b411db6294b5144a跑前钉死, 主人9/14第六轮「继续」兑现):"
+  },
+  {
+   "id": "PORTRAIT-REGIME-GATE",
+   "n_files": 7,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "方向完全相反: HIGH组(235截面=2025-08~2026-07主流时段)超额-0.46%不显著(t-1.08), LOW组(16截面"
+  },
+  {
+   "id": "PULLBACK-FORM-ENTRY-2026",
+   "n_files": 3,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "STOP-ATR2-VS-FIXED8",
+   "n_files": 6,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "SELECTION-CHECKLIST",
+   "n_files": 9,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "方向单调正确但判别力弱不显著: 命中0/1/2/3桶T+5均值+0.360/+0.094/-0.074/-0.361pp严格递减, 但3中组"
+  },
+  {
+   "id": "PEAD-PREG",
+   "n_files": 3,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "侦察→严格口径蒸发93%: ①-8%止损率51.2%(预增票高波动,20日内一半触及;中位路径-4.49%=先跌后涨,硬止损在漂移兑现前打掉"
+  },
+  {
+   "id": "SENTIMENT-CYCLE-V1",
+   "n_files": 21,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "v1启发式阈值规则(渤海研报四阶段+东财三指标, 阈值未标定)打出的stage标签无信息量且误导: (1)全史重放2016-2026(n=2"
+  },
+  {
+   "id": "UP-BUCKET-UNCOND",
+   "n_files": 6,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "月度聚合t0.58-1.14全不显著+fwd60中位负; 复刻版UP143只vs生产80只零mismatch排除实现差异; 证据91%集中2"
+  },
+  {
+   "id": "PULLBACK-DEPTH-TRADEABLE",
+   "n_files": 6,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "初查+15.05%优势三口径复核后: NW t最好+0.35不显著(均值臂-1.01), fwd20均值臂-2.46方向相反, 市场超额中位"
+  },
+  {
+   "id": "PEAK-CLUSTER-AS-SIGNAL",
+   "n_files": 4,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "分年10/10同向但t-1不足(聚集度自相关致自由度耗尽), 达不到信号级证据; 描述性维度=全样本最稳健形态学事实之一(与9/9炸板6.1"
+  },
+  {
+   "id": "WINNER-MOMENTUM-Q10",
+   "n_files": 4,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": "Q10(事前20日最强10%)月均超额-1.72%/累计-66.3%(56月等权), 2022-2026五年年年负(-0.42%~-2.92"
+  },
+  {
+   "id": "REGIME-MOM-IDENT",
+   "n_files": 3,
+   "last_cited": "2026-09-29",
+   "bucket": "fresh30",
+   "reason": "四变量中位数分组条件差全部<=1.07%, 秩相关-0.18~+0.18, 分年方向不稳; 「高离散+低广度」组合反而Q10超额-3.32%"
+  },
+  {
+   "id": "CB-DOUBLELOW-L3",
+   "n_files": 5,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "口径A纯轮动: 年化+15.28%但MDD-20.23%超15%门槛/分年仅5正4负(2018-3/2022-4/2023-11/2026-"
+  },
+  {
+   "id": "ETF-MOM-ROTATION-L3",
+   "n_files": 5,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": "A(无止损): 年化+1.97%/MDD -36.23%/分年4/9正/NWt0.66; B(-8%): 年化-0.67%/MDD -38."
+  },
+  {
+   "id": "EMOTION-PHASE-V2-NEXTDAY",
+   "n_files": 4,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "M6预注册事件研究双判据FAIL(2026-09-29, reports/phase_event_study_20260929.md): 相"
+  },
+  {
+   "id": "MONTHLY-TOP-Z2S-LOOKAHEAD",
+   "n_files": 6,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "月顶区Z2s(+29.26%/win89%/组合+222.79%)整条证据链死于月线门锚点前视: 旧实现以「信号当月月末收盘」为锚/窗含当月"
+  },
+  {
+   "id": "FIRST-BOARD-CHASE-NO-EDGE",
+   "n_files": 5,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "TEXTBOOK-BS-POINTS-20261003",
+   "n_files": 3,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "主人下发《买卖点与买卖区域·深度完整版》教材逐条对照本地证据: 新测3断言全FAIL(周线MACD金叉+5周上穿10周 n=19171 wi"
+  },
+  {
+   "id": "MANTOU-CHASE-LIMITUP",
+   "n_files": 4,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MANTOU-TEMPLATE-MATCH-DAILY",
+   "n_files": 1,
+   "last_cited": "2026-10-04",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MANTOU-MILDE-MOMENTUM-STANDALONE",
+   "n_files": 1,
+   "last_cited": "2026-10-04",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MANTOU-X1-COMPOSITE-UNCONDITIONAL",
+   "n_files": 1,
+   "last_cited": "2026-10-04",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MANTOU-WEEKLY-SIGNAL",
+   "n_files": 1,
+   "last_cited": "2026-10-04",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MANTOU-SHRINK-BREAKOUT-FOLK",
+   "n_files": 4,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "SHALLOW-DIP-BAN-UNIVERSAL",
+   "n_files": 6,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": "假说=「强趋势股浅回撤0~-3%买入最毒」(源自二池2024Q4-25Q1样本:f5 med-3.64%/win28%);三方+四方对照证伪"
+  },
+  {
+   "id": "LUOFEI-WARMUP-CONFIRM-NO-EDGE",
+   "n_files": 3,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "INDEX-SURGE-THEMETOP-REVERSED",
+   "n_files": 3,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "TIMESTOP-MECH-5D",
+   "n_files": 3,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "KAIZEN-WEEKLY-EDGE-1.7X",
+   "n_files": 1,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "RSRS-LONG-FILTER",
+   "n_files": 1,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "FRACTAL-EFF-MOMO-FILTER",
+   "n_files": 1,
+   "last_cited": "2026-10-07",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "WYCKOFF-TEST-QUIET-NO-EDGE",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero",
+   "reason": ""
+  },
+  {
+   "id": "WYCKOFF-DRYUP-BUY-FALSIFIED",
+   "n_files": 1,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "WYCKOFF-VOLUME-SEMANTIC-REVERSED",
+   "n_files": 6,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "WYCKOFF-CAUSE-WIDTH-CHASE-FALSE",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero",
+   "reason": ""
+  },
+  {
+   "id": "EBB-SIGNAL-NO-EDGE",
+   "n_files": 7,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": "退潮先行指标(涨停生态骤变)无显著负预测力: 两轮全史事件研究①T日池T+1三信号超额全反向+3.02/+2.22/+2.74pp(T日池="
+  },
+  {
+   "id": "ENTRY-DAY-CONFIRM-GATE",
+   "n_files": 1,
+   "last_cited": "2026-10-08",
+   "bucket": "fresh30",
+   "reason": "A1−A0ex f5增量-0.045pp/聚簇t-0.26(G2 FAIL), 分年+1.120/-0.639/-0.008pp方向翻转1/"
+  },
+  {
+   "id": "GEAR-STRONG-PULLBACK-SCOUT",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero",
+   "reason": "强档f5中位+0.25%(<+1%阈)/中档-0.73%/弱档-1.22%单调成立但绝对边际薄; 分年2024+0.85/2025+0.46"
+  },
+  {
+   "id": "HAISHI-BOARD-WIDTH-THRESHOLD-FALSIFIED",
+   "n_files": 1,
+   "last_cited": "2026-10-10",
+   "bucket": "fresh30",
+   "reason": "<5桶 晋级率35.5%/T+1中位+2.89%(三桶最高) vs 5-9桶 36.4%/+2.80% vs >=10桶 33.4%/+2."
+  },
+  {
+   "id": "OUTEMAN-TOP-WINDOW-NO-EDGE",
+   "n_files": 1,
+   "last_cited": "2026-10-10",
+   "bucket": "fresh30",
+   "reason": "v3终版(最近顶归因,消除v2先到先得归因抢夺伪影): 窗口首板n=48,112 vs 对照(最近顶±2~10)n=25,313: 成2板率"
+  },
+  {
+   "id": "OUTEMAN-SEVEN-BOARD-CLIFF-FALSE",
+   "n_files": 2,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": "晋级率随板数单调上升: 2->3板34.7%(最低)→6->7板60.1%→7->8板57.0%(仅轻微回落)→8->9板65.3%→9->"
+  },
+  {
+   "id": "DIP-CARRY-ROUND-END-NO-EDGE",
+   "n_files": 4,
+   "last_cited": "2026-10-18",
+   "bucket": "fresh30",
+   "reason": "「低吸隔日带不走=轮次结束」(淘股吧我不是从前,帖2etKGNOXCBf评论区250617)操作化(R1队列20日滚动均值<0=歇信号)后作"
+  },
+  {
+   "id": "LIMITUP-UNDERWATER-OPEN-SELL-NO-EDGE",
+   "n_files": 2,
+   "last_cited": "2026-10-11",
+   "bucket": "fresh30",
+   "reason": "「涨停次日开盘水下→早盘兑现」(淘股吧我不是从前Q11,帖FTD 25-11-13)作为无条件卖出规则不成立: 预登记支持线7/9年,实测仅"
+  },
+  {
+   "id": "ZT-NEXTOPEN-SHORT-HOLD-NO-EDGE",
+   "n_files": 2,
+   "last_cited": "2026-10-13",
+   "bucket": "fresh30",
+   "reason": "涨停次日开盘追入短持有(1/3/5日)全谱负【全量口径: n=123,459(1992-2026全史35年, wb活副本至20261012)"
+  },
+  {
+   "id": "LIANBAN-MIDVOL-WANGDAO-FALSIFIED",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "BREAKBOARD-SHRINK-REBOUND-NO-EDGE",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "MA60-CROSS-VOLUME-RESONANCE-NO-EDGE",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "INTRADAY-TAIL-VOLUME-MOMENTUM-NO-EDGE",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "INTRADAY-UPVOL-HEALTHY-REVERSED",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "INTRADAY-LATER-VOL-WEAKER-NO-DANGER",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  },
+  {
+   "id": "INTRADAY-DIP-RECOVER-FOLLOW-NO-EDGE",
+   "n_files": 1,
+   "last_cited": "2026-10-17",
+   "bucket": "fresh30",
+   "reason": ""
+  }
+ ],
+ "retired_rows": [
+  {
+   "id": "v375_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  },
+  {
+   "id": "p2_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  },
+  {
+   "id": "composite_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  },
+  {
+   "id": "breakout_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  },
+  {
+   "id": "smc_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  },
+  {
+   "id": "hotspot_signal",
+   "n_files": 0,
+   "last_cited": null,
+   "bucket": "zero"
+  }
+ ]
+}

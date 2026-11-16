@@ -1,0 +1,23 @@
+{
+ "scanned": {
+  "from": 20261029,
+  "to": 20261029,
+  "latest_data_date": 20261029
+ },
+ "added": 0,
+ "fwd_updated": 0,
+ "total_rows": 560,
+ "shadow_window": {
+  "n": 0,
+  "gates": {
+   "f20_med_min": 2.0,
+   "f20_win_min": 55.0,
+   "n_min": 30
+  },
+  "verdict": "NO_DATA",
+  "secondary_zt40": "n<5",
+  "secondary_zt61": "n<5"
+ },
+ "runtime_sec": 156.6,
+ "ts": "2026-10-30 09:33:38"
+}

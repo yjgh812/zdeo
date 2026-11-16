@@ -1,0 +1,6 @@
+LOW_DRYUP_REPAIR_FAMILY 影子简报 生成于 2026-10-29 22:09
+prereg=PREREG_LOW_DRYUP_REPAIR_FAMILY_20261017.json judge_arms=['T1'] observe_arms=['T2', 'T3']
+T1(主判据): 样内 n=7158 med20=6.25 win=68.6 | OOS 到期 n=0 med20=None win=None 未到期=41
+T2(观察): 样内 n=1555 OOS 到期 n=0
+T3(观察): 样内 n=984 OOS 到期 n=0
+验收门(LOCKED): 激活20261020起60交易日或T1 OOS n>=30; pass=med>=+1.5%且win>=52%; kill=前10事件med全负

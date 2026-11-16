@@ -1,0 +1,509 @@
+{
+ "date": "20260922",
+ "total_limitup": 62,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "华字辈情绪链",
+   "shared_words": [
+    "华字辈情绪链(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001216",
+    "name": "华瓷股份",
+    "boards": 6,
+    "seal_money": 259140450,
+    "mv_wan": 772813.720686
+   },
+   "members": [
+    {
+     "code": "001216",
+     "name": "华瓷股份",
+     "boards": 6,
+     "reason": "氧化锆粉体+MLCC验证+日用陶瓷+华字辈",
+     "mv_wan": 772813.720686,
+     "role": "龙头"
+    },
+    {
+     "code": "000504",
+     "name": "南华生物",
+     "boards": 4,
+     "reason": "细胞医疗+再生资源+中报扭亏+华字辈",
+     "mv_wan": 399657.971678,
+     "role": "助攻"
+    },
+    {
+     "code": "000756",
+     "name": "新华制药",
+     "boards": 2,
+     "reason": "药品注册+阿尔茨海默病+解热镇痛+华字辈",
+     "mv_wan": 1124447.06409,
+     "role": "中军"
+    },
+    {
+     "code": "002178",
+     "name": "延华智能",
+     "boards": 2,
+     "reason": "AI医疗+智慧城市+智慧康养+华字辈",
+     "mv_wan": 398093.52755899995,
+     "role": "助攻"
+    },
+    {
+     "code": "002614",
+     "name": "奥佳华",
+     "boards": 2,
+     "reason": "股份转让+健康机器人+按摩椅+华字辈",
+     "mv_wan": 429132.572352,
+     "role": "助攻"
+    },
+    {
+     "code": "300110",
+     "name": "华仁药业",
+     "boards": 2,
+     "reason": "化学制药+精麻药品+腹膜透析+华字辈",
+     "mv_wan": 466974.12789000006,
+     "role": "助攻"
+    },
+    {
+     "code": "600503",
+     "name": "华丽家族",
+     "boards": 2,
+     "reason": "房地产+创新药+机器人+华字辈",
+     "mv_wan": 427811.43,
+     "role": "助攻"
+    },
+    {
+     "code": "600743",
+     "name": "华远控股",
+     "boards": 2,
+     "reason": "控股股东拟变更+物业管理+酒店管理",
+     "mv_wan": 600601.8237439999,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "出版链(内蒙新华系)",
+   "shared_words": [
+    "出版链(内蒙新华系)(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603230",
+    "name": "内蒙新华",
+    "boards": 5,
+    "seal_money": 64824552,
+    "mv_wan": 576596.013
+   },
+   "members": [
+    {
+     "code": "603230",
+     "name": "内蒙新华",
+     "boards": 5,
+     "reason": "出版发行+文化消费+华字辈",
+     "mv_wan": 576596.013,
+     "role": "龙头"
+    },
+    {
+     "code": "600825",
+     "name": "新华传媒",
+     "boards": 2,
+     "reason": "资产重组+图书发行+上海国资+华字辈",
+     "mv_wan": 670817.9997,
+     "role": "助攻"
+    },
+    {
+     "code": "601811",
+     "name": "新华文轩",
+     "boards": 3,
+     "reason": "拟收购民族出版社+教科书发行+数字教育+华字辈",
+     "mv_wan": 2075320.5620000002,
+     "role": "中军"
+    },
+    {
+     "code": "000607",
+     "name": "华媒控股",
+     "boards": 2,
+     "reason": "文化传媒+AI应用+杭州日报+国企",
+     "mv_wan": 506813.80818000005,
+     "role": "助攻"
+    },
+    {
+     "code": "601949",
+     "name": "中国出版",
+     "boards": 1,
+     "reason": "AI出版+图书出版+中国出版集团",
+     "mv_wan": 1260426.8517480001,
+     "role": "补涨"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "羊字辈",
+    "汽车物流",
+    "多式联运",
+    "国际物流"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001317",
+    "name": "三羊马",
+    "boards": 3,
+    "seal_money": 50305251,
+    "mv_wan": 564392.0036079999
+   },
+   "members": [
+    {
+     "code": "001317",
+     "name": "三羊马",
+     "boards": 3,
+     "reason": "羊字辈+汽车物流+多式联运+国际物流",
+     "mv_wan": 564392.0036079999,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "端侧AI",
+    "无线芯片"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603068",
+    "name": "博通集成",
+    "boards": 3,
+    "seal_money": 26671729,
+    "mv_wan": 731159.5156230001
+   },
+   "members": [
+    {
+     "code": "603068",
+     "name": "博通集成",
+     "boards": 3,
+     "reason": "端侧AI+无线芯片+业绩增长",
+     "mv_wan": 731159.5156230001,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "七腾机器人",
+    "PCB概念",
+    "铝板带",
+    "电池箔"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000910",
+    "name": "大亚圣象",
+    "boards": 3,
+    "seal_money": 18386165,
+    "mv_wan": 377156.8775
+   },
+   "members": [
+    {
+     "code": "000910",
+     "name": "大亚圣象",
+     "boards": 3,
+     "reason": "七腾机器人+PCB概念+铝板带+电池箔",
+     "mv_wan": 377156.8775,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "医药链",
+   "shared_words": [
+    "医药链(人工并链)"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600664",
+    "name": "哈药股份",
+    "boards": 2,
+    "seal_money": 360169410,
+    "mv_wan": 2286806.967408
+   },
+   "members": [
+    {
+     "code": "600664",
+     "name": "哈药股份",
+     "boards": 2,
+     "reason": "创新药+医药工业+业绩增长",
+     "mv_wan": 2286806.967408,
+     "role": "龙头"
+    },
+    {
+     "code": "600721",
+     "name": "百花医药",
+     "boards": 2,
+     "reason": "医药研发服务+复杂制剂+国资背景",
+     "mv_wan": 556440.427845,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 7,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "针织服装",
+    "服装贴牌",
+    "广州国资入主"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001234",
+    "name": "泰慕士",
+    "boards": 2,
+    "seal_money": 250279760,
+    "mv_wan": 317624.57999999996
+   },
+   "members": [
+    {
+     "code": "001234",
+     "name": "泰慕士",
+     "boards": 2,
+     "reason": "针织服装+服装贴牌+广州国资入主",
+     "mv_wan": 317624.57999999996,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "半导体材料",
+    "香精香料",
+    "鱼油原料",
+    "离子注入机",
+    "半年报增长"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603020",
+    "name": "爱普股份",
+    "boards": 2,
+    "seal_money": 9234291,
+    "mv_wan": 519507.041442
+   },
+   "members": [
+    {
+     "code": "603020",
+     "name": "爱普股份",
+     "boards": 2,
+     "reason": "半导体材料+香精香料+鱼油原料",
+     "mv_wan": 519507.041442,
+     "role": "龙头"
+    },
+    {
+     "code": "600641",
+     "name": "先导基电",
+     "boards": 1,
+     "reason": "半导体材料+离子注入机+半年报增长",
+     "mv_wan": 4141591.5340800006,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 9,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "AI应用出海",
+    "算力租赁",
+    "政务数字化"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603636",
+    "name": "南威软件",
+    "boards": 2,
+    "seal_money": 96513163,
+    "mv_wan": 464868.77892300003
+   },
+   "members": [
+    {
+     "code": "603636",
+     "name": "南威软件",
+     "boards": 2,
+     "reason": "AI应用出海+算力租赁+政务数字化",
+     "mv_wan": 464868.77892300003,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链7",
+   "shared_words": [
+    "导热凝胶",
+    "模切业务",
+    "消费电子包装"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002303",
+    "name": "美盈森",
+    "boards": 2,
+    "seal_money": 72089130,
+    "mv_wan": 1056613.3426500002
+   },
+   "members": [
+    {
+     "code": "002303",
+     "name": "美盈森",
+     "boards": 2,
+     "reason": "导热凝胶+模切业务+消费电子包装+海外产能",
+     "mv_wan": 1056613.3426500002,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 11,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "天然气",
+    "LNG加工",
+    "LNG重卡"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002259",
+    "name": "升达林业",
+    "boards": 2,
+    "seal_money": 40606391,
+    "mv_wan": 373907.148699
+   },
+   "members": [
+    {
+     "code": "002259",
+     "name": "升达林业",
+     "boards": 2,
+     "reason": "天然气+LNG加工+LNG重卡",
+     "mv_wan": 373907.148699,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链9",
+   "shared_words": [
+    "控制权拟变更",
+    "精密金属结构件",
+    "轻型输送带"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603580",
+    "name": "艾艾精工",
+    "boards": 2,
+    "seal_money": 27357036,
+    "mv_wan": 1028136.7376000001
+   },
+   "members": [
+    {
+     "code": "603580",
+     "name": "艾艾精工",
+     "boards": 2,
+     "reason": "控制权拟变更+精密金属结构件+轻型输送带",
+     "mv_wan": 1028136.7376000001,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 13,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "智能制造",
+    "汽车整车",
+    "尊界高端",
+    "华为合作",
+    "功率半导体投资",
+    "全屋定制"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "600418",
+    "name": "江淮汽车",
+    "boards": 1,
+    "seal_money": 287040430,
+    "mv_wan": 4805907.91174
+   },
+   "members": [
+    {
+     "code": "600418",
+     "name": "江淮汽车",
+     "boards": 1,
+     "reason": "汽车整车+尊界高端+华为合作+智能制造",
+     "mv_wan": 4805907.91174,
+     "role": "龙头"
+    },
+    {
+     "code": "603216",
+     "name": "梦天家居",
+     "boards": 1,
+     "reason": "功率半导体投资+全屋定制+智能制造",
+     "mv_wan": 506619.75,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 22,
+   "chain_name": "自动链19",
+   "shared_words": [
+    "PCB",
+    "HDI板",
+    "服务器电源",
+    "高频通讯",
+    "新能源电池"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "605258",
+    "name": "协和电子",
+    "boards": 1,
+    "seal_money": 37206200,
+    "mv_wan": 371007.99999999994
+   },
+   "members": [
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 1,
+     "reason": "PCB+HDI板+服务器电源",
+     "mv_wan": 761362.11424,
+     "role": "中军"
+    },
+    {
+     "code": "605258",
+     "name": "协和电子",
+     "boards": 1,
+     "reason": "PCB+高频通讯+新能源电池",
+     "mv_wan": 371007.99999999994,
+     "role": "龙头"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

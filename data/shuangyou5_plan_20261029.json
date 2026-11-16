@@ -1,0 +1,62 @@
+[
+ {
+  "code": "601577",
+  "name": "长沙银行",
+  "source": "xushi_shuangyou",
+  "price": 9.63,
+  "volume": 100,
+  "sector": "",
+  "note": "双优TOP1: 10维+胜率65.7%+增量+9.3%, 三维全优口径稳健",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600023",
+  "name": "浙能电力",
+  "source": "xushi_shuangyou",
+  "price": 5.19,
+  "volume": 100,
+  "sector": "",
+  "note": "替补上海银行(归因层拦: 历史2次全亏-150元重复踩坑禁入, 不绕闸): 双优第6名 9维+胜率63.6%+增量+5.7%",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "601156",
+  "name": "东航物流",
+  "source": "xushi_shuangyou",
+  "price": 18.62,
+  "volume": 100,
+  "sector": "",
+  "note": "双优TOP3: 10维+胜率65.5%+均值+2.3%全场最高, 非银行独立板块",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600926",
+  "name": "杭州银行",
+  "source": "xushi_shuangyou",
+  "price": 16.79,
+  "volume": 100,
+  "sector": "",
+  "note": "双优TOP4: 10维+胜率64.7%+增量+2.4%(修正口径转正)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "600919",
+  "name": "江苏银行",
+  "source": "xushi_shuangyou",
+  "price": 12.42,
+  "volume": 100,
+  "sector": "",
+  "note": "双优TOP5: 9维+胜率63.9%(增量-1.0%如实标注)",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

@@ -1,0 +1,196 @@
+{
+ "date": "20261029",
+ "generated_at": "2026-10-29 22:52:03",
+ "口径": "volr20=量/20日均量; hot5=近5日volr20>=1.0天数; C1=volr20>=1.3且hot5>=4",
+ "n_industries": 31,
+ "c1_count": 0,
+ "c1_industries": [],
+ "industries": [
+  {
+   "industry": "国防军工",
+   "volr20": 1.3281,
+   "hot5": 2,
+   "c1": false
+  },
+  {
+   "industry": "机械设备",
+   "volr20": 1.2013,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "家用电器",
+   "volr20": 1.1961,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "非银金融",
+   "volr20": 1.187,
+   "hot5": 2,
+   "c1": false
+  },
+  {
+   "industry": "银行",
+   "volr20": 1.1701,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "汽车",
+   "volr20": 1.1523,
+   "hot5": 4,
+   "c1": false
+  },
+  {
+   "industry": "商贸零售",
+   "volr20": 1.1171,
+   "hot5": 4,
+   "c1": false
+  },
+  {
+   "industry": "美容护理",
+   "volr20": 1.1054,
+   "hot5": 3,
+   "c1": false
+  },
+  {
+   "industry": "计算机",
+   "volr20": 1.0923,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "交通运输",
+   "volr20": 1.0577,
+   "hot5": 2,
+   "c1": false
+  },
+  {
+   "industry": "通信",
+   "volr20": 1.0572,
+   "hot5": 2,
+   "c1": false
+  },
+  {
+   "industry": "传媒",
+   "volr20": 1.0392,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "电子",
+   "volr20": 1.0326,
+   "hot5": 3,
+   "c1": false
+  },
+  {
+   "industry": "石油石化",
+   "volr20": 1.0312,
+   "hot5": 4,
+   "c1": false
+  },
+  {
+   "industry": "食品饮料",
+   "volr20": 1.0252,
+   "hot5": 5,
+   "c1": false
+  },
+  {
+   "industry": "电力设备",
+   "volr20": 0.9732,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "社会服务",
+   "volr20": 0.9728,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "建筑装饰",
+   "volr20": 0.9727,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "建筑材料",
+   "volr20": 0.9636,
+   "hot5": 2,
+   "c1": false
+  },
+  {
+   "industry": "煤炭",
+   "volr20": 0.9568,
+   "hot5": 0,
+   "c1": false
+  },
+  {
+   "industry": "基础化工",
+   "volr20": 0.9475,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "有色金属",
+   "volr20": 0.9449,
+   "hot5": 3,
+   "c1": false
+  },
+  {
+   "industry": "环保",
+   "volr20": 0.9449,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "公用事业",
+   "volr20": 0.9231,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "轻工制造",
+   "volr20": 0.907,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "钢铁",
+   "volr20": 0.8679,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "纺织服饰",
+   "volr20": 0.8574,
+   "hot5": 1,
+   "c1": false
+  },
+  {
+   "industry": "医药生物",
+   "volr20": 0.8262,
+   "hot5": 0,
+   "c1": false
+  },
+  {
+   "industry": "农林牧渔",
+   "volr20": 0.7928,
+   "hot5": 0,
+   "c1": false
+  },
+  {
+   "industry": "综合",
+   "volr20": 0.6386,
+   "hot5": 0,
+   "c1": false
+  },
+  {
+   "industry": "房地产",
+   "volr20": 0.5799,
+   "hot5": 0,
+   "c1": false
+  }
+ ]
+}

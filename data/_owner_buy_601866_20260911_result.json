@@ -1,0 +1,12 @@
+{
+  "run_at": "2026-09-14 09:31:14",
+  "code": "601866",
+  "name": "中远海发",
+  "ok": false,
+  "gate_verdict": "REJECT",
+  "executed": false,
+  "reason": "提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @2.52), 拒绝重复下单",
+  "order_id": "",
+  "fill_status": "",
+  "tail": ",\n    \"R19解禁检查[fail-open显式标注]: 解禁表无该股记录（窗口2026-09-14~2026-10-04） → 无解禁数据, fail-open → PASS（数据由 event_data_tools.py --refresh 维护）\",\n    \"R22双口径闸[fail-open显式标注]: 601866 无双口径快照数据(需先跑22:35采集) → fail-open\"\n  ],\n  \"sizing\": {\n    \"max_weight\": 0.2,\n    \"budget\": 181963.23,\n    \"shares\": 71900,\n    \"actual_amount\": 181907.0,\n    \"stop_loss_price\": 2.33,\n    \"max_loss\": 14552.56,\n    \"max_loss_pct_of_total\": 1.6\n  },\n  \"vol_locked_by_amount\": {\n    \"amount\": 25000.0,\n    \"price\": 2.53,\n    \"vol\": 9800\n  },\n  \"executed\": false,\n  \"reason\": \"提交幂等拦截: 当日已有买入提交/未了结委托(executor_orders OPEN @2.52), 拒绝重复下单\"\n}\n"
+}

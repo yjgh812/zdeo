@@ -1,0 +1,29 @@
+{
+  "id": "20261023-rbot-pattern-stfix-v1",
+  "ts": "2026-10-23T22:20:00",
+  "object": "圆弧底（rbot）ST历史时点宇宙修正复核（新前提=ST历史源落地[PD-049, data/st_history.db baostock isST面板, T-S1 PASS 2026-10-23]；审计发现A/hub2快照套历史窗前视修正。判据逐字沿用20260902原prereg，仅宇宙口径修正，依提案件reports/PROPOSAL_ST_HISTORY_FIX_20261023.md §四『判据不变仅宇宙口径修正；ST历史源落地构成新前提→新指纹』）",
+  "engine": "event_sequential_wfa.v1（自研 classical_pattern_roundbottom_wfa.py，2026-10-23 起含 m4-v2 st_hit 信号级ST时点过滤[单侧：只剔面板确证ST，未覆盖配对放行]，复用 classical_pattern_prescreen 骨架）",
+  "combo": [
+    "rbot_pattern"
+  ],
+  "params": {
+    "hold_n": 10,
+    "cooldown_bar": 10,
+    "cost_model": "佣金max(万2.5,5元)+印花税0.05%+次日开盘买入+跌停拦卖次bar重试（与预筛器同尺）",
+    "verify_start": "20160101",
+    "verify_end": "20251231",
+    "oos_lock_end": "20260825",
+    "st_universe": "per-date 时点集（data/st_history.db st_daily，baostock isST；覆盖缺口单侧放行，随回填收敛）"
+  },
+  "known_data_disclosure": "原跑（20260902-rbot-pattern-v1，快照ST宇宙）PASS_candidate 数字为审计认定的上界（报告=AUDIT_EXTERNAL_TDX_PIPELINE_20261023.md §八；剔除终将ST票的利好偏差方向已定谳）；本复核预期数字下修，上下对比即偏差测度",
+  "criterion": {
+    "C1_full_positive": "验证段(2016-2025)费后 N10 均值 > 0 且 t >= 3",
+    "C2_year_consistency": "正值年 >= 6/10",
+    "C3_expanding_forecast": "滚动前向（每年末用累计均值符号预测下一年均值符号）命中 >= 6/9（预测年 2017-2025）",
+    "C4_worst_year_floor": "最差年费后均值 > -5%"
+  },
+  "trial_budget": "1",
+  "commitment": "四判据全过=PASS_candidate 维持（观测期结论照旧，仍需真窗 OOS 复核方进生产候选）；任一不过=撤销 20260902 的 PASS_candidate 观察结论并归档（圆弧底唯二例外例外的观察资格终止）；跑后禁改；本草案 locked=false，锁定执行须主人批准（批准即视为新指纹确认）",
+  "status": "draft_awaiting_approval",
+  "result": null
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_id": "winrate-top10-20261019",
+  "purpose": "模拟盘检验:ml_prob预测胜率排名选股是否正确(A/B两组天然对照)",
+  "owner_order": "主人令:10只各买500股高挂1%(被护栏截断至+0.5%)现在挂单",
+  "submitted_at": "2026-10-19T07:15-07:16(非交易时段,--owner-override-session,排队待开盘撮合)",
+  "group_A_pure_prediction": {
+    "desc": "纯ml_prob预测排序Top5(无画像/主线条件)",
+    "members": [
+      {"code": "300263", "name": "隆华科技", "ml_prob": 67.2, "limit_price": 8.33, "order_id": "100015682610190715024084862704"},
+      {"code": "000670", "name": "盈方微", "ml_prob": 66.8, "limit_price": 6.01, "order_id": "100015682610190715114084864704"},
+      {"code": "001287", "name": "中电港", "ml_prob": 66.0, "limit_price": 18.98, "order_id": "100015682610190715204084866704"},
+      {"code": "603803", "name": "瑞斯康达", "ml_prob": 66.0, "limit_price": 9.42, "order_id": "100015682610190715294086494704"},
+      {"code": "301500", "name": "飞南资源", "ml_prob": 65.9, "limit_price": 21.33, "order_id": "100015682610190715384086498704"}
+    ],
+    "gauge_group": "R其余",
+    "gauge_hist": {"t20e_avg": 0.42, "t20e_med": -3.22, "win": 40.7},
+    "predict_avg": 66.4
+  },
+  "group_B_zhengge_mainline": {
+    "desc": "A低位横盘组∩主线传媒(方向层20261015)∩ml_prob排序,映射真源l1_member核验",
+    "members": [
+      {"code": "300364", "name": "中文在线", "ml_prob": 55.1, "limit_price": 24.26, "order_id": "1000156826101907164091757408"},
+      {"code": "301102", "name": "兆讯传媒", "ml_prob": 47.4, "limit_price": 9.74, "order_id": "1000156826101907164095145408"},
+      {"code": "601019", "name": "山东出版", "ml_prob": 46.7, "limit_price": 7.10, "order_id": "1000156826101907164095147408"},
+      {"code": "002291", "name": "遥望科技", "ml_prob": 46.2, "limit_price": 5.74, "order_id": "1000156826101907164088096705"},
+      {"code": "300071", "name": "福石控股", "ml_prob": 44.6, "limit_price": 4.02, "order_id": "1000156826101907164084872704"}
+    ],
+    "gauge_group": "A低位横盘",
+    "gauge_hist": {"t20e_avg": -0.11, "t20e_med": -1.44, "win": 43.2, "t1_excess": 0.27},
+    "predict_avg": 48.0
+  },
+  "settlement_protocol": {
+    "entry": "成交均价(fill_confirm_monitor确认后);未成交笔剔除并如实记录",
+    "exit": "成交日+20交易日收盘(qfq)",
+    "win": "退出价>成交均价",
+    "metrics": ["组内胜率", "组均值", "逐笔盈亏"],
+    "compare": "A组(预测66.4%)vs B组(预测48.0%)实现胜率;对照模型校准(ml Top档2026实证46.15%)",
+    "due": "成交日起T+20(约2026-11-14前后)",
+    "runner": "未挂链(待主人批准);手工跑 analysis/winrate_top10_settle_*.py 或人工westock对账"
+  },
+  "caveats": [
+    "挂单价被追价护栏截断至市价+0.5%(主人意图1%):框架R27b类保护无豁免旗",
+    "非交易时段挂单排队,开盘撮合不确定性:高开超限价则不成交",
+    "解禁/双口径/活跃度三闸fail-open未真校验",
+    "样本n=5/组:统计功效低,结论仅方向性参考(MDE≈19pp)"
+  ]
+}

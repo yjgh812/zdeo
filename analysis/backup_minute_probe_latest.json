@@ -1,0 +1,61 @@
+{
+ "ts": "2026-10-09 02:37:02",
+ "samples": {
+  "600519": {
+   "sample": "sh600519",
+   "lc1_latest_date": 20261008,
+   "lc1_bars_on_latest": 240,
+   "pytdx_bars_total": 800,
+   "pytdx_latest_date": 20261008,
+   "gap_days_note": "齐平",
+   "pytdx_bars_on_lc1_latest": 240,
+   "checked_bars": 240,
+   "bad_price": 2,
+   "bad_vol_raw": 2,
+   "vol_ratio_median_raw": 1.0,
+   "detail_bad_sample": [
+    {
+     "time": 1015,
+     "price_maxdiff": 0.09
+    },
+    {
+     "time": 1016,
+     "price_maxdiff": 0.09
+    }
+   ],
+   "verdict": "PASS_NOTE(边界微差)"
+  },
+  "000858": {
+   "sample": "sz000858",
+   "lc1_latest_date": 20261008,
+   "lc1_bars_on_latest": 240,
+   "pytdx_bars_total": 800,
+   "pytdx_latest_date": 20261008,
+   "gap_days_note": "齐平",
+   "pytdx_bars_on_lc1_latest": 240,
+   "checked_bars": 240,
+   "bad_price": 0,
+   "bad_vol_raw": 0,
+   "vol_ratio_median_raw": 1.0,
+   "detail_bad_sample": [],
+   "verdict": "PASS"
+  },
+  "300750": {
+   "sample": "sz300750",
+   "lc1_latest_date": 20261008,
+   "lc1_bars_on_latest": 240,
+   "pytdx_bars_total": 800,
+   "pytdx_latest_date": 20261008,
+   "gap_days_note": "齐平",
+   "pytdx_bars_on_lc1_latest": 240,
+   "checked_bars": 240,
+   "bad_price": 0,
+   "bad_vol_raw": 0,
+   "vol_ratio_median_raw": 1.0,
+   "detail_bad_sample": [],
+   "verdict": "PASS"
+  }
+ },
+ "vol_unit_verdict": "同单位(≈1.00), 无需换算",
+ "verdict": "PASS"
+}

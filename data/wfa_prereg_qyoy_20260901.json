@@ -1,0 +1,56 @@
+{
+  "id": "20260901-qyoy-v1",
+  "ts": "2026-09-01T00:00:00",
+  "object": "单季盈利增速拐点因子(qyoy族) WFA 门禁正式验证 — 预注册",
+  "origin": "000893亚钾国际引擎盲区案例(reports/CASE_ENGINE_BLINDSPOT_000893_20260901.md)；填补bp_ep纯估值引擎的增速维度空白；主人为空白域立项(2026-09-01裁决)",
+  "engine": "tulong_wfa_gate.v1",
+  "combo": [
+    "qyoy"
+  ],
+  "variants_exploratory": [
+    "qy_acc",
+    "qy_turn"
+  ],
+  "factor_definitions_LOCKED": {
+    "cum_eps": "stock_factors_fundamental_pit_v2.ep × ref_close (还原累计披露口径EPS; 000893四期对账分毫不差: 0.4208/0.9358/1.492/1.8309)",
+    "single_eps": "年内差分: Q1(0331)=cum自身; Q2=cum(0630)-cum(0331); Q3=cum(0930)-cum(0630); Q4=cum(1231)-cum(0930); 跨年首期=cum自身; 缺上期累计则NaN",
+    "yoy": "single_eps_t / single_eps_{t-4报告期} - 1; 仅当 report_date_{t-4} == report_date_t - 1年 时有效, 否则NaN",
+    "qyoy": "clip(yoy, -1, 5) — 主变体(预承诺)",
+    "qy_acc": "clip(yoy_t - yoy_{t-1报告期}, -3, 3) — 对照变体",
+    "qy_turn": "single_eps_t - single_eps_{t-4} — 仅当 single_{t-4}<0 且 single_t>0, 否则NaN; 对照变体(事件型)",
+    "pit": "报告期值自 pit_avail_date 起可见(与ep/bp同_carry机制); 同日双报(0430)保留最新report_date, Q4单季信号被Q1覆盖为已知语义",
+    "known_noise": "EPS口径受股本摊薄影响(000893: 2025Q1 EPS同比+382% vs 净利同比+373.5%), 为因子固有属性, 不清洗"
+  },
+  "params": {
+    "train": 500,
+    "test": 60,
+    "fwd": 20,
+    "cost": 0.001,
+    "top_pct": 0.1,
+    "start": "20160104",
+    "end": "20260825"
+  },
+  "lock_note": "end=20260825 遵守oos_lock锁定日20260826(首跑20260829被拦截exit2后合规修正, 未见任何OOS结果); 锁定后段留给A2全新hold-out",
+  "criterion": {
+    "pos_window_rate": 0.6,
+    "mdd": -0.25,
+    "min_folds": 5,
+    "min_oos_months": 12
+  },
+  "trial_budget": 300,
+  "commitment": "仅qyoy(主变体)的PASS允许进入名单评审(仍须过R闸门+名单制); qy_acc/qy_turn仅作对照归档, 禁止事后引用为上线证据(A3); WARN降仓观察; FAIL直接归档证伪, 不调参重试(主人2026-09-01裁决); 引用成绩必须为拼接OOS口径(B2)。",
+  "data_caveats": "v2表2026Q1部分eps=NULL+2026H1个股缺行(TDX cw gpcw占位20字节阻塞), 回测段<=2026-08不受影响; 生产化接入前须先解决该下载阻塞",
+  "status": "completed",
+  "result": {
+    "verdict": "FAIL",
+    "oos": {
+      "cagr": 0.0868,
+      "mdd": -0.3807,
+      "sharpe": 0.353,
+      "total": 1.0174
+    },
+    "pbo": null,
+    "cpcv": null,
+    "ts": "2026-09-01T23:39:01"
+  }
+}

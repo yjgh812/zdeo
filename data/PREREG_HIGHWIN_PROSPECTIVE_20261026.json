@@ -1,0 +1,30 @@
+{
+ "id": "PREREG_HIGHWIN_PROSPECTIVE_20261026",
+ "title": "highwin cohort 前瞻验证 (大概率条件正式规格化, 主人「大概率上涨是选股方向」令)",
+ "declared": "2026-10-26 01:40 (首批样本=当日批次, 入场前冻结)",
+ "discovery_evidence": {
+  "frontier": "winrate_frontier_20261026: train(2020-22) 63.7% → test(2023-26) 71.5%",
+  "sensitivity": "highwin_sensitivity_20261026: 邻域18格全部>=62.4%, 三维单调(深跌/高波/低位→高胜率), 非刀锋=平台效应; m20<=-8%列79.7-85.2%; 部署格取平台中位(保守, 避免角落挑选)"
+ },
+ "rule_frozen": {
+  "spec": "A格(pos250<30,|chg5|<3%,close<=30,非ST,上市>60日,6/0/3剔688) AND vol20>0.45(滞后1日) AND 市场前置20日等权收益<=-5%",
+  "execution": "batch_battle_plan.py --highwin (周六自动, 5只/批, 逆波动率定权, 限价收盘+1%, 止损-8%, 20交易日到点轮出, 三批滚动)",
+  "prospective_window": "20261026起全部实际执行批次(样本#1=20261026批次: 天和防务/航新科技/冠盛股份/中富通/海晨股份)",
+  "event_def": "每批次实际成交股票=1事件(未成交不计); 结局=t20e(20交易日, -8%止损口径)相对入场价收益; 超额基准=同入场日全宇宙等权同口径均值",
+  "ledger": "data/batch_plan_archive/ + executor台账 + qfq真值; 逐批累计于本文件tracking字段"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_n": "前瞻事件数>=30 (约6-8批, 预计2027Q1-Q2达阈)",
+  "G2_win": "前瞻胜率>=55% (历史test 69.4%, 冻结降档留余量)",
+  "G3_excess": "t20e均值超额>=+1.5pp (vs 同日宇宙)",
+  "G4_batch": "负批次率<=60% (历史44%)",
+  "verdict_pass": "全过=升格PROVEN候选(仍须主人裁决入PROVEN_EDGE_SOURCES)",
+  "verdict_fail": "任一不过=--highwin撤旗, 批次回退基础A格口径, 档案登记不入黑名单(条件效应弱化非证伪, 重启须新差分条件)"
+ },
+ "honesty": [
+  "test窗数字(69.4%)本身参与过发现=非纯样本外; 纯样本外=本prereg前瞻窗",
+  "当前m20=-11.1%落在历史m20<=-8%档(82.4%), 但该档数字同为发现窗内观测, 不得作为承诺",
+  "探索性→正式的升格路径: 本prereg前瞻窗全过=有资格谈升格"
+ ],
+ "tracking": []
+}

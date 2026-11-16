@@ -1,0 +1,10 @@
+{
+ "main_only_effect_pp": 3.68,
+ "main_only_ci": [
+  2.33,
+  5.04
+ ],
+ "with_delisted_effect_pp": 4.55,
+ "survivorship_bias_pp": 0.87,
+ "note": "v2 prereg m7债务补正交付; 口径=cd5_t20e对称抽样seed42, 与stage1同规"
+}

@@ -1,0 +1,107 @@
+{
+ "prereg_sha256": "eceac3537bf985e0501d56b286b09c85f16ecec38c8d94ab3ab63e4362ff1238",
+ "window": [
+  20160904,
+  20260910
+ ],
+ "cost": 0.002,
+ "n_events_chase": 294930,
+ "main": {
+  "pairs": 183076,
+  "event_days": 2422,
+  "pull_rate_of_chaseable": 0.6207,
+  "chase_mean": -0.0031817632151622437,
+  "pullback_mean_all": 0.00424981679607891,
+  "pullback_t_day": -2.294083949936588,
+  "delta_pp": 2.646,
+  "t_paired_by_day": 49.07635874065831,
+  "pos_years": 11,
+  "n_years": 11,
+  "gates": {
+   "G1_pullback_abs": false,
+   "G2_delta>=1pp&t>=2": true,
+   "G3_posyears>=6": true,
+   "verdict": "FAIL"
+  }
+ },
+ "s1_win13": {
+  "pairs": 158195,
+  "event_days": 2421,
+  "pull_rate_of_chaseable": 0.5364,
+  "chase_mean": -0.0031817632151622437,
+  "pullback_mean_all": 0.0028018595273669863,
+  "pullback_t_day": -2.7156760385438403,
+  "delta_pp": 2.413,
+  "t_paired_by_day": 47.54494166764092,
+  "pos_years": 11,
+  "n_years": 11,
+  "gates": {
+   "G1_pullback_abs": false,
+   "G2_delta>=1pp&t>=2": true,
+   "G3_posyears>=6": true,
+   "verdict": "FAIL"
+  }
+ },
+ "s2_win110": {
+  "pairs": 210850,
+  "event_days": 2422,
+  "pull_rate_of_chaseable": 0.7149,
+  "chase_mean": -0.0031817632151622437,
+  "pullback_mean_all": 0.004788079679323109,
+  "pullback_t_day": -2.092211305059864,
+  "delta_pp": 2.834,
+  "t_paired_by_day": 50.48297075129117,
+  "pos_years": 11,
+  "n_years": 11,
+  "gates": {
+   "G1_pullback_abs": false,
+   "G2_delta>=1pp&t>=2": true,
+   "G3_posyears>=6": true,
+   "verdict": "FAIL"
+  }
+ },
+ "s3_thr2": {
+  "pairs": 161189,
+  "event_days": 2422,
+  "pull_rate_of_chaseable": 0.5465,
+  "chase_mean": -0.0031817632151622437,
+  "pullback_mean_all": 0.003957378644971508,
+  "pullback_t_day": -2.130868128921293,
+  "delta_pp": 2.519,
+  "t_paired_by_day": 46.2825950695874,
+  "pos_years": 11,
+  "n_years": 11,
+  "gates": {
+   "G1_pullback_abs": false,
+   "G2_delta>=1pp&t>=2": true,
+   "G3_posyears>=6": true,
+   "verdict": "FAIL"
+  }
+ },
+ "s3_thr5": {
+  "pairs": 204269,
+  "event_days": 2423,
+  "pull_rate_of_chaseable": 0.6926,
+  "chase_mean": -0.0031817632151622437,
+  "pullback_mean_all": 0.0045911437755169066,
+  "pullback_t_day": -2.696087349454887,
+  "delta_pp": 2.838,
+  "t_paired_by_day": 52.4204261453775,
+  "pos_years": 11,
+  "n_years": 11,
+  "gates": {
+   "G1_pullback_abs": false,
+   "G2_delta>=1pp&t>=2": true,
+   "G3_posyears>=6": true,
+   "verdict": "FAIL"
+  }
+ },
+ "s4_highpos": {
+  "n_events": 157969,
+  "pairs": 93844,
+  "delta_pp": 2.866,
+  "t_paired_by_day": 45.31761120689697,
+  "chase_mean": -0.007517766883266625,
+  "pullback_mean": 0.000953490182738236
+ }
+}

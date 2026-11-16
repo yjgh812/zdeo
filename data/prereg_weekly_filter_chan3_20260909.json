@@ -1,0 +1,43 @@
+{
+ "id": "20260909-weekly-filter-chan3-v1",
+ "ts": "2026-09-09",
+ "object": "周线强趋势过滤对缠论三买（趋势延续买点）的增量验证 — 预注册（H1证伪后的对偶重启线，主人令『重启』）",
+ "reboot_justification_108": {
+  "引用档案1": "falsified_rules.WEEKLY-FILTER-CHAN12（20260909，指纹75f5775b6d71d8c5）：已证伪=周线MA趋势过滤×buy1/buy2超跌买点（语义错配：强趋势条件把下跌末端买点推向高位回踩区，增量-0.60%~-1.48%全负显著）",
+  "引用档案2": "2016画像普查三买负特征（fwd20约-3.40%/胜率28.6%，见reports画像普查与记忆索引；未立专项falsified档案）——仅作先验对照，非重测裸三买",
+  "条件不同": "①信号类型 buy1/buy2(超跌语义)→buy3(趋势延续语义)，条件与买点由错配改为同向匹配；②检验维度由『大级别过滤有无增量』改为『语义匹配性奖励』（对偶于已实证的错配惩罚）；③对照基线=同窗无过滤buy3(363信号)，非历史普查值"
+ },
+ "hypothesis_LOCKED": {
+  "H2": "周线趋势代理（周收盘>周MA_n 且 周MA_n上行）过滤后的缠论 buy3 信号，相对同窗不套过滤的 buy3（嵌套对照组），fwd20 均值增量显著为正",
+  "weekly_filter": "与 WEEKLY-FILTER-CHAN12 同一实现（merge_asof backward 仅用信号日前已完整周K，无前视）",
+  "signal_engine": "portrait_agent/cache/chan_signals_v2.pkl 确认日口径 type='buy3'",
+  "eligibility": "剔科创(688/689)/北交/次新<60交易日，与上轮完全一致"
+ },
+ "protocol": {
+  "sample_main": "20160101 ~ 20251231（同上轮）",
+  "oos_frozen": "20260101 ~ 20260831 冻结，主检验过闸后才允许运行一次",
+  "horizons": {
+   "main": 20,
+   "aux": [
+    5,
+    10
+   ]
+  },
+  "benchmark": "主口径=嵌套对照（无过滤buy3组）；辅口径=全市场等权日基准",
+  "cost": "主闸毛口径；附录净口径-2x0.1%",
+  "small_sample_honesty": "buy3对照n=363（分年14~83不均），功效有限：t>=2.0判PASS；增量>0且t∈[1.5,2.0)登记observation（挂起待数据积累，不立falsified）；t<1.5或增量<=0立falsified"
+ },
+ "criterion_LOCKED": {
+  "pass": "增量超额(过滤-无过滤)fwd20 Welch t>=2.0 且 两段子样本(2016-2020/2021-2025)方向一致为正（分年闸因样本碎不适用，b23 prereg subperiod先例）",
+  "fail": "任一主条件未达；若增量<=0或t<1.5 -> falsified_rules 登记 WEEKLY-FILTER-CHAN3"
+ },
+ "sensitivity_budget_LOCKED": [
+  "weekly_ma10",
+  "weekly_ma30"
+ ],
+ "anti_piahua": "变体仅限上述2项，跑完未过即关闭；禁止改闸门、禁止追加口径、禁止样本外重跑；禁止以同一样本补集切分替代新假设（H1数据的事后反向切分属数据窥探，明确禁止）",
+ "falsified_path": "未过闸 -> falsified_rules 登记 WEEKLY-FILTER-CHAN3（语义匹配假设亦证伪，则『大级别条件×缠论买点』整族关闭，重启须同时引用WEEKLY-FILTER-CHAN12与本档案）",
+ "promotion_path": "过闸 -> S2B 式影子登记，不直接接生产",
+ "scope": "独立影子研究，零生产影响",
+ "fingerprint": "5ea71e098e9be9fd"
+}

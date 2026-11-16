@@ -1,0 +1,79 @@
+{
+ "n_events": 214,
+ "baseline_immediate": {
+  "n": 175,
+  "win_rate": 41.1,
+  "mean": -0.6,
+  "median": -1.56
+ },
+ "rules": {
+  "A_缩量企稳": {
+   "n": 69,
+   "win_rate": 33.3,
+   "mean": -1.77,
+   "median": -3.36,
+   "full20_n": 5,
+   "on_fly_events": {
+    "n": 19,
+    "win": 84.2,
+    "median": 4.65
+   },
+   "on_right_events": {
+    "n": 50,
+    "win": 14.0,
+    "median": -4.81
+   }
+  },
+  "B_折扣首阳": {
+   "n": 87,
+   "win_rate": 48.3,
+   "mean": 0.42,
+   "median": -0.26,
+   "full20_n": 7,
+   "on_fly_events": {
+    "n": 12,
+    "win": 100.0,
+    "median": 8.53
+   },
+   "on_right_events": {
+    "n": 75,
+    "win": 40.0,
+    "median": -2.27
+   }
+  },
+  "C_放量启动": {
+   "n": 41,
+   "win_rate": 34.1,
+   "mean": -2.54,
+   "median": -3.46,
+   "full20_n": 5,
+   "on_fly_events": {
+    "n": 27,
+    "win": 51.9,
+    "median": 0.45
+   },
+   "on_right_events": {
+    "n": 14,
+    "win": 0.0,
+    "median": -10.41
+   }
+  },
+  "D_T3对照": {
+   "n": 214,
+   "win_rate": 41.6,
+   "mean": -0.94,
+   "median": -2.02,
+   "full20_n": 159,
+   "on_fly_events": {
+    "n": 77,
+    "win": 77.9,
+    "median": 4.77
+   },
+   "on_right_events": {
+    "n": 137,
+    "win": 21.2,
+    "median": -4.49
+   }
+  }
+ }
+}

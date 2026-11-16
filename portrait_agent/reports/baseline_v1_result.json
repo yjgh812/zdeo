@@ -1,0 +1,85 @@
+{
+ "y_short": {
+  "target": "y_short",
+  "n_train": 2115934,
+  "n_test": 262035,
+  "test_dates": "20260424~20260828",
+  "auc_train": 0.7210531001020188,
+  "auc_test": 0.6867080761002117,
+  "auc_gap": 0.03434502400180717,
+  "rankIC_mean": 0.25770154538841666,
+  "rankIC_n_sections": 87,
+  "top20_hit5_mean": 93.39080459770115,
+  "top20_n_sections": 87,
+  "layers": {
+   "主板": {
+    "n": 195841,
+    "rankIC": 0.29094498715514855
+   },
+   "创业板": {
+    "n": 56367,
+    "rankIC": 0.25325207592474946
+   },
+   "科创板": {
+    "n": 9827,
+    "rankIC": 0.3134849499607581
+   }
+  },
+  "feature_importance": {
+   "ret5": 55.0,
+   "amp20": 50.0,
+   "bias20": 27.0,
+   "dist_hi": 14.0,
+   "amt5_amt20": 12.0,
+   "ret20": 9.0,
+   "vol20": 9.0,
+   "ret60": 6.0,
+   "dif_pos60": 4.0,
+   "log_mv": 3.0
+  },
+  "baseline_pass": true,
+  "best_iter": 14
+ },
+ "y_mid": {
+  "target": "y_mid",
+  "n_train": 2084954,
+  "n_test": 255494,
+  "test_dates": "20260403~20260807",
+  "auc_train": 0.7049477227120058,
+  "auc_test": 0.641466967608149,
+  "auc_gap": 0.06348075510385676,
+  "rankIC_mean": 0.009181949322117387,
+  "rankIC_n_sections": 86,
+  "top20_hit5_mean": 94.59302325581395,
+  "top20_n_sections": 86,
+  "layers": {
+   "主板": {
+    "n": 191710,
+    "rankIC": 0.16433187806924623
+   },
+   "创业板": {
+    "n": 54470,
+    "rankIC": 0.22500619437836045
+   },
+   "科创板": {
+    "n": 9314,
+    "rankIC": 0.16921779259375402
+   }
+  },
+  "feature_importance": {
+   "amp20": 23.0,
+   "dif_pos60": 13.0,
+   "dist_hi": 11.0,
+   "dif": 8.0,
+   "bias20": 7.0,
+   "log_mv": 6.0,
+   "ret20": 6.0,
+   "ret60": 6.0,
+   "vol20": 6.0,
+   "amt5_amt20": 4.0
+  },
+  "baseline_pass": false,
+  "best_iter": 7,
+  "prod_kept": "KPI未过, 保留现有生产模型(预置基准)"
+ }
+}

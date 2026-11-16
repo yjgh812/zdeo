@@ -1,0 +1,71 @@
+{
+ "version": "cz1_structure_state_shadow_v1",
+ "asof": "20261029",
+ "prereg": "PREREG_CZ1_FUND_STRUCTURE_STATE_SHADOW",
+ "activation_since": 20261008,
+ "shadow_day": "16/60",
+ "state_dist_all": {
+  "趋势态": 708,
+  "过渡态": 440,
+  "轮动态": 274,
+  "undetermined": 116,
+  "抱团态": 95
+ },
+ "state_dist_last60": {
+  "过渡态": 26,
+  "轮动态": 17,
+  "趋势态": 17
+ },
+ "events": {
+  "n_all": 16775,
+  "n_oos_matured": 54,
+  "n_oos_open": 142,
+  "by_state_ref": {
+   "趋势态": {
+    "n_events": 7913,
+    "n_matured": 7903,
+    "f5_med": 0.52,
+    "f5_win": 0.544
+   },
+   "抱团态": {
+    "n_events": 1312,
+    "n_matured": 1307,
+    "f5_med": 2.67,
+    "f5_win": 0.665
+   },
+   "轮动态": {
+    "n_events": 3257,
+    "n_matured": 3256,
+    "f5_med": 0.79,
+    "f5_win": 0.589
+   },
+   "过渡态": {
+    "n_events": 3448,
+    "n_matured": 3271,
+    "f5_med": 2.7,
+    "f5_win": 0.714
+   },
+   "undetermined": {
+    "n_events": 845,
+    "n_matured": 845,
+    "f5_med": 1.0,
+    "f5_win": 0.595
+   }
+  }
+ },
+ "gates_reading": {
+  "g1_med": null,
+  "g1_win": null,
+  "g2_gap": null,
+  "g3_n": 0,
+  "nonbull_med": -3.1346772119559607,
+  "kill20_med": null
+ },
+ "gate_ac_ref": {
+  "gateA": "开",
+  "gateC": "关",
+  "src": "universe_portrait_brief_20261029.json"
+ },
+ "direction_check": "抱团态f5排名=非第1(过渡态最高) med对照={'趋势态': 0.52, '抱团态': 2.67, '轮动态': 0.79, '过渡态': 2.7}",
+ "boundary": "零交易权纯观测; 板块指数收益非可交易收益; 判定权=主人"
+}

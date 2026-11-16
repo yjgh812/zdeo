@@ -1,0 +1,57 @@
+[
+  {
+    "code": "000911",
+    "name": "*ST广糖",
+    "source": "manual_confirmed",
+    "sector": "农林牧渔",
+    "prev_close": 5.82,
+    "volume": 1500,
+    "budget": 9000,
+    "limit_price": 6.11,
+    "intent": "厄尔尼诺映射效率五股对照实验(主人2026-09-06指令):糖链1:1样本"
+  },
+  {
+    "code": "600737",
+    "name": "中粮糖业",
+    "source": "manual_confirmed",
+    "sector": "食品饮料",
+    "prev_close": 15.61,
+    "volume": 550,
+    "budget": 9000,
+    "limit_price": 16.39,
+    "intent": "厄尔尼诺映射效率五股对照实验(主人2026-09-06指令):糖链对照组"
+  },
+  {
+    "code": "601118",
+    "name": "海南橡胶",
+    "source": "manual_confirmed",
+    "sector": "农林牧渔",
+    "prev_close": 3.79,
+    "volume": 2300,
+    "budget": 9000,
+    "limit_price": 3.98,
+    "intent": "厄尔尼诺映射效率五股对照实验(主人2026-09-06指令):胶链对照组"
+  },
+  {
+    "code": "002637",
+    "name": "赞宇科技",
+    "source": "manual_confirmed",
+    "sector": "基础化工",
+    "prev_close": 12.38,
+    "volume": 700,
+    "budget": 9000,
+    "limit_price": 13.0,
+    "intent": "厄尔尼诺映射效率五股对照实验(主人2026-09-06指令):棕榈油链样本"
+  },
+  {
+    "code": "002011",
+    "name": "盾安环境",
+    "source": "manual_confirmed",
+    "sector": "家用电器",
+    "prev_close": 10.85,
+    "volume": 800,
+    "budget": 9000,
+    "limit_price": 11.39,
+    "intent": "厄尔尼诺映射效率五股对照实验(主人2026-09-06指令):空调链样本"
+  }
+]

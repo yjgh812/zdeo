@@ -1,0 +1,548 @@
+{
+ "updated": "2026-11-02",
+ "rule": "汇报唯一合法组名=standard_name, 禁止截断/缩写/换叫法; 同家族多组汇报时必须附家族区分说明",
+ "decree": {
+  "decree_no": "命名法令2026-01",
+  "effective": "永久",
+  "terms": "禁止截断缩写换叫法; 新增方法先定名后上岗"
+ },
+ "count": 97,
+ "names": [
+  {
+   "source": "ab_freeroute",
+   "standard_name": "AB自由通道",
+   "definition": "白名单自由通道实验（已结束的对照实验）"
+  },
+  {
+   "source": "baya_pattern",
+   "standard_name": "百亚形态验证",
+   "definition": "百亚股份起飞前形态的复制验证批（深跌+低位磨底+量能转暖）"
+  },
+  {
+   "source": "bp_ep",
+   "standard_name": "bp_ep季度核心",
+   "definition": "按便宜程度（股价/净资产）每季度换仓的价值选票"
+  },
+  {
+   "source": "bp_ep_core",
+   "standard_name": "bp_ep核心底仓",
+   "definition": "按股价相对净资产的便宜程度选出的核心底仓（价值投资法：买得便宜是第一道安全垫）"
+  },
+  {
+   "source": "bp_ep_engine",
+   "standard_name": "价值引擎(扩容批)",
+   "definition": "价值引擎(扩容批):按便宜+质量打分的价值选股引擎(扩容批)"
+  },
+  {
+   "source": "bpep_weekly",
+   "standard_name": "bp_ep周滚动(扩容批)",
+   "definition": "bp_ep周滚动(扩容批):便宜且能赚钱的股票每周滚动选优(扩容批)"
+  },
+  {
+   "source": "breakout",
+   "standard_name": "突破共振(扩容批)",
+   "definition": "突破共振(扩容批):放量突破20日新高+当天上涨才买,突破才算数(扩容批)"
+  },
+  {
+   "source": "breakout_ab_A",
+   "standard_name": "无共振突破对照",
+   "definition": "突破实验A组：同样突破条件但不管行业——用来对照'看行业'有没有用"
+  },
+  {
+   "source": "breakout_mainline",
+   "standard_name": "突破共振",
+   "definition": "突破+主线共振：创20日新高+放量+行业强于大盘"
+  },
+  {
+   "source": "combo_c_rerun",
+   "standard_name": "组合C抄底复刻",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "dibo",
+   "standard_name": "低波修复(扩容批)",
+   "definition": "低波修复(扩容批):波动最小的股票里挑20天动量刚转正的,稳中带升(扩容批)"
+  },
+  {
+   "source": "dip_probe",
+   "standard_name": "探底试仓(退役)",
+   "definition": "（已退役）探底试仓策略"
+  },
+  {
+   "source": "dragon_r3",
+   "standard_name": "龙三",
+   "definition": "龙头股第三板打法"
+  },
+  {
+   "source": "early_board",
+   "standard_name": "早盘板",
+   "definition": "早盘涨停板策略"
+  },
+  {
+   "source": "early_board_r1",
+   "standard_name": "早盘板R1",
+   "definition": "早盘涨停板策略（R1改进版）"
+  },
+  {
+   "source": "early_single_unregistered",
+   "standard_name": "早期未登记批",
+   "definition": "最早期的单笔买入（当时还没有自动登记）"
+  },
+  {
+   "source": "elnino_rerun",
+   "standard_name": "厄尔尼诺映射实验第二轮",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "f_arm_replica",
+   "standard_name": "对垒法复刻(估值修复侧)",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "forward_queue_top3",
+   "standard_name": "前瞻队列胜率Top3",
+   "definition": "前瞻队列胜率Top3: 10/22前瞻队列首笔——每只票算它自己历史上买入后20天的上涨频率, 选最会涨的3只(华夏银行/江苏有线/第一创业)"
+  },
+  {
+   "source": "fresh_screen",
+   "standard_name": "新鲜筛选(退役)",
+   "definition": "（已退役）新鲜筛选策略"
+  },
+  {
+   "source": "full_market",
+   "standard_name": "全市场通道",
+   "definition": "全市场扫描通道"
+  },
+  {
+   "source": "gap_up",
+   "standard_name": "缺口跳空(退役)",
+   "definition": "（已退役）缺口跳空策略"
+  },
+  {
+   "source": "halfmonth_arm_s",
+   "standard_name": "半月实验ArmS",
+   "definition": "半月实验ArmS: 10/26五只实验票(亚星锚链/中光学/展鹏科技/四创电子/中船防务), T+10交卷制——今日止损大头在此组"
+  },
+  {
+   "source": "highwin_rescan",
+   "standard_name": "HIGHWIN复现(横盘带×高胜率)",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "hotspot_breakout",
+   "standard_name": "热点突破(已判死)",
+   "definition": "（已判死）热点突破策略——历史证伪"
+  },
+  {
+   "source": "industry",
+   "standard_name": "行业动量(扩容批)",
+   "definition": "行业动量(扩容批):20天最强行业里的龙头公司(扩容批)"
+  },
+  {
+   "source": "legacy_writeoff",
+   "standard_name": "挂账核销批",
+   "definition": "挂账核销批: 历史挂账票的核销回购(健康元/浦发银行), 盈利组+7.55%"
+  },
+  {
+   "source": "limit_continuation",
+   "standard_name": "涨停次日(退役)",
+   "definition": "（已退役）涨停次日策略"
+  },
+  {
+   "source": "low_open",
+   "standard_name": "低开(退役)",
+   "definition": "（已退役）低开策略"
+  },
+  {
+   "source": "lowconsol_batch",
+   "standard_name": "低位横盘批",
+   "definition": "每周六自动生成的批次：日线初选→K线剔坏形态→60分钟死叉不买，三关全过才入选"
+  },
+  {
+   "source": "mainline_direction",
+   "standard_name": "主线方向法",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "mainline_radar",
+   "standard_name": "主线雷达",
+   "definition": "主线雷达：追踪市场当前最热主线的票"
+  },
+  {
+   "source": "mainline_startup",
+   "standard_name": "低位启动六层漏斗(观察退役)",
+   "definition": "（观察退役）低位启动六层漏斗"
+  },
+  {
+   "source": "manual_confirmed",
+   "standard_name": "手动确认批",
+   "definition": "早期人工确认买入的单"
+  },
+  {
+   "source": "manual_master_app_backfill",
+   "standard_name": "主人App手动补录",
+   "definition": "主人在手机App手动下单后补登记的"
+  },
+  {
+   "source": "manxian",
+   "standard_name": "满弦蓄势(扩容批)",
+   "definition": "满弦蓄势(扩容批):位置低+横盘缩量+均线走平的多条件蓄势票,满弦待发(扩容批)"
+  },
+  {
+   "source": "mass_scan",
+   "standard_name": "多源股票池扫描",
+   "definition": "多个数据源混合扫描出的票"
+  },
+  {
+   "source": "master_hist",
+   "standard_name": "MASTER/HIST模型",
+   "definition": "AI深度模型（MASTER/HIST）预测未来要涨的票"
+  },
+  {
+   "source": "method_picks",
+   "standard_name": "方法精选(六法Top3)",
+   "definition": "方法精选：每种选股方法挑胜率前3的票"
+  },
+  {
+   "source": "ml_signal",
+   "standard_name": "ML胜率排名",
+   "definition": "机器学习按预测胜率排名选票"
+  },
+  {
+   "source": "ml_winrate_replica",
+   "standard_name": "ML胜率排名复刻",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "multi_whitelist",
+   "standard_name": "多源白名单批",
+   "definition": "多源白名单批: 多个选股源共同命中的白名单票(巴比食品)"
+  },
+  {
+   "source": "pattern_match",
+   "standard_name": "形态匹配",
+   "definition": "K线形态匹配：找历史上看涨形态正在重现的票"
+  },
+  {
+   "source": "prescreen_breakout10",
+   "standard_name": "盘前底部放量突破十条件复刻",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "quant_rank_original",
+   "standard_name": "量化综合排名第一(原版·池内历史战绩裁决)",
+   "definition": "量化综合排名第一(原版):先按当天强势板块(复盘·行业层)圈候选池,池内每只算「近120天任意买入持20天」的历史战绩,期望最高者第一;入选后再过复盘对齐标注(主线/市场相位)+消息面验证(立案/退市/暴雷等硬雷直接否决,减持等软雷警告呈报)——四段管线,工具在analysis/evrank_original_20261021/"
+  },
+  {
+   "source": "quant_rank_rebuild",
+   "standard_name": "量化综合排名第一(重建版)",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "revival_ampA_3f",
+   "standard_name": "复活·振幅A三因子",
+   "definition": "复活实验·振幅A三因子：振幅+便宜+净资产三条件组合"
+  },
+  {
+   "source": "revival_amp_a",
+   "standard_name": "复活·振幅A",
+   "definition": "复活实验·振幅A：每日波动幅度里藏着规律的票"
+  },
+  {
+   "source": "revival_amp_b",
+   "standard_name": "复活·振幅B",
+   "definition": "复活实验·振幅B：振幅规律的另一种算法（数值越低越好）"
+  },
+  {
+   "source": "revival_anom118",
+   "standard_name": "复活·118异象",
+   "definition": "复活实验·118异象：学术界118种'异常收益'特征等权打分"
+  },
+  {
+   "source": "revival_bpep_weekly",
+   "standard_name": "复活·bp_ep周滚动",
+   "definition": "复活实验·便宜度周滚动：每周按股价/净资产换仓，票面基本是股价≈净资产的银行股等"
+  },
+  {
+   "source": "revival_chan",
+   "standard_name": "复活·缠论二买",
+   "definition": "复活实验·缠论二买：技术分析里'回调后的第二买点'"
+  },
+  {
+   "source": "revival_composite",
+   "standard_name": "复活·综合分",
+   "definition": "复活实验·综合分：多种信号加权打一个总分"
+  },
+  {
+   "source": "revival_dazhan",
+   "standard_name": "复活·大涨(打板)",
+   "definition": "复活实验·大涨打板：昨天大涨的票今天继续冲"
+  },
+  {
+   "source": "revival_dbd_gru",
+   "standard_name": "复活·DBD-GRU",
+   "definition": "复活实验·AI分钟数据预测（GRU神经网络）"
+  },
+  {
+   "source": "revival_dibo",
+   "standard_name": "复活·低波",
+   "definition": "复活实验·低波：波动最小的稳定票"
+  },
+  {
+   "source": "revival_dikai",
+   "standard_name": "复活·低开",
+   "definition": "复活实验·低开：低开后博反弹"
+  },
+  {
+   "source": "revival_gapup",
+   "standard_name": "复活·跳空缺口",
+   "definition": "复活实验·跳空缺口：高开跳空留下的缺口回补打法"
+  },
+  {
+   "source": "revival_hy_tail",
+   "standard_name": "复活·行业动量尾部",
+   "definition": "复活实验·行业动量尾部：强行业里排名靠后但便宜的票"
+  },
+  {
+   "source": "revival_hydl",
+   "standard_name": "复活·行业动量",
+   "definition": "复活实验·行业动量：跟着最强行业走的票"
+  },
+  {
+   "source": "revival_icir_sue",
+   "standard_name": "复活·ICIR含SUE",
+   "definition": "复活实验·业绩惊喜：最近财报比预期好的票+便宜加权"
+  },
+  {
+   "source": "revival_kronos_ft",
+   "standard_name": "复活·Kronos微调",
+   "definition": "复活实验·时序大模型预测（缺件暂停）"
+  },
+  {
+   "source": "revival_lianban",
+   "standard_name": "复活·连板",
+   "definition": "复活实验·连板：连续涨停的强势票"
+  },
+  {
+   "source": "revival_lstm",
+   "standard_name": "复活·LSTM",
+   "definition": "复活实验·AI长短期记忆网络预测"
+  },
+  {
+   "source": "revival_master_hist",
+   "standard_name": "复活·MASTER/HIST",
+   "definition": "复活实验·AI深度模型预测"
+  },
+  {
+   "source": "revival_momentum",
+   "standard_name": "复活·动量集成",
+   "definition": "复活实验·动量集成：多路动量信号合议"
+  },
+  {
+   "source": "revival_mvp_fusion",
+   "standard_name": "复活·MVP融合",
+   "definition": "复活实验·MVP融合模型"
+  },
+  {
+   "source": "revival_p2",
+   "standard_name": "复活·P2信号",
+   "definition": "复活实验·P2概率信号"
+  },
+  {
+   "source": "revival_rl",
+   "standard_name": "复活·强化学习",
+   "definition": "复活实验·强化学习预测"
+  },
+  {
+   "source": "revival_shendu",
+   "standard_name": "复活·深度价值",
+   "definition": "复活实验·深度价值：跌到比净资产还便宜的价值票"
+  },
+  {
+   "source": "revival_t1seal",
+   "standard_name": "复活·首板封板",
+   "definition": "复活实验·首板封板：第一个涨停封死的票"
+  },
+  {
+   "source": "revival_tandi",
+   "standard_name": "复活·探底缩量企稳",
+   "definition": "复活实验·探底企稳：跌到位后缩量止跌的票（不跌了才算数）"
+  },
+  {
+   "source": "revival_v51_fusion",
+   "standard_name": "复活·V5.1融合",
+   "definition": "复活实验·V5.1融合模型"
+  },
+  {
+   "source": "revival_v52_weekly",
+   "standard_name": "复活·v52周批",
+   "definition": "复活实验·深跌启动周批：深跌25%+刚启动+低位+量价配合"
+  },
+  {
+   "source": "revival_v8_3dir",
+   "standard_name": "复活·V8三方向",
+   "definition": "复活实验·V8三方向模型"
+  },
+  {
+   "source": "revival_xushi_res9",
+   "standard_name": "蓄势右侧确认",
+   "definition": "蓄势右侧确认：蓄势后向右突破确认了才买"
+  },
+  {
+   "source": "shuangyou",
+   "standard_name": "蓄势双优(扩容批)",
+   "definition": "蓄势双优(扩容批):满弦池里双条件都优秀的票(扩容批)"
+  },
+  {
+   "source": "smc_s2_roe",
+   "standard_name": "SMC聪明钱(前视退役)",
+   "definition": "（已退役）聪明钱策略——曾带前视偏差"
+  },
+  {
+   "source": "sold_rebuy_deep8",
+   "standard_name": "深贴回补",
+   "definition": "自己卖掉的票深跌8%后买回来的实验"
+  },
+  {
+   "source": "starter",
+   "standard_name": "低位启动(扩容批)",
+   "definition": "低位启动(扩容批):在一年低位、当天涨2%-5.5%刚启动的票,启动第一天上车(扩容批)"
+  },
+  {
+   "source": "swing_bos_bull",
+   "standard_name": "摆动破局BOS",
+   "definition": "摆动破局：突破盘整结构的票（多头版）"
+  },
+  {
+   "source": "swing_dip_env",
+   "standard_name": "深潜(环境开关)",
+   "definition": "深潜实验：深跌后+大盘环境允许时才进场"
+  },
+  {
+   "source": "t1_sealed",
+   "standard_name": "首板封板(退役)",
+   "definition": "（已退役）首板封板策略"
+  },
+  {
+   "source": "tandi",
+   "standard_name": "探底缩量企稳(扩容批)",
+   "definition": "探底缩量企稳(扩容批):连跌15%以上后当天收阳且缩量,等止跌企稳的低吸法(扩容批=盈利方法扩充到10只的新票)"
+  },
+  {
+   "source": "tracking_pool_0826",
+   "standard_name": "跟踪池0826重扫",
+   "definition": "(定义待补)"
+  },
+  {
+   "source": "trend_following",
+   "standard_name": "跟随趋势(退役)",
+   "definition": "（已退役）跟随趋势策略"
+  },
+  {
+   "source": "turnover_mvp",
+   "standard_name": "换手率最小方差MVP",
+   "definition": "按换手率稳定度挑出来的票（谁家交易活跃但不疯，选谁）"
+  },
+  {
+   "source": "type_sample_B_oversold",
+   "standard_name": "超跌探底样本臂",
+   "definition": "超跌探底样本臂：跌得最深的一批，赌探底反弹"
+  },
+  {
+   "source": "type_sample_C_starter",
+   "standard_name": "低位启动样本臂",
+   "definition": "低位启动样本臂：长期低位刚放量起涨"
+  },
+  {
+   "source": "type_sample_D_control",
+   "standard_name": "中枢对照样本臂",
+   "definition": "中枢对照样本臂：不上不下的横盘股，作参照对照用"
+  },
+  {
+   "source": "type_sample_F_driver",
+   "standard_name": "驱动力对垒样本臂",
+   "definition": "驱动力对垒样本臂：按上涨原因（业绩/资金等）各选代表同场竞技"
+  },
+  {
+   "source": "universe",
+   "standard_name": "全市场宇宙层",
+   "definition": "全市场初筛层（资格池，不算独立策略）"
+  },
+  {
+   "source": "upprob_ab",
+   "standard_name": "上涨概率实验(已退役)",
+   "definition": "（已退役）上涨概率实验——负结论终结"
+  },
+  {
+   "source": "v52_select",
+   "standard_name": "v5.2深跌启动扫描",
+   "definition": "深跌25%以上后刚出现启动迹象的票（5.2版规则）"
+  },
+  {
+   "source": "weak_phase_pool",
+   "standard_name": "前瞻队列弱势相位池",
+   "definition": "前瞻队列弱势相位池: 10/26弱势市场里的低吸实验批(航天发展/航天电子)"
+  },
+  {
+   "source": "xushi_manxian",
+   "standard_name": "满弦蓄势",
+   "definition": "满弦蓄势：横盘蓄力像拉满的弓，等放量突破"
+  },
+  {
+   "source": "xushi_shuangyou",
+   "standard_name": "蓄势双优",
+   "definition": "蓄势双优：蓄势形态里量和价都优的票"
+  }
+ ],
+ "similar_families": {
+  "量化综合排名第一": [
+   "量化综合排名第一(原版·池内历史战绩裁决)",
+   "量化综合排名第一(重建版)"
+  ],
+  "bp_ep价值家族": [
+   "bp_ep核心底仓",
+   "价值引擎(扩容批)",
+   "bp_ep周滚动(扩容批)",
+   "复活·bp_ep周滚动",
+   "复活·深度价值",
+   "【区分】同宗的'便宜+质量'价值选股, 区别只在选股周期与代际: 核心底仓=季度核心仓; 价值引擎(扩容批)=当日扩容批; bp_ep周滚动(扩容批)=本周扩容批; 复活·bp_ep周滚动=老周批; 复活·深度价值=老深度批"
+  ],
+  "突破家族": [
+   "突破共振",
+   "突破共振(扩容批)",
+   "无共振突破对照",
+   "盘前底部放量突破十条件复刻",
+   "【区分】都买'突破'形态: 突破共振=老批(创20日新高+行业共振); (扩容批)=今日扩容新票; 无共振突破对照=不看行业的对照实验组; 盘前十条件=9/2盘前十大条件复刻"
+  ],
+  "蓄势家族": [
+   "满弦蓄势",
+   "满弦蓄势(扩容批)",
+   "蓄势双优",
+   "蓄势双优(扩容批)",
+   "蓄势右侧确认",
+   "【区分】都是'横盘蓄势待突破': 满弦蓄势=老批; (扩容批)=新票; 蓄势双优=满弦池里量价双优子集; (扩容批)=新票; 蓄势右侧确认=向右突破确认后才买"
+  ],
+  "探底低吸家族": [
+   "复活·探底缩量企稳",
+   "探底缩量企稳(扩容批)",
+   "超跌探底样本臂",
+   "组合C抄底复刻",
+   "【区分】都买'跌透了'的票: 复活·探底=10/28复活批(澳洋健康+50%所在); (扩容批)=今日扩容新票; 超跌探底样本臂=跌最深样本; 组合C抄底=深跌磨底+量能转暖"
+  ],
+  "ML家族": [
+   "ML胜率排名",
+   "ML胜率排名复刻",
+   "【区分】ML胜率排名=老批(外部App名单); ML胜率排名复刻=系统自建复刻版(脱离App依赖)"
+  ],
+  "量化排名第一家族": [
+   "量化综合排名第一(原版·池内历史战绩裁决)",
+   "量化综合排名第一(重建版)",
+   "【区分】原版=10/21建行用的池内历史战绩裁决(主人令已找回); 重建版=口径混淆的全市场扫描版(已搁置禁用)"
+  ],
+  "银行价值易混组": [
+   "手动确认批",
+   "主人App手动补录",
+   "【区分】手动确认批=会话内主人令买入(建行+10%在此); 主人App手动补录=主人手机App直接下单(奥飞娱乐-10.65%在此)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "surgery_date": "2026-10-28",
+ "snapshot_type": "targeted(方案C)",
+ "files": {
+  "A_stock_financial_slice": {
+   "rows": 21795,
+   "md5": "aa79e8fd1001f5baac9858c77b350069"
+  },
+  "B_cross_section_20261027": {
+   "rows": 5542,
+   "md5": "0ce7772395b72fbb1eee052e68dbd3c4"
+  }
+ },
+ "rollback_recipes": [
+  {
+   "surgery": "S3 v2四列加列+重算",
+   "rollback": "ALTER TABLE stock_factors_fundamental DROP COLUMN sp_v2/lev_v2/ato_v2/pm_v2 (SQLite 3.35+)",
+   "regenerate": "python analysis/pit_factor_v2_backfill_20261028.py (幂等再生成)"
+  },
+  {
+   "surgery": "S2 sp补空重算",
+   "rollback": "update stock_factors_fundamental set sp=null where report_date in (20260331,20260630,20260930) and created_at<'2026-10-28' (重算仅填空, 旧行 created_at 未动)",
+   "regenerate": "python analysis/pit_fundamental_backfill_20261028.py (幂等再生成)"
+  },
+  {
+   "surgery": "S1 stock_financial 回填",
+   "rollback": "恢复=快照文件A逆向(将回填值置回 NULL; 回填前 Q1 rev_ttm=1509/Q2=0)",
+   "regenerate": "python analysis/pit_fundamental_backfill_20261028.py"
+  }
+ ],
+ "note": "定向快照(方案C)≠全量备份; 全量备份处主人2026-10-18暂停令下(恢复=删 backups/.backup_paused)"
+}

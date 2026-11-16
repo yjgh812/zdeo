@@ -1,0 +1,12 @@
+{
+  "id": "20260831-bpep-style-filter-trendup",
+  "ts": "2026-08-31T01:55:00",
+  "object": "P1 风格暴露管理：bp+ep 在 trend_up（成长/上行 regime）降半仓。假设 = 低估值风格在指数上行期（MA120上方+五日斜率>0）相对劣势，降仓 0.5 可改善组合；触发条件预先定义（get_market_regime_v2 == trend_up），禁用逐年结果反推阈值。",
+  "engine": "tulong_backtest_full_report (研究层对比, 非WFA因子门禁)",
+  "combo": ["bp_ep_core"],
+  "params": {"start": "20160101", "end": "20260828", "freq": "monthly", "top20": 20, "style_scale": 0.5, "regime": "trend_up"},
+  "criterion": {"commitment": "对比仅报告纯 bp+ep vs trend_up降半仓两腿：总收益/最大回撤/逐年超额。结论四类：①总收益不显著恶化且成长年(2020/2025/2026)超额改善→上报主人裁决是否正式立项(wfa_gate新指纹)；②总收益显著恶化→不立项；③成长年无改善→不立项；④结论以全周期为准，禁用选年挑结果。"},
+  "trial_budget": 1,
+  "commitment": "本prereg为研究层对比声明，未预判结论；任何基于本对比的正式立项必须先走 wfa_gate 新指纹预注册（铁律8）。",
+  "status": "pending"
+}

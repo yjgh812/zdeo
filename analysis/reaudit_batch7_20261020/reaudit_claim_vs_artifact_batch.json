@@ -1,0 +1,151 @@
+{
+ "items": [
+  {
+   "id": "PEAD-PREG",
+   "artifact": "attribution/pead_prereg_result_20260917.json",
+   "status": "artifact_ok",
+   "size_chars": 809,
+   "claimed_numbers": [
+    "51.2",
+    "-4.49",
+    "39.4",
+    "1.413",
+    "-2.64",
+    "24.8",
+    "-0.46"
+   ],
+   "numbers_found_in_artifact": [
+    "51.2",
+    "-4.49",
+    "39.4",
+    "1.413",
+    "-2.64",
+    "24.8",
+    "-0.46"
+   ],
+   "coverage": "7/7"
+  },
+  {
+   "id": "SELECTION-CHECKLIST",
+   "artifact": "attribution\\selection_checklist_eval_20260917.json",
+   "status": "artifact_ok",
+   "size_chars": 908,
+   "claimed_numbers": [
+    "0.360",
+    "0.094",
+    "-0.074",
+    "-0.361",
+    "-0.63",
+    "0.72",
+    "1.0",
+    "-0.089"
+   ],
+   "numbers_found_in_artifact": [
+    "0.094",
+    "-0.074",
+    "-0.361",
+    "-0.63",
+    "-0.089"
+   ],
+   "coverage": "5/8"
+  },
+  {
+   "id": "TIMING-CONDMATRIX-STAGE1",
+   "artifact": "data/timing_condmatrix_v1_results_20260914.json",
+   "status": "artifact_ok",
+   "size_chars": 1661,
+   "claimed_numbers": [
+    "0.899",
+    "0.730",
+    "-0.169",
+    "1.0",
+    "-0.66",
+    "0.759",
+    "0.590",
+    "1.109"
+   ],
+   "numbers_found_in_artifact": [
+    "0.899",
+    "-0.169",
+    "-0.66",
+    "0.759",
+    "1.109"
+   ],
+   "coverage": "5/8"
+  },
+  {
+   "id": "PORTRAIT-REGIME-GATE",
+   "artifact": "attribution\\portrait_regime_gate_20260915.json",
+   "status": "artifact_ok",
+   "size_chars": 1627,
+   "claimed_numbers": [
+    "-0.46",
+    "-1.08",
+    "7.97",
+    "7.75",
+    "-8.44",
+    "-6.38",
+    "-0.25",
+    "7.74"
+   ],
+   "numbers_found_in_artifact": [
+    "-0.46",
+    "-1.08",
+    "7.97",
+    "-6.38",
+    "7.74"
+   ],
+   "coverage": "5/8"
+  },
+  {
+   "id": "CHIP-MANUAL-3GATE",
+   "artifact": "reports\\CHIP_MANUAL_3GATE_V13_RESULT_20260905.json",
+   "status": "artifact_ok",
+   "size_chars": 21545,
+   "claimed_numbers": [
+    "1.3",
+    "-0.0430",
+    "-3.31",
+    "-3.24",
+    "0.000",
+    "-0.0644",
+    "-0.0513",
+    "-4.01"
+   ],
+   "numbers_found_in_artifact": [
+    "1.3",
+    "-3.31",
+    "-3.24",
+    "0.000",
+    "-0.0644",
+    "-0.0513",
+    "-4.01"
+   ],
+   "coverage": "7/8"
+  },
+  {
+   "id": "SKILL-SWEEP-STAGE1",
+   "artifact": "_cache/skill_sweep_20260904.json",
+   "status": "artifact_ok",
+   "size_chars": 4997,
+   "claimed_numbers": [
+    "52.03",
+    "51.20",
+    "3.85",
+    "0.11",
+    "4.03",
+    "-2.08",
+    "2.56",
+    "3.89"
+   ],
+   "numbers_found_in_artifact": [
+    "3.85",
+    "4.03",
+    "-2.08",
+    "2.56",
+    "3.89"
+   ],
+   "coverage": "5/8"
+  }
+ ]
+}

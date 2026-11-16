@@ -1,0 +1,141 @@
+{
+ "results": [
+  {
+   "code": "600320",
+   "name": "振华重工",
+   "daily_wave": "dn",
+   "daily_ma20": true,
+   "m60_struct": "B3二次探底",
+   "m60_pass": true,
+   "m60_region": [
+    4.06,
+    4.27
+   ],
+   "m60_reason": "60分二次探底缩量不破+阳线",
+   "final_pass": false,
+   "price": 4.27,
+   "limit": 4.27
+  },
+  {
+   "code": "603697",
+   "name": "有友食品",
+   "daily_wave": "up",
+   "daily_ma20": false,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "日线方向闸未开(≤MA20或MA20下行)",
+   "final_pass": false,
+   "price": 9.43,
+   "limit": 9.71
+  },
+  {
+   "code": "600098",
+   "name": "广州发展",
+   "daily_wave": "dn",
+   "daily_ma20": true,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "60分无介入结构(等待)",
+   "final_pass": false,
+   "price": 6.48,
+   "limit": 6.67
+  },
+  {
+   "code": "600688",
+   "name": "上海石化",
+   "daily_wave": "up",
+   "daily_ma20": false,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "日线方向闸未开(≤MA20或MA20下行)",
+   "final_pass": false,
+   "price": 2.8,
+   "limit": 2.88
+  },
+  {
+   "code": "601577",
+   "name": "长沙银行",
+   "daily_wave": "dn",
+   "daily_ma20": true,
+   "m60_struct": "B3二次探底",
+   "m60_pass": true,
+   "m60_region": [
+    9.48,
+    9.78
+   ],
+   "m60_reason": "60分二次探底缩量不破+阳线",
+   "final_pass": false,
+   "price": 9.78,
+   "limit": 9.78
+  },
+  {
+   "code": "600023",
+   "name": "浙能电力",
+   "daily_wave": "up",
+   "daily_ma20": false,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "日线方向闸未开(≤MA20或MA20下行)",
+   "final_pass": false,
+   "price": 5.2,
+   "limit": 5.36
+  },
+  {
+   "code": "601156",
+   "name": "东航物流",
+   "daily_wave": "up",
+   "daily_ma20": true,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "60分无介入结构(等待)",
+   "final_pass": false,
+   "price": 18.22,
+   "limit": 18.77
+  },
+  {
+   "code": "600926",
+   "name": "杭州银行",
+   "daily_wave": "up",
+   "daily_ma20": true,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "60分无介入结构(等待)",
+   "final_pass": false,
+   "price": 17.09,
+   "limit": 17.6
+  },
+  {
+   "code": "002534",
+   "name": "西子洁能",
+   "daily_wave": "up",
+   "daily_ma20": false,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "日线方向闸未开(≤MA20或MA20下行)",
+   "final_pass": false,
+   "price": 15.4,
+   "limit": 15.86
+  },
+  {
+   "code": "600078",
+   "name": "澄星股份",
+   "daily_wave": "dn",
+   "daily_ma20": false,
+   "m60_struct": "",
+   "m60_pass": false,
+   "m60_region": null,
+   "m60_reason": "日线方向闸未开(≤MA20或MA20下行)",
+   "final_pass": false,
+   "price": 9.42,
+   "limit": 9.7
+  }
+ ],
+ "passed": []
+}

@@ -1,0 +1,124 @@
+--- archive/tulong_daily_update.py.bak_20260815_preS11PIT	2026-08-15 21:06:10.854625600 +0800
++++ /d/workbuddyspace/tulong_daily_update.py	2026-08-15 21:06:48.475702500 +0800
+@@ -684,23 +684,41 @@
+ 
+     log(f"信号滞后: {max_signal_date} → {max_factor_date}")
+ 
++    # ── PIT修复(20260815): 加列迁移(幂等), 口径同Phase4 ──
++    #   stock_financial.pit_avail_date = 法定披露截止日(新行/历史行都填, 旧列不动)
++    #   stock_signals.s11_pit = PIT版财务排雷(平行新增, 历史行由 backfill_s11_pit_20260815.py 回填)
++    fin_cols = [r[1] for r in c.execute("PRAGMA table_info(stock_financial)")]
++    if "pit_avail_date" not in fin_cols:
++        c.execute("ALTER TABLE stock_financial ADD COLUMN pit_avail_date INTEGER")
++        c.execute(_FIN_PIT_BACKFILL_SQL +
++                  " WHERE pit_avail_date IS NULL")
++        conn.commit()
++        log("schema迁移: stock_financial 新增列 pit_avail_date 并回填(旧列语义不变)", "OK")
++    sig_cols = [r[1] for r in c.execute("PRAGMA table_info(stock_signals)")]
++    if "s11_pit" not in sig_cols:
++        c.execute("ALTER TABLE stock_signals ADD COLUMN s11_pit REAL")
++        conn.commit()
++        log("schema迁移: stock_signals 新增列 s11_pit(旧s11_financial不动)", "OK")
++
+     # 预加载财务数据
+     log("预加载财务数据...")
+     finance_by_code = {}
+     try:
+         c.execute("""
+-            SELECT code, report_date, roe, pe, pb, debt_ratio, revenue_growth, profit_growth
++            SELECT code, report_date, pit_avail_date, roe, pe, pb, debt_ratio, revenue_growth, profit_growth
+             FROM stock_financial
+             WHERE roe IS NOT NULL OR pe IS NOT NULL OR pb IS NOT NULL
+         """)
+         for row in c.fetchall():
+-            code, rd, roe, pe, pb, dr, rg, pg = row
++            code, rd, pit_ad, roe, pe, pb, dr, rg, pg = row
+             rd_int = int(rd) if rd is not None else None
+             if rd_int is None:
+                 continue
++            # PIT(20260815): 列缺失/漏填时按法定截止映射兜底, 不改变旧口径读取
++            pit_int = int(pit_ad) if pit_ad is not None else pit_avail_date_of(rd_int)
+             if code not in finance_by_code:
+                 finance_by_code[code] = []
+-            finance_by_code[code].append((rd_int, roe, pe, pb, dr, rg, pg))
++            finance_by_code[code].append((rd_int, pit_int, roe, pe, pb, dr, rg, pg))
+         for code in finance_by_code:
+             finance_by_code[code].sort(key=lambda x: x[0])
+         log(f"  加载 {len(finance_by_code)} 只")
+@@ -739,8 +757,8 @@
+     (code, date, s1_sentiment, s2_auction, s3_momentum, s4_macd, s5_kdj,
+      s6_boll, s7_volume, s8_volatility, s9_ma, s10_leader, s11_financial,
+      s12_weak_strong, s13_capital, s14_sector, s15_risk, s16_oversold,
+-     composite_score, ai_prob_5d, ai_prob_20d, ai_prob_120d)
+-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
++     composite_score, ai_prob_5d, ai_prob_20d, ai_prob_120d, s11_pit)
++    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     """
+ 
+     BATCH_SIZE = 10000
+@@ -803,11 +821,12 @@
+                 s16 = 0
+ 
+             s11 = 0
++            s11_pit = 0   # PIT(20260815): 平行新增, 不参与composite(旧消费方零影响)
+             if code in finance_by_code:
+                 arr = finance_by_code[code]
+                 idx = bisect.bisect_right([x[0] for x in arr], int(date)) - 1
+                 if idx >= 0:
+-                    _, roe, pe, pb, dr, rg, pg = arr[idx]
++                    _, _, roe, pe, pb, dr, rg, pg = arr[idx]
+                     score = 0
+                     if roe is not None and roe > 15: score += 0.3
+                     elif roe is not None and roe > 8: score += 0.15
+@@ -820,6 +839,23 @@
+                     if pg is not None and pg > 20: score += 0.15
+                     if dr is not None and 0 < dr < 60: score += 0.1
+                     s11 = max(-1, min(1, score))
++                # PIT(20260815): 按法定披露截止日 as-of(打分规则与旧s11逐条相同,
++                # 仅as-of键从 report_date 换成 pit_avail_date), 披露截止前不得使用该期
++                idx_pit = bisect.bisect_right([x[1] for x in arr], int(date)) - 1
++                if idx_pit >= 0:
++                    _, _, roe, pe, pb, dr, rg, pg = arr[idx_pit]
++                    score = 0
++                    if roe is not None and roe > 15: score += 0.3
++                    elif roe is not None and roe > 8: score += 0.15
++                    elif roe is not None and roe < 0: score -= 0.3
++                    if pe is not None and 5 <= pe <= 30: score += 0.25
++                    elif pe is not None and pe > 100: score -= 0.2
++                    if pb is not None and 0 < pb < 3: score += 0.2
++                    elif pb is not None and pb > 10: score -= 0.15
++                    if rg is not None and rg > 20: score += 0.15
++                    if pg is not None and pg > 20: score += 0.15
++                    if dr is not None and 0 < dr < 60: score += 0.1
++                    s11_pit = max(-1, min(1, score))
+ 
+             if smart_money is not None:
+                 if smart_money > 0.7: s13 = 0.8
+@@ -879,7 +915,8 @@
+             ai_120d = max(0, min(1, composite*0.3+0.5))
+ 
+             batch.append((code, date, s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11,
+-                         s12, s13, s14, s15, s16, composite, ai_5d, ai_20d, ai_120d))
++                         s12, s13, s14, s15, s16, composite, ai_5d, ai_20d, ai_120d,
++                         s11_pit))
+ 
+             if len(batch) >= BATCH_SIZE:
+                 c.executemany(insert_sql, batch)
+@@ -946,6 +983,17 @@
+ SET pit_avail_date = CASE report_date % 10000
+     WHEN 331  THEN (report_date / 10000) * 10000 + 430
+     WHEN 630  THEN (report_date / 10000) * 10000 + 831
++    WHEN 930  THEN (report_date / 10000) * 10000 + 1031
++    WHEN 1231 THEN (report_date / 10000 + 1) * 10000 + 430 END
++"""
++
++
++# PIT修复(20260815) s11通道: stock_financial 同口径法定披露截止回填(仅新列)
++_FIN_PIT_BACKFILL_SQL = """
++UPDATE stock_financial
++SET pit_avail_date = CASE report_date % 10000
++    WHEN 331  THEN (report_date / 10000) * 10000 + 430
++    WHEN 630  THEN (report_date / 10000) * 10000 + 831
+     WHEN 930  THEN (report_date / 10000) * 10000 + 1031
+     WHEN 1231 THEN (report_date / 10000 + 1) * 10000 + 430 END
+ """

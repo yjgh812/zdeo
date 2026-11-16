@@ -1,0 +1,43 @@
+{
+ "prereg": "BPEP-HIGHPOS-FILTER v1",
+ "registered_at": "2026-09-15",
+ "owner_approval": "2026-09-15会话主人『继续』指令, 影子观察性质零交易影响",
+ "type": "prereg_shadow_observation",
+ "hypothesis": "bp_ep月名单(rank<=20)中入选时pos250>63的高位成员, 其fwd20均值低于过滤后留存臂; 剔除高位成员可改善名单前向表现",
+ "arms": {
+  "A": "名单文件rank<=20全部成员(对照=现生产行为)",
+  "B": "A剔除pos250>63的成员后, 按同文件rank>20顺延补足至20只; 文件无更多行时B臂可少于20只; pos250无法计算(历史<60交易日)的成员保留在B臂并标注"
+ },
+ "threshold": {
+  "value": 63,
+  "justification": "198个入选事件五分位Q5下界(63~97); Q5段fwd10 -3.95%/胜率22%/fwd20 -8.16%为全表最强负贡献; 阈值50/55/60/63/67/70/75敏感性检验全部同向(被剔组fwd20 -5.35%~-10.39%), 非刀尖数",
+  "discovery_sample": "20260807~20260901历届bp_ep名单198入选事件(五分位构造事前定界, 非阈值搜索)"
+ },
+ "pos250_definition": "qfq库stock_daily_meta_qfq, T0=名单文件名第一段(生成日交易日), 截至T0最多250根bar: (close_T0-min(close))/(max(high)-min(close))*100; hi<=lo时视为无法计算",
+ "windows": "fwd5/fwd10/fwd20交易日, 自T0收盘价起算(qfq前复权), 等权均值; 与发现样本同口径",
+ "horizon_and_judgment": {
+  "periods": "3期月度调仓名单(2026年10月/11月/12月首个交易日生成的bp_ep_monthly_*.csv, 文件第一段>=20261001方为OOS)",
+  "pass": "3期合并B-A(fwd20)>=+2.0pp 且 B-A>0的期数>=2/3 → PASS_CANDIDATE(仅提请白名单负过滤评估, 不自动落地)",
+  "fail": "其余情形FAIL归档; 措辞纪律: FAIL=该实现未通过验证, 不否定方向本身(主人2026-09-14裁决)"
+ },
+ "benchmark": "全市场等权同期fwd5/10/20仅记录作参照(参照bp_ep_list_health口径), 不进入判定",
+ "in_sample_exclusion": "发现样本(20260807~20260901)不进入判定; ledger仅登记文件第一段>=20261001的名单",
+ "related_archives": [
+  "ENGINE-B-HIGHPOS-BREAKOUT(同向判死档案)",
+  "追高负选择族: PROFILE-STARTUP-COND/R31/BOX-BREAKOUT",
+  "baya-deep-dig-bpep-cohort-20260915记忆"
+ ],
+ "data_inputs": {
+  "lists": "D:/zcodesj/multifactor/reports/daily_top20/bp_ep_monthly_*.csv (rank列<=20截断, 8/21期文件为2762行全市场清单须截断)",
+  "price": "D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db (mode=ro)"
+ },
+ "eval_cmd": "python data/bpep_highpos_shadow.py --eval",
+ "snapshot_cmd": "python data/bpep_highpos_shadow.py --snapshot (幂等, 可随时补跑, 输入为不可变生产产物故晚跑不改冻结值)",
+ "historical_validation_20260915": {
+  "note": "注册当日追加的历史验证(口径=冻结阈值63, 未改任何判定规则); 三口径并列如实记录",
+  "per_trade_fwd20": "n=938笔(2016-2026, 92笔不可算多为退市): 留存臂+2.28%/胜率52.9% vs 被剔臂-1.72%/胜率36.1%, 差+4.0pp; 分年方向10/10年为正(2020年高位组无交易)",
+  "per_trade_full_holding": "n=938: 留存+9.64% vs 被剔+7.11% (+2.5pp/笔, 持仓均值337~366天), 胜率几乎相同(56.3vs55.6), 分年7/10为正 -> 效应集中在前20交易日, 长持有期衰减",
+  "month_clustered": "52个可比月(每月=1独立观察): 月度差均值+1.95pp/中位+0.16pp, 正向仅27/52=52%, t=+1.83(df=51)<2 -> 月层面方向有提示性但未达统计显著; 分年10/10正含年份聚合的偏度贡献, 不宜单独作为强证据",
+  "conclusion": "历史证据=方向一致但单月噪声大、强度远低于2026发现样本(-8.16pp为偏强期); 判定完全交由prereg既定的3期OOS(fwd20,B-A>=2pp), 本验证不改阈值不改规则"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "id": "automation-a3164df0-0119-4ba1-990b-2dea73e0a548",
+ "title": "工作日22:45 大板块智能复盘",
+ "cron": "45 22 * * 1-5",
+ "prompt": "【工作日22:45 大板块智能复盘】（屠龙系统新增功能③，2026-08-21 交付；放在 22:00 十一合一之后避免撞车）\n任务：生成当日《大板块智能复盘》报告并向主人汇报。脚本产出数据事实，知微负责智能定性解读。\n执行步骤（Git Bash，正斜杠）：\n1. cd /d/zcodesj && python tulong_sector_review.py（约 3~5 分钟：申万 L1 缺当日时先跑增量更新，akshare 拉 L2 实时榜）\n   → 生成 reports/sector_review_YYYYMMDD.md（指数量能/申万L1榜+申万L2当日实时榜/东财行业+概念资金榜/封板结构/轮动链/数据事实清单）＋ reports/daily_review_YYYYMMDD.json（**次日 09:10 作战清单自动消费，勿删**）\n2. 当日口径复核（脚本数据可能有 T+1 滞后，用 MCP 复核当日）：\n   a. 调 ftshare ft_sw_industry_overview date=今日：申万一/二/三级 PE/PB 概况与分位（对照脚本 L2 实时榜是否一致）\n   b. 调 ftshare ft_eastmoney_board_latest_kline（不传 board_code 分页扫全部板块当日最新）或 ft_get_eastmoney_sector_flow（sector_type=industry/date=今日）：当日行业资金流复核\n   c. 调 ftshare ft_daec_market_snapshot：当日全市场涨跌分布（涨停/跌停档位）\n3. 定稿：把 MCP 复核结果追加为「七、知微定性解读」段（数据→正负信号→结论+置信度范式）：\n   - 主线判定：领涨行业是否成梯队（涨停数/资金流配合）→ 主线/支线/脉冲\n   - 风险确认：领跌行业+流出榜是否退潮，与 8/19 科技崩塌后的轮动链对照（高低切是否延续）\n   - 明日关注：轮动链提示的方向（1-2 个，写明理由）\n4. 向主人汇报（3-5 分钟）：指数与情绪一句话 / 领涨领跌行业 / 主线判定与置信度 / 风险提示 / 文件路径。\n铁律：所有数据来自脚本或 MCP 真实返回，禁止编造数字与板块结论；股票代码必带名称；只复盘不下单不改代码；非交易日节假日说明后终止；若 22:00 十一合一尚未结束（qfq 库写入中）导致脚本读库超时，重试一次并如实标注读数时点。",
+ "model": "113e08a8-f53a-4cab-938c-ae03f52a2549/DeepSeek-V4-Flash-0731",
+ "provider": "glm",
+ "mode": "yolo",
+ "tl": "max",
+ "rebuild_note": "9/16 凌晨重建: 旧会话连续2夜failed(9/14-15, 与22:00链同窗), 主人裁决\"1、3按推荐现在就执行\"; prompt=automations表原文逐字复制(2026-09-16T00:5x 快照)"
+}

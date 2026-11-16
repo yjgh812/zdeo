@@ -1,0 +1,33 @@
+{
+ "id": "PREREG-DRAWDOWN-PROTECT-V3",
+ "title": "回撤保护覆盖层验证（目标函数=MDD/尾部，载体=引擎A信号池组合）",
+ "owner": "D:\\zcodesj 择时研究线",
+ "created_at": "2026-09-14",
+ "new_premise": "V2族验证(5a765ec7)发现: 趋势门控混合臂在Sharpe近零代价下MDD较买入持有浅10.1pp——证据指向的正确目标函数是MDD/尾部保护而非Sharpe提升; 主人9/14第三轮「继续」兑现v3立项",
+ "hypothesis_frozen": "对策略组合施加『上行满仓/下行趋势压敞口』的保护覆盖层, 能以≤2pp年化收益代价换取≥5pp的MDD改善且尾部不更深——验收指标是保护效率, 不是超额收益",
+ "carrier_note": "载体=引擎A信号池等权组合(低位反转族, 与组合C同族; 每信号T+1收盘买入持有20交易日, 活跃仓位等权日收益, 空仓日=0): 组合C本体历史日频序列无现成产物, 本轮以引擎A池为代理并如实声明; 代理PASS后接线设计阶段须对组合C本体做正式回测; 代理FAIL不能排除组合C载体成立(列入再议前提)",
+ "mechanism_frozen": {
+  "信号": "引擎A 19d5c135全量(含688剔除), 2020-01-01~最新, fwd20不完整的尾部信号剔除(评估窗截至最后信号+21交易日)",
+  "carrier": "r_t=当日全部活跃仓位(信号s使t∈[s+2,s+21])个股change_pct/100的等权均值, 无活跃仓位=0",
+  "overlay": "保护指数=cumprod(1+carrier); w_t=1 若 指数>MA_N(指数) 否则 w_floor; t收盘观测t+1生效; 成本=|Δw|×0.15%单边; 调仓每日",
+  "grid_6变体": "MA_N{20,60} × w_floor{0.3,0.5,0.7}; primary=MA20/0.5",
+  "实现语义": "组合层仓位系数, 不改选股/不拦-8%止损链/不加杠杆/不做空"
+ },
+ "gates_frozen": [
+  "P0功效: 评估期≥800交易日且carrier有活跃仓位日占比≥30%",
+  "P1保护效率(primary): MDD(覆盖)≤MDD(持有)-5pp 且 年化收益拖累≤2pp 且 CVaR5(覆盖)≥CVaR5(持有)(尾部不更深)",
+  "P2稳健: 6变体中≥4个同时满足MDD改善≥5pp且拖累≤2pp; primary前后半窗MDD改善均>0; 分年拖累≤2pp年份占比≥60%"
+ ],
+ "sensitivity_descriptive_not_gates": [
+  "未投部分现金1.8%年化",
+  "6变体全表",
+  "carrier自身指标(年化/波动/MDD/活跃仓位日均数)"
+ ],
+ "verdict_rule": "P0∧P1∧P2=保护效率获验证支持, 提请主人裁决是否进入组合C/实盘接线设计(接线另行prereg, 零自动接线); 任一不过=『本轮载体/参数下保护效率未获验证支持』登记TIMING-DDPROTECT-STAGE1(验证性结论非路线否定), 组合C载体与其它门控形式列为再议前提",
+ "anti_peek": "本文件先落盘指纹(除fingerprint外全文sha256前16位); 网格/判据/primary冻结; 禁跑后增删变体改阈值; 指标定义: CVaR5=最差5%交易日收益均值, MDD=cumprod最大回撤, 拖累=持有年化-覆盖年化",
+ "expected_runtime_artifacts": [
+  "portrait_agent/ddprotect_v3_20260914.py",
+  "data/ddprotect_v3_results_20260914.json"
+ ],
+ "fingerprint": "9c6198e42dfd5242"
+}

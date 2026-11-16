@@ -1,0 +1,13 @@
+{
+ "date": "2026-09-14",
+ "limit_up_count": 55,
+ "limit_break_count": 73,
+ "max_board": 4,
+ "prev_max_board": 4,
+ "promoted_count": null,
+ "prev_board_count": 7,
+ "board_ge2_today": 11,
+ "down_limit_count": 16,
+ "amount": null,
+ "source": "local_db(limit_up_patterns/limit_down_risks) break_count=近似口径"
+}

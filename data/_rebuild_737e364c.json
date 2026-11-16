@@ -1,0 +1,10 @@
+{
+ "id": "automation-737e364c-a73d-420c-a9cd-0cf7a9e5c77b",
+ "title": "工作日23:30涨票画像每日观测（只读·零接线）",
+ "cron": "30 23 * * 1-5",
+ "prompt": "【每日涨票画像观测（只读·零接线）】工作目录 D:\\zcodesj。非交易日跳过并说明。任务：1) cd /d/zcodesj && python attribution/winner_profile_daily.py（无参数：自动取 qfq 最大日期为截面日T；持仓自动读 data/positions_latest.json，文件缺失则持仓段跳过并标注）。2) 读 reports/winner_profile_daily/winner_profile_{T}.md 向主人汇报：①T与截面n（若T<昨日交易日→标注\"数据链滞后\"提示先查22:00链）；②市场特征面 vs 冻结涨票基准的3个最大偏离维度（当日-涨票差绝对值最大的三项）；③持仓落点表中分位极端项：换手/波动/位置/涨停分位≥85或≤15的持仓（代码+名称+分位值），只描述不评价；④若当日有新买入成交（executor_orders.jsonl 尾部），列出这些票的画像分位落点。铁律：纯观测零交易零提名（9/5主人裁决：会话追热提名停用、画像≠规则追热已证伪）；涉及代码必须带名称；脚本失败如实标注禁止编造；不修改任何策略代码。基准说明：对照基准=attribution/winner_profile_out/winner_profile_result.json（2026-09-04冻结的1年11截面涨票raw前10%画像中位，季度复核一次是否重算）。",
+ "model": "builtin:bigmodel-coding-plan/GLM-5.3",
+ "provider": "glm",
+ "mode": "yolo",
+ "tl": "max"
+}

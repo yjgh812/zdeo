@@ -1,0 +1,73 @@
+{
+ "prereg_id": "PREREG-DEEP-OVERSOLD-BOUNCE-V1-DRAFT",
+ "fingerprint": "1eb0ef4468e4bfa9",
+ "window": [
+  "20160104",
+  "20260910"
+ ],
+ "verdict": "FAIL_KILL",
+ "main": {
+  "arm": "main",
+  "n": 401917,
+  "med_pct": 1.004,
+  "win_pct": 53.6,
+  "excess_med_pct": -0.971,
+  "med_net_cost_pct": 0.704,
+  "yearly_share_pos": 0.636,
+  "n_years": 11,
+  "yearly_med_pct": {
+   "2016": 1.393,
+   "2017": -0.532,
+   "2018": 1.026,
+   "2019": 0.851,
+   "2020": -0.489,
+   "2021": 1.667,
+   "2022": 1.4,
+   "2023": -0.337,
+   "2024": 0.888,
+   "2025": 5.423,
+   "2026": -0.781
+  },
+  "gates": {
+   "G1_med>=0.8&win>=52": true,
+   "G2_excess_med>0": false,
+   "G3_yearly_share>=0.7": false,
+   "G4_med_net_cost>0": true
+  },
+  "PASS": false
+ },
+ "left_tail_control": {
+  "arm": "left_tail_control",
+  "n": 331844,
+  "med_pct": 0.733,
+  "win_pct": 52.59,
+  "excess_med_pct": -0.97,
+  "med_net_cost_pct": 0.433,
+  "yearly_share_pos": 0.455,
+  "n_years": 11,
+  "yearly_med_pct": {
+   "2016": -0.183,
+   "2017": -0.749,
+   "2018": 0.638,
+   "2019": 0.852,
+   "2020": -0.911,
+   "2021": 1.597,
+   "2022": 1.252,
+   "2023": -0.388,
+   "2024": 0.0,
+   "2025": 4.906,
+   "2026": -0.909
+  },
+  "gates": {
+   "G1_med>=0.8&win>=52": false,
+   "G2_excess_med>0": false,
+   "G3_yearly_share>=0.7": false,
+   "G4_med_net_cost>0": true
+  },
+  "PASS": false
+ },
+ "overlap_proxy_limitdown_share": 0.0361,
+ "caveats": [
+  "全量一次性预注册执行, 零调参自由度; 与LOW_REPAIR_FAMILY(破跌停族)重叠以信号日跌停占比为代理"
+ ]
+}

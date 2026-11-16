@@ -1,0 +1,2454 @@
+{
+ "version": "universe_bs_zone_locator_v1",
+ "recon_only": true,
+ "scan_file": "D:/zcodesj/reports\\universe_startup_scan_20261011.json",
+ "scan_date": "261011.j",
+ "asof_today": "20261011",
+ "qfq_state": "NORMAL",
+ "portrait_snapshot": "20261009",
+ "study_summary": {
+  "Z1_confirm_window": {
+   "t20e": {
+    "n": 2202,
+    "mean": 1.423,
+    "med": -1.221,
+    "win": 43.1
+   },
+   "fwd5": {
+    "n": 2309,
+    "mean": 0.492,
+    "med": -0.313,
+    "win": 44.3
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 1206,
+      "mean": 0.087,
+      "med": -0.35,
+      "win": 42.6
+     },
+     "fwd20": {
+      "n": 1149,
+      "mean": -0.916,
+      "med": -1.878,
+      "win": 36.8
+     },
+     "t20e": {
+      "n": 1149,
+      "mean": -0.922,
+      "med": -2.069,
+      "win": 36.5
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 1103,
+      "mean": 0.936,
+      "med": -0.253,
+      "win": 46.2
+     },
+     "fwd20": {
+      "n": 1053,
+      "mean": 3.901,
+      "med": 0.161,
+      "win": 50.2
+     },
+     "t20e": {
+      "n": 1053,
+      "mean": 3.983,
+      "med": 0.108,
+      "win": 50.2
+     }
+    }
+   }
+  },
+  "Z2_pullback_ma10": {
+   "t20e": {
+    "n": 10524,
+    "mean": 3.754,
+    "med": 0.592,
+    "win": 51.8
+   },
+   "fwd5": {
+    "n": 11485,
+    "mean": 1.008,
+    "med": 0.0,
+    "win": 49.9
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 7095,
+      "mean": 1.433,
+      "med": 0.363,
+      "win": 53.3
+     },
+     "fwd20": {
+      "n": 6572,
+      "mean": 3.724,
+      "med": 1.598,
+      "win": 56.3
+     },
+     "t20e": {
+      "n": 6572,
+      "mean": 3.689,
+      "med": 1.408,
+      "win": 55.1
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 4390,
+      "mean": 0.321,
+      "med": -0.598,
+      "win": 44.5
+     },
+     "fwd20": {
+      "n": 3952,
+      "mean": 4.39,
+      "med": 0.264,
+      "win": 50.9
+     },
+     "t20e": {
+      "n": 3952,
+      "mean": 3.863,
+      "med": -0.931,
+      "win": 46.4
+     }
+    }
+   }
+  },
+  "Z3_pullback_ma20": {
+   "t20e": {
+    "n": 8875,
+    "mean": 2.187,
+    "med": -0.969,
+    "win": 46.0
+   },
+   "fwd5": {
+    "n": 9750,
+    "mean": 0.7,
+    "med": -0.072,
+    "win": 48.4
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 4912,
+      "mean": 1.1,
+      "med": 0.139,
+      "win": 50.6
+     },
+     "fwd20": {
+      "n": 4528,
+      "mean": 1.372,
+      "med": -0.429,
+      "win": 48.0
+     },
+     "t20e": {
+      "n": 4528,
+      "mean": 1.369,
+      "med": -0.882,
+      "win": 46.3
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 4838,
+      "mean": 0.293,
+      "med": -0.375,
+      "win": 46.2
+     },
+     "fwd20": {
+      "n": 4347,
+      "mean": 3.483,
+      "med": 0.0,
+      "win": 49.7
+     },
+     "t20e": {
+      "n": 4347,
+      "mean": 3.039,
+      "med": -1.146,
+      "win": 45.8
+     }
+    }
+   }
+  },
+  "Z4_chase_negative": {
+   "t20e": {
+    "n": 703,
+    "mean": 1.178,
+    "med": -8.186,
+    "win": 39.4
+   },
+   "fwd5": {
+    "n": 746,
+    "mean": -3.427,
+    "med": -4.206,
+    "win": 27.6
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 560,
+      "mean": -4.444,
+      "med": -5.14,
+      "win": 24.3
+     },
+     "fwd20": {
+      "n": 530,
+      "mean": 3.568,
+      "med": 0.278,
+      "win": 50.4
+     },
+     "t20e": {
+      "n": 530,
+      "mean": -0.266,
+      "med": -8.361,
+      "win": 38.5
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 186,
+      "mean": -0.365,
+      "med": -1.945,
+      "win": 37.6
+     },
+     "fwd20": {
+      "n": 173,
+      "mean": 8.169,
+      "med": 2.162,
+      "win": 55.5
+     },
+     "t20e": {
+      "n": 173,
+      "mean": 5.599,
+      "med": -8.035,
+      "win": 42.2
+     }
+    }
+   }
+  },
+  "Z2_shrink_vol": {
+   "t20e": {
+    "n": 6334,
+    "mean": 4.099,
+    "med": 1.002,
+    "win": 53.3
+   },
+   "fwd5": {
+    "n": 6923,
+    "mean": 0.79,
+    "med": 0.0,
+    "win": 49.1
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 4355,
+      "mean": 0.888,
+      "med": 0.221,
+      "win": 51.8
+     },
+     "fwd20": {
+      "n": 4043,
+      "mean": 4.28,
+      "med": 2.171,
+      "win": 57.9
+     },
+     "t20e": {
+      "n": 4043,
+      "mean": 4.208,
+      "med": 1.961,
+      "win": 56.8
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 2568,
+      "mean": 0.622,
+      "med": -0.56,
+      "win": 44.4
+     },
+     "fwd20": {
+      "n": 2291,
+      "mean": 4.678,
+      "med": 0.55,
+      "win": 52.2
+     },
+     "t20e": {
+      "n": 2291,
+      "mean": 3.906,
+      "med": -0.711,
+      "win": 47.1
+     }
+    }
+   }
+  },
+  "Z2_norm_vol": {
+   "t20e": {
+    "n": 4895,
+    "mean": 3.213,
+    "med": 0.421,
+    "win": 51.1
+   },
+   "fwd5": {
+    "n": 5315,
+    "mean": 1.364,
+    "med": 0.246,
+    "win": 51.9
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 3310,
+      "mean": 1.89,
+      "med": 0.454,
+      "win": 54.1
+     },
+     "fwd20": {
+      "n": 3060,
+      "mean": 2.963,
+      "med": 0.923,
+      "win": 53.7
+     },
+     "t20e": {
+      "n": 3060,
+      "mean": 2.918,
+      "med": 0.732,
+      "win": 52.6
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 2005,
+      "mean": 0.497,
+      "med": -0.156,
+      "win": 48.3
+     },
+     "fwd20": {
+      "n": 1835,
+      "mean": 4.175,
+      "med": 0.535,
+      "win": 52.4
+     },
+     "t20e": {
+      "n": 1835,
+      "mean": 3.706,
+      "med": -0.363,
+      "win": 48.6
+     }
+    }
+   }
+  },
+  "Z2_heavy_vol": {
+   "t20e": {
+    "n": 2093,
+    "mean": 2.746,
+    "med": -1.182,
+    "win": 45.2
+   },
+   "fwd5": {
+    "n": 2349,
+    "mean": 0.962,
+    "med": -0.244,
+    "win": 47.5
+   },
+   "regime": {
+    "BULL": {
+     "fwd5": {
+      "n": 1275,
+      "mean": 1.892,
+      "med": 0.198,
+      "win": 51.3
+     },
+     "fwd20": {
+      "n": 1139,
+      "mean": 1.763,
+      "med": -0.115,
+      "win": 49.5
+     },
+     "t20e": {
+      "n": 1139,
+      "mean": 1.888,
+      "med": -0.564,
+      "win": 47.1
+     }
+    },
+    "BEAR": {
+     "fwd5": {
+      "n": 1074,
+      "mean": -0.141,
+      "med": -1.045,
+      "win": 43.0
+     },
+     "fwd20": {
+      "n": 954,
+      "mean": 4.454,
+      "med": -0.612,
+      "win": 47.8
+     },
+     "t20e": {
+      "n": 954,
+      "mean": 3.769,
+      "med": -2.215,
+      "win": 43.0
+     }
+    }
+   }
+  }
+ },
+ "current_regime": "BEAR(上证收于MA20下方)@20261009",
+ "sell_zones": {
+  "S1_fail_retest": {
+   "fwd5": {
+    "n": 87649,
+    "mean": 0.279,
+    "med": -0.437,
+    "win": 45.7
+   },
+   "fwd10": {
+    "n": 87415,
+    "mean": 0.374,
+    "med": -0.676,
+    "win": 45.5
+   },
+   "fwd20": {
+    "n": 85876,
+    "mean": 0.549,
+    "med": -1.058,
+    "win": 45.4
+   },
+   "t20e": {
+    "n": 85876,
+    "mean": 0.544,
+    "med": -2.517,
+    "win": 41.2
+   }
+  },
+  "S2_breakout_vol": {
+   "fwd5": {
+    "n": 54762,
+    "mean": -0.745,
+    "med": -1.517,
+    "win": 39.3
+   },
+   "fwd10": {
+    "n": 54653,
+    "mean": -0.648,
+    "med": -1.893,
+    "win": 40.1
+   },
+   "fwd20": {
+    "n": 54017,
+    "mean": -0.436,
+    "med": -2.529,
+    "win": 40.5
+   },
+   "t20e": {
+    "n": 54017,
+    "mean": -0.487,
+    "med": -6.362,
+    "win": 34.5
+   }
+  },
+  "S3_stall_near_high": {
+   "fwd5": {
+    "n": 53339,
+    "mean": 0.298,
+    "med": -0.257,
+    "win": 46.4
+   },
+   "fwd10": {
+    "n": 53194,
+    "mean": 0.501,
+    "med": -0.266,
+    "win": 47.4
+   },
+   "fwd20": {
+    "n": 52292,
+    "mean": 0.784,
+    "med": -0.442,
+    "win": 47.5
+   },
+   "t20e": {
+    "n": 52292,
+    "mean": 0.731,
+    "med": -1.039,
+    "win": 45.0
+   }
+  }
+ },
+ "n_hits": 46,
+ "n_located": 46,
+ "n_skipped": 0,
+ "rows": [
+  {
+   "code": "001282",
+   "name": "三联锻造",
+   "ind": "汽车配件",
+   "px_qfq": 16.36,
+   "qfq_date": "20261009",
+   "px_raw": 16.36,
+   "raw_date": 20261009,
+   "raw_chg_pct": -1.68,
+   "caliber_warn": false,
+   "portrait_pct": 73.4,
+   "portrait_prob": 0.2633,
+   "pos250": 18,
+   "off_start": -0.2,
+   "days": 8,
+   "chg5_pct": -2.27,
+   "ret20_pct": 0.99,
+   "vr120": 1.16,
+   "buy_zone_z1": [
+    14.88,
+    15.59
+   ],
+   "buy_zone_ma": [
+    16.1,
+    16.45
+   ],
+   "in_z1": false,
+   "in_ma_zone": true,
+   "state": "回踩带内(缩量)✓Z2s",
+   "stop_ref": 15.05,
+   "res60": 17.22,
+   "res_dist_pct": 5.3,
+   "bad_line": 15.94,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 16.03,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "001260",
+   "name": "坤泰股份",
+   "ind": "汽车配件",
+   "px_qfq": 19.04,
+   "qfq_date": "20261009",
+   "px_raw": 19.04,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.31,
+   "caliber_warn": false,
+   "portrait_pct": 72.2,
+   "portrait_prob": 0.2577,
+   "pos250": 40,
+   "off_start": -0.4,
+   "days": 36,
+   "chg5_pct": -1.04,
+   "ret20_pct": 3.42,
+   "vr120": 1.41,
+   "buy_zone_z1": [
+    15.23,
+    15.95
+   ],
+   "buy_zone_ma": [
+    18.65,
+    19.08
+   ],
+   "in_z1": false,
+   "in_ma_zone": true,
+   "state": "回踩带内(缩量)✓Z2s",
+   "stop_ref": 17.52,
+   "res60": 23.13,
+   "res_dist_pct": 21.5,
+   "bad_line": 18.46,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "涨停基因(lift1.94)",
+   "limit_ref": 18.66,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002434",
+   "name": "万里扬",
+   "ind": "汽车配件",
+   "px_qfq": 6.04,
+   "qfq_date": "20261009",
+   "px_raw": 6.04,
+   "raw_date": 20261009,
+   "raw_chg_pct": -1.63,
+   "caliber_warn": false,
+   "portrait_pct": 46.2,
+   "portrait_prob": 0.2178,
+   "pos250": 15,
+   "off_start": -0.3,
+   "days": 36,
+   "chg5_pct": -2.11,
+   "ret20_pct": 3.25,
+   "vr120": 0.73,
+   "buy_zone_z1": [
+    5.47,
+    5.73
+   ],
+   "buy_zone_ma": [
+    5.96,
+    6.13
+   ],
+   "in_z1": false,
+   "in_ma_zone": true,
+   "state": "回踩带内(常量)",
+   "stop_ref": 5.56,
+   "res60": 6.23,
+   "res_dist_pct": 3.1,
+   "bad_line": 5.9,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.92,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600516",
+   "name": "方大炭素",
+   "ind": "矿物制品",
+   "px_qfq": 5.39,
+   "qfq_date": "20261009",
+   "px_raw": 5.39,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.89,
+   "caliber_warn": false,
+   "portrait_pct": 21.5,
+   "portrait_prob": 0.1839,
+   "pos250": 20,
+   "off_start": -2.2,
+   "days": 10,
+   "chg5_pct": -0.55,
+   "ret20_pct": 3.45,
+   "vr120": 0.48,
+   "buy_zone_z1": [
+    5.22,
+    5.47
+   ],
+   "buy_zone_ma": [
+    5.33,
+    5.4
+   ],
+   "in_z1": true,
+   "in_ma_zone": true,
+   "state": "确认窗∩回踩带(常量)",
+   "stop_ref": 4.96,
+   "res60": 5.6,
+   "res_dist_pct": 3.9,
+   "bad_line": 5.27,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.28,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002034",
+   "name": "旺能环境",
+   "ind": "环境保护",
+   "px_qfq": 14.4,
+   "qfq_date": "20261009",
+   "px_raw": 14.4,
+   "raw_date": 20261009,
+   "raw_chg_pct": 2.56,
+   "caliber_warn": false,
+   "portrait_pct": 8.9,
+   "portrait_prob": 0.1487,
+   "pos250": 10,
+   "off_start": 0.4,
+   "days": 26,
+   "chg5_pct": 1.77,
+   "ret20_pct": -2.04,
+   "vr120": 0.4,
+   "buy_zone_z1": [
+    14.15,
+    14.83
+   ],
+   "buy_zone_ma": null,
+   "in_z1": true,
+   "in_ma_zone": false,
+   "state": "⭐确认窗内",
+   "stop_ref": 13.25,
+   "res60": 14.83,
+   "res_dist_pct": 3.0,
+   "bad_line": 14.18,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 14.11,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600284",
+   "name": "浦东建设",
+   "ind": "建筑工程",
+   "px_qfq": 5.23,
+   "qfq_date": "20261009",
+   "px_raw": 5.23,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.55,
+   "caliber_warn": false,
+   "portrait_pct": 0.0,
+   "portrait_prob": 0.1414,
+   "pos250": 8,
+   "off_start": -1.7,
+   "days": 36,
+   "chg5_pct": 2.35,
+   "ret20_pct": -0.19,
+   "vr120": 0.63,
+   "buy_zone_z1": [
+    5.03,
+    5.27
+   ],
+   "buy_zone_ma": null,
+   "in_z1": true,
+   "in_ma_zone": false,
+   "state": "⭐确认窗内",
+   "stop_ref": 4.81,
+   "res60": 5.34,
+   "res_dist_pct": 2.1,
+   "bad_line": 5.09,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.13,
+   "grp": "A",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "000505",
+   "name": "京粮控股",
+   "ind": "食品",
+   "px_qfq": 6.7,
+   "qfq_date": "20261009",
+   "px_raw": 6.7,
+   "raw_date": 20261009,
+   "raw_chg_pct": 6.01,
+   "caliber_warn": false,
+   "portrait_pct": 91.5,
+   "portrait_prob": 0.336,
+   "pos250": 42,
+   "off_start": 13.0,
+   "days": 40,
+   "chg5_pct": 5.35,
+   "ret20_pct": -0.45,
+   "vr120": 1.15,
+   "buy_zone_z1": [
+    5.28,
+    5.53
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.16,
+   "res60": 7.94,
+   "res_dist_pct": 18.5,
+   "bad_line": 6.7,
+   "blowoff_warn": false,
+   "no_chase_today": true,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.57,
+   "grp": "B+禁追",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002106",
+   "name": "莱宝高科",
+   "ind": "元器件",
+   "px_qfq": 11.46,
+   "qfq_date": "20261009",
+   "px_raw": 11.46,
+   "raw_date": 20261009,
+   "raw_chg_pct": -2.3,
+   "caliber_warn": false,
+   "portrait_pct": 88.5,
+   "portrait_prob": 0.3147,
+   "pos250": 24,
+   "off_start": 4.8,
+   "days": 21,
+   "chg5_pct": -8.39,
+   "ret20_pct": 4.47,
+   "vr120": 1.05,
+   "buy_zone_z1": [
+    9.81,
+    10.27
+   ],
+   "buy_zone_ma": [
+    11.79,
+    12.39
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 10.54,
+   "res60": 13.9,
+   "res_dist_pct": 21.3,
+   "bad_line": 11.67,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 11.23,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "001366",
+   "name": "播恩集团",
+   "ind": "饲料",
+   "px_qfq": 13.24,
+   "qfq_date": "20261009",
+   "px_raw": 13.24,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.69,
+   "caliber_warn": false,
+   "portrait_pct": 84.8,
+   "portrait_prob": 0.2987,
+   "pos250": 37,
+   "off_start": 7.6,
+   "days": 29,
+   "chg5_pct": 1.46,
+   "ret20_pct": 1.46,
+   "vr120": 0.55,
+   "buy_zone_z1": [
+    10.58,
+    11.09
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 12.18,
+   "res60": 16.38,
+   "res_dist_pct": 23.7,
+   "bad_line": 13.42,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "涨停基因(lift1.94)",
+   "limit_ref": 12.98,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "003042",
+   "name": "中农联合",
+   "ind": "农药化肥",
+   "px_qfq": 14.38,
+   "qfq_date": "20261009",
+   "px_raw": 14.38,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.98,
+   "caliber_warn": false,
+   "portrait_pct": 73.0,
+   "portrait_prob": 0.2608,
+   "pos250": 21,
+   "off_start": -0.6,
+   "days": 30,
+   "chg5_pct": 0.63,
+   "ret20_pct": 0.42,
+   "vr120": 1.0,
+   "buy_zone_z1": [
+    11.94,
+    12.51
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 13.23,
+   "res60": 15.51,
+   "res_dist_pct": 7.9,
+   "bad_line": 14.29,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 14.09,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002771",
+   "name": "真视通",
+   "ind": "软件服务",
+   "px_qfq": 13.64,
+   "qfq_date": "20261009",
+   "px_raw": 13.64,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.72,
+   "caliber_warn": false,
+   "portrait_pct": 67.0,
+   "portrait_prob": 0.2512,
+   "pos250": 33,
+   "off_start": 3.3,
+   "days": 24,
+   "chg5_pct": 0.66,
+   "ret20_pct": -3.26,
+   "vr120": 0.49,
+   "buy_zone_z1": [
+    11.83,
+    12.4
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 12.55,
+   "res60": 14.83,
+   "res_dist_pct": 8.7,
+   "bad_line": 13.81,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 13.37,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603912",
+   "name": "佳力图",
+   "ind": "专用机械",
+   "px_qfq": 8.38,
+   "qfq_date": "20261009",
+   "px_raw": 8.38,
+   "raw_date": 20261009,
+   "raw_chg_pct": -2.1,
+   "caliber_warn": false,
+   "portrait_pct": 67.0,
+   "portrait_prob": 0.2512,
+   "pos250": 32,
+   "off_start": 3.8,
+   "days": 37,
+   "chg5_pct": -10.76,
+   "ret20_pct": -10.95,
+   "vr120": 0.61,
+   "buy_zone_z1": [
+    7.07,
+    7.4
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 7.71,
+   "res60": 9.41,
+   "res_dist_pct": 12.3,
+   "bad_line": 8.67,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 8.21,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603177",
+   "name": "德创环保",
+   "ind": "环境保护",
+   "px_qfq": 10.63,
+   "qfq_date": "20261009",
+   "px_raw": 10.63,
+   "raw_date": 20261009,
+   "raw_chg_pct": -1.57,
+   "caliber_warn": false,
+   "portrait_pct": 67.0,
+   "portrait_prob": 0.2512,
+   "pos250": 45,
+   "off_start": 3.9,
+   "days": 34,
+   "chg5_pct": -4.32,
+   "ret20_pct": -3.45,
+   "vr120": 0.46,
+   "buy_zone_z1": [
+    8.22,
+    8.61
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.78,
+   "res60": 11.43,
+   "res_dist_pct": 7.5,
+   "bad_line": 10.77,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 10.42,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600598",
+   "name": "北大荒",
+   "ind": "种植业",
+   "px_qfq": 13.16,
+   "qfq_date": "20261009",
+   "px_raw": 13.16,
+   "raw_date": 20261009,
+   "raw_chg_pct": 4.11,
+   "caliber_warn": false,
+   "portrait_pct": 65.5,
+   "portrait_prob": 0.2466,
+   "pos250": 38,
+   "off_start": -2.2,
+   "days": 32,
+   "chg5_pct": 5.36,
+   "ret20_pct": 3.95,
+   "vr120": 0.73,
+   "buy_zone_z1": [
+    11.22,
+    11.76
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 12.11,
+   "res60": 14.06,
+   "res_dist_pct": 6.8,
+   "bad_line": 12.77,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 12.9,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002682",
+   "name": "龙洲股份",
+   "ind": "仓储物流",
+   "px_qfq": 4.96,
+   "qfq_date": "20261009",
+   "px_raw": 4.96,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.22,
+   "caliber_warn": false,
+   "portrait_pct": 64.6,
+   "portrait_prob": 0.2451,
+   "pos250": 13,
+   "off_start": -2.7,
+   "days": 33,
+   "chg5_pct": -1.78,
+   "ret20_pct": -1.98,
+   "vr120": 0.82,
+   "buy_zone_z1": [
+    4.12,
+    4.31
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 4.56,
+   "res60": 5.42,
+   "res_dist_pct": 9.3,
+   "bad_line": 5.04,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 4.86,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "605365",
+   "name": "立达信",
+   "ind": "家用电器",
+   "px_qfq": 14.53,
+   "qfq_date": "20261009",
+   "px_raw": 14.53,
+   "raw_date": 20261009,
+   "raw_chg_pct": 2.54,
+   "caliber_warn": false,
+   "portrait_pct": 61.2,
+   "portrait_prob": 0.2397,
+   "pos250": 12,
+   "off_start": 1.3,
+   "days": 28,
+   "chg5_pct": -1.89,
+   "ret20_pct": -4.6,
+   "vr120": 0.65,
+   "buy_zone_z1": [
+    12.83,
+    13.44
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 13.37,
+   "res60": 15.84,
+   "res_dist_pct": 9.0,
+   "bad_line": 14.33,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 14.24,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300500",
+   "name": "启迪设计",
+   "ind": "建筑工程",
+   "px_qfq": 9.66,
+   "qfq_date": "20261009",
+   "px_raw": 9.66,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.31,
+   "caliber_warn": false,
+   "portrait_pct": 61.1,
+   "portrait_prob": 0.2395,
+   "pos250": 20,
+   "off_start": -2.4,
+   "days": 23,
+   "chg5_pct": 0.1,
+   "ret20_pct": -1.53,
+   "vr120": 1.16,
+   "buy_zone_z1": [
+    8.22,
+    8.61
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 8.89,
+   "res60": 10.08,
+   "res_dist_pct": 4.3,
+   "bad_line": 9.51,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.47,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "001338",
+   "name": "永顺泰",
+   "ind": "啤酒",
+   "px_qfq": 9.45,
+   "qfq_date": "20261009",
+   "px_raw": 9.45,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.39,
+   "caliber_warn": false,
+   "portrait_pct": 58.5,
+   "portrait_prob": 0.2352,
+   "pos250": 25,
+   "off_start": -1.9,
+   "days": 31,
+   "chg5_pct": 3.85,
+   "ret20_pct": 4.54,
+   "vr120": 0.91,
+   "buy_zone_z1": [
+    8.53,
+    8.93
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 8.69,
+   "res60": 9.91,
+   "res_dist_pct": 4.9,
+   "bad_line": 9.18,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.26,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600665",
+   "name": "天地源",
+   "ind": "全国地产",
+   "px_qfq": 3.34,
+   "qfq_date": "20261009",
+   "px_raw": 3.34,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.3,
+   "caliber_warn": false,
+   "portrait_pct": 58.5,
+   "portrait_prob": 0.2352,
+   "pos250": 48,
+   "off_start": 0.3,
+   "days": 40,
+   "chg5_pct": -1.47,
+   "ret20_pct": -6.44,
+   "vr120": 0.74,
+   "buy_zone_z1": [
+    2.8,
+    2.94
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 3.07,
+   "res60": 3.67,
+   "res_dist_pct": 9.9,
+   "bad_line": 3.43,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 3.27,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603758",
+   "name": "秦安股份",
+   "ind": "汽车配件",
+   "px_qfq": 10.31,
+   "qfq_date": "20261009",
+   "px_raw": 10.31,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.58,
+   "caliber_warn": false,
+   "portrait_pct": 57.5,
+   "portrait_prob": 0.2347,
+   "pos250": 16,
+   "off_start": -1.6,
+   "days": 39,
+   "chg5_pct": -5.5,
+   "ret20_pct": -11.58,
+   "vr120": 0.71,
+   "buy_zone_z1": [
+    8.98,
+    9.41
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.49,
+   "res60": 15.35,
+   "res_dist_pct": 48.9,
+   "bad_line": 10.71,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 10.1,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002660",
+   "name": "茂硕电源",
+   "ind": "电气设备",
+   "px_qfq": 7.84,
+   "qfq_date": "20261009",
+   "px_raw": 7.84,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.64,
+   "caliber_warn": false,
+   "portrait_pct": 56.5,
+   "portrait_prob": 0.2332,
+   "pos250": 38,
+   "off_start": 12.5,
+   "days": 40,
+   "chg5_pct": 0.13,
+   "ret20_pct": -2.24,
+   "vr120": 0.8,
+   "buy_zone_z1": [
+    6.21,
+    6.5
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 7.21,
+   "res60": 8.38,
+   "res_dist_pct": 6.9,
+   "bad_line": 7.78,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 7.68,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "000716",
+   "name": "黑芝麻",
+   "ind": "食品",
+   "px_qfq": 5.12,
+   "qfq_date": "20261009",
+   "px_raw": 5.12,
+   "raw_date": 20261009,
+   "raw_chg_pct": 4.07,
+   "caliber_warn": false,
+   "portrait_pct": 56.5,
+   "portrait_prob": 0.2332,
+   "pos250": 40,
+   "off_start": 0.6,
+   "days": 34,
+   "chg5_pct": 3.02,
+   "ret20_pct": -3.58,
+   "vr120": 0.52,
+   "buy_zone_z1": [
+    4.24,
+    4.44
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 4.71,
+   "res60": 5.91,
+   "res_dist_pct": 15.4,
+   "bad_line": 5.17,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.02,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600692",
+   "name": "亚通股份",
+   "ind": "区域地产",
+   "px_qfq": 6.63,
+   "qfq_date": "20261009",
+   "px_raw": 6.63,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.9,
+   "caliber_warn": false,
+   "portrait_pct": 54.2,
+   "portrait_prob": 0.2306,
+   "pos250": 40,
+   "off_start": 2.2,
+   "days": 30,
+   "chg5_pct": 2.95,
+   "ret20_pct": 2.63,
+   "vr120": 1.12,
+   "buy_zone_z1": [
+    5.48,
+    5.74
+   ],
+   "buy_zone_ma": [
+    6.54,
+    6.58
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.1,
+   "res60": 6.78,
+   "res_dist_pct": 2.3,
+   "bad_line": 6.47,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.5,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300121",
+   "name": "阳谷华泰",
+   "ind": "化工原料",
+   "px_qfq": 9.79,
+   "qfq_date": "20261009",
+   "px_raw": 9.79,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.77,
+   "caliber_warn": false,
+   "portrait_pct": 51.8,
+   "portrait_prob": 0.2279,
+   "pos250": 11,
+   "off_start": -2.7,
+   "days": 14,
+   "chg5_pct": -0.2,
+   "ret20_pct": 1.87,
+   "vr120": 0.5,
+   "buy_zone_z1": [
+    9.33,
+    9.78
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.01,
+   "res60": 11.67,
+   "res_dist_pct": 19.2,
+   "bad_line": 9.6,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.59,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "000936",
+   "name": "华西股份",
+   "ind": "化纤",
+   "px_qfq": 5.61,
+   "qfq_date": "20261009",
+   "px_raw": 5.61,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.45,
+   "caliber_warn": false,
+   "portrait_pct": 51.8,
+   "portrait_prob": 0.2279,
+   "pos250": 21,
+   "off_start": -2.6,
+   "days": 36,
+   "chg5_pct": 2.94,
+   "ret20_pct": -0.71,
+   "vr120": 0.51,
+   "buy_zone_z1": [
+    4.94,
+    5.17
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 5.16,
+   "res60": 6.97,
+   "res_dist_pct": 24.2,
+   "bad_line": 5.47,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.5,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300099",
+   "name": "尤洛卡",
+   "ind": "电器仪表",
+   "px_qfq": 6.19,
+   "qfq_date": "20261009",
+   "px_raw": 6.19,
+   "raw_date": 20261009,
+   "raw_chg_pct": 2.15,
+   "caliber_warn": false,
+   "portrait_pct": 51.8,
+   "portrait_prob": 0.2279,
+   "pos250": 15,
+   "off_start": -2.1,
+   "days": 17,
+   "chg5_pct": -2.83,
+   "ret20_pct": 2.48,
+   "vr120": 0.44,
+   "buy_zone_z1": [
+    5.83,
+    6.11
+   ],
+   "buy_zone_ma": [
+    6.25,
+    6.26
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 5.69,
+   "res60": 6.67,
+   "res_dist_pct": 7.8,
+   "bad_line": 6.19,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.07,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603098",
+   "name": "森特股份",
+   "ind": "装修装饰",
+   "px_qfq": 10.79,
+   "qfq_date": "20261009",
+   "px_raw": 10.79,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.79,
+   "caliber_warn": false,
+   "portrait_pct": 49.3,
+   "portrait_prob": 0.2231,
+   "pos250": 17,
+   "off_start": 3.8,
+   "days": 33,
+   "chg5_pct": 0.65,
+   "ret20_pct": 1.03,
+   "vr120": 0.55,
+   "buy_zone_z1": [
+    9.71,
+    10.18
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.93,
+   "res60": 11.64,
+   "res_dist_pct": 7.9,
+   "bad_line": 10.75,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 10.57,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300838",
+   "name": "浙江力诺",
+   "ind": "机械基件",
+   "px_qfq": 14.57,
+   "qfq_date": "20261009",
+   "px_raw": 14.57,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.34,
+   "caliber_warn": false,
+   "portrait_pct": 47.9,
+   "portrait_prob": 0.2199,
+   "pos250": 33,
+   "off_start": -0.1,
+   "days": 24,
+   "chg5_pct": 0.76,
+   "ret20_pct": -0.68,
+   "vr120": 0.58,
+   "buy_zone_z1": [
+    11.58,
+    12.13
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 13.4,
+   "res60": 14.84,
+   "res_dist_pct": 1.9,
+   "bad_line": 14.17,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 14.28,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002331",
+   "name": "皖通科技",
+   "ind": "软件服务",
+   "px_qfq": 7.08,
+   "qfq_date": "20261009",
+   "px_raw": 7.08,
+   "raw_date": 20261009,
+   "raw_chg_pct": 4.27,
+   "caliber_warn": false,
+   "portrait_pct": 44.0,
+   "portrait_prob": 0.2137,
+   "pos250": 19,
+   "off_start": -2.3,
+   "days": 23,
+   "chg5_pct": 4.12,
+   "ret20_pct": -0.42,
+   "vr120": 0.64,
+   "buy_zone_z1": [
+    6.56,
+    6.88
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.51,
+   "res60": 7.3,
+   "res_dist_pct": 3.1,
+   "bad_line": 6.83,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.94,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300978",
+   "name": "东箭科技",
+   "ind": "汽车配件",
+   "px_qfq": 8.83,
+   "qfq_date": "20261009",
+   "px_raw": 8.83,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.8,
+   "caliber_warn": false,
+   "portrait_pct": 40.1,
+   "portrait_prob": 0.2079,
+   "pos250": 16,
+   "off_start": -1.0,
+   "days": 38,
+   "chg5_pct": 0.68,
+   "ret20_pct": -0.34,
+   "vr120": 0.83,
+   "buy_zone_z1": [
+    8.17,
+    8.56
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 8.12,
+   "res60": 9.05,
+   "res_dist_pct": 2.5,
+   "bad_line": 8.68,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 8.65,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603180",
+   "name": "金牌家居",
+   "ind": "家居用品",
+   "px_qfq": 15.84,
+   "qfq_date": "20261009",
+   "px_raw": 15.84,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.57,
+   "caliber_warn": false,
+   "portrait_pct": 35.9,
+   "portrait_prob": 0.2028,
+   "pos250": 23,
+   "off_start": -2.0,
+   "days": 33,
+   "chg5_pct": 0.06,
+   "ret20_pct": 0.57,
+   "vr120": 0.81,
+   "buy_zone_z1": [
+    14.24,
+    14.92
+   ],
+   "buy_zone_ma": [
+    15.64,
+    15.71
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 14.57,
+   "res60": 16.17,
+   "res_dist_pct": 2.1,
+   "bad_line": 15.48,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 15.52,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603017",
+   "name": "中衡设计",
+   "ind": "建筑工程",
+   "px_qfq": 10.0,
+   "qfq_date": "20261009",
+   "px_raw": 10.0,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.1,
+   "caliber_warn": false,
+   "portrait_pct": 35.3,
+   "portrait_prob": 0.2025,
+   "pos250": 19,
+   "off_start": 0.3,
+   "days": 27,
+   "chg5_pct": 0.5,
+   "ret20_pct": 0.6,
+   "vr120": 0.68,
+   "buy_zone_z1": [
+    8.69,
+    9.11
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 9.2,
+   "res60": 10.2,
+   "res_dist_pct": 2.0,
+   "bad_line": 9.87,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.8,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "300402",
+   "name": "宝色股份",
+   "ind": "专用机械",
+   "px_qfq": 14.66,
+   "qfq_date": "20261009",
+   "px_raw": 14.66,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.69,
+   "caliber_warn": false,
+   "portrait_pct": 33.0,
+   "portrait_prob": 0.2,
+   "pos250": 12,
+   "off_start": -2.3,
+   "days": 29,
+   "chg5_pct": -0.88,
+   "ret20_pct": -3.68,
+   "vr120": 0.49,
+   "buy_zone_z1": [
+    13.62,
+    14.27
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 13.49,
+   "res60": 15.38,
+   "res_dist_pct": 4.9,
+   "bad_line": 14.61,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 14.37,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002469",
+   "name": "三维化学",
+   "ind": "化工原料",
+   "px_qfq": 6.27,
+   "qfq_date": "20261009",
+   "px_raw": 6.27,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.64,
+   "caliber_warn": false,
+   "portrait_pct": 33.0,
+   "portrait_prob": 0.2,
+   "pos250": 20,
+   "off_start": -0.6,
+   "days": 33,
+   "chg5_pct": 3.98,
+   "ret20_pct": -1.72,
+   "vr120": 0.48,
+   "buy_zone_z1": [
+    5.63,
+    5.9
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 5.77,
+   "res60": 6.78,
+   "res_dist_pct": 8.1,
+   "bad_line": 6.11,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.14,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "600149",
+   "name": "廊坊发展",
+   "ind": "综合类",
+   "px_qfq": 5.11,
+   "qfq_date": "20261009",
+   "px_raw": 5.11,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.97,
+   "caliber_warn": false,
+   "portrait_pct": 31.5,
+   "portrait_prob": 0.1986,
+   "pos250": 28,
+   "off_start": 1.2,
+   "days": 30,
+   "chg5_pct": 1.19,
+   "ret20_pct": 0.0,
+   "vr120": 0.54,
+   "buy_zone_z1": [
+    4.53,
+    4.74
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 4.7,
+   "res60": 5.21,
+   "res_dist_pct": 2.0,
+   "bad_line": 5.02,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 5.01,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "000410",
+   "name": "沈阳机床",
+   "ind": "机床制造",
+   "px_qfq": 5.1,
+   "qfq_date": "20261009",
+   "px_raw": 5.1,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.99,
+   "caliber_warn": false,
+   "portrait_pct": 30.1,
+   "portrait_prob": 0.1964,
+   "pos250": 16,
+   "off_start": -2.7,
+   "days": 37,
+   "chg5_pct": -2.49,
+   "ret20_pct": -5.73,
+   "vr120": 0.61,
+   "buy_zone_z1": [
+    4.59,
+    4.81
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 4.69,
+   "res60": 5.76,
+   "res_dist_pct": 12.9,
+   "bad_line": 5.13,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "涨停基因(lift1.94)",
+   "limit_ref": 5.0,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002427",
+   "name": "尤夫股份",
+   "ind": "化纤",
+   "px_qfq": 4.64,
+   "qfq_date": "20261009",
+   "px_raw": 4.64,
+   "raw_date": 20261009,
+   "raw_chg_pct": 1.53,
+   "caliber_warn": false,
+   "portrait_pct": 28.8,
+   "portrait_prob": 0.1953,
+   "pos250": 18,
+   "off_start": 0.7,
+   "days": 30,
+   "chg5_pct": 2.65,
+   "ret20_pct": -5.31,
+   "vr120": 0.41,
+   "buy_zone_z1": [
+    4.08,
+    4.28
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 4.27,
+   "res60": 5.19,
+   "res_dist_pct": 11.9,
+   "bad_line": 4.64,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 4.55,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "601226",
+   "name": "华电科工",
+   "ind": "建筑工程",
+   "px_qfq": 6.62,
+   "qfq_date": "20261009",
+   "px_raw": 6.62,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.15,
+   "caliber_warn": false,
+   "portrait_pct": 24.5,
+   "portrait_prob": 0.1889,
+   "pos250": 15,
+   "off_start": 1.8,
+   "days": 27,
+   "chg5_pct": 1.38,
+   "ret20_pct": 2.0,
+   "vr120": 0.54,
+   "buy_zone_z1": [
+    5.87,
+    6.15
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.09,
+   "res60": 6.92,
+   "res_dist_pct": 4.5,
+   "bad_line": 6.52,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 6.49,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002053",
+   "name": "云南能投",
+   "ind": "新型电力",
+   "px_qfq": 9.73,
+   "qfq_date": "20261009",
+   "px_raw": 9.73,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.93,
+   "caliber_warn": false,
+   "portrait_pct": 22.5,
+   "portrait_prob": 0.1852,
+   "pos250": 21,
+   "off_start": -0.6,
+   "days": 32,
+   "chg5_pct": 3.07,
+   "ret20_pct": 3.51,
+   "vr120": 0.49,
+   "buy_zone_z1": [
+    9.12,
+    9.56
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 8.95,
+   "res60": 10.03,
+   "res_dist_pct": 3.1,
+   "bad_line": 9.55,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.54,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "002608",
+   "name": "江苏国信",
+   "ind": "火力发电",
+   "px_qfq": 7.55,
+   "qfq_date": "20261009",
+   "px_raw": 7.55,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.13,
+   "caliber_warn": false,
+   "portrait_pct": 16.4,
+   "portrait_prob": 0.1678,
+   "pos250": 25,
+   "off_start": -0.5,
+   "days": 17,
+   "chg5_pct": 4.28,
+   "ret20_pct": 5.3,
+   "vr120": 0.38,
+   "buy_zone_z1": [
+    6.92,
+    7.25
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 6.95,
+   "res60": 7.65,
+   "res_dist_pct": 1.3,
+   "bad_line": 7.35,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 7.4,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603081",
+   "name": "大丰实业",
+   "ind": "专用机械",
+   "px_qfq": 9.46,
+   "qfq_date": "20261009",
+   "px_raw": 9.46,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.21,
+   "caliber_warn": false,
+   "portrait_pct": 11.4,
+   "portrait_prob": 0.1543,
+   "pos250": 21,
+   "off_start": -1.0,
+   "days": 40,
+   "chg5_pct": 0.64,
+   "ret20_pct": -5.59,
+   "vr120": 0.56,
+   "buy_zone_z1": [
+    8.53,
+    8.93
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 8.7,
+   "res60": 10.13,
+   "res_dist_pct": 7.1,
+   "bad_line": 9.48,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 9.27,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "301220",
+   "name": "亚香股份",
+   "ind": "化工原料",
+   "px_qfq": 28.11,
+   "qfq_date": "20261009",
+   "px_raw": 28.11,
+   "raw_date": 20261009,
+   "raw_chg_pct": -1.33,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 13,
+   "off_start": 3.0,
+   "days": 16,
+   "chg5_pct": -10.02,
+   "ret20_pct": 4.89,
+   "vr120": 0.85,
+   "buy_zone_z1": [
+    26.42,
+    27.68
+   ],
+   "buy_zone_ma": [
+    29.57,
+    30.61
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 25.86,
+   "res60": 33.45,
+   "res_dist_pct": 19.0,
+   "bad_line": 29.28,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 27.55,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "301266",
+   "name": "宇邦新材",
+   "ind": "电气设备",
+   "px_qfq": 23.91,
+   "qfq_date": "20261009",
+   "px_raw": 23.91,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.75,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 24,
+   "off_start": 12.0,
+   "days": 38,
+   "chg5_pct": -5.68,
+   "ret20_pct": 2.79,
+   "vr120": 0.7,
+   "buy_zone_z1": [
+    19.24,
+    20.15
+   ],
+   "buy_zone_ma": [
+    24.76,
+    24.95
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 22.0,
+   "res60": 26.37,
+   "res_dist_pct": 10.3,
+   "bad_line": 24.51,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 23.43,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "301177",
+   "name": "迪阿股份",
+   "ind": "服饰",
+   "px_qfq": 23.36,
+   "qfq_date": "20261009",
+   "px_raw": 23.36,
+   "raw_date": 20261009,
+   "raw_chg_pct": 2.32,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 15,
+   "off_start": 1.8,
+   "days": 30,
+   "chg5_pct": 1.3,
+   "ret20_pct": -6.52,
+   "vr120": 0.46,
+   "buy_zone_z1": [
+    21.65,
+    22.68
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 21.49,
+   "res60": 28.73,
+   "res_dist_pct": 23.0,
+   "bad_line": 22.94,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 22.89,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "603596",
+   "name": "伯特利",
+   "ind": "汽车配件",
+   "px_qfq": 27.29,
+   "qfq_date": "20261009",
+   "px_raw": 27.29,
+   "raw_date": 20261009,
+   "raw_chg_pct": -0.15,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 28,
+   "off_start": -2.5,
+   "days": 24,
+   "chg5_pct": -4.41,
+   "ret20_pct": -10.38,
+   "vr120": 0.57,
+   "buy_zone_z1": [
+    23.74,
+    24.87
+   ],
+   "buy_zone_ma": null,
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "上方等回踩",
+   "stop_ref": 25.11,
+   "res60": 30.45,
+   "res_dist_pct": 11.6,
+   "bad_line": 28.33,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 26.74,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  },
+  {
+   "code": "301193",
+   "name": "家联科技",
+   "ind": "家居用品",
+   "px_qfq": 20.95,
+   "qfq_date": "20261009",
+   "px_raw": 20.95,
+   "raw_date": 20261009,
+   "raw_chg_pct": 0.05,
+   "caliber_warn": false,
+   "portrait_pct": null,
+   "portrait_prob": null,
+   "pos250": 43,
+   "off_start": 12.5,
+   "days": 24,
+   "chg5_pct": -12.01,
+   "ret20_pct": 3.66,
+   "vr120": 0.76,
+   "buy_zone_z1": [
+    15.84,
+    16.6
+   ],
+   "buy_zone_ma": [
+    21.0,
+    22.24
+   ],
+   "in_z1": false,
+   "in_ma_zone": false,
+   "state": "回踩未企稳(带下方,触发=收复MA10)",
+   "stop_ref": 19.27,
+   "res60": 23.94,
+   "res_dist_pct": 14.3,
+   "bad_line": 20.79,
+   "blowoff_warn": false,
+   "no_chase_today": false,
+   "chase_zone": false,
+   "lift_note": "-",
+   "limit_ref": 20.53,
+   "grp": "B",
+   "portrait_fresh": {
+    "ok": true,
+    "lag_days": 2,
+    "note": "T-2口径"
+   }
+  }
+ ]
+}

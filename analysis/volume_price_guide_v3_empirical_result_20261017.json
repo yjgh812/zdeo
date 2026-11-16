@@ -1,0 +1,231 @@
+{
+ "meta": {
+  "qfq_rows": 10252490,
+  "ana_rows": 10165523,
+  "dates": 2618,
+  "dmin": "20160104",
+  "dmax": "20261016"
+ },
+ "E14": {
+  "<20%(熊市域)": {
+   "n_days": 492,
+   "mfwd5_med": 0.11,
+   "mfwd20_med": -1.52,
+   "mfwd20_mean": -0.94
+  },
+  "20-50%": {
+   "n_days": 1207,
+   "mfwd5_med": -0.78,
+   "mfwd20_med": -3.5,
+   "mfwd20_mean": -4.03
+  },
+  "50-80%": {
+   "n_days": 713,
+   "mfwd5_med": -0.67,
+   "mfwd20_med": -3.75,
+   "mfwd20_mean": -3.75
+  },
+  ">=80%(牛市域)": {
+   "n_days": 206,
+   "mfwd5_med": -1.87,
+   "mfwd20_med": -5.66,
+   "mfwd20_mean": -6.65
+  },
+  "集中度|<8%": {
+   "n_days": 0,
+   "mfwd20_med": null,
+   "mfwd20_win": null,
+   "mfwd20_mean": null
+  },
+  "集中度|8-10%": {
+   "n_days": 0,
+   "mfwd20_med": null,
+   "mfwd20_win": null,
+   "mfwd20_mean": null
+  },
+  "集中度|10-12%": {
+   "n_days": 0,
+   "mfwd20_med": null,
+   "mfwd20_win": null,
+   "mfwd20_mean": null
+  },
+  "集中度|12-15%": {
+   "n_days": 0,
+   "mfwd20_med": null,
+   "mfwd20_win": null,
+   "mfwd20_mean": null
+  },
+  "集中度|>=15%(牛转熊节点主张)": {
+   "n_days": 2618,
+   "mfwd20_med": -3.58,
+   "mfwd20_win": 22.5,
+   "mfwd20_mean": -3.6
+  },
+  "runs>=90%": {
+   "n": 7,
+   "len_trading_days_p50": 5.0,
+   "len_p90": 9.600000000000001,
+   "longest": 12
+  },
+  "runs<10%": {
+   "n": 20,
+   "len_trading_days_p50": 2.5,
+   "longest": 58
+  },
+  "conc_series_max": 52.55,
+  "conc_ge15_days": 2618,
+  "conc_ge15_recent_dates": [
+   "20260923",
+   "20260924",
+   "20260928",
+   "20260929",
+   "20260930",
+   "20261008",
+   "20261009",
+   "20261012",
+   "20261013",
+   "20261014",
+   "20261015",
+   "20261016"
+  ]
+ },
+ "E16": {
+  "首板<20(情绪低迷主张)": {
+   "n_days": 525,
+   "mfwd5_med": -0.614,
+   "mfwd20_med": -3.97,
+   "mfwd20_win": 19.9
+  },
+  "首板20-40": {
+   "n_days": 1053,
+   "mfwd5_med": -0.758,
+   "mfwd20_med": -3.63,
+   "mfwd20_win": 23.2
+  },
+  "首板40-60": {
+   "n_days": 601,
+   "mfwd5_med": -0.678,
+   "mfwd20_med": -3.18,
+   "mfwd20_win": 22.7
+  },
+  "首板>=60": {
+   "n_days": 439,
+   "mfwd5_med": -0.617,
+   "mfwd20_med": -3.44,
+   "mfwd20_win": 23.7
+  },
+  "first_boards_p10_p50_p90": [
+   16.0,
+   35.0,
+   71.0
+  ],
+  "recent_10d": {
+   "20260928": 27,
+   "20260929": 44,
+   "20260930": 42,
+   "20261008": 33,
+   "20261009": 59,
+   "20261012": 28,
+   "20261013": 57,
+   "20261014": 24,
+   "20261015": 30,
+   "20261016": 53
+  }
+ },
+ "E13": {
+  "<20亿": {
+   "n_rows": 663650,
+   "turnover_mean": 3.91,
+   "turnover_med": 2.4,
+   "turnover_p90": 8.35,
+   "Q5最高": {
+    "n": 133416,
+    "fwd20_med": -0.25,
+    "fwd20_win": 49.0
+   },
+   "Q1最低": {
+    "n": 131854,
+    "fwd20_med": 2.62,
+    "fwd20_win": 60.9
+   }
+  },
+  "20-100亿": {
+   "n_rows": 4064318,
+   "turnover_mean": 3.52,
+   "turnover_med": 1.92,
+   "turnover_p90": 7.95,
+   "Q5最高": {
+    "n": 812134,
+    "fwd20_med": -3.34,
+    "fwd20_win": 40.1
+   },
+   "Q1最低": {
+    "n": 810543,
+    "fwd20_med": 0.63,
+    "fwd20_win": 52.8
+   }
+  },
+  "100-500亿": {
+   "n_rows": 1752873,
+   "turnover_mean": 2.62,
+   "turnover_med": 1.35,
+   "turnover_p90": 5.94,
+   "Q5最高": {
+    "n": 350858,
+    "fwd20_med": -3.3,
+    "fwd20_win": 40.7
+   },
+   "Q1最低": {
+    "n": 348760,
+    "fwd20_med": -0.15,
+    "fwd20_win": 48.7
+   }
+  },
+  ">=500亿": {
+   "n_rows": 435134,
+   "turnover_mean": 1.54,
+   "turnover_med": 0.77,
+   "turnover_p90": 3.55,
+   "Q5最高": {
+    "n": 87819,
+    "fwd20_med": -2.0,
+    "fwd20_win": 43.8
+   },
+   "Q1最低": {
+    "n": 86068,
+    "fwd20_med": 0.0,
+    "fwd20_win": 49.3
+   }
+  }
+ },
+ "E15": {
+  "东方财富(300059)_20241009": {
+   "amount_yi": 900.38,
+   "claimed_amount_yi": 900.38,
+   "next_chg_pct": -17.47,
+   "claimed_next_chg_pct": -17.47
+  },
+  "中国石油(601857)_20071105": {
+   "qfq_min_date": "20160104",
+   "verifiable": false,
+   "claimed_amount_yi": 699.91,
+   "claimed_7d_pct": "<=-16"
+  },
+  "中国平安(601318)_20150707": {
+   "qfq_min_date": "20160104",
+   "verifiable": false,
+   "row_found": false,
+   "amount_yi": null,
+   "claimed_amount_yi": 679.0,
+   "chg_pct": null
+  },
+  "新易盛(300502)_20260424": {
+   "amount_yi": 501.03,
+   "claimed_amount_yi": 501.0,
+   "chg_pct": -11.67,
+   "claimed_chg_pct": -11.67,
+   "fwd52_pct": 33.72,
+   "claimed_fwd52_pct": ">+20"
+  }
+ }
+}

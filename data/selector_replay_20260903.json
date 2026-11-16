@@ -1,0 +1,392 @@
+{
+ "list_file": "multifactor/reports/daily_top20/bp_ep_monthly_20260901_20260903_n50.csv",
+ "rule": "prereg_stock_selector v1 (Top50→剔持仓/排程/裁决→板块5d净流入为正→行业分散→取N)",
+ "selected": [
+  {
+   "code": "601668",
+   "name": "中国建筑",
+   "rank": 2,
+   "industry": "建筑工程",
+   "sector": "房屋建设Ⅱ",
+   "sector5d_wan": 23465.93
+  },
+  {
+   "code": "600694",
+   "name": "大商股份",
+   "rank": 32,
+   "industry": "百货",
+   "sector": "一般零售",
+   "sector5d_wan": 147153.7
+  },
+  {
+   "code": "600704",
+   "name": "物产中大",
+   "rank": 36,
+   "industry": "仓储物流",
+   "sector": "物流",
+   "sector5d_wan": 6708.29
+  },
+  {
+   "code": "600035",
+   "name": "楚天高速",
+   "rank": 37,
+   "industry": "路桥",
+   "sector": "铁路公路",
+   "sector5d_wan": 40004.47
+  },
+  {
+   "code": "600717",
+   "name": "天津港",
+   "rank": 48,
+   "industry": "港口",
+   "sector": "航运港口",
+   "sector5d_wan": 12682.29
+  }
+ ],
+ "short": 0,
+ "audit": [
+  {
+   "code": "601997",
+   "name": "贵阳银行",
+   "rank": 1,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600016",
+   "name": "民生银行",
+   "rank": 3,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "002958",
+   "name": "青农商行",
+   "rank": 4,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601818",
+   "name": "光大银行",
+   "rank": 5,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601169",
+   "name": "北京银行",
+   "rank": 6,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600000",
+   "name": "浦发银行",
+   "rank": 7,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601186",
+   "name": "中国铁建",
+   "rank": 8,
+   "industry": "建筑工程",
+   "sector": "基础建设",
+   "sector5d_wan": -51000.0,
+   "dropped": "板块5日主力净流出(基础建设 -51000万)"
+  },
+  {
+   "code": "002936",
+   "name": "郑州银行",
+   "rank": 9,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "603323",
+   "name": "苏农银行",
+   "rank": 10,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601166",
+   "name": "兴业银行",
+   "rank": 11,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601577",
+   "name": "长沙银行",
+   "rank": 12,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601860",
+   "name": "紫金银行",
+   "rank": 13,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600015",
+   "name": "华夏银行",
+   "rank": 14,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600908",
+   "name": "无锡银行",
+   "rank": 15,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601916",
+   "name": "浙商银行",
+   "rank": 16,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "000001",
+   "name": "平安银行",
+   "rank": 17,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601800",
+   "name": "中国交建",
+   "rank": 18,
+   "industry": "建筑工程",
+   "dropped": "持仓/已排程排除清单"
+  },
+  {
+   "code": "600928",
+   "name": "西安银行",
+   "rank": 19,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601390",
+   "name": "中国中铁",
+   "rank": 20,
+   "industry": "建筑工程",
+   "sector": "基础建设",
+   "sector5d_wan": -51000.0,
+   "dropped": "板块5日主力净流出(基础建设 -51000万)"
+  },
+  {
+   "code": "601077",
+   "name": "渝农商行",
+   "rank": 21,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601528",
+   "name": "瑞丰银行",
+   "rank": 22,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601229",
+   "name": "上海银行",
+   "rank": 23,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "002839",
+   "name": "张家港行",
+   "rank": 24,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600739",
+   "name": "辽宁成大",
+   "rank": 25,
+   "industry": "生物制药",
+   "sector": "生物制品",
+   "sector5d_wan": -123000.0,
+   "dropped": "板块5日主力净流出(生物制品 -123000万)"
+  },
+  {
+   "code": "002807",
+   "name": "江阴银行",
+   "rank": 26,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "001227",
+   "name": "兰州银行",
+   "rank": 27,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "000498",
+   "name": "山东路桥",
+   "rank": 28,
+   "industry": "建筑工程",
+   "sector": "基础建设",
+   "sector5d_wan": -51000.0,
+   "dropped": "板块5日主力净流出(基础建设 -51000万)"
+  },
+  {
+   "code": "600064",
+   "name": "南京高科",
+   "rank": 29,
+   "industry": "园区开发",
+   "sector": "房地产开发",
+   "sector5d_wan": -58000.0,
+   "dropped": "板块5日主力净流出(房地产开发 -58000万)"
+  },
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "rank": 30,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601825",
+   "name": "沪农商行",
+   "rank": 31,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "000623",
+   "name": "吉林敖东",
+   "rank": 33,
+   "industry": "中成药",
+   "sector": "中药Ⅱ",
+   "sector5d_wan": -30000.0,
+   "dropped": "板块5日主力净流出(中药Ⅱ -30000万)"
+  },
+  {
+   "code": "601128",
+   "name": "常熟银行",
+   "rank": 34,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601658",
+   "name": "邮储银行",
+   "rank": 35,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601963",
+   "name": "重庆银行",
+   "rank": 38,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601117",
+   "name": "中国化学",
+   "rank": 39,
+   "industry": "建筑工程",
+   "sector": "专业工程",
+   "sector5d_wan": -54000.0,
+   "dropped": "板块5日主力净流出(专业工程 -54000万)"
+  },
+  {
+   "code": "601998",
+   "name": "中信银行",
+   "rank": 40,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "601009",
+   "name": "南京银行",
+   "rank": 41,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "000726",
+   "name": "鲁泰A",
+   "rank": 43,
+   "industry": "纺织",
+   "sector": "纺织制造",
+   "sector5d_wan": -22000.0,
+   "dropped": "板块5日主力净流出(纺织制造 -22000万)"
+  },
+  {
+   "code": "000544",
+   "name": "中原环保",
+   "rank": 44,
+   "industry": "环境保护",
+   "sector": "环境治理",
+   "sector5d_wan": -65000.0,
+   "dropped": "板块5日主力净流出(环境治理 -65000万)"
+  },
+  {
+   "code": "002608",
+   "name": "江苏国信",
+   "rank": 45,
+   "industry": "火力发电",
+   "sector": "电力",
+   "sector5d_wan": -152000.0,
+   "dropped": "板块5日主力净流出(电力 -152000万)"
+  },
+  {
+   "code": "002966",
+   "name": "苏州银行",
+   "rank": 46,
+   "industry": "银行",
+   "dropped": "裁决剔除行业:银行"
+  },
+  {
+   "code": "600638",
+   "name": "新黄浦",
+   "rank": 47,
+   "industry": "区域地产",
+   "sector": "房地产开发",
+   "sector5d_wan": -58000.0,
+   "dropped": "板块5日主力净流出(房地产开发 -58000万)"
+  },
+  {
+   "code": "000885",
+   "name": "城发环境",
+   "rank": 49,
+   "industry": "环境保护",
+   "sector": "环境治理",
+   "sector5d_wan": -65000.0,
+   "dropped": "板块5日主力净流出(环境治理 -65000万)"
+  },
+  {
+   "code": "600827",
+   "name": "百联股份",
+   "rank": 42,
+   "industry": "超市连锁",
+   "sector": "一般零售",
+   "sector5d_wan": 147153.7,
+   "dropped": "行业分散让位(同一般零售组rank更小者保留)"
+  },
+  {
+   "code": "600020",
+   "name": "中原高速",
+   "rank": 50,
+   "industry": "路桥",
+   "sector": "铁路公路",
+   "sector5d_wan": 40004.47,
+   "dropped": "行业分散让位(同路桥组rank更小者保留)"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+PRELAUNCH_EMBRYO_SHADOW 影子简报 生成于 2026-10-19 08:26
+prereg=PREREG_PRELAUNCH_EMBRYO_SHADOW_DRAFT_20261019.json 指纹=c5b69ad38aec4965 激活=20240101
+胚胎态=pos60>=60 & 0<ret20<20 & 板史60>=2 & 近5日无板 & 当日未板 记账=信号日收盘持有(无止损)
+记账 n=17741 到期 n=17245 未到期=496 med20=-3.0 win20=41.2
+LOCKED 进度=673/60交易日, 到期n=17245/30 kill_switch=True gate_pass_now=False
+验收门: pass=med>=+2.0%且win>=55%; kill=前10到期事件fwd20全<0; 纯观测零交易权

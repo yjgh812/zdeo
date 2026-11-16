@@ -1,0 +1,27 @@
+{
+ "name": "PREREG_DIPFLUSH_BREADTH_BASKET",
+ "title": "深踩广度日篮子(MA20线上∧单日深踩事件≥30→次日开盘等权篮子持5日)影子验证",
+ "status": "ACTIVE",
+ "approval": "{'approved_by': 'owner(主人)', 'approved_at': '2026-10-11', 'decision': '主人令「继续」=批准§十呈请: prereg登记→前向影子→到期裁决(沿sc_spring惯例)', 'activation_since': '20261012', 'runner': 'analysis/dipflush_breadth_shadow_daily.py(全史重算幂等, 参数单一真源=本文件 params 字段, 缺字段fail-closed退出)'}",
+ "registered": "2026-10-11",
+ "family": "stock_event_breadth_basket",
+ "sibling": "DIP-CARRY-ROUND-END-NO-EDGE(证伪库#98)为同源异命题: #98=滚动R1均值作停手信号(已证伪), 本件=单日深踩广度作入场信号(广度篮子), 互斥不并轨",
+ "evidence_report": "reports/tgb_pullflush_proto_20261011.md §三/§四 + reports/tgb_trigger_sell_study_20261011.md §研究A + reports/tgb_dipcarry_event_study_20261011.md (MA20闸9/9年)",
+ "in_sample_evidence": "{'thr30': {'n_days': 59, 'mean_r5_bp': 225, 'median_r5_bp': 238, 'years_pos': '9/9'}, 'thr50': {'n_days': 27, 'mean_r5_bp': 256}, 'threshold_monotonic': '20/30/50/80 → 153/225/256/385bp', 'worst_days': ['20190424 -10.6%', '20200311 -8.1%'], 'caveats': ['阈值30系样内探索选定=过拟合风险, OOS影子为唯一裁决', '槽式组合已证不可得(§十), 本件唯一可执行形态=广度篮子', '无仓位档则单篮-5~-10%级回撤须主人预算']}",
+ "params": {
+  "deep_ratio": 0.97,
+  "ma_short": 5,
+  "ma_mid": 10,
+  "ma_long": 20,
+  "gap_max": 0.07,
+  "breadth_min": 30,
+  "holding_days": 5,
+  "entry": "next_open",
+  "gate": "eqw_market_close_ge_ma20",
+  "universe_blocks": ["000_", "001_", "002_", "003_", "300_", "301_", "600_", "601_", "603_", "605_"],
+  "notes": "gap_max=0.07 同时覆盖涨停开盘不可买(主板9.5%/创业板19.5%均>7%); 篮子=过gap过滤后的全部深踩股等权, 无槽约束"
+ },
+ "trigger_locked": "T日收盘可计算零前视: ①市场闸=等权市场指数(同宇宙日收益等权累乘)收盘≥其MA20 ②T日单宇宙深踩事件数≥30, 事件=t-1日MA5>MA10>MA20且close[t-1]>MA5[t-1] 且 T日low≤MA10×0.97 且 T日close>MA20 ③篮子=T+1日开盘等权买入全部过gap_max成员, 持有至T+5日收盘卖出; 成员R5=close[T+5]/open[T+1]-1",
+ "acceptance_locked": "{'window': 'OOS到期篮子n>=10 或 日历2027-06-30 先到为准', 'pass': 'OOS到期篮子R5中位>=+100bp 且 胜率>=60%', 'kill_switch': 'OOS前5个到期篮子R5中位<0 -> 提请废案', 'honesty_note': '样内+225/238含2019/2020型V反弹堆积, OOS按保守+100/60锚定; 阈值样内选定风险由OOS唯一裁决'}",
+ "boundary": "纯观测影子层零交易权, 不接闸门不接交易cron不接executor; 挂daily_chain[dipflush]仅产出台账/快照/简报; 信号权=主人; ST未滤(沿sc_spring口径如实声明); 篮子等权无仓位档=回撤预算须主人批准后方可谈接线"
+}

@@ -1,0 +1,43 @@
+{
+ "id": "20260909-sector-filter-chan12-v1",
+ "ts": "2026-09-09",
+ "object": "行业板块方向对日线缠论一二买的增量验证（H3 跨尺度假设）— 预注册",
+ "origin": "主人令『继续』后从三分支中选定唯一可合规自主推进者。与已证伪的 H1(WEEKLY-FILTER-CHAN12, 个股周线强趋势×一二买, 增量-0.60%~-1.48% 全负)本质区别=条件的尺度：H1 条件与买点在同一标的(个股周线强≈个股高位, 与超跌买点同尺度冲突=已证伪的错配)；H3 条件在行业层面、买点在个股层面(跨尺度, 行业强时个股超跌买点=板块内补涨起点语义, S2B 同族精神)",
+ "prior_state_honesty": "先验已被 H1 结果污染(已见强趋势过滤负增量+三买深负)。H3 先验方向不定：行业条件与个股尺度不同, 机理上新; 闸门与预算按同族标准冻结, 不因 H1 结果调整。S2B prereg(PREREG_S2B_LOWPOS_20260908)管辖其自身假设(涨停池聚集行业+低位组), 与本假设信号源/条件定义/判定协议均不同, 正交并存, 10/9 窗口可互证",
+ "hypothesis_LOCKED": {
+  "H3": "所属行业周线方向向上(行业等权指数周收盘>周MA_n 且 周MA_n上行)时的缠论 buy1+buy2 信号, 相对同窗不套过滤的信号(嵌套对照组), fwd20 均值增量显著为正",
+  "industry_index": "行业日指数=该行业成分股 qfq 日收益(close/close[-1]-1)等权均值, cumprod 合成(基期=窗口首日=1.0); 由真主库日线直接合成, 无外部依赖",
+  "weekly_filter": "行业日指数 resample(W-FRI) 周点位=周内最后交易日值; 条件=周收盘>周MA_n 且 周MA_n>周MA_n[-1]; 信号日映射=merge_asof backward 取信号日前最近已完整周(含信号日恰为周五收盘情形), 无前视",
+  "sector_map": "dragon_quant_meta.stock_sector_sw1 (code[-6:]->sector_name, 快照 updated 2026-06-06)——非历史PIT映射的幸存者/重分类偏差如实登记为口径局限(与S2B同款)",
+  "signal_engine": "portrait_agent/cache/chan_signals_v2.pkl 确认日口径 type∈{buy1,buy2}",
+  "eligibility": "剔科创(688/689)/北交/次新<60交易日, 与前两轮完全一致"
+ },
+ "protocol": {
+  "sample_main": "20160101 ~ 20251231",
+  "oos_frozen": "20260101 ~ 20260831 冻结, 主检验过闸后才允许运行一次",
+  "horizons": {
+   "main": 20,
+   "aux": [
+    5,
+    10
+   ]
+  },
+  "ret": "close[D]/close[D+N]-1, qfq收盘",
+  "benchmark": "主口径=嵌套对照(无过滤组, 与 H1 同基线可直接对比); 辅口径=全市场等权日基准",
+  "cost": "主闸毛口径; 附录净口径-2x0.1%",
+  "data_source": "D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db (真主库, 与 chan_fix_eventstudy 先例同源; 修正 H1 轮使用 zcodesj 副本的选择, 主样本窗两者内容一致)"
+ },
+ "criterion_LOCKED": {
+  "pass": "增量超额(过滤-无过滤)fwd20 Welch t>=2.0 且 过滤组分年(2016-2025)>=7/10 年不为负 且 辅口径市场超额为正",
+  "fail": "任一主条件未达; 增量<=0 或 t<1.5 -> falsified_rules 登记 SECTOR-FILTER-CHAN12"
+ },
+ "sensitivity_budget_LOCKED": [
+  "industry_ma10",
+  "industry_ma30"
+ ],
+ "anti_piahua": "变体仅限上述2项, 跑完未过即关闭; 禁止换行业分类源/换合成方式重试; 禁止样本外重跑; 本假设与 H1/H2 同用一样本池, 本档案是『大级别条件×缠论一二买』的最后一个预设形态, FAIL 后该命题全部预设形态耗尽, 任何新形态须重新立项论证与 H1/H3 的信息增量",
+ "falsified_path": "未过闸 -> falsified_rules 登记 SECTOR-FILTER-CHAN12; 至此级别联立命题三形态(个股周线×一二买/×三买/行业周线×一二买)全部关闭",
+ "promotion_path": "过闸 -> S2B 式影子登记, 不直接接生产",
+ "scope": "独立影子研究, 零生产影响",
+ "fingerprint": "a4d17df2fc6e40ea"
+}

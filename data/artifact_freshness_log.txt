@@ -1,0 +1,161 @@
+=== 产物新鲜度深检 2026-09-13 21:34 ===
+  . PortraitAgent_2250         portrait_20260911.json 0.1天前
+  . PortraitAgent_shadow       shadow_state.json 0.1天前
+  . PortraitFeed_2250          portrait_feed.json 0.1天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.1天前
+  . LeaderWatch_2245           leader_watchlist.json 1.0天前
+  . PreregWatch_0845           prereg_watch_20260913.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  . NewsPit_2130               news_20260913.jsonl 0.0天前
+  . WestockReconcile_1640      westock_reconcile.log 0.9天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 0.1天前
+异常 0 项 — 全部新鲜
+
+=== 产物新鲜度深检 2026-09-13 21:35 ===
+  . PortraitAgent_2250         portrait_20260911.json 0.1天前
+  . PortraitAgent_shadow       shadow_state.json 0.1天前
+  . PortraitFeed_2250          portrait_feed.json 0.1天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.1天前
+  . LeaderWatch_2245           leader_watchlist.json 1.0天前
+  . PreregWatch_0845           prereg_watch_20260913.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  . NewsPit_2130               news_20260913.jsonl 0.0天前
+  . WestockReconcile_1640      westock_reconcile.log 0.9天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 0.1天前
+异常 0 项 — 全部新鲜
+
+=== 产物新鲜度深检 2026-09-13 21:35 ===
+  . PortraitAgent_2250         portrait_20260911.json 0.1天前
+  . PortraitAgent_shadow       shadow_state.json 0.1天前
+  . PortraitFeed_2250          portrait_feed.json 0.1天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.1天前
+  . LeaderWatch_2245           leader_watchlist.json 1.0天前
+  . PreregWatch_0845           prereg_watch_20260913.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  . NewsPit_2130               news_20260913.jsonl 0.0天前
+  . WestockReconcile_1640      westock_reconcile.log 0.9天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 0.1天前
+异常 0 项 — 全部新鲜
+
+=== 产物新鲜度深检 2026-09-20 20:30 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 7.0 天 (容3天)
+  . PortraitAgent_shadow       shadow_state.json 1.9天前
+  . PortraitFeed_2250          portrait_feed.json 1.9天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.9天前
+  . LeaderWatch_2245           leader_watchlist.json 0.9天前
+  . PreregWatch_0845           prereg_watch_20260920.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.0天前
+  . NewsPit_2130               news_20260919.jsonl 1.0天前
+  . WestockReconcile_1640      westock_reconcile.log 2.2天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 1.9天前
+异常 1 项: PortraitAgent_2250(portrait_20260911.json 停更7.0天)
+
+=== 产物新鲜度深检 2026-09-27 20:30 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 14.0 天 (容3天)
+  . PortraitAgent_shadow       shadow_state.json 1.9天前
+  . PortraitFeed_2250          portrait_feed.json 1.9天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.9天前
+  . LeaderWatch_2245           leader_watchlist.json 0.9天前
+  . PreregWatch_0845           prereg_watch_20260927.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  . NewsPit_2130               news_20260926.jsonl 1.0天前
+  . WestockReconcile_1640      westock_reconcile.log 2.2天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 1.9天前
+异常 1 项: PortraitAgent_2250(portrait_20260911.json 停更14.0天)
+
+=== 产物新鲜度深检 2026-10-06 09:28 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 22.6 天 (容3天)
+  ! PortraitAgent_shadow       shadow_state.json 停更 3.4 天 (容3天)
+  ! PortraitFeed_2250          portrait_feed.json 停更 3.4 天 (容3天)
+  . BreakoutScout_2250         breakout_scout_track.jsonl 2.4天前
+  . LeaderWatch_2245           leader_watchlist.json 2.4天前
+  . PreregWatch_0845           prereg_watch_20261003.json 3.0天前
+  . GarchShadow_0850           garch_shadow.csv 3.0天前
+  ! NewsPit_2130               news_20260930.jsonl 停更 5.5 天 (容3天)
+  . WestockReconcile_1640      westock_reconcile.log 3.7天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 3.5天前
+异常 4 项: PortraitAgent_2250(portrait_20260911.json 停更22.6天); PortraitAgent_shadow(shadow_state.json 停更3.4天); PortraitFeed_2250(portrait_feed.json 停更3.4天); NewsPit_2130(news_20260930.jsonl 停更5.5天)
+
+=== 产物新鲜度深检 2026-10-11 20:30 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 28.0 天 (容3天)
+  . PortraitAgent_shadow       shadow_state.json 1.9天前
+  . PortraitFeed_2250          portrait_feed.json 0.4天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.9天前
+  . LeaderWatch_2245           leader_watchlist.json 0.9天前
+  . PreregWatch_0845           prereg_watch_20261011.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  ! NewsPit_2130               news_20260930.jsonl 停更 11.0 天 (容3天)
+  . WestockReconcile_1640      westock_reconcile.log 2.2天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 1.9天前
+异常 2 项: PortraitAgent_2250(portrait_20260911.json 停更28.0天); NewsPit_2130(news_20260930.jsonl 停更11.0天)
+
+=== 产物新鲜度深检 2026-10-18 20:30 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 35.0 天 (容3天)
+  . PortraitAgent_shadow       shadow_state.json 1.9天前
+  . PortraitFeed_2250          portrait_feed.json 1.9天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.9天前
+  . LeaderWatch_2245           leader_watchlist.json 0.9天前
+  . PreregWatch_0845           prereg_watch_20261018.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  ! NewsPit_2130               news_20260930.jsonl 停更 18.0 天 (容3天)
+  . WestockReconcile_1640      westock_reconcile.log 1.9天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 1.9天前
+异常 2 项: PortraitAgent_2250(portrait_20260911.json 停更35.0天); NewsPit_2130(news_20260930.jsonl 停更18.0天)
+
+=== 产物新鲜度深检 2026-10-18 23:27 ===
+  ! PortraitAgent_2250         portrait_20260911.json 停更 35.1 天 (容3天)
+  . PortraitAgent_shadow       shadow_state.json 2.0天前
+  . PortraitFeed_2250          portrait_feed.json 2.0天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.0天前
+  . LeaderWatch_2245           leader_watchlist.json 0.0天前
+  . PreregWatch_0845           prereg_watch_20261018.json 0.6天前
+  . GarchShadow_0850           garch_shadow.csv 0.6天前
+  ! NewsPit_2130               news_20260930.jsonl 停更 18.1 天 (容3天)
+  . WestockReconcile_1640      westock_reconcile.log 2.0天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 2.0天前
+  . RegimeGateShadow_2110      regime_gate_shadow.jsonl 1.9天前
+  . StopLoss_Morning_0935      stop_loss_scan_20261018.md 0.4天前
+  . StopLoss_Schtask_1430      stop_loss_1430_schtask.log 2.0天前
+  ! SealSnapshot_1515          seal_snapshot_schtask.log 停更 4.3 天 (容3天)
+  . NewsSentiment_1535         news_sentiment_shadow_ledger.jsonl 1.9天前
+  . FwdShadow_chain            main_combo_fwd_shadow_state_latest.json 0.3天前
+异常 3 项: PortraitAgent_2250(portrait_20260911.json 停更35.1天); NewsPit_2130(news_20260930.jsonl 停更18.1天); SealSnapshot_1515(seal_snapshot_schtask.log 停更4.3天)
+
+=== 产物新鲜度深检 2026-10-19 01:03 ===
+  . PortraitAgent_2250         portrait_20261015.json 3.1天前
+  . PortraitAgent_shadow       shadow_state.json 2.1天前
+  . PortraitFeed_2250          portrait_feed.json 2.1天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.1天前
+  . LeaderWatch_2245           leader_watchlist.json 0.1天前
+  . PreregWatch_0845           prereg_watch_20261018.json 0.7天前
+  . GarchShadow_0850           garch_shadow.csv 0.7天前
+  . NewsPit_2130               news_20261018.jsonl 0.1天前
+  . WestockReconcile_1640      westock_reconcile.log 2.1天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 2.1天前
+  . RegimeGateShadow_2110      regime_gate_shadow.jsonl 1.9天前
+  . StopLoss_Morning_0935      stop_loss_scan_20261018.md 0.5天前
+  . StopLoss_Schtask_1430      stop_loss_1430_schtask.log 2.1天前
+  ! SealSnapshot_1515          seal_snapshot_schtask.log 停更 4.4 天 (容3天)
+  . NewsSentiment_1535         news_sentiment_shadow_ledger.jsonl 1.9天前
+  . FwdShadow_chain            main_combo_fwd_shadow_state_latest.json 0.0天前
+异常 1 项: SealSnapshot_1515(seal_snapshot_schtask.log 停更4.4天)
+
+=== 产物新鲜度深检 2026-10-25 20:30 ===
+  . PortraitAgent_2250         portrait_20261023.json 1.9天前
+  . PortraitAgent_shadow       shadow_state.json 1.9天前
+  . PortraitFeed_2250          portrait_feed.json 1.9天前
+  . BreakoutScout_2250         breakout_scout_track.jsonl 0.9天前
+  . LeaderWatch_2245           leader_watchlist.json 0.9天前
+  . PreregWatch_0845           prereg_watch_20261025.json 0.5天前
+  . GarchShadow_0850           garch_shadow.csv 0.5天前
+  . NewsPit_2130               news_20261024.jsonl 0.9天前
+  . WestockReconcile_1640      westock_reconcile.log 2.0天前
+  . GateWeeklyWinrate          weekly_winrate_cron.log 1.9天前
+  ! RegimeGateShadow_2110      regime_gate_shadow.jsonl 停更 4.0 天 (容3天)
+  . StopLoss_Morning_0935      stop_loss_scan_20261023.md 2.5天前
+  . StopLoss_Schtask_1430      stop_loss_1430_schtask.log 2.0天前
+  . SealSnapshot_1515          seal_snapshot_schtask.log 2.0天前
+  ! NewsSentiment_1535         news_sentiment_shadow_ledger.jsonl 停更 4.2 天 (容3天)
+  . FwdShadow_chain            main_combo_fwd_shadow_state_latest.json 0.9天前
+异常 2 项: RegimeGateShadow_2110(regime_gate_shadow.jsonl 停更4.0天); NewsSentiment_1535(news_sentiment_shadow_ledger.jsonl 停更4.2天)
+

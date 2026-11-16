@@ -1,0 +1,32 @@
+{
+ "name": "PREREG_POSITION_FRAMEWORK_SHADOW",
+ "date": "2026-10-07",
+ "version": "v1.0",
+ "status": "ACTIVE_APPROVED_20261007",
+ "approval_record": "主人2026-10-07裁决「铁律不改，其他继续」=路线图v2阶段1（候选辛影子期）批准；铁律项（集中度PD-013 40%→50%呈请）同步否决关闭",
+ "background": "候选辛统一仓位模型影子期（reports/position_framework_draft_20261006.md四层架构v0.1+reports/roadmap_200pct_v2_20261007.md阶段1）。立项三查20261007 CONFLICT（SENTIMENT-CYCLE族13命中）差异论证：①相位层复用已获主人批准重测的PREREG_EMOTION_PHASE_POSITION(ACTIVE_RETEST_APPROVED_20261006,指纹0fb887e3b115fda4,低频状态档差异论证已备案)——本影子不另立相位权重，直接复用其权重曲线作为第一层输入；②本影子新增=赢面层(verification_trades滚动胜率折扣因子)与A/B/C三臂对照（A=相位×赢面，B=纯相位，C=恒定满仓），测的是赢面层的附加价值，非相位择时变体；③主人「其他继续」=阶段1批准在案。",
+ "shadow_design": {
+  "window": "激活日起60个交易日（起点与phase影子同步=20261008）",
+  "layer1_phase": "复用emotion_position_shadow权重公式：base euphoric1.0/healing0.8/ebbing0.6/diverging0.5/bottom0.5 + height_rising+0.2(≤1.0)/collapse-0.2(≥0.3)，LOCKED不改动",
+  "layer2_winface": "赢面折扣因子f_win（LOCKED设计值写死，不调参）：滚动最近20笔verification_trades(actual_ret_t5非空)胜率 → ≥55%→1.0；45%-55%→0.9；<45%→0.8；样本<10笔→0.9中性默认",
+  "A_arm": "相位权重×f_win×当日全市场等权收益（候选辛组合代理）",
+  "B_arm": "纯相位权重×当日全市场等权收益（=已在跑的phase影子A臂，对照赢面层增量）",
+  "C_arm": "恒定满仓等权（基准）",
+  "proxy_note": "等权市场代理——影子测的是分层框架作为总仓调制器的组合级效果，不代表单票分配模拟，如实标注"
+ },
+ "three_gates": {
+  "G1": "A臂年化波动较C臂降幅≥10%",
+  "G2": "A臂最大回撤较C臂收窄≥15%",
+  "G3": "A臂CAGR较C臂损失≤2pp",
+  "G4_supplementary": "A臂 vs B臂：赢面层附加价值观察项（不作生死门，只呈报增量方向）"
+ },
+ "conclusion_rule": "G1-G3全过→呈主人裁「赢面×相位加权接仓位参考」；任一不过→归档不再提；G4仅描述",
+ "boundary": "零交易权纯模拟；相位权重公式复用LOCKED不动；f_win映射LOCKED设计值；不接闸门不接executor；铁律不改裁决在案=集中度呈请已关闭，本影子不含任何集中度变更",
+ "data_sources": "emotion_phase_v2_ledger.jsonl(只读)/attribution.db verification_trades(只读)/qfq库等权(只读)",
+ "notes": "脚本=position_framework_shadow.py；台账=data/position_framework_shadow_ledger.jsonl按date幂等；--since必传否则PREVIEW安全态；指纹校验被改即拒",
+ "fingerprint": "7e85cef0d5d45f9f",
+ "activation": {
+  "since": "20261008",
+  "activated_by": "主人「铁律不改，其他继续」2026-10-07"
+ }
+}

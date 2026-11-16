@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "data": {
+    "positions": [
+      {"code": "sz000983", "name": "山西焦煤", "quantity": 20000, "marketValue": 260000.0, "profitRate": -0.02},
+      {"code": "sh600519", "name": "贵州茅台", "quantity": 100, "marketValue": 200000.0, "profitRate": 0.30},
+      {"code": "sz002811", "name": "郑中设计", "quantity": 5000, "marketValue": 50000.0, "profitRate": -0.09},
+      {"code": "sh601318", "name": "中国平安", "quantity": 4000, "marketValue": 80000.0, "profitRate": -0.06},
+      {"code": "sz002371", "name": "北方华创", "quantity": 200, "marketValue": 120000.0, "profitRate": 0.12, "industry": "半导体"},
+      {"code": "sh688981", "name": "中芯国际", "quantity": 1000, "marketValue": 110000.0, "profitRate": 0.08, "industry": "半导体"},
+      {"code": "sz300661", "name": "圣邦股份", "quantity": 500, "marketValue": 90000.0, "profitRate": 0.15, "industry": "半导体"},
+      {"code": "sh601127", "name": "赛力斯", "quantity": 820, "price": 100.0, "profitRate": 0.03}
+    ]
+  }
+}

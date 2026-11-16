@@ -1,0 +1,34 @@
+{
+  "prereg_id": "PREREG_LOWCONSOL_PHASE_CB_FORWARD_20261023",
+  "created": "2026-10-23",
+  "author": "全域回测六轮专项收口轮（主人「继续」令批准注册）",
+  "zero_trade_authority": true,
+  "status": "ACTIVE_FORWARD",
+  "domain": "M1低位横盘域（lowconsol信号件呈报层）",
+  "hypotheses": [
+    {
+      "id": "H1相位开关",
+      "statement": "低位横盘A格子信号仅在市场活跃度相位 amt_q>=0.5（全市场20日成交额分位）时呈报可买候选，前瞻期组合级表现优于全程出信号",
+      "historical_evidence": "R2phaseON/R5: CAGR -9.9%→-2.4%(+7.5pp), MDD -79.9%→-45.5%, 熔断124→33笔；档案语境: 主线首日效应相位依赖(2024+有效/熊市无效, PREREG_LOW_FRESH_MAINLINE_20261021 NOT_CONFIRMED_CROSS_PHASE)",
+      "forward_endpoint": "前瞻期(注册日起)低位横盘候选命中次10日收益, ON桶 vs OFF桶分层; 累计≥60个交易日或≥30笔命中后裁决",
+      "acceptance": "ON桶均值-OFF桶均值 >= +1.5pp 且方向跨两个独立月度窗口一致 → 升级为信号件正式过滤",
+      "falsification": "ON<=OFF 或单月反转无解释 → 开关注册为纯标注, 永久不作过滤"
+    },
+    {
+      "id": "H2熔断15/25",
+      "statement": "账户级熔断 20/30 收紧为 15/25 在低位横盘域改善尾部",
+      "historical_evidence": "R4m1_cb扫描: 15/25→-0.1%/MDD-50.1% 优于 20/30→-1.2%/-48.2%; 但M6域反向(cb15/25 -2.7pp), 仅限M1域",
+      "forward_endpoint": "前瞻期实盘/模拟账户回撤事件次数与恢复期收益损失",
+      "acceptance": "前瞻期首次触及-15%时, 收紧档恢复期收益损失 < 宽松档历史均值 → 采纳入M1域规则包",
+      "falsification": "收紧导致频繁空仓且错过ON桶主升(机会成本>回撤改善) → 维持20/30"
+    }
+  ],
+  "evidence_refs": [
+    "reports/backtest_fullhist_2016_2026_20261022/report_final_v2_20261022.html",
+    "reports/backtest_fullhist_2016_2026_20261022/summary_round2.json",
+    "reports/backtest_fullhist_2016_2026_20261022/summary_round4.json",
+    "reports/backtest_fullhist_2016_2026_20261022/summary_round5.json",
+    "reports/backtest_fullhist_2016_2026_20261022/优化条目清单_终版_20261022.md"
+  ],
+  "notes": "历史分桶为同窗选择, 存在过拟合风险——前瞻验证是唯一裁决途径; 注册即冻结假设与验收条款, 禁改；信号件本身零交易权(买入须主人逐笔令+trade_executor)。"
+}

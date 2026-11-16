@@ -1,0 +1,19 @@
+{
+ "id": "EMOTION-PHASE-V2-NEXTDAY",
+ "mode": "independent_reimpl",
+ "n_ebbing": 115,
+ "n_healing": 216,
+ "next_sh_ret": {
+  "ebbing_mean_pct": -0.017,
+  "healing_mean_pct": 0.101,
+  "mwu_p_two_sided": 0.188
+ },
+ "next_zha_rate": {
+  "ebbing_pct": 31.13,
+  "healing_pct": 29.79,
+  "mwu_p_two_sided": 0.1592
+ },
+ "caveats": [
+  "台账419日; 次日上证=dragon_quant_meta index_daily_meta; MW-U双侧(原档单侧p=0.91)"
+ ]
+}

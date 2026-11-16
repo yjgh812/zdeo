@@ -1,0 +1,24 @@
+{
+  "id": "PREREG_M2_UNLOCK_FILTER_20260909",
+  "created": "2026-09-09",
+  "hypothesis": "bp_ep 月度买入笔中，买入日未来 30 自然日内存在解禁事件（占解禁前流通市值比例≥阈值）的笔，单笔盈亏与大亏率(≤-5%)显著更差 → 解禁临近可作买入排雷过滤标签（对应优化清单 M-2 风险标签族）。",
+  "data": {
+    "universe": "bp_ep_core_trades_full.csv（drift_check_20260909e_0908end，2,025 笔，2016-01~2026-09）",
+    "unlock_source": "event_calendar.db restricted_release_hist_em（EM dxf detail 按年拉取 22,519 行，2016-2026.09，本日新回填）",
+    "pit_semantics": "EM 明细行无公告日：解禁日程按惯例提前公告，本过滤采用『日程已知』语义（决策日 t 已知 t+30 内日程）；少数临期调整/补公告日程未建模，如实声明为已知近似。",
+    "completeness": "EM 源完整性未独立对账（2025=1784 行低于 2024=2627，或含接口覆盖边界）；漏报方向=保守（压低触发率、削弱信号强度，不伪造信号），对 PASS 判定从严、对 FAIL 判定需警惕。"
+  },
+  "label": "ratio = max(占解禁前流通市值比例)，事件条件 t < float_date ≤ t+30 自然日，同股同窗多事件取最大；triggered ⟺ ratio ≥ θ。",
+  "windows": {
+    "train": "2016-01-01 ~ 2021-12-31（建 θ）",
+    "val": "2022-01-01 ~ 2024-12-31",
+    "holdout": "2025-01-01 ~ 2026-09-08（只测一次）"
+  },
+  "theta_rule_frozen": "θ ∈ {1%, 3%, 5%, 10%}；取满足『train 窗 triggered 笔数 ≥30 且 triggered 大亏率 − non-triggered 大亏率 ≥ +3pp』的最小 θ；无满足项 → 早停 FAIL（train 窗无解禁排雷效应，不进 val/holdout）。",
+  "acceptance_frozen": "val+holdout 合并：剔除 triggered 笔后 ①大亏笔数(≤-5%)降幅 ≥15%（相对全样本大亏笔数）②全期总盈亏变化 ≥ -5,350 元（0.5pp 年化 × 10.7 年 × 10 万初始的近似折算，与专项 spec 一致）→ PASS_CANDIDATE；val 与 holdout 分列报告，holdout 只看一次。",
+  "verdict_semantics": "PASS_CANDIDATE 仅指提请 R 闸门候选研究（接线须引擎改造+主人逐项裁决+wfa_gate 新指纹）；FAIL → falsified_rules 登记 M2-UNLOCK-FILTER（trial_budget=1 不重试）。",
+  "execution": {
+    "script": "D:\\zcodesj\\m2_unlock_filter_stage1.py",
+    "output_dir": "D:\\zcodesj\\reports\\M2_UNLOCK_FILTER_STAGE1_20260909\\"
+  }
+}

@@ -1,0 +1,54 @@
+{
+ "name": "PREREG_BREAKOUT_SCOUT_TRADEABLE",
+ "version": 1,
+ "frozen_date": "20260906",
+ "owner": "D:\\zcodesj\\breakout_scout.py (感知层) + 本prereg(可交易命题)",
+ "status": "prereg_frozen_test_pending",
+ "hypothesis": "低位首板(资金确认)→蓄势不破(控盘)→间隔>=3交易日再板(二波确认)后介入, 20交易日持有相对全市场等权基准超额为正且统计显著",
+ "boundary_vs_falsified": {
+  "falsified_ref": "BOX-BREAKOUT-LOWPOS (2026-09-04, PROJECT_BOUNDARY §3 + falsified_rules.json)",
+  "falsified_summary": "低位横盘放量突破: 22215信号日聚簇-0.83% t-3.70/增量t-7.31, 正贡献全靠2019+2024两个V型反转年, 2018胜率28.9%",
+  "key_differences": [
+   "彼=横盘中放量突破当日即买(突破即入场), 无涨停确认无蓄势等待",
+   "此=三层确认: 首板涨停(资金入场确认)→蓄势期不破首板开盘×0.97且回撤<15%(控盘确认)→间隔>=3交易日再度涨停(二波确认), 入场点=二板日",
+   "此信号族为全市场事件研究中的少数派(2026/8/6-9/4回放: 首板373只中二波60只=16%), 彼为横盘突破全量(22215信号日)",
+   "彼死于2018单年崩塌与V型年集中; 此判据单独卡2018分年"
+  ],
+  "overlap_check_required": "回测须报告与box-breakout信号重叠率, 判据要求<30%否则视为同族翻案违反宪法§10-8"
+ },
+ "data_protocol": {
+  "price_source": "dragon_quant_qfq.db stock_daily_meta_qfq (qfq复权唯一价格源)",
+  "entry": "二板日次日收盘(next-bar, 禁用二板日当日价防前视)",
+  "exit": "持有20交易日收盘",
+  "benchmark": "同期全市场等权基准(剔除同日停牌不可交易)",
+  "cost": "双边千三",
+  "universe": "沪深主板+创业板(与生产买入域一致); ST/科创/北交所感知可见但不在验证域"
+ },
+ "decision_rule_locked": {
+  "pass_all_required": [
+   "事件研究: 二波信号20日超额均值>=0 且 t>=2 (121月度切片样本)",
+   "分年: 2018单独年超额>-2%且胜率>40% (box-breakout死于2018胜率28.9%, 此为针对性闸)",
+   "信号重叠: 与BOX-BREAKOUT-LOWPOS信号日重叠率<30%",
+   "逐年稳健: 正超额年份占比>=50%"
+  ],
+  "fail_branch": "任一不过→FALSIFIED登记(BREAKOUT-SCOUT-TRADEABLE), trial_budget=1不重试, 翻案须新holdout+新指纹",
+  "pass_branch": "PASS_CANDIDATE≠接线; 接线须主人裁决+wfa_gate独立验证(与combo-c同流程)"
+ },
+ "execution_plan": {
+  "step1": "全历史信号扫描(qfq库2019-2026): 复用breakout_scout信号定义(参数fingerprint见data/breakout_scout_track.jsonl首行param_fp)",
+  "step2": "事件研究+基准对照+费用, 产出reports/BREAKOUT_SCOUT_EVENT_STUDY_*.md",
+  "step3": "按decision_rule_locked四判据逐条判定, 结果登记(过=PASS_CANDIDATE待主人裁决; 不过=FALSIFIED)",
+  "note": "本轮(20260906)交付=prereg冻结+感知层上线; 回测为独立批处理(qfq主库重建完成后跑, 备份库亦可), 预估全历史扫描小时级"
+ },
+ "guardrails": [
+  "感知层(breakout_scout/leader_watchlist)永久零交易权, 本prereg通过前任何基于二波信号的买入=violation(裸奔)",
+  "宪法§10名单制不变: 即使PASS_CANDIDATE, 入选买入名单仍须wfa_gate+主人裁决",
+  "qfq主库重建完成前回测禁用主库(fail-closed), 用weekly备份快照需在报告中注明快照日期"
+ ],
+ "result": {
+  "date": "20260906",
+  "verdict": "FALSIFIED",
+  "note": "判据未改; 回测窗口20180101-20260904(冻结文本2019起与G2-2018分年闸内在矛盾,取忠实判据意图窗口并在报告声明); 四闸=G1 FAIL(超额-4.12pp t月-12.34)/G2 FAIL(2018超额-6.1pp胜率21.7%)/G3 PASS(重叠1.28%)/G4 FAIL(0/9正超额年); 明细=attribution/breakout_scout_eventstudy_result_20260906.json",
+  "price_db": "workbuddyspace factor_engine qfq(至20260904, box 0904同款)"
+ }
+}

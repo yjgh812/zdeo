@@ -1,0 +1,349 @@
+{
+ "prereg_id": "PREREG-VOLTARGET-V2",
+ "fingerprint": "5a765ec776cd07e4",
+ "grid_variants": [
+  {
+   "est": 10,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.366,
+   "bh_sharpe": 0.587,
+   "uplift": -0.221,
+   "mdd": -34.16,
+   "bh_mdd": -33.69,
+   "n": 1307
+  },
+  {
+   "est": 10,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.524,
+   "bh_sharpe": 0.558,
+   "uplift": -0.034,
+   "mdd": -29.33,
+   "bh_mdd": -33.69,
+   "n": 1361
+  },
+  {
+   "est": 10,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.488,
+   "bh_sharpe": 0.587,
+   "uplift": -0.099,
+   "mdd": -32.02,
+   "bh_mdd": -33.69,
+   "n": 1307
+  },
+  {
+   "est": 10,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.561,
+   "bh_sharpe": 0.558,
+   "uplift": 0.003,
+   "mdd": -30.04,
+   "bh_mdd": -33.69,
+   "n": 1361
+  },
+  {
+   "est": 10,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.119,
+   "bh_sharpe": 0.47,
+   "uplift": -0.351,
+   "mdd": -33.83,
+   "bh_mdd": -33.69,
+   "n": 1055
+  },
+  {
+   "est": 10,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.289,
+   "bh_sharpe": 0.414,
+   "uplift": -0.125,
+   "mdd": -27.61,
+   "bh_mdd": -33.69,
+   "n": 1109
+  },
+  {
+   "est": 10,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.342,
+   "bh_sharpe": 0.47,
+   "uplift": -0.128,
+   "mdd": -31.2,
+   "bh_mdd": -33.69,
+   "n": 1055
+  },
+  {
+   "est": 10,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.401,
+   "bh_sharpe": 0.414,
+   "uplift": -0.013,
+   "mdd": -29.29,
+   "bh_mdd": -33.69,
+   "n": 1109
+  },
+  {
+   "est": 21,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.415,
+   "bh_sharpe": 0.571,
+   "uplift": -0.156,
+   "mdd": -32.1,
+   "bh_mdd": -33.69,
+   "n": 1296
+  },
+  {
+   "est": 21,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.459,
+   "bh_sharpe": 0.527,
+   "uplift": -0.068,
+   "mdd": -29.21,
+   "bh_mdd": -33.69,
+   "n": 1351
+  },
+  {
+   "est": 21,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.528,
+   "bh_sharpe": 0.571,
+   "uplift": -0.043,
+   "mdd": -30.41,
+   "bh_mdd": -33.69,
+   "n": 1296
+  },
+  {
+   "est": 21,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.53,
+   "bh_sharpe": 0.527,
+   "uplift": 0.003,
+   "mdd": -29.81,
+   "bh_mdd": -33.69,
+   "n": 1351
+  },
+  {
+   "est": 21,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.137,
+   "bh_sharpe": 0.461,
+   "uplift": -0.324,
+   "mdd": -31.13,
+   "bh_mdd": -33.69,
+   "n": 1044
+  },
+  {
+   "est": 21,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.24,
+   "bh_sharpe": 0.438,
+   "uplift": -0.198,
+   "mdd": -29.46,
+   "bh_mdd": -33.69,
+   "n": 1099
+  },
+  {
+   "est": 21,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.363,
+   "bh_sharpe": 0.461,
+   "uplift": -0.098,
+   "mdd": -30.65,
+   "bh_mdd": -33.69,
+   "n": 1044
+  },
+  {
+   "est": 21,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.384,
+   "bh_sharpe": 0.438,
+   "uplift": -0.054,
+   "mdd": -30.25,
+   "bh_mdd": -33.69,
+   "n": 1099
+  },
+  {
+   "est": 63,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.569,
+   "bh_sharpe": 0.55,
+   "uplift": 0.019,
+   "mdd": -31.69,
+   "bh_mdd": -33.69,
+   "n": 1254
+  },
+  {
+   "est": 63,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.56,
+   "bh_sharpe": 0.52,
+   "uplift": 0.04,
+   "mdd": -30.56,
+   "bh_mdd": -33.69,
+   "n": 1307
+  },
+  {
+   "est": 63,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.584,
+   "bh_sharpe": 0.55,
+   "uplift": 0.034,
+   "mdd": -31.66,
+   "bh_mdd": -33.69,
+   "n": 1254
+  },
+  {
+   "est": 63,
+   "tgt": 252,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.572,
+   "bh_sharpe": 0.52,
+   "uplift": 0.052,
+   "mdd": -30.66,
+   "bh_mdd": -33.69,
+   "n": 1307
+  },
+  {
+   "est": 63,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.508,
+   "bh_sharpe": 0.667,
+   "uplift": -0.159,
+   "mdd": -29.82,
+   "bh_mdd": -33.69,
+   "n": 1002
+  },
+  {
+   "est": 63,
+   "tgt": 504,
+   "band": "(0.5, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.482,
+   "bh_sharpe": 0.598,
+   "uplift": -0.116,
+   "mdd": -30.21,
+   "bh_mdd": -33.69,
+   "n": 1054
+  },
+  {
+   "est": 63,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.585,
+   "bh_sharpe": 0.667,
+   "uplift": -0.082,
+   "mdd": -30.66,
+   "bh_mdd": -33.69,
+   "n": 1002
+  },
+  {
+   "est": 63,
+   "tgt": 504,
+   "band": "(0.8, 1.0)",
+   "rebal": "周",
+   "sharpe": 0.535,
+   "bh_sharpe": 0.598,
+   "uplift": -0.063,
+   "mdd": -30.74,
+   "bh_mdd": -33.69,
+   "n": 1054
+  }
+ ],
+ "P1": {
+  "variants_uplift_ge005": 1,
+  "median_uplift": -0.075,
+  "primary_uplift": -0.156,
+  "primary": {
+   "est": 21,
+   "tgt": 252,
+   "band": "(0.5, 1.0)",
+   "rebal": "日",
+   "sharpe": 0.415,
+   "bh_sharpe": 0.571,
+   "uplift": -0.156,
+   "mdd": -32.1,
+   "bh_mdd": -33.69,
+   "n": 1296
+  },
+  "pass": false
+ },
+ "P2": {
+  "yearly_uplift": {
+   "2021": -0.043,
+   "2022": -0.334,
+   "2023": -0.139,
+   "2024": -0.391,
+   "2025": -0.255,
+   "2026": -0.341
+  },
+  "pos_year_ratio": 0.0,
+  "halves": [
+   -0.071,
+   -0.219
+  ],
+  "pass": false
+ },
+ "hybrid_arms_descriptive": [
+  {
+   "rebal": "日",
+   "sharpe": 0.595,
+   "mdd": -23.62,
+   "uplift_vs_bh": -0.011,
+   "uplift_vs_pure_vol": 0.18
+  },
+  {
+   "rebal": "周",
+   "sharpe": 0.496,
+   "mdd": -21.36,
+   "uplift_vs_bh": -0.035,
+   "uplift_vs_pure_vol": 0.037
+  }
+ ],
+ "cash_sensitivity_descriptive": {
+  "sharpe": 0.426,
+  "uplift_vs_bh": -0.145
+ },
+ "verdict": "FAIL"
+}

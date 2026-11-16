@@ -1,0 +1,24 @@
+{
+ "id": "PREREG_SOLD_REBUY_DEEP8_20260929",
+ "title": "卖出后深贴-8%限价回补·10日持有 (卖飞样本曲面发现的预注册验证)",
+ "declared": "2026-09-29 00:10",
+ "origin": "sold_buypoint_surface.py 曲面发现(469a5a1): 相对卖价折扣维度单调, -8%以下桶中位+0.81%; 可交易版as-found=自家卖票种群2026: n=89 胜率53.9% 均值+2.33% t=2.35",
+ "rule_frozen": {
+  "population_generalized": "全市场(60/00/30前缀, 剔688/689/北交所), 20130101起",
+  "anchor": "该股空仓状态时任一交易日收盘价",
+  "entry": "次日起20个交易日内 low<=anchor*0.92 首触成交, 成交价=min(anchor*0.92, 当日open)(跳空低开按更优open)",
+  "exit": "成交日起第10个交易日收盘",
+  "cost": "双边0.3%",
+  "position": "单股同一时间至多一笔; 平仓次日方可立新锚",
+  "exclude": "停牌缺口自然由bar序列处理; 不做ST历史过滤(记录为口径限制)"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_full_period": "全期均值>0 且 t>=2.0 (本轮唯一声明检验, 不再挖新变体)",
+  "G2_by_year": "13个年度中>=8年均值>0",
+  "G3_2026_consistency": "2026子样本均值与as-found(+2.33%)偏差<=1.5pp"
+ },
+ "failure_clause": "任一门未过→候选判死入falsified档案(sold_rider_recon标签永久观察级, 方向关闭不再挖)",
+ "success_clause": "三门全过→提请主人裁决是否接影子/生产(信号权在主人)",
+ "multiple_testing_note": "发现过程≈30次观察, 本prereg为唯一确认性检验(阈值取标准2.0非修正值, 因假设方向与具体参数均在挖后冻结, 承认残余选择性风险并如实呈现)",
+ "fingerprint": "c52fdf8b888c8b32"
+}

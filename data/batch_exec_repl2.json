@@ -1,0 +1,24 @@
+[
+ {
+  "code": "000029",
+  "name": "深深房Ａ",
+  "volume": 100,
+  "price": 20.5,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 20.3,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ },
+ {
+  "code": "000031",
+  "name": "大悦城",
+  "volume": 1100,
+  "price": 2.11,
+  "source": "method_picks",
+  "sector": "房地产",
+  "prev_close": 2.09,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true
+ }
+]

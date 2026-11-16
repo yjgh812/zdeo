@@ -1,0 +1,23 @@
+{
+  "id": "limit_broken",
+  "name": "涨停开板预警",
+  "enabled": true,
+  "symbols": [
+    "300684",
+    "600487",
+    "603083",
+    "603186",
+    "603629"
+  ],
+  "conditions": [
+    {
+      "field": "broken",
+      "op": "truth"
+    }
+  ],
+  "logic": "and",
+  "cooldown_minutes": 15,
+  "severity": "critical",
+  "_说明": "曾触涨停现已回落 → 开板/炸板即时预警",
+  "_名单": "300684中石科技/600487亨通光电/603083剑桥科技/603186华正新材/603629利通电子= 8/14封单Top光通信算力链龙头(seal_snapshot实测), 主线切换时更新"
+}

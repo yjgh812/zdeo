@@ -1,0 +1,93 @@
+{
+  "dip_days": 127,
+  "dip_threshold_pct": -2.0,
+  "cells": {
+    "T+5": {
+      "A_dip_low": {
+        "n_days": 114,
+        "win_days": 64.9,
+        "mean": 1.38,
+        "median": 1.65
+      },
+      "B_dip_all": {
+        "n_days": 114,
+        "win_days": 61.4,
+        "mean": 1.4,
+        "median": 2.22
+      },
+      "C_norm_low": {
+        "n_days": 1526,
+        "win_days": 54.3,
+        "mean": 0.3,
+        "median": 0.28
+      },
+      "D_norm_all": {
+        "n_days": 1526,
+        "win_days": 55.6,
+        "mean": 0.29,
+        "median": 0.37
+      }
+    },
+    "T+10": {
+      "A_dip_low": {
+        "n_days": 113,
+        "win_days": 58.4,
+        "mean": 1.42,
+        "median": 1.17
+      },
+      "B_dip_all": {
+        "n_days": 113,
+        "win_days": 60.2,
+        "mean": 1.46,
+        "median": 1.14
+      },
+      "C_norm_low": {
+        "n_days": 1522,
+        "win_days": 56.1,
+        "mean": 0.55,
+        "median": 0.61
+      },
+      "D_norm_all": {
+        "n_days": 1522,
+        "win_days": 57.0,
+        "mean": 0.55,
+        "median": 0.64
+      }
+    },
+    "T+20": {
+      "A_dip_low": {
+        "n_days": 113,
+        "win_days": 59.3,
+        "mean": 2.69,
+        "median": 1.62
+      },
+      "B_dip_all": {
+        "n_days": 113,
+        "win_days": 58.4,
+        "mean": 2.83,
+        "median": 1.94
+      },
+      "C_norm_low": {
+        "n_days": 1512,
+        "win_days": 54.3,
+        "mean": 0.99,
+        "median": 0.61
+      },
+      "D_norm_all": {
+        "n_days": 1512,
+        "win_days": 54.7,
+        "mean": 1.03,
+        "median": 0.89
+      }
+    }
+  },
+  "verdict": {
+    "dip_increment_vs_normal_low_pp": 0.87,
+    "low_increment_vs_dip_all_pp": -0.04,
+    "halves_dip_minus_normal_pp": [
+      0.58,
+      1.1
+    ],
+    "pass": "FALSIFIED"
+  }
+}

@@ -1,0 +1,33 @@
+{
+ "id": "PREREG_SHOCK_RECOVERY_20261110",
+ "title": "回踩锚点观察档·震仓事件次日收复判别力研究 (主人「继续」令·抖音四阶段框架量化检验)",
+ "declared": "2026-11-10",
+ "origin": "抖音择日花开「主力建仓4阶段:吸筹/洗盘/震仓/拉升, 第3个最劝退」框架讨论后, 主人「继续」令推进震仓识别档量化检验; 四阶段叙事与306样本赢家归因(买平静不买急涨/缩量漏斗/急涨否决线)方向互证, 震仓(第3阶段)为唯一未量化场景",
+ "family_archive_citation": "PREREG_FIRSTBOARD_PULLBACK_20261025 (executed_FAIL: 首板回调确认日次收入场 t20e 超额不达标, 9/9年负)。本研究差异: ①研究问题正交——不测入场信号绝对收益, 测回踩段内震仓事件E的次日收复判别区分力(持有/离场纪律判据); ②定义域收窄至生产扫描器 pullback_anchor_scan 的 S1-S4 结构全集; ③三门全过也仅=判别力 PASS_CANDIDATE, 接线生产扫描器仍需主人批准+新指纹",
+ "rule_frozen": {
+  "study_id": "SHOCK_RECOVERY_20261110",
+  "执行合同": "规则执行真源=attribution/shock_recovery_study.py 内嵌 PARAMS(指纹 baec1ee8ff8bab12 锚定); 本节为人读合同, 与脚本不一致时以脚本指纹锚定的 PARAMS 为准",
+  "universe": "剔4/8/9前缀+688/689(科创板涨停口径不同,与生产扫描器差异已声明); bars>=60; 停牌占位行(vol<=0或high<=0)剔除",
+  "board_rule": "主板chg>=9.8, 创业板300/301/302>=19.8, close>=high*0.999, vol>0, 不查连板(跟随生产扫描器口径)",
+  "structure": "复刻生产扫描器: T属板后D3/D4/D5, T缩量 vol<=0.5*板量 且 anchor<=close[T]<=anchor*1.03 且 板后到T区间收盘>=anchor",
+  "event_E": "E属板后D1..T窗内首日: chg<=-3.0 且 low<=prev_close*0.96 且 close>=anchor (收盘不破锚, 盘中挖坑允许)",
+  "recovery": "R=E+1: close>open 且 close>low(E); E+1无bar或停牌=unjudgeable",
+  "holding": "持有口径 close[E+5]/close[E]-1; 回补描述口径 close[E+5]/close[E+2]-1(仅收复组); E+5缺=unjudgeable",
+  "cooldown": "同code事件后20交易日冷却",
+  "window": "20160101起, 数据尾部自动截断(E+5超出数据尾=unjudgeable)",
+  "G0_数据闸": "qfq库(dragon_quant_qfq.db)新鲜度以库内最新bar为准, 不做时间断言(研究为全历史回看)",
+  "G0b_停牌占位": "OHLC=0/vol=0停牌占位行剔除(11/9分钟库检查发现199退市股noise同类问题, 日线库同样存在, 已在load_code_bars过滤)"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_sample": "可判事件 n>=60, 否则 verdict=INSUFFICIENT_DATA (不判定不接线不复活)",
+  "M1_defense": "未收复组(被震出风险组)持有t5均值<0 且 胜率<40% (次日不收复=离场规则的防守价值)",
+  "M2_discrimination": "收复组vs未收复组持有t5胜率差>=+10pp 且 n_rec>=40 且 n_norec>=20 (收复判别的区分力)",
+  "M3_recovery_holding": "收复组持有t5均值>=0 (收复=真洗盘的绝对期望门)",
+  "verdict_rule": "三门全过=PASS_CANDIDATE(提请主人裁决是否接线扫描器); 任一未过=FAIL(登记负结果, 不跑后挖新变体, 翻案须新指纹+新前提)"
+ },
+ "multiple_testing_note": "主判据唯一=三门(M1/M2/M3), 单事件定义单阈值-3%; -4/-5敏感性列为deferred_dims(未测, 留待新指纹), 不跑后挖; 回补口径仅描述性不判定",
+ "failure_clause": "FAIL时震仓识别档不接线生产扫描器; 观察档输出维持现状(阳线确认单判据); 翻案须新指纹+新前提(如分钟级分时挖坑形态数据接入)",
+ "fingerprint": "baec1ee8ff8bab12",
+ "status": "executed_PASS_CANDIDATE_20261110",
+ "result_ref": "reports/SHOCK_RECOVERY_PREREG_RESULT_20261110.json"
+}

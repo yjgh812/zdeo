@@ -1,0 +1,204 @@
+{
+ "note": "schtasks 失败探针已知项登记(triage完毕的历史失败; 探针跳过; 新失败仍报ERROR)",
+ "created": "2026-09-13",
+ "known": [
+  {
+   "task": "Sentinel_1430_StopLossChain",
+   "rc": "2",
+   "date": "2026/9/11 14:45:00",
+   "reason": "9/11 14:30链漏跑→兜底启动→executor exit=1(已notify留痕, 9/9事件余波; 9/12复盘已覆盖)"
+  },
+  {
+   "task": "TulongSLFallback_1450",
+   "rc": "2",
+   "date": "2026/9/11 14:50:00",
+   "reason": "同源: 兜底发现14:30链漏跑并告警(行为正确)"
+  },
+  {
+   "task": "Tulong_601866_OwnerBuy_20260911",
+   "rc": "1",
+   "date": "2026/9/12 21:42:38",
+   "reason": "预演触发撞交易时段硬闸被拒(安全机制正常运行; 正式执行=9/14 09:31在时段内)"
+  },
+  {
+   "task": "Tulong_601866_OwnerBuy_20260911",
+   "rc": "1",
+   "date": "2026/9/14 9:31:01",
+   "reason": "9/14正式执行遇westock沪市主档ckv间歇缺失(服务端故障,SOP(二十六)㉜b定位)首跑失败; 9:51授权重试过闸成交9900股@2.52已对账(gaps=0); 双通道分叉关单=S2 done(自省第二期)"
+  },
+  {
+   "task": "TulongGarchShadow_0850",
+   "rc": "-1073741510",
+   "date": "2026/9/20 9:24:50",
+   "reason": "9/20晨08:50跑34分钟超时被中断(卡在增量SQL后,rc=C000013A; 9/19前连续OK属偶发); 当日手动补跑闭环(date=20260918,+0日=9/19非交易日正确语义); 进化周期5"
+  },
+  {
+   "task": "PortraitAgent_Daily_2250",
+   "rc": "-1073741510",
+   "date": "2026/9/22 22:50:00",
+   "reason": "9/22 22:50实例被终止(rc=C000013A)致画像截面停9/21; 9/23凌晨已人工补跑portrait_infer+feed成功(截面20260922 n=3077)核销; panel_v6增量OOM另案修复中"
+  },
+  {
+   "task": "EastmoneyDataRefresh",
+   "rc": "1",
+   "date": "2026/9/23 3:30:00",
+   "reason": "9/23 03:30偶发失败(东财接口凌晨抖动); 09:18人工实跑daily_chain_update --phase eastmoney复核EXIT=0全绿(lhb/qlib/hist均到9/22), 幂等补齐; 非WAF持续封禁"
+  },
+  {
+   "task": "TulongThsSectorDaily2050",
+   "rc": "-2147020576",
+   "date": "2026/9/23 22:26:21",
+   "reason": "9/23晚睡眠窗口(rc=800710E0管理员拒绝补跑,与22:00 cron skip同根因); ths_sector.db已由22:45后chain_manual环节aux补至2026-09-23(465板块零脏行)数据闭环; 9/24自检核销"
+  },
+  {
+   "task": "TulongBaostockDaily0730",
+   "rc": "-2147020576",
+   "date": "2026/9/23 19:33:40",
+   "reason": "9/23 19:33补跑被拒(睡眠/会话窗口800710E0); baostock daily停9/22=正常节奏(官方晚间出数), 9/24晨07:30任务自愈拉9/23; 9/24自检核销"
+  },
+  {
+   "task": "ArtifactFreshness_SUN2030",
+   "rc": "1",
+   "date": "2026/10/6 9:28:42",
+   "reason": "10/6假期补跑rc=1(WARN级), 20261011 triage登记"
+  },
+  {
+   "task": "MainlineScan_0925",
+   "rc": "2",
+   "date": "2026/10/9 9:25:00",
+   "reason": "C1主线为空=市场态fail-loud设计语义(10/9早盘双指标无达标主线), 非代码故障; 20261011 triage"
+  },
+  {
+   "task": "MondayBuy_0928",
+   "rc": "-2147020576",
+   "date": "2026/10/6 9:28:42",
+   "reason": "0x800710E0假期睡眠拒跑, 符合9/24文档模式; 20261011 triage"
+  },
+  {
+   "task": "MONTHLY_PNL_D1",
+   "rc": "1",
+   "date": "2026/10/1 23:10:00",
+   "reason": "10/1假期rc=1(WARN级), 20261011 triage登记"
+  },
+  {
+   "task": "PendingAging_1545",
+   "rc": "2",
+   "date": "2026/10/9 15:45:00",
+   "reason": "台账schema漂移(pd_id/date新键25条)致解析assert fail; 已修pending_decisions_aging.py并集合同兼容+视图S4订正; 20261011根治"
+  },
+  {
+   "task": "TulongBaostockDaily0730",
+   "rc": "-2147020576",
+   "date": "2026/10/11 9:41:33",
+   "reason": "周日睡眠拒跑; 20261011 triage"
+  },
+  {
+   "task": "TulongStockDossierAlert_0925",
+   "rc": "-2147020576",
+   "date": "2026/10/11 9:41:33",
+   "reason": "周日睡眠拒跑; 20261011 triage"
+  },
+  {
+   "task": "TulongStockDossier_2330",
+   "rc": "-1073741510",
+   "date": "2026/10/10 23:30:01",
+   "reason": "0xC000013A周六夜会话终止; 20261011 triage"
+  },
+  {
+   "task": "TulongThsSectorDaily2050",
+   "rc": "1",
+   "date": "2026/10/10 20:50:01",
+   "reason": "周六THS板块数据源WARN级rc=1, 周末源缺属常态; 20261011 triage"
+  },
+  {
+   "task": "WaveCensus_Sat_0600",
+   "rc": "-2147020576",
+   "date": "2026/10/10 10:22:53",
+   "reason": "周六睡眠拒跑; 20261011 triage"
+  },
+  {
+   "task": "ArtifactFreshness_SUN2030",
+   "rc": "1",
+   "date": "2026/10/11 20:30:00",
+   "reason": "周日实跑rc=1 WARN级, 与10/6实例同族; 20261011晚triage"
+  },
+  {
+   "task": "TulongThsSectorDaily2050",
+   "rc": "1",
+   "date": "2026/10/11 20:50:01",
+   "reason": "周日THS源WARN级, 与10/10实例同族; 20261011晚triage"
+  },
+  {
+   "task": "TulongBreakoutScout_2250",
+   "rc": "1",
+   "date": "2026/10/11 22:50:01",
+   "reason": "qfq NULL change_pct(首日/除权跳变合法态,全量重建后显形)未防御float(None)崩溃; 已修breakout_scout.py并实弹复跑EXIT=0; 20261011晚triage即修"
+  },
+  {
+   "task": "MainlineScan_0925",
+   "rc": "2",
+   "date": "2026/10/12 9:25:00",
+   "reason": "C1主线为空主扫拒跑=设计行为非数据事故(SOP一百零五明文; 10/09晨同型FAIL先例,早于本轮全部改动);根因=industry_volume_state 10-11 22:52生成c1_industries=[]合法态;10-12全量测试triage登记,下个C1非空交易日自愈"
+  },
+  {
+   "task": "MainlineScan_0925",
+   "rc": "2",
+   "date": "2026/10/14 9:25:00",
+   "reason": "同族第三例:C1主线为空设计语义(日志实锤MLSCAN-FAIL C1主线为空,qfq库最新bar=20261013盘前正常口径);20261014晚triage登记,下个C1非空交易日自愈"
+  },
+  {
+   "task": "ScanBoardWatch_5min",
+   "rc": "1",
+   "date": "2026/10/14 14:55:02",
+   "reason": "QFQ_DB指向已退役旧路径data/dragon_quant_qfq.db(白名单闸清理后文件不存在)致sqlite ro打不开;当日09:35-14:55共65实例全灭=盘中扫板哨全天零观测;20261014晚修复=改指workbuddyspace factor_engine唯一真源+盘后--no-toast实弹过原崩溃点exit0;AST巡检盲区当晚根治=check_qfq_frozen_refs扩全仓剪枝递归(3420件),同犯48件(初判9件系grep截断漏报)已45件批量改指+3件vintage白名单,负测探针当场抓获验证;10/15 09:35复跑自证"
+  },
+  {
+   "task": "RegimeGateShadow_2110",
+   "rc": "-2147020576",
+   "date": "2026/10/13 21:20:24",
+   "reason": "睡眠拒跑0x800710E0家族(与EmotionPhaseV2同秒成对,同9/23 TulongThsSectorDaily先例);连带发现=DirectionCensus_1530于10/12-10/13静默未触发(无失败码,探针只看LastResult抓不到漏跑)致census md停20261009→影子台账20261008后空窗;今晚21:10起按T-1节律自愈(记1013,明晚记1014);10/09与10/12两天影子观测永久缺口如实登记;census end_date硬编码无日期参数,回填须改码另立任务"
+  },
+  {
+   "task": "TulongBaostockDaily0730",
+   "rc": "-1073741510",
+   "date": "2026/10/14 7:30:01",
+   "reason": "启动1秒级被终止(C000013A外部终止,单次偶发,原无日志重定向无法定位杀手);20261014晚勘误=初判『与夜链功能重叠可退役』定性错误——该任务写workbuddyspace/data/baostock/baostock_daily.db=备源日线第3层库(health backup_daily_source探针在役消费),与daily_basic无关,任务保留;已补baostock_daily_run.cmd日志包装+schtasks /change /tr重注册+/run实弹(登录成功全市场拉数零失败);若C000013A复现,日志可直接定位"
+  },
+  {
+   "task": "TulongThsSectorDaily2050",
+   "rc": "-2147020576",
+   "date": "2026/10/13 21:20:24",
+   "reason": "睡眠拒跑0x800710E0家族,与EmotionPhaseV2/RegimeGate同秒(10/13 21:20:24)成批补跑被拒=同一次唤醒窗口;9/23同型先例在册;ths_sector.db数据面由22:00链aux节律兜底,次日20:50自愈;20261014晚triage(该件系探针bad[:5]显示截断漏呈,非新发生)"
+  },
+  {
+   "task": "tulong_db_backup_daily",
+   "rc": "1",
+   "date": "2026/10/13 22:30:01",
+   "reason": "单次rc=1;备份完整性不受影响实证=10/14晚backup_guard 18/18库已备(>=2026-10-13)全绿;疑22:30与22:00夜链写库窗口WAL锁碰撞;今晚22:30复跑自证,复现则考虑错峰至23:00(呈请待批)"
+  },
+  {
+   "task": "TulongThsSectorDaily2050",
+   "rc": "1",
+   "date": "2026/10/14 20:50:01",
+   "reason": "交易日WARN级部分子步失败(前科10/10,10/11周末同码同族);数据主面零缺口实证=data/ths_sector.db ths_kline已到2026-10-14;当晚已补ths_sector_run.cmd日志包装+schtasks /change重注册+/run实弹(日志新行落盘),下次rc=1可诊断;20261014晚triage"
+  },
+  {
+   "task": "HoldingsRiskScan_1510+PendingAging_1545+RegimeGateShadow_2110+SealSnapshot_1515+SectorClusterAlert_1400",
+   "rc": "-2147020576",
+   "date": "2026/10/15 21:30:14",
+   "reason": "五任务同秒成批睡眠拒跑(0x800710E0家族,与10/13 21:20:24三连同型)=机器13:30-21:30离线窗口的统一补跑被拒;白天对应时段cron亦大面积skipped(13:30止损哨/14:30兜底/14:57封单/15:35候选癸)——🔴主人2026-10-17裁决:白天有时不开机属正常现象非故障(盘中哨SWA补跑+晨链09:35补执行兜底;seal等盘中不可重建件缺口属正常接受,严禁再按宿主故障呈报);数据缺口=seal_snapshot停20261014(10/15盘中封单快照缺失,次日15:15自愈);其余四任务产物由22:00链/次日节律覆盖;20261015晚triage"
+  },
+  {
+   "task": "tulong_db_backup_daily",
+   "rc": "-1073741510",
+   "date": "2026/10/16 23:16:32",
+   "reason": "10/16晚22:30启动的备份46分钟零产物后被外部终止(C000013A,终止时刻与他会话注册WestockGuardIntraday同秒);当日18产物零落位,ensure守卫00:59自愈补齐18/18(20261017命名,含跨盘镜像);修复=主档22:30→05:00迁移(schtasks /change /st读回确认,全天唯一静默写窗)+ensure_backup期望日边界22:30→05:00同步(单测4/4);旧档4晚2死频次已达错峰门槛,SOP一百四十三;20261016命名缺口永久存在已记录"
+  },
+  {
+   "task": "BayaVerifyWatch_2245+DeescalCheck_2130+DirectionCensus_1530+EmotionPhaseV2_2010+HoldingsRiskScan_1510等23:16:32成批",
+   "rc": "-1073741510",
+   "date": "2026/10/16 23:16:32",
+   "reason": "23:16:32成批任务终止/拒跑事件(他会话注册WestockGuardIntraday同秒,疑似schtasks注册操作扰动任务宿主;与备份终止同事件);各任务均已由次日节律自愈或20261017凌晨手动补齐(direction_census md已补,探针OK);周末health面清洁登记,下周一节律自证"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "20261108-r5-ab-plus",
+  "ts": "2026-11-08T14:00:00",
+  "object": "第五轮迭代(M3_AB底盘继续逼近): A冰点禁开新仓(温区规律完成态: 冰点段MDD最深-25.4%, 光减仓位不够; 与生产R37『弱档禁买』同思想) + B负面池扩容(failure_scene+loss_case现役111条 ∪ trade_attribution全亏损案例196码)。",
+  "engine": "analysis/fulldomain_run5.py：M3_AB(已采纳配置)为基线, 两个变体单独测试。buy_gate_fn新钩子=冰点日抑制新开仓(退出不受影响)。",
+  "params": {
+    "ice_def": "当日全市场收盘涨停家数<10",
+    "pool_expansion": "trade_attribution全亏损案例码(pnl_amount<0, 196码)∪现役111条",
+    "base": "M3_AB(已采纳配置, 钉定快照确定性口径)"
+  },
+  "criterion": {
+    "commitment": "R5-A通过判据=冰点禁开使 冰点段MDD 改善≥2pp 或 总收益改善≥5pp, 且构造保证冰点日新开仓=0; R5-B通过判据=扩容池使 总收益改善≥5pp 或 大亏笔数下降≥15%, 且交易数不塌方(≥基线60%); 任一通过→并入标准配置再复算; 均不过→迭代收敛宣告(M3_AB即当前可达最优, 缺口如实)。"
+  }
+}

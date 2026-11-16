@@ -1,0 +1,154 @@
+{
+  "prereg": "data/prereg_tb_label_probe_v1_20260907.json",
+  "generated": "2026-09-07",
+  "smoke": false,
+  "meta": {
+    "signals": 18759,
+    "matched": 18759,
+    "labelled": 18759,
+    "dropped_pre_match": 0,
+    "note": "tb_main 为 None 系 sigma20 不足(上市<21日)或路径不足; 统计时剔除"
+  },
+  "overall": {
+    "fwd20": {
+      "n": 18630,
+      "mean_pp": 3.713,
+      "t": 35.429,
+      "win": 0.5827
+    },
+    "tb_main": {
+      "n": 18596,
+      "mean_pp": 1.088,
+      "t": 19.932,
+      "win": 0.5675
+    },
+    "tb_exec": {
+      "n": 18631,
+      "mean_pp": 2.68,
+      "t": 39.372,
+      "win": 0.5568
+    }
+  },
+  "groups": {
+    "bottom_div": {
+      "fwd20": {
+        "n": 72,
+        "mean_pp": 0.303,
+        "t": 0.194,
+        "win": 0.5
+      },
+      "tb_main": {
+        "n": 72,
+        "mean_pp": -2.254,
+        "t": -3.35,
+        "win": 0.3611
+      },
+      "tb_exec": {
+        "n": 72,
+        "mean_pp": -1.24,
+        "t": -1.158,
+        "win": 0.3472
+      },
+      "yearly_pos_excess": {
+        "fwd20": {
+          "pos_years": 1,
+          "n_years": 7
+        },
+        "tb_main": {
+          "pos_years": 0,
+          "n_years": 7
+        }
+      }
+    },
+    "buy1": {
+      "fwd20": {
+        "n": 3127,
+        "mean_pp": 2.185,
+        "t": 11.423,
+        "win": 0.543
+      },
+      "tb_main": {
+        "n": 3125,
+        "mean_pp": -0.196,
+        "t": -1.497,
+        "win": 0.4918
+      },
+      "tb_exec": {
+        "n": 3127,
+        "mean_pp": 0.953,
+        "t": 6.208,
+        "win": 0.5091
+      },
+      "yearly_pos_excess": {
+        "fwd20": {
+          "pos_years": 13,
+          "n_years": 14
+        },
+        "tb_main": {
+          "pos_years": 3,
+          "n_years": 14
+        }
+      }
+    },
+    "buy2": {
+      "fwd20": {
+        "n": 15006,
+        "mean_pp": 4.222,
+        "t": 34.659,
+        "win": 0.5978
+      },
+      "tb_main": {
+        "n": 14974,
+        "mean_pp": 1.332,
+        "t": 21.905,
+        "win": 0.5822
+      },
+      "tb_exec": {
+        "n": 15007,
+        "mean_pp": 3.105,
+        "t": 40.495,
+        "win": 0.5703
+      },
+      "yearly_pos_excess": {
+        "fwd20": {
+          "pos_years": 14,
+          "n_years": 14
+        },
+        "tb_main": {
+          "pos_years": 10,
+          "n_years": 14
+        }
+      }
+    },
+    "buy3": {
+      "fwd20": {
+        "n": 425,
+        "mean_pp": -2.435,
+        "t": -3.836,
+        "win": 0.3553
+      },
+      "tb_main": {
+        "n": 425,
+        "mean_pp": 2.503,
+        "t": 6.939,
+        "win": 0.6424
+      },
+      "tb_exec": {
+        "n": 425,
+        "mean_pp": 1.057,
+        "t": 2.429,
+        "win": 0.4635
+      },
+      "yearly_pos_excess": {
+        "fwd20": {
+          "pos_years": 1,
+          "n_years": 14
+        },
+        "tb_main": {
+          "pos_years": 9,
+          "n_years": 14
+        }
+      }
+    }
+  }
+}

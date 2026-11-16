@@ -1,0 +1,14 @@
+{
+  "name": "stock-analysis-mcp",
+  "description": "Local-first A-share stock analysis MCP with Agent Skills. Combines multi-source market data, sector flow, indicators, chart structure, reports, and reproducible backtests in local SQLite.",
+  "author": {
+    "name": "lalal-zzz",
+    "email": "lalal-zzz@users.noreply.github.com"
+  },
+  "mcpServers": {
+    "stock-analysis": {
+      "command": "npx",
+      "args": ["stock-analysis-mcp"]
+    }
+  }
+}

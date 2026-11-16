@@ -1,0 +1,24 @@
+{
+  "id": "PREREG_LHB_SEAT_INST_RATIO_20260909",
+  "created": "2026-09-09",
+  "hypothesis": "龙虎榜事件日机构席位净买占比(inst_ratio)与事件后前瞻收益负相关（排雷/降权方向）。方向先验来源：①下画像排雷分观察(9/6)：lhb净买=最强暴跌前兆 lift=6.22；②组合C NEG8 中 lhb_buy_5 作负过滤(9/6 H1)；③追热提名10%胜率先验(9/5主人裁决)。本预注册为方向性假设，正向结果如实报告但不构成买信号依据。",
+  "signal_definition": "inst_ratio = Σnet(operate_dept_name含'机构专用') / Σ(buy+sell)(该事件全部披露席位)，按(trade_date, security_code)聚合、跨上榜原因合并（已知席位按原因分别披露与榜单合计存在3~6%口径差，登记为已知噪声，比率信号对规模不敏感）。",
+  "universe": "lhb_seat_detail 全部 (trade_date, security_code) 事件，2016-01-04 ~ 2026-09-08（qfq 有效覆盖段），约 18-19 万事件。",
+  "pit_contract": "席位数据=交易日盘后披露，信号 T+1 起可用；前瞻收益 = close(t)→close(t+k)，qfq 库(next-bar 兼容口径)；期末 fwd 不足 20 交易日的事件剔除并如实计数。",
+  "outcomes": {
+    "primary": "fwd10 相对同日全部LHB事件等权前瞻均值的事件内超额（控制LHB选择效应与短期反转伪影：比较对象为同日同榜事件而非全市场）",
+    "secondary": ["fwd5", "fwd20", "绝对前瞻(仅描述)"]
+  },
+  "gates_frozen_before_run": {
+    "G1_monthly_ic": "全期(2016-2026)分月事件内 spearman IC(inst_ratio, fwd10_excess) 均值 t ≤ -2.0（负向成立）；正向 t ≥ +2.0 亦如实报告但按预注册方向定性为'与先验相悖'，不作买信号立项",
+    "G2_year_stability": "分年中位超额方向一致年数 ≥ 7/11（2016~2026，2026 残年计入）",
+    "G3_pool_increment": "bp_ep_core 月度买入笔中，买入日前 5 个交易日内存在该股 LHB 事件的子样本：inst_ratio 五分位与单笔盈亏比例%的单调性及高低调仓对照；n < 30 如实登记'样本不足'不判定"
+  },
+  "verdict_semantics": "PASS_CANDIDATE 仅指'作为负向过滤/降权标签立项研究'，禁直接接线生产（接线须 wfa_gate 新指纹预注册+主人裁决）；FAIL 则登记 falsified_rules（trial_budget=1 不重试，翻案须新指纹+新前提）。",
+  "template_reference": "三闸模板=external-mining B4 (falsified_rules B4-TURNOVER-TILT: 原始IC→市值正交→池内增量)；本预注册以'分年稳定性'替代'市值正交'闸（daily_basic 市值 2016-2019 本地稀疏，如实声明该偏离）。",
+  "execution": {
+    "script": "D:\\zcodesj\\lhb_seat_factor_stage1.py",
+    "output_dir": "D:\\zcodesj\\reports\\LHB_SEAT_FACTOR_STAGE1_20260909\\",
+    "data_sources": ["fundamental_data.db lhb_seat_detail (238万行,2010+,owner=lhb_update.py)", "workbuddyspace dragon_quant_qfq.db stock_daily_meta_qfq", "bp_ep_core_trades_full.csv (drift_check_20260909e_0908end)"]
+  }
+}

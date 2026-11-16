@@ -1,0 +1,17 @@
+{
+  "stocks": {},
+  "rules": {
+    "auto_st": true,
+    "auto_delist": true,
+    "auto_suspend": false
+  },
+  "default_reasons": {
+    "st": "被实施风险警示(ST/ST*)",
+    "delist": "退市整理期/已退市",
+    "suspend": "长期停牌(>10交易日)",
+    "liquidity": "日均成交额<5000万",
+    "price": "股价>30元(屠龙标准v1.0)",
+    "688": "科创板688开头",
+    "bse": "北交所8/4开头"
+  }
+}

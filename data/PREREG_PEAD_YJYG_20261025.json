@@ -1,0 +1,31 @@
+{
+ "id": "PREREG_PEAD_YJYG_20261025",
+ "title": "业绩预告正向事件·PEAD漂移检验 (统一事件流水线第二批E4, 主人「继续」令)",
+ "declared": "2026-10-25",
+ "origin": "候选7.1(第16轮预告日触发spec)+第22轮组合化衰减教训(外部正面预告组合仅+2.59%——判定须含费组合代理门); 数据=data/yjyg_stage_2016_2026.csv(akshare stock_yjyg_em全史直连拉取, 133,812行2016.01-2026.10)",
+ "family_archive_citation": "多因子ICIR含SUE证伪(组合口径)——本检验条件差异=事件窗+阈值形态(预告披露日事件+幅度>=100正向筛选), 引用声明差异",
+ "rule_frozen": {
+  "data": "akshare stock_yjyg_em按报告期全史(2016Q1-2026Q3), 公告日期为事件日PIT锚",
+  "event_filter_main": "预告类型 in {预增,扭亏,略增} 且 业绩变动幅度>=100(百分比) —— 主臂",
+  "arms": "A断层臂=主臂∧公告次日开盘跳空>=2%(open/prev_close-1, qfq); B扭亏臂=类型扭亏∧幅度>=100; C预增臂=类型预增∧幅度>=100(对照描述)",
+  "universe": "6/0/3剔688/689, 上市>60交易日, 非ST日(公告日), 入场日close<=30, volume>0",
+  "entry": "公告日期(非交易日顺延次一交易bar)次一bar收盘入场(c1)",
+  "exit": "t20e与t60e双口径(-8%止损/到期收盘, PEAD漂移窗60日)",
+  "baseline": "同日全宇宙同口径t20e/t60e均值(匹配日期)",
+  "dedup": "同股同日多公告去重; 同股60交易日冷却",
+  "window": "20160101-20261023"
+ },
+ "acceptance_gates_LOCKED": {
+  "G1_events": "主臂n>=800",
+  "G2_t20e": "主臂t20e胜率超额>=+1.5pp 且 含费(0.3%)均值超额>=+1.0pp",
+  "G3_t60e": "主臂t60e胜率超额>=+1.5pp",
+  "G4_by_year": "11个年度中>=6年t20e超额>0",
+  "escalated_提请门": "t20与t60双胜率超额>=+2.0pp 且 分年>=7/11 且 t20e含费均值超额>=+1.5pp -> PASS_CANDIDATE(提请主人); 描述门全过但提请门未过=观察登记",
+  "verdict_rule": "任一描述门未过=FAIL; 不跑后挖新变体"
+ },
+ "multiple_testing_note": "主臂唯一; A/B/C对照臂描述不判定",
+ "failure_clause": "FAIL时PEAD预告口径不接线; 组合化衰减预期如实登记(第22轮外部教训)",
+ "fingerprint": "8866dfd9872ffa6c",
+ "status": "executed_FAIL_20261025_断层A臂观察最强",
+ "result_ref": "reports/PEAD_YJYG_PREREG_RESULT_20261025.md"
+}

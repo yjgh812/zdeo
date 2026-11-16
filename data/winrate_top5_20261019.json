@@ -1,0 +1,242 @@
+[
+ {
+  "code": "300263",
+  "name": "隆华科技",
+  "ml_prob": 67.2,
+  "px": 8.29,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "000670",
+  "name": "盈方微",
+  "ml_prob": 66.8,
+  "px": 5.98,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "001287",
+  "name": "中电港",
+  "ml_prob": 66.0,
+  "px": 18.89,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "603803",
+  "name": "瑞斯康达",
+  "ml_prob": 66.0,
+  "px": 9.38,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "301500",
+  "name": "飞南资源",
+  "ml_prob": 65.9,
+  "px": 21.22,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002185",
+  "name": "华天科技",
+  "ml_prob": 65.9,
+  "px": 14.03,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300196",
+  "name": "长海股份",
+  "ml_prob": 65.6,
+  "px": 14.57,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002965",
+  "name": "祥鑫科技",
+  "ml_prob": 65.4,
+  "px": 23.16,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "603223",
+  "name": "恒通股份",
+  "ml_prob": 65.4,
+  "px": 8.48,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "600460",
+  "name": "士兰微",
+  "ml_prob": 65.3,
+  "px": 25.65,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "603683",
+  "name": "晶华新材",
+  "ml_prob": 65.1,
+  "px": 13.28,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002452",
+  "name": "长高电新",
+  "ml_prob": 64.7,
+  "px": 9.52,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "301051",
+  "name": "信濠光电",
+  "ml_prob": 64.5,
+  "px": 14.85,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300257",
+  "name": "开山股份",
+  "ml_prob": 64.0,
+  "px": 14.57,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300184",
+  "name": "力源信息",
+  "ml_prob": 64.0,
+  "px": 9.75,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002429",
+  "name": "兆驰股份",
+  "ml_prob": 64.0,
+  "px": 6.68,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300745",
+  "name": "欣锐科技",
+  "ml_prob": 63.9,
+  "px": 22.5,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002795",
+  "name": "永和智控",
+  "ml_prob": 63.9,
+  "px": 6.3,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300145",
+  "name": "南方泵业",
+  "ml_prob": 63.9,
+  "px": 4.09,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300539",
+  "name": "横河精密",
+  "ml_prob": 63.9,
+  "px": 15.0,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300809",
+  "name": "华辰装备",
+  "ml_prob": 63.8,
+  "px": 20.58,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300077",
+  "name": "国民技术",
+  "ml_prob": 63.8,
+  "px": 16.76,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002254",
+  "name": "泰和新材",
+  "ml_prob": 63.6,
+  "px": 10.39,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002685",
+  "name": "华东重机",
+  "ml_prob": 63.6,
+  "px": 4.78,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "600768",
+  "name": "宁波富邦",
+  "ml_prob": 63.5,
+  "px": 13.63,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "603826",
+  "name": "坤彩科技",
+  "ml_prob": 63.4,
+  "px": 13.51,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002713",
+  "name": "东易日盛",
+  "ml_prob": 63.4,
+  "px": 8.51,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "300912",
+  "name": "凯龙高科",
+  "ml_prob": 63.3,
+  "px": 17.16,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "600522",
+  "name": "中天科技",
+  "ml_prob": 63.3,
+  "px": 26.62,
+  "group": "R其余",
+  "grp_t1": null
+ },
+ {
+  "code": "002762",
+  "name": "金发拉比",
+  "ml_prob": 63.3,
+  "px": 8.21,
+  "group": "R其余",
+  "grp_t1": null
+ }
+]

@@ -1,0 +1,33 @@
+{
+ "date": "20261009",
+ "n_candidates": 35,
+ "n_selected": 10,
+ "signals": {
+  "island_5": 9,
+  "limit_break_5": 46,
+  "gap_up_run_5": 21,
+  "rounded_20": 1216,
+  "new_high_3": 21,
+  "gap_up_hold": 0,
+  "up4of5": 0,
+  "chan_buy1_10": 11,
+  "chan_buy2_10": 15,
+  "lhb_buy_5": 70,
+  "vwap60_bias": 212,
+  "lim_today": 57,
+  "rel_ind_hi": 315
+ },
+ "selected_codes": [
+  "000422",
+  "000968",
+  "002051",
+  "300164",
+  "300441",
+  "600219",
+  "600248",
+  "600905",
+  "601860",
+  "601878"
+ ],
+ "ts": "2026-10-12 08:22"
+}

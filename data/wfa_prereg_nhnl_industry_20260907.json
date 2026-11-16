@@ -1,0 +1,18 @@
+{
+  "prereg_id": "nhnl_industry_20260907",
+  "created": "2026-09-07",
+  "owner_directive": "主人'继续'=按融合总图启动课题#4 NH-NL%行业顶底信号(下一可开工)",
+  "external_source": "QuantsPlaybook·华福证券2023-03《行业指数顶部和底部信号,净新高占比(NH-NL%)》, scr/core.py 忠实复现: close vs rolling(window)极值(offset=5)判新高新低, 行业成分汇总, NHNL=(NH-NL)/成分数",
+  "negative_prior_disclosure": "择时族负先验: TIMING-PANIC-STAGE1/SKILL-SWEEP2(零真超额)/S3-REOPEN 均falsified在档。口径差异声明: 本课题主判据为【横截面行业排序】(NHNL五分位→次月行业收益, 与9/6板块轮动五分位同族=登记观察族), 非时序择时; 华福阈值时序版(贪婪/恐惧)仅作敏感性, 不入主判据",
+  "oos_lock": "统计 year<=2025",
+  "data": "industry_map_ths 一级行业(industry.split('-')[0], 约30个) + qfq close pivot; 成分数<10 的行业剔除(统计不稳); NHNL window=250日主判据 + 60日敏感性",
+  "hypotheses": {
+    "H1_cross_section": "月末 NHNL 五分位与次月行业等权收益存在显著区分: |Spearman ρ(分位,收益)| 的月度序列 t>=2 且 Q5-Q1 均值差绝对值方向一致率>=60%月",
+    "H2_threshold_sens": "敏感性(非主判据): NHNL>=+0.3(贪婪)与<=-0.3(恐惧)的次月20日行业收益差 Welch t 记录方向, 不预设正负"
+  },
+  "verdicts": {
+    "H1_pass": "宽度区分度成立 → 登记观察(登记观察族), 方向与幅度如实呈报, 供 sector_laggard 轮动台账(20261009 到期)增强参考; 禁直接生产",
+    "H1_fail": "宽度无区分度 → 对照归档, NHNL 不再单独立项"
+  },
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/NHNL_INDUSTRY_20260907.{json,md} + wfa_trials.jsonl"
+}

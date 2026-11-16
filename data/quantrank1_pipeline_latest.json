@@ -1,0 +1,244 @@
+{
+ "generated_at": "2026-11-03 02:24:34",
+ "rows": [
+  {
+   "rank": 1,
+   "code": "002003",
+   "name": "伟星股份",
+   "exp": 0.05422,
+   "price": 12.7,
+   "pivot": [
+    9.58,
+    9.65
+   ],
+   "verdict": "CHASE_OK",
+   "tag": "【实验追买】",
+   "buy_zone": null,
+   "chase_limit": 12.76,
+   "stop_loss": 9.58,
+   "note": "【实验追买】主升后段: 价12.7距中枢上沿9.65已+32%, 主人令暂定可追(模拟盘攒样本后再定拦截去留); 追买限价12.76, 失效=跌破9.58; 每次选股须带此标注"
+  },
+  {
+   "rank": 2,
+   "code": "603727",
+   "name": "博迈科",
+   "exp": 0.04444,
+   "price": 21.75,
+   "pivot": [
+    19.41,
+    20.03
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    20.03,
+    20.63
+   ],
+   "chase_limit": null,
+   "stop_loss": 19.41,
+   "note": "三买区: 价21.75站上中枢上沿20.03未远, 回踩[20.03, 20.63]区域买, 失效=跌破zd19.41"
+  },
+  {
+   "rank": 3,
+   "code": "002293",
+   "name": "罗莱生活",
+   "exp": 0.02994,
+   "price": 12.15,
+   "pivot": [
+    11.31,
+    11.38
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    11.38,
+    11.72
+   ],
+   "chase_limit": null,
+   "stop_loss": 11.31,
+   "note": "三买区: 价12.15站上中枢上沿11.38未远, 回踩[11.38, 11.72]区域买, 失效=跌破zd11.31"
+  },
+  {
+   "rank": 4,
+   "code": "600901",
+   "name": "江苏金租",
+   "exp": 0.02697,
+   "price": 7.5,
+   "pivot": [
+    6.36,
+    6.53
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    6.53,
+    6.73
+   ],
+   "chase_limit": null,
+   "stop_loss": 6.36,
+   "note": "三买区: 价7.5站上中枢上沿6.53未远, 回踩[6.53, 6.73]区域买, 失效=跌破zd6.36"
+  },
+  {
+   "rank": 5,
+   "code": "601107",
+   "name": "四川成渝",
+   "exp": 0.01706,
+   "price": 6.81,
+   "pivot": [
+    5.71,
+    6.05
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    6.05,
+    6.23
+   ],
+   "chase_limit": null,
+   "stop_loss": 5.71,
+   "note": "三买区: 价6.81站上中枢上沿6.05未远, 回踩[6.05, 6.23]区域买, 失效=跌破zd5.71"
+  },
+  {
+   "rank": 6,
+   "code": "600803",
+   "name": "新奥股份",
+   "exp": 0.01495,
+   "price": 20.45,
+   "pivot": [
+    16.71,
+    16.83
+   ],
+   "verdict": "CHASE_OK",
+   "tag": "【实验追买】",
+   "buy_zone": null,
+   "chase_limit": 20.55,
+   "stop_loss": 16.71,
+   "note": "【实验追买】主升后段: 价20.45距中枢上沿16.83已+22%, 主人令暂定可追(模拟盘攒样本后再定拦截去留); 追买限价20.55, 失效=跌破16.71; 每次选股须带此标注"
+  },
+  {
+   "rank": 7,
+   "code": "600007",
+   "name": "中国国贸",
+   "exp": 0.01198,
+   "price": 21.6,
+   "pivot": [
+    18.67,
+    19.05
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    19.05,
+    19.62
+   ],
+   "chase_limit": null,
+   "stop_loss": 18.67,
+   "note": "三买区: 价21.6站上中枢上沿19.05未远, 回踩[19.05, 19.62]区域买, 失效=跌破zd18.67"
+  },
+  {
+   "rank": 8,
+   "code": "600993",
+   "name": "马应龙",
+   "exp": 0.00122,
+   "price": 24.49,
+   "pivot": [
+    27.76,
+    28.89
+   ],
+   "verdict": "NO_TRADE",
+   "tag": "",
+   "buy_zone": null,
+   "chase_limit": null,
+   "stop_loss": 27.76,
+   "note": "价24.49在中枢下沿27.76下方(三卖区), 不接飞刀; 底分型+反包站上MA5企稳确认后才转BUY"
+  },
+  {
+   "rank": 9,
+   "code": "600628",
+   "name": "新世界",
+   "exp": -0.00374,
+   "price": 6.4,
+   "pivot": [
+    7.05,
+    7.38
+   ],
+   "verdict": "NO_TRADE",
+   "tag": "",
+   "buy_zone": null,
+   "chase_limit": null,
+   "stop_loss": 7.05,
+   "note": "价6.4在中枢下沿7.05下方(三卖区), 不接飞刀; 底分型+反包站上MA5企稳确认后才转BUY"
+  },
+  {
+   "rank": 10,
+   "code": "601808",
+   "name": "中海油服",
+   "exp": -0.00439,
+   "price": 13.48,
+   "pivot": [
+    15.31,
+    15.87
+   ],
+   "verdict": "NO_TRADE",
+   "tag": "",
+   "buy_zone": null,
+   "chase_limit": null,
+   "stop_loss": 15.31,
+   "note": "价13.48在中枢下沿15.31下方(三卖区), 不接飞刀; 底分型+反包站上MA5企稳确认后才转BUY"
+  },
+  {
+   "rank": 11,
+   "code": "603600",
+   "name": "永艺股份",
+   "exp": -0.00488,
+   "price": 11.22,
+   "pivot": [
+    10.5,
+    10.78
+   ],
+   "verdict": "BUY_ZONE",
+   "tag": "",
+   "buy_zone": [
+    10.78,
+    11.1
+   ],
+   "chase_limit": null,
+   "stop_loss": 10.5,
+   "note": "三买区: 价11.22站上中枢上沿10.78未远, 回踩[10.78, 11.1]区域买, 失效=跌破zd10.5"
+  },
+  {
+   "rank": 12,
+   "code": "603332",
+   "name": "苏州龙杰",
+   "exp": -0.00866,
+   "price": 12.5,
+   "pivot": [
+    12.74,
+    14.21
+   ],
+   "verdict": "NO_TRADE",
+   "tag": "",
+   "buy_zone": null,
+   "chase_limit": null,
+   "stop_loss": 12.74,
+   "note": "价12.5在中枢下沿12.74下方(三卖区), 不接飞刀; 底分型+反包站上MA5企稳确认后才转BUY"
+  },
+  {
+   "rank": 13,
+   "code": "301100",
+   "name": "风光股份",
+   "exp": -0.01093,
+   "price": 16.62,
+   "pivot": [
+    18.51,
+    19.6
+   ],
+   "verdict": "NO_TRADE",
+   "tag": "",
+   "buy_zone": null,
+   "chase_limit": null,
+   "stop_loss": 18.51,
+   "note": "价16.62在中枢下沿18.51下方(三卖区), 不接飞刀; 底分型+反包站上MA5企稳确认后才转BUY"
+  }
+ ]
+}

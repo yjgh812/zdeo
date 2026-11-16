@@ -1,0 +1,44 @@
+{
+ "date": "20261027",
+ "execute": true,
+ "rows": [
+  {
+   "code": "sh601997",
+   "name": "贵阳银行",
+   "limit": 5.56,
+   "qty": 500,
+   "confirmed": 0,
+   "requoted": false,
+   "live": "已成交",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已成交, 本地OPEN行为滞后残影",
+   "action_taken": "ledger_marked_FILLED"
+  },
+  {
+   "code": "sh601668",
+   "name": "中国建筑",
+   "limit": 4.59,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "live": "已成交",
+   "status": "SKIP_LIVE",
+   "reason": "westock真值=已成交, 本地OPEN行为滞后残影",
+   "action_taken": "ledger_marked_FILLED"
+  },
+  {
+   "code": "sh600064",
+   "name": "南京高科",
+   "limit": 7.86,
+   "qty": 100,
+   "confirmed": 0,
+   "requoted": false,
+   "cur": 7.87,
+   "status": "REQ",
+   "new_price": 7.89,
+   "live": "待成交",
+   "action_taken": "resubmitted@7.89x100",
+   "action_detail": "{'content': [{'type': 'text', 'text': '{\"ok\":true,\"data\":{\"orderId\":\"100015682610271310384274182704\",\"code\":\"sh600064\",\"name\":\"南京高科\",\"direction\":\"buy\",\"quantity\":\"100\",\"price\":\"7.89\",\"amount\":\"794.00\""
+  }
+ ]
+}

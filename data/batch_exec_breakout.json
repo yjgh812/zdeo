@@ -1,0 +1,72 @@
+[
+ {
+  "code": "601857",
+  "name": "中国石油",
+  "volume": 100,
+  "price": 13.51,
+  "source": "breakout_mainline",
+  "sector": "石油石化",
+  "prev_close": 13.38,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "000559",
+  "name": "万向钱潮",
+  "volume": 100,
+  "price": 12.84,
+  "source": "breakout_mainline",
+  "sector": "汽车",
+  "prev_close": 12.71,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "300369",
+  "name": "绿盟科技",
+  "volume": 100,
+  "price": 11.97,
+  "source": "breakout_mainline",
+  "sector": "计算机",
+  "prev_close": 11.85,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "001979",
+  "name": "招商蛇口",
+  "volume": 100,
+  "price": 8.24,
+  "source": "breakout_mainline",
+  "sector": "房地产",
+  "prev_close": 8.16,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ },
+ {
+  "code": "002223",
+  "name": "鱼跃医疗",
+  "volume": 100,
+  "price": 28.8,
+  "source": "breakout_mainline",
+  "sector": "医药生物",
+  "prev_close": 28.51,
+  "owner_approve_ddgate": true,
+  "owner_approve_p2": true,
+  "owner_approve_r31": true,
+  "class_v0": "待归类",
+  "owner_override_session": true
+ }
+]

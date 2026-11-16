@@ -1,0 +1,19 @@
+{
+  "prereg_id": "roundbottom_zhongtai_compare_20260907",
+  "created": "2026-09-07",
+  "owner_directive": "主人连续'继续'授权, 按知微推荐开工圆弧底对照(QuantsPlaybook中泰2021算法 vs 咱们rbot)",
+  "background": "9/2 prescreen: 圆弧底=唯一两窗同正多头形态(N10主窗+1.02%/t=10.0), 但中位数≈0右尾驱动, 疑与短期反转因子共线(V型尾巴污染)。中泰算法 cond_c/cond_d(左右弧日均振幅<3%)恰为排除V型急反转的缓坡约束——对照=检验'缓弧子集'是否保留超额",
+  "oos_lock": "一切统计 end=20251231, 真窗20260826后数据零触碰(与9/2 wfa同锁)",
+  "hypotheses": {
+    "H1_distinction": "中泰五条件(cond_x1防杯柄/d>10bar/两侧占比>0.4/日均振幅<3%/弧度<3%)过滤通过的 rbot 子集, N10费后均值 > rbot 全集 N10费后均值, 且子集 t>=2",
+    "H2_independent_alpha": "过滤子集 N10 费后 t>=3 且均值>0 且正值年>=6/10"
+  },
+  "verdicts": {
+    "H1_pass_H2_pass": "缓弧是alpha来源, V尾是污染 → 建议闸门定义升级为缓弧版(另行预注册)",
+    "H1_pass_H2_fail": "子集相对更优但仍不独立 → 登记观察",
+    "H1_fail": "两定义同质或缓弧无增益 → 对照归档, 维持9/2候选原判",
+    "sample_too_small": "子集<30笔 → no_conclusion(中泰定义在A股过严)"
+  },
+  "method": "复用 classical_pattern_prescreen 的 load_universe/load_wide/rolling_signals/cooldown/ruler; 对每个rbot信号点取前200bar窗口跑中泰五条件(KernelReg bw=1.5平滑+argrelmin/max); 买点层(200EMA+30%~130%区间)仅作敏感性第二层, 不入主判据",
+  "immutable": "本文件跑前钉死, 跑后禁改; 结果落 reports/COMPARE_ROUND-BOTTOM_ZHONGTAI_20260907.{json,md} + wfa_trials.jsonl 追加"
+}

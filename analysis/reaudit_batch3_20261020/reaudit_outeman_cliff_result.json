@@ -1,0 +1,45 @@
+{
+ "id": "OUTEMAN-SEVEN-BOARD-CLIFF-FALSE",
+ "mode": "independent_reimpl",
+ "curve": {
+  "2": {
+   "n": 13010,
+   "promote_rate": 0.347
+  },
+  "3": {
+   "n": 4515,
+   "promote_rate": 0.4746
+  },
+  "4": {
+   "n": 2143,
+   "promote_rate": 0.5138
+  },
+  "5": {
+   "n": 1101,
+   "promote_rate": 0.5377
+  },
+  "6": {
+   "n": 592,
+   "promote_rate": 0.6014
+  },
+  "7": {
+   "n": 356,
+   "promote_rate": 0.5702
+  },
+  "8": {
+   "n": 203,
+   "promote_rate": 0.6502
+  },
+  "9": {
+   "n": 132,
+   "promote_rate": 0.7348
+  },
+  "10": {
+   "n": 97,
+   "promote_rate": 0.6598
+  }
+ },
+ "caveats": [
+  "zt_pool 2020-2026 qfq派生口径; 晋级=下一交易日boards==k+1(串连续性定义)"
+ ]
+}

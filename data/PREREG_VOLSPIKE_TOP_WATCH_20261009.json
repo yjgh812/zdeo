@@ -1,0 +1,19 @@
+{
+ "name": "PREREG_VOLSPIKE_TOP_WATCH",
+ "title": "TB爆量退出执行触发版·持仓哨提示层扩展（高位爆量=派发, 提请制零交易权）",
+ "status": "ACTIVE",
+ "registered": "2026-10-09",
+ "family": "sell_side_watch_petition",
+ "runner": "strong_sell_watch.py（唯一runner, 与wyckoff三信号+起航二信号同件提请制；挂07:45十合一第10步, 调度零改动）",
+ "evidence_report": "reports/tb_master_playbook_20261003.md 卖出1 + reports/topbottom_feature_lib_20261003.md + reports/case_timing_playbook_20261007.md 卖出1",
+ "signal_locked": {
+  "volspike_top": "vr120>=1.5 且 ret20>=20%: vr120=当日量/前120日均量(shift(1)零前视), ret20=close/close[T-20]-1>=20%; 次级注记pre5_vr=前5日vr120均值>=1.5(25-30天高量区间型, 区域增强字段仅记录不门控); 数据不足121根=SKIP不判定(诚实输出非ERROR)",
+  "note": "口径与reports/tb_master_playbook_20261003.md卖出1/topbottom_feature_lib_20261003.md爆量退出2特征版逐字一致(TB_TOP五特征72.6%为预警分层版不接线); 全部判定只用<=T数据零前视"
+ },
+ "evidence": "53万样本无例外, 主顶同日捕获65-72%(爆量2特征版65.4%, TB_TOP五特征扩展72.6%=预警分层版不接线); case_timing_playbook引六轮D独立干净子样n=24,935; 区域增强=pre5_vr>=1.5(顶是25-30天高量区间, 孤立单日爆量次之); 活体命中先例=百亚股份vr120=4.61/大连热电2.25(9/29-10/3卖出呈请)",
+ "honesty_layers": "🔴新买低位票爆量=主升确认不卖(卖出三件套口径, A池退出三臂-1.9pp)——本哨语义=高位获利老票的派发警示, 是否适用由主人按持仓语境裁决; 与hi_stall部分重叠(高位滞涨vs爆量), 两证据族独立可共存; 全市场样本证据, 本持仓域无独立前向验证",
+ "shadow_rule": "命中写入strong_sell_watch_ledger.jsonl(tag=volspike_top, 键=signal_date+code+tag幂等); 影子窗=20261009起60个交易日, 记录命中与后续T+20走向; pre5_vr区域增强仅作字段记录",
+ "gates": "窗满评估: volspike_top命中后T+20中位<0且n>=3=维持; n<3=统计力不足仅持续记录不做裁决; 若命中后中位转正连续出现=登记falsified VOLSPIKE-HOLDING-DOMAIN-REVERSED并撤哨(持仓域反号家族先例=hi_stall)",
+ "boundary": "纯提示层零交易权: 禁止自动卖出禁触trade_executor禁撤单改单; 提请制=toast弹清单待主人裁决; 不改买入闸门不改卖出执行链; 生产链改动=strong_sell_watch.py单文件扩展+本prereg+SOP回写",
+ "fingerprint": "65c5df666b722a07"
+}

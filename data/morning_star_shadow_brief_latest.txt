@@ -1,0 +1,5 @@
+[morning_star_shadow] 2026-10-30 00:31 qfq_max=20261029
+事件=21483 (样内=21420 OOS=63, dedup=5)
+样内参考: nb20 med=2.414% win=58.9%
+OOS: 已结算n=0 med=None% win=None% (pass门=med>=+1.5%且win>=52%; kill=前10到期全负)
+[ok] 三产物原子覆盖完成; 观测层零交易权

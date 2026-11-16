@@ -1,0 +1,26 @@
+{
+  "id": "20260825-bp_ep-v1",
+  "ts": "2026-08-25T00:00:00",
+  "object": "bp_ep 因子组合 WFA 门禁正式验证（预注册模板，复制后填写）",
+  "engine": "tulong_wfa_gate.v1",
+  "combo": ["bp_ep"],
+  "params": {
+    "train": 500,
+    "test": 60,
+    "fwd": 20,
+    "cost": 0.001,
+    "top_pct": 0.1,
+    "start": "20180101",
+    "end": "20260814"
+  },
+  "criterion": {
+    "pos_window_rate": 0.6,
+    "mdd": -0.25,
+    "min_folds": 5,
+    "min_oos_months": 12
+  },
+  "trial_budget": 61,
+  "commitment": "PASS 才允许上线；WARN 降仓观察；FAIL 不上线并归因。",
+  "semantic_direction_precheck": "立项预检(2026-10-18 DeepSeek外部审计V2固化, 必填): 本信号/组合的『确认』语义若属放量/突破/加速族, 默认负先验(语义反转假说跨6域零反例: 放量≠确认, 低位+缩量才正格)——须引用 falsified_rules.json 对应条目并给出与已证伪条件不同的论证, 否则不予立案(trial_budget 不消耗)",
+  "status": "pending"
+}

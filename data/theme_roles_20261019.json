@@ -1,0 +1,493 @@
+{
+ "date": "20261019",
+ "total_limitup": 46,
+ "chains": [
+  {
+   "chain_id": 1,
+   "chain_name": "自动链1",
+   "shared_words": [
+    "软件开发"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "003029",
+    "name": "吉大正元",
+    "boards": 3,
+    "seal_money": 200574989.0,
+    "mv_wan": 468367.2638
+   },
+   "members": [
+    {
+     "code": "003029",
+     "name": "吉大正元",
+     "boards": 3,
+     "reason": "软件开发",
+     "mv_wan": 468367.2638,
+     "role": "龙头"
+    },
+    {
+     "code": "688507",
+     "name": "索辰科技",
+     "boards": 1,
+     "reason": "软件开发",
+     "mv_wan": null,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 2,
+   "chain_name": "自动链2",
+   "shared_words": [
+    "物流"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002889",
+    "name": "东方嘉盛",
+    "boards": 3,
+    "seal_money": 33135596.0,
+    "mv_wan": 594448.645
+   },
+   "members": [
+    {
+     "code": "002889",
+     "name": "东方嘉盛",
+     "boards": 3,
+     "reason": "物流",
+     "mv_wan": 594448.645,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 3,
+   "chain_name": "自动链3",
+   "shared_words": [
+    "汽车零部"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603197",
+    "name": "保隆科技",
+    "boards": 2,
+    "seal_money": 332033399.0,
+    "mv_wan": 691944.7648
+   },
+   "members": [
+    {
+     "code": "600148",
+     "name": "长春一东",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 253456.0515,
+     "role": "助攻"
+    },
+    {
+     "code": "603197",
+     "name": "保隆科技",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 691944.7648,
+     "role": "龙头"
+    },
+    {
+     "code": "600178",
+     "name": "东安动力",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 526185.1536,
+     "role": "助攻"
+    },
+    {
+     "code": "603348",
+     "name": "文灿股份",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 529579.6048,
+     "role": "助攻"
+    },
+    {
+     "code": "002085",
+     "name": "万丰奥威",
+     "boards": 2,
+     "reason": "汽车零部",
+     "mv_wan": 2314394.275,
+     "role": "中军"
+    },
+    {
+     "code": "301119",
+     "name": "正强股份",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 499553.6,
+     "role": "助攻"
+    },
+    {
+     "code": "603040",
+     "name": "新坐标",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 801271.45,
+     "role": "助攻"
+    },
+    {
+     "code": "603119",
+     "name": "浙江荣泰",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 2169008.82,
+     "role": "助攻"
+    },
+    {
+     "code": "603286",
+     "name": "日盈电子",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 504305.0738,
+     "role": "助攻"
+    },
+    {
+     "code": "605255",
+     "name": "天普股份",
+     "boards": 1,
+     "reason": "汽车零部",
+     "mv_wan": 749239.04,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 4,
+   "chain_name": "自动链4",
+   "shared_words": [
+    "通用设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603278",
+    "name": "大业股份",
+    "boards": 2,
+    "seal_money": 62221560.0,
+    "mv_wan": 372517.746
+   },
+   "members": [
+    {
+     "code": "600860",
+     "name": "京城股份",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 474799.803,
+     "role": "助攻"
+    },
+    {
+     "code": "002164",
+     "name": "宁波东力",
+     "boards": 1,
+     "reason": "通用设备",
+     "mv_wan": 781763.0184,
+     "role": "中军"
+    },
+    {
+     "code": "603278",
+     "name": "大业股份",
+     "boards": 2,
+     "reason": "通用设备",
+     "mv_wan": 372517.746,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 5,
+   "chain_name": "自动链5",
+   "shared_words": [
+    "照明设备"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002724",
+    "name": "海洋王",
+    "boards": 2,
+    "seal_money": 119123322.0,
+    "mv_wan": 649601.316
+   },
+   "members": [
+    {
+     "code": "002724",
+     "name": "海洋王",
+     "boards": 2,
+     "reason": "照明设备",
+     "mv_wan": 649601.316,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 6,
+   "chain_name": "自动链6",
+   "shared_words": [
+    "地面兵装"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "000576",
+    "name": "甘化科工",
+    "boards": 2,
+    "seal_money": 32047765.0,
+    "mv_wan": 421143.6595
+   },
+   "members": [
+    {
+     "code": "000576",
+     "name": "甘化科工",
+     "boards": 2,
+     "reason": "地面兵装",
+     "mv_wan": 421143.6595,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 8,
+   "chain_name": "自动链8",
+   "shared_words": [
+    "塑料"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "301591",
+    "name": "肯特股份",
+    "boards": 1,
+    "seal_money": 91066210.0,
+    "mv_wan": 519112.932
+   },
+   "members": [
+    {
+     "code": "603330",
+     "name": "天洋新材",
+     "boards": 1,
+     "reason": "塑料",
+     "mv_wan": 408011.2048,
+     "role": "助攻"
+    },
+    {
+     "code": "301591",
+     "name": "肯特股份",
+     "boards": 1,
+     "reason": "塑料",
+     "mv_wan": 519112.932,
+     "role": "龙头"
+    },
+    {
+     "code": "002886",
+     "name": "沃特股份",
+     "boards": 1,
+     "reason": "塑料",
+     "mv_wan": 631951.8436,
+     "role": "助攻"
+    },
+    {
+     "code": "605488",
+     "name": "福莱新材",
+     "boards": 1,
+     "reason": "塑料",
+     "mv_wan": 845075.2104,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 10,
+   "chain_name": "自动链10",
+   "shared_words": [
+    "IT服务Ⅱ"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "002368",
+    "name": "太极股份",
+    "boards": 1,
+    "seal_money": 112299258.0,
+    "mv_wan": 794619.78
+   },
+   "members": [
+    {
+     "code": "002368",
+     "name": "太极股份",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 794619.78,
+     "role": "龙头"
+    },
+    {
+     "code": "603859",
+     "name": "能科科技",
+     "boards": 1,
+     "reason": "IT服务Ⅱ",
+     "mv_wan": 1034161.3062,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 12,
+   "chain_name": "自动链12",
+   "shared_words": [
+    "电力"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603693",
+    "name": "江苏新能",
+    "boards": 1,
+    "seal_money": 58584900.0,
+    "mv_wan": 1206166.8927
+   },
+   "members": [
+    {
+     "code": "603693",
+     "name": "江苏新能",
+     "boards": 1,
+     "reason": "电力",
+     "mv_wan": 1206166.8927,
+     "role": "龙头"
+    },
+    {
+     "code": "600032",
+     "name": "浙江新能",
+     "boards": 1,
+     "reason": "电力",
+     "mv_wan": 1873242.0587,
+     "role": "中军"
+    },
+    {
+     "code": "601778",
+     "name": "晶科科技",
+     "boards": 1,
+     "reason": "电力",
+     "mv_wan": 1332851.2198,
+     "role": "助攻"
+    }
+   ]
+  },
+  {
+   "chain_id": 13,
+   "chain_name": "自动链13",
+   "shared_words": [
+    "家居用品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "001211",
+    "name": "双枪科技",
+    "boards": 1,
+    "seal_money": 49896347.0,
+    "mv_wan": 287400.0
+   },
+   "members": [
+    {
+     "code": "001323",
+     "name": "慕思股份",
+     "boards": 1,
+     "reason": "家居用品",
+     "mv_wan": 879298.0947,
+     "role": "中军"
+    },
+    {
+     "code": "001216",
+     "name": "华瓷股份",
+     "boards": 1,
+     "reason": "家居用品",
+     "mv_wan": 709750.6273,
+     "role": "助攻"
+    },
+    {
+     "code": "001211",
+     "name": "双枪科技",
+     "boards": 1,
+     "reason": "家居用品",
+     "mv_wan": 287400.0,
+     "role": "龙头"
+    }
+   ]
+  },
+  {
+   "chain_id": 14,
+   "chain_name": "自动链14",
+   "shared_words": [
+    "化学制品"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "603188",
+    "name": "亚邦股份",
+    "boards": 1,
+    "seal_money": 67796972.0,
+    "mv_wan": 317014.52
+   },
+   "members": [
+    {
+     "code": "603188",
+     "name": "亚邦股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 317014.52,
+     "role": "龙头"
+    },
+    {
+     "code": "300798",
+     "name": "锦鸡股份",
+     "boards": 1,
+     "reason": "化学制品",
+     "mv_wan": 453700.024,
+     "role": "中军"
+    }
+   ]
+  },
+  {
+   "chain_id": 16,
+   "chain_name": "自动链16",
+   "shared_words": [
+    "元件"
+   ],
+   "takeover": false,
+   "leader": {
+    "code": "300852",
+    "name": "四会富仕",
+    "boards": 1,
+    "seal_money": 41686092.0,
+    "mv_wan": 1235050.1128
+   },
+   "members": [
+    {
+     "code": "300852",
+     "name": "四会富仕",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1235050.1128,
+     "role": "龙头"
+    },
+    {
+     "code": "605258",
+     "name": "协和电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 377520.0,
+     "role": "助攻"
+    },
+    {
+     "code": "605058",
+     "name": "澳弘电子",
+     "boards": 1,
+     "reason": "元件",
+     "mv_wan": 1034948.889,
+     "role": "中军"
+    }
+   ]
+  }
+ ],
+ "known_limits": [
+  "题材聚类=标签词连通分量+人工并链层(chain_map);卡位=--prev-input链级对比(前日链最高板断板+新龙头≥2板接管);ST已剔除"
+ ]
+}

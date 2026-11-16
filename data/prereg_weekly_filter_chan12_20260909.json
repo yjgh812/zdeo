@@ -1,0 +1,41 @@
+{
+ "id": "20260909-weekly-filter-chan12-v1",
+ "ts": "2026-09-09",
+ "object": "周线方向过滤对日线缠论一二买信号的增量验证 — 预注册（主人命题『股票上涨和下跌是分级别的、级别间具有相似性』的可检验形式）",
+ "origin": "主人 2026-09-09 命令全网学习『级别论』后确认立项路径。理论载体=缠论级别论（级别联立『大级别定方向、小级别定买卖』）+分形市场假说。grilling 拷问两轮10问达成共识（Q1=H1过滤假设 Q2=独立影子 Q3=周线MA代理 Q4=缠论一二买 Q5-Q9样本/对照/引擎/闸门/停止条件全按推荐），spec 经主人『继续』确认",
+ "hypothesis_LOCKED": {
+  "H1": "周线趋势代理过滤后的缠论 buy1+buy2 信号，相对同一批不套过滤的信号（嵌套对照组），fwd20 均值增量显著为正",
+  "weekly_filter": "信号过滤状态=信号日之前最近一个已完整结束的周K（信号日恰为周收盘日时含当周）：周收盘 > 周MA20 且 周MA20 严格上行（本周MA20 > 上周MA20）；周线由日线 resample(W-FRI) 合成；严禁使用信号日所在进行中周的未来数据",
+  "signal_engine": "portrait_agent/cache/chan_signals_v2.pkl 确认日口径（分型第3根merged K确认，无前视，登记 COMBOC-CHAN-LOOKAHEAD 修复在案），type∈{buy1,buy2}",
+  "eligibility": "剔科创(688/689)与北交(4/8/92开头)；次新<60交易日剔除（信号日距该code在qfq库首个交易日）；ST不做历史PIT剔除（qfq无历史名称，当前名近似仅作附录敏感性；嵌套对照设计下两组宇宙一致，不影响增量归因）"
+ },
+ "protocol": {
+  "sample_main": "20160101 ~ 20251231（qfq库2016前覆盖稀疏已实证不可用：2010-2015每年仅4-5万行）",
+  "oos_frozen": "20260101 ~ 20260831 为严格样本外，主检验报告产出前禁止查看任何统计量；样本外仅允许运行一次",
+  "horizons": {
+   "main": 20,
+   "aux": [
+    5,
+    10
+   ]
+  },
+  "ret": "close[D]/close[D+N]-1，qfq收盘口径（复用 chan_fix_eventstudy_20260906.py 的 seq 映射法）",
+  "benchmark": "主口径=嵌套对照（同信号无过滤组）；辅口径=全市场等权日基准（同D日全部在库A股等权 fwdN，信号超额=信号fwd-基准）",
+  "cost": "主闸用毛口径；附录给净口径（-2x0.1%，与wfa_gate/b23先例一致）",
+  "data_source": "D:/zcodesj/data/dragon_quant_qfq.db stock_daily_meta_qfq（真身，1990-20260904；9/7-9/8两日未入库已登记，不影响主样本窗）"
+ },
+ "criterion_LOCKED": {
+  "pass": "增量超额（过滤组fwd20均值-无过滤组fwd20均值）Welch t>=2.0 且 过滤组分年（2016-2025共10年）>=7年fwd20均值不为负",
+  "aux_required": "辅口径市场超额（无过滤组与过滤组）在fwd20为正",
+  "fail": "任一主条件未达 = H1未通过"
+ },
+ "sensitivity_budget_LOCKED": [
+  "weekly_ma10: 周线MA窗10",
+  "weekly_ma30: 周线MA窗30"
+ ],
+ "anti_piahua": "敏感性变体仅限上述2个预设项，跑完仍未过闸即关闭本线；禁止追加口径变体、禁止改闸门数值、禁止样本外重跑",
+ "falsified_path": "未过闸 -> falsified_rules.json 登记 rule_id=WEEKLY-FILTER-CHAN12（附本prereg指纹与最终增量t值），本研究方向关闭；重启须引用本档案确认条件不同（宪法§10-8）",
+ "promotion_path": "过闸 -> 走 S2B 式影子升级（影子登记->窗口判定->再议接入回踩提示器），不直接接生产任何面",
+ "scope": "独立影子研究，零生产影响：不触碰 executor/pre_trade/回踩提示器/白名单A/B/数据链/westock",
+ "fingerprint": "75f5775b6d71d8c5"
+}

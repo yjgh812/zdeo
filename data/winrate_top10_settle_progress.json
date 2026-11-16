@@ -1,0 +1,90 @@
+{
+ "asof": "20261019",
+ "groups": {
+  "group_A_pure_prediction": {
+   "predict_avg": 66.4,
+   "gauge_hist_win": 40.7,
+   "n_settled": 0,
+   "n_total": 5,
+   "win_rate": null,
+   "avg_ret": null,
+   "items": [
+    {
+     "code": "300263",
+     "name": "隆华科技",
+     "status": "OPEN",
+     "settled": false,
+     "remaining_days": 20
+    },
+    {
+     "code": "000670",
+     "name": "盈方微",
+     "status": "OPEN",
+     "settled": false,
+     "remaining_days": 20
+    },
+    {
+     "code": "001287",
+     "name": "中电港",
+     "status": "OPEN",
+     "settled": false,
+     "remaining_days": 20
+    },
+    {
+     "code": "603803",
+     "name": "瑞斯康达",
+     "status": "OPEN",
+     "settled": false,
+     "remaining_days": 20
+    },
+    {
+     "code": "301500",
+     "name": "飞南资源",
+     "status": "OPEN",
+     "settled": false,
+     "remaining_days": 20
+    }
+   ]
+  },
+  "group_B_zhengge_mainline": {
+   "predict_avg": 48.0,
+   "gauge_hist_win": 43.2,
+   "n_settled": 0,
+   "n_total": 5,
+   "win_rate": null,
+   "avg_ret": null,
+   "items": [
+    {
+     "code": "300364",
+     "name": "中文在线",
+     "status": "UNKNOWN",
+     "settled": null
+    },
+    {
+     "code": "301102",
+     "name": "兆讯传媒",
+     "status": "UNKNOWN",
+     "settled": null
+    },
+    {
+     "code": "601019",
+     "name": "山东出版",
+     "status": "UNKNOWN",
+     "settled": null
+    },
+    {
+     "code": "002291",
+     "name": "遥望科技",
+     "status": "UNKNOWN",
+     "settled": null
+    },
+    {
+     "code": "300071",
+     "name": "福石控股",
+     "status": "UNKNOWN",
+     "settled": null
+    }
+   ]
+  }
+ }
+}

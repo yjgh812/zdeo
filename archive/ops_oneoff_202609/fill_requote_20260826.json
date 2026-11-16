@@ -1,0 +1,94 @@
+{
+ "eval_date": "20260826",
+ "submitted": 18,
+ "unfilled": 9,
+ "savable": 7,
+ "savable_rate": 77.8,
+ "counts": {
+  "REQ_SAVABLE": 7,
+  "REQ_DROPPED": 1,
+  "NEED_MINUTE": 1,
+  "NO_QFQ": 0
+ },
+ "rows": [
+  {
+   "code": "002445",
+   "name": "中南文化",
+   "limit": 3.69,
+   "high": 4.08,
+   "close": 3.6,
+   "status": "NEED_MINUTE"
+  },
+  {
+   "code": "601009",
+   "name": "南京银行",
+   "limit": 11.54,
+   "high": 11.82,
+   "close": 11.72,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 11.54
+  },
+  {
+   "code": "601328",
+   "name": "交通银行",
+   "limit": 7.08,
+   "high": 7.23,
+   "close": 7.17,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 7.08
+  },
+  {
+   "code": "002379",
+   "name": "宏桥控股",
+   "limit": 20.1,
+   "high": 18.57,
+   "close": 18.41,
+   "status": "REQ_DROPPED"
+  },
+  {
+   "code": "300443",
+   "name": "金雷股份",
+   "limit": 18.56,
+   "high": 18.97,
+   "close": 18.82,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 18.56
+  },
+  {
+   "code": "000001",
+   "name": "平安银行",
+   "limit": 11.35,
+   "high": 11.75,
+   "close": 11.73,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 11.35
+  },
+  {
+   "code": "601800",
+   "name": "中国交建",
+   "limit": 5.83,
+   "high": 6.03,
+   "close": 6.02,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 5.83
+  },
+  {
+   "code": "600928",
+   "name": "西安银行",
+   "limit": 3.52,
+   "high": 3.65,
+   "close": 3.63,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 3.52
+  },
+  {
+   "code": "300082",
+   "name": "奥克股份",
+   "limit": 8.3,
+   "high": 8.98,
+   "close": 8.88,
+   "status": "REQ_SAVABLE",
+   "suggest_price": 8.3
+  }
+ ]
+}

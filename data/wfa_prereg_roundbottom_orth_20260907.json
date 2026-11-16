@@ -1,0 +1,18 @@
+{
+  "prereg_id": "roundbottom_orth_20260907",
+  "created": "2026-09-07",
+  "owner_directive": "主人'继续'=执行 roundbottom_zhongtai_compare 登记的转正路径第一步(反转因子正交化, 9/2 prescreen 后续边界第1条)",
+  "background": "roundbottom_zhongtai_compare_20260907 判定 H1_pass_H2_fail: 中泰缓弧子集(N=230) mu +2.09% 近全集两倍但 t=2.81<3。9/2 报告怀疑圆弧底与短期反转因子共线——本实验控制反转暴露后检验缓弧标记的独立增量",
+  "oos_lock": "统计 year<=2025, 数据载入同 classical_pattern_prescreen(SIG_END=20260827)",
+  "method": "每笔 rbot 信号: ret=N10费后收益, x1=is_zhongtai(中泰五条件, 复用 compare 脚本判定), rev5=信号日5日收益。按年 Fama-MacBeth: ret_y = a + b1*x1 + b2*rev5, 收集 b1_y 序列",
+  "criteria": {
+    "O1_fm_t": "FM_t(b1) >= 3 且 mean(b1_y) > 0",
+    "O2_year_consistency": "有效年数(b1可估且全集样本>=30) >= 8, 且 b1_y>0 年数 >= 6",
+    "sensitivity_not_criteria": "双控制(rev5+rev20)与单独 rev20 控制仅作敏感性展示"
+  },
+  "verdicts": {
+    "O1_and_O2_pass": "PASS_orth: 缓弧增量独立于短期反转 → 圆弧底候选升级为'待新指纹wfa_gate预注册'状态(本轮不接线生产)",
+    "fail": "ARCHIVE: 正交不过 → 圆弧底候选归档(9/2条款'任一不过即归档'), 对照+正交双证完结"
+  },
+  "immutable": "跑前钉死跑后禁改; 结果落 reports/ORTH_ROUND-BOTTOM_ZHONGTAI_20260907.{json,md} + wfa_trials.jsonl"
+}

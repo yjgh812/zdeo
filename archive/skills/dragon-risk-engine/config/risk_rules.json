@@ -1,0 +1,35 @@
+{
+  "stop_loss": {
+    "enabled": true,
+    "max_loss_pct": 8.0,
+    "trigger_action": "sell_market",
+    "description": "持仓浮亏达到8%时强制止损"
+  },
+  "drawdown_guard": {
+    "enabled": true,
+    "max_drawdown_pct": 20.0,
+    "warning_drawdown_pct": 15.0,
+    "trigger_action": "reduce_position",
+    "description": "账户从高点回撤超过20%时触发熔断，超过15%时预警"
+  },
+  "position_limit": {
+    "enabled": true,
+    "max_positions": 50,
+    "max_single_position_pct": 20.0,
+    "description": "最多持仓50只股票(core-satellite口径,52才超标)，单票不超过总资金20%"
+  },
+  "st_warning": {
+    "enabled": true,
+    "check_interval_minutes": 30,
+    "description": "每30分钟检查持仓股是否被ST/退市/停牌"
+  },
+  "compliance": {
+    "enabled": true,
+    "t1_enforced": true,
+    "description": "严格执行T+1交易规则"
+  },
+  "blacklist": {
+    "enabled": true,
+    "description": "黑名单股票禁止买入"
+  }
+}

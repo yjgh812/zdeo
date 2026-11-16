@@ -1,0 +1,63 @@
+{
+ "removed": [],
+ "watch": [
+  {
+   "code": "600377",
+   "name": "宁沪高速",
+   "evidence": "Q3净利-4.5%略低预期(投资收益拖累); 73亿收购路产; 9/4国资关联交易疑云旧闻 (软雷观察)"
+  },
+  {
+   "code": "002332",
+   "name": "仙琚制药",
+   "evidence": "Q3净利+80.5%; 北向新进; 吕良丰等减持(软雷观察)"
+  }
+ ],
+ "keep": [
+  {
+   "code": "601598",
+   "name": "中国外运",
+   "source": "quant_rank_original",
+   "volume": 100,
+   "limit_price": 7.2,
+   "note": "主人令20261102[量化综合排名第一(原版)选5只]; 高挂0.5%%; 信号日20261030; EV近120日持20日口径",
+   "owner_approve_ddgate": true
+  },
+  {
+   "code": "600377",
+   "name": "宁沪高速",
+   "source": "quant_rank_original",
+   "volume": 100,
+   "limit_price": 13.9,
+   "note": "主人令20261102[量化综合排名第一(原版)选5只]; 高挂0.5%%; 信号日20261030; EV近120日持20日口径",
+   "owner_approve_ddgate": true
+  },
+  {
+   "code": "601528",
+   "name": "瑞丰银行",
+   "source": "quant_rank_original",
+   "volume": 100,
+   "limit_price": 5.47,
+   "note": "主人令20261102[量化综合排名第一(原版)选5只]; 高挂0.5%%; 信号日20261030; EV近120日持20日口径",
+   "owner_approve_ddgate": true
+  },
+  {
+   "code": "002332",
+   "name": "仙琚制药",
+   "source": "quant_rank_original",
+   "volume": 100,
+   "limit_price": 8.93,
+   "note": "主人令20261102[量化综合排名第一(原版)选5只]; 高挂0.5%%; 信号日20261030; EV近120日持20日口径",
+   "owner_approve_ddgate": true
+  },
+  {
+   "code": "600998",
+   "name": "九州通",
+   "source": "quant_rank_original",
+   "volume": 100,
+   "limit_price": 5.25,
+   "note": "主人令20261102[量化综合排名第一(原版)选5只之第5]; 高挂0.5%; 信号日20261030; EV近120日持20日=期望+1.46%/胜率59%/最差-6.02%",
+   "owner_approve_ddgate": true
+  }
+ ],
+ "uncheck": []
+}

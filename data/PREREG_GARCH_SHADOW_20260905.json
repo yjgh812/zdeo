@@ -1,0 +1,24 @@
+{
+  "id": "20260905-garch-shadow-v1",
+  "ts": "2026-09-05T21:30:00",
+  "object": "GARCH(1,1) 市场层波动预测·风险层影子期立项（主人裁决「批，继续」——§八清单 GARCH 条目显式立项；阶段A=影子观测，仓位调节权不在本预注册范围）",
+  "evidence_basis": "实测锚(报告§A3/R6/T1,git 51b99d7)：预测层 GARCH QLIKE 0.481 显著优于 vola20 0.790(30月OOS,1日horizon复测排序不变)——此为立项依据；选股层正交后无增量(t-1.23)——故定位风险/仓位层而非选股因子；层间不传导元规律(本报告§六)=预测层优势不保证仓位调节有效,故仓位权须影子期数据+二次裁决",
+  "boundary_LOCKED": "零拦截零执行权：每日仅落盘波动预测记录,不修改任何仓位/止损/信号/闸门;影子期判据达标后提请主人裁决,进入仓位调节A/B须新指纹+新prereg+wfa_gate式门禁;本预注册不授权任何下单行为",
+  "design_LOCKED": {
+    "预测对象": "全市场等权日收益(60/00/30前缀,AVG(change_pct),与U5/P4口径同族)的次日波动 sigma_garch(t+1)",
+    "模型": "GARCH(1,1) dist=normal,滚动窗=近1000交易日重估(每日),arch包;与A3口径一致",
+    "对照臂": "vola20(生产现役简单度量) / EWMA(lambda=0.94)",
+    "实现变量": "次日已实现波动rv20=次日起20日收益std(滞后回填)与rv1=次日|收益|(次日回填)",
+    "评估指标": "滚动QLIKE(rv/sig^2-log(rv/sig^2)-1,小=好)分臂累计;影子期判据见decision_rule",
+    "落盘": "data/garch_shadow.csv 幂等UPSERT(date唯一键,每日先回填昨日实现值再追加今日预测)",
+    "数据源": "qfq真库AVG SQL(date索引);拟合样本=截至T-1的近1000日"
+  },
+  "decision_rule_LOCKED": "影子期≥60个有效交易日后复核(复核点2027-01首个交易日)：①滚动120日QLIKE: sigma_garch优于vola20的天数占比≥70% 且 EWMA对照不劣于vola20→提请主人裁决进入仓位调节A/B(新prereg:波动目标制vs现行的对照设计);②QLIKE优势消失(占比<50%)→影子期归档关闭,GARCH风险层定位撤销,维持vola20;③中间态→影子期延长60日一次,再复核仍中间即关闭;④任何阶段脚本连续3日失败→health WARN(由prereg_watch P1同族机制或人工发现),不影响生产",
+  "fail_modes_declared": [
+    "GARCH fit 收敛失败→沿用上一有效参数(记录degraded标记),连续3日失败记fail",
+    "qfq库不可用→当日跳过并记fail,不阻塞其他探针"
+  ],
+  "data_sources": ["qfq真库(AVG(change_pct)等权)", "arch包", "reports/TIMESERIES_TEST_20260905_data/results_a.json(A3锚)"],
+  "review_checkpoint": "2027-01首个交易日复核(≥60有效交易日);每月1日例行检查落盘连续性",
+  "fingerprint_note": "本文件于首跑前提交git冻结;脚本garch_shadow_daily.py的模型口径与本design_LOCKED逐字对应,改口径须新指纹"
+}

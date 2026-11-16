@@ -1,0 +1,182 @@
+{
+ "target": "20261029",
+ "phases": {
+  "main": 18.2,
+  "feature": 125.5,
+  "v43": 1.8,
+  "qfq": 8.1,
+  "v375": 109.6,
+  "daily_basic": 4.8,
+  "aux": 654.9,
+  "eastmoney": 66.2,
+  "qlib_bin": 1.4,
+  "hist": 2.4,
+  "smc": 149.0
+ },
+ "aux_steps": {
+  "sentiment": {
+   "rc": 0,
+   "seconds": 0.6
+  },
+  "northbound": {
+   "rc": 0,
+   "seconds": 0.0
+  },
+  "momentum": {
+   "rc": 0,
+   "seconds": 24.2
+  },
+  "ths": {
+   "rc": 0,
+   "seconds": 127.6
+  },
+  "pivot": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "sw_index": {
+   "rc": 0,
+   "seconds": 49.9
+  },
+  "minute": {
+   "rc": 0,
+   "seconds": 0.9
+  },
+  "ml_scores": {
+   "rc": 0,
+   "seconds": 1.3
+  },
+  "lhb": {
+   "rc": 0,
+   "seconds": 1.6
+  },
+  "attr_loop": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "attr_fwd": {
+   "rc": 0,
+   "seconds": 0.8
+  },
+  "feedback": {
+   "rc": 0,
+   "seconds": 1.1
+  },
+  "patterns": {
+   "rc": 0,
+   "seconds": 1.2
+  },
+  "cluster": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "chan": {
+   "rc": 0,
+   "seconds": 0.0
+  },
+  "concept_industry": {
+   "rc": 0,
+   "seconds": 1.8
+  },
+  "cz1": {
+   "rc": 0,
+   "seconds": 5.9
+  },
+  "phase_pos": {
+   "rc": 0,
+   "seconds": 106.7
+  },
+  "pos_fw": {
+   "rc": 0,
+   "seconds": 109.3
+  },
+  "sc_spring": {
+   "rc": 1,
+   "seconds": 144.9
+  },
+  "dipflush": {
+   "rc": 0,
+   "seconds": 148.3
+  },
+  "chain_pool": {
+   "rc": 0,
+   "seconds": 2.5
+  },
+  "combo": {
+   "rc": 0,
+   "seconds": 99.1
+  },
+  "low_repair": {
+   "rc": 124,
+   "seconds": 300.6
+  },
+  "fwd_shadow": {
+   "rc": 0,
+   "seconds": 336.9
+  },
+  "vr120_filter": {
+   "rc": 0,
+   "seconds": 0.4
+  },
+  "g1_crowding": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "style_review": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "f2b_rally": {
+   "rc": 0,
+   "seconds": 0.9
+  },
+  "panic_obs": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "structure": {
+   "rc": 0,
+   "seconds": 0.0
+  },
+  "cls_news": {
+   "rc": 0,
+   "seconds": 43.9
+  },
+  "leader": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "theme_obs": {
+   "rc": 0,
+   "seconds": 8.5
+  },
+  "swt_shadow": {
+   "rc": 0,
+   "seconds": 1.1
+  },
+  "sop_index": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "a1_slippage": {
+   "rc": 3,
+   "seconds": 0.7
+  },
+  "shadow_sla": {
+   "rc": 0,
+   "seconds": 0.1
+  },
+  "trend_alert": {
+   "rc": 0,
+   "seconds": 2.8
+  },
+  "scout": {
+   "rc": 0,
+   "seconds": 8.7
+  },
+  "chain_shadow": {
+   "rc": 0,
+   "seconds": 1.6
+  }
+ }
+}

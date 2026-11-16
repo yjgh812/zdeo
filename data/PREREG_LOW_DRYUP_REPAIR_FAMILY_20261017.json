@@ -1,0 +1,66 @@
+{
+ "name": "PREREG_LOW_DRYUP_REPAIR_FAMILY",
+ "title": "低位枯竭修复族统合影子验证(主判据臂=T1低位缩量破跌停; T2/T3观察臂)",
+ "status": "ACTIVE",
+ "approval": {
+  "status": "ACTIVE",
+  "decision_trail": [
+   "2026-10-17 主人令1「三选一，测试一遍，按推荐继续」=批准选项1路径(激活), 先测试后激活",
+   "2026-10-17 主人令2「三选一，三项测试完，再选最优，按推荐继续」=三主臂同口径对照测试后选最优臂再激活",
+   "2026-10-17 臂级对照测试完成(analysis/low_repair_family_arm_compare_20261017.py+result json, 三臂与来源轮逐位复现7130/1542/982): T1全面占优(强度+6.31/68.8、分年11年10正仅2023 -7.47且n=23与sc_deep_loud同年失效模式、厚度n=7130、次日开盘溢价-0.11%≈零成本、容量~360件/年); T2分年近半负(2016 -18.55/2020 -2.30/2023 -6.85/2025 -1.03); T3分年不稳+次日开盘溢价+2.99%吃掉边际",
+   "推荐=主判据臂T1单臂, T2/T3降观察臂, 主人「按推荐继续」=照此激活",
+   "2026-10-17 影子runner三项工程测试完成: 复现(T1样内+6.26/68.6 vs 对照脚本+6.31/68.8, 偏差≤0.05pp/0.2pp系runner去重槽位含未到期尾部事件与来源轮fwd20预截尾的口径差, T3三项逐位精确982/+3.89/60.5)+幂等(md5两跑逐字节一致)+fail-closed(缺dedup_days字段exit 1); 🔴测试即抓bug=结算循环曾把rowid(码内序号)误用作全局行索引致跨码污染(med20=-0.17), 修=全局索引=码起始位置+rowid后复测通过"
+  ],
+  "approved_by": "owner(主人)",
+  "approved_at": "2026-10-17",
+  "activation_since": 20261020,
+  "runner": "analysis/low_repair_family_shadow_daily.py(全史重算幂等, 参数单一真源=本文件params字段, 缺字段fail-closed退出)"
+ },
+ "arm_selection": {
+  "evidence": "analysis/low_repair_family_arm_compare_20261017.py + low_repair_family_arm_compare_result_20261017.json",
+  "rule": "主人令「三项测试完，再选最优」",
+  "decision": "judge_arms=[T1]; observe_arms=[T2,T3]; O1仍为外部观察件(5分钟域,不在本runner内)",
+  "modified_before_activation": true
+ },
+ "registered": "2026-10-17",
+ "family": "stock_event_lowvolume_repair",
+ "sibling_boundary": "与 sc_spring 候选甲(深位破位收回触发买入事件, ACTIVE)不同域: 甲=触发买入, 本族=低位枯竭修复的持有/观察语义; 不并轨不替代。追入语义判死族(FIRST-BOARD-CHASE-NO-EDGE/ZT-NEXTOPEN-SHORT-HOLD/MANTOU-CHASE-LIMITUP)不受本件影响且边界不变——本族所有事件当日收盘均可成交(非一字), 但影子只做持有语义评估, 不含任何追入动作",
+ "evidence_report": "reports/volume_price_guide_study_20261017.md §二E2/E5 + reports/volume_price_guide_v2_study_20261017.md §二E7 + reports/intraday_stageAB_20261017.md §一A1",
+ "in_sample_evidence": {
+  "T1_低位缩量破跌停": {"n": 7130, "med20": 6.31, "win20": 68.8, "sample": "2016-2026(v2轮E7, 与臂级对照重算逐位一致)"},
+  "T2_低位缩量炸板": {"n": 1542, "med20": 3.44, "win20": 58.1, "sample": "2016-2026(一轮E5)"},
+  "T3_低位首板缩量封板": {"n": 982, "med20": 3.89, "win20": 60.5, "sample": "2016-2026(一轮E2)", "caveat": "样本薄"},
+  "O1_低位强承接(扩展观察臂, 不进pass判据)": {"n": 57504, "med20": 0.44, "win20": 51.8, "sample": "2020-2026分时5分钟域(A阶段A1)", "note": "异族(上涨日承接vs下跌/破位枯竭修复), 仅观察不并臂"},
+  "caveats": ["ST未滤(先例口径)", "样内描述统计非因果", "T3样本薄", "四臂分年稳健性详见来源报告", "未经影子前向", "与PD-031(深位+放量1.5x,pos60口径)域不同不可并表(一轮E2已声明)"]
+ },
+ "params": {
+  "pos_max": 0.3,
+  "pos250_window": 250,
+  "vr20_base": "volume / 前20日均量(截至T-1)",
+  "judge_arms": ["T1"],
+  "observe_arms": ["T2", "T3"],
+  "activation_since": 20261020,
+  "vr_max_T1": 1.5,
+  "vr_max_T2": 1.5,
+  "vr_max_T3": 0.8,
+  "board_k_T3": 1,
+  "yizi_exclude": "T3剔一字((high-low)/close<0.005)",
+  "touch_definitions": "T1=盘中触及跌停(low涨幅<=-9.7/-19.5创业板2020-08-24起)且收盘未封; T2=盘中触及涨停且收盘未封; T3=收盘涨停(change_pct>=阈值且收于最高)",
+  "dedup_days": 5,
+  "holding_horizons": [5, 20, 30],
+  "entry": "signal_day_close(持有语义)",
+  "stop_sim_pct": -8.0,
+  "universe_exclude_prefix": ["688", "689", "920"],
+  "data_source_daily": "dragon_quant_qfq.db(wb单一真源)",
+  "data_source_intraday_O1": "dragon_quant_meta.db stock_minute_5(chain aux在役, 依赖分钟数据持续更新; O1=外部观察件不在runner内)"
+ },
+ "trigger_locked": "T日=满足任一主臂事件(T1破跌停缩量/T2炸板缩量/T3首板缩量)且pos250<=0.3; O1观察臂=低位温和涨日(chg∈0-7%)日内下穿VWAP占比处于当日截面最低1/3(需5分钟数据); 各臂参数以本文件params为单一真源, 不得事后调整",
+ "gates_locked": {
+  "oos_window": "激活日(20261020)起60个交易日, 或主判据臂T1 OOS到期事件n>=30先到",
+  "pass": "T1 OOS fwd20 med>=+1.5% 且 win>=52%",
+  "kill": "T1 OOS前10个到期事件 med20 全负 -> 提请废案",
+  "observe_arms_note": "T2/T3只记录不判定(分年不稳/T3开盘溢价吃边际, 臂级对照2026-10-17)",
+  "o1_note": "O1只记录不判定(外部观察件)",
+  "horizon_note": "5=观察窗, 20=主验收窗, 30=延长观察窗"
+ }
+}

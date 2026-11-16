@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "version": "1.3",
+    "generated": "2026-08-26",
+    "source": "round8_pitfix PIT修复全域回测 + 第二轮迭代 (2016-01-01 ~ 2026-08-14, QFQ前复权, 10万本金)",
+    "note": "v1.2: ①财务因子强制PIT口径(修复stock_factors_fundamental 55.7%行前视泄漏, 生产factor_loader/picker已加pit_avail过滤) ②第二轮迭代: bp_ep TopN 20→15(+134.2%→+144.3%), ml时间止损45→20天(+209.8%→+250.8%) ③bp_ep禁加时间止损(长线价值均持142天, 45天平仓致-30.5%灾难); 旧版v1.1数字为非PIT前视虚高, 作废 | v1.3: S3环境自适应组合权重灰度(温和档0.45/0.65, T-1上证MA250定权重, 数据缺失回退静态60/40; PIT v2重核+199.28%基线)",
+    "backup": "tulong_production_config_v1.1_20260824.bak.json"
+  },
+  "production_combo": {
+    "name": "核心-卫星 60/40",
+    "strategy": [
+      "bp+ep_core",
+      "ml_signal"
+    ],
+    "weights": {
+      "bp+ep_core": 0.6,
+      "ml_signal": 0.4
+    },
+    "account_mode": "独立账户各自按原频率调仓，按权重合成净值（禁用框架PortfolioBacktest周频模式）",
+    "backtest": {
+      "total_return_pct": 193.8,
+      "cagr_pct": 10.7,
+      "sharpe": 0.68,
+      "max_drawdown_pct": -13.8,
+      "final_equity": 293800,
+      "note": "2026-08-24 第二轮迭代后: bp_ep_top15(60%) + ml_hold20(40%) 独立账户合成; 对照v1.1组合(非PIT) 242.5%为前视虚高, PIT基线组合(旧参数)为+171.9%"
+    },
+    "regime_weights": {
+      "enabled": true,
+      "mode": "S3灰度观察(2026-08-26落地, WFA WARN只上温和档)",
+      "basis": "T-1上证指数收盘vs MA250(dragon_quant.db index_daily 000001, date为INT)",
+      "bull": {
+        "bp+ep_core": 0.45,
+        "ml_signal": 0.55
+      },
+      "bear": {
+        "bp+ep_core": 0.65,
+        "ml_signal": 0.35
+      },
+      "fallback": {
+        "bp+ep_core": 0.6,
+        "ml_signal": 0.4
+      },
+      "backtest_pitv2": {
+        "bull0.45_bear0.65": "+240.03% 回撤-12.9%",
+        "bull0.40_bear0.70": "+258.80% 回撤-13.0%",
+        "static_60_40": "+199.28% 回撤-13.8%"
+      },
+      "note": "月度采样版S3(调仓日定权重,持有期内不变)与回测逐日重分配有口径差异; 每次调仓打印所选regime留痕, 观察3-6个月后复评(2026-11月底)"
+    }
+  },
+  "strategies": {
+    "bp+ep_core": {
+      "signal": "factor_pit PIT口径 EP+BP等权排名Top15 (2026-08-24: 强制PIT+TopN 20→15裁决)",
+      "price_filter": "<=30元",
+      "rebalance": "monthly(22日)",
+      "max_holding_bars": 0,
+      "max_weight_per_stock": 0.2,
+      "status": "core",
+      "backtest": {
+        "total_return_pct": 144.3,
+        "cagr_pct": 8.8,
+        "sharpe": 0.41,
+        "max_drawdown_pct": -24.0,
+        "note": "round8_pitfix(PIT) + 第二轮S-3: TopN 20→15收益+134.2%→+144.3%; 大亏≤-5% 475→374笔; 禁加时间止损"
+      }
+    },
+    "ml_signal": {
+      "signal": "stock_ml_scores_v22.ml_prob Top20",
+      "rebalance": "monthly",
+      "max_holding_bars": 20,
+      "max_weight_per_stock": 0.2,
+      "status": "satellite",
+      "backtest": {
+        "total_return_pct": 250.8,
+        "cagr_pct": 12.5,
+        "sharpe": 0.87,
+        "max_drawdown_pct": -24.5,
+        "note": "round8_pitfix + 第二轮S-5: 时间止损45→20天收益+209.8%→+250.8%, 大亏≤-5% 339→232笔"
+      }
+    },
+    "p2_signal": {
+      "signal": "stock_signals_p2.p2_prob, 牛市>=0.65/熊市>=0.70, Top5",
+      "rebalance": "daily",
+      "max_holding_bars": 45,
+      "max_weight_per_stock": 0.2,
+      "status": "auxiliary",
+      "backtest": {
+        "total_return_pct": 18.64,
+        "cagr_pct": 1.62,
+        "sharpe": 0.2,
+        "max_drawdown_pct": -33.5
+      }
+    },
+    "composite_signal": {
+      "signal": "stock_signals_v4 composite_score>=0.55 AND ai_prob_5d>=0.35, Top10",
+      "rebalance": "daily",
+      "max_holding_bars": 45,
+      "max_weight_per_stock": 0.2,
+      "status": "research_only",
+      "backtest": {
+        "total_return_pct": -24.7,
+        "cagr_pct": -2.6,
+        "sharpe": -0.64,
+        "max_drawdown_pct": -25.6
+      }
+    },
+    "v375_signal": {
+      "status": "RETIRED",
+      "reason": "阈值0.60~0.75全区间亏损(-50%~-98%)",
+      "action": "从生产信号源移除"
+    }
+  },
+  "risk_rules": {
+    "max_weight_per_stock": 0.2,
+    "stop_loss_pct": 0.08,
+    "stop_loss_pct_note": "卖出三铁律-8%恒定不变(2026-08-22主人确认,不落实盘执行器); S2=6.5%仅限回测引擎口径预提; 实盘/模拟盘执行器保持-8%",
+    "max_positions": 50,
+    "price_limit": 30.0,
+    "time_stop_days": {
+      "signal_strategies": 20,
+      "core_bp_ep": 0,
+      "note": "2026-08-24第二轮裁决: 时间止损只对短线信号(ml)适用(45→20天), 价值因子bp_ep禁加(长线均持142天, 45天平仓致-30.5%灾难)"
+    },
+    "t_plus_1": true,
+    "st_filter": true,
+    "exclude": [
+      "688",
+      "689",
+      "8",
+      "4",
+      "92",
+      "43"
+    ]
+  },
+  "pending_enhancements": [
+    "❌板块集中度控制: 单板块<=30% 已证伪(2026-08-24第三轮, bp_ep -11.7pp且回撤无改善, 集中度是价值因子alpha来源; ml天然分散无影响), 不采纳",
+    "✅归因经验库联动已落地(2026-08-24, 中期优化收官): tulong_buy_whitelist.load_attribution_risk读attribution/attribution.db(loss_case/failure_scene+limit_down_risks), 归因风险命中→tier=0.5x降半仓+note标注; 清理归因库脏代码(拼接/000000); 实测213只合法命中/002582好想你降半仓验证; 归因数据近期(8/10+)无法驱动2016-2026回测故只做实盘联动",
+    "✅生产PIT完整切换+漏修补全+L3生产接入已落地(2026-08-24): factor_loader.load_pit_factors+get_recent_qfq_date+get_close_map+get_l3_flags; bp_ep_monthly_picks.py(白名单喂数路径,原泄漏已补修)/bp_ep_monthly_picker.py/production_combo_monthly.py均走完整PIT; whitelist读l3列→L3命中(金融价值陷阱/反弹追高)tier=0.5x半仓; 实测20260817 Top15命中3只value_trap; 遗留=qfq行情落后因子表4日(数据链新鲜度)/归因联动(中期)",
+    "❌移动止盈分档增强: 已测(2026-08-24第四轮), bp_ep 5%/10%止盈-125pp收益证伪不采纳(价值因子禁窄止盈); ml trailing10%可选微调(+7.9pp/夏普0.90, 幅度小不强推)",
+    "❌风险标签: 商誉>30%/解禁/立案 无本地PIT回测数据(需先建PIT风险标签表); ROE<0代理已测(2026-08-24第五轮) bp_ep冗余+2.4pp/ml -29.9pp收益夏普反降, 风险调整后不划算不采纳",
+    "横盘突破ML信号(stock_signals_breakout breakout_prob)作独立选股已判死(2026-08-23, 月度-81%/周度-96%/日度-99% 五变体全负), 入PROJECT_BOUNDARY §3黑名单; 仅可作事件确认信号(增量未验证)",
+    "组合胜率目标78-82%未达成(实际约55%), 年化200%目标为A股不可达(实际~11%), 以逼近为迭代导向",
+    "生产PIT修复已落地(2026-08-24): factor_loader/bp_ep_monthly_picker/production_combo_monthly 均加 pit_avail_date 过滤; 建议后续将生产bp_ep完整切换factor_pit.db merge_asof口径(当前安全过滤会损失泄漏窗口内未公告代码的覆盖率)"
+  ]
+}

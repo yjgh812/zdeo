@@ -1,0 +1,33 @@
+{
+ "name": "PREREG_SC_SPRING_DEEP_LOUD",
+ "status": "ACTIVE",
+ "generated_at": "2026-10-29 23:40:37",
+ "since": 20261008,
+ "total_events": 6181,
+ "in_sample": {
+  "n": 6163,
+  "n_settled": 6111,
+  "med20": 10.32,
+  "win20": 70.3
+ },
+ "oos": {
+  "n_events": 18,
+  "n_settled": 0,
+  "tier_revloud": {
+   "n_settled": 0
+  },
+  "tier_limitdn": {
+   "n_settled": 0
+  }
+ },
+ "control_real_breakdown_oos": {
+  "n": 0
+ },
+ "gate": {
+  "window": "日历2026-12-31 或 OOS到期事件n>=20 先到为准",
+  "pass_rule": "OOS到期样本med20>=+3.0% 且 win20>=55%",
+  "kill_switch": "OOS前10个到期事件med20全部<0 -> 提请废案",
+  "oos_n_settled": 0
+ },
+ "elapsed_s": 144.2
+}

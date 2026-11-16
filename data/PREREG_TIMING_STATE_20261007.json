@@ -1,0 +1,27 @@
+{
+  "pd_id": "PD-034",
+  "name": "TIMING_STATE_SHADOW",
+  "created": "2026-10-07",
+  "owner_input": "主人方法论「择时就是可以买了」(2026-10-07) + 「继续」批准观测层(按PD-024①先例); R闸接线留待影子满窗第二道裁决",
+  "evidence": "reports/timing_state_machine_20261007.md (裸检验四档全单调38pp/分年8/8正差/排除性检验过)",
+  "universe": "全市场等权基准(qfq, 00/30/60前缀, 与裸检验口径一致); 择时层作用于『买不买』决策非选股",
+  "signal_def": "T-1日收盘涨停家数(>=9.5%)定档: 超强>=80/强档61-79/中档40-60/弱档<40; T日买入fwd5/fwd20=等权收益和(pp,rolling sum非复利,与裸检验同口径)",
+  "shadow_window": "20261008起60个交易日(≈20261230)",
+  "gates": "G1=影子窗强档日fwd5中位>=+0.5pp; G2=影子窗强档日fwd5胜率>=55%; G3=影子窗强档日样本n>=30; 三门全过->呈请第二道裁决(弱档禁买接pre_trade_check R闸候选); 任一门不过->归档falsified(条件不同须引用本prereg差异)",
+  "gate_basis": "预钉阈值锚定2026当年实测(强档f5med+0.85pp/win58.9%/n=141)留衰减余量, 非全窗最优值",
+  "layers": {
+    "layer1_brief": "timing_state_daily.py --report 晨会择时简报(观测层零交易权, 接09:15晨报)",
+    "layer2_shadow": "本prereg前向影子60交易日幂等台账",
+    "layer3_gate": "弱档禁买R闸候选——未满窗且未获主人第二道裁决前禁止接线"
+  },
+  "boundary": "观测层与影子层零交易权; 中档=谨慎限购为呈报语义非自动拦截; ST含分母与情绪相位同族口径; 等权收益和口径已在报告显式声明",
+  "fingerprint": "a064a8d5109f39c2",
+  "amendments": [
+    {
+      "date": "2026-10-07",
+      "type": "owner_authorization",
+      "title": "2026-10-07主人批准layer3激活:弱",
+      "note": "2026-10-07主人批准layer3激活:弱档禁买R37接入pre_trade_check_v2(<40家REJECT/40-60 WARN/≥61 clear),证据=裸检验四档单调8/8年正差;layer3原定'满窗后呈请'经主人授权提前激活"
+    }
+  ]
+}

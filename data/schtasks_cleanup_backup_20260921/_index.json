@@ -1,0 +1,34 @@
+{
+ "cleanup_date": "2026-09-21-pm",
+ "note": "schtasks一次性残骸清理备份(XML定义已存同目录,可 schtasks /create /xml 恢复); cmd脚本文件原地保留未删",
+ "items": [
+  {
+   "name": "Sell_002811_20260908",
+   "reason": "9/8 09:32 已执行,下次=N/A,一次性卖出残骸",
+   "action": "DELETED",
+   "last_run": "2026/9/8 9:32:00",
+   "delete_output": "成功: 计划的任务 \"Sell_002811_20260908\" 被成功删除。"
+  },
+  {
+   "name": "Sell_002811_20260908_retry",
+   "reason": "9/8 09:50 已执行,下次=N/A,一次性卖出重试残骸",
+   "action": "DELETED",
+   "last_run": "2026/9/8 9:50:00",
+   "delete_output": "成功: 计划的任务 \"Sell_002811_20260908_retry\" 被成功删除。"
+  },
+  {
+   "name": "ChainStep4Fix_0830",
+   "reason": "9/15 09:23 已执行,下次=N/A,数据链step4修复残骸",
+   "action": "DELETED",
+   "last_run": "2026/9/15 9:23:07",
+   "delete_output": "成功: 计划的任务 \"ChainStep4Fix_0830\" 被成功删除。"
+  },
+  {
+   "name": "S5_300025_Exec_0931",
+   "reason": "9/16 09:31 已执行(300025华星股份S-5止损@5.56),下次=N/A,残骸",
+   "action": "DELETED",
+   "last_run": "2026/9/16 9:31:00",
+   "delete_output": "成功: 计划的任务 \"S5_300025_Exec_0931\" 被成功删除。"
+  }
+ ]
+}

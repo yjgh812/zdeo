@@ -1,0 +1,87 @@
+{
+ "window": [
+  "20160101",
+  "20251231"
+ ],
+ "prereg_id": "20260909-sector-filter-chan12-v1",
+ "prereg_fingerprint": "a4d17df2fc6e40ea",
+ "ma_week": 20,
+ "n_sectors": 31,
+ "h5": {
+  "filtered": {
+   "n": 3696,
+   "mean": 0.01436,
+   "t": 12.58,
+   "hit": 0.5555
+  },
+  "unfiltered": {
+   "n": 9441,
+   "mean": 0.01719,
+   "t": 23.64,
+   "hit": 0.5785
+  },
+  "increment_mean": -0.00283,
+  "increment_t": -2.09,
+  "excess_vs_market_filtered_mean": 0.00985,
+  "excess_vs_market_unfiltered_mean": 0.01151,
+  "net_increment_after_cost_2bp0": -0.00483
+ },
+ "h10": {
+  "filtered": {
+   "n": 3696,
+   "mean": 0.02201,
+   "t": 12.97,
+   "hit": 0.5652
+  },
+  "unfiltered": {
+   "n": 9441,
+   "mean": 0.02472,
+   "t": 22.13,
+   "hit": 0.5804
+  },
+  "increment_mean": -0.00271,
+  "increment_t": -1.34,
+  "excess_vs_market_filtered_mean": 0.01343,
+  "excess_vs_market_unfiltered_mean": 0.01641,
+  "net_increment_after_cost_2bp0": -0.00471
+ },
+ "h20": {
+  "filtered": {
+   "n": 3696,
+   "mean": 0.02219,
+   "t": 7.9,
+   "hit": 0.5327
+  },
+  "unfiltered": {
+   "n": 9441,
+   "mean": 0.02968,
+   "t": 18.94,
+   "hit": 0.5552
+  },
+  "increment_mean": -0.00749,
+  "increment_t": -2.33,
+  "excess_vs_market_filtered_mean": 0.01137,
+  "excess_vs_market_unfiltered_mean": 0.01691,
+  "net_increment_after_cost_2bp0": -0.00949,
+  "filtered_by_year": {
+   "2016": 0.03364,
+   "2017": -0.00765,
+   "2018": -0.02763,
+   "2019": 0.05684,
+   "2020": 0.03283,
+   "2021": 0.023,
+   "2022": -0.01201,
+   "2023": 0.00329,
+   "2024": 0.01352,
+   "2025": 0.03693
+  },
+  "years_nonneg": 7,
+  "years_total": 10
+ },
+ "gate": {
+  "increment_t_ge_2": false,
+  "years_nonneg_ge_7": true,
+  "market_excess_positive": true,
+  "PASS": false
+ }
+}

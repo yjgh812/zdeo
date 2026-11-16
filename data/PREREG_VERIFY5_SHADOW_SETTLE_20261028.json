@@ -1,0 +1,69 @@
+{
+  "prereg_id": "PREREG_VERIFY5_SHADOW_SETTLE_20261028",
+  "created_at": "2026-10-28T09:35:00+08:00",
+  "owner_directive": "主人20261028「继续」批准方案①: VERIFY5按影子口径挂账至T+20终局拿样本, 顺带预注册『胜率vs突破形态』证伪规则入falsified_rules",
+  "source_prereg": "data/PREREG_VERIFY5_20261022.json (frozen 2026-10-21T20:50, 原件不动, 本件为影子挂账合同)",
+  "nature": "影子结算·零交易权: VERIFY5五票从未真实下单(executor_orders/open_orders零记录, westock持仓无), 本合同仅按预注册条款记账, 不构成任何买卖授权",
+  "settlement_contract": {
+    "entry_rule": "入场价=2026-10-22开盘价(westock日K冻结于entry_price字段; 结算脚本以qfq库10/22开盘偏离>0.5%为结构化警告)",
+    "exit_eval_date": "2026-11-18",
+    "exit_eval_rule": "第20个交易日收盘(交易日历实算: 1022,1023,1026,1027,1028,1029,1030,1102,1103,1104,1105,1106,1109,1110,1111,1112,1113,1116,1117,1118); 与原预注册『2026-11-19前后』一致",
+    "stop_rule": "持有期内任一日最低价<=入场价*0.92 → 视同-8%硬止损触发(S-5口径), 退出价=入场价*0.92, 触发日=该最低价日, 该票记miss",
+    "hit_rule": "未触止损且2026-11-18收盘相对入场价收益>0 → hit; 否则miss",
+    "framework_pass": "hit>=3/5 (原预注册verdict_rule原样)",
+    "framework_revise": "hit<=2/5 -> 修正p_win/双维排名参数, 结论入falsified_rules (原预注册verdict_rule原样)"
+  },
+  "positions": [
+    {"code": "600177", "name": "雅戈尔", "l1": "纺织服饰", "plan_amt": 45000,
+     "pred_win20": 0.80, "pred_ev20": 0.0292, "ref_price": 8.28, "entry_price": 8.27,
+     "arm": "pwin_rank", "thesis": "胜率80%全场最高+EV+2.92%+盈亏比2.50+尾部-6.39%"},
+    {"code": "601988", "name": "中国银行", "l1": "银行", "plan_amt": 22000,
+     "pred_win20": 0.75, "pred_ev20": 0.0384, "ref_price": 7.24, "entry_price": 7.24,
+     "arm": "pwin_rank", "thesis": "复合分4.0全场第一+EV+3.84%+尾部-6.78%; R30b限仓2.2万"},
+    {"code": "601225", "name": "陕西煤业", "l1": "煤炭", "plan_amt": 27000,
+     "pred_win20": 0.66, "pred_ev20": 0.0282, "ref_price": 27.69, "entry_price": 27.49,
+     "arm": "pwin_rank", "thesis": "六维多头+EV+2.82%; 尾部-20.64%深已减仓对冲"},
+    {"code": "300199", "name": "翰宇药业", "l1": "医药生物", "plan_amt": 27000,
+     "pred_win20": 0.59, "pred_ev20": 0.0226, "ref_price": 26.71, "entry_price": 26.50,
+     "arm": "pwin_rank", "thesis": "医药次线今日4涨停+A强趋势+ret20+12.7%"},
+    {"code": "002376", "name": "新北洋", "l1": "计算机", "plan_amt": 20000,
+     "pred_win20": 0.461, "pred_ev20": null, "ref_price": 7.49, "entry_price": 7.21,
+     "arm": "breakout_observation",
+     "thesis": "AI算力主线(今日13涨停)+刚底部突破(50日平台/5.4倍放量/站稳上沿); pred_win20=0.461为含横盘期历史值低估突破后概率, 本票以突破质量+主线共振评估, 单列观察"}
+  ],
+  "arms": {
+    "pwin_rank": "双维排名(p_win/EV)正选四票: 600177/601988/601225/300199",
+    "breakout_observation": "突破形态+主线共振观察票: 002376(单列观察, 原预注册明示不按胜率入选)"
+  },
+  "falsified_rule_candidate": {
+    "rule_id": "VERIFY5-PWIN-VS-BREAKOUT",
+    "registered_before_outcome": true,
+    "hypothesis_h0": "主线突破环境中, 双维排名(p_win/EV)正选四票组合的T+20终局表现不差于突破形态观察票(002376新北洋)",
+    "falsify_conditions": {
+      "F1": "002376 T+20收益(或止损退出收益) > pwin_rank四票等权平均T+20收益, 且002376未触-8%止损",
+      "F2": "pwin_rank四票hit<3(组合命中失败) 且 002376 hit"
+    },
+    "on_trigger": "falsified_rules.json rules.VERIFY5-PWIN-VS-BREAKOUT status翻为falsified, 机制归因=双维排名p_win为120日后视值, 对『50日平台首突破+放量>3倍』票系统性低估, 入场排序须叠加突破新鲜度修正; 修正方案须过推理闸再入引擎, 本登记只证伪不授权实现",
+    "no_trigger": "h0维持, 双维排名在突破环境有效性不强证不强反, 双臂结果仍记样本"
+  },
+  "settle_executor": {
+    "script": "verify5_shadow_settle.py (repo根, 唯一结算器)",
+    "price_source": "D:/workbuddyspace/factor_engine/data/dragon_quant_qfq.db (宪法§7 唯一回测价格源, qfq口径)",
+    "outputs": ["data/verify5_shadow_settle_latest.json (快照/终局)", "data/verify5_shadow_settle_ledger.jsonl (逐次追加)"],
+    "scheduled": "2026-11-18 22:00 一次性cron自动化机械执行终局结算"
+  },
+  "status": "in_flight",
+  "day_marker": "第5/20交易日(2026-10-28), 快照基准=最近已收盘交易日(qfq收盘)",
+  "day5_snapshot_20261027": {
+    "note": "qfq库收盘口径实算(冻结入场价与qfq 10/22开盘偏差全部0.00%); 终局以settle脚本输出为准",
+    "600177": {"close": 8.30, "ret": 0.0036, "max_dd": -0.0363, "stopped": false},
+    "601988": {"close": 7.02, "ret": -0.0304, "max_dd": -0.0497, "stopped": false},
+    "601225": {"close": 26.88, "ret": -0.0222, "max_dd": -0.0586, "stopped": false},
+    "300199": {"ret_contract": -0.08, "stopped": true, "stopped_on": "20261023", "stop_exit": 24.38,
+               "note": "10/23 low 24.02<=止损线24.38, 按合同记miss(exit=入场*0.92); 10/27续跌至23.20为出场后走势, 不影响合同收益"},
+    "002376": {"close": 7.90, "ret": 0.0957, "max_dd": -0.0139, "stopped": false},
+    "portfolio_weighted_ret": -0.0096,
+    "arms_midflight": {"pwin_rank_mean": -0.0323, "breakout_observation": 0.0957,
+                       "note": "中途快照非终局, 双臂裁决以2026-11-18为准"}
+  }
+}

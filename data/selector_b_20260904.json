@@ -1,0 +1,129 @@
+{
+ "scan_file": "data/scan_20260904.json",
+ "rule": "market_scan_selector v1 (轨道B:全市场→剔ST/科创/北交/涨停/排除→R31R32预筛→板块5d净流入正→行业分散→取N)",
+ "selected": [
+  {
+   "code": "601999",
+   "name": "出版传媒",
+   "price": 6.73,
+   "volume_ratio": 5.3,
+   "r20": 11.79,
+   "vs_ma20": 8.22,
+   "industry": "出版",
+   "sector": "出版",
+   "sector5d_wan": 79342.46,
+   "score": 420515.038
+  },
+  {
+   "code": "002158",
+   "name": "汉钟精机",
+   "price": 29.09,
+   "volume_ratio": 2.0,
+   "r20": 2.47,
+   "vs_ma20": 5.66,
+   "industry": "通用设备",
+   "sector": "通用设备",
+   "sector5d_wan": 102286.74,
+   "score": 204573.48
+  },
+  {
+   "code": "002174",
+   "name": "游族网络",
+   "price": 12.18,
+   "volume_ratio": 2.08,
+   "r20": 3.4,
+   "vs_ma20": -0.59,
+   "industry": "游戏",
+   "sector": "游戏Ⅱ",
+   "sector5d_wan": 89045.61,
+   "score": 185214.8688
+  },
+  {
+   "code": "600650",
+   "name": "锦江在线",
+   "price": 11.33,
+   "volume_ratio": 2.42,
+   "r20": 1.61,
+   "vs_ma20": 5.43,
+   "industry": "铁路公路",
+   "sector": "铁路公路",
+   "sector5d_wan": 47004.65,
+   "score": 113751.253
+  },
+  {
+   "code": "601083",
+   "name": "锦江航运",
+   "price": 13.0,
+   "volume_ratio": 1.32,
+   "r20": 16.07,
+   "vs_ma20": 7.43,
+   "industry": "航运港口",
+   "sector": "航运港口",
+   "sector5d_wan": 12687.37,
+   "score": 16747.328400000002
+  }
+ ],
+ "short": 0,
+ "audit": [
+  {
+   "code": "600828",
+   "name": "茂业商业",
+   "price": 5.1,
+   "volume_ratio": 6.96,
+   "r20": 30.1,
+   "vs_ma20": 24.56,
+   "dropped": "R32预筛:20日涨幅30.1%≥30%"
+  },
+  {
+   "code": "002443",
+   "name": "金洲管道",
+   "price": 11.17,
+   "volume_ratio": 1.41,
+   "r20": 31.72,
+   "vs_ma20": 16.77,
+   "dropped": "R32预筛:20日涨幅31.7%≥30%"
+  },
+  {
+   "code": "600657",
+   "name": "信达地产",
+   "price": 3.36,
+   "volume_ratio": 2.12,
+   "dropped": "当日涨停10.16%(R6不可低吸)"
+  },
+  {
+   "code": "300044",
+   "name": "*ST赛为",
+   "price": 6.0,
+   "volume_ratio": 2.27,
+   "dropped": "ST"
+  },
+  {
+   "code": "920571",
+   "name": "国航远洋",
+   "price": 9.64,
+   "volume_ratio": 2.57,
+   "dropped": "北交所"
+  },
+  {
+   "code": "688510",
+   "name": "航亚科技",
+   "price": 25.22,
+   "volume_ratio": 2.22,
+   "dropped": "科创板"
+  },
+  {
+   "code": "300830",
+   "name": "金现代",
+   "price": 10.09,
+   "volume_ratio": 2.94,
+   "dropped": "当日涨停19.98%(R6不可低吸)"
+  },
+  {
+   "code": "002811",
+   "name": "郑中设计",
+   "price": 15.68,
+   "volume_ratio": 2.77,
+   "dropped": "持仓/已排程排除清单"
+  }
+ ]
+}

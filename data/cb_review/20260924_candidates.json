@@ -1,0 +1,551 @@
+{
+ "signal_date": "20260924",
+ "snapshot": "D:\\zcodesj\\data\\cb_snapshot\\20260924.jsonl",
+ "snapshot_rows": 314,
+ "parsed": 311,
+ "base_passed": 225,
+ "top_candidates": [
+  {
+   "cb_code": "127061",
+   "cb_name": "美锦转债",
+   "price": 108.5,
+   "premium": 6.96,
+   "double_low": 115.46,
+   "stock_code": "000723",
+   "stock_name": "美锦能源"
+  },
+  {
+   "cb_code": "113046",
+   "cb_name": "金田转债",
+   "price": 116.174,
+   "premium": -0.28,
+   "double_low": 115.894,
+   "stock_code": "601609",
+   "stock_name": "金田股份"
+  },
+  {
+   "cb_code": "113043",
+   "cb_name": "财通转债",
+   "price": 110.559,
+   "premium": 5.53,
+   "double_low": 116.089,
+   "stock_code": "601108",
+   "stock_name": "财通证券"
+  },
+  {
+   "cb_code": "113605",
+   "cb_name": "大参转债",
+   "price": 110.57,
+   "premium": 6.22,
+   "double_low": 116.78999999999999,
+   "stock_code": "603233",
+   "stock_name": "大参林"
+  },
+  {
+   "cb_code": "128134",
+   "cb_name": "鸿路转债",
+   "price": 110.9,
+   "premium": 6.22,
+   "double_low": 117.12,
+   "stock_code": "002541",
+   "stock_name": "鸿路钢构"
+  },
+  {
+   "cb_code": "113042",
+   "cb_name": "上银转债",
+   "price": 115.983,
+   "premium": 1.84,
+   "double_low": 117.82300000000001,
+   "stock_code": "601229",
+   "stock_name": "上海银行"
+  },
+  {
+   "cb_code": "127040",
+   "cb_name": "国泰转债",
+   "price": 113.5,
+   "premium": 11.08,
+   "double_low": 124.58,
+   "stock_code": "002091",
+   "stock_name": "江苏国泰"
+  },
+  {
+   "cb_code": "128136",
+   "cb_name": "立讯转债",
+   "price": 108.9,
+   "premium": 16.59,
+   "double_low": 125.49000000000001,
+   "stock_code": "002475",
+   "stock_name": "立讯精密"
+  },
+  {
+   "cb_code": "127030",
+   "cb_name": "盛虹转债",
+   "price": 113.66,
+   "premium": 12.38,
+   "double_low": 126.03999999999999,
+   "stock_code": "000301",
+   "stock_name": "东方盛虹"
+  },
+  {
+   "cb_code": "110076",
+   "cb_name": "华海转债",
+   "price": 111.118,
+   "premium": 15.46,
+   "double_low": 126.578,
+   "stock_code": "600521",
+   "stock_name": "华海药业"
+  },
+  {
+   "cb_code": "113056",
+   "cb_name": "重银转债",
+   "price": 124.25,
+   "premium": 3.86,
+   "double_low": 128.11,
+   "stock_code": "601963",
+   "stock_name": "重庆银行"
+  },
+  {
+   "cb_code": "113051",
+   "cb_name": "节能转债",
+   "price": 114.07,
+   "premium": 16.53,
+   "double_low": 130.6,
+   "stock_code": "601016",
+   "stock_name": "节能风电"
+  },
+  {
+   "cb_code": "127047",
+   "cb_name": "帝欧转债",
+   "price": 131.1,
+   "premium": 1.31,
+   "double_low": 132.41,
+   "stock_code": "002798",
+   "stock_name": "帝欧水华"
+  },
+  {
+   "cb_code": "123107",
+   "cb_name": "温氏转债",
+   "price": 110.36,
+   "premium": 22.38,
+   "double_low": 132.74,
+   "stock_code": "300498",
+   "stock_name": "温氏股份"
+  },
+  {
+   "cb_code": "113610",
+   "cb_name": "灵康转债",
+   "price": 120.636,
+   "premium": 12.46,
+   "double_low": 133.096,
+   "stock_code": "603669",
+   "stock_name": "灵康药业"
+  },
+  {
+   "cb_code": "113062",
+   "cb_name": "常银转债",
+   "price": 126.297,
+   "premium": 7.47,
+   "double_low": 133.767,
+   "stock_code": "601128",
+   "stock_name": "常熟银行"
+  },
+  {
+   "cb_code": "111000",
+   "cb_name": "起帆转债",
+   "price": 131.836,
+   "premium": 2.96,
+   "double_low": 134.79600000000002,
+   "stock_code": "605222",
+   "stock_name": "起帆电缆"
+  },
+  {
+   "cb_code": "123076",
+   "cb_name": "强力转债",
+   "price": 122.302,
+   "premium": 12.63,
+   "double_low": 134.93200000000002,
+   "stock_code": "300429",
+   "stock_name": "强力新材"
+  },
+  {
+   "cb_code": "123092",
+   "cb_name": "天壕转债",
+   "price": 115.68,
+   "premium": 19.28,
+   "double_low": 134.96,
+   "stock_code": "300332",
+   "stock_name": "天壕能源"
+  },
+  {
+   "cb_code": "127045",
+   "cb_name": "牧原转债",
+   "price": 114.58,
+   "premium": 22.62,
+   "double_low": 137.2,
+   "stock_code": "002714",
+   "stock_name": "牧原股份"
+  },
+  {
+   "cb_code": "113058",
+   "cb_name": "友发转债",
+   "price": 125.521,
+   "premium": 12.02,
+   "double_low": 137.541,
+   "stock_code": "601686",
+   "stock_name": "友发集团"
+  },
+  {
+   "cb_code": "123091",
+   "cb_name": "长海转债",
+   "price": 133.453,
+   "premium": 4.76,
+   "double_low": 138.213,
+   "stock_code": "300196",
+   "stock_name": "长海股份"
+  },
+  {
+   "cb_code": "113052",
+   "cb_name": "兴业转债",
+   "price": 112.227,
+   "premium": 26.35,
+   "double_low": 138.577,
+   "stock_code": "601166",
+   "stock_name": "兴业银行"
+  },
+  {
+   "cb_code": "111015",
+   "cb_name": "东亚转债",
+   "price": 134.068,
+   "premium": 5.14,
+   "double_low": 139.208,
+   "stock_code": "605177",
+   "stock_name": "东亚药业"
+  },
+  {
+   "cb_code": "113631",
+   "cb_name": "皖天转债",
+   "price": 128.839,
+   "premium": 10.65,
+   "double_low": 139.489,
+   "stock_code": "603689",
+   "stock_name": "皖天然气"
+  },
+  {
+   "cb_code": "127027",
+   "cb_name": "能化转债",
+   "price": 109.67,
+   "premium": 30.09,
+   "double_low": 139.76,
+   "stock_code": "000552",
+   "stock_name": "甘肃能化"
+  },
+  {
+   "cb_code": "123080",
+   "cb_name": "海波转债",
+   "price": 122.537,
+   "premium": 17.44,
+   "double_low": 139.977,
+   "stock_code": "300517",
+   "stock_name": "海波重科"
+  },
+  {
+   "cb_code": "110075",
+   "cb_name": "南航转债",
+   "price": 106.39,
+   "premium": 35.07,
+   "double_low": 141.46,
+   "stock_code": "600029",
+   "stock_name": "南方航空"
+  },
+  {
+   "cb_code": "128138",
+   "cb_name": "侨银转债",
+   "price": 130.851,
+   "premium": 12.31,
+   "double_low": 143.161,
+   "stock_code": "002973",
+   "stock_name": "侨银股份"
+  },
+  {
+   "cb_code": "113681",
+   "cb_name": "镇洋转债",
+   "price": 134.92,
+   "premium": 8.47,
+   "double_low": 143.39,
+   "stock_code": "603213",
+   "stock_name": "镇洋发展"
+  },
+  {
+   "cb_code": "128142",
+   "cb_name": "新乳转债",
+   "price": 110.1,
+   "premium": 34.46,
+   "double_low": 144.56,
+   "stock_code": "002946",
+   "stock_name": "新乳业"
+  },
+  {
+   "cb_code": "127056",
+   "cb_name": "中特转债",
+   "price": 119.132,
+   "premium": 26.23,
+   "double_low": 145.362,
+   "stock_code": "000708",
+   "stock_name": "中信特钢"
+  },
+  {
+   "cb_code": "118034",
+   "cb_name": "晶能转债",
+   "price": 114.5,
+   "premium": 32.51,
+   "double_low": 147.01,
+   "stock_code": "688223",
+   "stock_name": "晶科能源"
+  },
+  {
+   "cb_code": "123104",
+   "cb_name": "卫宁转债",
+   "price": 122.8,
+   "premium": 24.94,
+   "double_low": 147.74,
+   "stock_code": "300253",
+   "stock_name": "卫宁健康"
+  },
+  {
+   "cb_code": "127110",
+   "cb_name": "广核转债",
+   "price": 134.842,
+   "premium": 15.21,
+   "double_low": 150.05200000000002,
+   "stock_code": "003816",
+   "stock_name": "中国广核"
+  },
+  {
+   "cb_code": "123149",
+   "cb_name": "通裕转债",
+   "price": 126.865,
+   "premium": 25.02,
+   "double_low": 151.885,
+   "stock_code": "300185",
+   "stock_name": "通裕重工"
+  },
+  {
+   "cb_code": "123114",
+   "cb_name": "三角转债",
+   "price": 120.222,
+   "premium": 32.1,
+   "double_low": 152.322,
+   "stock_code": "300775",
+   "stock_name": "三角防务"
+  },
+  {
+   "cb_code": "127031",
+   "cb_name": "洋丰转债",
+   "price": 113.501,
+   "premium": 39.0,
+   "double_low": 152.501,
+   "stock_code": "000902",
+   "stock_name": "新洋丰"
+  },
+  {
+   "cb_code": "113054",
+   "cb_name": "绿动转债",
+   "price": 121.433,
+   "premium": 31.11,
+   "double_low": 152.543,
+   "stock_code": "601330",
+   "stock_name": "绿色动力"
+  },
+  {
+   "cb_code": "110084",
+   "cb_name": "贵燃转债",
+   "price": 128.006,
+   "premium": 25.27,
+   "double_low": 153.276,
+   "stock_code": "600903",
+   "stock_name": "贵州燃气"
+  },
+  {
+   "cb_code": "127103",
+   "cb_name": "东南转债",
+   "price": 131.2,
+   "premium": 22.24,
+   "double_low": 153.44,
+   "stock_code": "002135",
+   "stock_name": "东南网架"
+  },
+  {
+   "cb_code": "123144",
+   "cb_name": "裕兴转债",
+   "price": 128.2,
+   "premium": 25.34,
+   "double_low": 153.54,
+   "stock_code": "300305",
+   "stock_name": "裕兴股份"
+  },
+  {
+   "cb_code": "127050",
+   "cb_name": "麒麟转债",
+   "price": 117.14,
+   "premium": 36.53,
+   "double_low": 153.67000000000002,
+   "stock_code": "002984",
+   "stock_name": "森麒麟"
+  },
+  {
+   "cb_code": "113066",
+   "cb_name": "平煤转债",
+   "price": 137.506,
+   "premium": 16.17,
+   "double_low": 153.676,
+   "stock_code": "601666",
+   "stock_name": "平煤股份"
+  },
+  {
+   "cb_code": "111017",
+   "cb_name": "蓝天转债",
+   "price": 126.388,
+   "premium": 27.53,
+   "double_low": 153.918,
+   "stock_code": "605368",
+   "stock_name": "蓝天燃气"
+  },
+  {
+   "cb_code": "127046",
+   "cb_name": "百润转债",
+   "price": 123.721,
+   "premium": 30.66,
+   "double_low": 154.381,
+   "stock_code": "002568",
+   "stock_name": "百润股份"
+  },
+  {
+   "cb_code": "123178",
+   "cb_name": "花园转债",
+   "price": 138.951,
+   "premium": 16.14,
+   "double_low": 155.091,
+   "stock_code": "300401",
+   "stock_name": "花园生物"
+  },
+  {
+   "cb_code": "123133",
+   "cb_name": "佩蒂转债",
+   "price": 126.974,
+   "premium": 28.52,
+   "double_low": 155.494,
+   "stock_code": "300673",
+   "stock_name": "佩蒂股份"
+  },
+  {
+   "cb_code": "123088",
+   "cb_name": "威唐转债",
+   "price": 114.853,
+   "premium": 41.63,
+   "double_low": 156.483,
+   "stock_code": "300707",
+   "stock_name": "威唐工业"
+  },
+  {
+   "cb_code": "123150",
+   "cb_name": "九强转债",
+   "price": 129.75,
+   "premium": 26.76,
+   "double_low": 156.51,
+   "stock_code": "300406",
+   "stock_name": "九强生物"
+  },
+  {
+   "cb_code": "118020",
+   "cb_name": "芳源转债",
+   "price": 117.111,
+   "premium": 39.42,
+   "double_low": 156.531,
+   "stock_code": "688148",
+   "stock_name": "芳源股份"
+  },
+  {
+   "cb_code": "111002",
+   "cb_name": "特纸转债",
+   "price": 133.697,
+   "premium": 22.86,
+   "double_low": 156.55700000000002,
+   "stock_code": "605007",
+   "stock_name": "五洲特纸"
+  },
+  {
+   "cb_code": "113691",
+   "cb_name": "和邦转债",
+   "price": 135.061,
+   "premium": 21.68,
+   "double_low": 156.741,
+   "stock_code": "603077",
+   "stock_name": "和邦生物"
+  },
+  {
+   "cb_code": "127084",
+   "cb_name": "柳工转2",
+   "price": 133.189,
+   "premium": 23.96,
+   "double_low": 157.149,
+   "stock_code": "000528",
+   "stock_name": "柳    工"
+  },
+  {
+   "cb_code": "127060",
+   "cb_name": "湘佳转债",
+   "price": 121.966,
+   "premium": 35.52,
+   "double_low": 157.486,
+   "stock_code": "002982",
+   "stock_name": "湘佳股份"
+  },
+  {
+   "cb_code": "110098",
+   "cb_name": "南药转债",
+   "price": 129.714,
+   "premium": 28.13,
+   "double_low": 157.844,
+   "stock_code": "600713",
+   "stock_name": "南京医药"
+  },
+  {
+   "cb_code": "113640",
+   "cb_name": "苏利转债",
+   "price": 126.14,
+   "premium": 31.98,
+   "double_low": 158.12,
+   "stock_code": "603585",
+   "stock_name": "苏利股份"
+  },
+  {
+   "cb_code": "123175",
+   "cb_name": "百畅转债",
+   "price": 114.195,
+   "premium": 43.99,
+   "double_low": 158.185,
+   "stock_code": "300614",
+   "stock_name": "百川畅银"
+  },
+  {
+   "cb_code": "123119",
+   "cb_name": "康泰转2",
+   "price": 116.66,
+   "premium": 42.11,
+   "double_low": 158.76999999999998,
+   "stock_code": "300601",
+   "stock_name": "康泰生物"
+  },
+  {
+   "cb_code": "123189",
+   "cb_name": "晓鸣转债",
+   "price": 133.466,
+   "premium": 25.45,
+   "double_low": 158.916,
+   "stock_code": "300967",
+   "stock_name": "晓鸣股份"
+  }
+ ],
+ "review_ask": "agent用westock data_bond逐批查: issueCompanyRating/latestCompanyRating/size/dueDate -> 存 data/cb_review/20260924_westock.jsonl (每行含cb_code+rating+size_yuan+due_date)",
+ "fingerprint": "26792bae163b3e44"
+}

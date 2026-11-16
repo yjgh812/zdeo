@@ -1,0 +1,12 @@
+{"date":"20260316","code":"000066","t":2410,"mon_pos":85.4,"fresh":true,"warmup":1,"fwd20":-0.13562,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":-0.02652,"max_dd_from_peak_close":-0.13562}
+{"date":"20260609","code":"000681","t":2521,"mon_pos":89.5,"fresh":false,"warmup":1,"fwd20":-0.11276,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":-0.0144,"max_dd_from_peak_close":-0.11276}
+{"date":"20260918","code":"000722","t":2593,"mon_pos":92.1,"fresh":true,"warmup":1,"fwd20":null,"stopped":null,"engine":"mtop_z2s","fp":"6850d7a28236ff8c"}
+{"date":"20231206","code":"000892","t":1904,"mon_pos":85.3,"fresh":false,"warmup":1,"fwd20":-0.15111,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.04667,"max_dd_from_peak_close":-0.18896}
+{"date":"20211217","code":"002067","t":1450,"mon_pos":89.0,"fresh":false,"warmup":1,"fwd20":0.0075,"stopped":false,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.0375,"max_dd_from_peak_close":-0.03614}
+{"date":"20211230","code":"002067","t":1459,"mon_pos":88.1,"fresh":false,"warmup":1,"fwd20":-0.055,"stopped":false,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.0375,"max_dd_from_peak_close":-0.10361}
+{"date":"20260904","code":"002107","t":2593,"mon_pos":86.4,"fresh":false,"warmup":1,"fwd20":null,"stopped":null,"engine":"mtop_z2s","fp":"6850d7a28236ff8c"}
+{"date":"20221121","code":"002333","t":1659,"mon_pos":87.5,"fresh":false,"warmup":1,"fwd20":-0.05299,"stopped":false,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.01538,"max_dd_from_peak_close":-0.06734}
+{"date":"20210806","code":"002487","t":1362,"mon_pos":87.5,"fresh":true,"warmup":1,"fwd20":0.43511,"stopped":false,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.43511,"max_dd_from_peak_close":-0.08115}
+{"date":"20240326","code":"002681","t":1914,"mon_pos":85.1,"fresh":false,"warmup":1,"fwd20":-0.08921,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.0083,"max_dd_from_peak_close":-0.09671}
+{"date":"20260519","code":"300397","t":2506,"mon_pos":86.4,"fresh":false,"warmup":1,"fwd20":-0.08512,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":0.04936,"max_dd_from_peak_close":-0.12815}
+{"date":"20260528","code":"600506","t":2443,"mon_pos":87.9,"fresh":false,"warmup":1,"fwd20":-0.0803,"stopped":true,"engine":"mtop_z2s","fp":"6850d7a28236ff8c","mfe_close":-0.00964,"max_dd_from_peak_close":-0.0803}

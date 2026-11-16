@@ -1,0 +1,18 @@
+{
+ "asof": "20261029",
+ "phase": "normal",
+ "activation_since": "20261009",
+ "events_total": 228,
+ "in_sample": {
+  "n": 228,
+  "hit": 0.7588
+ },
+ "oos": {
+  "n_events": 0,
+  "n_resolved": 0,
+  "n_confirmed": 0,
+  "fwd20_med": null,
+  "hit_ratio": null
+ },
+ "acceptance": "60交易日或OOS n>=20先到; pass=OOS fwd20 med>0且hit>=55%; kill=OOS前10个确认态fwd20中位<0"
+}

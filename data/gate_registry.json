@@ -1,0 +1,644 @@
+{
+ "generated_at": "2026-11-08T15:03:22",
+ "generator": "gen_gate_registry.py",
+ "⚠️真源声明": "本文件为生成物，禁止手改；状态变更须改 CURATED/重跑本脚本，裁决出处只收文档可指认项（UNKNOWN=诚实的空白，不是可填的默认值）",
+ "entries": [
+  {
+   "gate": "R1",
+   "refs_in_code": 12,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main",
+    "do_buy"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役（R1/R14-R18）；CLI 参数留兼容"
+  },
+  {
+   "gate": "R1b",
+   "refs_in_code": 4,
+   "files": [
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "_norm_signal_type",
+    "do_buy"
+   ],
+   "status": "ACTIVE",
+   "note": "挂单价与实时市价偏离熔断（±5% 外 fail-closed，执行端最后防线）",
+   "evidence": "trade_executor.py L88/L417（2026-08-27，科森参考价滞后 +20% 案）"
+  },
+  {
+   "gate": "R3",
+   "refs_in_code": 7,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "_same_day_buy_submitted",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "批量买上限（与 R8 共用当日状态跟踪源）",
+   "evidence": "pre_trade_check_v2 L56/L135 当日状态跟踪段"
+  },
+  {
+   "gate": "R4",
+   "refs_in_code": 2,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>"
+   ],
+   "status": "RETIRED",
+   "note": "防御蓝筹行业黑名单——主人 8/14 裁决「行业不该拦截」，判定块已移除",
+   "evidence": "pre_trade_check_v2 L72 [已移除] 标记"
+  },
+  {
+   "gate": "R5",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main",
+    "do_sell"
+   ],
+   "status": "ACTIVE",
+   "note": "40日振幅提示位（8/14 十年回测 WRONG 降级：仅 WARN 不拦截）",
+   "evidence": "pre_trade_check_v2 L767 + --amplitude-40d 参数"
+  },
+  {
+   "gate": "R6",
+   "refs_in_code": 7,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "ACTIVE",
+   "note": "收高闸（9/10 无证据降级为提示位；主人逐笔特批豁免口在位，与 R-S5/R31 同构）",
+   "evidence": "pre_trade_check_v2 L673/L718 证据研究同批注记"
+  },
+  {
+   "gate": "R7",
+   "refs_in_code": 7,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "do_buy"
+   ],
+   "status": "ACTIVE",
+   "note": "盘中个股/板块异动兜底闸（与 R-S5/R31/R32 共担追高拦截）",
+   "evidence": "pre_trade_check_v2 L7/L172/L672"
+  },
+  {
+   "gate": "R8",
+   "refs_in_code": 6,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "ACTIVE",
+   "note": "分化日状态/批量买上限（与 R3 同源）",
+   "evidence": "pre_trade_check_v2 L56/L135"
+  },
+  {
+   "gate": "R10",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "check",
+    "do_buy"
+   ],
+   "status": "RETIRED",
+   "note": "单笔金额上限废除——2026-10-26 主人令「从此不再限定模拟盘持仓的持股数量以及仓位大小」（与铁律3持仓≤50只/G14/A1/A3/sizing权重帽同批退役；G10 提示位不受影响）",
+   "evidence": "AGENTS §10.3 + PROJECT_BOUNDARY §6 2026-10-26 行；判定块已移除"
+  },
+  {
+   "gate": "R13",
+   "refs_in_code": 9,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "_held_codes",
+    "check",
+    "main",
+    "do_buy"
+   ],
+   "status": "ACTIVE",
+   "note": "重复买入防线（8/13 高德红外 9:34/9:36 双单 7200 股事故防线；持仓源 fail-open 但独立生效）",
+   "evidence": "pre_trade_check_v2 L811 + _held_codes"
+  },
+  {
+   "gate": "R14",
+   "refs_in_code": 8,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役"
+  },
+  {
+   "gate": "R15",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役"
+  },
+  {
+   "gate": "R16",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役"
+  },
+  {
+   "gate": "R17",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役"
+  },
+  {
+   "gate": "R18",
+   "refs_in_code": 13,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "结构性空转下线",
+   "evidence": "SOP 2026-09-10 六闸退役"
+  },
+  {
+   "gate": "R19",
+   "refs_in_code": 11,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r33_activity_excl",
+    "check_r31_extension",
+    "check",
+    "main",
+    "_gate_inputs_preflight"
+   ],
+   "status": "ACTIVE",
+   "note": "解禁回避（编号复用：旧 R19 锤子线 8/14 已移出，本号现义=解禁回避；复用风险由本表登记）",
+   "evidence": "pre_trade_check_v2 头注 + SOP R19 段 + PD-013 影子(R19集中度影子观察, 与解禁回避同号双用途=待裁决考古项)"
+  },
+  {
+   "gate": "R20",
+   "refs_in_code": 2,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>"
+   ],
+   "status": "RETIRED",
+   "note": "旧 R20 V型反转 8/14 移出判定块",
+   "evidence": "pre_trade_check_v2 头注"
+  },
+  {
+   "gate": "R22",
+   "refs_in_code": 12,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r22_dual_caliber",
+    "check_r31_extension",
+    "check",
+    "main",
+    "_fetch_sell_guard_inputs"
+   ],
+   "status": "ACTIVE",
+   "note": "东财vs同花顺双口径资金闸",
+   "evidence": "SOP R22 段 + 22:00 第十三步(双口径采集为其数据源)"
+  },
+  {
+   "gate": "R23",
+   "refs_in_code": 1,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "持仓加仓需显式确认（8/20 TCL科技 裸奔加仓案：加仓=买入必过闸门）",
+   "evidence": "pre_trade_check_v2 L815"
+  },
+  {
+   "gate": "R24",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r24_high_climax",
+    "check_r33_activity_excl",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "板块高潮禁追（读最新快照，sector∈高潮板块 → reject；fail-open 显式标注）",
+   "evidence": "pre_trade_check_v2 L167/L187（2026-08-21 主人批准）"
+  },
+  {
+   "gate": "R25",
+   "refs_in_code": 14,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r30b_cluster",
+    "check",
+    "main",
+    "flatten_quote",
+    "run_gate"
+   ],
+   "status": "ACTIVE",
+   "note": "崩盘结构闸（六闸退役后承接崩盘判定）",
+   "evidence": "pre_trade_check_v2 头注 2026-09-10"
+  },
+  {
+   "gate": "R26",
+   "refs_in_code": 5,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "main"
+   ],
+   "status": "RETIRED",
+   "note": "bp_ep TopN 名单衍生判定（对照）随名单制废除退役",
+   "evidence": "主人 2026-09-24 两道令 + AGENTS §10 注记"
+  },
+  {
+   "gate": "R27",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check"
+   ],
+   "status": "RETIRED",
+   "note": "名单价衍生判定（批量价差）随名单制废除退役",
+   "evidence": "主人 2026-09-24 两道令 + AGENTS §10 注记"
+  },
+  {
+   "gate": "R27b",
+   "refs_in_code": 6,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r34_pulse_nextday",
+    "check",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "昨收溢价 WARN 提示（8/28 建，与 R28 hotspot 追价 REJECT 互补的无专属追价闸防线）",
+   "evidence": "pre_trade_check_v2 L84/L630"
+  },
+  {
+   "gate": "R28",
+   "refs_in_code": 8,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check",
+    "do_sell",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "C7-R28 持有期守卫（reconcile 回填 buy_tracker 使其次日生效）",
+   "evidence": "22:00 链第二步 reconcile_pending_fills 注记"
+  },
+  {
+   "gate": "R30a",
+   "refs_in_code": 12,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r31_extension",
+    "check_r30b_cluster",
+    "check_r34_pulse_nextday",
+    "check",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "行业集中度闸+豁免口",
+   "evidence": "SOP R30a 段"
+  },
+  {
+   "gate": "R30b",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r30b_cluster",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "组合级行业占比上限25%（PD-024② 2026-10-01 主人「继续」批准转实: 单一申万L1持仓市值(含拟买)/总资产>25% 封新买 REJECT 存量不动; westock实时持仓+portfolio.totalAssets(三层嵌套 data.portfolio)+stock_sector_sw1; fail-open标注; --owner-approve-r30b 特批; 单测7/7+实弹交运簇12.5% PASS）",
+   "evidence": "pre_trade_check_v2 check_r30b_cluster + test_r30b_cluster_gate.py"
+  },
+  {
+   "gate": "R31",
+   "refs_in_code": 19,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r31_extension",
+    "check_r32_chgmom",
+    "check_rs5_momgate",
+    "check",
+    "do_buy"
+   ],
+   "status": "ACTIVE",
+   "note": "追高拦截主力闸（六闸退役后与 R-S5/R32/R7 共担）；9/28 复证=回踩一般规则已证伪, 本闸禁做回踩买入依据",
+   "evidence": "pre_trade_check_v2 头注 + sold_rider_recon 纪律行"
+  },
+  {
+   "gate": "R32",
+   "refs_in_code": 13,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r32_chgmom",
+    "check_rs5_momgate",
+    "check",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "追高拦截族",
+   "evidence": "pre_trade_check_v2 头注 2026-09-10"
+  },
+  {
+   "gate": "R33",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r33_activity_excl",
+    "check"
+   ],
+   "status": "SHADOW",
+   "note": "资金活跃度负面清单接闸：已产未验（60日影子未满），不得当拦截证据",
+   "evidence": "SOP 2026-09-24 R33 段 + fixture 9cd9017"
+  },
+  {
+   "gate": "R34",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r34_pulse_nextday",
+    "check_r36_highpos_shrink",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "脉冲次日资金提示（PD-018② 2026-10-02 批准 WARN 档: 板块T-1净流入≥10亿→次日买入WARN防一日游; 实时资金本地不可得=未验证维度明示; 单例证据不足硬闸 R27b 同构; em_flow_snapshot 按申万L1聚合, 裸码前缀归一化——单测抓出恒0静默失效真bug已修）",
+   "evidence": "pre_trade_check_v2 check_r34_pulse_nextday + test_r34_r35_gates.py 11/11"
+  },
+  {
+   "gate": "R35",
+   "refs_in_code": 2,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r35_resell_cooldown",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "卖后同日回补冷却闸（PD-018③ 2026-10-02 批准 REJECT 硬闸: 同码当日有SELL成交→回补须间隔≥30分钟∧买价<卖价, 否则REJECT——瑞捷300977反向T违规的机制化封锁; --owner-approve-r35 特批同构默认关; trade_records 当日SELL真源）",
+   "evidence": "pre_trade_check_v2 check_r35_resell_cooldown + test_r34_r35_gates.py; PD-018④尾盘批量均价线限价=trade_executor do_buy avg_price截断(时段≥14:00∧当日已买≥3只)"
+  },
+  {
+   "gate": "R36",
+   "refs_in_code": 2,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r36_highpos_shrink",
+    "check"
+   ],
+   "status": "SHADOW",
+   "note": "高位缩量接货 WARN（PD-030① 影子: 判据 fwd20 中位≤-2% 且 win≤42% ≥60交易日, 影子未满不得当拦截证据）",
+   "evidence": "git e1231f1 两馒头案 PD-030 十项全部落地 2026-10-03 + PENDING_DECISIONS PD-030 处置"
+  },
+  {
+   "gate": "R37",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r31_extension",
+    "check_r37_emotion_gear",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "情绪档门（弱档<40家 REJECT / 中档 WARN / 强档 clear, fail-open; 实测0930强档63家与择时状态机交叉一致）",
+   "evidence": "PD-036 主人 AskUserQuestion 批①②③ 2026-10-07 git 6f7aac5"
+  },
+  {
+   "gate": "R38",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r37_emotion_gear",
+    "check_r38_expectancy",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "期望闸（gauge 组级 T20E 中位<0 × LOW_VOL → REJECT / 非弱档 WARN; 缺证据 fail-open; 特批 --owner-approve-r38）",
+   "evidence": "SOP九十六 主人令「修复优化迭代」2026-10-08 git 90b21e1"
+  },
+  {
+   "gate": "R39",
+   "refs_in_code": 9,
+   "files": [
+    "pre_trade_check_v2.py",
+    "trade_executor.py"
+   ],
+   "anchor_functions": [
+    "<module>",
+    "check_r37_emotion_gear",
+    "_tencent_real_quote",
+    "check",
+    "main",
+    "do_buy_batch"
+   ],
+   "status": "ACTIVE",
+   "note": "落刀闸（开盘跳空≤-3% / 现价深跌≤-5%, 腾讯真实行情源; 特批 --owner-approve-r39）",
+   "evidence": "SOP九十六 git 90b21e1 同上"
+  },
+  {
+   "gate": "R41",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "_tencent_real_quote",
+    "check_r41_mainline",
+    "check"
+   ],
+   "status": "ACTIVE",
+   "note": "主线对齐 WARN-only（候选申万L1 ∉ 方向层C1 量能主线集 → WARN 提请不拦截; 升 REJECT 须主人定义低位批例外条款）",
+   "evidence": "SOP九十七 git 5960c72 2026-10-08"
+  },
+  {
+   "gate": "R42",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r44_st_status",
+    "check_r42_goodwill_high",
+    "check"
+   ],
+   "status": "UNKNOWN",
+   "note": "代码有引用但裁决档案缺语义登记——待考古补登，禁止凭印象填",
+   "evidence": "无（UNKNOWN）"
+  },
+  {
+   "gate": "R43",
+   "refs_in_code": 3,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "check_r42_goodwill_high",
+    "check_r43_block_trade_anomaly",
+    "check"
+   ],
+   "status": "UNKNOWN",
+   "note": "代码有引用但裁决档案缺语义登记——待考古补登，禁止凭印象填",
+   "evidence": "无（UNKNOWN）"
+  },
+  {
+   "gate": "R44",
+   "refs_in_code": 4,
+   "files": [
+    "pre_trade_check_v2.py"
+   ],
+   "anchor_functions": [
+    "_tencent_real_quote",
+    "check_r44_st_status",
+    "check"
+   ],
+   "status": "UNKNOWN",
+   "note": "代码有引用但裁决档案缺语义登记——待考古补登，禁止凭印象填",
+   "evidence": "无（UNKNOWN）"
+  }
+ ],
+ "counts": {
+  "ACTIVE": 24,
+  "RETIRED": 11,
+  "SHADOW": 2,
+  "UNKNOWN": 3
+ }
+}

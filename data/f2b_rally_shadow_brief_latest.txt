@@ -1,0 +1,5 @@
+F2B主升确认窗影子 20261029 phase=normal
+事件总数=228 (in_sample 228 hit=0.7588 / OOS 0 已决0 确认0)
+OOS fwd20 med=None% hit=None
+验收门: 60交易日或OOS n>=20先到; pass=OOS fwd20 med>0且hit>=55%; kill=OOS前10个确认态fwd20中位<0
+边界: 指数层状态描述, 零交易权禁扳机(PD-034)

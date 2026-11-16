@@ -1,0 +1,5 @@
+[
+  {"code": "600519", "name": "贵州茅台", "quantity": 100, "avg_price": 1500.0},
+  {"code": "300750", "name": "宁德时代", "quantity": 200, "avg_price": 180.5},
+  {"code": "000001", "name": "平安银行", "quantity": 0, "avg_price": 0}
+]

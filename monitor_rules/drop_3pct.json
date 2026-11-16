@@ -1,0 +1,19 @@
+{
+  "id": "drop_3pct",
+  "name": "持仓跌超3%",
+  "enabled": true,
+  "symbols": [
+    "AUTO_POSITIONS"
+  ],
+  "conditions": [
+    {
+      "field": "pct",
+      "op": "<=",
+      "value": -3.0
+    }
+  ],
+  "logic": "and",
+  "cooldown_minutes": 30,
+  "severity": "warn",
+  "_说明": "AUTO_POSITIONS=自动跟随主库持仓表; 手工名单则填6位码数组"
+}

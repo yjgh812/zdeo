@@ -1,0 +1,41 @@
+{
+  "prereg_id": "PREREG_L2_SELFLOSS_FILTER_20260913",
+  "title": "L-2 归因经验库联动第一假设：bp_ep 月度选股的自身大亏历史 PIT 剔除",
+  "created": "2026-09-13",
+  "author": "知微 (GLM-5.3-Flash)",
+  "authorization": "主人专项指令书§五/§六 + 连续「继续」×3 授权；沿 9/9 breakout-cluster prereg 立项先例",
+  "motivating_evidence": {
+    "source": "reports/drift_check_20260912e_0911end/bp_ep_core_trades_full.csv (2016-01~2026-09-11, 2047笔)",
+    "fact_1": "大额亏损(≤-5%)492笔中, 历史≥5次大亏标的贡献 390笔(79%)",
+    "fact_2": "重复标的对当年大亏的贡献占比单调上升: 2016=46% → 2018=77% → 2020=87% → 2023=97% → 2024=100% → 2026=89%",
+    "fact_3": "重复标的簇两形态: 低波银行/基建长持簇(持仓75-105天, 平均-7~-9%) 与 中小盘快止损簇(持仓33-37天, 平均-11%+)",
+    "fact_4": "regime与个股双重效应: 大亏总量随行情(2018年50% vs 2024年8%), 但重复标的贡献占比与行情无关地上升"
+  },
+  "hypothesis": "bp_ep 便宜因子存在价值陷阱聚集效应: 对『近期对自身实现过多次大额亏损』的标的反复开仓, 形成可事前识别的系统性损耗; 在月度选股层以 PIT 方式剔除此类标的可改善账户级结果",
+  "rule_frozen": {
+    "definition": "月度选股日 T, 剔除满足: 该股在截至 T 的已平仓自身交易中, 盈亏比例≤-5% 的笔数 >= K",
+    "K_main": 2,
+    "K_sensitivity": [1, 3],
+    "pit_constraint": "计数器仅含卖出日期<=T 的已实现交易(自身交易历史在决策日已知, 无前视)",
+    "counterfactual_mode": "交易层反事实近似: 剔除笔盈亏直接扣除, 其权重按同期未剔除买入笔已实现收益等比重分配(月度调仓近似); 与账户级重放存在仓位/约束差异, PASS_CANDIDATE 须引擎 additive 开关二次验证",
+    "no_production_wiring": "零生产接线, 引擎 bp_ep 生产链不受影响"
+  },
+  "windows": {
+    "in_sample": "2016-01 ~ 2021-12 (建规则/阈值评估)",
+    "validation": "2022-01 ~ 2024-12",
+    "holdout": "2025-01 ~ 2026-09 (只测一次, 不得回看调参)"
+  },
+  "acceptance": {
+    "pass_candidate": "validation+holdout 合并: 剔除笔反事实合计盈亏<0 (即剔除提升收益) 且 大亏笔数(≤-5%)下降>=15% 且 两窗方向一致",
+    "fail": "任一窗反向显著或合并不达标",
+    "on_fail": "登记 falsified_rules 第47条 L2-SELFLOSS-FILTER, 首轮即终局不迭代",
+    "on_pass": "PASS_CANDIDATE 仅提请引擎 additive 开关账户级验证, 不构成放行"
+  },
+  "falsified_archive_crosscheck": [
+    "S-3 TopN sweep (不同问题: 名单长度非标的剔除)",
+    "M-1 板块集中度cap (不同机制: 组合约束非个股历史)",
+    "个案模板≠系统规律 (金健/恒源煤电为单股模板, 本假设为自身交易史批量特征, 不同)",
+    "M-2-UNLOCK-FILTER (解禁事件维度, 9/9判死, 本假设为自身交易史维度, 判据不同源)"
+  ],
+  "fingerprint": "sha256:f15b28105280d594"
+}

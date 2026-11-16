@@ -1,0 +1,36 @@
+{
+ "id": "BREAKOUT-MIDPOS",
+ "mode": "independent_reimpl",
+ "bands": {
+  "low": {
+   "n": 34294,
+   "win": 0.4726,
+   "mean_pct": 1.327,
+   "cluster_t": -5.54,
+   "ctl_n": 1332617,
+   "same_band_increment_pp": -1.685,
+   "paired_t": -8.68
+  },
+  "mid": {
+   "n": 90564,
+   "win": 0.4367,
+   "mean_pct": 0.101,
+   "cluster_t": -9.47,
+   "ctl_n": 873430,
+   "same_band_increment_pp": -1.854,
+   "paired_t": -16.4
+  },
+  "high": {
+   "n": 161508,
+   "win": 0.4022,
+   "mean_pct": -0.735,
+   "cluster_t": -5.88,
+   "ctl_n": 398458,
+   "same_band_increment_pp": -1.36,
+   "paired_t": -11.06
+  }
+ },
+ "caveats": [
+  "对照日=同带非突破日1/3抽样; ST用stock_info_cache剔除; 成本0.2%含在收益内"
+ ]
+}

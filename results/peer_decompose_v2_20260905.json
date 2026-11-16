@@ -1,0 +1,210 @@
+{
+  "n": 22,
+  "sel_delta_median": 0.0,
+  "sel_delta_mean": -0.6763636363636365,
+  "sel_neg_pct": 36.36363636363637,
+  "slip_median": 0.315,
+  "slip_neg_pct": 68.18181818181817,
+  "peer_median": 0.0,
+  "realized_median": -0.51,
+  "rows": [
+    {
+      "name": "金河生物",
+      "ind": "养殖业",
+      "sel": -0.38,
+      "peer": 3.9,
+      "sel_delta": -4.28,
+      "slip": -0.21,
+      "realized": -0.58
+    },
+    {
+      "name": "华融化学",
+      "ind": "化学原料",
+      "sel": -3.28,
+      "peer": -1.8,
+      "sel_delta": -1.48,
+      "slip": -1.04,
+      "realized": -4.28
+    },
+    {
+      "name": "内蒙新华",
+      "ind": "文化传媒",
+      "sel": 3.38,
+      "peer": 0.86,
+      "sel_delta": 2.52,
+      "slip": 0.4,
+      "realized": 3.79
+    },
+    {
+      "name": "苏利股份",
+      "ind": "农化制品",
+      "sel": -2.74,
+      "peer": -1.84,
+      "sel_delta": -0.9,
+      "slip": 0.07,
+      "realized": -2.67
+    },
+    {
+      "name": "聚合顺",
+      "ind": "化学纤维",
+      "sel": -2.56,
+      "peer": -2.26,
+      "sel_delta": -0.3,
+      "slip": 3.54,
+      "realized": 0.9
+    },
+    {
+      "name": "大烨智能",
+      "ind": "电网设备",
+      "sel": -1.77,
+      "peer": -0.27,
+      "sel_delta": -1.5,
+      "slip": -1.49,
+      "realized": -3.23
+    },
+    {
+      "name": "神力股份",
+      "ind": "电机",
+      "sel": 1.31,
+      "peer": -2.12,
+      "sel_delta": 3.43,
+      "slip": -0.79,
+      "realized": 0.51
+    },
+    {
+      "name": "华星创业",
+      "ind": "通信服务",
+      "sel": -2.33,
+      "peer": -0.15,
+      "sel_delta": -2.18,
+      "slip": -0.68,
+      "realized": -2.99
+    },
+    {
+      "name": "金信诺",
+      "ind": "军工电子",
+      "sel": -4.77,
+      "peer": 0.19,
+      "sel_delta": -4.96,
+      "slip": -0.97,
+      "realized": -5.7
+    },
+    {
+      "name": "郑中设计",
+      "ind": "建筑装饰",
+      "sel": -4.85,
+      "peer": 0.38,
+      "sel_delta": -5.23,
+      "slip": 0.88,
+      "realized": -4.01
+    },
+    {
+      "name": "大商股份",
+      "ind": "零售",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": 1.6,
+      "realized": 1.6
+    },
+    {
+      "name": "天津港",
+      "ind": "港口航运",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.09,
+      "realized": -0.09
+    },
+    {
+      "name": "楚天高速",
+      "ind": "公路铁路运输",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.88,
+      "realized": -0.88
+    },
+    {
+      "name": "中原高速",
+      "ind": "公路铁路运输",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.33,
+      "realized": -0.33
+    },
+    {
+      "name": "锦江在线",
+      "ind": "公路铁路运输",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -1.73,
+      "realized": -1.73
+    },
+    {
+      "name": "游族网络",
+      "ind": "游戏",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -1.14,
+      "realized": -1.14
+    },
+    {
+      "name": "出版传媒",
+      "ind": "文化传媒",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": 0.99,
+      "realized": 0.99
+    },
+    {
+      "name": "海德股份",
+      "ind": "多元金融",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.93,
+      "realized": -0.93
+    },
+    {
+      "name": "熙菱信息",
+      "ind": "计算机设备",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": 0.09,
+      "realized": 0.09
+    },
+    {
+      "name": "中国铁建",
+      "ind": "建筑装饰",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.05,
+      "realized": -0.05
+    },
+    {
+      "name": "物产中大",
+      "ind": "物流",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.3,
+      "realized": -0.3
+    },
+    {
+      "name": "百联股份",
+      "ind": "零售",
+      "sel": 0.0,
+      "peer": 0.0,
+      "sel_delta": 0.0,
+      "slip": -0.44,
+      "realized": -0.44
+    }
+  ]
+}

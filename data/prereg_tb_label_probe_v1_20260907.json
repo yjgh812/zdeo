@@ -1,0 +1,69 @@
+{
+  "prereg_id": "prereg_tb_label_probe_v1_20260907",
+  "title": "三重栅栏(triple-barrier)标签法对照探针：缠论买点在 fwd20 固定持有 vs TB 路径依赖标签下的结论一致性",
+  "frozen_at": "2026-09-07",
+  "motivation": "书单三师审计缺口 D2：屠龙全部标签层为 fwd20 固定持有，执行层却有 -8% 硬止损（S-5）。标签与执行不一致可能使回测结论系统性偏乐观/悲观。本探针只做标签法对照研究，不改任何在册指纹、不接线生产。",
+  "signal_source": {
+    "file": "portrait_agent/cache/chan_signals_v1.pkl",
+    "desc": "缠论 v1 买点全史 18759 笔（buy2=15106, buy1=3142, buy3=425, bottom_div=86），20130110-20260903，与 morph-v4/组合C 同源缓存，档案锚'缠论18759买点'",
+    "note": "qfq 库自 2016 起，2013-2015 信号因无路径数据自然剔除，剔除数如实报告"
+  },
+  "price_source": "data/dragon_quant_qfq.db stock_daily_meta_qfq（qfq 唯一价格源铁律）",
+  "entry_exit_convention": {
+    "entry": "信号次日开盘（next-bar 开盘，对齐体系 next-bar 铁律与执行层）",
+    "fwd20_exit": "入场后第 20 个交易日收盘（两口径完全同基）",
+    "excess_benchmark": "同信号日全市场 fwd20（同 next-bar 口径）收益中位数（截面 P50，冻结）"
+  },
+  "tb_parameters": {
+    "main_sigma_adjusted": {
+      "sigma": "信号日前 20 个交易日（不含信号日）日收益率样本 std（close-to-close）",
+      "upper_barrier": "entry_open * (1 + 2*sigma)",
+      "lower_barrier": "entry_open * (1 - 2*sigma)",
+      "time_barrier": "20 个交易日",
+      "rationale": "de Prado 标准波动率调整栅；k=2 为其默认先验，未做参数搜索"
+    },
+    "sensitivity_execution_aligned": {
+      "upper_barrier": "+16%",
+      "lower_barrier": "-8%（对齐执行层 S-5 硬止损，主人既有裁决，非本研究发明）",
+      "time_barrier": "20 个交易日"
+    },
+    "touch_rules": [
+      "用日内 HIGH/LOW 判触栅",
+      "同日双触 → 保守记下栅",
+      "开盘跳空越栅 → 用开盘价收益（保守封顶/封底）",
+      "触上栅收益=+栅值, 触下栅收益=-栅值, 到期=第20日收盘/入场开盘-1",
+      "路径不足 20 日（数据尾部/停牌>期限）→ 剔除该信号并计数"
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "primary": true,
+      "statement": "buy2 信号在 TB 主参数下的超额均值 t 值与 fwd20 口径超额 t 值同号，且 TB 口径 |t|>=2",
+      "pass": "同号且 |t|>=2 ⇒ 标签法稳健（PASS）",
+      "fail": "符号翻转或 |t|<2 ⇒ fwd20 结论存在标签依赖（WARN 登记进 falsified_rules 备注层，不动组合C指纹）"
+    },
+    {
+      "id": "H2",
+      "primary": false,
+      "statement": "buy3（档案负信号 t=-11.9）在两口径下超额均值均为负",
+      "pass": "一致 ⇒ 负信号跨标签稳健"
+    },
+    {
+      "id": "H3",
+      "primary": false,
+      "statement": "执行对齐版（-8%/+16%）方向与主参数一致（敏感性，不单独判定）"
+    },
+    {
+      "id": "H4",
+      "primary": false,
+      "statement": "胜率对照（描述性）：TB 口径预期胜率高于 fwd20 口径（止损截断左尾），如实报告不判定"
+    }
+  ],
+  "robustness": "分年正超额年数（两口径各报）；buy1/buy2/buy3 分组各自结论",
+  "guardrails": [
+    "零生产侵入：不动组合C指纹/影子/画像管线",
+    "跑前冻结本文件，参数无搜索无调优",
+    "产物：data/_tb_label_probe_20260907.json + reports/TRIPLE_BARRIER_LABEL_PROBE_20260907.md"
+  ]
+}

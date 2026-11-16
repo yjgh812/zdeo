@@ -1,0 +1,52 @@
+{
+ "generated": "2026-09-15 00:50",
+ "start": "20260828",
+ "main_all": {
+  "label": "全部",
+  "n_total": 63,
+  "n_realized": 39,
+  "pending": 24,
+  "mean_pp": -2.192,
+  "win": 17.9,
+  "median_pp": -2.367
+ },
+ "main_vvv": {
+  "label": "三闸VVV组",
+  "n_total": 6,
+  "n_realized": 5,
+  "pending": 1,
+  "mean_pp": -2.282,
+  "win": 0.0,
+  "median_pp": -2.294
+ },
+ "main_nonvvv": {
+  "label": "非VVV组",
+  "n_total": 57,
+  "n_realized": 34,
+  "pending": 23,
+  "mean_pp": -2.179,
+  "win": 20.6,
+  "median_pp": -2.369
+ },
+ "ext_all": {
+  "label": "全部",
+  "n_total": 12,
+  "n_realized": 7,
+  "pending": 5,
+  "mean_pp": -2.466,
+  "win": 42.9,
+  "median_pp": -5.627
+ },
+ "ext_vvv": null,
+ "main_regime_LOW<0.5": {
+  "label": "市场LOW<0.5",
+  "n_total": 58,
+  "n_realized": 39,
+  "pending": 19,
+  "mean_pp": -2.192,
+  "win": 17.9,
+  "median_pp": -2.367
+ },
+ "main_regime_HIGH>=0.5": null,
+ "main_gate_missing": 6
+}

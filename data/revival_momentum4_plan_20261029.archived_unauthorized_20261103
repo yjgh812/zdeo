@@ -1,0 +1,54 @@
+[
+ {
+  "code": "600802",
+  "name": "福建水泥",
+  "source": "revival_momentum",
+  "price": 7.26,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 6.86,
+  "note": "主人令动量方向修正v2: 多头排列 r20=32.7% 偏离5.8% 量比1.2",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "603767",
+  "name": "中马传动",
+  "source": "revival_momentum",
+  "price": 17.32,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 15.43,
+  "note": "主人令动量方向修正v2: 多头排列 r20=28.2% 偏离12.3% 量比1.3",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "300413",
+  "name": "芒果超媒",
+  "source": "revival_momentum",
+  "price": 24.72,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 22.44,
+  "note": "主人令动量方向修正v2: 多头排列 r20=28.0% 偏离10.2% 量比1.1",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ },
+ {
+  "code": "300133",
+  "name": "华策影视",
+  "source": "revival_momentum",
+  "price": 9.32,
+  "volume": 100,
+  "sector": "",
+  "prev_close": 8.59,
+  "note": "主人令动量方向修正v2: 多头排列 r20=23.4% 偏离8.5% 量比1.4",
+  "execute": true,
+  "owner_approve_ddgate": true,
+  "owner_override_session": true
+ }
+]

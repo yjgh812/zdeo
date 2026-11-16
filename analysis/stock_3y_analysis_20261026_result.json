@@ -1,0 +1,56 @@
+{
+ "window": "20231023~20261023",
+ "n_stocks": 4524,
+ "label_distribution": {
+  "普通震荡": 3494,
+  "三年横盘者": 471,
+  "ST主导(剔除画像)": 243,
+  "多次脉冲妖": 185,
+  "三年趋势牛": 130,
+  "三年阴跌熊": 1
+ },
+ "label_stats": {
+  "ST主导(剔除画像)": {
+   "n": 243,
+   "mean_3y_ret": NaN,
+   "median_3y_ret": NaN,
+   "mean_mdd": NaN,
+   "mean_best_wave": NaN
+  },
+  "三年横盘者": {
+   "n": 471,
+   "mean_3y_ret": 0.056,
+   "median_3y_ret": 0.0,
+   "mean_mdd": -0.359,
+   "mean_best_wave": 0.163
+  },
+  "三年趋势牛": {
+   "n": 130,
+   "mean_3y_ret": 3.348,
+   "median_3y_ret": 2.596,
+   "mean_mdd": -0.557,
+   "mean_best_wave": 0.798
+  },
+  "三年阴跌熊": {
+   "n": 1,
+   "mean_3y_ret": -0.727,
+   "median_3y_ret": -0.727,
+   "mean_mdd": -0.847,
+   "mean_best_wave": 0.821
+  },
+  "多次脉冲妖": {
+   "n": 185,
+   "mean_3y_ret": 1.231,
+   "median_3y_ret": 0.841,
+   "mean_mdd": -0.61,
+   "mean_best_wave": 1.552
+  },
+  "普通震荡": {
+   "n": 3494,
+   "mean_3y_ret": 0.168,
+   "median_3y_ret": 0.057,
+   "mean_mdd": -0.525,
+   "mean_best_wave": 0.348
+  }
+ }
+}

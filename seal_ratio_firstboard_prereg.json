@@ -1,0 +1,16 @@
+{
+  "id": "20261107-seal-ratio-firstboard",
+  "ts": "2026-11-07T02:40:00",
+  "object": "首板晋级判别因子预注册：封单额/成交额比(seal_amt_ratio)。假设 = 首板日 seal_amt_ratio≥0.3 的次日晋级率显著高于 <0.1 档（本地 2026-08-10~11-06 样本实测 26.7% vs 10.7%，双段稳健：前半 23.6%vs10.3%、后半 31.4%vs10.9%）。因子来源声明：由 2026-08-10~11-06 数据发现（属样本内），前瞻验证窗口自登记日起算，登记即冻结判据，禁止按前瞻结果回调阈值。",
+  "engine": "前瞻实采验证：limit_up_patterns 表每日增量(生产管线自动落库) × stock_daily_raw 次日晋级判定（analysis/firstboard_threshold_study.py 同口径），纯本地数据。",
+  "params": {
+    "window": "20261110 起 60 个交易日（约 2026-11-10 ~ 2027-02-06）",
+    "buckets": "ratio≥0.3 vs ratio<0.1（feature_tags.seal_amt_ratio）",
+    "population": "limit_count=1 首板，剔除疑似ST口径与次新(<60交易日)",
+    "outcome": "次日收盘涨幅≥板块涨停阈-0.2pp（market_rules_config 分段规则）"
+  },
+  "criterion": {
+    "commitment": "窗口期满双侧各 n≥100 时裁决：通过 = ≥0.3档晋级率 − <0.1档晋级率 ≥ 8pp（样本内实测差 16pp，取其半为前瞻线）；证伪 = 差 < 5pp；n 不足则延长窗口不做结论（反臆想纪律：拒绝小样本伪结论）。",
+    "usage_if_pass": "通过后仍须走三段式流水线（供数→分析→m7校验）方可进入策略/闸门语义；本登记不等于进策略批准。"
+  }
+}

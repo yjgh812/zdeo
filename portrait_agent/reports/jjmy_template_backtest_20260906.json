@@ -1,0 +1,17 @@
+{
+ "scan_date": "20260904",
+ "scan_hits": 0,
+ "scan_codes": [],
+ "backtest": {
+  "n_windows": 1,
+  "nav": 1.0708,
+  "ann": 129.56,
+  "ann_b": 191.37,
+  "t": NaN,
+  "win": 0.0,
+  "yearly": {
+   "2026": -2.122
+  },
+  "neg_years": 1
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "task": "B7",
+ "run_at": "2026-10-21T12:37:09",
+ "inputs": {
+  "sw_db": "D:\\workbuddyspace\\databases\\sw_industry.db",
+  "qfq_db": "D:\\workbuddyspace\\factor_engine\\data\\dragon_quant_qfq.db",
+  "idx": "D:\\anzhuang\\tdx\\vipdoc\\sh\\lday\\sh000001.day",
+  "bench": "等权全A(qfq派生cumprod; 降级原因: 本地sh000985仅覆盖2005-2016已停更, 契约v1.0预授权降级路径)"
+ },
+ "checks": {
+  "date_coverage": {
+   "pass": true,
+   "value": 1.0
+  },
+  "duplicates": {
+   "pass": true,
+   "count": 0
+  },
+  "null_rate": {
+   "pass": true,
+   "rate": 0.0
+  },
+  "monotonic_unique": {
+   "pass": true
+  },
+  "bench_coverage": {
+   "pass": true,
+   "chosen": "等权全A(qfq派生cumprod; 降级原因: 本地sh000985仅覆盖2005-2016已停更, 契约v1.0预授权降级路径)",
+   "degraded": true,
+   "sh000985_sample_cov": 0.0415
+  },
+  "denominator_consistency": {
+   "pass": true,
+   "corr_qfq_vs_L1sum": 0.9992,
+   "ratio_cv": 0.0254,
+   "chosen": "qfq"
+  },
+  "window_sufficiency": {
+   "pass": true,
+   "note": "min_periods=窗长x0.9内建; 降级行以NaN排除并计数"
+  }
+ },
+ "outliers_policy": "flag+exclude+count",
+ "overall": "PASS"
+}

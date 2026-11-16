@@ -1,0 +1,110 @@
+[
+ {
+  "code": "002519",
+  "name": "银河电子",
+  "volume": 800,
+  "price": 5.38,
+  "source": "lowconsol_batch",
+  "sector": "国防军工",
+  "prev_close": 5.33
+ },
+ {
+  "code": "300008",
+  "name": "天海防务",
+  "volume": 900,
+  "price": 6.15,
+  "source": "lowconsol_batch",
+  "sector": "国防军工",
+  "prev_close": 6.09
+ },
+ {
+  "code": "603488",
+  "name": "展鹏科技",
+  "volume": 600,
+  "price": 7.2,
+  "source": "lowconsol_batch",
+  "sector": "国防军工",
+  "prev_close": 7.13
+ },
+ {
+  "code": "000561",
+  "name": "烽火电子",
+  "volume": 900,
+  "price": 7.55,
+  "source": "lowconsol_batch",
+  "sector": "国防军工",
+  "prev_close": 7.48
+ },
+ {
+  "code": "601717",
+  "name": "中创智领",
+  "volume": 500,
+  "price": 13.8,
+  "source": "lowconsol_batch",
+  "sector": "机械设备",
+  "prev_close": 13.66
+ },
+ {
+  "code": "600637",
+  "name": "东方明珠",
+  "volume": 600,
+  "price": 8.37,
+  "source": "lowconsol_batch",
+  "sector": "传媒",
+  "prev_close": 8.29
+ },
+ {
+  "code": "300030",
+  "name": "阳普医疗",
+  "volume": 900,
+  "price": 6.36,
+  "source": "lowconsol_batch",
+  "sector": "医药生物",
+  "prev_close": 6.3
+ },
+ {
+  "code": "300729",
+  "name": "乐歌股份",
+  "volume": 500,
+  "price": 10.82,
+  "source": "lowconsol_batch",
+  "sector": "轻工制造",
+  "prev_close": 10.71
+ },
+ {
+  "code": "001979",
+  "name": "招商蛇口",
+  "volume": 500,
+  "price": 7.63,
+  "source": "lowconsol_batch",
+  "sector": "房地产",
+  "prev_close": 7.55
+ },
+ {
+  "code": "600973",
+  "name": "宝胜股份",
+  "volume": 1200,
+  "price": 5.63,
+  "source": "lowconsol_batch",
+  "sector": "电力设备",
+  "prev_close": 5.57
+ },
+ {
+  "code": "300105",
+  "name": "龙源技术",
+  "volume": 1200,
+  "price": 6.61,
+  "source": "lowconsol_batch",
+  "sector": "环保",
+  "prev_close": 6.54
+ },
+ {
+  "code": "002887",
+  "name": "绿茵生态",
+  "volume": 600,
+  "price": 8.03,
+  "source": "lowconsol_batch",
+  "sector": "环保",
+  "prev_close": 7.95
+ }
+]

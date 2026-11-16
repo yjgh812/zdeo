@@ -1,0 +1,53 @@
+{"ts": "2026-10-19T08:19:27", "kind": "A1_position_gate", "code": "sh600000", "name": "浦发银行", "ratio": 0.7794}
+{"ts": "2026-10-19T09:41:22", "kind": "A1_position_gate", "code": "sh603960", "name": "克来机电", "ratio": 0.8468}
+{"ts": "2026-10-19T09:41:24", "kind": "A1_position_gate", "code": "sz002056", "name": "横店东磁", "ratio": 0.8468}
+{"ts": "2026-10-19T09:41:26", "kind": "A1_position_gate", "code": "sh600383", "name": "金地集团", "ratio": 0.8469}
+{"ts": "2026-10-19T09:41:28", "kind": "A1_position_gate", "code": "sh600470", "name": "六国化工", "ratio": 0.8468}
+{"ts": "2026-10-19T09:41:30", "kind": "A1_position_gate", "code": "sh600717", "name": "天津港", "ratio": 0.8468}
+{"ts": "2026-10-20T09:41:25", "kind": "A1_position_gate", "code": "sh603982", "name": "泉峰汽车", "ratio": 0.779}
+{"ts": "2026-10-20T09:41:30", "kind": "A1_position_gate", "code": "sz002513", "name": "蓝丰生化", "ratio": 0.7791}
+{"ts": "2026-10-20T09:41:34", "kind": "A1_position_gate", "code": "sh601975", "name": "招商南油", "ratio": 0.7793}
+{"ts": "2026-10-20T09:41:37", "kind": "A1_position_gate", "code": "sh601077", "name": "渝农商行", "ratio": 0.7792}
+{"ts": "2026-10-20T09:41:42", "kind": "A1_position_gate", "code": "sh603097", "name": "江苏华辰", "ratio": 0.7792}
+{"ts": "2026-10-21T12:11:59", "kind": "A1_position_gate", "code": "sz002292", "name": "奥飞娱乐", "ratio": 0.521}
+{"ts": "2026-10-21T12:31:11", "kind": "A1_position_gate", "code": "sz002292", "name": "奥飞娱乐", "ratio": 0.521}
+{"ts": "2026-10-21T12:42:43", "kind": "A1_position_gate", "code": "sz002292", "name": "奥飞娱乐", "ratio": 0.521}
+{"ts": "2026-10-21T13:01:40", "kind": "A1_position_gate", "code": "sz002292", "name": "奥飞娱乐", "ratio": 0.5206}
+{"ts": "2026-10-21T13:08:57", "kind": "A3_heavy_cap", "code": "sz002292", "name": "奥飞娱乐", "amount": 168388.0, "single_ratio": 0.1989}
+{"ts": "2026-10-21T13:09:18", "kind": "A3_heavy_cap", "code": "sz002292", "name": "奥飞娱乐", "amount": 168388.0, "single_ratio": 0.1989}
+{"ts": "2026-10-21T13:19:18", "kind": "A1_position_gate", "code": "sz002292", "name": "奥飞娱乐", "ratio": 0.5296}
+{"ts": "2026-10-23T09:20:38", "kind": "A3_heavy_cap", "code": "sz000983", "name": "山西焦煤", "amount": 192000.0, "single_ratio": 0.2165}
+{"ts": "2026-10-23T09:29:39", "kind": "A3_heavy_cap", "code": "sz000983", "name": "山西焦煤", "amount": 192000.0, "single_ratio": 0.2165}
+{"ts": "2026-10-23T10:21:04", "kind": "A3_heavy_cap", "code": "sz000983", "name": "山西焦煤", "amount": 192000.0, "single_ratio": 0.2165}
+{"ts": "2026-10-26T09:31:29", "kind": "A1_position_gate", "code": "sz300397", "name": "天和防务", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:30", "kind": "A1_position_gate", "code": "sz300424", "name": "航新科技", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:31", "kind": "A1_position_gate", "code": "sh605088", "name": "冠盛股份", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:32", "kind": "A1_position_gate", "code": "sz300560", "name": "中富通", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:34", "kind": "A1_position_gate", "code": "sz300873", "name": "海晨股份", "ratio": 0.8377, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:35", "kind": "A1_position_gate", "code": "sh600522", "name": "中天科技", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:36", "kind": "A1_position_gate", "code": "sz000938", "name": "紫光股份", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:37", "kind": "A1_position_gate", "code": "sz300059", "name": "东方财富", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:39", "kind": "A1_position_gate", "code": "sz000100", "name": "TCL科技", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:40", "kind": "A1_position_gate", "code": "sh601601", "name": "中国太保", "ratio": 0.8377, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:42", "kind": "A1_position_gate", "code": "sh601166", "name": "兴业银行", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:43", "kind": "A1_position_gate", "code": "sz300017", "name": "网宿科技", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:44", "kind": "A1_position_gate", "code": "sz000498", "name": "山东路桥", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:45", "kind": "A1_position_gate", "code": "sh603993", "name": "洛阳钼业", "ratio": 0.8376, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:47", "kind": "A1_position_gate", "code": "sz000560", "name": "我爱我家", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:48", "kind": "A1_position_gate", "code": "sz001234", "name": "泰慕士", "ratio": 0.8377, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:50", "kind": "A1_position_gate", "code": "sh603949", "name": "雪龙集团", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:51", "kind": "A1_position_gate", "code": "sh603668", "name": "天马科技", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:52", "kind": "A1_position_gate", "code": "sh600363", "name": "联创光电", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:54", "kind": "A1_position_gate", "code": "sz300781", "name": "因赛集团", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:55", "kind": "A1_position_gate", "code": "sz300380", "name": "安硕信息", "ratio": 0.8377, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:56", "kind": "A1_position_gate", "code": "sh603638", "name": "艾迪精密", "ratio": 0.8379, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:58", "kind": "A1_position_gate", "code": "sh600601", "name": "方正科技", "ratio": 0.838, "threshold": 0.8}
+{"ts": "2026-10-26T09:31:59", "kind": "A1_position_gate", "code": "sz000582", "name": "北部湾港", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:01", "kind": "A1_position_gate", "code": "sh600359", "name": "新农开发", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:02", "kind": "A1_position_gate", "code": "sh600108", "name": "亚盛集团", "ratio": 0.8378, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:03", "kind": "A1_position_gate", "code": "sz300110", "name": "华仁药业", "ratio": 0.8381, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:04", "kind": "A1_position_gate", "code": "sh603636", "name": "南威软件", "ratio": 0.8376, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:06", "kind": "A1_position_gate", "code": "sz300411", "name": "金盾股份", "ratio": 0.8377, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:35", "kind": "A1_position_gate", "code": "sh601890", "name": "亚星锚链", "ratio": 0.8368, "threshold": 0.8}
+{"ts": "2026-10-26T09:32:37", "kind": "A1_position_gate", "code": "sz002189", "name": "中光学", "ratio": 0.8367, "threshold": 0.8}
+{"ts": "2026-10-26T09:33:27", "kind": "A1_position_gate", "code": "sh601890", "name": "亚星锚链", "ratio": 0.8371, "threshold": 0.8}

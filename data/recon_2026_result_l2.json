@@ -1,0 +1,101 @@
+{
+ "keys": 498,
+ "ok_pair": 485,
+ "qty_diff": 0,
+ "true_gap_ws": [],
+ "true_gap_lc": [
+  {
+   "date": "20260824",
+   "code": "000017",
+   "action": "buy",
+   "qty": 1500,
+   "name": "深中华A"
+  },
+  {
+   "date": "20260824",
+   "code": "000710",
+   "action": "buy",
+   "qty": 2500,
+   "name": "贝瑞基因"
+  },
+  {
+   "date": "20260824",
+   "code": "002038",
+   "action": "buy",
+   "qty": 4100,
+   "name": "双鹭药业"
+  },
+  {
+   "date": "20260824",
+   "code": "002132",
+   "action": "buy",
+   "qty": 5000,
+   "name": "恒星科技"
+  },
+  {
+   "date": "20260824",
+   "code": "002703",
+   "action": "buy",
+   "qty": 800,
+   "name": "浙江世宝"
+  },
+  {
+   "date": "20260824",
+   "code": "300016",
+   "action": "buy",
+   "qty": 2500,
+   "name": "北陆药业"
+  },
+  {
+   "date": "20260824",
+   "code": "600531",
+   "action": "buy",
+   "qty": 1700,
+   "name": "豫光金铅"
+  },
+  {
+   "date": "20260824",
+   "code": "600916",
+   "action": "buy",
+   "qty": 3000,
+   "name": "中国黄金"
+  },
+  {
+   "date": "20260824",
+   "code": "601169",
+   "action": "buy",
+   "qty": 3000,
+   "name": "北京银行"
+  },
+  {
+   "date": "20260824",
+   "code": "601997",
+   "action": "buy",
+   "qty": 3000,
+   "name": "贵阳银行"
+  },
+  {
+   "date": "20260901",
+   "code": "000001",
+   "action": "sell",
+   "qty": 200,
+   "name": "平安银行"
+  },
+  {
+   "date": "20260901",
+   "code": "600928",
+   "action": "sell",
+   "qty": 800,
+   "name": "西安银行"
+  },
+  {
+   "date": "20260901",
+   "code": "601229",
+   "action": "sell",
+   "qty": 600,
+   "name": "上海银行"
+  }
+ ],
+ "zero_price": [],
+ "qty_diff_detail": []
+}

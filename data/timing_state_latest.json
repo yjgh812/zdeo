@@ -1,0 +1,21 @@
+{
+  "latest": {
+    "date": 20261027,
+    "zt_cnt": 53,
+    "gear_prev": "强档61-79",
+    "gear_today": "中档40-60",
+    "ew_ret": -2.5831,
+    "f5": -4.2942,
+    "f20": -11.8189,
+    "in_sample": false
+  },
+  "gates": {
+    "shadow_days": 11,
+    "strong_n": 4,
+    "f5_med": -3.47,
+    "f5_win": 0.0,
+    "verdict": "未满窗",
+    "gate_detail": "G1(f5med>=+0.5):False G2(win>=55):False G3(n>=30):False"
+  },
+  "generated": 20261027
+}

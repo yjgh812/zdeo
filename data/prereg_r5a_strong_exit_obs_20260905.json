@@ -1,0 +1,30 @@
+{
+  "id": "20260905-r5a-strong-exit-obs-v1",
+  "ts": "2026-09-05T17:45:00",
+  "object": "R5a持有周期退出·强势票卖出观察登记 —— 事项②prereg观察先行（主人未裁决，维持现状；裁决备忘录 reports/RULING_MEMO_S5_R5A_20260905.md 推荐路径落地）",
+  "origin": "9/4 R5a持有周期退出卖出北京银行时浮盈+8.56%（5日+10.02%全周最强银行），与在册'卖后上涨59%偏早三连'（C6+分层+K1）教训同族；但观察窗仅1日（卖后+0.18%）不能定性卖错，可判定样本n=1——按主人9/5'全部测试后再说结论'纪律，不因单案例改规则",
+  "boundary_LOCKED": "零生产改动：本登记仅为观察台账预注册，不修改R5a规则本体、不拦截任何现有卖出、不构成立项；未来若触发立项条件，须主人显式裁决+wfa_gate式预注册+新指纹后方可改码",
+  "observation_LOCKED": {
+    "纳入条件": "R5a持有周期退出(holding_period_check)触发的卖出，且卖出时点浮盈≥+5%（以executor台账note含'R5a'或guard_precheck_log source=pre_sell当日R5a卖出记录为准）",
+    "逐例记录字段": "代码/名称/卖出日/卖出价/成本/触发时浮盈/触发时5日涨幅/卖出理由台账原文/卖出后5d-10d-20d实际涨跌幅/卖出后区间最高涨幅/当前判定(卖对/卖早/正常)",
+    "起始口径": "前瞻登记自20260905起；案例#1= motivating case 北京银行(9/4卖@5.59,浮盈+8.56%,5日+10.02%)——已如实标注为动机案例非盲样本，立项判定只计#1之外的新案例",
+    "排除": "调仓换股类别(月度调仓/主人显式授权)不纳入；-8%止损(A案S-5通道)不纳入；浮盈<5%的R5a卖出不纳入"
+  },
+  "decision_rule_LOCKED": "积累≥2个新案例(不含motivating case)后复核：若≥半数案例卖出后10日内最大涨幅≥+5%(系统性卖飞特征)→提请主人裁决立项强势票豁免(A/B方案带新指纹)；若案例卖出后以横跌为主→本观察归档关闭，R5a维持现状不再重开；不足2案例前不做任何结论",
+  "case_log": [
+    {
+      "case": 1,
+      "role": "motivating",
+      "code": "sh601169",
+      "name": "北京银行",
+      "sell_date": "20260904",
+      "sell_price": 5.59,
+      "pnl_at_trigger": 0.0856,
+      "chg5d_at_trigger": 0.1002,
+      "ledger_note": "理由=R5a_t1 持有周期退出(holding_period_check)|pre_sell SELL_OK",
+      "followup": "9/4卖后当日+0.18%；5/10/20日跟踪中"
+    }
+  ],
+  "data_sources": ["data/executor_orders.jsonl(note含R5a)", "attribution.db/guard_precheck_log(source=pre_sell)", "westock成交真值", "tdx日线跟踪"],
+  "review_checkpoint": "每出现新案例时即记case_log并复核decision_rule；无案例则每月1日例行复核一次"
+}

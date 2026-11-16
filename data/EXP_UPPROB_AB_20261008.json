@@ -1,0 +1,53 @@
+{
+  "experiment": "EXP_UPPROB_AB_20261008",
+  "title": "上涨概率排序A/B验证单（12只x1.5万小仓）",
+  "owner_order": "主人2026-10-08凌晨令「开盘后模拟盘买入这12只股票，论证你选股的结果」",
+  "source": "upprob_ab",
+  "source_precedent": "baya_pattern(2026-10-03主人令『开盘后买入这几只股票，来验证』同构先例)",
+  "created_at": "2026-10-08T01:30:00+08:00",
+  "trade_date": "20261008",
+  "execution_automation": "automation-e10dbd2c-c9ac-47ff-9c3d-9948527e4730(0935一次性,结果落data/EXP_UPPROB_AB_20261008_results.json)",
+  "hypothesis": {
+    "statement": "forward_up_prob_gauge组级概率+9/28先行因子合成排序对T+20相对收益有区分度",
+    "primary_test": "A组(仪表组级A低位横盘4只) T+20相对上证超额均值 > R组(其余8只)",
+    "secondary_test": "总排名前4 vs 后8的T+20超额差>0",
+    "falsify_condition": "A组T+20超额均值<=R组 或 12只整体相对上证超额<-5%（环境统一否定）"
+  },
+  "groups": {
+    "A": ["600603", "002053", "603098", "300978"],
+    "R": ["002513", "000503", "000006", "603982", "600848", "600383", "603960", "601226"]
+  },
+  "orders": [
+    {"code": "600603", "name": "广汇物流",   "sector": "区域地产", "group": "A", "amount": 15000},
+    {"code": "002053", "name": "云南能投",   "sector": "新型电力", "group": "A", "amount": 15000},
+    {"code": "603098", "name": "森特股份",   "sector": "装修装饰", "group": "A", "amount": 15000, "note": "已持仓400股,加仓需--allow-add-position"},
+    {"code": "300978", "name": "东箭科技",   "sector": "汽车配件", "group": "A", "amount": 15000},
+    {"code": "002513", "name": "蓝丰生化",   "sector": "基础化工", "group": "R", "amount": 15000},
+    {"code": "000503", "name": "国新健康",   "sector": "软件服务", "group": "R", "amount": 15000},
+    {"code": "000006", "name": "深振业Ａ",   "sector": "区域地产", "group": "R", "amount": 15000},
+    {"code": "603982", "name": "泉峰汽车",   "sector": "汽车配件", "group": "R", "amount": 15000},
+    {"code": "600848", "name": "上海临港",   "sector": "园区开发", "group": "R", "amount": 15000},
+    {"code": "600383", "name": "金地集团",   "sector": "全国地产", "group": "R", "amount": 15000},
+    {"code": "603960", "name": "克来机电",   "sector": "汽车配件", "group": "R", "amount": 15000},
+    {"code": "601226", "name": "华电科工",   "sector": "建筑工程", "group": "R", "amount": 15000, "note": "已持仓12000股,加仓需--allow-add-position"}
+  ],
+  "protocol": {
+    "entry_window": "2026-10-08 09:35后逐只executor下单",
+    "anti_chase": "相对9/30收盘高开>3%跳过该只记skip_gap_up（baya先例防污染）",
+    "gate_policy": "任何闸门REJECT零特批（禁--owner-approve-*/--owner-override-*）；PD-037熔断触发即停当批",
+    "executor": "唯一入口trade_executor.py buy --source upprob_ab --amount 15000 --execute",
+    "stop_loss": "S-5 -8%硬止损照常生效（执行哨+strong_sell_watch不豁免）",
+    "evaluation": {
+      "t5_date": "2026-10-15",
+      "t20_date": "2026-11-05前后（20交易日）",
+      "metric": "T+5/T+20收盘相对上证同期超额、胜率；A组vs R组均值差=排序有效性主判据",
+      "benchmark": "上证指数000001.SH同期收盘"
+    }
+  },
+  "baseline_refs": {
+    "falsified_domain_warning": "BOX-BREAKOUT-LOWPOS(9/4三闸全FAIL)+突破确认区三臂全灭(10/3)+裸技术位突破追入-1.07%t-22(9/30)",
+    "gauge_verdict": "12只全部零/负期望占用候选(LOW_VOL弱市250日窗口)",
+    "probability_tiers": "A组T+1超额+0.09pp/T20E胜率44.6% vs R组-0.02pp/41.5%"
+  },
+  "rollback": "验证期结束或主人令终止后从_common.py EXPERIMENTAL_SOURCES移除upprob_ab"
+}

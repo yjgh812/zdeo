@@ -1,0 +1,399 @@
+{
+  "dist_n20": {
+    "n_stocks": 4503,
+    "mean_win": 48.52,
+    "median_win": 48.57,
+    "p90": 60.0,
+    "p95": 63.83,
+    "p99": 70.83,
+    "count_ge55": 1037,
+    "count_ge60": 474,
+    "count_ge_64_5": 190,
+    "count_ge50": 2054
+  },
+  "dist_n40": {
+    "n_stocks": 3591,
+    "mean_win": 48.37,
+    "median_win": 48.44,
+    "p90": 59.09,
+    "p95": 62.41,
+    "p99": 68.01,
+    "count_ge55": 750,
+    "count_ge60": 304,
+    "count_ge_64_5": 102,
+    "count_ge50": 1588
+  },
+  "split_half_spearman": {
+    "n_stocks": 4503,
+    "rho": 0.0862
+  },
+  "pool38_in_universe": [
+    {
+      "code": "601890",
+      "name": "亚星锚链",
+      "win": 64.5,
+      "n": 62,
+      "universe_pctile": 95.8
+    },
+    {
+      "code": "002189",
+      "name": "中光学",
+      "win": 62.0,
+      "n": 71,
+      "universe_pctile": 93.0
+    },
+    {
+      "code": "600372",
+      "name": "中航机载",
+      "win": 61.3,
+      "n": 62,
+      "universe_pctile": 91.9
+    },
+    {
+      "code": "603488",
+      "name": "展鹏科技",
+      "win": 61.2,
+      "n": 49,
+      "universe_pctile": 91.8
+    },
+    {
+      "code": "600990",
+      "name": "四创电子",
+      "win": 57.7,
+      "n": 78,
+      "universe_pctile": 84.5
+    },
+    {
+      "code": "002985",
+      "name": "北摩高科",
+      "win": 57.7,
+      "n": 26,
+      "universe_pctile": 84.5
+    },
+    {
+      "code": "300424",
+      "name": "航新科技",
+      "win": 57.4,
+      "n": 54,
+      "universe_pctile": 83.8
+    },
+    {
+      "code": "300252",
+      "name": "金信诺",
+      "win": 56.7,
+      "n": 67,
+      "universe_pctile": 82.1
+    },
+    {
+      "code": "600765",
+      "name": "中航重机",
+      "win": 56.5,
+      "n": 62,
+      "universe_pctile": 81.4
+    },
+    {
+      "code": "000519",
+      "name": "中兵红箭",
+      "win": 55.9,
+      "n": 59,
+      "universe_pctile": 80.0
+    },
+    {
+      "code": "600685",
+      "name": "中船防务",
+      "win": 55.8,
+      "n": 52,
+      "universe_pctile": 79.7
+    },
+    {
+      "code": "002519",
+      "name": "银河电子",
+      "win": 55.4,
+      "n": 56,
+      "universe_pctile": 78.4
+    },
+    {
+      "code": "002829",
+      "name": "星网宇达",
+      "win": 53.3,
+      "n": 45,
+      "universe_pctile": 71.5
+    },
+    {
+      "code": "600184",
+      "name": "光电股份",
+      "win": 52.6,
+      "n": 57,
+      "universe_pctile": 68.1
+    },
+    {
+      "code": "300722",
+      "name": "新余国科",
+      "win": 52.1,
+      "n": 48,
+      "universe_pctile": 65.9
+    },
+    {
+      "code": "000561",
+      "name": "烽火电子",
+      "win": 51.7,
+      "n": 58,
+      "universe_pctile": 64.4
+    },
+    {
+      "code": "600764",
+      "name": "中国海防",
+      "win": 51.6,
+      "n": 91,
+      "universe_pctile": 64.2
+    },
+    {
+      "code": "300775",
+      "name": "三角防务",
+      "win": 51.2,
+      "n": 41,
+      "universe_pctile": 62.5
+    },
+    {
+      "code": "300629",
+      "name": "新劲刚",
+      "win": 51.0,
+      "n": 51,
+      "universe_pctile": 61.6
+    },
+    {
+      "code": "000738",
+      "name": "航发控制",
+      "win": 51.0,
+      "n": 49,
+      "universe_pctile": 61.8
+    },
+    {
+      "code": "300447",
+      "name": "全信股份",
+      "win": 50.9,
+      "n": 55,
+      "universe_pctile": 61.2
+    },
+    {
+      "code": "300101",
+      "name": "振芯科技",
+      "win": 50.0,
+      "n": 64,
+      "universe_pctile": 56.9
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "win": 50.0,
+      "n": 32,
+      "universe_pctile": 56.9
+    },
+    {
+      "code": "600862",
+      "name": "中航高科",
+      "win": 50.0,
+      "n": 44,
+      "universe_pctile": 56.9
+    },
+    {
+      "code": "300397",
+      "name": "天和防务",
+      "win": 49.2,
+      "n": 65,
+      "universe_pctile": 52.9
+    },
+    {
+      "code": "002651",
+      "name": "利君股份",
+      "win": 49.1,
+      "n": 55,
+      "universe_pctile": 52.1
+    },
+    {
+      "code": "300008",
+      "name": "天海防务",
+      "win": 47.9,
+      "n": 73,
+      "universe_pctile": 47.8
+    },
+    {
+      "code": "300900",
+      "name": "广联航空",
+      "win": 47.6,
+      "n": 42,
+      "universe_pctile": 46.4
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "win": 46.7,
+      "n": 60,
+      "universe_pctile": 41.9
+    },
+    {
+      "code": "300065",
+      "name": "海兰信",
+      "win": 45.5,
+      "n": 77,
+      "universe_pctile": 35.9
+    },
+    {
+      "code": "000547",
+      "name": "航天发展",
+      "win": 43.8,
+      "n": 80,
+      "universe_pctile": 29.1
+    },
+    {
+      "code": "002625",
+      "name": "光启技术",
+      "win": 41.9,
+      "n": 43,
+      "universe_pctile": 22.3
+    },
+    {
+      "code": "300699",
+      "name": "光威复材",
+      "win": 41.2,
+      "n": 34,
+      "universe_pctile": 19.8
+    },
+    {
+      "code": "600855",
+      "name": "航天长峰",
+      "win": 39.7,
+      "n": 68,
+      "universe_pctile": 16.2
+    },
+    {
+      "code": "601698",
+      "name": "中国卫通",
+      "win": 36.8,
+      "n": 57,
+      "universe_pctile": 10.1
+    },
+    {
+      "code": "603712",
+      "name": "七一二",
+      "win": 34.5,
+      "n": 55,
+      "universe_pctile": 6.3
+    },
+    {
+      "code": "300034",
+      "name": "钢研高纳",
+      "win": 29.5,
+      "n": 44,
+      "universe_pctile": 2.3
+    }
+  ],
+  "pool_vs_out": {
+    "pool_mean": 50.57,
+    "pool_n": 37,
+    "out_mean": 48.5,
+    "out_n": 4466
+  },
+  "universe_top20_n40": [
+    {
+      "code": "603356",
+      "n": 53,
+      "win": 77.4
+    },
+    {
+      "code": "603967",
+      "n": 43,
+      "win": 76.7
+    },
+    {
+      "code": "603386",
+      "n": 45,
+      "win": 75.6
+    },
+    {
+      "code": "002043",
+      "n": 40,
+      "win": 75.0
+    },
+    {
+      "code": "002033",
+      "n": 45,
+      "win": 73.3
+    },
+    {
+      "code": "000510",
+      "n": 52,
+      "win": 73.1
+    },
+    {
+      "code": "002546",
+      "n": 48,
+      "win": 72.9
+    },
+    {
+      "code": "000848",
+      "n": 58,
+      "win": 72.4
+    },
+    {
+      "code": "600690",
+      "n": 50,
+      "win": 72.0
+    },
+    {
+      "code": "603139",
+      "n": 46,
+      "win": 71.7
+    },
+    {
+      "code": "000920",
+      "n": 46,
+      "win": 71.7
+    },
+    {
+      "code": "600054",
+      "n": 48,
+      "win": 70.8
+    },
+    {
+      "code": "603289",
+      "n": 48,
+      "win": 70.8
+    },
+    {
+      "code": "000973",
+      "n": 41,
+      "win": 70.7
+    },
+    {
+      "code": "603116",
+      "n": 64,
+      "win": 70.3
+    },
+    {
+      "code": "300154",
+      "n": 47,
+      "win": 70.2
+    },
+    {
+      "code": "002328",
+      "n": 50,
+      "win": 70.0
+    },
+    {
+      "code": "300460",
+      "n": 40,
+      "win": 70.0
+    },
+    {
+      "code": "001872",
+      "n": 40,
+      "win": 70.0
+    },
+    {
+      "code": "002278",
+      "n": 50,
+      "win": 70.0
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>屠龙系统 v1 · 盘中面板</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { darkMode: 'class', theme: { extend: {} } }
+</script>
+<style>
+body { font-family: system-ui, -apple-system, sans-serif; tab-size: 2; }
+.kpi-card { @apply rounded-xl px-4 py-3 text-sm relative overflow-hidden; }
+.kpi-card .bg-glow { @apply absolute inset-0 opacity-[0.04]; }
+.kpi-value { font-variant-numeric: tabular-nums; }
+.severity-critical { @apply text-red-400; }
+.severity-warn { @apply text-yellow-400; }
+.severity-info { @apply text-blue-400; }
+.arrow-up { color: #f87171; }
+.arrow-down { color: #34d399; }
+/* emotion radar SVG minimal */
+.radar-bg { fill: none; stroke: #374151; stroke-width: 1; }
+.radar-fill { fill: rgba(59,130,246,0.25); stroke: #3b82f6; stroke-width: 2; }
+</style>
+</head>
+<body class="bg-gray-950 text-gray-200 min-h-screen p-4">
+<div class="max-w-7xl mx-auto">
+  <header class="flex items-center justify-between mb-4">
+    <h1 class="text-lg font-semibold tracking-tight">🐉 屠龙系统 · 盘中面板</h1>
+    <div class="flex gap-3 text-xs text-gray-400">
+      <span id="data-date">—</span>
+      <span id="session-status">—</span>
+      <span id="refresh-time">—</span>
+    </div>
+  </header>
+
+  <!-- KPI row -->
+  <div class="grid grid-cols-4 gap-3 mb-4" id="kpi-row"></div>
+
+  <!-- 3-column middle -->
+  <div class="grid grid-cols-12 gap-3 mb-4">
+    <div class="col-span-3 bg-gray-900 rounded-xl p-3">
+      <div class="text-xs text-gray-400 mb-2">概念轮动 · 今日Top10</div>
+      <div id="rps-concept" class="text-xs space-y-1"></div>
+    </div>
+    <div class="col-span-3 bg-gray-900 rounded-xl p-3">
+      <div class="text-xs text-gray-400 mb-2">行业轮动 · 今日Top10</div>
+      <div id="rps-industry" class="text-xs space-y-1"></div>
+    </div>
+    <div class="col-span-3 bg-gray-900 rounded-xl p-3">
+      <div class="text-xs text-gray-400 mb-2">封单快照 · 封单额Top</div>
+      <div id="seal-panel" class="text-xs space-y-1"></div>
+    </div>
+    <div class="col-span-3 bg-gray-900 rounded-xl p-3" id="emotion-panel">
+      <div class="text-xs text-gray-400 mb-2">情绪六维雷达</div>
+      <div id="emotion-content"></div>
+    </div>
+  </div>
+
+  <!-- Monitor events + positions -->
+  <div class="grid grid-cols-12 gap-3">
+    <div class="col-span-7 bg-gray-900 rounded-xl p-3">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs text-gray-400">监控事件 · 实时推送</span>
+        <span id="event-count" class="text-xs text-gray-500">0</span>
+      </div>
+      <div id="event-list" class="text-xs space-y-1 max-h-60 overflow-y-auto"></div>
+    </div>
+    <div class="col-span-5 bg-gray-900 rounded-xl p-3">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-xs text-gray-400">持仓 · 盈亏排序</span>
+        <span id="pos-summary" class="text-xs text-gray-500"></span>
+      </div>
+      <div id="pos-list" class="text-xs space-y-0.5 max-h-60 overflow-y-auto font-mono"></div>
+    </div>
+  </div>
+
+  <!-- ═══ A6 纪律看板（2026-08-16 新增）═══ -->
+  <div class="grid grid-cols-12 gap-3 mt-4">
+    <div class="col-span-12 bg-gray-900 rounded-xl p-3">
+      <div class="flex items-center justify-between mb-2">
+        <span class="text-xs text-gray-400">🎯 纪律看板 · 每日违规统计</span>
+        <div class="flex gap-2 text-xs" id="disc-header">
+          <span id="disc-date" class="text-gray-500">—</span>
+          <span id="disc-light" class="px-2 py-0.5 rounded">—</span>
+        </div>
+      </div>
+      <!-- 四类违规卡 -->
+      <div class="grid grid-cols-4 gap-3 mb-3" id="disc-cards"></div>
+      <!-- 裸奔/合规率 + 同分钟 -->
+      <div class="grid grid-cols-3 gap-3 mb-3" id="disc-metrics"></div>
+      <!-- 明细表 + 健康巡检 -->
+      <div class="grid grid-cols-12 gap-3">
+        <div class="col-span-7 bg-gray-800/50 rounded-lg p-2">
+          <div class="text-xs text-gray-400 mb-1">违规明细（裸奔/超价/非主线）</div>
+          <div id="disc-detail" class="text-xs space-y-0.5 max-h-40 overflow-y-auto font-mono"></div>
+        </div>
+        <div class="col-span-5 bg-gray-800/50 rounded-lg p-2">
+          <div class="text-xs text-gray-400 mb-1">健康巡检 · 周报</div>
+          <div id="disc-health" class="text-xs space-y-1 max-h-40 overflow-y-auto"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = window.location.origin;
+
+// Helper
+function v(v) { return v ?? '—'; }
+
+// KPI
+async function loadKPI() {
+  const o = await fetch(API+'/api/overview').then(r=>r.json());
+  document.getElementById('data-date').textContent = `📅 ${o.date}`;
+  document.getElementById('session-status').textContent = o.session ? '🟢 盘中' : '⚫ 盘后';
+  document.getElementById('refresh-time').textContent = `⏱ ${new Date().toLocaleTimeString()}`;
+  document.getElementById('kpi-row').innerHTML = `
+    <div class="kpi-card bg-gray-900">
+      <div class="text-gray-400 text-xs">持仓</div>
+      <div class="kpi-value text-2xl font-bold">${o.positions}</div>
+      <div class="text-gray-500 text-xs">只</div>
+    </div>
+    <div class="kpi-card bg-gray-900">
+      <div class="text-gray-400 text-xs">涨停 / 炸板</div>
+      <div class="kpi-value text-2xl font-bold">${o.sealed}<span class="text-gray-400 text-base">/</span>${o.broken}</div>
+      <div class="text-gray-500 text-xs">封板率 ${o.seal_rate}%</div>
+    </div>
+    <div class="kpi-card bg-gray-900">
+      <div class="text-gray-400 text-xs">情绪评分</div>
+      <div class="kpi-value text-2xl font-bold" id="emotion-score">—</div>
+      <div class="text-gray-500 text-xs" id="emotion-label"></div>
+    </div>
+    <div class="kpi-card bg-gray-900">
+      <div class="text-gray-400 text-xs">监控事件</div>
+      <div class="kpi-value text-2xl font-bold">${o.events_today}</div>
+      <div class="text-gray-500 text-xs">累计</div>
+    </div>
+  `;
+}
+
+// Emotion
+async function loadEmotion() {
+  const e = await fetch(API+'/api/emotion').then(r=>r.json());
+  document.getElementById('emotion-score').textContent = e.score;
+  document.getElementById('emotion-label').textContent = e.label;
+  const radar = e.radar || {};
+  let html = '<div class="grid grid-cols-2 gap-x-3 gap-y-0.5 text-xs">';
+  const keys = [['index','指数'],['profit','赚钱'],['money','量能'],['speculation','投机'],['resilience','抗跌'],['mainline','主线']];
+  for (const [k,label] of keys) {
+    const v = radar[k] ?? 50;
+    const color = v >= 70 ? 'text-green-400' : v >= 55 ? 'text-yellow-400' : v >= 45 ? 'text-gray-300' : v >= 30 ? 'text-orange-400' : 'text-red-400';
+    html += `<div><span class="text-gray-400">${label}</span> <span class="${color} font-bold">${v}</span></div>`;
+  }
+  html += '</div>';
+  document.getElementById('emotion-content').innerHTML = html;
+}
+
+// RPS
+async function loadRPS(kind, elId) {
+  const d = await fetch(API+`/api/rps/${kind}`).then(r=>r.json());
+  const items = d.today_top || [];
+  document.getElementById(elId).innerHTML = items.map((x,i) =>
+    `<div class="flex justify-between ${i<3?'text-gray-200':'text-gray-400'}"><span>${x.dim}</span><span class="${x.avg_pct>=0?'text-red-400':'text-green-400'}">${(x.avg_pct||0).toFixed(1)}%</span></div>`
+  ).join('');
+}
+
+// Seal
+async function loadSeal() {
+  const s = await fetch(API+'/api/seal').then(r=>r.json());
+  const items = s.top10 || [];
+  document.getElementById('seal-panel').innerHTML = `
+    <div class="text-xs text-gray-400 mb-1">${s.date} · 封板率 ${s.seal_rate}%</div>
+    ${items.map(x => `<div class="flex justify-between text-xs"><span>${x.code} ${x.name}</span><span class="text-yellow-400">${x.amount_yi}亿</span></div>`).join('')}
+  `;
+}
+
+// Positions
+async function loadPositions() {
+  const p = await fetch(API+'/api/positions').then(r=>r.json());
+  const items = p.items || [];
+  const pl = p.pnl || 0;
+  document.getElementById('pos-summary').textContent = `${p.total}只 盈亏 ${pl>=0?'+':''}${(pl/10000).toFixed(2)}万`;
+  document.getElementById('pos-list').innerHTML = items.map(x =>
+    `<div class="flex justify-between ${x.profit<0?'text-red-400/80':'text-green-400/80'}"><span>${x.name}</span><span>${(x.profit/10000).toFixed(1)}万</span></div>`
+  ).join('');
+}
+
+// Events (REST)
+async function loadEvents() {
+  const e = await fetch(API+'/api/events?limit=20').then(r=>r.json());
+  const items = e.items || [];
+  document.getElementById('event-count').textContent = items.length;
+  document.getElementById('event-list').innerHTML = items.map(x =>
+    `<div class="severity-${x.severity} flex justify-between items-start"><span>${x.ts.slice(11,16)} ${x.name}</span><span class="text-gray-400">${x.rule_name}</span></div>`
+  ).join('');
+}
+
+// SSE for real-time events
+function connectSSE() {
+  const es = new EventSource(API+'/api/stream');
+  es.addEventListener('monitor', e => {
+    const data = JSON.parse(e.data);
+    const el = document.getElementById('event-list');
+    const row = `<div class="severity-${data.severity} flex justify-between items-start animate-pulse"><span>${data.ts.slice(11,16)} ${data.name}</span><span class="text-gray-400">${data.rule_name}</span></div>`;
+    el.innerHTML = row + el.innerHTML;
+    const count = document.getElementById('event-count');
+    count.textContent = parseInt(count.textContent) + 1;
+  });
+  es.onerror = () => { es.close(); setTimeout(connectSSE, 10000); };
+}
+
+// ═══ A6 纪律看板 ═══
+function discLight(level) {
+  return level === 'ERROR' ? ['🔴 ERROR', 'bg-red-500/20 text-red-300 border border-red-500/40']
+       : level === 'WARN'  ? ['🟡 WARN', 'bg-yellow-500/20 text-yellow-300 border border-yellow-500/40']
+       : ['🟢 OK', 'bg-green-500/20 text-green-300 border border-green-500/40'];
+}
+
+async function loadDiscipline() {
+  const d = await fetch(API+'/api/discipline').then(r=>r.json()).catch(()=>null);
+  if (!d || d.error) {
+    document.getElementById('disc-date').textContent = '⚠️ ' + (d?.error || '无数据');
+    return;
+  }
+  const [light, cls] = discLight(d.level);
+  document.getElementById('disc-date').textContent = `📅 ${d.date}`;
+  const lightEl = document.getElementById('disc-light');
+  lightEl.textContent = light; lightEl.className = `px-2 py-0.5 rounded text-xs ${cls}`;
+
+  // 四类违规卡
+  const cards = [
+    ['批量', d.batch_reject ?? 0, d.batch_reject > 0 ? 'text-yellow-300' : 'text-green-400'],
+    ['超价(>30)', d.overprice ?? 0, d.overprice > 0 ? 'text-red-400' : 'text-green-400'],
+    ['非主线', d.offplan ?? 0, d.offplan > 0 ? 'text-red-400' : 'text-green-400'],
+    ['同分钟峰值', `${d.minute_peak??0}@${d.minute_peak_min||'—'}`, (d.minute_level==='err'?'text-red-400':d.minute_level==='warn'?'text-yellow-300':'text-green-400')],
+  ];
+  document.getElementById('disc-cards').innerHTML = cards.map(([k,val,color]) => `
+    <div class="kpi-card bg-gray-800/50">
+      <div class="text-gray-400 text-xs">${k}</div>
+      <div class="kpi-value text-2xl font-bold ${color}">${val}</div>
+    </div>`).join('');
+
+  // 裸奔/合规率 + precheck
+  document.getElementById('disc-metrics').innerHTML = `
+    <div class="bg-gray-800/50 rounded-lg p-2 text-center">
+      <div class="text-gray-400 text-xs">裸奔买入</div>
+      <div class="text-2xl font-bold ${d.naked_buys>0?'text-red-400':'text-green-400'}">${d.naked_buys} 笔</div>
+    </div>
+    <div class="bg-gray-800/50 rounded-lg p-2 text-center">
+      <div class="text-gray-400 text-xs">合规率</div>
+      <div class="text-2xl font-bold ${d.compliance_rate>=95?'text-green-400':d.compliance_rate>=80?'text-yellow-300':'text-red-400'}">${d.compliance_rate}%</div>
+    </div>
+    <div class="bg-gray-800/50 rounded-lg p-2 text-center">
+      <div class="text-gray-400 text-xs">precheck 调用</div>
+      <div class="text-2xl font-bold">${d.precheck_calls} 次</div>
+    </div>`;
+
+  // 明细
+  const det = [];
+  (d.overprice_detail||[]).slice(0,5).forEach(x => det.push(`<div class="text-red-400">超价 ${x.code} ${x.name} ${x.price}元</div>`));
+  (d.offplan_detail||[]).slice(0,5).forEach(x => det.push(`<div class="text-orange-300">清单外 ${x.code} ${x.name} ${x.price}元</div>`));
+  (d.details||[]).slice(0,5).forEach(x => det.push(`<div class="text-yellow-300">裸奔 ${x.code} ${x.name} ${x.price}元</div>`));
+  document.getElementById('disc-detail').innerHTML = det.length ? det.join('') : '<div class="text-green-400">✅ 无违规明细</div>';
+
+  // 健康 + 周报（并行）
+  const h = await fetch(API+'/api/health').then(r=>r.json()).catch(()=>null);
+  const w = await fetch(API+'/api/weekly').then(r=>r.json()).catch(()=>null);
+  let htxt = '';
+  if (h?.health_check) {
+    const hc = h.health_check;
+    htxt += `<div>巡检 ${hc.level||'—'} ${hc.level==='ERROR'?'❌':hc.level==='WARN'?'⚠️':'✅'} 表新鲜度预期 ${hc.expected_trading_date||'—'} 磁盘 ${hc.disk_free_gb??'—'}G</div>`;
+    if (hc.gate_smoke) htxt += `<div class="text-gray-400">闸门冒烟 ${hc.gate_smoke.passed}/${hc.gate_smoke.total} 通过</div>`;
+    if (hc.errors?.length) htxt += `<div class="text-red-400">${hc.errors.slice(0,3).join('；')}</div>`;
+  }
+  if (h?.system_health) {
+    const sh = h.system_health;
+    htxt += `<div class="text-gray-400">冒烟 ${sh.passed}/${sh.total} 通过 ${sh.failed>0?'(fail '+sh.failed+')':''}</div>`;
+  }
+  if (w && !w.error) {
+    htxt += `<div class="mt-1">周报 ${w.days}日 合规率 <span class="${w.compliance_rate>=95?'text-green-400':w.compliance_rate>=80?'text-yellow-300':'text-red-400'}">${w.compliance_rate}%</span></div>`;
+    htxt += `<div class="text-gray-400">批量${w.batch} 超价${w.overprice} 非主线${w.offplan}</div>`;
+  }
+  document.getElementById('disc-health').innerHTML = htxt || '<div class="text-gray-500">无数据</div>';
+}
+
+// auto-refresh
+function refresh() {
+  loadKPI(); loadEmotion(); loadRPS('concept','rps-concept');
+  loadRPS('industry','rps-industry'); loadSeal(); loadPositions(); loadEvents();
+  loadDiscipline();
+}
+refresh();
+connectSSE();
+setInterval(refresh, 30000);
+</script>
+</body>
+</html>

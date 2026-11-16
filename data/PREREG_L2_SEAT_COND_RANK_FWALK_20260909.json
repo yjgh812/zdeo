@@ -1,0 +1,33 @@
+{
+  "id": "PREREG_L2_SEAT_COND_RANK_FWALK_20260909",
+  "created": "2026-09-09",
+  "hypothesis": "龙虎榜事件内机构席位净买占比(inst_ratio)的条件排序效应在样本外持续为正——即『同日同榜事件中，机构净买占比高者其后 10 交易日超额收益更高』在 2026-09-10 起的前向数据中复现（L-2 翻案，主人 2026-09-09 裁决；Stage A 机制诊断已先行通过，见 prior_context）。",
+  "why_forward_walk": "stage-1 发现该效应用的正是 2020-2026.09 全部历史（分年 IC 2020-2026 全正、无未触摸历史段可用），前向 walk 是唯一真样本外（照 PREREG_KRONOS_FWALK_20260905 实时前 walk 先例）。与 M-2 不同：L-2 分年 IC 无近年弱化现象（2025 +0.040/2026 +0.045 均稳）。",
+  "prior_context_stageA_20260909": {
+    "A1_冻结门_PASS": "fwd20 事件内 IC=+0.0329（持有期持续性成立，支持机构建仓/持续吸筹机制解释；fwd5/10/20/40 全正见 stageA_result.json）",
+    "A2_榜型分组": "涨榜(≥5%) t=+4.73/超额差+1.79% | 中间 t=+3.40/+1.75% | 跌榜(≤-5%) t=+2.07/+0.83% —— 全组别正，涨榜最强",
+    "A3_市值桶": "同日同流通市值五分位桶内 IC=+0.0435/t=+9.13 —— 小盘混杂彻底排除且调整后更强",
+    "A4_分年": "2020-2026 逐年 IC 全正",
+    "诚实声明": "机构建仓语义与『2020+ 市场结构变化』同可解释上列事实；Stage B 前向检验在现行市场结构下裁决持续性"
+  },
+  "classifier_frozen": {
+    "高组": "inst_ratio ≥ 0.0294（2020-01~2026-09-08 事件分布 p80）",
+    "低组": "inst_ratio ≤ -0.0416（同分布 p20）",
+    "signal_definition": "inst_ratio = Σnet(机构专用)/Σ(buy+sell)，按(交易日,标的)聚合跨上榜原因合并（3~6% 口径差为已知噪声），与 stage-1 完全同构"
+  },
+  "forward_protocol_frozen": {
+    "window_start": "2026-09-10（首个交易日）",
+    "outcome": "fwd10 相对同日全部 LHB 事件等权基准的超额（close 事件日→close+10 交易日）；事件日+10 交易日超出数据末日的样本不计入",
+    "checkpoint": "2026-12-31 首评（automation 已挂一次性提醒）；高/低组完整事件各 ≥60 方可判定，不足则顺延至次月末重评并如实记录",
+    "promotion_criteria": "①高组均值超额 > 低组均值超额 ②高−低 日度聚类 t ≥ 2.0（按事件日聚合） ③月度方向一致率 ≥60%（≥3 个月）→ 三项全过=PASS_CANDIDATE",
+    "fail_semantics": "任一不满足=该公式关闭（trial_budget=1，翻案须新指纹+新前提）",
+    "pass_semantics": "仅提请『LHB 事件内条件排序』独立研究信号族立项——生产接线另须 wfa_gate 新指纹+主人逐项裁决+与名单制买入通道兼容性论证；本 prereg 的 PASS 不构成任何生产放行"
+  },
+  "evaluation_tooling": "l2_seat_cond_rank_fwalk_eval.py（asof 参数化，从 lhb_seat_detail 读前向事件，lhb_update.py aux 链日更保证数据在库，无需每日采集作业）",
+  "execution": {
+    "script_A": "D:\\zcodesj\\l2_seat_cond_rank_stageA.py",
+    "script_B": "D:\\zcodesj\\l2_seat_cond_rank_fwalk_eval.py",
+    "output_dir": "D:\\zcodesj\\reports\\L2_SEAT_COND_RANK_20260909\\",
+    "data_sources": ["fundamental_data.db lhb_seat_detail", "workbuddyspace dragon_quant_qfq.db", "fundamental_data.db daily_basic(仅Stage A市值桶)"]
+  }
+}

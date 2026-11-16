@@ -1,0 +1,12 @@
+{
+  "id": "PREREG_VOLTARGET_SHADOW_20261002",
+  "created": "2026-10-02",
+  "scope": "账户级波动率目标仓位影子(PD-015采纳路径第一步,主人「继续」批准): 纯记录零交易权",
+  "mechanism": "每日收盘记录 total_assets/exposure/ret_1d/nav_vol20_ann/idx_vol20_ann/w15_account/w15_idx/w10_idx → data/vol_target_shadow.jsonl (同日UPSERT)",
+  "caliber": "主口径=账户已实现20日年化波动(前20交易日积累期输出null); 代理口径=沪深300本地vipdoc 20日波动(指数≠持仓仅早期参考); 判读分开呈现不混用",
+  "duration": "对照窗=台账满20日样本后的60交易日",
+  "readout": "模拟曲线=账户日收益×月末目标权重w=min(1,c/σ̂20) vs 实际账户净值; 指标=年化波动/最大回撤/CAGR三对照+分年; 读出仅跑一次",
+  "gates": "G1=模拟年化波动较实际降幅≥5pp; G2=模拟MDD较实际收窄≥10pp; G3=模拟CAGR损失≤2pp; 三门全过→呈请主人裁决采用(仍须第二道主人令); 任一不过→归档不再提",
+  "boundary": "零生产接线零下单; c=15%主档/c=10%敏感性并行; 指数代理口径不单独作判读依据; 永不加杠杆(w≤1)",
+  "fingerprint": "6c384bda23806d18"
+}

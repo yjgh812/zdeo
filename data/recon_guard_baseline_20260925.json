@@ -1,0 +1,628 @@
+{
+ "frozen_at": "2026-09-25",
+ "note": "存量粒度残差基线: PRICE=多笔成交回报聚合残差/幽灵标注组; 守卫日常模式(当日增量)不覆盖本清单",
+ "diff_groups": 77,
+ "by_month": {
+  "202609": 13,
+  "202608": 62,
+  "202607": 2
+ },
+ "items": [
+  {
+   "type": "QTY",
+   "date": "20260901",
+   "code": "000001",
+   "action": "sell",
+   "westock": 0,
+   "local": 200
+  },
+  {
+   "type": "PRICE",
+   "date": "20260902",
+   "code": "000001",
+   "action": "sell",
+   "ws_vwap": 11.889,
+   "lc_vwap": 11.92
+  },
+  {
+   "type": "PRICE",
+   "date": "20260907",
+   "code": "000001",
+   "action": "sell",
+   "ws_vwap": 11.647,
+   "lc_vwap": 11.67
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "000017",
+   "action": "buy",
+   "westock": 0,
+   "local": 1500
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "000063",
+   "action": "buy",
+   "ws_vwap": 34.605,
+   "lc_vwap": 34.58
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "000063",
+   "action": "sell",
+   "ws_vwap": 35.177,
+   "lc_vwap": 35.22
+  },
+  {
+   "type": "PRICE",
+   "date": "20260826",
+   "code": "000513",
+   "action": "sell",
+   "ws_vwap": 26.297,
+   "lc_vwap": 26.32
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "000668",
+   "action": "buy",
+   "ws_vwap": 21.365,
+   "lc_vwap": 21.315
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "000668",
+   "action": "sell",
+   "ws_vwap": 21.854,
+   "lc_vwap": 21.89
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "000710",
+   "action": "buy",
+   "ws_vwap": 9.83,
+   "lc_vwap": 9.78
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "000710",
+   "action": "sell",
+   "ws_vwap": 9.365,
+   "lc_vwap": 9.42
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "000710",
+   "action": "buy",
+   "westock": 0,
+   "local": 2500
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "001300",
+   "action": "buy",
+   "ws_vwap": 11.12,
+   "lc_vwap": 11.07
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "001300",
+   "action": "sell",
+   "ws_vwap": 11.134,
+   "lc_vwap": 11.19
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "001388",
+   "action": "buy",
+   "ws_vwap": 23.93,
+   "lc_vwap": 23.88
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "001388",
+   "action": "sell",
+   "ws_vwap": 23.688,
+   "lc_vwap": 23.75
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "002038",
+   "action": "buy",
+   "westock": 0,
+   "local": 4100
+  },
+  {
+   "type": "PRICE",
+   "date": "20260817",
+   "code": "002104",
+   "action": "sell",
+   "ws_vwap": 10.138,
+   "lc_vwap": 10.16
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "002132",
+   "action": "buy",
+   "westock": 0,
+   "local": 5000
+  },
+  {
+   "type": "PRICE",
+   "date": "20260904",
+   "code": "002174",
+   "action": "buy",
+   "ws_vwap": 12.37,
+   "lc_vwap": 12.32
+  },
+  {
+   "type": "QTY",
+   "date": "20260810",
+   "code": "002361",
+   "action": "partial_sell",
+   "westock": 0,
+   "local": 7600
+  },
+  {
+   "type": "PRICE",
+   "date": "20260814",
+   "code": "002364",
+   "action": "sell",
+   "ws_vwap": 43.248,
+   "lc_vwap": 43.28
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002379",
+   "action": "buy",
+   "ws_vwap": 21.39,
+   "lc_vwap": 21.34
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "002379",
+   "action": "sell",
+   "ws_vwap": 20.44,
+   "lc_vwap": 20.5
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002421",
+   "action": "buy",
+   "ws_vwap": 3.93,
+   "lc_vwap": 3.88
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "002421",
+   "action": "sell",
+   "ws_vwap": 3.638,
+   "lc_vwap": 3.69
+  },
+  {
+   "type": "PRICE",
+   "date": "20260810",
+   "code": "002428",
+   "action": "buy",
+   "ws_vwap": 104.626,
+   "lc_vwap": 104.6
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "002428",
+   "action": "sell",
+   "ws_vwap": 98.236,
+   "lc_vwap": 98.31
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "002474",
+   "action": "buy",
+   "ws_vwap": 6.82,
+   "lc_vwap": 6.77
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002474",
+   "action": "sell",
+   "ws_vwap": 6.577,
+   "lc_vwap": 6.63
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "002622",
+   "action": "buy",
+   "ws_vwap": 2.62,
+   "lc_vwap": 2.57
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002622",
+   "action": "sell",
+   "ws_vwap": 2.419,
+   "lc_vwap": 2.47
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "002703",
+   "action": "buy",
+   "westock": 0,
+   "local": 800
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002859",
+   "action": "buy",
+   "ws_vwap": 77.15,
+   "lc_vwap": 77.1
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "002859",
+   "action": "sell",
+   "ws_vwap": 79.91,
+   "lc_vwap": 80.0
+  },
+  {
+   "type": "PRICE",
+   "date": "20260722",
+   "code": "002866",
+   "action": "buy",
+   "ws_vwap": 15.69,
+   "lc_vwap": 15.64
+  },
+  {
+   "type": "PRICE",
+   "date": "20260723",
+   "code": "002866",
+   "action": "sell",
+   "ws_vwap": 13.983,
+   "lc_vwap": 14.04
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "002885",
+   "action": "buy",
+   "ws_vwap": 29.27,
+   "lc_vwap": 29.22
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "002885",
+   "action": "sell",
+   "ws_vwap": 30.84,
+   "lc_vwap": 30.88
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "002896",
+   "action": "buy",
+   "ws_vwap": 80.825,
+   "lc_vwap": 80.8
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "002896",
+   "action": "sell",
+   "ws_vwap": 78.636,
+   "lc_vwap": 78.7
+  },
+  {
+   "type": "PRICE",
+   "date": "20260914",
+   "code": "002942",
+   "action": "buy",
+   "ws_vwap": 16.99,
+   "lc_vwap": 16.94
+  },
+  {
+   "type": "PRICE",
+   "date": "20260923",
+   "code": "002942",
+   "action": "sell",
+   "ws_vwap": 16.832,
+   "lc_vwap": 16.89
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "003036",
+   "action": "sell",
+   "ws_vwap": 53.46,
+   "lc_vwap": 53.5
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "300016",
+   "action": "buy",
+   "westock": 0,
+   "local": 2500
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "300274",
+   "action": "buy",
+   "ws_vwap": 121.18,
+   "lc_vwap": 121.13
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "300274",
+   "action": "sell",
+   "ws_vwap": 117.071,
+   "lc_vwap": 117.18
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "300573",
+   "action": "sell",
+   "ws_vwap": 42.918,
+   "lc_vwap": 42.95
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "300573",
+   "action": "sell",
+   "ws_vwap": 42.266,
+   "lc_vwap": 42.3
+  },
+  {
+   "type": "PRICE",
+   "date": "20260910",
+   "code": "300588",
+   "action": "sell",
+   "ws_vwap": 22.452,
+   "lc_vwap": 22.48
+  },
+  {
+   "type": "PRICE",
+   "date": "20260825",
+   "code": "300910",
+   "action": "sell",
+   "ws_vwap": 25.357,
+   "lc_vwap": 25.38
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "301357",
+   "action": "buy",
+   "ws_vwap": 107.87,
+   "lc_vwap": 107.82
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "301357",
+   "action": "sell",
+   "ws_vwap": 106.197,
+   "lc_vwap": 106.3
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "600531",
+   "action": "buy",
+   "westock": 0,
+   "local": 1700
+  },
+  {
+   "type": "QTY",
+   "date": "20260810",
+   "code": "600644",
+   "action": "partial_sell",
+   "westock": 0,
+   "local": 3900
+  },
+  {
+   "type": "PRICE",
+   "date": "20260911",
+   "code": "600650",
+   "action": "sell",
+   "ws_vwap": 10.398,
+   "lc_vwap": 10.42
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "600722",
+   "action": "buy",
+   "ws_vwap": 12.81,
+   "lc_vwap": 12.76
+  },
+  {
+   "type": "PRICE",
+   "date": "20260812",
+   "code": "600722",
+   "action": "sell",
+   "ws_vwap": 11.799,
+   "lc_vwap": 11.83
+  },
+  {
+   "type": "PRICE",
+   "date": "20260904",
+   "code": "600827",
+   "action": "buy",
+   "ws_vwap": 7.875,
+   "lc_vwap": 7.85
+  },
+  {
+   "type": "PRICE",
+   "date": "20260803",
+   "code": "600900",
+   "action": "sell",
+   "ws_vwap": 29.068,
+   "lc_vwap": 29.09
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "600916",
+   "action": "buy",
+   "westock": 0,
+   "local": 3000
+  },
+  {
+   "type": "QTY",
+   "date": "20260901",
+   "code": "600928",
+   "action": "sell",
+   "westock": 0,
+   "local": 800
+  },
+  {
+   "type": "PRICE",
+   "date": "20260904",
+   "code": "601083",
+   "action": "buy",
+   "ws_vwap": 13.245,
+   "lc_vwap": 13.22
+  },
+  {
+   "type": "PRICE",
+   "date": "20260911",
+   "code": "601083",
+   "action": "sell",
+   "ws_vwap": 12.119,
+   "lc_vwap": 12.15
+  },
+  {
+   "type": "PRICE",
+   "date": "20260803",
+   "code": "601088",
+   "action": "sell",
+   "ws_vwap": 44.216,
+   "lc_vwap": 44.25
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "601169",
+   "action": "buy",
+   "westock": 0,
+   "local": 3000
+  },
+  {
+   "type": "QTY",
+   "date": "20260901",
+   "code": "601229",
+   "action": "sell",
+   "westock": 0,
+   "local": 600
+  },
+  {
+   "type": "QTY",
+   "date": "20260824",
+   "code": "601997",
+   "action": "buy",
+   "westock": 0,
+   "local": 3000
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "603025",
+   "action": "buy",
+   "ws_vwap": 13.93,
+   "lc_vwap": 13.88
+  },
+  {
+   "type": "PRICE",
+   "date": "20260814",
+   "code": "603025",
+   "action": "sell",
+   "ws_vwap": 15.122,
+   "lc_vwap": 15.18
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "603102",
+   "action": "buy",
+   "ws_vwap": 37.63,
+   "lc_vwap": 37.58
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "603102",
+   "action": "sell",
+   "ws_vwap": 41.089,
+   "lc_vwap": 41.16
+  },
+  {
+   "type": "PRICE",
+   "date": "20260811",
+   "code": "603725",
+   "action": "buy",
+   "ws_vwap": 11.0,
+   "lc_vwap": 10.95
+  },
+  {
+   "type": "PRICE",
+   "date": "20260813",
+   "code": "603725",
+   "action": "sell",
+   "ws_vwap": 11.234,
+   "lc_vwap": 11.29
+  },
+  {
+   "type": "PRICE",
+   "date": "20260824",
+   "code": "603881",
+   "action": "sell",
+   "ws_vwap": 26.989,
+   "lc_vwap": 27.01
+  },
+  {
+   "type": "PRICE",
+   "date": "20260803",
+   "code": "605100",
+   "action": "sell",
+   "ws_vwap": 29.208,
+   "lc_vwap": 29.23
+  },
+  {
+   "type": "QTY",
+   "date": "20260810",
+   "code": "605133",
+   "action": "partial_sell",
+   "westock": 0,
+   "local": 14900
+  }
+ ]
+}

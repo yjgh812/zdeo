@@ -1,0 +1,21 @@
+{
+  "W1_2022_plus": {
+    "rebalances": 39,
+    "top10_win": 46.15,
+    "top10_mean": -0.6,
+    "pool_mean": -0.08,
+    "uni_mean": 0.01,
+    "excess_vs_pool_pp": -0.52,
+    "excess_vs_uni_pp": -0.61
+  },
+  "W2_2024_plus": {
+    "rebalances": 18,
+    "top10_win": 55.56,
+    "top10_mean": -0.09,
+    "pool_mean": -0.54,
+    "uni_mean": 0.74,
+    "excess_vs_pool_pp": 0.45,
+    "excess_vs_uni_pp": -0.84
+  },
+  "verdict": "FALSIFIED"
+}
