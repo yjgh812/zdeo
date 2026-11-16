@@ -1,0 +1,15 @@
+{
+ "name": "PREREG_PORTRAIT_TS2VEC_R1_V1",
+ "date": "20261117",
+ "trigger": "主人『继续』令按推荐主线推进候选池检索器升级候选（E-TS2VEC-1）：粗筛从纯几何距离(E-DTW-1的Euclidean)升级为TS2Vec式分层对比学习编码器（自实现核心，非官方仓库逐行复刻）+向量近邻；精配保持自实现DTW；按E-DTW-1收口预留的新前提（扩大K）重标定。纯描述零预测声称，零交易权。",
+ "library": "data/universe_portrait_fullseries.db stock_daily：每code按行序，窗口=连续30行且30行close均>0，每窗口MinMax标准化到[0,1]。全库约733万窗口（运行时实测计数入产物）。",
+ "training_sample": "全库窗口按(code升序,行序)展平编号后等距抽样步长37（编号%37==0者入选），约19.4万训练窗；种子=20261117。",
+ "model": "自实现TS2Vec核心：TCN编码器(膨胀卷积 hidden=64, 输出64维窗口嵌入=时间维max池化)；增广=时间戳掩码(mask_ratio=0.10)+重叠裁剪；分层对比损失3级(左端锚定裁剪偏移0/1/2，crop_len=27，右端对应镜像裁剪)+全序列级，温度0.2；Adam lr=1e-3，batch=512，epochs=10；GPU确定性(use_deterministic_algorithms+cudnn.deterministic+CUBLAS_WORKSPACE_CONFIG=:4096:8)，种子=20261117。",
+ "retrieval": "编码库扫描=分code分批GPU编码，同批对T1/T2两个目标嵌入算余弦，各自运行维护Top-500堆；精配=自实现DTW(30x30全带宽)对粗筛Top-500按DTW距离取Top-150（E-DTW-1为Top-50，本件扩大K=150）。",
+ "targets": "T1=上证指数(market_daily.idx_sh_c)最后30个交易日收盘MinMax标准化；T2=600519(贵州茅台) stock_daily最后30行close>0标准化。目标end=库尾20261116。",
+ "leak_rule": "剔除与目标同code且窗口末行日期≥目标end的窗口（本次目标=库尾实际剔除0条，规则保留防未来目标日提前）。",
+ "aftermath": "对精配Top-150每条：fwd20=该股窗口末行后第20行close/末行close-1（行序连续，超库尾或close缺失回退最近有效close并计truncated，零后续窗fwd20=None不计入n_valid）；统计=mean/median/p25/p75/share_gt0/share_ge10pct/share_le_neg10pct/n_valid；era分布(按窗口末行年份)；新增诊断=零后续窗占比(窗口末行=该code最后一行占Top-150比例)。",
+ "verdict": "RETRIEVAL_OK=双目标n_valid≥40且双跑逐字节一致；否则DEGENERATE。产物=纯描述性画像，禁作选股公式；任何接线须三段式另立项。",
+ "discipline": "一词一定义禁事后调参；双跑逐字节一致(输出无时间戳)；零交易权；产物=本件+analysis/portrait_ts2vec_r1_20261117.py+reports/PORTRAIT_TS2VEC_R1_20261117.json(+_run2)。",
+ "fingerprint": "697240e5c7aae3c8"
+}
