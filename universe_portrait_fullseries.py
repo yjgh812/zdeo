@@ -27,7 +27,7 @@ QFQ_DB = r"D:\workbuddyspace\factor_engine\data\dragon_quant_qfq.db"
 ST_DB = r"D:\zcodesj\data\st_history.db"
 OUT_DB = r"D:\zcodesj\data\universe_portrait_fullseries.db"
 OUT2_DB = r"D:\zcodesj\data\universe_portrait_fullseries_run2.db"
-D0, D1 = 20200101, 20261116
+D0 = 20200101  # D1=动态: main() 内实时取 qfq 库内最新交易日（2026-11-17 修复原硬编码20261116, 使库随夜链日更前进）
 EXCL = ("4", "8", "9", "68")
 INDEXES = (("sh", "000001", "idx_sh"), ("sh", "000300", "idx_hs300"),
            ("sh", "000016", "idx_sz50"), ("sh", "000905", "idx_zz500"),
@@ -396,6 +396,7 @@ def main():
     cur = con.cursor()
     cur2 = con.cursor()
     src = sqlite3.connect("file:%s?mode=ro" % QFQ_DB, uri=True)
+    D1 = int(src.execute("SELECT max(date) FROM stock_daily_meta_qfq").fetchone()[0])  # 动态D1=qfq库内最新交易日
     q = src.execute("SELECT code,date,close,volume,amount FROM stock_daily_meta_qfq "
                     "WHERE date>=? AND date<=? ORDER BY code,date", (D0, D1))
     for code, grp in ((k, list(g)) for k, g in groupby(q, key=lambda r: r[0])):

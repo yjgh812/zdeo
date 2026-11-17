@@ -1,0 +1,15 @@
+{
+ "name": "PREREG_PORTRAIT_TS2VEC_DAILY_V1",
+ "date": "20261117",
+ "trigger": "主人『继续』令把候选池E-TS2VEC-1（标定RETRIEVAL_OK，PREREG_PORTRAIT_TS2VEC_R1_V1指纹697240e5c7aae3c8）接进画像日更链路，升级为日更形态检索面板。纯描述零预测零交易权；遵守SOP三百四十四教训（阶段画像当买入信号已证伪#151，本面板禁作选股公式）。",
+ "mount": "universe_portrait_daily.py 编排器步骤序改为：snapshot → fullseries_rebuild → ts2vec_retrieval → brief → gate_shadow（单步失败不中断后续=编排器既有语义）。挂 PortraitDailyPipeline_2300 夜链 step4（23:00，qfq 更新后）。D层重建补进链内（此前全手工无调度缺位）。",
+ "components": "①D层重建 owner=universe_portrait_fullseries.py（生成物只读，重建入口唯一；本件修复其 D1 硬编码20261116缺陷→动态=qfq库内最新交易日，修复前库只到20261116且不再前进）。②检索日更 owner=analysis/portrait_ts2vec_daily.py（import 标定件核心，同参数同种子规则，不复制逻辑）。③呈现 owner=universe_portrait_brief.py（新增「形态检索面板」段+机读json字段；JSON缺失/过期→N/A结构化不可用，禁伪健康）。",
+ "library_gate": "鲜度闸=stock_daily max(date)==qfq max(date) 才产出面板；不满足→台账行 availability=false+reason，exit 3 结构化不可用，简报该段=N/A（禁伪健康）。",
+ "gpu_gate": "无CUDA→台账行 availability=false+reason，exit 3，禁静默CPU回退（与标定件同口径）。",
+ "outputs": "data/ts2vec_retrieval_latest.json（asof+availability+targets T1_sh/T2_600519 各含stats/era/diag+top明细）+ data/ts2vec_retrieval_ledger.jsonl（按asof幂等：同日重跑替换该日行，窗口删除+追加）。",
+ "targets": "T1=上证(market_daily.idx_sh_c)最后30个交易日MinMax标准化；T2=600519贵州茅台(stock_daily close>0)最后30行标准化；目标end=库尾。",
+ "seed_policy": "种子固定20261117（同库同种子双跑确定；库逐日更新→编码器随库演进，同日重跑确定性由固定种子+GPU确定性开关保障）。",
+ "zero_signal_boundary": "面板=纯描述（像当前行情的历史片段后续分布），禁作选股公式/信号源/闸门输入；任何信号化尝试须新预注册+三段式，并须对照证伪#151（STAGE-PORTRAIT-AS-BUY-SIGNAL 已证伪）。",
+ "verification": "验收=手动全链实弹（五步全rc=0，约8分钟级）+简报面板出现+台账按asof幂等（重跑零新增）+同库同种子双跑md5一致。",
+ "fingerprint": "325792e14e2663b0"
+}

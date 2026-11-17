@@ -165,6 +165,45 @@ def main():
     mom_pct = round(gate["n_ret20pos"] / gate["n_valid"] * 100, 1) if gate["n_valid"] else 0.0
     gateA = "开" if low_pct >= 70 else "关"
     gateC = "开" if mom_pct > 50 else "关"
+    # 形态检索面板(TS2Vec日更, PREREG_PORTRAIT_TS2VEC_DAILY_V1): 纯描述零预测; 缺失/不可用/过期=N/A禁伪健康
+    retr_path = os.path.join(ROOT, "data", "ts2vec_retrieval_latest.json")
+    retr = None
+    try:
+        with open(retr_path, "r", encoding="utf-8") as f:
+            retr = json.load(f)
+        if not isinstance(retr, dict):
+            retr = None
+    except FileNotFoundError:
+        retr = None
+    retr_ok = bool(retr) and bool(retr.get("availability")) and int(retr.get("asof") or 0) == int(d8)
+    if retr_ok:
+        s1 = retr["targets"]["T1_sh"]["stats"]
+        s2 = retr["targets"]["T2_600519"]["stats"]
+        nwin = retr["targets"]["T1_sh"].get("n_lib_windows", 0)
+        retr_panel = f"""## 形态检索面板（TS2Vec形态相似度日更·纯描述）
+
+全市场 30 日窗口库（{nwin} 窗）按"长得像"检索 Top-150，其后 20 个交易日走势分布：
+
+| 目标 | 有效样本 | 后续20日均值 | 中位 | 上涨占比 | 大涨≥10% | 大跌≤-10% |
+|---|---|---|---|---|---|---|
+| 长得像当前上证 | {s1['n_valid']} | {s1['mean_pct']}% | {s1['median_pct']}% | {s1['share_gt0_pct']}% | {s1['share_ge10_pct']}% | {s1['share_le_n10_pct']}% |
+| 长得像当前茅台600519 | {s2['n_valid']} | {s2['mean_pct']}% | {s2['median_pct']}% | {s2['share_gt0_pct']}% | {s2['share_ge10_pct']}% | {s2['share_le_n10_pct']}% |
+
+> 描述"历史上像现在这样走的片段之后通常怎样"，零预测非信号；禁作选股公式，任何信号化须新预注册并对照证伪#151。
+"""
+        retr_json = dict(availability=True, asof=int(retr["asof"]), T1_sh=s1, T2_600519=s2)
+    else:
+        if not retr:
+            reason = "no_data"
+        elif not retr.get("availability"):
+            reason = "unavailable:%s" % retr.get("reason")
+        else:
+            reason = "stale:asof=%s!=brief=%s" % (retr.get("asof"), d8)
+        retr_panel = f"""## 形态检索面板（TS2Vec形态相似度日更·纯描述）
+
+N/A（结构化不可用: {reason}）——历史形状相似片段的后续分布今日未产出，不编造。
+"""
+        retr_json = dict(availability=False, reason=reason)
     md = f"""# A股宇宙画像驱动实战简报（侦察级·零交易权）{d8}
 
 > 生成 {datetime.now().strftime('%Y-%m-%d %H:%M')} | 引擎 universe_portrait_brief.py | 截面 {d8}（{n_all} 只全宇宙画像）
@@ -197,6 +236,8 @@ def main():
 
 {tbl(C)}
 
+{retr_panel}
+
 ## 使用说明（人话）
 
 - A 池=底部区缩量低价、且已经回到 10 日线附近企稳的票——这是全部研究收敛后的最优买区画像; 但 2026 年内这个画像还在亏, **regime 门（上证站回 MA20 且修复档以上）没开之前只看不买**。
@@ -213,9 +254,10 @@ def main():
                        gateA=gateA, gateC=gateC, recon_only=True,
                        pool_A=[dict(code=r["code"], name=r["name"], px=r["px"], state=r.get("state"),
                                     golden=r.get("golden")) for r in A],
-                       pool_B=[dict(code=r["code"], name=r["name"], px=r["px"], vr=r["vr"]) for r in B]),
+                       pool_B=[dict(code=r["code"], name=r["name"], px=r["px"], vr=r["vr"]) for r in B],
+                       retr=retr_json),
                   f, ensure_ascii=False, separators=(",", ":"))
-    print(f"[PORTRAIT-BRIEF] asof={d8} A={len(A)} B={len(B)} C={len(C)} 门A={gateA}({low_pct}%) 门C={gateC}({mom_pct}%) -> {out_md}")
+    print(f"[PORTRAIT-BRIEF] asof={d8} A={len(A)} B={len(B)} C={len(C)} 门A={gateA}({low_pct}%) 门C={gateC}({mom_pct}%) 检索面板={'OK' if retr_ok else 'N/A'} -> {out_md}")
     return 0
 
 
