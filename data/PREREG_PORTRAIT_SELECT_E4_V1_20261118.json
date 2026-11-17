@@ -1,0 +1,25 @@
+{
+ "name": "PREREG_PORTRAIT_SELECT_E4_V1",
+ "date": "20261118",
+ "trigger": "主人2026-11-18第三次令『另立预注册实验』=批准trial#3立项。新机制前提=分行业启动前画像：挖掘样本集从全市场改为按申万L1分行业、截面分位改为行业内分位（外部方案文档自标的关键优化，且与全部已证伪路线不构成同族——E-SELECT-2/3证伪对象均为全市场通用画像）。",
+ "new_premises": [
+  "前提1(机制更换)：挖掘与评分全部分行业进行——每个合格申万L1行业独立挖掘自己的Top5规则（可各不相同），成员判定从全市场截面三分位改为行业内截面三分位；非协议修补（阈值/协议原样承继trial#2）。",
+  "前提2(行业准入闸)：行业合格条件=IS窗内 up_pre有效样本≥100 且 dn_pre有效样本≥100；不合格行业整体剔除并计数，不并入任何全局规则。",
+  "前提3(候选清单裁剪)：剔除板块热度特征(sector_mom尾20260828造成OOS缺口)；候选=10连续特征×{top,bottom}+ma_align==3+3环境特征=27候选/行业。行业维度经由分行业挖掘与行业内分位进入，非经由板块热度特征。",
+  "前提4(阈值承继)：主判据NW(lag=20) t≥2.5原样承继trial#2的重复检验补偿值，不再上调或下调。"
+ ],
+ "mining": "对每个合格行业：IS(2020-07-01~2024-12-31)内该行业成分股启动的up/dn/osc段，快照=S-10市场交易日（快照日该股有行且susp==0且st==0且close>0否则弃样计数）；discrimination=rate_up−max(rate_dn,rate_osc)；准入=rate_up≥0.30；按disc降序Top5=该行业规则；score(0..5)=满足数。",
+ "membership": "行业内三分位：该股当日所属行业在当日宇宙内有≥10只股票时，按行业内截面1/3分位判top/bottom；否则该特征当日判不满足（NaN同判不满足）。",
+ "universe": "同E-SELECT-2/3：非ST/非停/close>0/局部行号≥60/qfq收盘≤30元/amt20≥0.5亿/前缀60/00/30。行业归属=stock_dim.industry_name（静态快照非PIT，2026-10-18建，声明）。",
+ "protocol": "日度截面承继trial#2：IS=2020-07-01~2024-12-31，OOS=2025-01-01~20261019（库尾前20行）；标签=up段start_date∈(T,T+20市场交易日]；超额=个股行序20行−hs300行序20行；wf环境分层仅呈现；组合呈现=每月Top20（score≥4池跨行业合并，amt_ratio降序，tie按code升序，T+1收盘买持20行，双边0.15%）。",
+ "criteria": {
+  "G3_IS": "IS日度截面（合格行业合并池）score≥4组超额均值>0",
+  "G1_OOS": "OOS日度截面（合格行业合并池）score≥4组超额序列均值>0 且 NW(lag=20) t≥2.5 且有效日数≥200",
+  "G2": "OOS score桶(0..5)相邻差为正≥3/5 且 2025/2026两自然年score≥4超额均>0",
+  "verdict_rule": "G3∧G1∧G2=PASS→呈报主人裁决（接线须wfa_gate新指纹+主人裁决）；任一FAIL→PORTRAIT选股族彻底归档（trial_budget=3耗尽），画像定位回归描述+检索，不再立项任何画像选股变体。"
+ },
+ "descriptives": "合格行业清单及样本数、各行业独立规则（特征+方向）、各行业OOS score≥4超额均值与正负家数——全部如实呈现。",
+ "artifacts": "data/PREREG_PORTRAIT_SELECT_E4_V1_20261118.json（指纹）+analysis/portrait_select_e4_20261118.py+data/portrait_select_e4_result.json+reports/PORTRAIT_SELECT_E4_20261118.md；三跑逐字节一致（无时间戳）。",
+ "discipline": "一词一定义禁事后调参；规则不重挖判定面（分行业挖掘是本件机制本体，IS挖掘+OOS仅判一次）；零交易权；PASS不自动接线。",
+ "fingerprint": "c87e91c8198e05ad"
+}

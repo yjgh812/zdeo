@@ -1,0 +1,1952 @@
+{
+  "board_skip_dates": [
+    20260831
+  ],
+  "dates": [
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20200731,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.032879,
+        -0.024194,
+        -0.024963,
+        -0.031517,
+        -0.014293,
+        null
+      ],
+      "date": 20200831,
+      "hit_rate": 0.004673,
+      "n_env_skip": 0,
+      "n_hits": 1,
+      "n_samples": 214,
+      "seg_ret_mean_of_hits": 0.2853
+    },
+    {
+      "bucket_mean": [
+        -0.060311,
+        -0.048986,
+        -0.054423,
+        -0.074328,
+        -0.084647,
+        null
+      ],
+      "date": 20200930,
+      "hit_rate": 0.01087,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 184,
+      "seg_ret_mean_of_hits": 0.86515
+    },
+    {
+      "bucket_mean": [
+        0.029218,
+        0.031917,
+        1.2e-05,
+        0.00777,
+        -0.011431,
+        null
+      ],
+      "date": 20201030,
+      "hit_rate": 0.011696,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 171,
+      "seg_ret_mean_of_hits": 0.7296
+    },
+    {
+      "bucket_mean": [
+        -0.011414,
+        -0.042106,
+        -0.03174,
+        -0.070051,
+        -0.085222,
+        null
+      ],
+      "date": 20201130,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 223,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.097493,
+        -0.08788,
+        -0.110155,
+        -0.09043,
+        -0.102414,
+        null
+      ],
+      "date": 20201231,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 243,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.089237,
+        0.112311,
+        0.072072,
+        0.110097,
+        0.116131,
+        0.074173
+      ],
+      "date": 20210129,
+      "hit_rate": 0.082707,
+      "n_env_skip": 0,
+      "n_hits": 22,
+      "n_samples": 266,
+      "seg_ret_mean_of_hits": 0.499427
+    },
+    {
+      "bucket_mean": [
+        0.053228,
+        0.103243,
+        0.07467,
+        0.089962,
+        0.103956,
+        0.066927
+      ],
+      "date": 20210226,
+      "hit_rate": 0.018657,
+      "n_env_skip": 0,
+      "n_hits": 5,
+      "n_samples": 268,
+      "seg_ret_mean_of_hits": 0.5612
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20210331,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.038705,
+        0.039541,
+        0.033753,
+        -0.000872,
+        0.009785,
+        0.000464
+      ],
+      "date": 20210430,
+      "hit_rate": 0.010753,
+      "n_env_skip": 0,
+      "n_hits": 4,
+      "n_samples": 372,
+      "seg_ret_mean_of_hits": 0.46605
+    },
+    {
+      "bucket_mean": [
+        0.021835,
+        0.053177,
+        0.009285,
+        0.018279,
+        0.010164,
+        -0.011859
+      ],
+      "date": 20210531,
+      "hit_rate": 0.007426,
+      "n_env_skip": 0,
+      "n_hits": 3,
+      "n_samples": 404,
+      "seg_ret_mean_of_hits": 0.561167
+    },
+    {
+      "bucket_mean": [
+        0.103462,
+        0.043951,
+        0.052283,
+        0.040579,
+        0.013472,
+        0.015493
+      ],
+      "date": 20210630,
+      "hit_rate": 0.004608,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 434,
+      "seg_ret_mean_of_hits": 0.1832
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20210730,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.078641,
+        -0.042706,
+        0.000915,
+        0.014231,
+        -0.025616,
+        0.003888
+      ],
+      "date": 20210831,
+      "hit_rate": 0.015504,
+      "n_env_skip": 0,
+      "n_hits": 8,
+      "n_samples": 516,
+      "seg_ret_mean_of_hits": 0.409075
+    },
+    {
+      "bucket_mean": [
+        -0.058297,
+        -0.018406,
+        -0.019505,
+        -0.0082,
+        -0.003185,
+        0.031354
+      ],
+      "date": 20210930,
+      "hit_rate": 0.022764,
+      "n_env_skip": 0,
+      "n_hits": 14,
+      "n_samples": 615,
+      "seg_ret_mean_of_hits": 0.377321
+    },
+    {
+      "bucket_mean": [
+        0.07694,
+        0.070045,
+        0.100363,
+        0.075347,
+        0.076975,
+        0.062074
+      ],
+      "date": 20211029,
+      "hit_rate": 0.019784,
+      "n_env_skip": 0,
+      "n_hits": 11,
+      "n_samples": 556,
+      "seg_ret_mean_of_hits": 0.375555
+    },
+    {
+      "bucket_mean": [
+        -0.020071,
+        -0.010943,
+        0.011959,
+        -0.011549,
+        0.031196,
+        0.036301
+      ],
+      "date": 20211130,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 611,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.030259,
+        -0.026343,
+        -0.001113,
+        -0.017614,
+        0.002626,
+        0.014792
+      ],
+      "date": 20211231,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 765,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20220128,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20220228,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.104869,
+        -0.090286,
+        -0.067905,
+        -0.077462,
+        -0.079349,
+        -0.0755
+      ],
+      "date": 20220331,
+      "hit_rate": 0.132875,
+      "n_env_skip": 0,
+      "n_hits": 116,
+      "n_samples": 873,
+      "seg_ret_mean_of_hits": 0.519997
+    },
+    {
+      "bucket_mean": [
+        0.085412,
+        0.071636,
+        0.134308,
+        0.096783,
+        0.108258,
+        0.124533
+      ],
+      "date": 20220429,
+      "hit_rate": 0.007726,
+      "n_env_skip": 0,
+      "n_hits": 7,
+      "n_samples": 906,
+      "seg_ret_mean_of_hits": 0.451857
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20220531,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.110039,
+        0.096245,
+        0.083843,
+        0.082448,
+        0.074517,
+        0.079549
+      ],
+      "date": 20220630,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 996,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.010749,
+        0.025949,
+        0.023621,
+        0.019332,
+        0.005448,
+        0.021903
+      ],
+      "date": 20220729,
+      "hit_rate": 0.003883,
+      "n_env_skip": 0,
+      "n_hits": 4,
+      "n_samples": 1030,
+      "seg_ret_mean_of_hits": 0.4071
+    },
+    {
+      "bucket_mean": [
+        -0.039939,
+        -0.011111,
+        -0.016273,
+        -0.018411,
+        -0.024444,
+        -0.016229
+      ],
+      "date": 20220831,
+      "hit_rate": 0.015302,
+      "n_env_skip": 0,
+      "n_hits": 17,
+      "n_samples": 1111,
+      "seg_ret_mean_of_hits": 0.404735
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20220930,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.022964,
+        0.001488,
+        0.027952,
+        0.032545,
+        0.050057,
+        0.082105
+      ],
+      "date": 20221031,
+      "hit_rate": 0.004562,
+      "n_env_skip": 0,
+      "n_hits": 5,
+      "n_samples": 1096,
+      "seg_ret_mean_of_hits": 0.3487
+    },
+    {
+      "bucket_mean": [
+        -0.048223,
+        -0.041037,
+        -0.035472,
+        -0.048637,
+        -0.049038,
+        -0.055378
+      ],
+      "date": 20221130,
+      "hit_rate": 0.065747,
+      "n_env_skip": 0,
+      "n_hits": 81,
+      "n_samples": 1232,
+      "seg_ret_mean_of_hits": 0.460851
+    },
+    {
+      "bucket_mean": [
+        -0.012392,
+        0.045093,
+        0.056216,
+        0.064643,
+        0.046255,
+        0.047862
+      ],
+      "date": 20221230,
+      "hit_rate": 0.008636,
+      "n_env_skip": 0,
+      "n_hits": 10,
+      "n_samples": 1158,
+      "seg_ret_mean_of_hits": 0.37447
+    },
+    {
+      "bucket_mean": [
+        0.030081,
+        0.043109,
+        0.063442,
+        0.054986,
+        0.039873,
+        0.037143
+      ],
+      "date": 20230131,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 1129,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.019765,
+        0.022219,
+        -0.003772,
+        -0.021004,
+        -0.024474,
+        -0.037444
+      ],
+      "date": 20230228,
+      "hit_rate": 0.004448,
+      "n_env_skip": 0,
+      "n_hits": 6,
+      "n_samples": 1349,
+      "seg_ret_mean_of_hits": 0.266533
+    },
+    {
+      "bucket_mean": [
+        -0.005263,
+        -0.038272,
+        -0.026079,
+        -0.050053,
+        -0.053003,
+        -0.036234
+      ],
+      "date": 20230331,
+      "hit_rate": 0.046964,
+      "n_env_skip": 0,
+      "n_hits": 58,
+      "n_samples": 1235,
+      "seg_ret_mean_of_hits": 0.248159
+    },
+    {
+      "bucket_mean": [
+        0.064375,
+        0.062207,
+        0.051377,
+        0.040293,
+        -0.00053,
+        0.023157
+      ],
+      "date": 20230428,
+      "hit_rate": 0.014778,
+      "n_env_skip": 0,
+      "n_hits": 18,
+      "n_samples": 1218,
+      "seg_ret_mean_of_hits": 0.308194
+    },
+    {
+      "bucket_mean": [
+        0.017853,
+        0.013414,
+        0.011646,
+        0.018862,
+        0.041709,
+        0.010619
+      ],
+      "date": 20230531,
+      "hit_rate": 0.014505,
+      "n_env_skip": 0,
+      "n_hits": 17,
+      "n_samples": 1172,
+      "seg_ret_mean_of_hits": 0.327682
+    },
+    {
+      "bucket_mean": [
+        -0.093797,
+        -0.051921,
+        -0.036881,
+        -0.004134,
+        -0.003934,
+        -0.006962
+      ],
+      "date": 20230630,
+      "hit_rate": 0.001614,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 1239,
+      "seg_ret_mean_of_hits": 0.27435
+    },
+    {
+      "bucket_mean": [
+        0.000206,
+        -0.007286,
+        -0.016032,
+        -0.010504,
+        -0.038516,
+        -0.047309
+      ],
+      "date": 20230731,
+      "hit_rate": 0.020424,
+      "n_env_skip": 0,
+      "n_hits": 27,
+      "n_samples": 1322,
+      "seg_ret_mean_of_hits": 0.31547
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20230831,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.041066,
+        0.025037,
+        0.019314,
+        0.020598,
+        0.003016,
+        0.024362
+      ],
+      "date": 20230928,
+      "hit_rate": 0.006426,
+      "n_env_skip": 0,
+      "n_hits": 8,
+      "n_samples": 1245,
+      "seg_ret_mean_of_hits": 0.308325
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20231031,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.028718,
+        -0.015882,
+        -0.016016,
+        -0.013687,
+        -0.014764,
+        -0.017029
+      ],
+      "date": 20231130,
+      "hit_rate": 0.005333,
+      "n_env_skip": 0,
+      "n_hits": 8,
+      "n_samples": 1500,
+      "seg_ret_mean_of_hits": 0.462075
+    },
+    {
+      "bucket_mean": [
+        -0.129167,
+        -0.077867,
+        -0.088917,
+        -0.077368,
+        -0.058759,
+        -0.056108
+      ],
+      "date": 20231229,
+      "hit_rate": 0.007719,
+      "n_env_skip": 0,
+      "n_hits": 11,
+      "n_samples": 1425,
+      "seg_ret_mean_of_hits": 0.375127
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20240131,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.030653,
+        0.019702,
+        0.028838,
+        0.07456,
+        0.066186,
+        0.003698
+      ],
+      "date": 20240229,
+      "hit_rate": 0.001039,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 1925,
+      "seg_ret_mean_of_hits": 0.2642
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20240329,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20240430,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.036877,
+        -0.032366,
+        -0.052099,
+        -0.064301,
+        -0.085608,
+        -0.062577
+      ],
+      "date": 20240531,
+      "hit_rate": 0.013068,
+      "n_env_skip": 0,
+      "n_hits": 23,
+      "n_samples": 1760,
+      "seg_ret_mean_of_hits": 0.71107
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20240628,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20240731,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.095856,
+        0.10483,
+        0.089477,
+        0.12044,
+        0.089081,
+        0.078904
+      ],
+      "date": 20240830,
+      "hit_rate": 0.00526,
+      "n_env_skip": 0,
+      "n_hits": 8,
+      "n_samples": 1521,
+      "seg_ret_mean_of_hits": 0.35415
+    },
+    {
+      "bucket_mean": [
+        null,
+        0.131737,
+        0.087395,
+        0.063996,
+        0.034821,
+        0.073232
+      ],
+      "date": 20240930,
+      "hit_rate": 0.002839,
+      "n_env_skip": 0,
+      "n_hits": 5,
+      "n_samples": 1761,
+      "seg_ret_mean_of_hits": 0.31534
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20241031,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20241129,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20241231,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.106001,
+        0.062133,
+        0.060561,
+        0.084859,
+        0.101428,
+        0.088253
+      ],
+      "date": 20250127,
+      "hit_rate": 0.005062,
+      "n_env_skip": 0,
+      "n_hits": 11,
+      "n_samples": 2173,
+      "seg_ret_mean_of_hits": 0.455573
+    },
+    {
+      "bucket_mean": [
+        -0.017774,
+        0.011214,
+        0.001163,
+        0.019607,
+        0.012943,
+        0.042643
+      ],
+      "date": 20250228,
+      "hit_rate": 0.003417,
+      "n_env_skip": 0,
+      "n_hits": 8,
+      "n_samples": 2341,
+      "seg_ret_mean_of_hits": 0.25975
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20250331,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.052977,
+        0.0438,
+        0.040896,
+        0.035746,
+        0.040732,
+        0.014588
+      ],
+      "date": 20250430,
+      "hit_rate": 0.030949,
+      "n_env_skip": 0,
+      "n_hits": 77,
+      "n_samples": 2488,
+      "seg_ret_mean_of_hits": 0.475883
+    },
+    {
+      "bucket_mean": [
+        0.039783,
+        0.033953,
+        0.037982,
+        0.039453,
+        0.02569,
+        0.01955
+      ],
+      "date": 20250530,
+      "hit_rate": 0.074811,
+      "n_env_skip": 0,
+      "n_hits": 188,
+      "n_samples": 2513,
+      "seg_ret_mean_of_hits": 0.500207
+    },
+    {
+      "bucket_mean": [
+        0.001246,
+        0.018972,
+        0.007393,
+        0.014367,
+        0.013752,
+        0.012792
+      ],
+      "date": 20250630,
+      "hit_rate": 0.005102,
+      "n_env_skip": 0,
+      "n_hits": 13,
+      "n_samples": 2548,
+      "seg_ret_mean_of_hits": 0.6105
+    },
+    {
+      "bucket_mean": [
+        -0.017481,
+        -0.015272,
+        -0.027908,
+        -0.015901,
+        -0.032708,
+        -0.020016
+      ],
+      "date": 20250731,
+      "hit_rate": 0.001825,
+      "n_env_skip": 0,
+      "n_hits": 5,
+      "n_samples": 2739,
+      "seg_ret_mean_of_hits": 0.45918
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20250829,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20250930,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20251031,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20251128,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.067184,
+        0.048158,
+        0.056389,
+        0.053502,
+        0.056149,
+        0.04005
+      ],
+      "date": 20251231,
+      "hit_rate": 0.002249,
+      "n_env_skip": 0,
+      "n_hits": 6,
+      "n_samples": 2668,
+      "seg_ret_mean_of_hits": 0.243183
+    },
+    {
+      "bucket_mean": [
+        0.049709,
+        0.036746,
+        0.038058,
+        0.022642,
+        0.01075,
+        0.015645
+      ],
+      "date": 20260130,
+      "hit_rate": 0.002021,
+      "n_env_skip": 0,
+      "n_hits": 6,
+      "n_samples": 2969,
+      "seg_ret_mean_of_hits": 0.3684
+    },
+    {
+      "bucket_mean": [
+        -0.032445,
+        -0.02331,
+        -0.035412,
+        -0.037853,
+        -0.035912,
+        -0.03453
+      ],
+      "date": 20260227,
+      "hit_rate": 0.002082,
+      "n_env_skip": 0,
+      "n_hits": 6,
+      "n_samples": 2882,
+      "seg_ret_mean_of_hits": 0.745267
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20260331,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        -0.045215,
+        -0.056402,
+        -0.06454,
+        -0.083245,
+        -0.088783,
+        -0.091052
+      ],
+      "date": 20260430,
+      "hit_rate": 0.000724,
+      "n_env_skip": 0,
+      "n_hits": 2,
+      "n_samples": 2763,
+      "seg_ret_mean_of_hits": 0.21
+    },
+    {
+      "bucket_mean": [
+        -0.079785,
+        -0.101822,
+        -0.097873,
+        -0.105627,
+        -0.104596,
+        -0.106964
+      ],
+      "date": 20260529,
+      "hit_rate": 0.026522,
+      "n_env_skip": 0,
+      "n_hits": 78,
+      "n_samples": 2941,
+      "seg_ret_mean_of_hits": 0.232956
+    },
+    {
+      "bucket_mean": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "date": 20260630,
+      "hit_rate": null,
+      "n_env_skip": 1,
+      "n_hits": 0,
+      "n_samples": 0,
+      "seg_ret_mean_of_hits": null
+    },
+    {
+      "bucket_mean": [
+        0.044307,
+        0.028972,
+        0.090971,
+        0.130362,
+        0.112315,
+        0.120105
+      ],
+      "date": 20260731,
+      "hit_rate": 0.0,
+      "n_env_skip": 0,
+      "n_hits": 0,
+      "n_samples": 2807,
+      "seg_ret_mean_of_hits": null
+    }
+  ],
+  "g2_summary": {
+    "G2": "FAIL",
+    "adjacent_positive": 2
+  },
+  "is_summary": {
+    "G3": "PASS",
+    "monthly_series": [
+      {
+        "date": 20200831,
+        "excess": -0.014293
+      },
+      {
+        "date": 20200930,
+        "excess": -0.084647
+      },
+      {
+        "date": 20201030,
+        "excess": -0.011431
+      },
+      {
+        "date": 20201130,
+        "excess": -0.085222
+      },
+      {
+        "date": 20201231,
+        "excess": -0.102414
+      },
+      {
+        "date": 20210129,
+        "excess": 0.105185
+      },
+      {
+        "date": 20210226,
+        "excess": 0.092299
+      },
+      {
+        "date": 20210430,
+        "excess": 0.006726
+      },
+      {
+        "date": 20210531,
+        "excess": 0.002185
+      },
+      {
+        "date": 20210630,
+        "excess": 0.014352
+      },
+      {
+        "date": 20210831,
+        "excess": -0.012475
+      },
+      {
+        "date": 20210930,
+        "excess": 0.003654
+      },
+      {
+        "date": 20211029,
+        "excess": 0.072957
+      },
+      {
+        "date": 20211130,
+        "excess": 0.033181
+      },
+      {
+        "date": 20211231,
+        "excess": 0.006192
+      },
+      {
+        "date": 20220331,
+        "excess": -0.078089
+      },
+      {
+        "date": 20220429,
+        "excess": 0.112253
+      },
+      {
+        "date": 20220630,
+        "excess": 0.076238
+      },
+      {
+        "date": 20220729,
+        "excess": 0.012661
+      },
+      {
+        "date": 20220831,
+        "excess": -0.022664
+      },
+      {
+        "date": 20221031,
+        "excess": 0.061336
+      },
+      {
+        "date": 20221130,
+        "excess": -0.050886
+      },
+      {
+        "date": 20221230,
+        "excess": 0.046663
+      },
+      {
+        "date": 20230131,
+        "excess": 0.039067
+      },
+      {
+        "date": 20230228,
+        "excess": -0.02867
+      },
+      {
+        "date": 20230331,
+        "excess": -0.046185
+      },
+      {
+        "date": 20230428,
+        "excess": 0.006159
+      },
+      {
+        "date": 20230531,
+        "excess": 0.029189
+      },
+      {
+        "date": 20230630,
+        "excess": -0.004835
+      },
+      {
+        "date": 20230731,
+        "excess": -0.039737
+      },
+      {
+        "date": 20230928,
+        "excess": 0.009294
+      },
+      {
+        "date": 20231130,
+        "excess": -0.015883
+      },
+      {
+        "date": 20231229,
+        "excess": -0.058047
+      },
+      {
+        "date": 20240229,
+        "excess": 0.062318
+      },
+      {
+        "date": 20240531,
+        "excess": -0.077286
+      },
+      {
+        "date": 20240830,
+        "excess": 0.085914
+      },
+      {
+        "date": 20240930,
+        "excess": 0.041068
+      }
+    ],
+    "n_months_ge4": 37,
+    "score_ge4_mean_excess": 0.00503
+  },
+  "mined_rule": [
+    {
+      "dir": "bottom",
+      "disc": 0.188757,
+      "feat": "pos250",
+      "rate_dn": 0.304321,
+      "rate_osc": 0.295739,
+      "rate_up": 0.493078
+    },
+    {
+      "dir": "bottom",
+      "disc": 0.174337,
+      "feat": "pos60",
+      "rate_dn": 0.29327,
+      "rate_osc": 0.336969,
+      "rate_up": 0.511306
+    },
+    {
+      "dir": "bottom",
+      "disc": 0.127503,
+      "feat": "vola20",
+      "rate_dn": 0.520859,
+      "rate_osc": 0.305205,
+      "rate_up": 0.648362
+    },
+    {
+      "dir": "bottom",
+      "disc": 0.105414,
+      "feat": "ret60",
+      "rate_dn": 0.334741,
+      "rate_osc": 0.346363,
+      "rate_up": 0.451777
+    },
+    {
+      "dir": "bottom",
+      "disc": 0.077213,
+      "feat": "ret20",
+      "rate_dn": 0.272411,
+      "rate_osc": 0.321956,
+      "rate_up": 0.399169
+    }
+  ],
+  "n_board_skip_months": 1,
+  "n_dates": 73,
+  "n_env_skip_total": 24,
+  "n_mining_samples": {
+    "dn": {
+      "dropped_snapshot": 201,
+      "dropped_window": 0,
+      "total": 8255,
+      "used": 8054
+    },
+    "osc": {
+      "dropped_snapshot": 5287,
+      "dropped_window": 0,
+      "total": 187001,
+      "used": 181714
+    },
+    "up": {
+      "dropped_snapshot": 81,
+      "dropped_window": 0,
+      "total": 4415,
+      "used": 4334
+    }
+  },
+  "oos_summary": {
+    "G1": "FAIL",
+    "adjacent_diffs": [
+      -0.00678,
+      0.001712,
+      0.004186,
+      -0.003846,
+      -0.000891
+    ],
+    "adjacent_positive": 2,
+    "bucket_means": {
+      "0": 0.014042,
+      "1": 0.007262,
+      "2": 0.008973,
+      "3": 0.013159,
+      "4": 0.009313,
+      "5": 0.008422
+    },
+    "monthly_series": [
+      {
+        "date": 20250127,
+        "excess": 0.098706
+      },
+      {
+        "date": 20250228,
+        "excess": 0.026271
+      },
+      {
+        "date": 20250430,
+        "excess": 0.032721
+      },
+      {
+        "date": 20250530,
+        "excess": 0.0237
+      },
+      {
+        "date": 20250630,
+        "excess": 0.013344
+      },
+      {
+        "date": 20250731,
+        "excess": -0.028613
+      },
+      {
+        "date": 20251231,
+        "excess": 0.05137
+      },
+      {
+        "date": 20260130,
+        "excess": 0.012474
+      },
+      {
+        "date": 20260227,
+        "excess": -0.03545
+      },
+      {
+        "date": 20260430,
+        "excess": -0.089378
+      },
+      {
+        "date": 20260529,
+        "excess": -0.105427
+      },
+      {
+        "date": 20260731,
+        "excess": 0.112638
+      }
+    ],
+    "n_months_ge4": 12,
+    "nw_t_lag5": 0.539473,
+    "score_ge4_mean_excess": 0.009363,
+    "year2025_mean_excess": 0.031071,
+    "year2026_mean_excess": -0.021029
+  },
+  "portfolio": {
+    "all": {
+      "mean_excess": -0.002596,
+      "mean_ret": -0.005277,
+      "n_months": 49,
+      "win_rate": 0.440136
+    },
+    "by_year": {
+      "2020": {
+        "mean_excess": -0.04607,
+        "mean_ret": -0.032787,
+        "n_months": 5,
+        "win_rate": 0.333333
+      },
+      "2021": {
+        "mean_excess": 0.02571,
+        "mean_ret": 0.000191,
+        "n_months": 10,
+        "win_rate": 0.475
+      },
+      "2022": {
+        "mean_excess": 0.022875,
+        "mean_ret": 0.008749,
+        "n_months": 8,
+        "win_rate": 0.4875
+      },
+      "2023": {
+        "mean_excess": -0.013363,
+        "mean_ret": -0.032165,
+        "n_months": 10,
+        "win_rate": 0.325
+      },
+      "2024": {
+        "mean_excess": 0.009011,
+        "mean_ret": 0.041322,
+        "n_months": 4,
+        "win_rate": 0.55
+      },
+      "2025": {
+        "mean_excess": 0.000185,
+        "mean_ret": 0.029576,
+        "n_months": 7,
+        "win_rate": 0.55
+      },
+      "2026": {
+        "mean_excess": -0.048136,
+        "mean_ret": -0.043445,
+        "n_months": 5,
+        "win_rate": 0.39
+      }
+    },
+    "months": [
+      {
+        "date": 20200831,
+        "mean_excess": -0.001729,
+        "mean_ret": -0.053426,
+        "n_picks": 8,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20200930,
+        "mean_excess": -0.078305,
+        "mean_ret": -0.034602,
+        "n_picks": 8,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20201030,
+        "mean_excess": 0.01722,
+        "mean_ret": 0.067935,
+        "n_picks": 6,
+        "win_rate": 0.833333
+      },
+      {
+        "date": 20201130,
+        "mean_excess": -0.061016,
+        "mean_ret": -0.065784,
+        "n_picks": 15,
+        "win_rate": 0.133333
+      },
+      {
+        "date": 20201231,
+        "mean_excess": -0.106519,
+        "mean_ret": -0.078057,
+        "n_picks": 20,
+        "win_rate": 0.2
+      },
+      {
+        "date": 20210129,
+        "mean_excess": 0.178265,
+        "mean_ret": 0.115945,
+        "n_picks": 20,
+        "win_rate": 0.9
+      },
+      {
+        "date": 20210226,
+        "mean_excess": 0.085377,
+        "mean_ret": 0.016745,
+        "n_picks": 20,
+        "win_rate": 0.45
+      },
+      {
+        "date": 20210430,
+        "mean_excess": -0.028787,
+        "mean_ret": 0.009578,
+        "n_picks": 20,
+        "win_rate": 0.55
+      },
+      {
+        "date": 20210531,
+        "mean_excess": -0.006267,
+        "mean_ret": -0.02829,
+        "n_picks": 20,
+        "win_rate": 0.3
+      },
+      {
+        "date": 20210630,
+        "mean_excess": -0.003628,
+        "mean_ret": -0.076174,
+        "n_picks": 20,
+        "win_rate": 0.2
+      },
+      {
+        "date": 20210831,
+        "mean_excess": -0.010512,
+        "mean_ret": 0.001908,
+        "n_picks": 20,
+        "win_rate": 0.5
+      },
+      {
+        "date": 20210930,
+        "mean_excess": 0.015908,
+        "mean_ret": -0.001859,
+        "n_picks": 20,
+        "win_rate": 0.5
+      },
+      {
+        "date": 20211029,
+        "mean_excess": 0.025611,
+        "mean_ret": 0.017581,
+        "n_picks": 20,
+        "win_rate": 0.5
+      },
+      {
+        "date": 20211130,
+        "mean_excess": 0.006177,
+        "mean_ret": 0.014358,
+        "n_picks": 20,
+        "win_rate": 0.6
+      },
+      {
+        "date": 20211231,
+        "mean_excess": -0.005045,
+        "mean_ret": -0.067878,
+        "n_picks": 20,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20220331,
+        "mean_excess": 0.022281,
+        "mean_ret": -0.063623,
+        "n_picks": 20,
+        "win_rate": 0.35
+      },
+      {
+        "date": 20220429,
+        "mean_excess": 0.070025,
+        "mean_ret": 0.089815,
+        "n_picks": 20,
+        "win_rate": 0.9
+      },
+      {
+        "date": 20220630,
+        "mean_excess": 0.044521,
+        "mean_ret": -0.021886,
+        "n_picks": 20,
+        "win_rate": 0.35
+      },
+      {
+        "date": 20220729,
+        "mean_excess": 0.011946,
+        "mean_ret": -0.011728,
+        "n_picks": 20,
+        "win_rate": 0.35
+      },
+      {
+        "date": 20220831,
+        "mean_excess": -0.003105,
+        "mean_ret": -0.062172,
+        "n_picks": 20,
+        "win_rate": 0.15
+      },
+      {
+        "date": 20221031,
+        "mean_excess": 0.057246,
+        "mean_ret": 0.1162,
+        "n_picks": 20,
+        "win_rate": 0.85
+      },
+      {
+        "date": 20221130,
+        "mean_excess": -0.055513,
+        "mean_ret": -0.065288,
+        "n_picks": 20,
+        "win_rate": 0.05
+      },
+      {
+        "date": 20221230,
+        "mean_excess": 0.0356,
+        "mean_ret": 0.088669,
+        "n_picks": 20,
+        "win_rate": 0.9
+      },
+      {
+        "date": 20230131,
+        "mean_excess": 0.022909,
+        "mean_ret": 0.006467,
+        "n_picks": 20,
+        "win_rate": 0.55
+      },
+      {
+        "date": 20230228,
+        "mean_excess": -0.043113,
+        "mean_ret": -0.072384,
+        "n_picks": 20,
+        "win_rate": 0.15
+      },
+      {
+        "date": 20230331,
+        "mean_excess": -0.056498,
+        "mean_ret": -0.074513,
+        "n_picks": 20,
+        "win_rate": 0.2
+      },
+      {
+        "date": 20230428,
+        "mean_excess": -0.010266,
+        "mean_ret": -0.065692,
+        "n_picks": 20,
+        "win_rate": 0.2
+      },
+      {
+        "date": 20230531,
+        "mean_excess": 0.107513,
+        "mean_ret": 0.130106,
+        "n_picks": 20,
+        "win_rate": 0.85
+      },
+      {
+        "date": 20230630,
+        "mean_excess": -0.000281,
+        "mean_ret": 0.030994,
+        "n_picks": 20,
+        "win_rate": 0.55
+      },
+      {
+        "date": 20230731,
+        "mean_excess": -0.028008,
+        "mean_ret": -0.080006,
+        "n_picks": 20,
+        "win_rate": 0.05
+      },
+      {
+        "date": 20230928,
+        "mean_excess": 0.016327,
+        "mean_ret": 0.002182,
+        "n_picks": 20,
+        "win_rate": 0.5
+      },
+      {
+        "date": 20231130,
+        "mean_excess": -0.026901,
+        "mean_ret": -0.041766,
+        "n_picks": 20,
+        "win_rate": 0.15
+      },
+      {
+        "date": 20231229,
+        "mean_excess": -0.115312,
+        "mean_ret": -0.157042,
+        "n_picks": 20,
+        "win_rate": 0.05
+      },
+      {
+        "date": 20240229,
+        "mean_excess": 0.011349,
+        "mean_ret": 0.011258,
+        "n_picks": 20,
+        "win_rate": 0.65
+      },
+      {
+        "date": 20240531,
+        "mean_excess": -0.054126,
+        "mean_ret": -0.086716,
+        "n_picks": 20,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20240830,
+        "mean_excess": 0.057468,
+        "mean_ret": 0.269097,
+        "n_picks": 20,
+        "win_rate": 1.0
+      },
+      {
+        "date": 20240930,
+        "mean_excess": 0.021352,
+        "mean_ret": -0.028349,
+        "n_picks": 20,
+        "win_rate": 0.3
+      },
+      {
+        "date": 20250127,
+        "mean_excess": 0.050636,
+        "mean_ret": 0.078959,
+        "n_picks": 20,
+        "win_rate": 0.65
+      },
+      {
+        "date": 20250228,
+        "mean_excess": -0.023252,
+        "mean_ret": -0.02355,
+        "n_picks": 20,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20250430,
+        "mean_excess": 0.006831,
+        "mean_ret": 0.022637,
+        "n_picks": 20,
+        "win_rate": 0.5
+      },
+      {
+        "date": 20250530,
+        "mean_excess": -0.009912,
+        "mean_ret": 0.013648,
+        "n_picks": 20,
+        "win_rate": 0.45
+      },
+      {
+        "date": 20250630,
+        "mean_excess": 0.017757,
+        "mean_ret": 0.070832,
+        "n_picks": 20,
+        "win_rate": 0.9
+      },
+      {
+        "date": 20250731,
+        "mean_excess": -0.070896,
+        "mean_ret": 0.038066,
+        "n_picks": 20,
+        "win_rate": 0.7
+      },
+      {
+        "date": 20251231,
+        "mean_excess": 0.030132,
+        "mean_ret": 0.006441,
+        "n_picks": 20,
+        "win_rate": 0.4
+      },
+      {
+        "date": 20260130,
+        "mean_excess": -0.018352,
+        "mean_ret": -0.003419,
+        "n_picks": 20,
+        "win_rate": 0.6
+      },
+      {
+        "date": 20260227,
+        "mean_excess": -0.021315,
+        "mean_ret": -0.071375,
+        "n_picks": 20,
+        "win_rate": 0.25
+      },
+      {
+        "date": 20260430,
+        "mean_excess": -0.079164,
+        "mean_ret": -0.066509,
+        "n_picks": 20,
+        "win_rate": 0.2
+      },
+      {
+        "date": 20260529,
+        "mean_excess": -0.142684,
+        "mean_ret": -0.114781,
+        "n_picks": 20,
+        "win_rate": 0.1
+      },
+      {
+        "date": 20260731,
+        "mean_excess": 0.020832,
+        "mean_ret": 0.038861,
+        "n_picks": 20,
+        "win_rate": 0.8
+      }
+    ]
+  },
+  "prereg_fp": "4715d9a3192d1e50",
+  "test_dates": [
+    20200731,
+    20200831,
+    20200930,
+    20201030,
+    20201130,
+    20201231,
+    20210129,
+    20210226,
+    20210331,
+    20210430,
+    20210531,
+    20210630,
+    20210730,
+    20210831,
+    20210930,
+    20211029,
+    20211130,
+    20211231,
+    20220128,
+    20220228,
+    20220331,
+    20220429,
+    20220531,
+    20220630,
+    20220729,
+    20220831,
+    20220930,
+    20221031,
+    20221130,
+    20221230,
+    20230131,
+    20230228,
+    20230331,
+    20230428,
+    20230531,
+    20230630,
+    20230731,
+    20230831,
+    20230928,
+    20231031,
+    20231130,
+    20231229,
+    20240131,
+    20240229,
+    20240329,
+    20240430,
+    20240531,
+    20240628,
+    20240731,
+    20240830,
+    20240930,
+    20241031,
+    20241129,
+    20241231,
+    20250127,
+    20250228,
+    20250331,
+    20250430,
+    20250530,
+    20250630,
+    20250731,
+    20250829,
+    20250930,
+    20251031,
+    20251128,
+    20251231,
+    20260130,
+    20260227,
+    20260331,
+    20260430,
+    20260529,
+    20260630,
+    20260731
+  ],
+  "verdict": {
+    "G1": "FAIL",
+    "G2": "FAIL",
+    "G3": "PASS",
+    "overall": "FAIL"
+  }
+}

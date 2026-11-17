@@ -1,0 +1,26 @@
+{
+ "name": "PREREG_PORTRAIT_SELECT_E3_V1",
+ "date": "20261118",
+ "trigger": "主人2026-11-18再次令『若想把画像选股变成能长期用的选股机，需要另立预注册实验』=批准翻案立项（E-SELECT-2已FAIL收口于falsified_rules PORTRAIT-PRELAUNCH-E2，trial_budget=1已耗）。本件=翻案实验trial#2，新前提见new_premises。",
+ "new_premises": [
+  "前提1(功效修复): E-SELECT-2的FAIL主因经诊断为判据功效崩塌(OOS月度截面被环境过滤从20个月压到12个,NW t=0.54)而非必然无效应；本件改用日度截面(全交易日不剔除)+OOS延展至库尾，把检验功效拉满。若效应为零，更高功效只会给出更强的FAIL（t更低或仍不达标）；若PASS则为真效应证据。",
+  "前提2(规则承继不重挖): 5特征低位低波规则原样承继自E-SELECT-2的IS挖掘产物(pos250/pos60/vola20/ret60/ret20全bottom方向,score=满足数0..5)，不在本件重挖重选——规则对IS数据的拟合程度不变，OOS评价协议更换。",
+  "前提3(重复检验补偿): 同一OOS窗(2025起)已被E-SELECT-2评价过一次(桶均值已见)，存在多重比较；主判据阈值从常规t>=2.0提高至t>=2.5作补偿。",
+  "前提4(环境改分层): 下跌趋势环境不再整月剔除(那是E-SELECT-2判据设计缺陷)，改为分层呈现(仅描述)；规则在全部交易日生效。"
+ ],
+ "rule_frozen": "score(0..5)=满足数：pos250 bottom / pos60 bottom / vola20 bottom / ret60 bottom / ret20 bottom（成员=值≤当日宇宙截面1/3分位；NaN→不满足；与E-SELECT-2成员判定同口径）。",
+ "universe": "同E-SELECT-2：D层stock_daily在T有行且susp==0且st==0且close>0 ∩ 局部行号≥60 ∩ qfq收盘≤30元 ∩ amt20≥0.5亿元 ∩ 前缀60/00/30。幸存者偏差覆盖同前(391退市股在库)。",
+ "protocol": "日度截面，测试日=全部市场交易日：IS=2020-07-01~2024-12-31，OOS=2025-01-01~库尾前20行(标签行序20行完整所需，库尾20261116→最后测试日≈20261016)。规则无板块特征→不受板块数据尾20260828约束(前提1的一部分)。标签=up段start_date∈(T, T+20市场交易日](swing库日历口径)；超额=个股行序20行收益−hs300行序20行收益。环境分层=wf标签@T仅记录呈现，不过滤。",
+ "criteria": {
+  "G3_IS": "前置sanity：IS日度截面 score≥4 组超额均值>0（承继规则在新协议下仍须在IS显示效应）",
+  "G1_OOS": "主判据：OOS日度截面 score≥4 组超额序列均值>0 且 Newey-West(lag=20,重叠20行标签) t≥2.5 且 有效日数≥200",
+  "G2": "稳健：OOS score桶(0..5)相邻差为正≥3/5 且 2025/2026两自然年score≥4超额均>0",
+  "verdict_rule": "G3∧G1∧G2=PASS→呈报主人裁决（生产接线仍须wfa_gate新指纹+主人裁决，本实验零交易权）；任一FAIL→FAIL，PORTRAIT选股族trial_budget=2已耗，再翻案须新指纹+全新机制前提（非协议修补）。"
+ },
+ "nw_formula": "t=mean/sqrt((γ0+Σ_{l=1..20} 2(1−l/21)γl)/n)，γl=(u[l:]@u[:-l])/n，u=日度score≥4组超额序列−均值。",
+ "portfolio_presentation": "呈现用非判据：每月Top20（score≥4池，amt_ratio降序，tie按code升序）、T+1收盘买持20行、双边合计0.15%、基准hs300同窗口（与E-SELECT-2呈现口径一致便于对照）。",
+ "multiple_testing": "同一OOS窗第二次检验（trial#2）+阈值升至2.5补偿；如PASS仍须主人裁决且接线走独立wfa_gate。",
+ "artifacts": "data/PREREG_PORTRAIT_SELECT_E3_V1_20261118.json（指纹）+analysis/portrait_select_e3_20261118.py+data/portrait_select_e3_result.json+reports/PORTRAIT_SELECT_E3_20261118.md；三跑逐字节一致（输出无时间戳）。",
+ "discipline": "一词一定义禁事后调参；规则不重挖；实验=研究域零交易权；PASS不自动接线。",
+ "fingerprint": "00bbffe1f3206abd"
+}

@@ -1,0 +1,27 @@
+{
+ "name": "PREREG_PORTRAIT_SELECT_E2_V1",
+ "date": "20261118",
+ "trigger": "主人2026-11-18架构令：画像选股机=『启动前画像』区分度挖掘+组合期望验证（能涨/涨得多/该买什么三分问题、启动前快照vs负样本区分度、环境过滤+正向筛选+弹性排序+风险过滤、组合层面验证）。E-SELECT-1（形态检索统计量，指纹3adfc37886a68f26）于跑前被本架构令取代退役：未运行、无数据窥视、无判据调参，预注册文件保留为不可变记录。",
+ "hypothesis": "上涨段启动前N日快照特征与下跌/震荡段启动前快照存在高区分度特征；由高区分度特征构成的评分规则（score=满足数）对未来20td进入上涨段的样本在组合层面有正期望超额。",
+ "stage_library": "data/swing_labels.db swing_segments（41.6万段，2015-01~2026-10-28，seg_type∈{up:11431, dn:15781, osc:389314}，ret=段收益，zigzag_thr=0.1/min_days=63，built 2026-10-29）。段标签仅作事后标签用（主人明示阶段标签事后切分允许）。",
+ "snapshot": "快照=T=S-10市场交易日（N=10主口径；N=5/20作敏感性呈现非判据）。要求快照日该股有行且susp==0且st==0且close>0，否则弃样并计数。",
+ "features": "15个候选（跑前冻结清单）：个股D层逐行PIT特征[ret20, ret60, pos250, pos60, bias20, ma_align==3(多头排列), ma20_slope5, vr5, amt_ratio, vola20, dd250] + 环境[market_daily.mean_ret20, market_daily.pct_above20, market_daily.n_nh250] + 板块[sector_mom.rs_20截面排名分位@T（申万L1经stock_dim join）]。连续特征按快照日截面三分位成员（top/bottom各为独立候选方向，PIT按日截面，无冻结常数阈值）。",
+ "mining": "挖掘样本集=IS窗（2020-07-01~2024-12-31）内启动的up/dn/osc段启动前快照集；discrimination=rate_up−max(rate_dn, rate_osc)；准入=rate_up≥0.30；按disc降序取Top-K=5构成规则；rule=score(0..5)=满足特征数。",
+ "universe": "测试日T宇宙=D层stock_daily在T有行且susp==0且st==0且close>0 ∩ 次新(局部行号≥60) ∩ qfq收盘≤30元（qfq近似名义价，声明）∩ amt20≥0.5亿元 ∩ 前缀60/00/30。幸存者偏差：D层含391只窗口内退市/长停股，如实覆盖。",
+ "protocol": "月度截面，测试日=每月最后交易日，2020-07~2026-08（板块热度数据尾2026-08-28，测试窗相应收紧，声明）。标签=up段start_date∈(T, T+20市场交易日]（swing库日历口径）；超额=个股T→T+20td（行序）收益−hs300同起始行序20行收益；组合呈现（非判据）=每月Top20（score≥4池内按amt_ratio降序、tie按code升序）、T+1收盘买持20td、双边合计0.15%、基准hs300同窗口。",
+ "criteria": {
+  "G3_IS": "前置 sanity：IS窗内 score≥4 组平均20td超额>0（挖掘须在IS找到效应，否则判据失去意义→FAIL）",
+  "G1_OOS": "主判据：OOS（2025-01~2026-08，月度截面≥18）score≥4 组月度超额均值>0 且 Newey-West(lag=5) t≥2.0",
+  "G2": "稳健：OOS score桶(0..5)相邻差为正≥3/5 且 2025/2026 两自然年 score≥4 组超额均>0",
+  "verdict_rule": "G3∧G1∧G2=PASS→呈报主人裁决（生产接线仍须wfa_gate新指纹+主人裁决，本实验零交易权不自动接线）；任一FAIL→FAIL，trial_budget=1已耗，翻案须新指纹+新前提。"
+ },
+ "pit": "特征严格T日及以前（D层逐行PIT+按日截面三分位+PIT的mkt_state_wf环境过滤：wf标签=下跌趋势时剔除该截面样本并计数）；swing段标签仅作事后标签；幸存者偏差已覆盖（391退市股在库）；防过拟合=特征清单跑前冻结+K=5上限+单一规则形式+IS/OOS时间切分+判据只在OOS判（IS仅sanity）+双跑逐字节一致。",
+ "pit_gaps": [
+  "板块热度 sector_mom 尾部2026-08-28→测试窗收紧至2026-08（非插补不伪造）",
+  "mkt_state_wf 覆盖待运行时核对，缺失日不过滤（保守声明）",
+  "qfq价近似名义价的≤30元过滤为口径近似（声明）"
+ ],
+ "artifacts": "data/PREREG_PORTRAIT_SELECT_E2_V1_20261118.json（指纹）+analysis/portrait_select_e2_20261118.py+data/portrait_select_e2_result.json+reports/PORTRAIT_SELECT_E2_20261118.md；双跑逐字节一致（输出无时间戳）。",
+ "discipline": "一词一定义禁事后调参；双跑逐字节一致；实验=研究域零交易权；PASS不自动接线。",
+ "fingerprint": "4715d9a3192d1e50"
+}
