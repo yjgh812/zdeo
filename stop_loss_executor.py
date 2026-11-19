@@ -127,11 +127,17 @@ def _fetch_positions_via_mcp() -> list[dict] | None:
                             data = obj.get("data", {})
                             out = []
                             for p in data.get("positions", []):
+                                cur = float(p.get("currentPrice") or 0)
+                                tpr = float(p.get("todayProfitRate") or 0)
+                                # 20261119 R1跌停保护: 用当日涨跌幅反推昨收(todayProfitRate
+                                # 缺失/除零时 prev_close=0 → 下游保护失效保持原行为 fail-safe)
+                                prev_close = round(cur / (1 + tpr / 100), 4) if (cur > 0 and tpr > -100) else 0.0
                                 out.append({
                                     "code": norm_code(p.get("code", "")),
                                     "name": p.get("name", ""),
                                     "cost_price": float(p.get("costPrice") or 0),
-                                    "current_price": float(p.get("currentPrice") or 0),
+                                    "current_price": cur,
+                                    "prev_close": prev_close,
                                     "quantity": int(float(p.get("quantity") or 0)),
                                     "availableQty": int(float(p.get("availableQty") or 0)),
                                     "float_pnl_pct": float(p.get("profitRate") or 0),
@@ -296,6 +302,7 @@ def check_stop_loss_positions(positions: list[dict],
                 "name": name,
                 "cost_price": round(cost, 4),
                 "current_price": round(current, 4),
+                "prev_close": pos.get("prev_close", 0),  # 20261119 R1跌停保护透传
                 "quantity": qty,
                 # 2026-09-10: 透传可卖数量(T+1), 卖单数量上限=availableQty, 防超卖
                 "available_qty": pos.get("availableQty", qty),
@@ -352,6 +359,7 @@ def generate_sell_instructions(triggers: list[dict]) -> list[dict]:
             "action": action,
             "sell_quantity": sell_qty,
             "current_price": t["current_price"],
+            "prev_close": t.get("prev_close", 0),  # 20261119 R1跌停保护透传
             "cost_price": t["cost_price"],
             "pnl_pct": t["pnl_pct"],
             "pnl_amount": t["pnl_amount"],
@@ -716,6 +724,20 @@ def main() -> int:
             # 让价上限1%有界可审计; F1市价下限(市价×0.99)天然兼容。触发线/数量/范围不变。
             qty = int(inst["sell_quantity"])
             price = round(float(inst["current_price"]) * 0.99, 2)
+            # 20261119 R1跌停下限保护(11/19慈文传媒实战事故: 挂7.31=跌停7.38之下越界价
+            # 永不成交): 卖单挂价不得低于当日跌停价; 跌停封死时直接挂跌停价排队。
+            # prev_close 由 todayProfitRate 反推, 缺失时跳过保护保持原行为(fail-safe)。
+            try:
+                from _common import limit_prices
+                _prev = float(inst.get("prev_close") or 0)
+                if _prev > 0:
+                    _, lower_lim = limit_prices(code, _prev)
+                    if price < lower_lim:
+                        print(f"   🛡 {code} {name}: 让价{price} < 跌停价{lower_lim}"
+                              f"(昨收{_prev}), 抬至跌停价排队")
+                        price = lower_lim
+            except Exception as _e:
+                print(f"   ⚠️ {code} {name}: 跌停保护跳过({type(_e).__name__}), 用原让价{price}")
             reason = f"S-5止损({inst['action']}) 亏损{inst['pnl_pct']}%"
             cmd = [sys.executable, r"D:\zcodesj\trade_executor.py", "sell",
                    "--code", code, "--name", name, "--price", str(price),

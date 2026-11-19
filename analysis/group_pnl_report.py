@@ -33,6 +33,7 @@ NINE = [
 
 
 def load_source_map() -> dict:
+    from _common import MANUAL_REMAP_BY_CODE  # 2026-11-02 主人令: 手动确认批按note拆分重归因(建行/奥飞等)
     src = {}
     if not os.path.exists(LEDGER):
         raise RuntimeError(f"台账缺失: {LEDGER}")
@@ -42,13 +43,28 @@ def load_source_map() -> dict:
         except Exception:
             continue
         if r.get("action") == "BUY" and r.get("source"):
-            src[str(r.get("code", ""))[-6:]] = r["source"]
+            code = str(r.get("code", ""))[-6:]
+            s = r["source"]
+            # 手动确认批重归因: 历史manual_confirmed票按note判定真实方法(静态code映射, 唯一出处=_common)
+            if s == "manual_confirmed" and code in MANUAL_REMAP_BY_CODE:
+                s = MANUAL_REMAP_BY_CODE[code]
+            src[code] = s
+    # 20261119 迭代(主人令"修复优化迭代"): 台账无source的票 → 证据兜底文件
+    # data/source_remap_evidence.json (git全史恢复+历史报告白纸黑字, build_remap_evidence.py生成)。
+    # 根因: 早期台账部分BUY行source缺失被误归"未登记"; 证据兜底后未登记组已清零(77组全实名)。
+    _ev_path = os.path.join(ROOT, "data", "source_remap_evidence.json")
+    try:
+        _ev = json.load(open(_ev_path, encoding="utf-8"))
+        for code, s in {**_ev.get("git_history", {}), **_ev.get("report_evidence", {})}.items():
+            src.setdefault(str(code)[-6:], s)
+    except OSError:
+        pass  # 证据文件缺失时保持原行为(不阻断日报)
     return src
 
 
 def main() -> int:
     from stop_loss_executor import _fetch_positions_via_mcp
-    from _common import SOURCE_CN_NAMES  # 2026-11-01 根修复: 源→中文名单一真源(防口径漂移复发, 见_common头注)
+    from _common import SOURCE_CN_NAMES, EARLY_REMAP_BY_CODE, UNAUTHORIZED_OBSERVE_CODES  # 2026-11-04 越权观察仓剔除(主人批准)
     # 2026-11-01 主人令「把选股方式都记住, 每次每次都不知道」: 组名→人话定义唯一出处=data/group_dictionary.json,
     # 每组表头下自动打印一句解释, 汇报自解释不再需要主人记忆组名。
     try:
@@ -70,7 +86,7 @@ def main() -> int:
         if p.get("quantity", 0) <= 0:
             continue
         c6 = p["code"][-6:]
-        s = src_map.get(c6)
+        s = src_map.get(c6) or EARLY_REMAP_BY_CODE.get(c6, "")
         if s:
             groups[s].append(p)
         else:
@@ -84,25 +100,31 @@ def main() -> int:
     print(f"  每日分组汇报 v2 | {now.strftime('%Y-%m-%d %H:%M')} | 共{len(held)}只")
     print(f"{'='*70}")
 
-    for g in sorted(groups, key=lambda k: -sum(x["float_pnl_pct"] for x in groups[k])):
+    for g in sorted(groups, key=lambda k: -sum(x["float_pnl_pct"] for x in groups[k]
+                                               if x["code"][-6:] not in UNAUTHORIZED_OBSERVE_CODES)):
         items = sorted(groups[g], key=lambda x: -x["float_pnl_pct"])
-        pnls = [x["float_pnl_pct"] for x in items]
+        uo = [x for x in items if x["code"][-6:] in UNAUTHORIZED_OBSERVE_CODES]      # 越权观察仓(2026-11-04主人批准剔除)
+        ok = [x for x in items if x["code"][-6:] not in UNAUTHORIZED_OBSERVE_CODES]  # 合规仓(统计口径)
+        pnls = [x["float_pnl_pct"] for x in ok]
         ups = sum(1 for x in pnls if x > 0)
-        wr = ups / len(items)
+        wr = ups / len(pnls) if pnls else 0.0
         report["groups_source"][g] = {
-            "n": len(items), "win": ups, "wr": round(wr, 3),
-            "avg": round(sum(pnls) / len(pnls), 4),
+            "n": len(ok), "uo_n": len(uo), "win": ups, "wr": round(wr, 3),
+            "avg": round(sum(pnls) / len(pnls), 4) if pnls else 0.0,
             "cn": SOURCE_CN_NAMES.get(g, ""),  # 2026-11-01 双语名: 机器名+业务中文名
-            "stocks": [{"name": x["name"], "code": x["code"], "pnl": x["float_pnl_pct"]} for x in items],
+            "stocks": [{"name": x["name"], "code": x["code"], "pnl": x["float_pnl_pct"],
+                        "uo": x["code"][-6:] in UNAUTHORIZED_OBSERVE_CODES} for x in items],
         }
         tag = "涨" if wr >= 0.6 else ("跌" if wr <= 0.4 else "平")
         cn_disp = SOURCE_CN_NAMES.get(g, "")
         cn_suffix = f"|{cn_disp}" if cn_disp else ""
-        print(f"\n{LINE}\n【{g}{cn_suffix}】{len(items)}只 [{tag}] 胜率{wr:.0%} 均值{sum(pnls)/len(pnls):+.2f}%")
+        uo_disp = f"(另越权观察{len(uo)}只·不计入)" if uo else ""
+        print(f"\n{LINE}\n【{g}{cn_suffix}】{len(ok)}只{uo_disp} [{tag}] 胜率{wr:.0%} 均值{sum(pnls)/len(pnls) if pnls else 0:+.2f}%")
         print(f"  定义: {GROUP_DICT.get(g, '新组，定义待补进 data/group_dictionary.json')}")
         for x in items:
             m = "↑" if x["float_pnl_pct"] > 0 else ("↓" if x["float_pnl_pct"] < 0 else "→")
-            print(f"  {m} {x['name']:<8}{x['float_pnl_pct']:+7.2f}%")
+            badge = " 【越权观察】" if x["code"][-6:] in UNAUTHORIZED_OBSERVE_CODES else ""
+            print(f"  {m} {x['name']:<8}{x['float_pnl_pct']:+7.2f}%{badge}")
 
     if unreg:
         pnls = [x["float_pnl_pct"] for x in unreg]

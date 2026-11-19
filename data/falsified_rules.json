@@ -1,5 +1,5 @@
 {
- "version": "2026-11-18",
+ "version": "2026-11-20",
  "data_limitations_20261115": "qfq库2010-2015年覆盖仅199-220只/年(2016起3151+), 各证伪条目2010-2015留出窗数字真实但样本极薄统计力弱, 判定以2016-2026主窗为准; 行业层资格门槛(≥10成分)使行业类研究留出窗n=0; 2026-11-15核查(qfq DISTINCT code逐年统计)确认",
  "provenance": "机器可读派生层（唯一真源=各证伪档案+PROJECT_BOUNDARY §3 已否定路线）；生成器 OPTIMIZATION_PLAN 过滤用；更新须同步档案并在 provenance 登记 | round12 FAIL 登记见 rules.M-3.round12_revival_gate(2026-09-03) | regime自适应stage-1 FAIL登记见 rules.REGIME-ADAPT-STAGE1(2026-09-04) | 排序损失stage-1观察登记见 rules.RANKLOSS-STAGE1(2026-09-04) | Kronos零样本stage-1观察登记见 rules.KRONOS-ZS-STAGE1(2026-09-04) | failure_attribution字段2026-09-05物化(主人「继续」裁决兑现; 约定+存量retro表=reports/HUATAI_AUTORESEARCH_FOLLOWUP_20260905.md§3; 18目标回填, 新证伪登记须带此字段, anchor枚举=momentum_carrier|pool_increment|ic_vs_pnl|two_ends_negative|in_sample_inflation|other) | COMBOC-CHAN-LOOKAHEAD 2026-09-06增(P2审计,主人\"全部\"点单; 真源=reports/P2_CHAN_LOOKAHEAD_AUDIT_20260906.md) | COMBOC-CHAN-LOOKAHEAD 2026-09-06推进: 修复1-2步执行+事件研究存活, 详见原档案§六 | COMBOC-CHAN-LOOKAHEAD 2026-09-06终态: 修复闭环, 组合C确认真信号(非前视幻影), 影子切v2源 | L2席位因子stage-1登记见 rules.L2-LHB-SEAT-INST-STAGE1(2026-09-09, prereg跑前冻结PREREG_LHB_SEAT_INST_RATIO_20260909; 负向假设FAIL+正向条件效应2020+观察登记) | M-2解禁排雷stage-1登记见 rules.M2-UNLOCK-FILTER(2026-09-09, prereg跑前冻结PREREG_M2_UNLOCK_FILTER_20260909; 早停FAIL=功效不足triggered仅12-18<30,方向一致挂起观察; 数据资产restricted_release_hist_em 22519行新建) | M-2解禁排雷全市场翻案PASS_CANDIDATE更新见 rules.M2-UNLOCK-FILTER(2026-09-09, prereg=PREREG_M2_UNLOCK_FULLMKT_20260909; Q5−Q1日度t=-8.46/单调4/4/系统宇宙t=-8.58; 2017-2024稳定/2025-26弱化,选股扫描层候选待主人裁决) | L2席位因子翻案立项更新见 rules.L2-LHB-SEAT-INST-STAGE1(2026-09-09, 主人裁决翻案; Stage A机制门全过+Stage B前向walk协议冻结PREREG_L2_SEAT_COND_RANK_FWALK_20260909, 首评2026-12-31) | BREAKOUT-CONFIRM-FILTER 2026-09-11登记(主人「继续」授权把8/23明文开放项从学习推进为正式prereg验证; prereg跑前冻结reports/PREREG_BREAKOUT_CONFIRM_FILTER_20260911.md; FAIL=G2增量+1.056pp但t0.83不显著+G3仅4of7年度, S1 breakout_prob p80口径反向显著负-0.261pp/t-2.22; 确认组仅占池0.6%无实用容量; L41条款措辞修订提请主人裁决) | BREAKOUT-MIDPOS 2026-09-11登记(主人「继续」×3授权推进; prereg跑前冻结; FAIL且方向显著负: mid带同带增量-0.235pp/t-16.56, 三带日聚簇全负无位置甜点, S4五分位日配对全负, 元规律「中段正」对突破族外推证伪; 突破族八口径全负收口; anchor=two_ends_negative为突破族反例特例) | BREAKOUT-PULLBACK-ENTRY 2026-09-11登记(主人「继续」×4授权, 9/9明文未测项收口; FAIL=G1回踩臂日聚簇t-2.17, 相对维度+2.656pp/t48.87/11年全正为学习资产; 突破族九口径全负交 | 2026-11-09 VP9分时波形级登记(量能条件零信息+价格条件四粒度兑现) | QLIB-ARMS-STAGE1 2026-11-17登记(主人继续令, qlib对照臂stage-1三臂全FAIL双跑md5一致, 真源=reports/QLIB_ARMS_STAGE1_20261117.md) | BEHAVIOR-NETWORK-FACTORS-STAGE1 2026-11-17登记(主人令「继续,立项」, 行为金融+网络因子族stage-1四因子全FAIL双跑md5一致, STR观察级备注, 真源=reports/BEHAVIOR_NETWORK_FACTORS_STAGE1_20261117.md)",
  "rules": {
@@ -2001,6 +2001,28 @@
     "data/PREREG_PORTRAIT_SELECT_E4_V1_20261118.json (指纹c87e91c8198e05ad)",
     "falsified_rules PORTRAIT-PRELAUNCH-E2/E3 (前两次试验)"
    ]
+  },
+  "PORTRAIT-REGIME-HR1": {
+   "rule": "PORTRAIT-REGIME-HR1",
+   "status": "falsified",
+   "date": "20261120",
+   "prereg": "data/PREREG_PORTRAIT_REGIME_HR1_V1_20261120.json (指纹03862c52f67ccffb跑前冻结, runner指纹校验fail-closed通过)",
+   "source": "主人2026-11-20令「重新深度全面寻找画像系统如何能选到上涨的股票」知情边界后重开+『继续』令批准H-R1立项",
+   "hypothesis": "下跌段结束确认事件(前段=确认DOWN段, 谷底后≤40交易日收盘反弹≥15%首日, 事件日收盘入, 持有20自身交易日)后20日收益显著跑赢全市场等权中位",
+   "reason": "97962事件(IS 55780/OOS 34979): 事件级超额均值IS+1.13%/OOS+1.823%但中位均约-1.15%(右偏, 少数大涨拉高均值); G1主判据OOS日度聚合NW(20) t=-0.402远低于2.5(日度聚合均值-0.2869, 事件时序聚集在整体负超额日); G3 IS窗t=0.21同样不足; 双跑剔时间戳逐字节一致",
+   "mechanism": "反弹确认事件=V型反转的事后可识别点, 但(1)分布右偏: 确认进入的期望被少数大段拉高而典型事件跑输(中位-1.15%); (2)时序聚集: 事件扎堆发生在市场普跌反弹日, 这些日截面整体负超额, 择股无法避开; (3)G4分层: 普跌期事件-1.19% vs 平静期+2.41%, 环境而非个股状态决定成败; 与E2/E3/E4同构结论: 个股级画像信号(截面或时序)均无独立于市场环境的选股力",
+   "disposal": "FAIL终局归档; 证伪覆盖=zigzag段时序事件入口(下跌结束确认跟随); 翻案须新指纹+新前提",
+   "refs": [
+    "PORTRAIT-PRELAUNCH-E2/E3/E4",
+    "#151画像启动条件",
+    "追涨族gap_up_run"
+   ],
+   "artifacts": [
+    "reports/PORTRAIT_REGIME_HR1_RESULT_20261120.json(+run2)",
+    "analysis/portrait_regime_hr1_runner.py",
+    "reports/PORTRAIT_SELECT_RESEARCH_20261120.json"
+   ],
+   "zero_trade": true
   }
  },
  "retired_strategies": [

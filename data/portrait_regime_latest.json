@@ -1,0 +1,355 @@
+{
+ "built_at": "2026-11-20 00:22:49",
+ "asof": 20261119,
+ "params": {
+  "TAU": 0.15,
+  "T_TREND": 0.2,
+  "method": "zigzag"
+ },
+ "boundary_decl": "纯描述性历史状态标注: 描述过去何时涨/跌/震荡, 不含任何未来预测; 零交易权; 禁作选股公式或买卖信号; 任何信号化用途须新预注册并对照证伪#151(画像启动条件)与PORTRAIT-PRELAUNCH-E2/E3/E4(画像选股族FAIL归档2026-11-18)",
+ "n_codes": 5877,
+ "n_segments": 280989,
+ "days_share": {
+  "UP": 42.83,
+  "DOWN": 46.21,
+  "RANGE": 10.96
+ },
+ "cur_dist": {
+  "UP": 394,
+  "DOWN": 3792,
+  "RANGE": 1691
+ },
+ "top_cur_up": [
+  {
+   "code": "000013",
+   "name": "*ST石化A",
+   "industry": null,
+   "since": 20160104,
+   "days": 1214,
+   "ret_pct": 9989.88
+  },
+  {
+   "code": "601988",
+   "name": "中国银行",
+   "industry": "银行",
+   "since": 20230627,
+   "days": 825,
+   "ret_pct": 135.87
+  },
+  {
+   "code": "601939",
+   "name": "建设银行",
+   "industry": "银行",
+   "since": 20240913,
+   "days": 526,
+   "ret_pct": 90.29
+  },
+  {
+   "code": "601518",
+   "name": "吉林高速",
+   "industry": "交通运输",
+   "since": 20250114,
+   "days": 447,
+   "ret_pct": 24.25
+  },
+  {
+   "code": "000333",
+   "name": "美的集团",
+   "industry": "家用电器",
+   "since": 20250408,
+   "days": 394,
+   "ret_pct": 56.61
+  },
+  {
+   "code": "002142",
+   "name": "宁波银行",
+   "industry": "银行",
+   "since": 20250408,
+   "days": 394,
+   "ret_pct": 65.43
+  },
+  {
+   "code": "601198",
+   "name": "东兴证券",
+   "industry": "非银金融",
+   "since": 20250506,
+   "days": 315,
+   "ret_pct": 32.7
+  },
+  {
+   "code": "600263",
+   "name": "路桥建设",
+   "industry": null,
+   "since": 20100706,
+   "days": 281,
+   "ret_pct": 60.76
+  },
+  {
+   "code": "000429",
+   "name": "粤高速Ａ",
+   "industry": "交通运输",
+   "since": 20250922,
+   "days": 279,
+   "ret_pct": 38.45
+  },
+  {
+   "code": "601000",
+   "name": "唐山港",
+   "industry": "交通运输",
+   "since": 20250925,
+   "days": 276,
+   "ret_pct": 42.61
+  },
+  {
+   "code": "600919",
+   "name": "江苏银行",
+   "industry": "银行",
+   "since": 20251010,
+   "days": 271,
+   "ret_pct": 43.04
+  },
+  {
+   "code": "600068",
+   "name": "葛洲坝",
+   "industry": null,
+   "since": 20200925,
+   "days": 216,
+   "ret_pct": 68.9
+  },
+  {
+   "code": "600377",
+   "name": "宁沪高速",
+   "industry": "交通运输",
+   "since": 20260119,
+   "days": 202,
+   "ret_pct": 33.03
+  },
+  {
+   "code": "002948",
+   "name": "青岛银行",
+   "industry": "银行",
+   "since": 20260120,
+   "days": 201,
+   "ret_pct": 59.79
+  },
+  {
+   "code": "601665",
+   "name": "齐鲁银行",
+   "industry": "银行",
+   "since": 20260120,
+   "days": 201,
+   "ret_pct": 33.97
+  },
+  {
+   "code": "601838",
+   "name": "成都银行",
+   "industry": "银行",
+   "since": 20260120,
+   "days": 201,
+   "ret_pct": 45.53
+  },
+  {
+   "code": "000956",
+   "name": "中原油气",
+   "industry": null,
+   "since": 20050603,
+   "days": 197,
+   "ret_pct": 100.17
+  },
+  {
+   "code": "600674",
+   "name": "川投能源",
+   "industry": "公用事业",
+   "since": 20260129,
+   "days": 194,
+   "ret_pct": 39.94
+  },
+  {
+   "code": "600900",
+   "name": "长江电力",
+   "industry": "公用事业",
+   "since": 20260129,
+   "days": 194,
+   "ret_pct": 24.84
+  },
+  {
+   "code": "600270",
+   "name": "外运发展",
+   "industry": null,
+   "since": 20171206,
+   "days": 192,
+   "ret_pct": 31.29
+  }
+ ],
+ "top_cur_down": [
+  {
+   "code": "300294",
+   "name": "博雅生物",
+   "industry": "医药生物",
+   "since": 20241009,
+   "days": 515,
+   "ret_pct": -66.69
+  },
+  {
+   "code": "600009",
+   "name": "上海机场",
+   "industry": "交通运输",
+   "since": 20241009,
+   "days": 515,
+   "ret_pct": -33.67
+  },
+  {
+   "code": "600332",
+   "name": "白云山",
+   "industry": "医药生物",
+   "since": 20241009,
+   "days": 515,
+   "ret_pct": -32.84
+  },
+  {
+   "code": "600905",
+   "name": "三峡能源",
+   "industry": "公用事业",
+   "since": 20241009,
+   "days": 515,
+   "ret_pct": -32.47
+  },
+  {
+   "code": "600925",
+   "name": "苏能股份",
+   "industry": "煤炭",
+   "since": 20241009,
+   "days": 515,
+   "ret_pct": -25.85
+  },
+  {
+   "code": "000858",
+   "name": "五粮液",
+   "industry": "食品饮料",
+   "since": 20241108,
+   "days": 493,
+   "ret_pct": -49.86
+  },
+  {
+   "code": "002507",
+   "name": "涪陵榨菜",
+   "industry": "食品饮料",
+   "since": 20241108,
+   "days": 493,
+   "ret_pct": -21.81
+  },
+  {
+   "code": "600248",
+   "name": "陕建股份",
+   "industry": "建筑装饰",
+   "since": 20241108,
+   "days": 493,
+   "ret_pct": -49.5
+  },
+  {
+   "code": "000028",
+   "name": "国药一致",
+   "industry": "医药生物",
+   "since": 20241113,
+   "days": 490,
+   "ret_pct": -25.26
+  },
+  {
+   "code": "601607",
+   "name": "上海医药",
+   "industry": "医药生物",
+   "since": 20241122,
+   "days": 483,
+   "ret_pct": -21.2
+  },
+  {
+   "code": "002327",
+   "name": "富安娜",
+   "industry": "纺织服饰",
+   "since": 20241213,
+   "days": 468,
+   "ret_pct": -37.15
+  },
+  {
+   "code": "600132",
+   "name": "重庆啤酒",
+   "industry": "食品饮料",
+   "since": 20241216,
+   "days": 467,
+   "ret_pct": -36.1
+  },
+  {
+   "code": "601006",
+   "name": "大秦铁路",
+   "industry": "交通运输",
+   "since": 20241217,
+   "days": 466,
+   "ret_pct": -22.44
+  },
+  {
+   "code": "600548",
+   "name": "深高速",
+   "industry": "交通运输",
+   "since": 20250103,
+   "days": 454,
+   "ret_pct": -32.3
+  },
+  {
+   "code": "600050",
+   "name": "中国联通",
+   "industry": "通信",
+   "since": 20250224,
+   "days": 424,
+   "ret_pct": -31.16
+  },
+  {
+   "code": "603195",
+   "name": "公牛集团",
+   "industry": "轻工制造",
+   "since": 20250311,
+   "days": 413,
+   "ret_pct": -20.47
+  },
+  {
+   "code": "002024",
+   "name": "ST易购",
+   "industry": "商贸零售",
+   "since": 20250321,
+   "days": 405,
+   "ret_pct": -55.36
+  },
+  {
+   "code": "603357",
+   "name": "设计总院",
+   "industry": "建筑装饰",
+   "since": 20250407,
+   "days": 395,
+   "ret_pct": -46.6
+  },
+  {
+   "code": "603210",
+   "name": "泰鸿万立",
+   "industry": "汽车",
+   "since": 20250409,
+   "days": 393,
+   "ret_pct": -61.58
+  },
+  {
+   "code": "600161",
+   "name": "天坛生物",
+   "industry": "医药生物",
+   "since": 20250410,
+   "days": 392,
+   "ret_pct": -48.53
+  }
+ ],
+ "data_limitations": "qfq库2010-2015年覆盖仅199-220只/年(2016起3151+), 早期个股状态段样本薄, 全市场级统计以2016+为准; 沿用 falsified_rules data_limitations_20261115 口径",
+ "panic_monitor": {
+  "active": true,
+  "month": "2026-11",
+  "down_share": 0.596,
+  "rule": "月度下跌段占比≥55%=普跌事件(描述)",
+  "baseline": "历史12个已完结事件后3个月全市场个股中位+2.7%, 75%为正(3次熊市中继为负)",
+  "note": "描述性监控非信号(H-R3降格裁决, PORTRAIT-REGIME-HR1已证伪个股级跟随)"
+ }
+}

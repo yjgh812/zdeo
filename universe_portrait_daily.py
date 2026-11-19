@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-r"""universe_portrait_daily.py — 宇宙画像日更编排器（五步, 2026-11-17 扩容）
+r"""universe_portrait_daily.py — 宇宙画像日更编排器（六步, 2026-11-19 增状态层）
 ================================================================================
 步骤(顺序执行, 单步失败不中断后续):
   1. universe_portrait_stats.py --snapshot   全宇宙画像快照 + 横截面分布
@@ -8,6 +8,7 @@ r"""universe_portrait_daily.py — 宇宙画像日更编排器（五步, 2026-11
   3. analysis/portrait_ts2vec_daily.py       TS2Vec形态检索日更面板(鲜度闸/GPU闸 fail-N/A)
   4. universe_portrait_brief.py              三池简报+形态检索面板(机读json)
   5. portrait_gate_shadow.py                 双门影子记账(幂等)
+  6. analysis/portrait_regime_build.py       状态层·全市场涨/跌/震荡时间线(~15s, 2026-11-19)
 
 挂载: PortraitDailyPipeline_2300 step4(23:00 夜链 qfq 更新后, 数据已新)。
 侦察级零交易权; 手动入口: python universe_portrait_daily.py
@@ -26,6 +27,7 @@ STEPS = [
     ("ts2vec", [sys.executable, "-I", os.path.join(ROOT, "analysis", "portrait_ts2vec_daily.py")]),
     ("brief", [sys.executable, os.path.join(ROOT, "universe_portrait_brief.py")]),
     ("gate_shadow", [sys.executable, os.path.join(ROOT, "portrait_gate_shadow.py")]),
+    ("regime", [sys.executable, "-I", os.path.join(ROOT, "analysis", "portrait_regime_build.py")]),
 ]
 
 try:

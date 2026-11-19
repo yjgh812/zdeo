@@ -204,6 +204,62 @@ def main():
 N/A（结构化不可用: {reason}）——历史形状相似片段的后续分布今日未产出，不编造。
 """
         retr_json = dict(availability=False, reason=reason)
+    # 状态面板(画像状态层, 2026-11-19): 全市场涨/跌/震荡分布·纯描述; 缺失/过期=N/A禁伪健康
+    reg_path = os.path.join(ROOT, "data", "portrait_regime_latest.json")
+    reg = None
+    try:
+        with open(reg_path, "r", encoding="utf-8") as f:
+            reg = json.load(f)
+        if not isinstance(reg, dict):
+            reg = None
+    except FileNotFoundError:
+        reg = None
+    reg_ok = bool(reg) and int(reg.get("asof") or 0) == int(d8)
+    if reg_ok:
+        cd, ds = reg["cur_dist"], reg["days_share"]
+        cur_tot = cd["UP"] + cd["DOWN"] + cd["RANGE"]
+        top_up = reg.get("top_cur_up", [])[:8]
+        top_dn = reg.get("top_cur_down", [])[:8]
+        pm = reg.get("panic_monitor")
+        if pm:
+            state_txt = ("**处于普跌事件中**（%s 下跌段占比 %.1f%%）" % (pm["month"], pm["down_share"] * 100)
+                         if pm.get("active") else "不在普跌事件中（%s 下跌段占比 %.1f%%）" % (pm["month"], pm["down_share"] * 100))
+            panic_line = (f"市场普跌监控（描述非信号）：{state_txt}。历史基线：{pm['baseline']}。")
+        else:
+            panic_line = "市场普跌监控：N/A（快照无此字段）。"
+
+        def _rows(rows):
+            return "\n".join(
+                f"| {r['code']} {r['name'] or '?'} | {r['industry'] or '-'} | {r['since']} | {r['days']} | {r['ret_pct']:+.1f}% |"
+                for r in rows) if rows else "(空)"
+        reg_panel = f"""## 状态面板（全市场涨/跌/震荡·zigzag波段划分·纯描述）
+
+当前（{d8}）全市场 {cur_tot} 只：**下跌 {cd['DOWN']}（{cd['DOWN']/cur_tot:.1%}） | 震荡 {cd['RANGE']}（{cd['RANGE']/cur_tot:.1%}） | 上涨 {cd['UP']}（{cd['UP']/cur_tot:.1%}）**
+个股全历史平均时间占比：上涨 {ds['UP']}% / 下跌 {ds['DOWN']}% / 震荡 {ds['RANGE']}%（判据: 反转≥15%确认转折, 段幅度≥20%计趋势）。
+{panic_line}
+当前持续上涨 ≥8 日例（按持续天数）:
+
+| 股票 | 行业 | 自 | 已持续 | 段内幅度 |
+|---|---|---|---|---|
+{_rows(top_up)}
+
+当前持续下跌 ≥8 日例（按持续天数）:
+
+| 股票 | 行业 | 自 | 已持续 | 段内幅度 |
+|---|---|---|---|---|
+{_rows(top_dn)}
+
+> 描述"过去何时涨/跌/震荡"，零预测非信号；末段为暂定（随未来数据修正）；禁作选股公式，任何信号化须新预注册并对照证伪#151。
+"""
+        reg_json = dict(availability=True, asof=int(reg["asof"]), cur_dist=cd,
+                        days_share=ds)
+    else:
+        reason = "no_data" if not reg else "stale:asof=%s!=brief=%s" % (reg.get("asof"), d8)
+        reg_panel = f"""## 状态面板（全市场涨/跌/震荡·zigzag波段划分·纯描述）
+
+N/A（结构化不可用: {reason}）——全市场状态分布今日未产出，不编造。
+"""
+        reg_json = dict(availability=False, reason=reason)
     md = f"""# A股宇宙画像驱动实战简报（侦察级·零交易权）{d8}
 
 > 生成 {datetime.now().strftime('%Y-%m-%d %H:%M')} | 引擎 universe_portrait_brief.py | 截面 {d8}（{n_all} 只全宇宙画像）
@@ -238,6 +294,8 @@ N/A（结构化不可用: {reason}）——历史形状相似片段的后续分�
 
 {retr_panel}
 
+{reg_panel}
+
 ## 使用说明（人话）
 
 - A 池=底部区缩量低价、且已经回到 10 日线附近企稳的票——这是全部研究收敛后的最优买区画像; 但 2026 年内这个画像还在亏, **regime 门（上证站回 MA20 且修复档以上）没开之前只看不买**。
@@ -255,9 +313,9 @@ N/A（结构化不可用: {reason}）——历史形状相似片段的后续分�
                        pool_A=[dict(code=r["code"], name=r["name"], px=r["px"], state=r.get("state"),
                                     golden=r.get("golden")) for r in A],
                        pool_B=[dict(code=r["code"], name=r["name"], px=r["px"], vr=r["vr"]) for r in B],
-                       retr=retr_json),
+                       retr=retr_json, regime=reg_json),
                   f, ensure_ascii=False, separators=(",", ":"))
-    print(f"[PORTRAIT-BRIEF] asof={d8} A={len(A)} B={len(B)} C={len(C)} 门A={gateA}({low_pct}%) 门C={gateC}({mom_pct}%) 检索面板={'OK' if retr_ok else 'N/A'} -> {out_md}")
+    print(f"[PORTRAIT-BRIEF] asof={d8} A={len(A)} B={len(B)} C={len(C)} 门A={gateA}({low_pct}%) 门C={gateC}({mom_pct}%) 检索面板={'OK' if retr_ok else 'N/A'} 状态面板={'OK' if reg_ok else 'N/A'} -> {out_md}")
     return 0
 
 

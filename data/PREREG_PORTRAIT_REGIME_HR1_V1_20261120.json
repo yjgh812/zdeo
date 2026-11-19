@@ -1,0 +1,36 @@
+{
+ "name": "PREREG_PORTRAIT_REGIME_HR1_V1",
+ "date": "20261120",
+ "owner_cmd": "主人2026-11-20令「重新深度全面寻找画像系统如何能选到上涨的股票」+『继续』令批准推荐主线(H-R1立项)",
+ "hypothesis": "下跌段结束确认事件(前段为确认DOWN段且自谷底快速反弹)后20交易日个股收益显著跑赢全市场等权中位",
+ "event_def": {
+  "prev_seg": "上一段=regime_segments中is_confirmed=1且state=DOWN的段",
+  "trigger": "谷底(该DOWN段end_date收盘价)之后首个收盘>=谷底*1.15的交易日=事件日",
+  "window_cond": "事件日距谷底<=40交易日(慢反弹不入选)",
+  "entry": "事件日收盘买入",
+  "fwd": "持有20个该股自身交易日,以第20个交易日收盘计收益",
+  "benchmark": "同日全市场截面fwd20收益中位数(等权中位,qfq全A剔除无效行)",
+  "excess": "个股fwd20 - 基准fwd20"
+ },
+ "sample": {
+  "universe": "regime库5877只(品种闸后纯股票)",
+  "IS": "20160101-20231231",
+  "OOS": "20240101-20261119(库内最新)",
+  "dedup": "同一股票同一谷底只取首个事件日; 事件日为事件去重键"
+ },
+ "gates": {
+  "G1_main": "OOS窗事件超额均值>0 且 日度聚合序列NW(lag=20) t>=2.5(沿E3重复检验补偿阈值)",
+  "G2_monotone": "距谷底天数分桶(<=10/11-20/21-40)超额呈单调或至少首末桶方向一致且差>0",
+  "G3_sanity": "IS窗事件超额均值>0",
+  "G4_env_split": "按市场月度DOWN占比分层(普跌期/其他)呈现,不判死刑仅呈现(E3/E4宽幅震荡失效环境对照)"
+ },
+ "verdict_rule": "PASS=G1; FAIL=非PASS; 边界带t∈[2.0,2.5)判BOUNDARY如实呈现不越线",
+ "nw_spec": "日度聚合=每事件日所有事件超额的均值为该日观测; NW=Newey-West HAC lag20, w_l=1-l/21",
+ "boundary": "零交易权; 验证结果不自动接线, PASS须呈主人批准另走变更程序",
+ "falsified_refs": [
+  "PORTRAIT-PRELAUNCH-E2/E3/E4(静态截面选股,条件不同=时序事件)",
+  "#151(pos250高位追涨,方向相反)",
+  "追涨族gap_up_run(已大涨追入,H-R1=下跌结束确认含前段DOWN必要条件)"
+ ],
+ "fingerprint": "03862c52f67ccffb"
+}

@@ -136,8 +136,11 @@ class WsRPC:
         raise RuntimeError(f"RPC {name} 无 result: {raw[:300]}")
 
 
-def quote_map(rpc: WsRPC, code6_list: list[str]) -> dict[str, float]:
-    """批量实时价：data_quote 返回最新价。失败返回空 dict（调用方 fail-closed 跳过该单）。"""
+def quote_map(rpc: WsRPC, code6_list: list[str],
+              prev_out: dict[str, float] | None = None) -> dict[str, float]:
+    """批量实时价：data_quote 返回最新价。失败返回空 dict（调用方 fail-closed 跳过该单）。
+    20261119 R2: prev_out 可选参数——同一次响应顺带提取昨收(字段名多试几个, 缺失不写),
+    供卖单跌停边界识别(挂价<跌停价=交易所无效单)。"""
     out: dict[str, float] = {}
     if not code6_list:
         return out
@@ -159,6 +162,12 @@ def quote_map(rpc: WsRPC, code6_list: list[str]) -> dict[str, float]:
                     px = it.get("price") or it.get("latestPrice") or it.get("last") or 0
                     if code and px:
                         out[_norm6(str(code))] = float(px)
+                    # R2 昨收提取(多字段名兼容, 找到才写)
+                    if code and prev_out is not None:
+                        pc = (it.get("prevClose") or it.get("prev_close")
+                              or it.get("yesterdayClose") or it.get("preClose") or 0)
+                        if pc:
+                            prev_out[_norm6(str(code))] = float(pc)
     except Exception as e:
         print(f"⚠️ data_quote 失败: {e}", file=sys.stderr)
     return out
@@ -250,16 +259,21 @@ def classify_row(row: dict, cur: float | None, ref: float, chase_tol: float = CH
     return rec
 
 
-def classify_sell_row(row: dict, cur: float | None, floor: float) -> dict:
+def classify_sell_row(row: dict, cur: float | None, floor: float,
+                      lower_lim: float = 0.0) -> dict:
     """单行卖单改价决策（纯函数，无 I/O，可单测；2026-11-11 主人批准扩展）。
 
     返回 dict: status ∈ {HOLD, NO_FLOOR, DROP, REQ, NO_QUOTE} + 决策字段。
-    floor 缺失/≤0 且挂上方 → NO_FLOOR（fail-closed：宁可不动单，不无授权贱卖）。
+    floor 缺失/≤0 且挂上方够不着 → NO_FLOOR（fail-closed：宁可不动单，不无授权贱卖）。
     DROP: cur < floor×0.97 深度跌破下限3%以上 = 追跌区（镜像买侧 CHASE_TOL 追高硬闸），
           撤单放弃不自动卖，交主人/止损链处置。
     REQ: 挂上方够不着且现价未跌破下限 → new_price=max(floor, cur×0.998) 封底下限
          （floor 是已授权最低卖价，非无授权贱卖）。
     HOLD: 现价≥挂单价（市场可达挂单价，等自然成交）或改价无收益/已改过一次/余量0。
+    20261119 R2: lower_lim=当日跌停价(昨收×(1-幅度))。挂单价 p0 < lower_lim 时该单为
+    交易所无效单(11/19慈文传媒实证: 挂7.31<跌停7.38 永不撮合), "现价≥挂价=可成交"假设
+    失效 → 判 REQ 重挂跌停价(优先于一切HOLD分支)。lower_lim=0(缺昨收)时跳过本检查
+    保持原行为 fail-safe。
     """
     p0 = float(row.get("price") or 0)
     qty = int(row.get("qty") or 0)
@@ -272,6 +286,18 @@ def classify_sell_row(row: dict, cur: float | None, floor: float) -> dict:
         rec["status"] = "NO_QUOTE"
         return rec
     rec["cur"] = cur
+    # R2 跌停无效单识别: 挂价低于跌停价 = 废单, 撤旧重挂跌停价(未改过价时)
+    if lower_lim and lower_lim > 0 and p0 < lower_lim:
+        if rem > 0 and not rec["requoted"]:
+            rec["status"] = "REQ"
+            rec["new_price"] = lower_lim
+            rec["reason"] = (f"废单重挂: 挂价{p0}<跌停价{lower_lim}(交易所不撮合, "
+                             f"重挂跌停价排队)")
+            return rec
+        rec["status"] = "HOLD"
+        rec["reason"] = (f"挂价{p0}<跌停价{lower_lim}为废单但已改过价/余量0, "
+                         f"交主人处置(fail-closed)")
+        return rec
     if not floor or floor <= 0:
         if cur < p0:
             rec["status"] = "NO_FLOOR"
@@ -297,7 +323,8 @@ def classify_sell_row(row: dict, cur: float | None, floor: float) -> dict:
 
 def process_sell_rows(a, rpc: WsRPC, live: dict[str, str], q: dict[str, float],
                       sell_rows: list[dict], floor_map: dict[str, float],
-                      decided: list[dict]) -> bool:
+                      decided: list[dict],
+                      prev_map: dict[str, float] | None = None) -> bool:
     """卖单 pegging 处理（2026-11-11 主人批准扩展；买侧路径零触碰）。
 
     真值终态语义与买侧同源（LIVE_TERMINAL_* / NO_LIVE_REF 一律不撤不挂）。
@@ -306,6 +333,7 @@ def process_sell_rows(a, rpc: WsRPC, live: dict[str, str], q: dict[str, float],
     返回 changed（execute 态有撤/挂动作时 True）。
     """
     changed = False
+    prev_map = prev_map or {}   # 20261119 R2: 昨收表(缺省空=fail-safe跳过跌停检查)
     from executor_order_ledger import mark_order_status
     for r in sell_rows:
         oid = str(r.get("order_id") or "")
@@ -339,7 +367,17 @@ def process_sell_rows(a, rpc: WsRPC, live: dict[str, str], q: dict[str, float],
             continue
         # ---- 正常决策: 下限 = CLI --floor(优先) 或 行 ref_price ----
         floor = floor_map.get(c6) or float(r.get("ref_price") or 0)
-        rec.update(classify_sell_row(r, q.get(c6), floor))
+        # 20261119 R2: 跌停价=昨收×(1-幅度), 昨收取行情prev_map(quote_map顺带提取),
+        # 缺失时 lower_lim=0 → classify_sell_row 跳过废单检查保持原行为 fail-safe
+        lower_lim = 0.0
+        _pc = prev_map.get(c6, 0)
+        if _pc > 0:
+            try:
+                from _common import limit_prices
+                lower_lim = limit_prices(r["code"], _pc)[1]
+            except Exception:
+                lower_lim = 0.0
+        rec.update(classify_sell_row(r, q.get(c6), floor, lower_lim))
         if rec["status"] in ("DROP", "REQ") and a.execute and not rec["requoted"]:
             if rec["status"] == "REQ":
                 # 先挂新卖单、挂成后立即撤老单（镜像买侧主人令 2026-11-06）
@@ -454,7 +492,8 @@ def main() -> int:
 
     rows = [c["row"] for c in checked]
     codes = sorted({_norm6(r["code"]) for r in rows} | {_norm6(r["code"]) for r in sell_rows})
-    q = quote_map(rpc, codes)
+    prev_map: dict[str, float] = {}   # R2: 同一次行情顺带提取昨收(卖侧跌停边界用)
+    q = quote_map(rpc, codes, prev_out=prev_map)
 
     decided: list[dict] = []
     changed = False
@@ -548,7 +587,9 @@ def main() -> int:
         decided.append(rec)
 
     # ---- 卖单 pegging（2026-11-11 主人批准扩展；买侧上方路径零触碰）----
-    changed = process_sell_rows(a, rpc, live, q, sell_rows, floor_map, decided) or changed
+    # 20261119 R2: 传入昨收表供跌停边界识别(挂价<跌停价=废单自动重挂)
+    changed = process_sell_rows(a, rpc, live, q, sell_rows, floor_map, decided,
+                                prev_map=prev_map) or changed
 
     if a.execute and changed:
         save_open_rows(all_rows)
