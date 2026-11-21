@@ -228,7 +228,7 @@
 - dirty worktree 中不得回滚/覆盖/吸入未授权改动；嵌套仓库父仓子仓分别审计/验收/提交。
 - 不使用破坏性 git 命令，除非主人明确要求并确认风险。
 - **当前状态**：D:\zcodesj 为 git 仓库（2026-08-27 初始化，基线 1985bc4；2026-08-31 完成 8/28 后积压 44 文件+2132 行共 10 批主题提交收口，tracked 零残留）。上述纪律按本规则正常执行（禁 git add .，只 stage 相关文件，提交前逐批 diff 审查）。
-- **GitHub 异地镜像（2026-11-17 接入，主人令「接入 github」+三拍板：私有仓/只推当前快照/同意装 gh）**：镜像仓 `D:\tulong_github_mirror`（独立 git 仓库，非嵌套）→ 远端 `git@github.com:yjgh812/zdeo.git`（私有仓，账号 yjgh812）。网络事实=本机 github.com 网页/API 域被墙且 DNS 污染，**仅 SSH 22 端口通道可用**（gh CLI 因依赖 API 域而否决）；推送需 `ServerAliveInterval=15` 保活（无保活 149MB 传输中途被 reset）。镜像=本地 HEAD 的 `git archive` 快照 + 排除 12 个 >20MB 数据大件（清单存档镜像仓 GITHUB_MIRROR_README.md；GitHub 单文件 100MB 硬限），基线 38a30fb 本地/远端 hash 逐字节一致。**同步方式**：本地收口后重新 archive 导出覆盖镜像目录 → commit → push；**真源永远在本地 D:\zcodesj，远端只读镜像禁止回写**；SSH 私钥 `~/.ssh/id_ed25519` 为接入凭据勿动勿泄露。
+- **GitHub 异地镜像（2026-11-17 接入，主人令「接入 github」+三拍板：私有仓/只推当前快照/同意装 gh）**：镜像仓 `D:\tulong_github_mirror`（独立 git 仓库，非嵌套）→ 远端 `git@github.com:yjgh812/zdeo.git`（私有仓，账号 yjgh812）。网络事实（2026-11-21 镜像推送排查更新，主人「继续」令批准）：github.com/ssh.github.com 的 DNS 被**间歇性污染**（假 IP=Facebook/Twitter 段，解析到假 IP 时 SSH 报 Network unreachable，11-21 推送失败根因），但**真实 IP 直连 22/443 稳定可达**；已在 `~/.ssh/config` 钉死真实 IP（github.com→20.205.243.166:22、ssh.github.com→140.82.113.36:443）+ HostKeyAlias 复用既有信任，推送不依赖 DNS；GitHub 换 IP 段时须重新 TCP 探测并更新该配置。gh CLI 因依赖 API 域维持否决；推送需 `ServerAliveInterval=15` 保活。镜像=本地 HEAD 的 `git archive` 快照 + 排除 12 个 >20MB 数据大件（清单存档镜像仓 GITHUB_MIRROR_README.md；GitHub 单文件 100MB 硬限），最新基线=2026-11-21 镜像仓 a8be738（本地 7a16dbbc）。**同步方式**：本地收口后重新 archive 导出覆盖镜像目录 → commit → push；**真源永远在本地 D:\zcodesj，远端只读镜像禁止回写**；SSH 私钥 `~/.ssh/id_ed25519` 为接入凭据勿动勿泄露。
 
 ## 16. 外部服务与对外变更
 
