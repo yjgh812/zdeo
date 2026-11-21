@@ -258,14 +258,22 @@ def _clean_stray_qfq_copy():
     """禁用旧路径空壳 qfq 副本守卫（2026-10-19 全量测试轮修复）: data\\dragon_quant_qfq.db
     系 10-13 翻转前旧真源路径, 白名单巡检禁入; 全量测试轮实抓 0 字节空壳（07:13 现形,
     创建者未定位）。仅删 size==0 空壳（无数据可失）, 非空文件绝不碰（零数据风险）;
-    每夜 qfq 环节自愈; 白名单巡检（check_db_freshness）仍为独立检测面。"""
-    _stray = Path(__file__).parent / "data" / "dragon_quant_qfq.db"
-    try:
-        if _stray.exists() and _stray.stat().st_size == 0:
-            _stray.unlink()
-            log(f"[qfq] 已清禁用旧路径空壳副本(0字节): {_stray}")
-    except OSError as e:
-        log(f"[qfq] 空壳副本清理失败(不阻塞链, 留白名单巡检报警): {e}")
+    每夜 qfq 环节自愈; 白名单巡检（check_db_freshness）仍为独立检测面。
+
+    2026-11-21 全量测试轮扩展: 根目录 dragon_quant_qfq.db 同类 0 字节空壳（11-20 02:15
+    现形, 创建者未定位, 同 10-19 旧路径案）, 白名单巡检同样禁入; 按同一先例扩展自愈覆盖,
+    仅删 size==0 空壳, 非空绝不碰。"""
+    _strays = [
+        Path(__file__).parent / "data" / "dragon_quant_qfq.db",
+        Path(__file__).parent / "dragon_quant_qfq.db",  # 根目录空壳(2026-11-21 扩展)
+    ]
+    for _stray in _strays:
+        try:
+            if _stray.exists() and _stray.stat().st_size == 0:
+                _stray.unlink()
+                log(f"[qfq] 已清禁用旧路径空壳副本(0字节): {_stray}")
+        except OSError as e:
+            log(f"[qfq] 空壳副本清理失败(不阻塞链, 留白名单巡检报警): {e}")
 
 
 def run_qfq(target: str):

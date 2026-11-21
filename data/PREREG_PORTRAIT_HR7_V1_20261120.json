@@ -1,0 +1,27 @@
+{
+ "name": "PREREG_PORTRAIT_HR7_V1",
+ "date": "20261120",
+ "owner_cmd": "主人第三份规范令(v3形态库)+『继续』令批准H-R7候选推进",
+ "hypothesis": "在H-R6已PASS家族命中行内, 叠加v3离散形态/量价/指标条件可显著提升fwd20超额(精化方向, 服务Top-N化接线)",
+ "base_family": {
+  "rule": "pos60==b3 AND vola20==b0 (H-R6规则8, OOS t=3.870最优)",
+  "bucket_edges": "IS五分位(20/40/60/80), runner在IS内重算(同H-R6程序), OOS复用IS边",
+  "robust_variant": "pos60>=b3 AND vola20==b0 (规则5, 稳健性复核用)"
+ },
+ "mining": {
+  "IS": "20160101-20221231全量有效行(4:1降采样同H-R6): 家族命中行内, 逐个叠加条件v(条件∧家族) vs 家族本身的超额差Cohen's d与粗t",
+  "condition_pool_frozen": "v3形态31个布尔标签: 大阳/中阳/小阳/十字星/大阴/中阴/小阴/锤头/倒锤头/红三兵/三只乌鸦/两阳夹一阴/两阴夹一阳/箱体突破/突破站稳box_hold2/向上缺口未回补/上穿MA20/价涨量增/价涨量缩/价跌量增/价跌量缩/横盘缩量/横盘放量/MACD金叉/MACD死叉/RSI超买/RSI超卖/KDJ金叉/KDJ死叉/低位置/高位/换手异常(>95分位)——判定式与v3(technical_profile_v3_20261120.py)同式, runner复制实现并与v3报告对照校验",
+  "IS_screen": "叠加条件IS-NW(20)t>=2.0 且 d>0 且 命中n(IS降采样)>=3000, 按d排序Top10冻结",
+  "exclusion": "条件叠加后样本不得为家族的>95%(防止同义重复), 否则剔除"
+ },
+ "oos_gate": {
+  "main": "Top10中至少一条: OOS叠加超额>家族本身OOS超额(增量>0) 且 叠加后NW(20)t>=2.5 且 方向与IS一致 且 命中天>=300",
+  "robust": "稳健域(宽家族)同口径复核, 方向须一致",
+  "disclosure": "Top10全部如实披露"
+ },
+ "verdict_rule": "PASS=主判据; BOUNDARY=最优增量规则的叠加后t∈[2.0,2.5)或增量>0但t<2.5; FAIL=其余; FAIL归档falsified_rules(PORTRAIT-COMBO-HR7)",
+ "nw_spec": "日度聚合NW(20)同H-R6",
+ "boundary": "零交易权; PASS不自动接线; 多重检验补偿沿E3阈值2.5; trial_budget画像族如实=7",
+ "falsified_refs": "E2/E3/E4/HR1(条件不同=v3形态标签从未入验+精化设问非独立选股); HR6(PASS家族为本实验条件域, 非重复验证)",
+ "fingerprint": "c5977a5f9038a535"
+}

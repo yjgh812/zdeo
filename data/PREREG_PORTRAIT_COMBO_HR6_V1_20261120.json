@@ -1,0 +1,49 @@
+{
+ "name": "PREREG_PORTRAIT_COMBO_HR6_V1",
+ "date": "20261120",
+ "owner_cmd": "主人提供专业研究规范令落地(三百五十五)+『继续』令批准推进候选",
+ "hypothesis": "由IS挖掘的1-2条件特征组合规则, 在OOS(2023-2026)对fwd20超额(对全市场等权中位)有稳定正期望",
+ "mining": {
+  "IS": "20160101-20221231 全量日线有效行(date>=20160101, close>0且volume>0)按4:1降采样",
+  "OOS": "20230101-20261119 全量行不降采样",
+  "feature_pool_frozen": {
+   "numeric15": [
+    "pos60",
+    "turn_pctl60",
+    "turn_z60",
+    "bias20",
+    "vol_z20",
+    "ret5",
+    "turn_rise",
+    "pos250",
+    "ret20",
+    "vola20",
+    "consec_vol_up",
+    "hh60",
+    "streak_up",
+    "lower_shadow",
+    "body_ratio"
+   ],
+   "bool4": [
+    "ma_align_dn",
+    "ll20",
+    "vol_breakout20",
+    "bull_engulf"
+   ]
+  },
+  "condition_forms": "数值特征按IS五分位分桶, 条件=桶==b 或 桶>=b(b∈1..4); 布尔=真; 单条件或两条件AND; ~9730规则",
+  "IS_screen": "降采样行 n>=5000(约全量2万) 且 超额均值>0 且 粗t=mean/(std/sqrt(days覆盖))排序取Top10冻结进OOS",
+  "bucket_edges": "IS五分位(20/40/60/80), 由runner在IS内计算(冻结的是程序不是数值), OOS复用IS边"
+ },
+ "oos_gate": {
+  "main": "Top10规则中至少一条: OOS超额均值>0 且 日度聚合NW(20) t>=2.5 且 覆盖天数>=300 且方向与IS一致",
+  "benchmark": "同日全市场fwd20中位(等权)",
+  "disclosure": "Top10全部规则的OOS结果如实全披露, 不挑拣"
+ },
+ "verdict_rule": "PASS=主判据; BOUNDARY=最优规则t∈[2.0,2.5); FAIL=其余; FAIL归档falsified_rules(PORTRAIT-COMBO-HR6)",
+ "nw_spec": "日度聚合=每规则每命中日超额均值序列, NW=Newey-West HAC lag20",
+ "feature_impl": "19特征与v2(feature_attr_v2_20261120.py)同式, runner内复制实现, 关键分位对照v2报告校验实现一致性",
+ "boundary": "零交易权; PASS不自动接线须主人批准另走变更程序; 多重检验补偿沿E3阈值2.5(规则数已经IS筛选压缩到10)",
+ "falsified_refs": "E2/E3/E4(加总评分截面,条件不同=决策型AND组合+IS/OOS分离+24个v2新特征首次入验); HR1(时序事件); trial_budget画像族如实=5",
+ "fingerprint": "dc1b6c0df6b26caf"
+}
